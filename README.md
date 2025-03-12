@@ -1,4 +1,4 @@
-# ACM Atlas Website Template
+# ACM Atlas Website
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/typescript-%23407ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
@@ -11,11 +11,11 @@
 
 ## Figma
 
-[ACM Atlas Website Template Figma Design File](https://www.figma.com/)
+[ACM Atlas Website Figma Design File](https://www.figma.com/design/qQLesadGHl9xa1FnximmJ8/acm-website-(-new-!-)?node-id=0-1&p=f&t=Jde62jHJgiEP6P6R-0)
 
 ## Node.js
 
-ACM Atlas Website Template runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+ACM Atlas Website runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
 ## Next.js
 
