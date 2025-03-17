@@ -20,7 +20,7 @@
 		"axios": "^1.6.8",
 		"bootstrap": "^5.2.3",
 		"moment": "^2.29.4",
-		"next": "^13.5.0",
+		"next": "^15.2.2",
 		"react": "18.2.0",
 		"react-big-calendar": "^1.8.1",
 		"react-bootstrap": "^2.7.2",
