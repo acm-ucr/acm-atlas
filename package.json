@@ -34,7 +34,7 @@
 		"@tailwindcss/line-clamp": "^0.4.4",
 		"@tailwindcss/typography": "^0.5.9",
 		"autoprefixer": "^10.4.14",
-		"eslint": "^8.43.0",
+		"eslint": "^9.23.0",
 		"eslint-config-google": "^0.14.0",
 		"eslint-config-next": "13.4.7",
 		"eslint-config-prettier": "^8.8.0",
