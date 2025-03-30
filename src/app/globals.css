@@ -1,3 +1,21 @@
 @import "tailwindcss";
 
-@config '../../tailwind.config.ts';
+@theme {
+  --color-acm-yellow-100: #fff6d1;
+  --color-acm-gray-100: #e4e4e4;
+  --color-acm-gray-400: #8e8e8e;
+  --color-acm-gray-500: #444444;
+  --color-acm-blue-100: #ddf4ff;
+  --color-acm-blue-400: #91b9ff;
+  --color-acm-blue-500: #2391ff;
+  --color-acm-blue-700: #4185fc;
+  --color-acm-navy: #173967;
+  --color-acm-turquoise: #3bc5bb;
+  --color-acm-purple-100: #e1c5ff;
+  --color-acm-green-100: #c5ecc0;
+  --color-acm-green-500: #1f3f3d;
+  --color-acm-red: #dd2c00;
+  --color-acm-eslint: #8080f2;
+  --color-acm-typescript: #3178c6;
+  --color-acm-tailwindcss: #38bdf8;
+}
