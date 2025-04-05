@@ -11,7 +11,7 @@
 
 ## Figma
 
-[ACM Atlas Website Figma Design File](https://www.figma.com/design/qQLesadGHl9xa1FnximmJ8/acm-website-(-new-!-)?node-id=0-1&p=f&t=Jde62jHJgiEP6P6R-0)
+[ACM Atlas Website Figma Design File](<https://www.figma.com/design/qQLesadGHl9xa1FnximmJ8/acm-website-(-new-!-)?node-id=0-1&p=f&t=Jde62jHJgiEP6P6R-0>)
 
 ## Node.js
 
