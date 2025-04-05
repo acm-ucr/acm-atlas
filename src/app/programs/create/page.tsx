@@ -1,11 +1,10 @@
+import Header from "@/components/programs/create/header";
+
 const Page = () => {
   return (
     <div>
-      <p className="text-acm-gray-500 mt-10 flex justify-center text-center text-4xl font-bold md:text-5xl">
-        CREATE
-      </p>
+      <Header />
     </div>
   );
 };
-
 export default Page;
