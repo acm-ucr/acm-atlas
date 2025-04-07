@@ -1,4 +1,4 @@
-import Title from "../../../components/programs/spark/title";
+import Title from "@/components/programs/spark/title";
 const Page = () => {
   return (
     <div>
