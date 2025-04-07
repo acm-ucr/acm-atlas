@@ -1,9 +1,9 @@
-const Page = () => {
+const Programs = () => {
   return (
-    <p className="text-acm-gray-500 flex h-screen w-screen items-center justify-center text-4xl font-bold">
-      WHAT WE OFFER
-    </p>
+    <div className="flex flex-col items-center justify-center">
+      <p className="text-acm-gray-500 font-font-bold text-7xl">WHAT WE OFFER</p>
+    </div>
   );
 };
 
-export default Page;
+export default Programs;
