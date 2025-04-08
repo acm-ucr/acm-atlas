@@ -34,10 +34,21 @@ const Navigation = () => {
             <NavigationMenuItem>
               <NavigationMenuTrigger>PROGRAMS</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <NavigationMenuLink>SPARK</NavigationMenuLink>
-                <NavigationMenuLink>CREATE</NavigationMenuLink>
-                <NavigationMenuLink>DAS</NavigationMenuLink>
-                <NavigationMenuLink>Bit/Byte</NavigationMenuLink>
+                <NavigationMenuLink href="/programs/spark">
+                  SPARK
+                </NavigationMenuLink>
+                <NavigationMenuLink href="/programs/forge">
+                  FORGE
+                </NavigationMenuLink>
+                <NavigationMenuLink href="/programs/create">
+                  CREATE
+                </NavigationMenuLink>
+                <NavigationMenuLink href="/programs/das">
+                  DAS
+                </NavigationMenuLink>
+                <NavigationMenuLink href="/programs/bitbyte">
+                  Bit/Byte
+                </NavigationMenuLink>
               </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
