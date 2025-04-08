@@ -8,11 +8,14 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-function Navigation() {
+const Navigation = () => {
   return (
-    <div className="border-acm-blue-400 flex h-max w-full flex-row items-center space-x-3 border-b-3 p-5 shadow-xl">
-      <p className="text-acm-gray-500 ml-10 text-2xl font-bold">ACM@UCR</p>
-      <div className="mr-20 ml-auto flex space-x-5">
+    <div className="border-acm-blue-400 flex border-b-3 p-5 shadow-xl">
+      <Link className="text-acm-gray-500 ml-10 text-2xl font-bold" href="/">
+        ACM@UCR
+      </Link>
+
+      <div className="mr-20 ml-auto flex justify-end space-x-5">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -34,6 +37,8 @@ function Navigation() {
               <NavigationMenuContent>
                 <NavigationMenuLink>SPARK</NavigationMenuLink>
                 <NavigationMenuLink>CREATE</NavigationMenuLink>
+                <NavigationMenuLink>DAS</NavigationMenuLink>
+                <NavigationMenuLink>Bit/Byte</NavigationMenuLink>
               </NavigationMenuContent>
             </NavigationMenuItem>
           </NavigationMenuList>
@@ -62,6 +67,6 @@ function Navigation() {
       </div>
     </div>
   );
-}
+};
 
 export default Navigation;

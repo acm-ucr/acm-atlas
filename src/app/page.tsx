@@ -1,8 +1,9 @@
-import Navigation from "@/components/navigation";
+import Header from "@/components/home/header";
+
 const Home = () => {
   return (
     <div className="flex h-screen w-screen justify-center space-x-2">
-      <Navigation />
+      <Header />
     </div>
   );
 };

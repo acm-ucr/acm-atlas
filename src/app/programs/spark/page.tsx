@@ -1,5 +1,10 @@
+import Title from "@/components/programs/spark/title";
 const Page = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Title />
+    </div>
+  );
 };
 
 export default Page;
