@@ -14,9 +14,6 @@ const Navigation = () => {
       <Link className="text-acm-gray-500 ml-10 text-2xl font-bold" href="/">
         ACM@UCR
       </Link>
-      {
-        // probelm maybe
-      }
       <div className="mr-20 ml-auto flex justify-end space-x-5">
         <NavigationMenu>
           <NavigationMenuList>
