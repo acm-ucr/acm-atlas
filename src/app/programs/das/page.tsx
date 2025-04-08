@@ -1,9 +1,9 @@
-import DasPage from "@/components/programs/das";
+import Header from "@/components/programs/das/header";
 
 const Page = () => {
   return (
     <div>
-      <DasPage />
+      <Header />
     </div>
   );
 };

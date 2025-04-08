@@ -51,7 +51,10 @@ function NavigationMenuItem({
   return (
     <NavigationMenuPrimitive.Item
       data-slot="navigation-menu-item"
-      className={cn("relative", className)}
+      className={cn(
+        "text-acm-gray-500 relative text-xl font-semibold",
+        className,
+      )}
       {...props}
     />
   );
@@ -70,7 +73,11 @@ function NavigationMenuTrigger({
   return (
     <NavigationMenuPrimitive.Trigger
       data-slot="navigation-menu-trigger"
-      className={cn(navigationMenuTriggerStyle(), "group", className)}
+      className={cn(
+        navigationMenuTriggerStyle(),
+        "group hover:cursor-pointer",
+        className,
+      )}
       {...props}
     >
       {children}
