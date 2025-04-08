@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <p className="text-acm-gray-500 flex justify-center text-5xl font-bold">
-      FORGE
+      SPARK
     </p>
   );
 };

@@ -10,11 +10,11 @@ import {
 import Link from "next/link";
 const Navigation = () => {
   return (
-    <div className="border-acm-blue-400 flex border-b-3 p-5 shadow-xl">
-      <Link className="text-acm-gray-500 ml-10 text-2xl font-bold" href="/">
+    <div className="border-acm-blue-400 grid grid-cols-5 border-b-3 p-5 shadow-xl">
+      <Link className="text-acm-gray-500 text-2xl font-bold" href="/">
         ACM@UCR
       </Link>
-      <div className="mr-20 ml-auto flex justify-end space-x-5">
+      <div className="col-span-4 flex justify-end space-x-5 pr-5">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>

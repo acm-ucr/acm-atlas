@@ -1,8 +1,8 @@
-import Title from "@/components/programs/spark/title";
+import Header from "@/components/programs/spark/header";
 const Page = () => {
   return (
     <div>
-      <Title />
+      <Header />
     </div>
   );
 };
