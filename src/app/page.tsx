@@ -1,9 +1,11 @@
 import Header from "@/components/home/header";
+import SeeMoreButton from "@/components/home/seemore";
 
 const Home = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <Header />
+      <SeeMoreButton />
     </div>
   );
 };
