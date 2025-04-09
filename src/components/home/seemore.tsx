@@ -1,11 +1,16 @@
 import Link from "next/link";
 
-const SeeMoreButton = () => {
+const SeeMoreLink = () => {
   return (
-    <button className="bg-acm-eslint text-md hover:bg-acm-typescript absolute bottom-10 h-10 w-40 rounded-lg text-white">
-      <Link href="/events">See More</Link>
-    </button>
+    <div className="fixed bottom-1/2 left-1/2 -translate-x-1/2">
+      <Link
+        href="/events"
+        className="bg-acm-blue-700 text-md flex justify-center rounded-lg p-3 text-white"
+      >
+        See More
+      </Link>
+    </div>
   );
 };
 
-export default SeeMoreButton;
+export default SeeMoreLink;
