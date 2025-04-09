@@ -1,12 +1,12 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 
-interface ArrowLinkProps {
+interface ViewAllLinkProps {
   link: string;
   children: React.ReactNode;
 }
 
-const ArrowLink = ({ link, children }: ArrowLinkProps) => {
+const ViewAllLink = ({ link, children }: ViewAllLinkProps) => {
   return (
     <Link
       href={link}
@@ -16,4 +16,4 @@ const ArrowLink = ({ link, children }: ArrowLinkProps) => {
     </Link>
   );
 };
-export default ArrowLink;
+export default ViewAllLink;
