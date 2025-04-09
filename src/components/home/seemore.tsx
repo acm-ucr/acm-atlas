@@ -5,7 +5,7 @@ const SeeMoreLink = () => {
     <div className="flex justify-center">
       <Link
         href="/events"
-        className="bg-acm-blue-700 flex w-3xs justify-center rounded-lg p-3 text-3xl font-medium text-white"
+        className="bg-acm-blue-700 rounded-lg p-3 text-3xl font-medium text-white"
       >
         See More
       </Link>
