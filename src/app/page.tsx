@@ -1,6 +1,6 @@
 import ViewAllLink from "@/components/home/viewalllink";
 import Header from "@/components/home/header";
-import SeeMoreLink from "@/components/home/seemore";
+import SeeMoreLink from "@/components/home/seemorelink";
 
 const Home = () => {
   return (
