@@ -1,11 +1,13 @@
-import LinkArrowSpark from "@/components/home/arrowlink";
+import ViewAllLink from "@/components/home/viewalllink";
 import Header from "@/components/home/header";
 
 const Home = () => {
   return (
     <div>
       <Header />
-      <LinkArrowSpark link="/programs/spark"></LinkArrowSpark>
+      <ViewAllLink link="/programs/spark">Spark</ViewAllLink>
+      <ViewAllLink link="/programs/create">Create</ViewAllLink>
+      <ViewAllLink link="/programs/forge">Forge</ViewAllLink>
     </div>
   );
 };
