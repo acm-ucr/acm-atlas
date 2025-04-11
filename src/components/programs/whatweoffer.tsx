@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface ProgramProps {
   header: string;
@@ -13,25 +14,28 @@ const WhatWeOffer = ({ header, program, acm, pText, image }: ProgramProps) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <p className="text-acm-gray-500 p-10 text-5xl font-bold">WHAT WE OFFER</p>
-      <div className="grid w-3/4 grid-flow-col">
+      <div className="grid w-1/2 grid-flow-col">
         <div className="grid grid-flow-row">
-          <div className="flex flex-row">
-            <p className="text-acm-gray-500 text-4xl font-bold">{header}</p>
-            <p className="text-acm-yellow-400 text-4xl font-bold">
+          <p className="text-acm-gray-500 text-4xl font-bold">
+            <span className="">{header}</span>
+            <span className="text-acm-yellow-400 text-4xl font-bold">
               &nbsp;{program}&nbsp;
-            </p>
-            <p className="text-4xl font-bold"> ? </p>
-          </div>
-          <div className="grid w-3/4 grid-flow-col pt-3 pb-3">
-            <p className="text-acm-gray-500 text-2xl font-semibold"> Join </p>
-            <p className="text-acm-gray-500 text-2xl font-bold text-nowrap">
+            </span>
+            ?
+          </p>
+          <p className="text-acm-gray-500 w-3/4 pt-10 pb-5 text-2xl font-semibold">
+            Join
+            <span className="text-acm-gray-500 text-2xl font-bold">
               &nbsp;{acm}&nbsp;
-            </p>
-            <p className="text-acm-gray-500 text-2xl font-semibold">{pText}</p>
-          </div>
-          <button className="text-acm-gray-500 bg-acm-yellow-100 w-1/6 rounded-lg p-2 text-xl font-semibold">
+            </span>
+            {pText}
+          </p>
+          <Link
+            href="/programs/spark"
+            className="text-acm-gray-500 bg-acm-yellow-100 flex w-1/3 items-center justify-center rounded-lg pt-1 pb-1 text-xl font-semibold"
+          >
             Learn More →
-          </button>
+          </Link>
         </div>
         <Image src={image} alt="acm" width={200} height={200} />
       </div>
