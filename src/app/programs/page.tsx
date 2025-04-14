@@ -1,9 +1,9 @@
-import WhatWeOffer from "@/components/programs/whatweoffer";
+import WhatWeOffers from "@/components/programs/whatweoffers";
 
 const Programs = () => {
   return (
     <div>
-      <WhatWeOffer />
+      <WhatWeOffers />
     </div>
   );
 };
