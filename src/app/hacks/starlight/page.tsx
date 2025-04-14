@@ -1,11 +1,11 @@
 import Starlightbuttons from "@/components/hacks/starlight/starlightbuttons";
 
 const Page = () => {
-    return (
+  return (
     <div>
-        <Starlightbuttons />
+      <Starlightbuttons />
     </div>
-    );
+  );
 };
 
 export default Page;
