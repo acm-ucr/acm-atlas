@@ -1,7 +1,7 @@
 const FeaturedProjects = () => {
   return (
-    <div className="flex h-screen w-screen items-center justify-center">
-      <p className="text-6xl font-bold text-gray-600">FEATURED PROJECTS</p>
+    <div className="flex items-center justify-center">
+      <p className="text-acm-gray-500 text-6xl font-bold">FEATURED PROJECTS</p>
     </div>
   );
 };
