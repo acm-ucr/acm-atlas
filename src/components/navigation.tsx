@@ -50,7 +50,9 @@ const Navigation = () => {
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>PROGRAMS</NavigationMenuTrigger>
+              <NavigationMenuTrigger>
+                <Link href="/programs">PROGRAMS</Link>
+              </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <NavigationMenuLink
                   href="/programs/spark"
