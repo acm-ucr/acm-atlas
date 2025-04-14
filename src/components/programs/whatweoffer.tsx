@@ -32,7 +32,7 @@ const WhatWeOffer = ({
           <p>?</p>
         </div>
 
-        <div className="w-3/4 text-acm-gray-500 text-2xl font-semibold">
+        <div className="text-acm-gray-500 w-3/4 text-2xl font-semibold">
           <p className="inline">Join</p>
           <p className="inline font-bold">&nbsp;{acm}&nbsp;</p>
           <p className="inline">{pText}</p>
