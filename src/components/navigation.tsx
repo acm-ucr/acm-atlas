@@ -50,7 +50,7 @@ const Navigation = () => {
       >
         ACM@UCR
       </Link>
-      
+
       {/* For web view */}
       <div className="col-span-4 hidden justify-end space-x-5 pr-5 md:flex">
         {navBarItems.map(({ name, link, subItems }, index) => (
