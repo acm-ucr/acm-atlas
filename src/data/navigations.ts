@@ -1,4 +1,4 @@
-const navBarItems = [
+const navigations = [
   {
     name: "HOME",
     link: "/",
@@ -47,4 +47,4 @@ const navBarItems = [
   },
 ];
 
-export default navBarItems;
+export default navigations;
