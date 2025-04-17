@@ -34,7 +34,7 @@ const Footer = () => {
             <Link href="https://github.com/acm-ucr">
               <FaGithub className="text-acm-blue-700 h-6 w-6" />
             </Link>
-            <Link href="/">
+            <Link href="https://medium.com/@contact.acmucr">
               <FaMedium className="text-acm-blue-700 h-6 w-6" />
             </Link>
           </div>
