@@ -79,9 +79,6 @@ const Navigation = () => {
                         </NavigationMenuLink>
                       ))}
                     </NavigationMenuContent>
-                    {
-                      // comment
-                    }
                   </>
                 ) : (
                   <Link
