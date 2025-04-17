@@ -21,7 +21,6 @@ const Footer = () => {
             Association of Computing Machinery
           </p>
           <div className="flex w-1/2 justify-between">
-            {/* change links */}
             <Link href="https://www.instagram.com/acm_ucr/">
               <RiInstagramFill className="text-acm-blue-700 h-6 w-6" />
             </Link>
