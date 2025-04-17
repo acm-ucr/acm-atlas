@@ -25,7 +25,7 @@ const Footer = () => {
             <Link href="/">
               <RiInstagramFill className="text-acm-blue-700 h-6 w-6" />
             </Link>
-            <Link href="/">
+            <Link href="https://discord.gg/qsHw6dhmmY">
               <FaDiscord className="text-acm-blue-700 h-6 w-6" />
             </Link>
             <Link href="/">
