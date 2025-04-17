@@ -31,7 +31,7 @@ const Footer = () => {
             <Link href="https://www.linkedin.com/company/acm-ucr">
               <FaLinkedin className="text-acm-blue-700 h-6 w-6" />
             </Link>
-            <Link href="/">
+            <Link href="https://github.com/acm-ucr">
               <FaGithub className="text-acm-blue-700 h-6 w-6" />
             </Link>
             <Link href="/">
