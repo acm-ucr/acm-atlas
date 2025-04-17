@@ -61,10 +61,7 @@ const Navigation = () => {
               <NavigationMenuItem>
                 {subItems ? (
                   <>
-                    <NavigationMenuTrigger
-                      className=""
-                      onClick={() => router.push(link)}
-                    >
+                    <NavigationMenuTrigger onClick={() => router.push(link)}>
                       {name}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
