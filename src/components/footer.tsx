@@ -28,7 +28,7 @@ const Footer = () => {
             <Link href="https://discord.gg/qsHw6dhmmY">
               <FaDiscord className="text-acm-blue-700 h-6 w-6" />
             </Link>
-            <Link href="/">
+            <Link href="https://www.linkedin.com/company/acm-ucr">
               <FaLinkedin className="text-acm-blue-700 h-6 w-6" />
             </Link>
             <Link href="/">
