@@ -22,19 +22,19 @@ const Footer = () => {
           </p>
           <div className="flex w-1/2 justify-between">
             <Link href="https://www.instagram.com/acm_ucr/">
-              <RiInstagramFill className="text-acm-blue-700 h-6 w-6" />
+              <RiInstagramFill className="text-acm-blue-700 text-2xl" />
             </Link>
             <Link href="https://discord.gg/qsHw6dhmmY">
-              <FaDiscord className="text-acm-blue-700 h-6 w-6" />
+              <FaDiscord className="text-acm-blue-700 text-2xl" />
             </Link>
             <Link href="https://www.linkedin.com/company/acm-ucr">
-              <FaLinkedin className="text-acm-blue-700 h-6 w-6" />
+              <FaLinkedin className="text-acm-blue-700 text-2xl" />
             </Link>
             <Link href="https://github.com/acm-ucr">
-              <FaGithub className="text-acm-blue-700 h-6 w-6" />
+              <FaGithub className="text-acm-blue-700 text-2xl" />
             </Link>
             <Link href="https://medium.com/@contact.acmucr">
-              <FaMedium className="text-acm-blue-700 h-6 w-6" />
+              <FaMedium className="text-acm-blue-700 text-2xl" />
             </Link>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Footer = () => {
           </p>
           <div className="text-acm-gray-400 flex flex-col text-lg font-light">
             {/* change links */}
-            <Link href="/">Hackpacks</Link>
+            <Link href="/hackpacks">Hackpacks</Link>
             <Link href="/">Template Resume</Link>
             <Link href="/">CS Internships List</Link>
             <Link href="/">CS Jobs List</Link>
@@ -67,11 +67,11 @@ const Footer = () => {
           </p>
           <div className="text-acm-gray-400 flex flex-col text-xl font-light">
             <div className="flex gap-2">
-              <MdEmail className="text-acm-blue-700 h-6 w-6" />
+              <MdEmail className="text-acm-blue-700 text-2xl" />
               <p>contact.acmucr@gmail.com</p>
             </div>
             <div className="flex gap-2">
-              <FaLocationDot className="text-acm-blue-700 h-6 w-6" />
+              <FaLocationDot className="text-acm-blue-700 text-2xl" />
               <div>
                 <p>900 University Ave.</p>
                 <p>Winston Chung Hall, Room 127</p>
