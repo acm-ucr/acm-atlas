@@ -83,7 +83,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-acm-blue-400 h-0.5 w-full" />
-      <p className="text-acm-gray-500 flex justify-center pt-5">
+      <p className="text-acm-gray-500 flex justify-center py-5">
         © ACM at UCR 2025. Made with 💙 from ACM Spark.
       </p>
     </div>
