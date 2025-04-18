@@ -5,16 +5,16 @@ const BoardCards = () => {
   return (
     <div className="px-5">
       {Board.map(
-        ({ position, shadow, photo, name, linkedin, github, color }, index) => (
+        ({ name, position, color, shadow, photo, linkedin, github }, index) => (
           <BoardCard
             key={index}
+            name={name}
             position={position}
+            color={color}
             shadow={shadow}
             photo={photo}
-            name={name}
             linkedin={linkedin}
             github={github}
-            color={color}
           />
         ),
       )}
