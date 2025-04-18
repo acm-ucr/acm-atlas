@@ -20,7 +20,7 @@ const Footer = () => {
           <p className="text-acm-gray-500 text-xl">
             Association of Computing Machinery
           </p>
-          <div className="flex w-1/2 justify-between">
+          <div className="flex gap-2">
             <Link href="https://www.instagram.com/acm_ucr/">
               <RiInstagramFill className="text-acm-blue-700 text-2xl" />
             </Link>
