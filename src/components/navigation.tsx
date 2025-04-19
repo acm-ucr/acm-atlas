@@ -46,10 +46,7 @@ const Navigation = () => {
         className="text-acm-gray-500 block text-3xl md:hidden"
         onClick={programBar ? handleBothBars : handleNavBar}
       />
-      <Link
-        className={pathname === "" ? "" : "hover:text-acm-blue-500"}
-        href="/"
-      >
+      <Link className={pathname === "" ? "text-acm-blue-500" : ""} href="/">
         <p className="text-acm-gray-500 text-3xl font-semibold"> ACM@UCR</p>
       </Link>
 
@@ -70,8 +67,8 @@ const Navigation = () => {
                           key={subIndex}
                           className={
                             pathname === link
-                              ? "font-semibold"
-                              : "hover:text-acm-blue-500"
+                              ? "text-acm-blue-500 font-semibold"
+                              : ""
                           }
                           href={subLink}
                         >
@@ -82,9 +79,7 @@ const Navigation = () => {
                   </>
                 ) : (
                   <Link
-                    className={
-                      pathname === link ? "" : "hover:text-acm-blue-500"
-                    }
+                    className={pathname === link ? "text-acm-blue-500" : ""}
                     href={link}
                   >
                     {name}

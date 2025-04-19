@@ -1,6 +1,6 @@
 const navigations = [
   {
-    name: "HOME",
+    name: "JOIN US",
     link: "/",
   },
   {
