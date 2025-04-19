@@ -1,13 +1,10 @@
 import Image from "next/image";
 import ACMLogo from "@/public/acm.webp";
 import Link from "next/link";
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaMedium } from "react-icons/fa6";
+import { FaMedium, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
   return (
