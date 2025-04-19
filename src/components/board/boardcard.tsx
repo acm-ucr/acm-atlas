@@ -22,22 +22,22 @@ const boardcard = ({
   github,
 }: BoardProps) => {
   return (
-    <div className="flex w-1/6 flex-col items-center text-center">
-      <p className={`${color} py-2 text-2xl font-bold`}>{position}</p>
+    <div className="flex w-1/2 flex-col items-center text-center mx-auto">
+      <p className={`${color} py-4 text-2xl font-bold`}>{position}</p>
       <div>
         <Image
-          className={`${shadow} rounded-full shadow-xl`}
+          className={`${shadow} rounded-full`}
           src={photo}
           alt="photo"
         />
       </div>
-      <p className="py-2 text-xl font-bold">{name}</p>
+      <p className="pb-2 pt-4 text-xl font-bold">{name}</p>
       <div className={`${color} flex flex-row items-center gap-4`}>
         <Link href={linkedin}>
-          <FaLinkedin size={50} />
+          <FaLinkedin className="size-12" />
         </Link>
         <Link href={github}>
-          <FaGithub size={50} />
+          <FaGithub className="size-12" />
         </Link>
       </div>
     </div>
