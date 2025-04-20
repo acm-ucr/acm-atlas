@@ -12,7 +12,7 @@ interface BoardProps {
   github: string;
 }
 
-const boardcard = ({
+const BoardCard = ({
   name,
   position,
   color,
@@ -30,14 +30,14 @@ const boardcard = ({
       <p className="pt-4 pb-2 text-xl font-bold">{name}</p>
       <div className={`${color} flex flex-row items-center gap-4`}>
         <Link href={linkedin}>
-          <FaLinkedin className="size-12" />
+          <FaLinkedin className="text-5xl" />
         </Link>
         <Link href={github}>
-          <FaGithub className="size-12" />
+          <FaGithub className="text-5xl" />
         </Link>
       </div>
     </div>
   );
 };
 
-export default boardcard;
+export default BoardCard;
