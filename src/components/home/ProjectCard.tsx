@@ -19,8 +19,13 @@ const ProjectCard = ({ project, image, link }: ProjectCardProps) => {
       }}
     >
       <div className="absolute inset-0 backdrop-blur-sm"></div>
+      <div className="bg-acm-gray-100 absolute inset-0 opacity-50 backdrop-blur-sm"></div>
       <div className="z-10">
-        <Image src={image} alt={`${project} Image`} />
+        <Image
+          src={image}
+          alt={`${project} Image`}
+          className="sm:h-[120px] md:h-[130px] lg:h-[200px] xl:h-[280px]"
+        />
         <div className="mt-4 w-full rounded-4xl bg-white p-2">{project}</div>
       </div>
     </Link>
