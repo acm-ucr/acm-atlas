@@ -1,16 +1,16 @@
-import ProjectCard from "./projectcard";
-import { projectCardDF } from "@/data/projectcard";
+import ProjectCard from "../../projectcard";
+import spark from "@/data/projects/spark";
 
 const ProjectGrid = () => {
   return (
     <div className="grid grid-cols-3 gap-x-6 gap-y-10">
-      {projectCardDF.map((project, index) => (
+      {spark.map(({ photo, name, github, website }, index) => (
         <ProjectCard
           key={index}
-          photo={project.photo}
-          name={project.name}
-          github={project.github}
-          website={project.website}
+          photo={photo}
+          name={name}
+          github={github}
+          website={website}
         />
       ))}
     </div>

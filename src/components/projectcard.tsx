@@ -1,5 +1,4 @@
-import { FaSquareGithub } from "react-icons/fa6";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
@@ -26,12 +25,16 @@ const ProjectCard = ({ photo, name, github, website }: ProjectCardProps) => {
       <div className="mt-4 flex items-center justify-between text-left">
         <div className="text-2xl font-light">{name}</div>
         <div className="flex gap-2 text-2xl">
-          <Link href={github} target="_blank" rel="noopener noreferrer">
-            <FaSquareGithub />
-          </Link>
-          <Link href={website} target="_blank" rel="noopener noreferrer">
-            <FaExternalLinkAlt />
-          </Link>
+          {github && (
+            <Link href={github} target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </Link>
+          )}
+          {website && (
+            <Link href={website} target="_blank" rel="noopener noreferrer">
+              <FaExternalLinkAlt />
+            </Link>
+          )}
         </div>
       </div>
     </div>

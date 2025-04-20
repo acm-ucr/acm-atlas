@@ -2,7 +2,7 @@ import pad from "@/public/Spark/pad.webp";
 import aviatr from "@/public/Spark/aviatr.webp";
 import hsa from "@/public/Spark/hsa.webp";
 
-export const projectCardDF = [
+const spark = [
   {
     photo: pad,
     name: "Phi Alpha Delta",
@@ -40,3 +40,5 @@ export const projectCardDF = [
     website: "https://hsa.ucrhighlanders.org/",
   },
 ];
+
+export default spark;
