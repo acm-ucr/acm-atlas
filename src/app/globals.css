@@ -4,6 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  --drop-shadow-3xl-acm-blue-500: 0 10px 20px rgba(79, 167, 255, 1);
+  --drop-shadow-3xl-acm-yellow-400: 0 10px 20px rgba(255, 234, 148, 1);
+  --drop-shadow-3xl-acm-blue-100: 0 10px 20px rgba(157, 216, 255, 1);
+  --drop-shadow-3xl-acm-gray-400: 0 10px 20px rgba(142, 142, 143, 1);
+  --drop-shadow-3xl-acm-purple-100: 0 10px 20px rgba(219, 186, 255, 1);
   --color-acm-yellow-100: #fff6d1;
   --color-acm-yellow-400: #f5d166;
   --color-acm-gray-100: #e4e4e4;
