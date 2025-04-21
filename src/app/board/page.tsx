@@ -1,10 +1,10 @@
+import MeetTheBoard from "@/components/board/meettheboard";
 import BoardCards from "@/components/board/boardcards";
-import Header from "@/components/board/Header";
 
 const Page = () => {
   return (
     <div>
-      <Header />
+      <MeetTheBoard />
       <BoardCards />
     </div>
   );
