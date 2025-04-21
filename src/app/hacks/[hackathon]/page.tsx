@@ -1,12 +1,18 @@
 import Hack from "@/components/hacks/hack";
 import hacks from "@/data/hackathons";
-import NotFound from "@/app/not-found";
+import { notFound } from "next/navigation";
 
-const Page = ({ params }: { params: { hackathon: string } }) => {
-  const hackathon = hacks.find((hack) => hack.id === params.hackathon);
-  if (!hackathon) return <NotFound />;
-  const { name, website } = hackathon;
-  return <Hack name={name} website={website} />;
+interface PageProps {
+  params: Promise<{ hackathon: string }>;
+}
+
+const Page = async ({ params }: PageProps) => {
+  const { hackathon } = await params;
+
+  const hack = hacks.find((h) => h.id === hackathon);
+  if (!hack) return notFound();
+
+  return <Hack name={hack.name} website={hack.website} />;
 };
 
 export default Page;
