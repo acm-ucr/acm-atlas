@@ -1,4 +1,4 @@
-const Header = () => {
+const MeetTheBoard = () => {
   return (
     <div className="flex w-screen items-center justify-center">
       <p className="text-acm-gray-500 text-5xl font-bold">MEET THE BOARD</p>
@@ -6,4 +6,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default MeetTheBoard;
