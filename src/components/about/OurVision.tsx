@@ -3,19 +3,23 @@ const placeholder = "stanley.webp";
 
 const OurVision = () => {
   return (
-    <div className="grid grid-cols-2 items-center gap-4">
-      <div className="grid grid-cols-2 gap-x-2 gap-y-4">
-        <div className="relative aspect-[3/2] w-2/3 overflow-hidden rounded-xl">
-          <Image src={placeholder} alt="Placeholder Image 1" fill />
+    <div className="ml-16 grid grid-cols-2">
+      <div className="grid grid-cols-5">
+        <div className="col-span-2 grid grid-rows-3 gap-4">
+          <div className="relative mt-4 aspect-[1/1] w-auto overflow-hidden rounded-xl">
+            <Image src={placeholder} alt="Placeholder Image 1" fill />
+          </div>
+          <div className="relative row-span-2 h-[55.5%] w-auto overflow-hidden rounded-xl">
+            <Image src={placeholder} alt="Placeholder Image 2" fill />
+          </div>
         </div>
-        <div className="relative aspect-[4/3] w-4/5 overflow-hidden rounded-xl">
-          <Image src={placeholder} alt="Placeholder Image 2" fill />
-        </div>
-        <div className="relative aspect-[1/1] w-2/3 overflow-hidden rounded-xl">
-          <Image src={placeholder} alt="Placeholder Image 3" fill />
-        </div>
-        <div className="relative aspect-[16/9] w-4/5 overflow-hidden rounded-xl">
-          <Image src={placeholder} alt="Placeholder Image 4" fill />
+        <div className="col-span-3 m-4 grid grid-rows-2 gap-4">
+          <div className="relative aspect-[1/1] w-auto overflow-hidden rounded-xl">
+            <Image src={placeholder} alt="Placeholder Image 3" fill />
+          </div>
+          <div className="relative mt-[-48] aspect-[16/9] w-auto overflow-hidden rounded-xl">
+            <Image src={placeholder} alt="Placeholder Image 4" fill />
+          </div>
         </div>
       </div>
       <div className="text-acm-gray-500 flex flex-col items-center text-center">
