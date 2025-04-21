@@ -1,4 +1,4 @@
-import MeetTheBoard from "@/components/board/header";
+import MeetTheBoard from "@/components/board/meettheboard";
 
 const Page = () => {
   return (
