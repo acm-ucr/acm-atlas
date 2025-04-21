@@ -1,4 +1,4 @@
-import Header from "@/components/board/header";
+import Header from "@/components/board/Header";
 
 const Page = () => {
   return (
