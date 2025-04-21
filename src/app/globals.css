@@ -24,6 +24,15 @@
   --color-acm-tailwindcss: #38bdf8;
 }
 
+.mask-subtract {
+  -webkit-mask-image: url("/public/cutout.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-image: url("/public/cutout.svg");
+  mask-repeat: no-repeat;
+  mask-size: cover;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);

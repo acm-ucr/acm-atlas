@@ -1,6 +1,6 @@
 import ViewAllLink from "@/components/home/viewalllink";
 import Header from "@/components/home/header";
-import UpcomingEvents from "@/components/home/UpcomingEvents";
+import UpcomingEvents from "@/components/home/upcomingevents";
 import SeeMoreLink from "@/components/home/seemorelink";
 import FeaturedProjects from "@/components/home/featuredprojects";
 
