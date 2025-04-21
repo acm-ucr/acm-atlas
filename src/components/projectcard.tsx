@@ -24,7 +24,7 @@ const ProjectCard = ({ photo, name, github, website }: ProjectCardProps) => {
 
       <div className="mt-4 flex items-center justify-between text-left">
         <div className="text-2xl font-light">{name}</div>
-        <div className="flex gap-2 text-2xl">
+        <div className="flex items-center gap-2 text-2xl">
           {github && (
             <Link href={github} target="_blank" rel="noopener noreferrer">
               <FaGithub />
