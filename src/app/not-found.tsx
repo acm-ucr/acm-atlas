@@ -1,8 +1,8 @@
 const NotFound = () => {
   return (
-    <p className="text-acm-navy flex h-screen w-screen items-center justify-center text-4xl font-semibold">
-      PAGE NOT FOUND
-    </p>
+    <div className="flex min-h-screen items-center justify-center">
+      <p className="text-acm-navy text-4xl font-semibold">PAGE NOT FOUND</p>
+    </div>
   );
 };
 
