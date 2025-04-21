@@ -3,7 +3,7 @@ import spark from "@/data/projects/spark";
 
 const ProjectGrid = () => {
   return (
-    <div className="grid grid-cols-3 gap-x-6 gap-y-10">
+    <div className="mx-auto grid w-11/12 grid-cols-3 gap-x-6 gap-y-10">
       {spark.map(({ photo, name, github, website }, index) => (
         <ProjectCard
           key={index}
