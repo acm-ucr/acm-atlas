@@ -1,4 +1,4 @@
-const UpcomingEvents = () => {
+const Upcoming = () => {
   return (
     <div>
       <p className="text-acm-gray-500 flex justify-center text-7xl font-semibold">
@@ -8,4 +8,4 @@ const UpcomingEvents = () => {
   );
 };
 
-export default UpcomingEvents;
+export default Upcoming;
