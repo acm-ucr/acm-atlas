@@ -1,6 +1,6 @@
 import Header from "@/components/programs/spark/header";
 import JoinNow from "@/components/programs/join-now";
-import SPARK1 from "@/public/spark_1.jpg";
+import SPARK1 from "@/public/spark_1.webp";
 import ProjectGrid from "@/components/programs/spark/projectgrid";
 const Page = () => {
   return (
