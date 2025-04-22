@@ -1,6 +1,6 @@
 import Header from "@/components/programs/create/header";
 import JoinNow from "@/components/programs/join-now";
-import CREATE1 from "@/public/create1.jpg";
+import CREATE1 from "@/public/create1.webp";
 
 const Page = () => {
   return (
