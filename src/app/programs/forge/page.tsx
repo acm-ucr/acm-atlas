@@ -1,6 +1,6 @@
 import Header from "@/components/programs/forge/header";
 import JoinNow from "@/components/programs/join-now";
-import FORGE1 from "@/public/forge_1.jpg";
+import FORGE1 from "@/public/forge_1.webp";
 const Page = () => {
   return (
     <div>
