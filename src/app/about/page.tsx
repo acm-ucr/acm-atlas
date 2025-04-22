@@ -1,9 +1,9 @@
-import Header from "@/components/about/header";
+import AboutUs from "@/components/about/aboutus";
 
 const Page = () => {
   return (
     <div>
-      <Header />
+      <AboutUs />
     </div>
   );
 };
