@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import CutOut from "@/public/Home/CutOut.png";
 import Link from "next/link";
 
 interface ProjectCardProps {
@@ -11,7 +12,7 @@ const ProjectCard = ({ project, image, link }: ProjectCardProps) => {
   return (
     <Link
       href={link}
-      className="relative my-5 flex flex-row items-center overflow-hidden rounded-lg p-4"
+      className="relative my-5 flex overflow-hidden rounded-lg p-4"
       style={{
         backgroundImage: `url(${image.src})`,
         backgroundSize: "cover",
@@ -24,9 +25,17 @@ const ProjectCard = ({ project, image, link }: ProjectCardProps) => {
         <Image
           src={image}
           alt={`${project} Image`}
-          className="sm:h-[120px] md:h-[130px] lg:h-[200px] xl:h-[280px]"
+          className="aspect-[20/15] scale-x-130 scale-y-140 lg:p-2"
         />
-        <div className="mt-4 w-full rounded-4xl bg-white p-2">{project}</div>
+        <Image
+          src={CutOut}
+          alt="CutOut"
+          layout="fill"
+          className="absolute inset-0 scale-y-105"
+        />
+        <div className="z-20 mt-5 w-full translate-y-3 rounded-4xl bg-white p-2 lg:-translate-y-3">
+          {project}
+        </div>
       </div>
     </Link>
   );
