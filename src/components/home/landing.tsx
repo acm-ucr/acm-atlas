@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Keys from "@/public/Home/keys.svg";
-const Header = () => {
+import Keys from "@/public/home/keys.svg";
+const Landing = () => {
   return (
     <div className="text-acm-gray-500 mt-10 flex flex-col items-center justify-center text-6xl font-semibold">
       <p>ASSOCIATION OF</p>
@@ -10,4 +10,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Landing;
