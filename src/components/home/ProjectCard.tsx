@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import CutOut from "@/public/Home/CutOut.png";
+import CutOut from "@/public/Home/CutOut.webp";
 import Link from "next/link";
 
 interface ProjectCardProps {
