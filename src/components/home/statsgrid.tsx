@@ -9,24 +9,28 @@ const StatsGrid: React.FC = () => {
       </div>
 
       <div className="flex flex-col border-l border-gray-300 px-2">
-        <div className="text-acm-gray-500 text-6xl leading-tight font-bold">
+        <div className="text-acm-gray-500 pl-2 text-6xl leading-tight font-bold">
           2500+
         </div>
-        <div className="text-acm-gray-500 text-2xl leading-tight">alumni</div>
+        <div className="text-acm-gray-500 pl-2 text-2xl leading-tight">
+          alumni
+        </div>
       </div>
 
       <div className="flex flex-col border-l border-gray-300 px-2">
-        <div className="text-acm-gray-500 text-6xl leading-tight font-bold">
+        <div className="text-acm-gray-500 pl-2 text-6xl leading-tight font-bold">
           50+
         </div>
-        <div className="text-acm-gray-500 text-2xl leading-tight">socials</div>
+        <div className="text-acm-gray-500 pl-2 text-2xl leading-tight">
+          socials
+        </div>
       </div>
 
       <div className="flex flex-col border-l border-gray-300 px-2">
-        <div className="text-acm-gray-500 text-6xl leading-tight font-bold">
+        <div className="text-acm-gray-500 pl-2 text-6xl leading-tight font-bold">
           100+
         </div>
-        <div className="text-acm-gray-500 text-2xl leading-tight">
+        <div className="text-acm-gray-500 pl-2 text-2xl leading-tight">
           workshops
         </div>
       </div>
