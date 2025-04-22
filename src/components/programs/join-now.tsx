@@ -27,8 +27,8 @@ const JoinNow = ({ textColor, backgroundColor, image }: ProgramProps) => {
           src={image}
           alt="Join Now"
           className="rounded-lg"
-          width={224}
-          height={224}
+          width={400}
+          height={400}
         />
       </div>
     </div>
