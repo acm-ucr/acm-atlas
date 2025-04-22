@@ -9,5 +9,10 @@ const hackathons = [
     name: "Rose Hack",
     website: "https://www.rosehack.com/",
   },
+  {
+    id: "citrushack",
+    name: "Citrus Hack",
+    website: "https://www.citrushack.com/",
+  },
 ];
 export default hackathons;
