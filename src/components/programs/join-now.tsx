@@ -22,8 +22,14 @@ const JoinNow = ({ textColor, backgroundColor, image }: ProgramProps) => {
           </button>
         </div>
       </div>
-      <div className="mr-auto ml-auto">
-        <Image src={image} alt="Join Now" width={224} height={224} />
+      <div className="my-6 mr-auto ml-auto">
+        <Image
+          src={image}
+          alt="Join Now"
+          className="rounded-lg"
+          width={224}
+          height={224}
+        />
       </div>
     </div>
   );
