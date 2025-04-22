@@ -23,7 +23,7 @@ const EventCard = ({
 }: EventCardProps) => {
   return (
     <div
-      className={`flex w-[18vw] flex-col items-start justify-between ${bgColor} ${textColor ? textColor : "text-acm-gray-500"} gap-2 rounded-xl px-4 py-6`}
+      className={`flex h-[56vh] w-1/5 flex-col items-start justify-between ${bgColor} ${textColor ? textColor : "text-acm-gray-500"} gap-2 rounded-xl px-5 py-6`}
     >
       <div className="flex flex-col">
         <p className="text-5xl font-bold">{title}</p>
@@ -32,7 +32,7 @@ const EventCard = ({
           {location} - {startintgTime}
         </p>
       </div>
-      <div className="ml-4 flex w-full items-end justify-end">
+      <div className="ml-5 flex w-full items-end justify-end">
         <Image src={image} alt="Event Image" />
       </div>
       <div className="flex items-start justify-start">
