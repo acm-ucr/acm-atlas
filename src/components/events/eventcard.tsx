@@ -4,7 +4,7 @@ interface EventCardProps {
   title: string;
   date: string;
   location: string;
-  startintgTime: string;
+  startingTime: string;
   description: string;
   bgColor: string;
   textColor?: string;
@@ -15,7 +15,7 @@ const EventCard = ({
   title,
   date,
   location,
-  startintgTime,
+  startingTime,
   description,
   bgColor,
   textColor,
@@ -29,7 +29,7 @@ const EventCard = ({
         <p className="text-5xl font-bold">{title}</p>
         <p className="text-2xl font-normal">{date}</p>
         <p className="text-xl font-light">
-          {location} - {startintgTime}
+          {location} - {startingTime}
         </p>
       </div>
       <div className="ml-5 flex w-full items-end justify-end">
