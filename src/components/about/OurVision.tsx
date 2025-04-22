@@ -7,7 +7,7 @@ const OurVision = () => {
         <div className="col-span-2 grid grid-rows-3 gap-6">
           <div className="relative mt-4 aspect-[1/1] w-auto overflow-hidden rounded-xl">
             <Image
-              src={"AboutUs/OurVision/1_1.jpg"}
+              src={"AboutUs/OurVision/1_1.webp"}
               alt="ACM Members attend an in-progress general ACM meeting."
               fill
               quality={85}
@@ -15,7 +15,7 @@ const OurVision = () => {
           </div>
           <div className="relative row-span-2 h-[49.5%] w-auto overflow-hidden rounded-xl">
             <Image
-              src={"AboutUs/OurVision/1_3.jpg"}
+              src={"AboutUs/OurVision/1_3.webp"}
               alt="A screen presenting ACM VP Jerry Li's LinkedIn is provided to members as the exemplar."
               fill
               quality={85}
@@ -25,7 +25,7 @@ const OurVision = () => {
         <div className="col-span-3 m-4 grid grid-rows-2 gap-4">
           <div className="relative aspect-[1/1] w-auto overflow-hidden rounded-xl">
             <Image
-              src={"AboutUs/OurVision/1_2.jpg"}
+              src={"AboutUs/OurVision/1_2.webp"}
               alt="ACM members and UCR students alike attend an ACM workshop on the basics of Python programming at the Pentland Hills Foxhole."
               fill
               quality={85}
@@ -33,7 +33,7 @@ const OurVision = () => {
           </div>
           <div className="relative mt-[-48] aspect-[15/9] w-auto overflow-hidden rounded-xl">
             <Image
-              src={"AboutUs/OurVision/1_4.jpg"}
+              src={"AboutUs/OurVision/1_4.webp"}
               alt="ACM members attend an intern panel and boba social during the ACM Kickoff Week."
               fill
               quality={85}
