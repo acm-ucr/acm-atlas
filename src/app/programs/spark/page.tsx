@@ -1,6 +1,7 @@
 import Header from "@/components/programs/spark/header";
 import JoinNow from "@/components/programs/join-now";
 import SPARK1 from "@/public/spark_1.jpg";
+import ProjectGrid from "@/components/programs/spark/projectgrid";
 const Page = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const Page = () => {
         backgroundColor="bg-amber-100"
         image={SPARK1}
       />
+      <ProjectGrid />
     </div>
   );
 };
