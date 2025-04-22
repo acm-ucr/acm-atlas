@@ -1,14 +1,14 @@
 import Link from "next/link";
 import ProjectCard from "../home/ProjectCard";
-import Spark1 from "@/public/Home/Spark/pad.png";
-import Spark2 from "@/public/Home/Spark/aviatr.png";
-import Spark3 from "@/public/Home/Spark/saf.png";
-import Create1 from "@/public/Home/Create/acm.png";
-import Create2 from "@/public/Home/Create/witl.png";
-import Create3 from "@/public/Home/Create/nsu.png";
-import Forge1 from "@/public/Home/Forge/wzchess.png";
-import Forge2 from "@/public/Home/Forge/drone.png";
-import Forge3 from "@/public/Home/Forge/blank.png";
+import Spark1 from "@/public/Home/Spark/pad.webp";
+import Spark2 from "@/public/Home/Spark/aviatr.webp";
+import Spark3 from "@/public/Home/Spark/saf.webp";
+import Create1 from "@/public/Home/Create/acm.webp";
+import Create2 from "@/public/Home/Create/witl.webp";
+import Create3 from "@/public/Home/Create/nsu.webp";
+import Forge1 from "@/public/Home/Forge/wzchess.webp";
+import Forge2 from "@/public/Home/Forge/drone.webp";
+import Forge3 from "@/public/Home/Forge/blank.webp";
 
 const FeaturedProjects = () => {
   return (
