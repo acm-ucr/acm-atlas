@@ -6,8 +6,8 @@ const OurVision4 = "AboutUs/OurVision4.webp";
 
 const OurVision = () => {
   return (
-    <div className="mx-auto grid w-11/12 grid-cols-2">
-      <div className="grid w-2/3 grid-cols-5">
+    <div className="mx-auto grid w-3/4 grid-cols-2">
+      <div className="grid w-auto grid-cols-5">
         <div className="col-span-2 grid grid-rows-3 gap-6">
           <div className="relative mt-4 aspect-[1/1] w-auto overflow-hidden rounded-xl">
             <Image
@@ -17,7 +17,7 @@ const OurVision = () => {
               className="object-cover"
             />
           </div>
-          <div className="relative row-span-2 h-[49.5%] w-auto overflow-hidden rounded-xl">
+          <div className="relative row-span-2 h-[52.5%] w-auto overflow-hidden rounded-xl">
             <Image
               src={OurVision3}
               alt="Image 3"
@@ -47,7 +47,7 @@ const OurVision = () => {
       </div>
       <div className="text-acm-gray-500 flex flex-col items-center text-center">
         <p className="w-auto text-4xl font-bold">OUR VISION</p>
-        <p className="mt-8 w-4/5 text-3xl leading-normal font-medium">
+        <p className="mt-5 w-5/6 text-2xl leading-normal font-medium">
           Our Vision is simple: We want to improve our members professionally,
           technically, and personally. We want to help our members grow
           throughout their college career, whether they enter as a first-year
