@@ -1,13 +1,9 @@
-import Image from "next/image";
-import { StaticImageData } from "next/image";
-
 interface ProgramProps {
   textColor: string;
   backgroundColor: string;
-  image: StaticImageData;
 }
 
-const JoinNow = ({ textColor, backgroundColor, image }: ProgramProps) => {
+const JoinNowB = ({ textColor, backgroundColor }: ProgramProps) => {
   return (
     <div className="flex flex-row">
       <div className="flex h-[144] flex-col self-center">
@@ -22,11 +18,8 @@ const JoinNow = ({ textColor, backgroundColor, image }: ProgramProps) => {
           </button>
         </div>
       </div>
-      <div className="mr-auto ml-auto">
-        <Image src={image} alt="Join Now" width={224} height={224} />
-      </div>
     </div>
   );
 };
 
-export default JoinNow;
+export default JoinNowB;

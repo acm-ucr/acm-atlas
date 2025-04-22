@@ -1,6 +1,6 @@
 import Header from "@/components/programs/spark/header";
 import JoinNow from "@/components/programs/join-now";
-import ACM from "@/public/acm.webp";
+import SPARK1 from "@/public/spark_1.jpg";
 const Page = () => {
   return (
     <div>
@@ -8,7 +8,7 @@ const Page = () => {
       <JoinNow
         textColor="text-acm-gray-500"
         backgroundColor="bg-amber-100"
-        image={ACM} //placeholder
+        image={SPARK1}
       />
     </div>
   );
