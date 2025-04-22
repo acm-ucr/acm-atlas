@@ -3,6 +3,10 @@ import Header from "@/components/home/header";
 import SeeMoreLink from "@/components/home/seemorelink";
 import FeaturedProjects from "@/components/home/featuredprojects";
 import Upcoming from "@/components/home/upcoming";
+import WhatWeDo from "@/components/WhatWeDo";
+
+// In your page component:
+<WhatWeDo />;
 
 const Home = () => {
   return (
@@ -14,6 +18,7 @@ const Home = () => {
       <Upcoming />
       <SeeMoreLink />
       <FeaturedProjects />
+      <WhatWeDo />
     </div>
   );
 };
