@@ -1,4 +1,4 @@
-const Header = () => {
+const AboutUs = () => {
   return (
     <div>
       <div className="flex flex-col justify-center">
@@ -10,4 +10,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AboutUs;

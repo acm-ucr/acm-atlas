@@ -12,7 +12,7 @@ interface BoardProps {
   github: string;
 }
 
-const BoardCard = ({
+const Card = ({
   name,
   position,
   color,
@@ -40,4 +40,4 @@ const BoardCard = ({
   );
 };
 
-export default BoardCard;
+export default Card;
