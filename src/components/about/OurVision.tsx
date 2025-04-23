@@ -23,7 +23,7 @@ const OurVision = () => {
               src={ourvision3}
               alt="Image 3"
               width={184}
-              height={499}
+              height={500}
               className="rounded-3xl"
             />
           </div>
