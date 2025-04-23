@@ -1,6 +1,6 @@
 import ViewAllLink from "@/components/home/viewalllink";
-import Header from "@/components/home/header";
-import UpcomingEvents from "@/components/home/UpcomingEvents";
+import Header from "@/components/hacks/Header";
+import Upcoming from "@/components/home/upcoming";
 import SeeMoreLink from "@/components/home/seemorelink";
 import FeaturedProjects from "@/components/home/featuredprojects";
 import Landing from "@/components/home/landing";
@@ -13,7 +13,7 @@ const Home = () => {
       <ViewAllLink link="/programs/spark">Spark</ViewAllLink>
       <ViewAllLink link="/programs/create">Create</ViewAllLink>
       <ViewAllLink link="/programs/forge">Forge</ViewAllLink>
-      <UpcomingEvents />
+      <Upcoming />
       <SeeMoreLink />
       <FeaturedProjects />
     </div>

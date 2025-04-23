@@ -1,9 +1,5 @@
 const navigations = [
   {
-    name: "JOIN US",
-    link: "/",
-  },
-  {
     name: "ABOUT",
     link: "/about",
   },
@@ -44,6 +40,10 @@ const navigations = [
   {
     name: "EVENTS",
     link: "/events",
+  },
+  {
+    name: "JOIN US",
+    link: "/join",
   },
 ];
 
