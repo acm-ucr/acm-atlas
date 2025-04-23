@@ -1,8 +1,8 @@
 import Image from "next/image";
-const OurVision1 = "AboutUs/ourvision1.webp";
-const OurVision2 = "AboutUs/ourvision2.webp";
-const OurVision3 = "AboutUs/ourvision3.webp";
-const OurVision4 = "AboutUs/ourvision4.webp";
+const ourvision1 = "AboutUs/our_vision1.webp";
+const ourvision2 = "AboutUs/our_vision2.webp";
+const ourvision3 = "AboutUs/our_vision3.webp";
+const ourvision4 = "AboutUs/our_vision4.webp";
 
 const OurVision = () => {
   return (
@@ -11,7 +11,7 @@ const OurVision = () => {
         <div className="col-span-2 grid grid-rows-3 gap-y-6">
           <div className="relative mt-4 aspect-[1/1] w-auto overflow-hidden rounded-4xl">
             <Image
-              src={OurVision1}
+              src={ourvision1}
               alt="Image 1"
               fill
               className="object-cover"
@@ -19,7 +19,7 @@ const OurVision = () => {
           </div>
           <div className="relative row-span-2 h-[52.5%] w-auto overflow-hidden rounded-4xl">
             <Image
-              src={OurVision3}
+              src={ourvision3}
               alt="Image 3"
               fill
               className="object-cover"
@@ -29,7 +29,7 @@ const OurVision = () => {
         <div className="col-span-3 m-4 grid grid-rows-2 gap-4">
           <div className="relative aspect-[1/1] w-auto overflow-hidden rounded-4xl">
             <Image
-              src={OurVision2}
+              src={ourvision2}
               alt="Image 2"
               fill
               className="object-cover"
@@ -37,7 +37,7 @@ const OurVision = () => {
           </div>
           <div className="relative mt-[-48] aspect-[15/9] w-auto overflow-hidden rounded-4xl">
             <Image
-              src={OurVision4}
+              src={ourvision4}
               alt="Image 4"
               fill
               className="object-cover"
