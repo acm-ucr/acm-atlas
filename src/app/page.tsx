@@ -1,8 +1,8 @@
 import ViewAllLink from "@/components/home/viewalllink";
-import Landing from "@/components/home/landing";
+import Upcoming from "@/components/home/upcoming";
 import SeeMoreLink from "@/components/home/seemorelink";
 import FeaturedProjects from "@/components/home/featuredprojects";
-import Upcoming from "@/components/home/upcoming";
+import Landing from "@/components/home/landing";
 
 const Home = () => {
   return (
