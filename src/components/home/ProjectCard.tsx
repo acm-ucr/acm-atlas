@@ -9,9 +9,9 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, image, link }: ProjectCardProps) => {
   return (
-    <Link href={link}>
+    <Link href={link} className="relative flex justify-center">
       <Image src={image} alt={`${project} Image`} />
-      <div className="absolute w-1/4 translate-x-5 -translate-y-20 rounded-3xl bg-white p-3 pl-5 text-2xl font-semibold">
+      <div className="absolute bottom-0 w-11/12 -translate-y-4 rounded-3xl bg-white p-3 pl-5 text-2xl font-semibold">
         {project}
       </div>
     </Link>

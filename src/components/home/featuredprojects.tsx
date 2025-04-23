@@ -1,5 +1,5 @@
 import Link from "next/link";
-import ProjectCard from "../home/ProjectCard";
+import ProjectCard from "./projectcard";
 import Spark1 from "@/public/spark/pad.webp";
 import Spark2 from "@/public/spark/aviatr.webp";
 import Spark3 from "@/public/spark/saf.webp";
