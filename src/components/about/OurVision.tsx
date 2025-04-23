@@ -1,8 +1,8 @@
 import Image from "next/image";
-const OurVision1 = "AboutUs/OurVision1.webp";
-const OurVision2 = "AboutUs/OurVision2.webp";
-const OurVision3 = "AboutUs/OurVision3.webp";
-const OurVision4 = "AboutUs/OurVision4.webp";
+const OurVision1 = "AboutUs/ourvision1.webp";
+const OurVision2 = "AboutUs/ourvision2.webp";
+const OurVision3 = "AboutUs/ourvision3.webp";
+const OurVision4 = "AboutUs/ourvision4.webp";
 
 const OurVision = () => {
   return (
@@ -45,7 +45,7 @@ const OurVision = () => {
           </div>
         </div>
       </div>
-      <div className="text-acm-gray-500 flex flex-col items-center text-center">
+      <div className="text-acm-gray-500 mt-24 flex flex-col items-center text-center">
         <p className="w-auto text-4xl font-bold">OUR VISION</p>
         <p className="mt-5 w-5/6 text-2xl leading-normal font-medium">
           Our Vision is simple: We want to improve our members professionally,
