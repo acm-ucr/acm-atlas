@@ -1,19 +1,15 @@
-import ViewAllLink from "@/components/home/viewalllink";
+import Landing from "@/components/home/landing";
+import FeaturedProjects from "@/components/home/featuredprojects";
 import Upcoming from "@/components/home/upcoming";
 import SeeMoreLink from "@/components/home/seemorelink";
-import FeaturedProjects from "@/components/home/featuredprojects";
-import Landing from "@/components/home/landing";
 
 const Home = () => {
   return (
     <div>
       <Landing />
-      <ViewAllLink link="/programs/spark">Spark</ViewAllLink>
-      <ViewAllLink link="/programs/create">Create</ViewAllLink>
-      <ViewAllLink link="/programs/forge">Forge</ViewAllLink>
+      <FeaturedProjects />
       <Upcoming />
       <SeeMoreLink />
-      <FeaturedProjects />
     </div>
   );
 };
