@@ -1,6 +1,5 @@
 import AboutUs from "@/components/about/aboutus";
-import OurVision from "@/components/about/OurVision";
-
+import OurVision from "@/components/about/ourvision";
 const Page = () => {
   return (
     <div>
