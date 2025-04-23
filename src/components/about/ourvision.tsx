@@ -1,56 +1,40 @@
 import Image from "next/image";
-const ourvision1 = "aboutus/ourvision1.webp";
-const ourvision2 = "aboutus/ourvision2.webp";
-const ourvision3 = "aboutus/ourvision3.webp";
-const ourvision4 = "aboutus/ourvision4.webp";
+import ourvision1 from "@/public/about/ourvision1.webp";
+import ourvision2 from "@/public/about/ourvision2.webp";
+import ourvision3 from "@/public/about/ourvision3.webp";
+import ourvision4 from "@/public/about/ourvision4.webp";
 
 const OurVision = () => {
   return (
-    <div className="mx-auto grid w-5/6 grid-cols-2">
-      <div className="grid w-auto grid-cols-5">
-        <div className="col-span-2 ml-16 grid grid-rows-3 gap-y-6">
-          <div className="mt-4 w-auto">
-            <Image
-              src={ourvision1}
-              alt="Image 1"
-              width={184}
-              height={500}
-              className="rounded-3xl"
-            />
-          </div>
-          <div className="row-span-2 -mt-2 w-auto">
-            <Image
-              src={ourvision3}
-              alt="Image 3"
-              width={184}
-              height={500}
-              className="rounded-3xl"
-            />
-          </div>
+    <div className="mx-auto grid w-5/6 grid-cols-2 items-stretch gap-8 pt-[10vh]">
+      <div className="grid h-full grid-cols-5 gap-4">
+        <div className="col-span-2 grid h-full grid-rows-3 gap-4">
+          <Image
+            src={ourvision1}
+            alt="ourvision1"
+            className="h-full w-full rounded-3xl object-cover"
+          />
+          <Image
+            src={ourvision3}
+            alt="ourvision3"
+            className="row-span-2 h-full w-full rounded-3xl object-cover"
+          />
         </div>
-        <div className="col-span-3 m-4 grid grid-rows-2 gap-9">
-          <div className="w-auto">
-            <Image
-              src={ourvision2}
-              alt="Image 2"
-              width={220}
-              height={500}
-              className="rounded-3xl"
-            />
-          </div>
-          <div className="mt-[-39] w-auto">
-            <Image
-              src={ourvision4}
-              alt="Image 4"
-              width={220}
-              height={500}
-              className="rounded-3xl"
-            />
-          </div>
+        <div className="col-span-3 grid h-full grid-rows-2 gap-4">
+          <Image
+            src={ourvision2}
+            alt="ourvision2"
+            className="h-full w-full rounded-3xl object-cover"
+          />
+          <Image
+            src={ourvision4}
+            alt="ourvision4"
+            className="h-full w-full rounded-3xl object-cover"
+          />
         </div>
       </div>
-      <div className="text-acm-gray-500 mt-8 flex flex-col items-center text-center">
-        <p className="w-auto text-4xl font-bold">OUR VISION</p>
+      <div className="text-acm-gray-500 flex h-full flex-col items-center justify-center text-center">
+        <p className="text-4xl font-bold">OUR VISION</p>
         <p className="mt-5 w-5/6 text-2xl leading-normal font-medium">
           Our Vision is simple: We want to improve our members professionally,
           technically, and personally. We want to help our members grow
