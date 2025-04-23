@@ -1,14 +1,14 @@
 import Header from "@/components/programs/forge/header";
-import JoinNow from "@/components/programs/join-now";
-import FORGE1 from "@/public/forge_1.jpg";
+import Joinus from "@/components/programs/joinus";
+import Forge1 from "@/public/forge/forge1.webp";
 const Page = () => {
   return (
     <div>
       <Header />
-      <JoinNow
+      <Joinus
         textColor="text-white"
-        backgroundColor="bg-[#47484A]"
-        image={FORGE1}
+        backgroundColor="bg-acm-gray-200"
+        image={Forge1}
       />
     </div>
   );

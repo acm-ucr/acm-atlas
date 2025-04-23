@@ -1,10 +1,10 @@
 import Header from "@/components/programs/bitbyte/header";
-import JoinNowB from "@/components/programs/join-now-bitbyte";
+import Join from "@/components/programs/bitbyte/join";
 const Page = () => {
   return (
     <div>
       <Header />
-      <JoinNowB textColor="text-white" backgroundColor="bg-[#44624A]" />
+      <Join />
     </div>
   );
 };

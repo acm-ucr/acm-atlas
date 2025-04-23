@@ -1,15 +1,15 @@
 import Header from "@/components/programs/spark/header";
-import JoinNow from "@/components/programs/join-now";
-import SPARK1 from "@/public/spark_1.jpg";
+import Joinus from "@/components/programs/joinus";
+import Spark1 from "@/public/spark/spark1.webp";
 import ProjectGrid from "@/components/programs/spark/projectgrid";
 const Page = () => {
   return (
     <div>
       <Header />
-      <JoinNow
+      <Joinus
         textColor="text-acm-gray-500"
-        backgroundColor="bg-amber-100"
-        image={SPARK1}
+        backgroundColor="bg-acm-yellow-200"
+        image={Spark1}
       />
       <ProjectGrid />
     </div>

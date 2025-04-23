@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ACMLogo from "@/public/acm.webp";
+import ACMLogo from "@/public/logos/acm.webp";
 import Link from "next/link";
 import { FaDiscord, FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";

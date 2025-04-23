@@ -1,15 +1,14 @@
 import Header from "@/components/programs/das/header";
-import JoinNow from "@/components/programs/join-now";
-import DAS2 from "@/public/DAS_2.jpg";
-
+import Joinus from "@/components/programs/joinus";
+import Das1 from "@/public/das/das1.webp";
 const Page = () => {
   return (
     <div>
       <Header />
-      <JoinNow
+      <Joinus
         textColor="text-white"
-        backgroundColor="bg-[#B889EA]"
-        image={DAS2}
+        backgroundColor="bg-acm-purple-200"
+        image={Das1}
       />
     </div>
   );
