@@ -1,8 +1,8 @@
 import Image from "next/image";
-const ourvision1 = "aboutUs/ourvision1.webp";
-const ourvision2 = "aboutUs/ourvision2.webp";
-const ourvision3 = "aboutUs/ourvision3.webp";
-const ourvision4 = "aboutUs/ourvision4.webp";
+const ourvision1 = "aboutus/ourvision1.webp";
+const ourvision2 = "aboutus/ourvision2.webp";
+const ourvision3 = "aboutus/ourvision3.webp";
+const ourvision4 = "aboutus/ourvision4.webp";
 
 const OurVision = () => {
   return (
