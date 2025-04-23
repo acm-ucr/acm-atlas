@@ -11,7 +11,7 @@ const ProjectCard = ({ project, image, link }: ProjectCardProps) => {
   return (
     <Link href={link}>
       <Image src={image} alt={`${project} Image`} />
-      <div className="absolute w-100 translate-x-5 -translate-y-20 rounded-3xl bg-white p-3 pl-5 text-2xl font-semibold">
+      <div className="absolute w-1/4 translate-x-5 -translate-y-20 rounded-3xl bg-white p-3 pl-5 text-2xl font-semibold">
         {project}
       </div>
     </Link>
