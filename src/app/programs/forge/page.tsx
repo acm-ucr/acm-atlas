@@ -1,6 +1,7 @@
 import Header from "@/components/programs/forge/header";
 import Joinus from "@/components/programs/joinus";
 import Forge1 from "@/public/forge/forge1.webp";
+
 const Page = () => {
   return (
     <div>
