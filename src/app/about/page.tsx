@@ -9,7 +9,7 @@ const Page = () => {
       <WhyWeDoIt
         header={WhyWeDoItData.at(0)?.header}
         pText={WhyWeDoItData.at(0)?.pText}
-        images={WhyWeDoItData.at(0)?.images.image1}
+        images={WhyWeDoItData.at(0)?.images}
       />
     </div>
   );
