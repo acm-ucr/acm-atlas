@@ -12,26 +12,31 @@ interface WhyWeDoItProps {
 const WhyWeDoIt = ({ header, pText }: WhyWeDoItProps) => {
   return (
     <div className="my-10 grid w-screen grid-cols-2 items-center gap-8 px-20">
-      <div className="grid grid-cols-5 gap-6">
-        <div className="col-span-2 grid h-max grid-rows-3 gap-6">
-          <div className="row-span-1">
-            <Image className="rounded-2xl" src={Image1} alt="Image1" />
-          </div>
-          <div className="row-span-2">
-            <Image
-              className="rounded-2xl object-cover"
-              src={Image3}
-              alt="Image3"
-            />
-          </div>
+      <div className="grid h-full grid-cols-5 gap-4">
+        <div className="col-span-2 grid h-full grid-rows-3 gap-4">
+          <Image
+            className="h-full w-full rounded-3xl object-cover"
+            src={Image1}
+            alt="Image1"
+          />
+
+          <Image
+            className="row-span-2 h-full w-full rounded-3xl object-cover"
+            src={Image3}
+            alt="Image3"
+          />
         </div>
-        <div className="col-span-3 grid grid-rows-2 gap-6">
-          <div>
-            <Image className="rounded-2xl" src={Image2} alt="Image2" />
-          </div>
-          <div>
-            <Image className="rounded-2xl" src={Image4} alt="Image4" />
-          </div>
+        <div className="col-span-3 grid h-full grid-rows-2 gap-4">
+          <Image
+            className="h-full w-full rounded-3xl object-cover"
+            src={Image2}
+            alt="Image2"
+          />
+          <Image
+            className="h-full w-full rounded-3xl object-cover"
+            src={Image4}
+            alt="Image4"
+          />
         </div>
       </div>
       <div className="text-center">
