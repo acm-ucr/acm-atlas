@@ -19,7 +19,6 @@ const WhyWeDoIt = ({ header, pText }: WhyWeDoItProps) => {
             src={Image1}
             alt="Image1"
           />
-
           <Image
             className="row-span-2 h-full w-full rounded-3xl object-cover"
             src={Image3}
