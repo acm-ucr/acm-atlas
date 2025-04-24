@@ -5,8 +5,8 @@ const Page = () => {
   return (
     <div>
       <WhyWeDoIt
-        header={WhyWeDoItData.at(0)?.header}
-        pText={WhyWeDoItData.at(0)?.pText}
+        header={WhyWeDoItData.at(0)!.header}
+        pText={WhyWeDoItData.at(0)!.pText}
       />
     </div>
   );
