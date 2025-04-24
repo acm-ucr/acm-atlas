@@ -1,6 +1,6 @@
-import pad from "@/public/Spark/pad.webp";
-import aviatr from "@/public/Spark/aviatr.webp";
-import hsa from "@/public/Spark/hsa.webp";
+import pad from "@/public/programs/spark/pad.webp";
+import aviatr from "@/public/programs/spark/aviatr.webp";
+import hsa from "@/public/programs/spark/hsa.webp";
 
 const spark = [
   {
