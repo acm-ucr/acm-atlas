@@ -17,7 +17,7 @@ const Header = () => {
       <Image
         className="absolute top-[20%] right-[25%]"
         src={BitByte}
-        alt="BitBytes"
+        alt="BitByte"
       />
     </div>
   );
