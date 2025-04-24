@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Forge from "@/public/logos/forge.svg";
+import grayEllipse from "@/public/ellipses/grayEllipse.svg";
 
 const Header = () => {
   return (
-    <div className="text-acm-gray-500 relative overflow-hidden p-10 text-2xl font-semibold">
-      <div className="bg-acm-gray-400 absolute top-0 z-0 h-[60%] w-[30%] rounded-full opacity-50 blur-3xl" />
-      <div className="text-center">
-        <p className="flex justify-center p-5 text-5xl font-bold">FORGE</p>
+    <div className="text-acm-gray-500 relative pb-10 text-2xl font-semibold">
+      <Image className="absolute" src={grayEllipse} alt="gray" />
+      <div className="py-5 text-center">
+        <p className="flex justify-center text-5xl font-bold">FORGE</p>
         <p className="pb-5">Robotics</p>
       </div>
       <p className="ml-[15%] w-3/8">

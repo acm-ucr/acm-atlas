@@ -1,12 +1,13 @@
 import Image from "next/image";
-import BitBytes from "@/public/logos/bitbytes.svg";
+import BitByte from "@/public/logos/bitbyte.svg";
+import greenEllipse from "@/public/ellipses/greenEllipse.svg";
 
 const Header = () => {
   return (
-    <div className="text-acm-gray-500 relative overflow-hidden p-10 text-2xl font-semibold">
-      <div className="bg-acm-green-100 absolute top-0 z-0 h-[60%] w-[30%] rounded-full opacity-50 blur-3xl" />
-      <div className="text-center">
-        <p className="flex justify-center p-5 text-5xl font-bold">BIT/BYTES</p>
+    <div className="text-acm-gray-500 relative pb-10 text-2xl font-semibold">
+      <Image className="absolute" src={greenEllipse} alt="green" />
+      <div className="py-5 text-center">
+        <p className="flex justify-center p-5 text-5xl font-bold">BIT/BYTE</p>
         <p className="pb-5">Mentorship</p>
       </div>
       <p className="ml-[15%] w-3/8">
@@ -15,7 +16,7 @@ const Header = () => {
       </p>
       <Image
         className="absolute top-[20%] right-[25%]"
-        src={BitBytes}
+        src={BitByte}
         alt="BitBytes"
       />
     </div>

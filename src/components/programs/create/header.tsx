@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Create from "@/public/logos/create.svg";
+import blueEllipse from "@/public/ellipses/blueEllipse.svg";
 
 const Header = () => {
   return (
-    <div className="text-acm-gray-500 relative overflow-hidden p-10 text-2xl font-semibold">
-      <div className="bg-acm-blue-200 absolute top-0 z-0 h-[60%] w-[30%] rounded-full opacity-50 blur-3xl" />
-      <div className="text-center">
+    <div className="text-acm-gray-500 relative pb-10 text-2xl font-semibold">
+      <Image className="absolute" src={blueEllipse} alt="blue" />
+      <div className="py-5 text-center">
         <p className="flex justify-center p-7 text-5xl font-bold">CREATE</p>
         <p className="pb-7">UI/UX Design</p>
       </div>

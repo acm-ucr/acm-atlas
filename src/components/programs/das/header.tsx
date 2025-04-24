@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Das from "@/public/logos/das.svg";
+import purpleEllipse from "@/public/ellipses/purpleEllipse.svg";
 
 const Header = () => {
   return (
-    <div className="text-acm-gray-500 relative overflow-hidden p-10 text-2xl font-semibold">
-      <div className="bg-acm-purple-100 absolute top-0 z-0 h-[60%] w-[30%] rounded-full opacity-50 blur-3xl" />
-      <div className="text-center">
-        <p className="flex justify-center p-7 text-5xl font-bold">DAS</p>
+    <div className="text-acm-gray-500 relative pb-10 text-2xl font-semibold">
+      <Image className="absolute" src={purpleEllipse} alt="purple" />
+      <div className="py-5 text-center">
+        <p className="flex justify-center text-5xl font-bold">DAS</p>
         <p className="pb-7">Data Science, AI, Statistics</p>
       </div>
       <p className="ml-[15%] w-3/8">

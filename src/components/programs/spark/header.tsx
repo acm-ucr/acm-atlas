@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Spark from "@/public/logos/spark.svg";
+import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
 
 const Header = () => {
   return (
-    <div className="text-acm-gray-500 relative overflow-hidden p-10 text-2xl font-semibold">
-      <div className="bg-acm-yellow-400 absolute top-0 z-0 h-[60%] w-[30%] rounded-full opacity-50 blur-3xl" />
-      <div className="text-center">
+    <div className="text-acm-gray-500 relative pb-10 text-2xl font-semibold">
+      <Image className="absolute" src={yellowEllipse} alt="yellow" />
+      <div className="py-5 text-center">
         <p className="flex justify-center p-5 text-5xl font-bold">SPARK</p>
         <p className="pb-5">Web Development</p>
       </div>
