@@ -4,12 +4,8 @@ import Image2 from "@/public/WhyWeDoIt/image-2.webp";
 import Image3 from "@/public/WhyWeDoIt/image-3.webp";
 import Image4 from "@/public/WhyWeDoIt/image-4.webp";
 
-interface WhyWeDoItProps {
-  header: string;
-  pText: string;
-}
 
-const WhyWeDoIt = ({ header, pText }: WhyWeDoItProps) => {
+const WhyWeDoIt = () => {
   return (
     <div className="my-10 grid w-screen grid-cols-2 items-center gap-8 px-20">
       <div className="grid h-full grid-cols-5 gap-4">
@@ -39,8 +35,15 @@ const WhyWeDoIt = ({ header, pText }: WhyWeDoItProps) => {
         </div>
       </div>
       <div className="text-center">
-        <p className="text-acm-gray-500 py-5 text-5xl font-bold">{header}</p>
-        <p className="text-acm-gray-500 text-3xl leading-10">{pText}</p>
+        <p className="text-acm-gray-500 py-5 text-5xl font-bold">
+          WHY WE DO IT
+        </p>
+        <p className="text-acm-gray-500 text-3xl leading-10">
+          We want UCR to become a premier institution for Computer Science and
+          Engineering. University courses provide a good foundation, but we
+          strive to build upon that. But more importantly, we want our members
+          to make a positive difference in the world through software.
+        </p>
       </div>
     </div>
   );
