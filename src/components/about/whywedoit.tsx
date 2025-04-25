@@ -11,7 +11,7 @@ interface WhyWeDoItProps {
 
 const WhyWeDoIt = ({ header, pText }: WhyWeDoItProps) => {
   return (
-    <div className="my-10 grid w-screen grid-cols-2 items-center gap-8 px-20">
+    <div className="my-10 grid w-5/6 mx-auto grid-cols-2 items-center gap-8">
       <div className="grid h-full grid-cols-5 gap-4">
         <div className="col-span-2 grid h-full grid-rows-3 gap-4">
           <Image
