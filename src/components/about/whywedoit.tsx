@@ -4,10 +4,9 @@ import Image2 from "@/public/WhyWeDoIt/image-2.webp";
 import Image3 from "@/public/WhyWeDoIt/image-3.webp";
 import Image4 from "@/public/WhyWeDoIt/image-4.webp";
 
-
 const WhyWeDoIt = () => {
   return (
-    <div className="my-10 grid w-5/6 mx-auto grid-cols-2 items-center gap-8">
+    <div className="mx-auto my-10 grid w-5/6 grid-cols-2 items-center gap-8">
       <div className="grid h-full grid-cols-5 gap-4">
         <div className="col-span-2 grid h-full grid-rows-3 gap-4">
           <Image
