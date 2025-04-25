@@ -5,8 +5,8 @@ import group from "@/public/join/gallery/group.webp";
 
 const Gallery = () => {
   return (
-    <div>
-      <p>Gallery</p>
+    <div className="flex w-screen flex-col items-center">
+      <p className="text-acm-gray-500 my-16 text-3xl font-bold">GALLERY</p>
       <div className="grid grid-cols-5 gap-8">
         <div className="grid gap-8">
           <Image
@@ -36,6 +36,9 @@ const Gallery = () => {
           <div className="bg-acm-blue-600 h-40 w-40 rounded-3xl object-cover"></div>
         </div>
       </div>
+      <button className="my-10 bg-acm-blue-700 rounded-xl px-10 py-1 text-2xl text-white">
+        See More
+      </button>
     </div>
   );
 };
