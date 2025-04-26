@@ -1,8 +1,12 @@
+import Header from "@/components/not-found/header";
+import HomeButton from "@/components/not-found/homebutton";
+
 const NotFound = () => {
   return (
-    <p className="text-acm-navy flex h-screen w-screen items-center justify-center text-4xl font-semibold">
-      PAGE NOT FOUND
-    </p>
+    <div>
+      <Header />
+      <HomeButton />
+    </div>
   );
 };
 
