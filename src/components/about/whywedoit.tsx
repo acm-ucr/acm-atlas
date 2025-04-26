@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Image1 from "@/public/WhyWeDoIt/image-1.webp";
-import Image2 from "@/public/WhyWeDoIt/image-2.webp";
-import Image3 from "@/public/WhyWeDoIt/image-3.webp";
-import Image4 from "@/public/WhyWeDoIt/image-4.webp";
+import whywedoit1 from "@/public/about/whywedoit1.webp";
+import whywedoit2 from "@/public/about/whywedoit2.webp";
+import whywedoit3 from "@/public/about/whywedoit3.webp";
+import whywedoit4 from "@/public/about/whywedoit4.webp";
 
 const WhyWeDoIt = () => {
   return (
@@ -11,24 +11,24 @@ const WhyWeDoIt = () => {
         <div className="col-span-2 grid h-full grid-rows-3 gap-4">
           <Image
             className="h-full w-full rounded-3xl object-cover"
-            src={Image1}
+            src={whywedoit1}
             alt="Image1"
           />
           <Image
             className="row-span-2 h-full w-full rounded-3xl object-cover"
-            src={Image3}
+            src={whywedoit2}
             alt="Image3"
           />
         </div>
         <div className="col-span-3 grid h-full grid-rows-2 gap-4">
           <Image
             className="h-full w-full rounded-3xl object-cover"
-            src={Image2}
+            src={whywedoit3}
             alt="Image2"
           />
           <Image
             className="h-full w-full rounded-3xl object-cover"
-            src={Image4}
+            src={whywedoit4}
             alt="Image4"
           />
         </div>
