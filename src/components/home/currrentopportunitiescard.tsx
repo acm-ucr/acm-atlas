@@ -21,7 +21,9 @@ const CurrentOpportunitiesCard = ({
         height={500}
         className="w-85"
       />
-      <p className="text-acm-gray-500 absolute top-6 left-6 text-xl">{index}</p>
+      <p className="text-acm-gray-500 absolute top-6 left-6 text-xl">
+        0{index}
+      </p>
       <div className="absolute bottom-22 left-8 flex items-center gap-2">
         <p className="text-acm-gray-500 text-xl font-semibold uppercase">
           {name}
