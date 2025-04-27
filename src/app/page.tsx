@@ -10,9 +10,9 @@ const Home = () => {
     <div>
       <Landing />
       <StatsGrid />
+      <CurrentOpportunities />
       <FeaturedProjects />
       <Upcoming />
-      <CurrentOpportunities />
       <SeeMoreLink />
     </div>
   );
