@@ -4,20 +4,32 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  --drop-shadow-3xl-acm-blue-500: 0 10px 20px rgba(79, 167, 255, 1);
+  --drop-shadow-3xl-acm-yellow-400: 0 10px 20px rgba(255, 234, 148, 1);
+  --drop-shadow-3xl-acm-blue-100: 0 10px 20px rgba(157, 216, 255, 1);
+  --drop-shadow-3xl-acm-gray-400: 0 10px 20px rgba(142, 142, 143, 1);
+  --drop-shadow-3xl-acm-purple-100: 0 10px 20px rgba(219, 186, 255, 1);
   --color-acm-yellow-100: #fff6d1;
+  --color-acm-yellow-200: #fff3c3;
   --color-acm-yellow-400: #f5d166;
   --color-acm-gray-100: #e4e4e4;
+  --color-acm-gray-200: #47484a;
   --color-acm-gray-400: #8e8e8e;
   --color-acm-gray-500: #444444;
   --color-acm-blue-100: #ddf4ff;
+  --color-acm-blue-200: #ccebfd;
   --color-acm-blue-400: #91b9ff;
   --color-acm-blue-500: #2391ff;
+  --color-acm-blue-600: #5e99ff;
   --color-acm-blue-700: #4185fc;
   --color-acm-navy: #173967;
   --color-acm-turquoise: #3bc5bb;
   --color-acm-purple-100: #e1c5ff;
+  --color-acm-purple-200: #b889ea;
   --color-acm-green-100: #c5ecc0;
+  --color-acm-green-200: #44624a;
   --color-acm-green-500: #1f3f3d;
+
   --color-acm-red: #dd2c00;
   --color-acm-eslint: #8080f2;
   --color-acm-typescript: #3178c6;
