@@ -12,7 +12,7 @@ const Aurorabuttons = () => {
             href="https://discord.gg/5xzE2qTEKZ"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-acm-green-200 flex justify-center rounded-xl px-30 py-7 text-3xl font-medium text-white"
+            className="bg-acm-green-300 flex justify-center rounded-xl px-30 py-7 text-3xl font-medium text-white"
           >
             Join our Discord!
           </Link>
@@ -26,7 +26,7 @@ const Aurorabuttons = () => {
             href="https://medium.com/@contact.acmucr"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-acm-green-200 flex justify-center rounded-xl px-30 py-7 text-3xl font-medium text-white"
+            className="bg-acm-green-300 flex justify-center rounded-xl px-30 py-7 text-3xl font-medium text-white"
           >
             Medium
           </Link>
@@ -39,7 +39,7 @@ const Aurorabuttons = () => {
             href="https://github.com/acm-ucr/aurora"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-acm-green-200 flex justify-center rounded-xl px-30 py-7 text-3xl font-medium text-white"
+            className="bg-acm-green-300 flex justify-center rounded-xl px-30 py-7 text-3xl font-medium text-white"
           >
             Github
           </Link>
