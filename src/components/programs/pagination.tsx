@@ -15,7 +15,7 @@ import {
 const PaginationComponent = () => {
 
   return (
-    <div className="">
+    <div className="scale-125 py-5">
       <Pagination>
         <PaginationContent>
           <PaginationItem>
