@@ -1,15 +1,9 @@
 import Image from "next/image";
+import stanley from "@/public/stanley.webp";
 
 const WhatWeDo = () => {
-  const images = [
-    "/path-to-image1.jpg",
-    "/path-to-image2.jpg",
-    "/path-to-image3.jpg",
-    "/path-to-image4.jpg",
-  ];
-
   const icons = [
-    { icon: "💻" },
+    { icon: "</>" },
     { icon: "📝" },
     { icon: "⚙️" },
     { icon: "📈" },
@@ -17,58 +11,63 @@ const WhatWeDo = () => {
   ];
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-16">
-      {/* Main grid container */}
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
-        {/* Left side: Text and Icons */}
-        <div className="flex flex-col justify-center space-y-8">
-          {/* Heading */}
-          <h2 className="text-4xl font-bold">WHAT WE DO</h2>
-
-          {/* Description Text */}
-          <div>
-            <p className="text-lg leading-relaxed">
-              Every quarter, we focus on improving specific aspects of our
-              members. In the Fall, we develop professional resumes, build
-              all-star LinkedIns, and offer workshops on Applying Effectively at
-              companies from the Big 4 to startups.
-            </p>
-          </div>
-
-          {/* Icons Grid */}
-          <div className="mt-8 grid grid-cols-3 gap-4">
-            {icons.map((item, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center rounded-lg bg-gray-50 p-4 transition-colors hover:bg-gray-100"
-              >
-                <span className="mb-2 text-3xl">{item.icon}</span>
-                <span className="text-center text-sm">{item.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Right side: Image Grid */}
-        <div className="grid h-fit grid-cols-2 gap-4">
-          {images.map((src, index) => (
+    <div className="mx-auto grid w-5/6 grid-cols-2 items-stretch gap-8 pt-[10vh]">
+      <div className="text-acm-gray-500 flex h-full flex-col items-center justify-center text-center">
+        <h2 className="text-4xl font-bold">WHAT WE DO</h2>
+        <br />
+        <p className="mt-5 w-5/6 text-xl leading-normal">
+          Every quarter, we focus on improving specific aspects of our 
+          members. In the Fall, we develop professional resumes, build 
+          all-star LinkedIns, and offer workshops on Applying Effectively 
+          at companies from the Big 4 to startups.
+        </p>
+        <div className="mt-12 flex justify-center gap-8">
+          {icons.map((item, index) => (
             <div
               key={index}
-              className={`relative ${
-                index % 3 === 0 ? "h-72" : "h-64"
-              } overflow-hidden rounded-lg`}
+              className="flex h-16 w-16 transform items-center justify-center rounded-lg bg-yellow-50 rotate-45"
             >
-              <Image
-                src={src}
-                alt={`Activity image ${index + 1}`}
-                fill
-                className="object-cover transition-transform duration-300 hover:scale-105"
-              />
+              <span className="-rotate-45 text-2xl">{item.icon}</span>
             </div>
           ))}
         </div>
       </div>
-    </section>
+
+      <div className="grid h-[350px] grid-cols-5 gap-4">
+        <div className="col-span-2 grid h-full grid-rows-3 gap-4">
+          <div className="h-[100px]">
+            <Image
+              src={stanley}
+              alt="stanley1"
+              className="h-full w-full rounded-3xl object-cover"
+            />
+          </div>
+          <div className="row-span-2 h-[220px]">
+            <Image
+              src={stanley}
+              alt="stanley2"
+              className="h-full w-full rounded-3xl object-cover"
+            />
+          </div>
+        </div>
+        <div className="col-span-3 grid h-full grid-rows-2 gap-4">
+          <div className="h-[160px]">
+            <Image
+              src={stanley}
+              alt="stanley3"
+              className="h-full w-full rounded-3xl object-cover"
+            />
+          </div>
+          <div className="h-[160px]">
+            <Image
+              src={stanley}
+              alt="stanley4"
+              className="h-full w-full rounded-3xl object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

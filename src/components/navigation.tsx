@@ -18,11 +18,14 @@ import navigations from "@/data/navigations";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navigation = () => {
   const [navBar, setNav] = useState(false);
   const [programBar, setProgramBar] = useState(false);
   const router = useRouter();
+
+  const pathname = usePathname();
 
   const handleNavBar = () => {
     setNav(!navBar);
@@ -43,11 +46,8 @@ const Navigation = () => {
         className="text-acm-gray-500 block text-3xl md:hidden"
         onClick={programBar ? handleBothBars : handleNavBar}
       />
-      <Link
-        className="text-acm-gray-500 pl-4 text-3xl font-bold md:pl-0"
-        href="/"
-      >
-        ACM@UCR
+      <Link className={pathname === "" ? "text-acm-blue-500" : ""} href="/">
+        <p className="text-acm-gray-500 text-3xl font-semibold"> ACM@UCR</p>
       </Link>
 
       {/* For web view */}
@@ -63,14 +63,27 @@ const Navigation = () => {
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                       {subItems.map(({ subName, subLink }, subIndex) => (
-                        <NavigationMenuLink key={subIndex} href={subLink}>
+                        <NavigationMenuLink
+                          key={subIndex}
+                          className={
+                            pathname === link
+                              ? "text-acm-blue-500 font-semibold"
+                              : ""
+                          }
+                          href={subLink}
+                        >
                           {subName}
                         </NavigationMenuLink>
                       ))}
                     </NavigationMenuContent>
                   </>
                 ) : (
-                  <Link href={link}>{name}</Link>
+                  <Link
+                    className={pathname === link ? "text-acm-blue-500" : ""}
+                    href={link}
+                  >
+                    {name}
+                  </Link>
                 )}
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -102,7 +115,11 @@ const Navigation = () => {
                             <div className="flex flex-col">
                               <Link
                                 href={link}
-                                className="text-base font-light"
+                                className={
+                                  pathname === link
+                                    ? "text-base font-light"
+                                    : ""
+                                }
                                 onClick={handleNavBar}
                               >
                                 {name}
@@ -115,7 +132,11 @@ const Navigation = () => {
                                     <Link
                                       key={subIndex}
                                       href={subLink}
-                                      className="py-1 text-sm font-light capitalize"
+                                      className={
+                                        pathname === subLink
+                                          ? "py-1 text-sm font-light capitalize"
+                                          : ""
+                                      }
                                       onClick={handleBothBars}
                                     >
                                       {subName.toLowerCase()}
@@ -128,7 +149,9 @@ const Navigation = () => {
                         ) : (
                           <Link
                             href={link}
-                            className="text-base font-light"
+                            className={
+                              pathname === link ? "text-base font-light" : ""
+                            }
                             onClick={handleNavBar}
                           >
                             {name}

@@ -1,4 +1,4 @@
-import Spark from "@/public/acmspark.svg";
+import Spark from "@/public/logos/spark.svg";
 
 export const whatWeOffer = [
   {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ACMLogo from "@/public/acm.webp";
+import ACMLogo from "@/public/logos/acm.webp";
 import Link from "next/link";
 import { FaDiscord, FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -40,11 +40,14 @@ const Footer = () => {
             Resources
           </p>
           <div className="text-acm-gray-400 flex flex-col text-lg font-light">
-            {/* change links */}
             <Link href="/hackpacks">Hackpacks</Link>
             <Link href="/">Template Resume</Link>
-            <Link href="/">CS Internships List</Link>
-            <Link href="/">CS Jobs List</Link>
+            <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
+              CS Internships List
+            </Link>
+            <Link href="https://github.com/SimplifyJobs/New-Grad-Positions">
+              CS Jobs List
+            </Link>
           </div>
         </div>
         <div className="flex flex-col">
@@ -55,7 +58,7 @@ const Footer = () => {
             <Link href="/programs">Programs</Link>
             <Link href="/hacks">Hacks</Link>
             <Link href="/events">Events</Link>
-            <Link href="/resources">Resources</Link>
+            <Link href="/join">Join Us</Link>
           </div>
         </div>
         <div className="col-span-2 flex flex-col">
@@ -63,10 +66,13 @@ const Footer = () => {
             Contact
           </p>
           <div className="text-acm-gray-400 flex flex-col text-xl font-light">
-            <div className="flex gap-2">
+            <Link
+              href="mailto:contact.acmucr@gmail.com"
+              className="flex items-center gap-2"
+            >
               <MdEmail className="text-acm-blue-700 text-2xl" />
               <p>contact.acmucr@gmail.com</p>
-            </div>
+            </Link>
             <div className="flex gap-2">
               <FaLocationDot className="text-acm-blue-700 text-2xl" />
               <div>
