@@ -5,7 +5,7 @@ const CurrentOpportunities = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <p className="text-6xl font-bold text-gray-600">CURRENT OPPORTUNITIES</p>
-      <div className="flex w-4/5 flex-wrap justify-center gap-15">
+      <div className="flex w-11/12 2xl:w-4/5 flex-wrap justify-center gap-15">
         {opportunities.map(
           (
             { name, card_background, year_and_quarter, application_link, link },
