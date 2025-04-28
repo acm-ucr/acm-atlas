@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+/* @import "tailwindcss/preflight" */
 
 @custom-variant dark (&:is(.dark *));
 
@@ -149,5 +150,35 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee-continuation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  .animate-marquee-continuation {
+    animation: marquee-continuation 20s linear infinite;
   }
 }
