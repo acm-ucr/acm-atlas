@@ -11,6 +11,9 @@ const CurrentOpportunities = () => {
             key={id}
             name={item.name}
             cardBackground={item.card_background}
+            appYearAndQuarter={item.year_and_quarter}
+            applicationLink={item.application_link}
+            link={item.link}
             index={id + 1}
           />
         ))}

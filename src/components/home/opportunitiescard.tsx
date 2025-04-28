@@ -4,12 +4,18 @@ import Link from "next/link";
 interface CardProps {
   name: string;
   cardBackground: string;
+  appYearAndQuarter: string;
+  link: string;
+  applicationLink: string;
   index: number;
 }
 
-const CurrentOpportunitiesCard = ({
+const OpportunitiesCard = ({
   name,
   cardBackground,
+  appYearAndQuarter,
+  link,
+  applicationLink,
   index,
 }: CardProps) => {
   return (
@@ -29,21 +35,20 @@ const CurrentOpportunitiesCard = ({
           {name}
         </p>
         <Link
-          href={`/programs/${name}`}
+          href={link}
           className="flex h-6 w-30 justify-center rounded-full bg-white text-sm"
         >
           Learn more →
         </Link>
       </div>
-      {/* update link */}
       <Link
-        href="/"
+        href={applicationLink}
         className="text-acm-gray-500 absolute bottom-5 left-3 flex h-10 w-80 items-center justify-center rounded-full bg-white text-xl font-bold"
       >
-        SPRING '24 APPLICATION
+        {appYearAndQuarter} APPLICATION
       </Link>
     </div>
   );
 };
 
-export default CurrentOpportunitiesCard;
+export default OpportunitiesCard;
