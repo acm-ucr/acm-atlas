@@ -1,4 +1,4 @@
-import auroraIcon from "@/public/logos/aurora.svg";
+import auroraLogo from "@/public/logos/aurora.svg";
 import ProgramHeader from "@/components/programs/programheader";
 
 const Header = () => {
@@ -7,7 +7,7 @@ const Header = () => {
       header="AURORA"
       subtitle="Software Engineering"
       text="Aurora is not a 10 week program that focuses on developing wireframes on Figma for Spark Projects."
-      logo={auroraIcon}
+      logo={auroraLogo}
     />
   );
 };
