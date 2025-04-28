@@ -28,18 +28,15 @@ const OpportunitiesCard = ({
         <p className="text-acm-gray-500 text-xl font-semibold uppercase">
           {name}
         </p>
-        <Link
-          href={link}
-          className="flex justify-center rounded-full bg-white px-4 py-1 text-sm"
-        >
-          Learn more →
+        <Link href={link} className="rounded-full bg-white px-4 py-1 text-sm">
+          <button>Learn more →</button>
         </Link>
       </div>
       <Link
         href={applicationLink}
-        className="text-acm-gray-500 absolute bottom-5 left-3 flex h-10 w-80 items-center justify-center rounded-full bg-white text-xl font-bold"
+        className="text-acm-gray-500 absolute bottom-5 left-3 rounded-full bg-white px-9 py-2 text-xl font-bold"
       >
-        {appYearAndQuarter} APPLICATION
+        <button>{appYearAndQuarter} APPLICATION</button>
       </Link>
     </div>
   );
