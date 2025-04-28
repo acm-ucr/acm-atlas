@@ -1,5 +1,5 @@
 import CurrOppCard from "./currrentopportunitiescard";
-import CurrOppData from "@/data/opportunities";
+import opportunities from "@/data/opportunities";
 
 const CurrentOpportunities = () => {
   return (
