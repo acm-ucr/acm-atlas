@@ -3,7 +3,7 @@ import opportunities from "@/data/opportunities";
 
 const CurrentOpportunities = () => {
   return (
-    <div className="flex h-screen w-screen flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center">
       <p className="text-6xl font-bold text-gray-600">CURRENT OPPORTUNITIES</p>
       <div className="flex w-11/12 flex-wrap justify-center gap-15">
         {opportunities.map(
