@@ -29,14 +29,14 @@ const OpportunitiesCard = ({
           {name}
         </p>
         <Link href={link} className="rounded-full bg-white px-4 py-1 text-sm">
-          <button>Learn more →</button>
+          Learn more →
         </Link>
       </div>
       <Link
         href={applicationLink}
         className="text-acm-gray-500 absolute bottom-5 left-3 rounded-full bg-white px-9 py-2 text-xl font-bold"
       >
-        <button>{appYearAndQuarter} APPLICATION</button>
+        {appYearAndQuarter} APPLICATION
       </Link>
     </div>
   );
