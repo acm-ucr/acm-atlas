@@ -16,16 +16,16 @@ const WhatWeDo = () => {
         <h2 className="text-4xl font-bold">WHAT WE DO</h2>
         <br />
         <p className="mt-5 w-5/6 text-xl leading-normal">
-          Every quarter, we focus on improving specific aspects of our 
-          members. In the Fall, we develop professional resumes, build 
-          all-star LinkedIns, and offer workshops on Applying Effectively 
-          at companies from the Big 4 to startups.
+          Every quarter, we focus on improving specific aspects of our members.
+          In the Fall, we develop professional resumes, build all-star
+          LinkedIns, and offer workshops on Applying Effectively at companies
+          from the Big 4 to startups.
         </p>
         <div className="mt-12 flex justify-center gap-8">
           {icons.map((item, index) => (
             <div
               key={index}
-              className="flex h-16 w-16 transform items-center justify-center rounded-lg bg-yellow-50 rotate-45"
+              className="flex h-16 w-16 rotate-45 transform items-center justify-center rounded-lg bg-yellow-50"
             >
               <span className="-rotate-45 text-2xl">{item.icon}</span>
             </div>
