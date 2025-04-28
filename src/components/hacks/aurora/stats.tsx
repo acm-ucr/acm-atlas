@@ -3,7 +3,7 @@ import auroraStar from "@/public/Aurora/aurorastar.webp";
 
 const Stats = () => {
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center pb-30">
       <div className="text-acm-gray-500 grid translate-x-[13%] [grid-template-columns:280px_250px_400px] gap-10 pb-18">
         <div className="border-acm-gray-100 flex flex-col justify-center border-r-2">
           <p className="pb-4 text-7xl font-bold">4000+</p>
