@@ -16,32 +16,31 @@ const Search = () => {
 
       return params.toString();
     },
-    [searchParams]
+    [searchParams],
   );
 
   return (
-    <div className="flex items-center px-3 py-2 w-10/12 rounded text-acm-gray-200">
+    <div className="text-acm-gray-200 flex w-10/12 items-center rounded px-3 py-2">
       <MdCancel
-        className="mx-2 text-xl hover:opacity-50 hover:cursor-pointer -translate-y-2 translate-x-8"
+        className="mx-2 translate-x-8 -translate-y-2 text-xl hover:cursor-pointer hover:opacity-50"
         onClick={() =>
-          router.replace(
-            pathname + "?" + createQueryString("search", ""),
-            { scroll: false }
-          )
+          router.replace(pathname + "?" + createQueryString("search", ""), {
+            scroll: false,
+          })
         }
       />
       <input
         placeholder="...Search"
-        className="mb-5 rounded-xl bg-gray-100 px-4 pl-10 py-2 w-full"
+        className="mb-5 w-full rounded-xl bg-gray-100 px-4 py-2 pl-10"
         value={searchParams.get("search") ?? ""}
         onChange={(e) =>
           router.replace(
             pathname + "?" + createQueryString("search", e.target.value),
-            { scroll: false }
+            { scroll: false },
           )
         }
       />
-      <FaSearch className="mx-2 text-xl -translate-y-3 -translate-x-10" />
+      <FaSearch className="mx-2 -translate-x-10 -translate-y-3 text-xl" />
     </div>
   );
 };

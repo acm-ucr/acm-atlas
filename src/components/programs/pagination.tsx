@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/pagination";
 
 const PaginationComponent = () => {
-
   return (
     <div className="scale-125 py-5">
       <Pagination>
@@ -34,7 +33,6 @@ const PaginationComponent = () => {
       </Pagination>
     </div>
   );
-  
 };
 
 export default PaginationComponent;
