@@ -5,15 +5,15 @@ const CurrentOpportunities = () => {
   return (
     <div className="flex h-screen w-screen flex-col items-center justify-center">
       <p className="text-6xl font-bold text-gray-600">CURRENT OPPORTUNITIES</p>
-      <div className="flex w-[80%] flex-wrap justify-center gap-15">
-        {opportunities.map((item, id) => (
+      <div className="flex w-11/12 flex-wrap justify-center gap-15">
+        {opportunities.map(({name, card_background, year_and_quarter,application_link,link}, id) => (
           <CurrOppCard
             key={id}
-            name={item.name}
-            cardBackground={item.card_background}
-            appYearAndQuarter={item.year_and_quarter}
-            applicationLink={item.application_link}
-            link={item.link}
+            name={name}
+            cardBackground={card_background}
+            appYearAndQuarter={year_and_quarter}
+            applicationLink={application_link}
+            link={link}
             index={id + 1}
           />
         ))}

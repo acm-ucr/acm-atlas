@@ -23,9 +23,6 @@ const OpportunitiesCard = ({
       <Image
         src={cardBackground}
         alt="Card background"
-        width={500}
-        height={500}
-        className="w-85"
       />
       <p className="text-acm-gray-500 absolute top-6 left-6 text-xl">
         0{index}
@@ -36,7 +33,7 @@ const OpportunitiesCard = ({
         </p>
         <Link
           href={link}
-          className="flex h-6 w-30 justify-center rounded-full bg-white text-sm"
+          className="flex px-4 py-1 justify-center rounded-full bg-white text-sm"
         >
           Learn more →
         </Link>
