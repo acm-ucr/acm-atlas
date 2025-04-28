@@ -20,10 +20,7 @@ const OpportunitiesCard = ({
 }: CardProps) => {
   return (
     <div className="relative mt-10">
-      <Image
-        src={cardBackground}
-        alt="Card background"
-      />
+      <Image src={cardBackground} alt="Card background" />
       <p className="text-acm-gray-500 absolute top-6 left-6 text-xl">
         0{index}
       </p>
@@ -33,7 +30,7 @@ const OpportunitiesCard = ({
         </p>
         <Link
           href={link}
-          className="flex px-4 py-1 justify-center rounded-full bg-white text-sm"
+          className="flex justify-center rounded-full bg-white px-4 py-1 text-sm"
         >
           Learn more →
         </Link>
