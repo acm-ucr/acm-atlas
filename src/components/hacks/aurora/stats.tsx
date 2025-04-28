@@ -1,10 +1,10 @@
 import Image from "next/image";
-import auroraStar from "@/public/Aurora/aurorastar.webp";
+import auroraStar from "@/public/aurora/aurorastar.webp";
 
 const Stats = () => {
   return (
-    <div className="flex flex-col justify-center pb-30">
-      <div className="text-acm-gray-500 grid translate-x-[13%] [grid-template-columns:280px_250px_400px] gap-10 pb-18">
+    <div className="flex flex-col justify-center py-30">
+      <div className="text-acm-gray-500 grid translate-x-[15%] [grid-template-columns:280px_250px_400px] gap-10 pb-18">
         <div className="border-acm-gray-100 flex flex-col justify-center border-r-2">
           <p className="pb-4 text-7xl font-bold">4000+</p>
           <p className="text-3xl font-medium">commits</p>
@@ -18,7 +18,7 @@ const Stats = () => {
           <p className="text-3xl font-medium">issues</p>
         </div>
       </div>
-      <div className="text-acm-gray-500 grid translate-x-[13%] [grid-template-columns:210px_175px_350px] gap-10 pb-10">
+      <div className="text-acm-gray-500 grid translate-x-[15%] [grid-template-columns:210px_175px_350px] gap-10 pb-10">
         <div className="border-acm-gray-100 flex flex-col justify-center border-r-2">
           <p className="pb-4 text-7xl font-bold">73</p>
           <p className="text-3xl font-medium">contributors</p>
