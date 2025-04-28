@@ -1,5 +1,4 @@
 import Image from "next/image";
-import auroraStar from "@/public/aurora/aurorastar.webp";
 
 const Stats = () => {
   return (
@@ -27,7 +26,12 @@ const Stats = () => {
           <p className="pb-4 text-7xl font-bold">27</p>
           <div className="flex">
             <p className="pr-5 text-3xl font-medium">stars</p>
-            <Image src={auroraStar} alt="Star" width={35} height={35} />
+            <Image
+              src="/aurora/aurorastar.webp"
+              alt="Star"
+              width={35}
+              height={35}
+            />
           </div>
         </div>
         <div className="flex flex-col justify-center">
