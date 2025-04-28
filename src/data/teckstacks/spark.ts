@@ -1,25 +1,32 @@
+import {
+  SiEslint,
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+} from "react-icons/si";
+
 const spark = [
   {
     name: "ESLint",
-    icon: "SiEslint",
+    icon: SiEslint,
     borderColor: "border-[color:var(--color-acm-eslint)]",
     iconColor: "text-[color:var(--color-acm-eslint)]",
   },
   {
     name: "Next.js",
-    icon: "SiNextdotjs",
+    icon: SiNextdotjs,
     borderColor: "border-black",
     iconColor: "text-black",
   },
   {
     name: "TypeScript",
-    icon: "SiTypescript",
+    icon: SiTypescript,
     borderColor: "border-[color:var(--color-acm-typescript)]",
     iconColor: "text-[color:var(--color-acm-typescript)]",
   },
   {
     name: "Tailwind CSS",
-    icon: "SiTailwindcss",
+    icon: SiTailwindcss,
     borderColor: "border-[color:var(--color-acm-tailwindcss)]",
     iconColor: "text-[color:var(--color-acm-tailwindcss)]",
   },

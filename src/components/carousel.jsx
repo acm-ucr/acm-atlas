@@ -1,7 +1,7 @@
-const Carousel = ({ data, icons }) => {
+const Carousel = ({ data }) => {
   const renderItems = () =>
     data.map(({ name, icon, borderColor, iconColor }, index) => {
-      const IconComponent = icons[icon];
+      const IconComponent = icon;
 
       return (
         <div
