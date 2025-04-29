@@ -1,7 +1,7 @@
 "use client";
-// import { usePathname, useRouter, useSearchParams } from "next/navigation";
-// import { useCallback } from "react";
-// import spark from "../../data/projects/spark";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
+import spark from "../../data/projects/spark";
 import {
   Pagination,
   PaginationContent,
@@ -13,21 +13,67 @@ import {
 } from "@/components/ui/pagination";
 
 const PaginationComponent = () => {
+
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+
+  const createQueryString = useCallback(
+    (name: string, value: string) => {
+      const params = new URLSearchParams(searchParams.toString());
+      params.set(name, value);  
+
+      return params.toString();
+    },
+    [searchParams]
+  );
+
+  const index = parseInt(searchParams.get("page") ?? "0");
+  const total = Math.floor(spark.length / 6);
+
   return (
     <div className="scale-125 py-5">
       <Pagination>
         <PaginationContent>
           <PaginationItem>
-            <PaginationPrevious href="#" />
+            <PaginationPrevious 
+              onClick={() => {
+                if (index > 0){
+                  router.push(pathname + "?" + createQueryString("page", (index - 1).toString()),
+                  {scroll: false})
+                }
+              }}
+            />
           </PaginationItem>
           <PaginationItem>
-            <PaginationLink href="#">1</PaginationLink>
+            <PaginationLink className="border-2 border-acm-gray-100">{index + 1}</PaginationLink>
+            {index + 1 <= total && ( // Only render if index + 2 is within bounds
+              <PaginationLink
+                onClick={() => {
+                  if (index < total) {
+                    router.push(
+                      pathname + "?" + createQueryString("page", (index + 1).toString()),
+                      { scroll: false }
+                    );
+                  }
+                }}
+              >
+                {index + 2}
+              </PaginationLink>
+            )}
           </PaginationItem>
           <PaginationItem>
             <PaginationEllipsis />
           </PaginationItem>
           <PaginationItem>
-            <PaginationNext href="#" />
+          <PaginationNext
+                onClick={() => {
+                  if (index < total){
+                    router.push(pathname + "?" + createQueryString("page", (index + 1).toString()),
+                    {scroll: false})
+                  }
+                }}
+              />
           </PaginationItem>
         </PaginationContent>
       </Pagination>
