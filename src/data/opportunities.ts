@@ -1,8 +1,8 @@
-import spark from "@/public/Home/CurrentOpportunities/spark.svg";
-import forge from "@/public/Home/CurrentOpportunities/forge.svg";
-import create from "@/public/Home/CurrentOpportunities/create.svg";
-import das from "@/public/Home/CurrentOpportunities/das.svg";
-import bitbyte from "@/public/Home/CurrentOpportunities/bitbyte.svg";
+import spark from "@/public/home/opportunities/spark.svg";
+import forge from "@/public/home/opportunities/forge.svg";
+import create from "@/public/home/opportunities/create.svg";
+import das from "@/public/home/opportunities/das.svg";
+import bitbyte from "@/public/home/opportunities/bitbyte.svg";
 
 const opportunites = [
   {
