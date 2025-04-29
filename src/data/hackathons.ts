@@ -85,7 +85,7 @@ const hackathons: Hackathon[] = [
     description:
       "DesignVerse is the first and only 24-hour beginner-friendly Design-a-Thon hosted by the University of California, Riverside.",
     website: "https://www.designverseucr.org/",
-    textColor: "text-text-acm-green-500",
+    textColor: "text-acm-green-500",
     devposts: [{ year: "2024", link: "https://designverseucr.devpost.com/" }],
   },
 ];
