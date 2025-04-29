@@ -12,7 +12,7 @@ import Forge3 from "@/public/forge/blank.webp";
 
 const FeaturedProjects = () => {
   return (
-    <div className="m-10">
+    <div className="mx-auto w-11/12">
       <div className="mt-5 flex items-center justify-center">
         <p className="text-acm-gray-500 text-6xl font-bold">
           FEATURED PROJECTS
