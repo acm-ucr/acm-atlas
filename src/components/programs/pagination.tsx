@@ -49,7 +49,7 @@ const PaginationComponent = () => {
             />
           </PaginationItem>
           <PaginationItem>
-            <PaginationLink className="text-white bg-acm-blue-500 rounded-full">
+            <PaginationLink className="bg-acm-blue-500 rounded-full text-white">
               {index + 1}
             </PaginationLink>
             {index + 1 <= total && ( // Only render if index + 2 is within bounds
