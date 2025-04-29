@@ -1,5 +1,10 @@
+import Header from "@/components/join/header";
 const Page = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
 
 export default Page;
