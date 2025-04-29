@@ -1,44 +1,44 @@
-import spark from "@/public/Home/CurrentOpportunities/spark.svg";
-import forge from "@/public/Home/CurrentOpportunities/forge.svg";
-import create from "@/public/Home/CurrentOpportunities/create.svg";
-import das from "@/public/Home/CurrentOpportunities/das.svg";
-import bitbyte from "@/public/Home/CurrentOpportunities/bitbyte.svg";
+import Spark from "@/public/home/opportunities/spark.svg";
+import Forge from "@/public/home/opportunities/forge.svg";
+import Create from "@/public/home/opportunities/create.svg";
+import DAS from "@/public/home/opportunities/das.svg";
+import Bitbyte from "@/public/home/opportunities/bitbyte.svg";
 
-const opportunites = [
+const opportunities = [
   {
     name: "spark",
-    card_background: spark,
+    card_background: Spark,
     year_and_quarter: "SPRING '24",
     link: "/programs/spark",
     application_link: "/",
   },
   {
     name: "forge",
-    card_background: forge,
+    card_background: Forge,
     year_and_quarter: "SPRING '24",
     link: "/programs/forge",
     application_link: "/",
   },
   {
     name: "create",
-    card_background: create,
+    card_background: Create,
     year_and_quarter: "SPRING '24",
     link: "/programs/create",
     application_link: "/",
   },
   {
     name: "das",
-    card_background: das,
+    card_background: DAS,
     year_and_quarter: "SPRING '24",
     link: "/programs/das",
     application_link: "/",
   },
   {
     name: "bit/byte",
-    card_background: bitbyte,
+    card_background: Bitbyte,
     year_and_quarter: "SPRING '24",
     link: "/programs/bitbyte",
     application_link: "/",
   },
 ];
-export default opportunites;
+export default opportunities;
