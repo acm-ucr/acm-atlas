@@ -4,7 +4,7 @@ import Create from "@/public/home/opportunities/create.svg";
 import DAS from "@/public/home/opportunities/das.svg";
 import BitByte from "@/public/home/opportunities/bitbyte.svg";
 
-const opportunites = [
+const opportunities = [
   {
     name: "spark",
     card_background: Spark,
@@ -41,4 +41,4 @@ const opportunites = [
     application_link: "/",
   },
 ];
-export default opportunites;
+export default opportunities;
