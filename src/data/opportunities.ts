@@ -2,7 +2,7 @@ import Spark from "@/public/home/opportunities/spark.svg";
 import Forge from "@/public/home/opportunities/forge.svg";
 import Create from "@/public/home/opportunities/create.svg";
 import DAS from "@/public/home/opportunities/das.svg";
-import BitByte from "@/public/home/opportunities/bitbyte.svg";
+import Bitbyte from "@/public/home/opportunities/bitbyte.svg";
 
 const opportunities = [
   {
@@ -35,7 +35,7 @@ const opportunities = [
   },
   {
     name: "bit/byte",
-    card_background: BitByte,
+    card_background: Bitbyte,
     year_and_quarter: "SPRING '24",
     link: "/programs/bitbyte",
     application_link: "/",
