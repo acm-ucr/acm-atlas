@@ -5,7 +5,7 @@ import greenEllipse from "@/public/ellipses/greenEllipse.svg";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="BIT/BYTE"
         subtitle="Mentorship"
@@ -14,7 +14,7 @@ const Page = () => {
         ellipse={greenEllipse}
       />
       <Join />
-    </div>
+    </>
   );
 };
 

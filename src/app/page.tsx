@@ -7,14 +7,14 @@ import SeeMoreLink from "@/components/home/seemorelink";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Landing />
       <StatsGrid />
       <CurrentOpportunities />
       <FeaturedProjects />
       <Upcoming />
       <SeeMoreLink />
-    </div>
+    </>
   );
 };
 
