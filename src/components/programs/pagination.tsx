@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/pagination";
 
 const PaginationComponent = () => {
-
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -21,11 +20,11 @@ const PaginationComponent = () => {
   const createQueryString = useCallback(
     (name: string, value: string) => {
       const params = new URLSearchParams(searchParams.toString());
-      params.set(name, value);  
+      params.set(name, value);
 
       return params.toString();
     },
-    [searchParams]
+    [searchParams],
   );
 
   const index = parseInt(searchParams.get("page") ?? "0");
@@ -36,24 +35,32 @@ const PaginationComponent = () => {
       <Pagination>
         <PaginationContent>
           <PaginationItem>
-            <PaginationPrevious 
+            <PaginationPrevious
               onClick={() => {
-                if (index > 0){
-                  router.push(pathname + "?" + createQueryString("page", (index - 1).toString()),
-                  {scroll: false})
+                if (index > 0) {
+                  router.push(
+                    pathname +
+                      "?" +
+                      createQueryString("page", (index - 1).toString()),
+                    { scroll: false },
+                  );
                 }
               }}
             />
           </PaginationItem>
           <PaginationItem>
-            <PaginationLink className="border-2 border-acm-gray-100">{index + 1}</PaginationLink>
+            <PaginationLink className="border-acm-gray-100 border-2">
+              {index + 1}
+            </PaginationLink>
             {index + 1 <= total && ( // Only render if index + 2 is within bounds
               <PaginationLink
                 onClick={() => {
                   if (index < total) {
                     router.push(
-                      pathname + "?" + createQueryString("page", (index + 1).toString()),
-                      { scroll: false }
+                      pathname +
+                        "?" +
+                        createQueryString("page", (index + 1).toString()),
+                      { scroll: false },
                     );
                   }
                 }}
@@ -66,14 +73,18 @@ const PaginationComponent = () => {
             <PaginationEllipsis />
           </PaginationItem>
           <PaginationItem>
-          <PaginationNext
-                onClick={() => {
-                  if (index < total){
-                    router.push(pathname + "?" + createQueryString("page", (index + 1).toString()),
-                    {scroll: false})
-                  }
-                }}
-              />
+            <PaginationNext
+              onClick={() => {
+                if (index < total) {
+                  router.push(
+                    pathname +
+                      "?" +
+                      createQueryString("page", (index + 1).toString()),
+                    { scroll: false },
+                  );
+                }
+              }}
+            />
           </PaginationItem>
         </PaginationContent>
       </Pagination>
