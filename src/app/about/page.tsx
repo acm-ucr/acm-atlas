@@ -4,11 +4,11 @@ import WhyWeDoIt from "@/components/about/whywedoit";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <AboutUs />
       <OurVision />
       <WhyWeDoIt />
-    </div>
+    </>
   );
 };
 
