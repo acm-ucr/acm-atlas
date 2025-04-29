@@ -15,7 +15,7 @@ const Landing = () => {
       <p>COMPUTING MACHINERY</p>
       <Image src={Keys} alt="Keys" className="mt-5" />
 
-      <div className="grid w-1/2 grid-cols-2 items-center justify-items-center -space-x-4 rounded-lg bg-[#FCFCFC] p-25">
+      <div className="grid w-1/2 grid-cols-2 items-center justify-items-center -space-x-4 rounded-lg bg-[#FCFCFC] p-20">
         <p className="text-acm-gray-500 relative text-xl">
           ACM at UCR is the largest student-run technical organization with a
           focus on Computer Science. Our goal is to help our members develop
@@ -24,18 +24,30 @@ const Landing = () => {
           workshops, professional events, and many more opportunities for our
           members to excel.
         </p>
-        <Image src={top} alt="top" className="absolute top-[55%] left-0" />
 
         <Image src={logo} alt="logo" className="" />
         <Image
+          src={top}
+          alt="top"
+          className="absolute inset-0 top-[54%] left-[15%]"
+        />
+        <div className="w-[30%]">
+          <Image
+            src={rightEnd}
+            alt="blue"
+            className="absolute inset-0 top-[18.5%] left-[51.8%]"
+          />
+        </div>
+
+        <Image
           src={blue}
           alt="blue"
-          className="rounded-b-1/2 absolute inset-0 top-[5%] -left-16 h-[100%] w-[40%]"
+          className="rounded-b-1/2 absolute inset-0 top-1/3 -left-16 mt-3 w-[40%]"
         />
         <Image
           src={yellow}
           alt="yellow"
-          className="absolute inset-0 top-[68%] left-0"
+          className="absolute inset-0 top-[67%] left-0 mt-2"
         />
         {/* absolute and z-index don't work together :(
        <Image
@@ -45,19 +57,14 @@ const Landing = () => {
         />
               <Image
           src={dot}
-          alt="dot"
+          alt="dot
           className="absolute top-[100%] left-0 w-10"
         />
         */}
         <Image
           src={green}
           alt="green"
-          className="absolute inset-0 top-[40%] left-[70%] w-1/4 rounded-full"
-        />
-        <Image
-          src={rightEnd}
-          alt="blue"
-          className="absolute inset-0 top-[20%] left-[57.3%]"
+          className="absolute inset-0 top-[40%] left-3/4 w-1/4"
         />
       </div>
     </div>
