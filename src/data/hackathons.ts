@@ -1,7 +1,7 @@
 import Rosehack from "@/public/logos/rosehack.svg";
 import Cutiehack from "@/public/logos/cutiehack.svg";
 import Citrushack from "@/public/logos/citrushack.svg";
-/* import Designverse from "@/public/logos/designverse.svg"; */
+import Designverse from "@/public/logos/designverse.svg";
 import { StaticImageData } from "next/image";
 
 interface Hackathon {
