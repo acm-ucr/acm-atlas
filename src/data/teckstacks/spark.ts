@@ -9,7 +9,7 @@ const spark = [
   {
     name: "ESLint",
     icon: SiEslint,
-    borderColor: "border-[color:var(--color-acm-eslint)]",
+    borderColor: "border-acm-eslint",
     iconColor: "text-[color:var(--color-acm-eslint)]",
   },
   {
@@ -21,13 +21,13 @@ const spark = [
   {
     name: "TypeScript",
     icon: SiTypescript,
-    borderColor: "border-[color:var(--color-acm-typescript)]",
+    borderColor: "border-acm-typescript",
     iconColor: "text-[color:var(--color-acm-typescript)]",
   },
   {
     name: "Tailwind CSS",
     icon: SiTailwindcss,
-    borderColor: "border-[color:var(--color-acm-tailwindcss)]",
+    borderColor: "border-acm-tailwindcss",
     iconColor: "text-[color:var(--color-acm-tailwindcss)]",
   },
 ];
