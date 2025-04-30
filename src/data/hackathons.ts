@@ -77,7 +77,7 @@ const hackathons: Hackathon[] = [
         link: "https://citrus-hack-2025.devpost.com/project-gallery",
       },
     ],
-  } /* ,
+  },
   {
     id: "designverse",
     logo: Designverse,
@@ -87,7 +87,7 @@ const hackathons: Hackathon[] = [
     website: "https://www.designverseucr.org/",
     textColor: "text-acm-green-500",
     devposts: [{ year: "2024", link: "https://designverseucr.devpost.com/" }],
-  }, */,
+  },
 ];
 
 export default hackathons;
