@@ -3,10 +3,10 @@ import BoardCards from "@/components/board/cards";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <MeetTheBoard />
       <BoardCards />
-    </div>
+    </>
   );
 };
 

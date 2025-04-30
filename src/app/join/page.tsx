@@ -1,5 +1,12 @@
+import Gallery from "@/components/join/gallery";
+import Header from "@/components/join/header";
 const Page = () => {
-  return <div></div>;
+  return (
+    <>
+      <Header />
+      <Gallery />
+    </>
+  );
 };
 
 export default Page;
