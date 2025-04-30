@@ -6,7 +6,7 @@ import purpleEllipse from "@/public/ellipses/purpleEllipse.svg";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="DAS"
         subtitle="Data Science, AI, Statistics"
@@ -19,7 +19,7 @@ const Page = () => {
         backgroundColor="bg-acm-purple-200"
         image={Das1}
       />
-    </div>
+    </>
   );
 };
 
