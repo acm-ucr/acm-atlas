@@ -1,14 +1,22 @@
-import Header from "@/components/programs/spark/header";
+import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Spark1 from "@/public/spark/spark1.webp";
 import ProjectGrid from "@/components/programs/spark/projectgrid";
 import spark from "@/data/teckstacks/spark";
 import Carousel from "@/components/carousel";
+import Spark from "@/public/logos/spark.svg";
+import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
 
 const Page = () => {
   return (
-    <div>
-      <Header />
+    <>
+      <ProgramHeader
+        header="SPARK"
+        subtitle="Web Development"
+        text="ACM Spark is a 10 week program that focuses on static front-end web development for campus organizations / companies."
+        logo={Spark}
+        ellipse={yellowEllipse}
+      />
       <Joinus
         textColor="text-acm-gray-500"
         backgroundColor="bg-acm-yellow-200"
@@ -16,7 +24,7 @@ const Page = () => {
       />
       <Carousel data={spark} />
       <ProjectGrid />
-    </div>
+    </>
   );
 };
 
