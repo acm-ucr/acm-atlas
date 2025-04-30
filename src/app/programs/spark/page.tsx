@@ -2,12 +2,7 @@ import Header from "@/components/programs/spark/header";
 import Joinus from "@/components/programs/joinus";
 import Spark1 from "@/public/spark/spark1.webp";
 import ProjectGrid from "@/components/programs/spark/projectgrid";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import FAQ from "@/components/programs/spark/faq";
 
 const Page = () => {
   return (
@@ -19,68 +14,7 @@ const Page = () => {
         image={Spark1}
       />
       <ProjectGrid />
-      <Accordion type="single" collapsible className="w-full">
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Do I need experience to join?</AccordionTrigger>
-          <AccordionContent>
-            No experience needed! All content related to the tech stack will be
-            covered in weekly meetings by your project lead.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-2">
-          <AccordionTrigger>
-            What programming languages and tools will I learn and use?
-          </AccordionTrigger>
-          <AccordionContent>
-            Next.js, Typescript, TailwindCSS, React Query, Shadcn, Eslint,
-            Prettier, Github Actions
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-3">
-          <AccordionTrigger>
-            How long does the program take to complete?
-          </AccordionTrigger>
-          <AccordionContent>
-            The program is ten weeks long, beginning at the start of UCR's
-            quarter system and ending at its end.
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-4">
-          <AccordionTrigger>
-            What topics are covered in the program?
-          </AccordionTrigger>
-          <AccordionContent>
-            Next.js, Git/Github, Tailwindcss styling, mobile responsiveness,
-            animations with motion.dev, & more
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-5">
-          <AccordionTrigger>How do I apply to the program?</AccordionTrigger>
-          <AccordionContent>
-            When the application season rolls around, submit an application and
-            schedule an interview!
-          </AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-6">
-          <AccordionTrigger>
-            Is the program free, or is there a cost?
-          </AccordionTrigger>
-          <AccordionContent>The program is free.</AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-7">
-          <AccordionTrigger>
-            Can I use the projects I build in my resume/portfolio?
-          </AccordionTrigger>
-          <AccordionContent>Of course!</AccordionContent>
-        </AccordionItem>
-        <AccordionItem value="item-8">
-          <AccordionTrigger>Who is the program for?</AccordionTrigger>
-          <AccordionContent>
-            Everyone can apply, regardless of whether you are from UCR or
-            another school.
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
+      <FAQ />
     </div>
   );
 };
