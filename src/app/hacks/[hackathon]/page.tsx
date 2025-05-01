@@ -12,7 +12,7 @@ const Page = async ({ params }: PageProps) => {
   const hack = hacks.find((h) => h.id === hackathon);
   if (!hack) return notFound();
 
-  return <Hack name={hack.name} website={hack.website} />;
+  return <Hack name={hack.name} website={hack.website} logo={hack.logo} />;
 };
 
 export default Page;
