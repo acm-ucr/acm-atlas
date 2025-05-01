@@ -9,7 +9,7 @@ import purpleEllipse from "@/public/ellipses/purpleEllipse.svg";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="DAS"
         subtitle="Data Science, AI, Statistics"
@@ -24,7 +24,7 @@ const Page = () => {
       />
 
       <FAQ />
-    </div>
+    </>
   );
 };
 

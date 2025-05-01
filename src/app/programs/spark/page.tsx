@@ -9,7 +9,7 @@ import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="SPARK"
         subtitle="Web Development"
@@ -25,7 +25,7 @@ const Page = () => {
       <ProjectGrid />
 
       <FAQ />
-    </div>
+    </>
   );
 };
 

@@ -9,7 +9,7 @@ import blueEllipse from "@/public/ellipses/blueEllipse.svg";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="CREATE"
         subtitle="UI/UX Design"
@@ -23,7 +23,7 @@ const Page = () => {
         image={Create1}
       />
       <FAQ />
-    </div>
+    </>
   );
 };
 export default Page;
