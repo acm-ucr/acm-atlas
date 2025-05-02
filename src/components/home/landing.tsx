@@ -20,6 +20,7 @@ const Landing = () => {
             className="absolute top-0 left-0 rounded-t-2xl"
           />
         </div>
+        //
         <p className="text-acm-gray-500 relative text-xl">
           ACM at UCR is the largest student-run technical organization with a
           focus on Computer Science. Our goal is to help our members develop
@@ -28,7 +29,6 @@ const Landing = () => {
           workshops, professional events, and many more opportunities for our
           members to excel.
         </p>
-
         <Image src={logo} alt="logo" className="" />
       </div>
 
