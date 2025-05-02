@@ -1,5 +1,10 @@
+import Header from "@/components/events/header";
 const Page = () => {
-  return <div></div>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 };
 
 export default Page;
