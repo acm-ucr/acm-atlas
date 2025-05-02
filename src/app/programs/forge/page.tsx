@@ -6,7 +6,7 @@ import grayEllipse from "@/public/ellipses/grayEllipse.svg";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="FORGE"
         subtitle="Robotics"
@@ -19,7 +19,7 @@ const Page = () => {
         backgroundColor="bg-acm-gray-200"
         image={Forge1}
       />
-    </div>
+    </>
   );
 };
 
