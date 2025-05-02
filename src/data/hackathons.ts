@@ -21,7 +21,7 @@ const hackathons: Hackathon[] = [
   {
     id: "rosehack",
     logo: Rosehack,
-    name: "Rose Hack",
+    name: "ROSEHACK",
     description:
       "Rose Hack is UC Riverside's 24-hour hackathon, one of the few women-centric hackathons in California!",
     website: "https://www.rosehack.com/",
