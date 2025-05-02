@@ -9,15 +9,15 @@ const Landing = () => {
       <p>ASSOCIATION OF</p>
       <p>COMPUTING MACHINERY</p>
       <Image src={Keys} alt="Keys" className="mt-5" />
-      <div className="z-999 mt-16 flex w-1/2 grid-cols-2 items-center justify-items-center -space-x-4 rounded-2xl bg-[#F6F6F6] p-20 opacity-100">
-        <div className="absolute top-[54%] right-[68%] z-24 h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
-        <div className="absolute top-[54%] right-[70%] z-24 h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
-        <div className="absolute top-[54%] right-[72%] z-24 h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
+      <div className="z-999 mt-16 flex w-1/2 grid-cols-2 items-center justify-items-center -space-x-4 rounded-2xl bg-transparent/40 px-20 py-25 opacity-100 backdrop-blur-2xl">
+        <div className="absolute top-[6%] left-[3%] z-24 h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
+        <div className="absolute top-[6%] left-[8%] z-24 h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
+        <div className="absolute top-[6%] left-[13%] z-24 h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
         <div className="">
           <Image
             src={top}
             alt=""
-            className="absolute top-[51%] right-[25%] w-1/2 rounded-t-2xl py-1"
+            className="absolute top-0 left-0 rounded-t-2xl"
           />
         </div>
         <p className="text-acm-gray-500 relative text-xl">
@@ -32,12 +32,15 @@ const Landing = () => {
         <Image src={logo} alt="logo" className="" />
       </div>
 
-      <div className="bg-acm-yellow-200 absolute top-[60%] right-[75%] z-24 h-[450px] w-[450px] rounded-full opacity-90 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[40%] right-[75%] z-24 h-[450px] w-[450px] rounded-full opacity-70 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[40%] left-[75%] z-24 h-[400px] w-[420px] rounded-full opacity-70 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[70%] left-[75%] z-24 h-[400px] w-[420px] rounded-full opacity-70 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[15%] left-[30%] z-24 h-[300px] w-[300px] rounded-full opacity-50 blur-3xl"></div>
-      <div className="bg-acm-green-100 absolute top-[15%] left-[50%] z-24 h-[300px] w-[300px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-yellow-200 absolute top-[6%5] right-[75%] z-24 h-[300px] w-[350px] rounded-full opacity-90 blur-3xl"></div>
+      <div className="bg-acm-yellow-200 absolute top-[65%] right-[75%] z-24 h-[300px] w-[400px] rounded-full opacity-90 blur-3xl"></div>
+      <div className="bg-acm-blue-700 absolute top-[45%] right-[75%] z-24 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl"></div>
+      <div className="bg-acm-blue-700 absolute top-[63%] left-[75%] z-24 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl"></div>
+      <div className="bg-acm-blue-700 absolute top-[40%] left-[75%] z-24 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl"></div>
+      <div className="bg-acm-blue-700 absolute top-[25%] left-[30%] z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-blue-700 absolute top-[25%] left-[5%] z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-green-100 absolute top-[25%] left-[50%] z-24 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-green-100 absolute top-[25%] left-[70%] z-24 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl"></div>
     </div>
   );
 };
