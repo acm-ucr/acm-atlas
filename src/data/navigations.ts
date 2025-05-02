@@ -1,3 +1,5 @@
+import { GoTriangleDown } from "react-icons/go";
+
 const navigations = [
   {
     name: "ABOUT",
@@ -8,7 +10,8 @@ const navigations = [
     link: "/board",
   },
   {
-    name: "PROGRAMS",
+    name: "PROGRAMS ",
+    icon: GoTriangleDown,
     link: "/programs",
     subItems: [
       {
@@ -28,7 +31,7 @@ const navigations = [
         subLink: "/programs/das",
       },
       {
-        subName: "Bit/Byte",
+        subName: "BIT/BYTE",
         subLink: "/programs/bitbyte",
       },
     ],
