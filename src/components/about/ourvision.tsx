@@ -33,7 +33,7 @@ const OurVision = () => {
           />
         </div>
       </div>
-      <div className="text-acm-gray-500 flex h-full flex-col items-center justify-center text-center">
+      <div className="text-acm-gray-500 flex flex-col items-center justify-center text-center">
         <p className="text-4xl font-bold">OUR VISION</p>
         <p className="mt-5 w-5/6 text-2xl leading-normal font-medium">
           Our Vision is simple: We want to improve our members professionally,
