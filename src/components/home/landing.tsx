@@ -42,9 +42,12 @@ const Landing = () => {
       <div className="bg-acm-blue-700 absolute top-[69%] left-[76%] z-24 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl"></div>
       <div className="bg-acm-blue-700 absolute top-[45%] left-[76%] z-24 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl"></div>
       <div className="bg-acm-blue-700 absolute top-[25%] left-[30%] z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-blue-700 absolute top-[25%] right-[50%] z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-blue-700 absolute top-[25%] right-[25%] z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-blue-700 absolute top-[85%] right-[25%] z-24 h-[90px] w-[900px] overflow-hidden rounded-full opacity-50 backdrop-blur-3xl"></div>
       <div className="bg-acm-blue-700 absolute top-[25%] left-0 z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
-      <div className="bg-acm-green-100 absolute top-[25%] left-[50%] z-24 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl"></div>
-      <div className="bg-acm-green-100 absolute top-[25%] left-[70%] z-24 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-green-300 absolute top-[25%] left-[50%] z-24 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-green-300 absolute top-[25%] left-[70%] z-24 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl"></div>
     </div>
   );
 };
