@@ -6,7 +6,7 @@ import blueEllipse from "@/public/ellipses/blueEllipse.svg";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="CREATE"
         subtitle="UI/UX Design"
@@ -19,7 +19,7 @@ const Page = () => {
         backgroundColor="bg-acm-blue-200"
         image={Create1}
       />
-    </div>
+    </>
   );
 };
 export default Page;
