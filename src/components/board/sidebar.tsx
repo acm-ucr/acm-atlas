@@ -12,7 +12,7 @@ const Sidebar = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
   };
 
   return (
-    <div className="fixed top-50 left-7 max-h-[55vh] w-1/18 bg-linear-to-b from-white from-10% via-[#D9D9D9] via-54% to-white to-99% pl-4">
+    <div className="fixed top-1/2 left-7 hidden h-[40vh] w-1/18 -translate-y-1/2 bg-gradient-to-b from-white via-[#D9D9D9] to-white px-4 md:flex">
       <div className="flex flex-col gap-5">
         {logos.map(({ image, alt }, index) => (
           <div key={index}>
@@ -20,7 +20,7 @@ const Sidebar = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
               src={image}
               alt={alt}
               width={100}
-              className="hover:cursor-pointer"
+              className="hover:scale-105 hover:cursor-pointer hover:opacity-75"
               onClick={() => handleScrollToSection(alt)}
             />
           </div>

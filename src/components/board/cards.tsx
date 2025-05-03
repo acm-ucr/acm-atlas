@@ -17,7 +17,7 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
           ref={sectionRefs[title]}
         >
           <p className="text-acm-gray-500 text-4xl font-bold">{title}</p>
-          <div className="grid grid-cols-3 items-center justify-center px-5">
+          <div className="grid grid-cols-2 items-center justify-center gap-y-8 px-5 md:grid-cols-3">
             {members.map(
               (
                 { name, position, color, shadow, photo, linkedin, github },
