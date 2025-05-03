@@ -19,7 +19,7 @@ import Aldrie from "@/public/board/spark/aldrie.webp";
 import Nidheesh from "@/public/board/spark/nidheesh.webp";
 import Khushi from "@/public/board/das/khushi.webp";
 import Marcus from "@/public/board/forge/marcus.webp";
-
+import Ian from "@/public/board/forge/ian.webp";
 export const Board = [
   {
     title: "ACM BOARD",
@@ -341,7 +341,7 @@ export const Board = [
         position: "Forge Lead",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Stanley,
+        photo: Ian,
         linkedin: "https://www.linkedin.com/in/ian-negishi/",
         github: "https://github.com/inegishi",
       },
