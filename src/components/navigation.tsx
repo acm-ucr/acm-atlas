@@ -52,16 +52,19 @@ const Navigation = () => {
 
       {/* For web view */}
       <div className="col-span-4 hidden justify-end space-x-5 pr-5 md:flex">
-        {navigations.map(({ name, link, subItems }, index) => (
+        {navigations.map(({ name, icon: Icon, link, subItems }, index) => (
           <NavigationMenu key={index}>
             <NavigationMenuList>
               <NavigationMenuItem>
                 {subItems ? (
                   <>
                     <NavigationMenuTrigger onClick={() => router.push(link)}>
-                      {name}
+                      <div className="flex items-center gap-1">
+                        {name}
+                        {Icon && <Icon className="text-lg" />}
+                      </div>
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent>
+                    <NavigationMenuContent className="px-7">
                       {subItems.map(({ subName, subLink }, subIndex) => (
                         <NavigationMenuLink
                           key={subIndex}
