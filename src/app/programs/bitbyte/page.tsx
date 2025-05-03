@@ -1,4 +1,7 @@
 import Join from "@/components/programs/bitbyte/join";
+
+import FAQ from "@/components/programs/bitbyte/faq";
+
 import ProgramHeader from "@/components/programs/programheader";
 import BitByte from "@/public/logos/bitbyte.svg";
 import greenEllipse from "@/public/ellipses/greenEllipse.svg";
@@ -14,6 +17,7 @@ const Page = () => {
         ellipse={greenEllipse}
       />
       <Join />
+      <FAQ />
     </>
   );
 };

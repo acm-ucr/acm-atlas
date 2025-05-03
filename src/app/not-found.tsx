@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NotFoundKeys from "@/public/404/404_Keys.webp";
+import NotFoundKeys from "@/public/404keys.webp";
 import Link from "next/link";
 
 const NotFound = () => {
