@@ -9,7 +9,9 @@ const Search = () => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  const [searchValue, setSearchValue] = useState(searchParams.get("search") ?? "");
+  const [searchValue, setSearchValue] = useState(
+    searchParams.get("search") ?? "",
+  );
 
   const createQueryString = useCallback(
     (name, value) => {
@@ -18,7 +20,7 @@ const Search = () => {
 
       return params.toString();
     },
-    [searchParams]
+    [searchParams],
   );
 
   // Debounce function
