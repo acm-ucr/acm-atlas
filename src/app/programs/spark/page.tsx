@@ -2,12 +2,14 @@ import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Spark1 from "@/public/spark/spark1.webp";
 import ProjectGrid from "@/components/programs/spark/projectgrid";
+import FAQ from "@/components/programs/spark/faq";
+
 import Spark from "@/public/logos/spark.svg";
 import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="SPARK"
         subtitle="Web Development"
@@ -21,7 +23,9 @@ const Page = () => {
         image={Spark1}
       />
       <ProjectGrid />
-    </div>
+
+      <FAQ />
+    </>
   );
 };
 

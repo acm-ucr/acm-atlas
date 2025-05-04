@@ -12,7 +12,7 @@ import Forge3 from "@/public/forge/blank.webp";
 
 const FeaturedProjects = () => {
   return (
-    <div className="m-10">
+    <div className="mx-auto w-11/12">
       <div className="mt-5 flex items-center justify-center">
         <p className="text-acm-gray-500 text-6xl font-bold">
           FEATURED PROJECTS
@@ -25,7 +25,7 @@ const FeaturedProjects = () => {
           <ProjectCard project="AVIAT’R" image={Spark2} link="/" />
           <ProjectCard project="SAF" image={Spark3} link="/" />
         </div>
-        <Link href="/" className="mt-3 flex justify-end text-2xl">
+        <Link href="/programs/spark" className="mt-3 flex justify-end text-2xl">
           View All Spark Projects →
         </Link>
         <p className="text-4xl">ACM CREATE</p>
@@ -34,7 +34,10 @@ const FeaturedProjects = () => {
           <ProjectCard project="WITL" image={Create2} link="/" />
           <ProjectCard project="NSU" image={Create3} link="/" />
         </div>
-        <Link href="/" className="mt-3 flex justify-end text-2xl">
+        <Link
+          href="/programs/create"
+          className="mt-3 flex justify-end text-2xl"
+        >
           View All Create Projects →
         </Link>
         <p className="text-4xl">ACM FORGE</p>
@@ -43,7 +46,10 @@ const FeaturedProjects = () => {
           <ProjectCard project="DRONES" image={Forge2} link="/" />
           <ProjectCard project="ARMS" image={Forge3} link="/" />
         </div>
-        <Link href="/" className="mt-3 mb-5 flex justify-end text-2xl">
+        <Link
+          href="/programs/forge"
+          className="mt-3 mb-5 flex justify-end text-2xl"
+        >
           View All Forge Projects →
         </Link>
       </div>
