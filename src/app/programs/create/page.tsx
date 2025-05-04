@@ -1,6 +1,9 @@
 import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Create1 from "@/public/create/create1.webp";
+
+import FAQ from "@/components/programs/create/faq";
+
 import Create from "@/public/logos/create.svg";
 import blueEllipse from "@/public/ellipses/blueEllipse.svg";
 
@@ -19,6 +22,7 @@ const Page = () => {
         backgroundColor="bg-acm-blue-200"
         image={Create1}
       />
+      <FAQ />
     </>
   );
 };

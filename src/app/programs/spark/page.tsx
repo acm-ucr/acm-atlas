@@ -1,6 +1,8 @@
 import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Spark1 from "@/public/spark/spark1.webp";
+import FAQ from "@/components/programs/spark/faq";
+
 import Projects from "@/components/programs/projects";
 import Spark from "@/public/logos/spark.svg";
 import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
@@ -20,6 +22,7 @@ const Page = () => {
         backgroundColor="bg-acm-yellow-200"
         image={Spark1}
       />
+      <FAQ />
       <Projects />
     </div>
   );

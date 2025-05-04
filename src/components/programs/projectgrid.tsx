@@ -1,6 +1,6 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import ProjectCard from "../projectcard";
+import ProjectCard from "./projectcard";
 import spark from "@/data/projects/spark";
 
 const ProjectGrid = () => {
