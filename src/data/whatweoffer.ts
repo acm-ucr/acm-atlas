@@ -11,7 +11,7 @@ export const whatWeOffer = [
     acm: "ACM Spark",
     pText:
       "where you can develop a static front-end website for campus organizations and companies!",
-    textColor: "text-acm-yellow-300",
+    textColor: "text-acm-yellow-500",
     linkColor: "bg-acm-yellow-100 ",
     image: Spark,
     link: "/programs/spark",
