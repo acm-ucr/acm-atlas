@@ -22,11 +22,18 @@ const Hack = ({ name, website, logo, description }: HackProps) => {
       <p className="text-2xl font-semibold">Hackathon</p>
       <Image src={logo} alt="logo" className="absolute right-[20%]" />
       <p className="ml-[20%] w-1/3 py-10 text-left">{description}</p>
-      <div className="mx-[20%] my-10 flex justify-between">{stats.map((stat, index) => (
-        <StatItem key={index} end={stat.end} label={stat.label} duration={stat.duration} />))}
+      <div className="mx-[20%] my-10 flex justify-between">
+        {stats.map((stat, index) => (
+          <StatItem
+            key={index}
+            end={stat.end}
+            label={stat.label}
+            duration={stat.duration}
+          />
+        ))}
       </div>
       <Link
-        href={
+        href={website}
         className="bg-acm-green-500 text-acm-gray-100 mx-auto flex w-1/6 items-center justify-center rounded-lg py-2 text-xl font-semibold"
       >
         Visit our Website!
