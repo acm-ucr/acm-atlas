@@ -15,7 +15,7 @@ interface CarouselProps {
 
 const Carousel = ({ data, pad, padmd, pad2xl }: CarouselProps) => {
   return (
-    <div className="relative flex overflow-hidden py-5">
+    <div className="relative flex overflow-hidden py-[6vh]">
       <div className="animate-marquee flex w-screen justify-between gap-x-10 px-5">
         {data.map(({ name, icon, borderColor }, index) => (
           <CarouselItem

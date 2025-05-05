@@ -20,6 +20,7 @@ import Nidheesh from "@/public/board/spark/nidheesh.webp";
 import Khushi from "@/public/board/das/khushi.webp";
 import Marcus from "@/public/board/forge/marcus.webp";
 import Ian from "@/public/board/forge/ian.webp";
+import Avia from "@/public/board/spark/avia.png";
 export const Board = [
   {
     title: "ACM BOARD",
@@ -205,7 +206,7 @@ export const Board = [
         position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Stanley,
+        photo: Avia,
         linkedin: "https://www.linkedin.com/in/avia-bequette-b41088218/",
         github: "https://github.com/aviamb",
       },
