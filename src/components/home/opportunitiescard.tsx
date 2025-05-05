@@ -24,8 +24,13 @@ const OpportunitiesCard = ({
       <p className="text-acm-gray-500 absolute top-6 left-6 text-xl">
         0{index}
       </p>
+<<<<<<< HEAD
       <div className="absolute bottom-22 left-8 flex items-center gap-2">
         <p className="text-acm-gray-500 text-xl font-semibold uppercase">
+=======
+      <div className="absolute bottom-[5.5rem] left-8 flex items-center gap-2">
+        <p className="text-xl font-semibold uppercase text-acm-gray-500">
+>>>>>>> 8f1c77bb21336eb547e2667113a6b1780ca68246
           {name}
         </p>
         <Link href={link} className="rounded-full bg-white px-4 py-1 text-sm">
