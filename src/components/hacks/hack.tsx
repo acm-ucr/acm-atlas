@@ -7,28 +7,36 @@ interface HackProps {
   website: string;
   logo: StaticImageData;
   description: string;
+  description2: string;
+  subtitle: string;
+  stats: {
+    end: number;
+    label: string;
+  }[];
 }
 
-const Hack = ({ name, website, logo, description }: HackProps) => {
-  const stats = [
-    { end: 500, label: "Hackers", duration: 2 },
-    { end: 2500, label: "Projects", duration: 2 },
-    { end: 1000, label: "In Prizes", duration: 2 },
-    { end: 24, label: "Hours", duration: 2 },
-  ];
+const Hack = ({
+  name,
+  website,
+  logo,
+  description,
+  description2,
+  subtitle,
+  stats,
+}: HackProps) => {
   return (
     <div className="text-acm-gray-200 relative text-center text-2xl font-semibold">
       <p className="py-5 text-5xl font-bold">{name}</p>
-      <p className="text-2xl font-semibold">Hackathon</p>
+      <p className="text-2xl font-semibold">{subtitle}</p>
       <Image src={logo} alt="logo" className="absolute right-[20%]" />
       <p className="ml-[20%] w-1/3 py-10 text-left">{description}</p>
-      <div className="mx-[20%] my-10 flex justify-between">
+      <div className="flex justify-around py-10">
         {stats.map((stat, index) => (
           <StatItem
             key={index}
             end={stat.end}
             label={stat.label}
-            duration={stat.duration}
+            duration={2}
           />
         ))}
       </div>
@@ -40,12 +48,7 @@ const Hack = ({ name, website, logo, description }: HackProps) => {
       </Link>
       <div className="mx-[20%] text-left">
         <p className="py-5 text-3xl font-bold">WHAT WE DO</p>
-        <p>
-          Rose Hack’s mission is to encourage individuals from underrepresented
-          groups in STEM to gain experience, create strong networks, and build
-          amazing projects through their shared passions in Science and
-          Technology.
-        </p>
+        <p>{description2}</p>
       </div>
     </div>
   );

@@ -34,9 +34,25 @@
   --color-acm-green-500: #1f3f3d;
 
   --color-acm-red: #dd2c00;
+
   --color-acm-eslint: #8080f2;
   --color-acm-typescript: #3178c6;
   --color-acm-tailwindcss: #38bdf8;
+  --color-acm-prettier: #e8bc5c;
+
+  --color-acm-arduino: #19999e;
+  --color-acm-raspberrypi: #c31c4a;
+  --color-acm-qt: #2cde85;
+
+  --color-acm-invision: #ff2962;
+  --color-acm-figma: #1abcfe;
+  --color-acm-adobexd: #ff61f6;
+
+  --color-acm-python: #ffce3d;
+  --color-acm-r: #246abe;
+  --color-acm-numpy: #4dabcf;
+  --color-acm-pytorch: #ee4c2c;
+  --color-acm-scikit: #f89939;
 }
 
 :root {
@@ -152,5 +168,35 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@tailwind utilities;
+
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee-continuation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  .animate-marquee-continuation {
+    animation: marquee-continuation 20s linear infinite;
   }
 }
