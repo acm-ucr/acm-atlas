@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="h-0.5 w-full bg-acm-blue-400" />
       <div className="grid grid-cols-6 justify-items-center py-5">
         <div className="col-span-2 flex flex-col justify-around">
-          <Image src={ACMLogo} alt="ACM Logo" className="w-22" />
+          <Image src={ACMLogo} alt="ACM Logo" className="w-20" />
           <p className="text-4xl font-semibold text-acm-gray-500">ACM@UCR</p>
           <p className="text-xl text-acm-gray-500">
             Association of Computing Machinery
