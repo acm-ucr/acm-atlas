@@ -1,7 +1,7 @@
 const Upcoming = () => {
   return (
     <div>
-      <p className="text-acm-gray-500 flex justify-center text-7xl font-semibold">
+      <p className="flex justify-center text-7xl font-semibold text-acm-gray-500">
         UPCOMING EVENTS
       </p>
     </div>

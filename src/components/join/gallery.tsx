@@ -13,7 +13,7 @@ import Link from "next/link";
 const Gallery = () => {
   return (
     <div className="mx-auto flex w-3/4 flex-col items-center">
-      <p className="text-acm-gray-500 mb-8 text-4xl font-bold">GALLERY</p>
+      <p className="mb-8 text-4xl font-bold text-acm-gray-500">GALLERY</p>
       <div className="grid grid-cols-5 gap-8">
         <div className="col-span-2 grid grid-rows-2 gap-8">
           <Image
@@ -73,7 +73,7 @@ const Gallery = () => {
       </div>
       <Link
         href="/"
-        className="bg-acm-blue-700 my-8 rounded-2xl px-12 py-3 text-3xl font-medium text-white"
+        className="my-8 rounded-2xl bg-acm-blue-700 px-12 py-3 text-3xl font-medium text-white"
       >
         See More
       </Link>
