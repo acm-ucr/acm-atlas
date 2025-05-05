@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="px-20">
+    <div className="mx-auto w-11/12">
       <p className="my-[10vh] text-center text-6xl font-bold text-acm-gray-500">
         HACKPACKS
       </p>
