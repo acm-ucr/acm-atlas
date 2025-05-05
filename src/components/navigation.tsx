@@ -64,7 +64,7 @@ const Navigation = () => {
                         {Icon && <Icon className="text-lg" />}
                       </div>
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="px-7">
+                    <NavigationMenuContent className="bg-white px-7">
                       {subItems.map(({ subName, subLink }, subIndex) => (
                         <NavigationMenuLink
                           key={subIndex}
