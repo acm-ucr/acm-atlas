@@ -11,5 +11,4 @@ then
 else
   npm ci
   npm run build
-  npm run export
 fi

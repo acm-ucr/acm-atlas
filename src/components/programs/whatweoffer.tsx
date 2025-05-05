@@ -26,7 +26,7 @@ const WhatWeOffer = ({
   return (
     <div className="mx-[15%] my-16 grid grid-cols-3">
       <div className="col-span-2">
-        <div className="text-acm-gray-500 text-nowraps flex text-5xl font-bold">
+        <div className="text-acm-gray-500 text-nowrap flex text-5xl font-bold">
           <p>{header}</p>
           <p className={`${textColor} font-bold`}>&nbsp;{program}&nbsp;</p>
           <p>?</p>
