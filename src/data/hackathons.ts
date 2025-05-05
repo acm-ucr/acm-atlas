@@ -12,6 +12,7 @@ interface Hackathon {
   description2: string;
   website: string;
   textColor: string;
+  bgColor: string;
   subtitle: string;
   devposts: {
     year: string;
@@ -34,6 +35,7 @@ const hackathons: Hackathon[] = [
       "Rose Hack’s mission is to encourage individuals from underrepresented groups in STEM to gain experience, create strong networks, and build amazing projects through their shared passions in Science and Technology.",
     website: "https://www.rosehack.com/",
     textColor: "text-acm-green-500",
+    bgColor: "bg-acm-green-500",
     subtitle: "Hackathon",
     devposts: [
       { year: "2020", link: "https://rose-hack-2020.devpost.com/" },
@@ -60,6 +62,7 @@ const hackathons: Hackathon[] = [
       "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
     website: "https://cutiehack.com/",
     textColor: "text-acm-orange-400",
+    bgColor: "bg-acm-orange-400",
     subtitle: "Hackathon",
     devposts: [
       { year: "2019", link: "https://cutiehack2019.devpost.com/" },
@@ -86,6 +89,7 @@ const hackathons: Hackathon[] = [
       "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
     website: "https://www.citrushack.com/",
     textColor: "text-acm-orange-400",
+    bgColor: "bg-acm-orange-400",
     subtitle: "Hackathon",
     devposts: [
       { year: "2019", link: "https://citrushack2019.devpost.com/" },
@@ -121,6 +125,7 @@ const hackathons: Hackathon[] = [
       "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
     website: "https://www.designverseucr.org/",
     textColor: "text-acm-green-500",
+    bgColor: "bg-acm-green-500",
     subtitle: "Designathon",
     devposts: [{ year: "2024", link: "https://designverseucr.devpost.com/" }],
     stats: [
