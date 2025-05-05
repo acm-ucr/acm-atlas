@@ -1,39 +1,13 @@
-import React from "react";
+"use client";
+import StatItem from "../statitem";
 
 const StatsGrid: React.FC = () => {
   return (
     <div className="mx-auto grid w-3/4 grid-cols-4 text-left">
-      <div className="flex flex-col">
-        <div className="text-acm-gray-500 text-6xl font-bold">500+</div>
-        <div className="text-acm-gray-500 text-2xl">members</div>
-      </div>
-
-      <div className="flex flex-col border-l border-gray-300 px-2">
-        <div className="text-acm-gray-500 pl-2 text-6xl leading-tight font-bold">
-          2500+
-        </div>
-        <div className="text-acm-gray-500 pl-2 text-2xl leading-tight">
-          alumni
-        </div>
-      </div>
-
-      <div className="flex flex-col border-l border-gray-300 px-2">
-        <div className="text-acm-gray-500 pl-2 text-6xl leading-tight font-bold">
-          50+
-        </div>
-        <div className="text-acm-gray-500 pl-2 text-2xl leading-tight">
-          socials
-        </div>
-      </div>
-
-      <div className="flex flex-col border-l border-gray-300 px-2">
-        <div className="text-acm-gray-500 pl-2 text-6xl leading-tight font-bold">
-          100+
-        </div>
-        <div className="text-acm-gray-500 pl-2 text-2xl leading-tight">
-          workshops
-        </div>
-      </div>
+      <StatItem end={500} label="members" duration={0.7} />
+      <StatItem end={2500} label="alumni" duration={0.7} />
+      <StatItem end={50} label="socials" duration={0.7} />
+      <StatItem end={100} label="workshops" duration={0.7} />
     </div>
   );
 };

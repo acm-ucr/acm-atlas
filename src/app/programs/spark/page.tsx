@@ -4,6 +4,7 @@ import Spark1 from "@/public/spark/spark1.webp";
 import ProjectGrid from "@/components/programs/spark/projectgrid";
 import spark from "@/data/teckstacks/spark";
 import Carousel from "@/components/carousel";
+import FAQ from "@/components/programs/spark/faq";
 import Spark from "@/public/logos/spark.svg";
 import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
 
@@ -17,13 +18,15 @@ const Page = () => {
         logo={Spark}
         ellipse={yellowEllipse}
       />
+      <Carousel data={spark} />
       <Joinus
         textColor="text-acm-gray-500"
         backgroundColor="bg-acm-yellow-200"
         image={Spark1}
       />
-      <Carousel data={spark} />
       <ProjectGrid />
+
+      <FAQ />
     </>
   );
 };
