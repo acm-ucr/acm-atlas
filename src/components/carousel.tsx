@@ -14,8 +14,8 @@ interface CarouselProps {
 
 const Carousel = ({ data }: CarouselProps) => {
   return (
-    <div className="relative flex w-screen overflow-hidden py-5">
-      <div className="animate-marquee flex items-stretch gap-10 px-10">
+    <div className="relative flex overflow-hidden py-5">
+      <div className="animate-marquee flex w-screen justify-between gap-10 px-10">
         {data.map(({ name, icon, borderColor, iconColor }, index) => (
           <CarouselItem
             key={index}
@@ -26,7 +26,7 @@ const Carousel = ({ data }: CarouselProps) => {
           />
         ))}
       </div>
-      <div className="animate-marquee-continuation absolute flex items-stretch gap-10 px-10">
+      <div className="animate-marquee-continuation items-between absolute flex w-screen gap-10 px-10">
         {data.map(({ name, icon, borderColor, iconColor }, index) => (
           <CarouselItem
             key={`second-${index}`}
