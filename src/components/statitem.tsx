@@ -28,10 +28,10 @@ const StatItem = ({ end, label, duration }: StatItemProps) => {
 
   return (
     <div className="flex flex-col">
-      <div ref={ref} className="text-6xl font-bold text-acm-gray-500">
+      <div ref={ref} className="text-acm-gray-500 text-6xl font-bold">
         {isVisible ? <CountUp start={0} end={end} duration={duration} /> : 0}+
       </div>
-      <div className="text-2xl text-acm-gray-500">{label}</div>
+      <div className="text-acm-gray-500 text-2xl">{label}</div>
     </div>
   );
 };

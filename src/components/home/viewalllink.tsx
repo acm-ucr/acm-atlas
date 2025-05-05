@@ -10,7 +10,7 @@ const ViewAllLink = ({ link, children }: ViewAllLinkProps) => {
   return (
     <Link
       href={link}
-      className="flex items-center text-lg font-semibold text-acm-gray-500"
+      className="text-acm-gray-500 flex items-center text-lg font-semibold"
     >
       View all {children} Projects <FaArrowRightLong className="ml-2" />
     </Link>

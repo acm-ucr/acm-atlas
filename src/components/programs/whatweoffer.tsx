@@ -26,20 +26,20 @@ const WhatWeOffer = ({
   return (
     <div className="mx-[15%] grid grid-cols-3">
       <div className="col-span-2">
-        <div className="flex text-nowrap text-4xl font-bold text-acm-gray-500">
+        <div className="text-acm-gray-500 flex text-4xl font-bold text-nowrap">
           <p>{header}</p>
           <p className={`${textColor} font-bold`}>&nbsp;{program}&nbsp;</p>
           <p>?</p>
         </div>
 
-        <div className="w-5/6 py-2 text-2xl font-semibold text-acm-gray-500">
+        <div className="text-acm-gray-500 w-5/6 py-2 text-2xl font-semibold">
           <p className="inline">Join</p>
           <p className="inline font-bold">&nbsp;{acm}&nbsp;</p>
           <p className="inline">{pText}</p>
         </div>
         <Link
           href={link}
-          className={`${linkColor} flex w-1/4 items-center justify-center rounded-lg py-2 text-xl font-semibold text-acm-gray-500`}
+          className={`${linkColor} text-acm-gray-500 flex w-1/4 items-center justify-center rounded-lg py-2 text-xl font-semibold`}
         >
           Learn More →
         </Link>
