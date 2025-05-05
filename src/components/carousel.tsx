@@ -25,7 +25,7 @@ const Carousel = ({ data }: CarouselProps) => {
           />
         ))}
       </div>
-      <div className="animate-marquee-continuation items-between absolute flex w-screen gap-10 px-10">
+      <div className="animate-marquee-continuation absolute flex w-screen justify-between gap-10 px-[3.5vw] 2xl:px-[4vw]">
         {data.map(({ name, icon, borderColor, iconColor }, idx) => (
           <CarouselItem
             key={idx}
