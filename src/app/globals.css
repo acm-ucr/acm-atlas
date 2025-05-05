@@ -163,8 +163,6 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-@tailwind utilities;
-
 @layer utilities {
   @keyframes marquee {
     0% {
