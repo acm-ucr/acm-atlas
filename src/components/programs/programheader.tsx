@@ -17,7 +17,7 @@ const ProgramHeader = ({
   ellipse,
 }: HeaderProps) => {
   return (
-    <div className="text-acm-gray-500 relative pb-10 text-2xl font-semibold">
+    <div className="text-acm-gray-500 relative py-10 text-2xl font-semibold">
       <Image className="absolute" src={ellipse} alt="green" />
       <div className="py-5 text-center">
         <p className="flex justify-center p-5 text-5xl font-bold">{header}</p>
