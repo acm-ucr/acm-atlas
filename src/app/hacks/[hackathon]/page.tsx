@@ -1,16 +1,15 @@
-// app/hacks/[hackathon]/page.tsx
 import Hack from "@/components/hacks/hack";
 import hacks from "@/data/hackathons";
 import { notFound } from "next/navigation";
 
 interface PageProps {
-  params: { hackathon: string };
+  params: Promise<{ hackathon: string }>;
 }
 
-const Page = ({ params }: PageProps) => {
-  const { hackathon } = params;
-  const hack = hacks.find((h) => h.id === hackathon);
+const Page = async ({ params }: PageProps) => {
+  const { hackathon } = await params;
 
+  const hack = hacks.find((h) => h.id === hackathon);
   if (!hack) return notFound();
 
   return (
