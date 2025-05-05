@@ -25,7 +25,7 @@ const Hack = ({
   stats,
 }: HackProps) => {
   return (
-    <div className="text-acm-gray-200 relative text-center text-2xl font-semibold">
+    <div className="relative text-center text-2xl font-semibold text-acm-gray-200">
       <p className="py-5 text-5xl font-bold">{name}</p>
       <p className="text-2xl font-semibold">{subtitle}</p>
       <Image src={logo} alt="logo" className="absolute right-[20%]" />
@@ -42,7 +42,7 @@ const Hack = ({
       </div>
       <Link
         href={website}
-        className="bg-acm-green-500 text-acm-gray-100 mx-auto flex w-1/6 items-center justify-center rounded-lg py-2 text-xl font-semibold"
+        className="mx-auto flex w-1/6 items-center justify-center rounded-lg bg-acm-green-500 py-2 text-xl font-semibold text-acm-gray-100"
       >
         Visit our Website!
       </Link>
