@@ -1,5 +1,4 @@
-import React from "react";
-import CarouselItem from "./CarouselItem";
+import CarouselItem from "./ui/carouselitem";
 
 interface CarouselDataItem {
   name: string;
@@ -27,9 +26,9 @@ const Carousel = ({ data }: CarouselProps) => {
         ))}
       </div>
       <div className="animate-marquee-continuation items-between absolute flex w-screen gap-10 px-10">
-        {data.map(({ name, icon, borderColor, iconColor }, index) => (
+        {data.map(({ name, icon, borderColor, iconColor }, idx) => (
           <CarouselItem
-            key={`second-${index}`}
+            key={idx}
             name={name}
             icon={icon}
             borderColor={borderColor}
