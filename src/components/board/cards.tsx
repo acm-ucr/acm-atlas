@@ -4,7 +4,7 @@ import { Board } from "@/data/board";
 import Card from "@/components/board/card";
 
 type SectionRefs = {
-  [key: string]: React.RefObject<HTMLDivElement | null>;
+  [key: string]: React.RefObject<HTMLDivElement>;
 };
 
 const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
