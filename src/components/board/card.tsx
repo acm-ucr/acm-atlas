@@ -22,7 +22,7 @@ const Card = ({
   github,
 }: BoardProps) => {
   return (
-    <div className="mx-auto flex w-7/8 flex-col items-center text-center md:w-1/2">
+    <div className="w-7/8 mx-auto flex flex-col items-center text-center md:w-1/2">
       <p className={`${color} py-4 text-xl font-bold md:text-2xl`}>
         {position}
       </p>
@@ -33,7 +33,7 @@ const Card = ({
           alt="photo"
         />
       </div>
-      <p className="pt-6 pb-2 text-lg font-bold md:text-xl">{name}</p>
+      <p className="pb-2 pt-6 text-lg font-bold md:text-xl">{name}</p>
       <div className={`${color} flex flex-row items-center gap-4`}>
         <Link href={linkedin}>
           <FaLinkedin className="text-3xl hover:scale-105 hover:opacity-75 md:text-5xl" />
