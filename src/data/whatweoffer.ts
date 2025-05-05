@@ -1,6 +1,6 @@
 import Spark from "@/public/logos/spark.svg";
 import Create from "@/public/logos/create.svg";
-import Emedded from "@/public/logos/embedded.svg";
+import Forge from "@/public/logos/forge.svg";
 import Das from "@/public/logos/das.svg";
 import Bitbyte from "@/public/logos/bitbyte.svg";
 
@@ -35,7 +35,7 @@ export const whatWeOffer = [
       "where you can build physical embedded projects across 3 different sub teams: CS, EE, and ME! ",
     textColor: "text-acm-gray-400",
     linkColor: "bg-acm-gray-100 ",
-    image: Emedded,
+    image: Forge,
     link: "/programs/forge",
   },
   {
