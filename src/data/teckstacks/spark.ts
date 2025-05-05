@@ -1,41 +1,33 @@
-import {
-  SiEslint,
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-  SiPrettier,
-} from "react-icons/si";
-
+import NextJS from "@/public/techstacks/nextjs.svg";
+import Typescript from "@/public/techstacks/typescript.svg";
+import Eslint from "@/public/techstacks/eslint.svg";
+import TailwindCSS from "@/public/techstacks/tailwindcss.svg";
+import Prettier from "@/public/techstacks/prettier.svg";
 const spark = [
   {
     name: "Next.js",
-    icon: SiNextdotjs,
+    icon: NextJS,
     borderColor: "border-black",
-    iconColor: "text-black",
   },
   {
     name: "TypeScript",
-    icon: SiTypescript,
+    icon: Typescript,
     borderColor: "border-acm-typescript",
-    iconColor: "text-acm-typescript",
   },
   {
     name: "ESLint",
-    icon: SiEslint,
+    icon: Eslint,
     borderColor: "border-acm-eslint",
-    iconColor: "text-acm-eslint",
   },
   {
     name: "TailwindCSS",
-    icon: SiTailwindcss,
+    icon: TailwindCSS,
     borderColor: "border-acm-tailwindcss",
-    iconColor: "text-acm-tailwindcss",
   },
   {
     name: "Prettier",
-    icon: SiPrettier,
+    icon: Prettier,
     borderColor: "border-acm-prettier",
-    iconColor: "text-acm-prettier",
   },
 ];
 export default spark;

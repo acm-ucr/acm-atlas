@@ -3,7 +3,7 @@ import Joinus from "@/components/programs/joinus";
 import Spark1 from "@/public/spark/spark1.webp";
 import ProjectGrid from "@/components/programs/spark/projectgrid";
 import spark from "@/data/teckstacks/spark";
-import Carousel from "@/components/carousel";
+import Carousel from "@/components/programs/carousel";
 import FAQ from "@/components/programs/spark/faq";
 import Spark from "@/public/logos/spark.svg";
 import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
@@ -18,7 +18,12 @@ const Page = () => {
         logo={Spark}
         ellipse={yellowEllipse}
       />
-      <Carousel data={spark} />
+      <Carousel
+        data={spark}
+        pad={"px-[1vw]"}
+        padmd={"md:px-[2.5vw]"}
+        pad2xl={"2xl:px-[8vw]"}
+      />
       <Joinus
         textColor="text-acm-gray-500"
         backgroundColor="bg-acm-yellow-200"

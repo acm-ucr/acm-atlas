@@ -1,11 +1,11 @@
 import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Forge1 from "@/public/forge/forge1.webp";
-
 import FAQ from "@/components/programs/forge/faq";
-
 import Forge from "@/public/logos/forge.svg";
 import grayEllipse from "@/public/ellipses/grayEllipse.svg";
+import Carousel from "@/components/programs/carousel";
+import forge from "@/data/teckstacks/forge";
 
 const Page = () => {
   return (
@@ -16,6 +16,12 @@ const Page = () => {
         text="ACM Forge is a 10-week, quarter-long program that aims to develop a project combining software, electrical, and mechanical engineering aspects."
         logo={Forge}
         ellipse={grayEllipse}
+      />
+      <Carousel
+        data={forge}
+        pad={"px-[1vw]"}
+        padmd={"md:px-[2.5vw]"}
+        pad2xl={"2xl:px-[14vw]"}
       />
       <Joinus
         textColor="text-white"
