@@ -20,7 +20,7 @@ import Nidheesh from "@/public/board/spark/nidheesh.webp";
 import Khushi from "@/public/board/das/khushi.webp";
 import Marcus from "@/public/board/forge/marcus.webp";
 import Ian from "@/public/board/forge/ian.webp";
-import Avia from "@/public/board/spark/avia.png";
+import Avia from "@/public/board/spark/avia.webp";
 export const Board = [
   {
     title: "ACM BOARD",
