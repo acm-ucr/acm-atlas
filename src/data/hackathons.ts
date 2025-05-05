@@ -53,7 +53,7 @@ const hackathons: Hackathon[] = [
   {
     id: "cutiehack",
     logo: Cutiehack,
-    name: "Cutie Hack",
+    name: "CUTIE HACK",
     description:
       "Cutie Hack is a 12-hour, beginner-oriented hackathon hosted by students at University of California, Riverside.",
     description2:
@@ -79,7 +79,7 @@ const hackathons: Hackathon[] = [
   {
     id: "citrushack",
     logo: Citrushack,
-    name: "Citrus Hack",
+    name: "CITRUS HACK",
     description:
       "Citrus Hack is a 24-hour hackathon and one of UC Riverside's largest hackathons.",
     description2:
@@ -114,7 +114,7 @@ const hackathons: Hackathon[] = [
   {
     id: "designverse",
     logo: Designverse,
-    name: "Designverse",
+    name: "DESIGNVERSE",
     description:
       "DesignVerse is the first and only 24-hour beginner-friendly Design-a-Thon hosted by the University of California, Riverside.",
     description2:
