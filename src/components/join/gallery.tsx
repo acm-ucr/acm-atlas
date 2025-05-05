@@ -73,7 +73,7 @@ const Gallery = () => {
       </div>
       <Link
         href="/"
-        className="bg-acm-blue-700 my-10 rounded-xl px-10 py-1 text-2xl text-white"
+        className="bg-acm-blue-700 my-8 rounded-2xl px-12 py-3 text-3xl font-medium text-white"
       >
         See More
       </Link>
