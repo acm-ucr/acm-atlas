@@ -1,13 +1,51 @@
 import hackathons from "@/data/hackathons";
+import WhatWeOffer from "./whatweoffer";
 import Link from "next/link";
 const Hacks = () => {
   return (
     <div className="flex flex-col gap-4">
-      {hackathons.map(({ id, name }, index) => (
-        <Link key={index} href={`/hacks/${id}`}>
-          {name}
+      <div className="mx-auto flex w-11/12 flex-col justify-center">
+        <p className="mb-[5vh] mt-[9vh] text-center text-6xl font-bold">
+          HACKS
+        </p>
+        <p className="mx-auto w-3/4 text-center text-2xl font-semibold">
+          ACM hosts one current open back-end focused project, three hackathons,
+          and one designathon. A hackathon is an event where engineers come
+          together to build a project that solves a problem. A designathon is
+          similar to a hackathon, but focus on designing a working prototype.
+          These hacks provide ACM members with an opportunity to expand their
+          skills beyond our programs! Take a look below!
+        </p>
+        <p className="my-[4vh] text-center text-5xl font-bold">WHAT WE OFFER</p>
+      </div>
+      {hackathons.map(
+        ({ description, bgColor, textColor, logo, id, name }, index) => (
+          <WhatWeOffer
+            key={index}
+            name={name}
+            bgColor={bgColor}
+            description={description}
+            textColor={textColor}
+            logo={logo}
+            link={`/hacks/${id}`}
+          />
+        ),
+      )}
+      <div className="mx-[15%] flex flex-col pb-[10%]">
+        <p className="pb-4 text-4xl font-bold text-acm-gray-500">
+          NOT SURE HOW TO GET HACKING?
+        </p>
+        <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
+          Check out our hackpacks, a tool you can use during your hackathons
+          here at UCR to get started on your project!
+        </p>
+        <Link
+          href="/hacks/hackpacks"
+          className="w-1/6 items-center justify-center rounded-lg bg-acm-blue-700 py-2 pl-4 text-xl font-semibold text-white"
+        >
+          Learn More →
         </Link>
-      ))}
+      </div>
     </div>
   );
 };

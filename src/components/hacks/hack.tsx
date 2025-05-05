@@ -42,6 +42,7 @@ const Hack = ({
       </div>
       <Link
         href={website}
+        target="_blank"
         className="mx-auto flex w-1/6 items-center justify-center rounded-lg bg-acm-green-500 py-2 text-xl font-semibold text-acm-gray-100"
       >
         Visit our Website!
