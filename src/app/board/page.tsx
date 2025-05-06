@@ -5,7 +5,7 @@ import Sidebar from "@/components/board/sidebar";
 import { useRef } from "react";
 
 type SectionRefs = {
-  [key: string]: React.RefObject<HTMLDivElement | null>;
+  [key: string]: React.RefObject<HTMLDivElement>;
 };
 
 const Page = () => {
