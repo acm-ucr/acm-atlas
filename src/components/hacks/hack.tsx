@@ -79,7 +79,7 @@ const Hack = ({
         <Link href="mailto:you@example.com">
           <TbMailFilled size={64} />
         </Link>
-        <Link href="https://instagram.com/yourpage" target="_blank">
+        <Link href="https://instagram.com" target="_blank">
           <BiLogoInstagramAlt size={64} />
         </Link>
       </div>
