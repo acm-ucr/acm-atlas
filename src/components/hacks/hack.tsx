@@ -2,6 +2,9 @@ import { StaticImageData } from "next/image";
 import Image from "next/image";
 import Link from "next/link";
 import StatItem from "../statitem";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { TbMailFilled } from "react-icons/tb";
+
 interface HackProps {
   name: string;
   website: string;
@@ -9,6 +12,10 @@ interface HackProps {
   description: string;
   description2: string;
   subtitle: string;
+  // devposts: {
+  //   year: string;
+  //   link: string;
+  // }[];
   stats: {
     end: number;
     label: string;
@@ -22,6 +29,7 @@ const Hack = ({
   description,
   description2,
   subtitle,
+  // devposts,
   stats,
 }: HackProps) => {
   return (
@@ -50,6 +58,30 @@ const Hack = ({
       <div className="mx-[20%] text-left">
         <p className="py-5 text-3xl font-bold">WHAT WE DO</p>
         <p>{description2}</p>
+      </div>
+      <div className="mt-10 text-3xl font-bold">PREVIOUS DEVPOSTS</div>
+      <div className="gap 4 grid grid-cols-3">
+        {/* {devposts?.map(({ year, link }) => (
+          <Link
+            key={year}
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="rounded-lg bg-slate-700 px-4 py-2 text-white">
+              {year}
+            </button>
+          </Link>
+        ))} */}
+      </div>
+      <div className="mt-10 text-3xl font-bold">CONTACT US</div>
+      <div className="mt-4 flex justify-center gap-6">
+        <Link href="mailto:you@example.com">
+          <TbMailFilled size={64} />
+        </Link>
+        <Link href="https://instagram.com" target="_blank">
+          <BiLogoInstagramAlt size={64} />
+        </Link>
       </div>
     </div>
   );
