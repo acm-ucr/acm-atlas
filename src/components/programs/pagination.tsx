@@ -83,7 +83,7 @@ const PaginationComponent = () => {
             )}
           </PaginationItem>
           <PaginationItem>
-            <PaginationLink className="bg-acm-blue-500 rounded-full text-white">
+            <PaginationLink className="rounded-full bg-acm-blue-500 text-white">
               {index + 1}
             </PaginationLink>
             {index + 1 <= total && (

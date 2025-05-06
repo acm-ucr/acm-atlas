@@ -39,9 +39,9 @@ const Search = () => {
   }, 300); // 300ms debounce delay
 
   return (
-    <div className="text-acm-gray-200 flex w-10/12 items-center rounded px-3 py-2">
+    <div className="flex w-10/12 items-center rounded px-3 py-2 text-acm-gray-200">
       <MdCancel
-        className="mx-2 translate-x-8 -translate-y-2 text-xl hover:cursor-pointer hover:opacity-50"
+        className="mx-2 -translate-y-2 translate-x-8 text-xl hover:cursor-pointer hover:opacity-50"
         onClick={() => {
           setSearchValue(""); // Clear the input field
           router.replace(pathname + "?" + createQueryString("search", ""), {
