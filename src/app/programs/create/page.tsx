@@ -7,7 +7,7 @@ import FAQ from "@/components/programs/create/faq";
 import Create from "@/public/logos/create.svg";
 import blueEllipse from "@/public/ellipses/blueEllipse.svg";
 import Carousel from "@/components/programs/carousel";
-import create from "@/data/teckstacks/create";
+import create from "@/data/techstacks/create";
 
 const Page = () => {
   return (
