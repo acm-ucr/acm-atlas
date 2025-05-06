@@ -27,7 +27,7 @@ const FeaturedProjects = () => {
         </div>
         <Link
           href="/"
-          className="justify-baseline mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
+          className="mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
         >
           View All Spark Projects →
         </Link>
@@ -39,7 +39,7 @@ const FeaturedProjects = () => {
         </div>
         <Link
           href="/"
-          className="justify-baseline mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
+          className="mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
         >
           View All Create Projects →
         </Link>
@@ -51,7 +51,7 @@ const FeaturedProjects = () => {
         </div>
         <Link
           href="/"
-          className="justify-baseline mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
+          className="mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
         >
           View All Forge Projects →
         </Link>
