@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const Aurorabuttons = () => {
+const AuroraButtons = () => {
   return (
-    <div className="mx-auto grid w-9/12 grid-cols-2 grid-rows-2 gap-y-20">
+    <div className="mx-auto grid w-9/12 grid-cols-2 gap-y-20">
       <div className="mx-auto flex w-11/12 flex-col justify-center">
         <p className="text-acm-gray-500 pb-5 text-center text-3xl font-semibold">
           WANT TO GET INVOLVED?
@@ -43,4 +43,4 @@ const Aurorabuttons = () => {
   );
 };
 
-export default Aurorabuttons;
+export default AuroraButtons;

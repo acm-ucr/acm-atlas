@@ -18,7 +18,7 @@ const ProgramHeader = ({
 }: HeaderProps) => {
   return (
     <div className="text-acm-gray-500 relative pb-10 text-2xl font-semibold">
-      {ellipse && <Image className="absolute" src={ellipse} alt="green" />}
+      {ellipse && <Image className="absolute" src={ellipse} alt="ellipse" />}
       <div className="py-5 text-center">
         <p className="flex justify-center p-5 text-5xl font-bold">{header}</p>
         <p className="pb-5">{subtitle}</p>
