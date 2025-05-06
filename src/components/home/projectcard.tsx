@@ -11,7 +11,7 @@ const ProjectCard = ({ project, image, link }: ProjectCardProps) => {
   return (
     <Link href={link} className="relative flex justify-center">
       <Image src={image} alt={`${project} Image`} />
-      <div className="absolute bottom-4 w-11/12 rounded-3xl bg-white p-3 pl-5 text-2xl font-semibold">
+      <div className="absolute bottom-4 w-11/12 rounded-3xl bg-white p-3 pl-5 text-xl md:text-2xl font-semibold">
         {project}
       </div>
     </Link>
