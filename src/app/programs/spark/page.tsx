@@ -6,6 +6,7 @@ import Carousel from "@/components/programs/carousel";
 import FAQ from "@/components/programs/spark/faq";
 import Spark from "@/public/logos/spark.svg";
 import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
+import Projects from "@/components/programs/projects";
 
 const Page = () => {
   return (
@@ -29,6 +30,7 @@ const Page = () => {
         image={Spark1}
       />
       <FAQ />
+      <Projects />
     </div>
   );
 };

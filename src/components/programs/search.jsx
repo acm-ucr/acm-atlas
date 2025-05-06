@@ -23,7 +23,6 @@ const Search = () => {
     [searchParams],
   );
 
-  // Debounce function
   const debounce = (func, delay) => {
     let timeout;
     return (...args) => {
@@ -36,14 +35,14 @@ const Search = () => {
     router.replace(pathname + "?" + createQueryString("search", value), {
       scroll: false,
     });
-  }, 300); // 300ms debounce delay
+  }, 300);
 
   return (
     <div className="flex w-10/12 items-center rounded px-3 py-2 text-acm-gray-200">
       <MdCancel
-        className="mx-2 -translate-y-2 translate-x-8 text-xl hover:cursor-pointer hover:opacity-50"
+        className="mx-2 text-xl hover:cursor-pointer hover:opacity-50"
         onClick={() => {
-          setSearchValue(""); // Clear the input field
+          setSearchValue("");
           router.replace(pathname + "?" + createQueryString("search", ""), {
             scroll: false,
           });
@@ -54,11 +53,11 @@ const Search = () => {
         className="mb-5 w-full rounded-xl bg-gray-100 px-4 py-2 pl-10"
         value={searchValue}
         onChange={(e) => {
-          setSearchValue(e.target.value); // Update local state
-          handleSearch(e.target.value); // Debounced URL update
+          setSearchValue(e.target.value);
+          handleSearch(e.target.value);
         }}
       />
-      <FaSearch className="mx-2 -translate-x-10 -translate-y-3 text-xl" />
+      <FaSearch className="mx-2 text-xl" />
     </div>
   );
 };
