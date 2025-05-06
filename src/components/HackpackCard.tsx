@@ -1,4 +1,4 @@
-import { TECHSTACKS, TECH_COLORS} from "@/data/user/hackpacks";
+import { TECHSTACKS, TECH_COLORS } from "@/data/user/hackpacks";
 import { FaGithub } from "react-icons/fa";
 
 interface HackpackCardProps {
