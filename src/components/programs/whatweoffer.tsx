@@ -32,7 +32,7 @@ const WhatWeOffer = ({
           <p>?</p>
         </div>
 
-        <div className="w-full py-8 text-center text-xl font-semibold text-acm-gray-500 md:text-left md:text-2xl">
+        <div className="w-full py-8 text-center text-xl font-semibold text-acm-gray-500 md:w-4/5 md:text-left md:text-2xl">
           <p className="inline">Join</p>
           <p className="inline font-bold">&nbsp;{acm}&nbsp;</p>
           <p className="inline">{pText}</p>
