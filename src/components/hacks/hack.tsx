@@ -12,14 +12,17 @@ interface HackProps {
   description: string;
   description2: string;
   subtitle: string;
-  // devposts: {
-  //   year: string;
-  //   link: string;
-  // }[];
+  bgColor: string;
+  devposts: {
+    year: string;
+    link: string;
+  }[];
   stats: {
     end: number;
     label: string;
   }[];
+  instagram: string;
+  email: string;
 }
 
 const Hack = ({
@@ -29,8 +32,11 @@ const Hack = ({
   description,
   description2,
   subtitle,
-  // devposts,
+  // bgColor,
+  devposts,
   stats,
+  // instagram,
+  // email,
 }: HackProps) => {
   return (
     <div className="relative text-center text-2xl font-semibold text-acm-gray-200">
@@ -60,26 +66,26 @@ const Hack = ({
         <p>{description2}</p>
       </div>
       <div className="mt-10 text-3xl font-bold">PREVIOUS DEVPOSTS</div>
-      <div className="gap 4 grid grid-cols-3">
-        {/* {devposts?.map(({ year, link }) => (
+      <div className="mt-10 grid grid-cols-3 gap-3">
+        {devposts.map(({ year, link }) => (
           <Link
             key={year}
             href={link}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="rounded-lg bg-slate-700 px-4 py-2 text-white">
+            <button className="w-1/3 rounded-lg bg-acm-green-400 p-3 font-medium text-white">
               {year}
             </button>
           </Link>
-        ))} */}
+        ))}
       </div>
       <div className="mt-10 text-3xl font-bold">CONTACT US</div>
       <div className="mt-4 flex justify-center gap-6">
-        <Link href="mailto:you@example.com">
+        <Link href="mailto:${email}">
           <TbMailFilled size={64} />
         </Link>
-        <Link href="https://instagram.com" target="_blank">
+        <Link href="${instagram}" target="_blank" rel="noopener noreferrer">
           <BiLogoInstagramAlt size={64} />
         </Link>
       </div>

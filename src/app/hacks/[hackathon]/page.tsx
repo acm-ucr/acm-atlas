@@ -20,8 +20,11 @@ const Page = async ({ params }: PageProps) => {
       description={hack.description}
       description2={hack.description2}
       subtitle={hack.subtitle}
-      // devposts={hack.devposts}
+      bgColor={hack.bgColor}
+      devposts={hack.devposts}
       stats={hack.stats}
+      instagram={hack.instagram}
+      email={hack.email}
     />
   );
 };

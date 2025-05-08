@@ -22,6 +22,8 @@ interface Hackathon {
     end: number;
     label: string;
   }[];
+  instagram: string;
+  email: string;
 }
 
 const hackathons: Hackathon[] = [
@@ -34,8 +36,8 @@ const hackathons: Hackathon[] = [
     description2:
       "Rose Hack’s mission is to encourage individuals from underrepresented groups in STEM to gain experience, create strong networks, and build amazing projects through their shared passions in Science and Technology.",
     website: "https://www.rosehack.com/",
-    textColor: "text-acm-green-500",
-    bgColor: "bg-acm-green-500",
+    textColor: "text-acm-green-400",
+    bgColor: "bg-acm-green-400",
     subtitle: "Hackathon",
     devposts: [
       { year: "2020", link: "https://rose-hack-2020.devpost.com/" },
@@ -51,6 +53,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/rosehackucr/",
+    email: "rosehackucr@gmail.com",
   },
   {
     id: "cutiehack",
@@ -78,6 +82,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/cutiehack_ucr/",
+    email: "citrushack@gmail.com",
   },
   {
     id: "citrushack",
@@ -114,6 +120,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/citrushack_ucr/",
+    email: "citrushack@gmail.com",
   },
   {
     id: "designverse",
@@ -124,8 +132,8 @@ const hackathons: Hackathon[] = [
     description2:
       "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
     website: "https://www.designverseucr.org/",
-    textColor: "text-acm-green-500",
-    bgColor: "bg-acm-green-500",
+    textColor: "text-acm-green-400",
+    bgColor: "bg-acm-green-400",
     subtitle: "Designathon",
     devposts: [{ year: "2024", link: "https://designverseucr.devpost.com/" }],
     stats: [
@@ -134,6 +142,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/designverseucr/",
+    email: "designverseucr@gmail.com",
   },
 ];
 
