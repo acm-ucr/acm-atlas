@@ -24,15 +24,15 @@ const WhatWeOffer = ({
   link,
 }: ProgramProps) => {
   return (
-    <div className="mx-[15%] my-16 grid grid-cols-3">
+    <div className="grid grid-cols-1 items-center px-4 py-12 md:grid-cols-3 md:px-[15%]">
       <div className="col-span-2">
-        <div className="flex text-nowrap text-5xl font-bold text-acm-gray-500">
+        <div className="flex flex-wrap justify-center text-center text-2xl font-bold text-acm-gray-500 md:justify-start md:text-left md:text-4xl">
           <p>{header}</p>
           <p className={`${textColor} font-bold`}>&nbsp;{program}&nbsp;</p>
           <p>?</p>
         </div>
 
-        <div className="w-5/6 py-12 text-3xl font-semibold text-acm-gray-500">
+        <div className="w-full py-8 text-center text-xl font-semibold text-acm-gray-500 md:text-left md:text-2xl">
           <p className="inline">Join</p>
           <p className="inline font-bold">&nbsp;{acm}&nbsp;</p>
           <p className="inline">{pText}</p>
@@ -45,8 +45,12 @@ const WhatWeOffer = ({
         </Link>
       </div>
 
-      <div className="flex justify-center">
-        <Image src={image} alt="program" />
+      <div className="mt-10 flex items-center justify-center md:mt-0">
+        <Image
+          src={image}
+          alt="program"
+          className="flex items-center justify-center"
+        />
       </div>
     </div>
   );
