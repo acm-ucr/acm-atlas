@@ -18,11 +18,11 @@ const Page = () => {
   };
 
   return (
-    <div className="flex flex-col gap-10">
+    <>
       <MeetTheBoard />
       <BoardCards sectionRefs={sectionRefs} />
       <Sidebar sectionRefs={sectionRefs} />
-    </div>
+    </>
   );
 };
 
