@@ -7,29 +7,33 @@ import ourvision4 from "@/public/about/ourvision4.webp";
 const OurVision = () => {
   return (
     <div className="mx-auto grid w-5/6 grid-cols-2 items-stretch gap-8 pt-[3vh]">
-      <div className="grid h-full grid-cols-5 gap-4">
-        <div className="col-span-2 grid h-full grid-rows-3 gap-4">
+      <div className="image-grid grid h-[600px] w-full grid-cols-5 grid-rows-6 gap-4 overflow-hidden transition-all">
+        <div className="pic1">
           <Image
             src={ourvision1}
             alt="ourvision1"
-            className="h-full w-full rounded-3xl object-cover"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
+        </div>
+        <div className="pic2">
           <Image
             src={ourvision3}
             alt="ourvision3"
-            className="row-span-2 h-full w-full rounded-3xl object-cover"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
         </div>
-        <div className="col-span-3 grid h-full grid-rows-2 gap-4">
+        <div className="pic3">
           <Image
             src={ourvision2}
             alt="ourvision2"
-            className="h-full w-full rounded-3xl object-cover"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
+        </div>
+        <div className="pic4">
           <Image
             src={ourvision4}
             alt="ourvision4"
-            className="h-full w-full rounded-3xl object-cover"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
         </div>
       </div>

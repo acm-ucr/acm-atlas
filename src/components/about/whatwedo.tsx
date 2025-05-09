@@ -27,29 +27,33 @@ const WhatWeDo = () => {
           <Image src={BitByte} alt="BitByte" className="w-[5vw]" />
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-4">
-        <div className="col-span-2 grid h-full grid-rows-3 gap-4">
+      <div className="image-grid grid h-[600px] w-full grid-cols-5 grid-rows-6 gap-4 overflow-hidden transition-all">
+        <div className="pic1">
           <Image
             src={WhatWeDo1}
-            alt="WhatWeDo1"
-            className="h-full w-full rounded-3xl object-cover"
-          />
-          <Image
-            src={WhatWeDo3}
-            alt="WhatWeDo3"
-            className="row-span-2 h-full w-full rounded-3xl object-cover"
+            alt="whatwedo1"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
         </div>
-        <div className="col-span-3 grid h-full grid-rows-2 gap-4">
+        <div className="pic2">
+          <Image
+            src={WhatWeDo3}
+            alt="whatwedo3"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          />
+        </div>
+        <div className="pic3">
           <Image
             src={WhatWeDo2}
-            alt="WhatWeDo2"
-            className="h-full w-full rounded-3xl object-cover"
+            alt="whatwedo2"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
+        </div>
+        <div className="pic4">
           <Image
             src={WhatWeDo4}
-            alt="WhatWeDo4"
-            className="h-full w-full rounded-3xl object-cover"
+            alt="whatwedo4"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
         </div>
       </div>

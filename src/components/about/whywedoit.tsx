@@ -7,29 +7,33 @@ import whywedoit4 from "@/public/about/whywedoit4.webp";
 const WhyWeDoIt = () => {
   return (
     <div className="mx-auto grid w-5/6 grid-cols-2 items-center gap-8 py-[10vh]">
-      <div className="grid h-full grid-cols-5 gap-4">
-        <div className="col-span-2 grid h-full grid-rows-3 gap-4">
+      <div className="image-grid grid h-[600px] w-full grid-cols-5 grid-rows-6 gap-4 overflow-hidden transition-all">
+        <div className="pic1">
           <Image
-            className="h-full w-full rounded-3xl object-cover"
             src={whywedoit1}
-            alt="Image1"
-          />
-          <Image
-            className="row-span-2 h-full w-full rounded-3xl object-cover"
-            src={whywedoit3}
-            alt="Image3"
+            alt="whywedoit1"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
         </div>
-        <div className="col-span-3 grid h-full grid-rows-2 gap-4">
+        <div className="pic2">
           <Image
-            className="h-full w-full rounded-3xl object-cover"
-            src={whywedoit2}
-            alt="Image2"
+            src={whywedoit3}
+            alt="whywedoit3"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
+        </div>
+        <div className="pic3">
           <Image
-            className="h-full w-full rounded-3xl object-cover"
+            src={whywedoit2}
+            alt="whywedoit2"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          />
+        </div>
+        <div className="pic4">
+          <Image
             src={whywedoit4}
-            alt="Image4"
+            alt="whywedoit4"
+            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
           />
         </div>
       </div>
