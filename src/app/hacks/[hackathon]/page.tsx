@@ -12,7 +12,23 @@ const Page = async ({ params }: PageProps) => {
   const hack = hacks.find((h) => h.id === hackathon);
   if (!hack) return notFound();
 
-  return <Hack name={hack.name} website={hack.website} logo={hack.logo} />;
+  return (
+    <Hack
+      name={hack.name}
+      website={hack.website}
+      logo={hack.logo}
+      description={hack.description}
+      description2={hack.description2}
+      subtitle={hack.subtitle}
+      stats={hack.stats}
+    />
+  );
 };
 
 export default Page;
+
+export async function generateStaticParams() {
+  return hacks.map((hack) => ({
+    hackathon: hack.id,
+  }));
+}
