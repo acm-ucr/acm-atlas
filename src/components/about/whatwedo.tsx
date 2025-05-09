@@ -31,22 +31,22 @@ const WhatWeDo = () => {
         <Image
           src={WhatWeDo1}
           alt="whatwedo1"
-          className="pic1 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          className="pic1 h-fullw-full rounded-3xl object-cover"
         />
         <Image
           src={WhatWeDo3}
           alt="whatwedo3"
-          className="pic2 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          className="pic2 h-full w-full rounded-3xl object-cover"
         />
         <Image
           src={WhatWeDo2}
           alt="whatwedo2"
-          className="pic3 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          className="pic3 h-full w-full rounded-3xl object-cover"
         />
         <Image
           src={WhatWeDo4}
           alt="whatwedo4"
-          className="pic4 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          className="pic4 h-full w-full rounded-3xl object-cover"
         />
       </div>
     </div>

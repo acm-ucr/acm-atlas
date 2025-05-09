@@ -11,22 +11,22 @@ const WhyWeDoIt = () => {
         <Image
           src={whywedoit1}
           alt="whywedoit1"
-          className="pic1 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          className="pic1 h-full w-full rounded-3xl object-cover"
         />
         <Image
           src={whywedoit3}
           alt="whywedoit3"
-          className="pic2 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          className="pic2 h-full w-full rounded-3xl object-cover"
         />
         <Image
           src={whywedoit2}
           alt="whywedoit2"
-          className="pic3 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          className="pic3 h-full w-full rounded-3xl object-cover"
         />
         <Image
           src={whywedoit4}
           alt="whywedoit4"
-          className="pic4 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+          className="pic4 h-full w-full rounded-3xl object-cover"
         />
       </div>
       <div className="text-center">
