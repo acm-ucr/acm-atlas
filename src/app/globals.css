@@ -1,5 +1,6 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import "tailwindcss/preflight";
+@tailwind utilities;
+@tailwind utilities;
 
 @custom-variant dark (&:is(.dark *));
 
@@ -30,7 +31,6 @@
   --color-acm-green-200: #44624a;
   --color-acm-green-400: #2d8e8f;
   --color-acm-green-500: #1f3f3d;
-
   --color-acm-red: #dd2c00;
   --color-acm-eslint: #8080f2;
   --color-acm-typescript: #3178c6;
@@ -144,11 +144,30 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
-  body {
-    @apply bg-background text-foreground;
+
+  @keyframes marquee-continuation {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 20s linear infinite;
+  }
+
+  .animate-marquee-continuation {
+    animation: marquee-continuation 20s linear infinite;
   }
 }

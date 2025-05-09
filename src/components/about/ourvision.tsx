@@ -6,7 +6,7 @@ import ourvision4 from "@/public/about/ourvision4.webp";
 
 const OurVision = () => {
   return (
-    <div className="mx-auto grid w-5/6 grid-cols-2 items-stretch gap-8 pt-[7vh]">
+    <div className="mx-auto grid w-5/6 grid-cols-2 items-stretch gap-8 pt-[3vh]">
       <div className="grid h-full grid-cols-5 gap-4">
         <div className="col-span-2 grid h-full grid-rows-3 gap-4">
           <Image
@@ -33,7 +33,7 @@ const OurVision = () => {
           />
         </div>
       </div>
-      <div className="text-acm-gray-500 flex h-full flex-col items-center justify-center text-center">
+      <div className="text-acm-gray-500 flex flex-col items-center justify-center text-center">
         <p className="text-4xl font-bold">OUR VISION</p>
         <p className="mt-5 w-5/6 text-2xl leading-normal font-medium">
           Our Vision is simple: We want to improve our members professionally,
