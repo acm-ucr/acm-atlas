@@ -32,7 +32,7 @@ const Hack = ({
   description,
   description2,
   subtitle,
-  // bgColor,
+  bgColor,
   devposts,
   stats,
   // instagram,
@@ -65,8 +65,8 @@ const Hack = ({
         <p className="py-5 text-3xl font-bold">WHAT WE DO</p>
         <p>{description2}</p>
       </div>
-      <div className="mt-10 text-3xl font-bold">PREVIOUS DEVPOSTS</div>
-      <div className="mt-10 grid grid-cols-3 gap-3">
+      <div className="mt-10 text-4xl font-bold">PREVIOUS DEVPOSTS</div>
+      <div className="mx-auto mt-6 grid w-1/3 grid-cols-3 gap-4">
         {devposts.map(({ year, link }) => (
           <Link
             key={year}
@@ -74,19 +74,21 @@ const Hack = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="w-1/3 rounded-lg bg-acm-green-400 p-3 font-medium text-white">
+            <button
+              className={`w-full rounded-xl ${bgColor} px-10 py-4 font-medium text-white`}
+            >
               {year}
             </button>
           </Link>
         ))}
       </div>
-      <div className="mt-10 text-3xl font-bold">CONTACT US</div>
+      <div className="mt-10 text-4xl font-bold">CONTACT US</div>
       <div className="mt-4 flex justify-center gap-6">
         <Link href="mailto:${email}">
-          <TbMailFilled size={64} />
+          <TbMailFilled color={bgColor} size={80} />
         </Link>
         <Link href="${instagram}" target="_blank" rel="noopener noreferrer">
-          <BiLogoInstagramAlt size={64} />
+          <BiLogoInstagramAlt color={bgColor} size={80} />
         </Link>
       </div>
     </div>
