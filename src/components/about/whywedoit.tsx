@@ -8,34 +8,26 @@ const WhyWeDoIt = () => {
   return (
     <div className="mx-auto grid w-5/6 grid-cols-2 items-center gap-8 py-[10vh]">
       <div className="image-grid grid h-[600px] w-full gap-4 overflow-hidden transition-all">
-        <div className="pic1">
-          <Image
-            src={whywedoit1}
-            alt="whywedoit1"
-            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
-          />
-        </div>
-        <div className="pic2">
-          <Image
-            src={whywedoit3}
-            alt="whywedoit3"
-            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
-          />
-        </div>
-        <div className="pic3">
-          <Image
-            src={whywedoit2}
-            alt="whywedoit2"
-            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
-          />
-        </div>
-        <div className="pic4">
-          <Image
-            src={whywedoit4}
-            alt="whywedoit4"
-            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
-          />
-        </div>
+        <Image
+          src={whywedoit1}
+          alt="whywedoit1"
+          className="pic1 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+        />
+        <Image
+          src={whywedoit3}
+          alt="whywedoit3"
+          className="pic2 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+        />
+        <Image
+          src={whywedoit2}
+          alt="whywedoit2"
+          className="pic3 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+        />
+        <Image
+          src={whywedoit4}
+          alt="whywedoit4"
+          className="pic4 h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
+        />
       </div>
       <div className="text-center">
         <p className="py-5 text-4xl font-bold text-acm-gray-500">

@@ -8,34 +8,26 @@ const OurVision = () => {
   return (
     <div className="mx-auto grid w-5/6 grid-cols-2 items-stretch gap-8 pt-[3vh]">
       <div className="image-grid grid h-[600px] w-full gap-4 overflow-hidden transition-all">
-        <div className="pic1">
-          <Image
-            src={ourvision1}
-            alt="ourvision1"
-            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
-          />
-        </div>
-        <div className="pic2">
-          <Image
-            src={ourvision3}
-            alt="ourvision3"
-            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
-          />
-        </div>
-        <div className="pic3">
-          <Image
-            src={ourvision2}
-            alt="ourvision2"
-            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
-          />
-        </div>
-        <div className="pic4">
-          <Image
-            src={ourvision4}
-            alt="ourvision4"
-            className="h-full max-h-[600px] w-full overflow-hidden rounded-3xl object-cover"
-          />
-        </div>
+        <Image
+          src={ourvision1}
+          alt="ourvision1"
+          className="pic1 h-full w-full rounded-3xl object-cover"
+        />
+        <Image
+          src={ourvision3}
+          alt="ourvision3"
+          className="pic2 h-full w-full rounded-3xl object-cover"
+        />
+        <Image
+          src={ourvision2}
+          alt="ourvision2"
+          className="pic3 h-full w-full rounded-3xl object-cover"
+        />
+        <Image
+          src={ourvision4}
+          alt="ourvision4"
+          className="pic4 h-full w-full rounded-3xl object-cover"
+        />
       </div>
       <div className="flex flex-col items-center justify-center text-center text-acm-gray-500">
         <p className="text-4xl font-bold">OUR VISION</p>
