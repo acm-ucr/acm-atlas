@@ -11,9 +11,9 @@ import WhatWeDo4 from "@/public/about/whatwedo4.webp";
 const WhatWeDo = () => {
   return (
     <div className="mx-auto grid w-5/6 grid-cols-2 items-stretch gap-8 pt-[10vh]">
-      <div className="flex flex-col items-center justify-center text-center text-acm-gray-500">
+      <div className="text-acm-gray-500 flex flex-col items-center justify-center text-center">
         <p className="text-4xl font-bold">WHAT WE DO</p>
-        <p className="mt-5 w-5/6 text-2xl font-medium leading-normal">
+        <p className="mt-5 w-5/6 text-2xl leading-normal font-medium">
           Every quarter, we focus on improving specific aspects of our members.
           In the Fall, we develop professional resumes, build all-star
           LinkedIns, and offer workshops on Applying Effectively at companies

@@ -22,7 +22,7 @@ const WhatWeOffer = ({
     <div className="mx-[15%] grid grid-cols-3 pb-8">
       <div className="col-span-2">
         <p className={`${textColor} pb-4 text-4xl font-bold`}>{name}</p>
-        <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
+        <p className="text-acm-gray-500 w-5/6 py-2 pb-6 text-2xl font-semibold">
           {description}
         </p>
 
