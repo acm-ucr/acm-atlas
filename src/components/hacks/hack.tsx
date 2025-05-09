@@ -13,6 +13,7 @@ interface HackProps {
   description2: string;
   subtitle: string;
   bgColor: string;
+  textColor: string;
   devposts: {
     year: string;
     link: string;
@@ -33,10 +34,11 @@ const Hack = ({
   description2,
   subtitle,
   bgColor,
+  textColor,
   devposts,
   stats,
-  // instagram,
-  // email,
+  instagram,
+  email,
 }: HackProps) => {
   return (
     <div className="relative text-center text-2xl font-semibold text-acm-gray-200">
@@ -84,11 +86,15 @@ const Hack = ({
       </div>
       <div className="mt-10 text-4xl font-bold">CONTACT US</div>
       <div className="mt-4 flex justify-center gap-6">
-        <Link href="mailto:${email}">
-          <TbMailFilled color={bgColor} size={80} />
+        <Link
+          href={`mailto:${email}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TbMailFilled className={`${textColor}`} size={80} />
         </Link>
-        <Link href="${instagram}" target="_blank" rel="noopener noreferrer">
-          <BiLogoInstagramAlt color={bgColor} size={80} />
+        <Link href={instagram} target="_blank" rel="noopener noreferrer">
+          <BiLogoInstagramAlt className={`${textColor}`} size={80} />
         </Link>
       </div>
     </div>
