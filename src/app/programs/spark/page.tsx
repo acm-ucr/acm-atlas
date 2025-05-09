@@ -2,7 +2,7 @@ import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Spark1 from "@/public/spark/spark1.webp";
 import ProjectGrid from "@/components/programs/spark/projectgrid";
-import spark from "@/data/teckstacks/spark";
+import spark from "@/data/techstacks/spark";
 import Carousel from "@/components/programs/carousel";
 import FAQ from "@/components/programs/spark/faq";
 import Spark from "@/public/logos/spark.svg";

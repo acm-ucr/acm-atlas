@@ -5,7 +5,7 @@ import FAQ from "@/components/programs/forge/faq";
 import Forge from "@/public/logos/forge.svg";
 import grayEllipse from "@/public/ellipses/grayEllipse.svg";
 import Carousel from "@/components/programs/carousel";
-import forge from "@/data/teckstacks/forge";
+import forge from "@/data/techstacks/forge";
 
 const Page = () => {
   return (
