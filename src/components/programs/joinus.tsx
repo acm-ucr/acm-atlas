@@ -12,7 +12,7 @@ const Joinus = ({ textColor, backgroundColor, image }: ProgramProps) => {
   return (
     <div className="mx-auto grid w-10/12 grid-cols-2 items-center">
       <div className="flex flex-col">
-        <p className="flex justify-center pb-6 text-5xl font-semibold text-acm-gray-500">
+        <p className="text-acm-gray-500 flex justify-center pb-6 text-5xl font-semibold">
           JOIN NOW
         </p>
         <div className="flex justify-center">

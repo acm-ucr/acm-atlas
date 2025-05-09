@@ -5,7 +5,7 @@ import logo from "@/public/home/acmLogo.svg";
 
 const Landing = () => {
   return (
-    <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
+    <div className="text-acm-gray-500 mt-10 flex flex-col items-center justify-center text-6xl font-semibold">
       <p>ASSOCIATION OF</p>
       <p>COMPUTING MACHINERY</p>
       <Image src={Keys} alt="Keys" className="my-16" />
@@ -45,6 +45,7 @@ const Landing = () => {
       <div className="bg-acm-green-300 absolute top-[25%] left-[50%] z-2 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl" />
       <div className="bg-acm-green-300 absolute top-[25%] left-[70%] z-2 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl" />
     </div>
+    // love fixing checks
   );
 };
 export default Landing;
