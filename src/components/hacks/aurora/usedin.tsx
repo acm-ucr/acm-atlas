@@ -3,9 +3,11 @@ import hacks from "@/data/hackathons";
 
 const UsedIn = () => {
   return (
-    <div className="ml-52 mt-12 w-max">
-      <div className="mb-6 text-4xl font-bold text-acm-gray-500">USED IN</div>
-      <div className="mb-24 grid grid-cols-2 gap-4">
+    <div className="mx-auto mt-12 w-2/3">
+      <div className="mb-6 text-left text-4xl font-bold text-acm-gray-500">
+        USED IN
+      </div>
+      <div className="mb-24 grid w-fit grid-cols-2 gap-4">
         {hacks
           .filter((hack) => hack.name.toLowerCase() !== "designverse")
           .map(({ name, website, years, bgColor }) => (
@@ -14,13 +16,10 @@ const UsedIn = () => {
               href={website}
               target="_blank"
               rel="noopener norefferer"
+              className={`flex items-center justify-between rounded-lg p-4 font-semibold text-white ${bgColor}`}
             >
-              <button
-                className={`flex items-center justify-between rounded-lg p-4 font-semibold text-white ${bgColor}`}
-              >
-                <span className="mr-3 text-lg">{name}</span>
-                <span className="text-sm font-light">{years}</span>
-              </button>
+              <span className="mr-3 text-lg">{name}</span>
+              <span className="text-sm font-light">{years}</span>
             </Link>
           ))}
       </div>
