@@ -23,12 +23,8 @@ const ProgramHeader = ({
         <p className="flex justify-center p-5 text-5xl font-bold">{header}</p>
         <p className="pb-5">{subtitle}</p>
       </div>
-      <p className="ml-[15%] w-3/8">{text}</p>
-      <Image
-        className="absolute top-[20%] right-[25%]"
-        src={logo}
-        alt="BitBytes"
-      />
+      <p className="ml-[15%] w-5/12">{text}</p>
+      <Image className="absolute top-[20%] right-[25%]" src={logo} alt="logo" />
     </div>
   );
 };

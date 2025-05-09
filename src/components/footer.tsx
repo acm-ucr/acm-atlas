@@ -8,11 +8,11 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col px-20">
+    <div className="mx-auto flex w-11/12 flex-col">
       <div className="bg-acm-blue-400 h-0.5 w-full" />
       <div className="grid grid-cols-6 justify-items-center py-5">
         <div className="col-span-2 flex flex-col justify-around">
-          <Image src={ACMLogo} alt="ACM Logo" className="w-22" />
+          <Image src={ACMLogo} alt="ACM Logo" className="w-20" />
           <p className="text-acm-gray-500 text-4xl font-semibold">ACM@UCR</p>
           <p className="text-acm-gray-500 text-xl">
             Association of Computing Machinery

@@ -7,8 +7,8 @@ import {
 
 const FAQ = () => {
   return (
-    <div>
-      <p className="text-acm-gray-500 mt-8 mb-4 text-center text-5xl font-bold">
+    <div className="mb-[6vh]">
+      <p className="text-acm-gray-500 my-[6vh] text-center text-5xl font-bold">
         FREQUENTLY ASKED QUESTIONS
       </p>
       <Accordion type="single" collapsible className="mx-auto w-3/4">

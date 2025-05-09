@@ -12,10 +12,10 @@ const NotFound = () => {
       <div className="bg-acm-green-300 absolute top-[27%] right-[8%] z-3 h-[500px] w-[500px] rounded-full opacity-30 blur-3xl" />
       <Image src={NotFoundKeys} alt="404 Keys" className="z-10 pt-30 pb-10" />
       <p className="text-acm-navy z-10 text-6xl font-bold">PAGE NOT FOUND</p>
-      <div className="z-10 pt-15 pb-35">
+      <div className="z-10 pt-16 pb-32">
         <Link
           href="/"
-          className="bg-acm-blue-700 flex justify-center rounded-3xl px-18 py-6 text-3xl font-bold text-white"
+          className="bg-acm-blue-700 flex justify-center rounded-3xl px-16 py-6 text-3xl font-bold text-white"
         >
           Go Back Home
         </Link>

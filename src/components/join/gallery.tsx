@@ -12,10 +12,10 @@ import Link from "next/link";
 
 const Gallery = () => {
   return (
-    <div className="mx-auto flex w-3/4 flex-col items-center">
+    <div className="mx-auto flex w-11/12 flex-col items-center md:w-3/4">
       <p className="text-acm-gray-500 mb-8 text-4xl font-bold">GALLERY</p>
       <div className="grid grid-cols-5 gap-8">
-        <div className="col-span-2 grid grid-rows-2 gap-8">
+        <div className="col-span-5 grid grid-rows-2 gap-8 md:col-span-2">
           <Image
             className="grid h-full w-full rounded-3xl object-cover"
             src={join2}
@@ -28,18 +28,18 @@ const Gallery = () => {
           />
         </div>
         <Image
-          className="col-span-3 h-full w-full rounded-3xl object-cover"
+          className="col-span-5 h-full w-full rounded-3xl object-cover md:col-span-3"
           src={join11}
           alt="ClawMachines"
         />
       </div>
       <div className="mt-8 grid grid-cols-5 gap-8">
         <Image
-          className="col-span-3 row-span-1 h-full w-full rounded-3xl object-cover"
+          className="col-span-5 row-span-1 h-full w-full rounded-3xl object-cover md:col-span-3"
           src={join15}
           alt="Ice Skating"
         />
-        <div className="col-span-2 grid grid-rows-2 gap-8">
+        <div className="col-span-5 grid grid-rows-2 gap-8 md:col-span-2">
           <Image
             className="h-full w-full rounded-3xl object-cover"
             src={join16}
@@ -53,7 +53,7 @@ const Gallery = () => {
         </div>
       </div>
       <div className="mt-8 grid grid-cols-5 gap-8">
-        <div className="col-span-2 grid grid-rows-2 gap-8">
+        <div className="col-span-5 grid grid-rows-2 gap-8 md:col-span-2">
           <Image
             className="grid h-full w-full rounded-3xl object-cover"
             src={join9}
@@ -66,14 +66,14 @@ const Gallery = () => {
           />
         </div>
         <Image
-          className="col-span-3 h-full w-full rounded-3xl object-cover"
+          className="col-span-5 h-full w-full rounded-3xl object-cover md:col-span-3"
           src={join3}
           alt="Group photo at Round1 Bowling social"
         />
       </div>
       <Link
         href="/"
-        className="bg-acm-blue-700 my-10 rounded-xl px-10 py-1 text-2xl text-white"
+        className="bg-acm-blue-700 my-8 rounded-2xl px-12 py-3 text-3xl font-medium text-white"
       >
         See More
       </Link>

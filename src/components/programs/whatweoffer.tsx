@@ -24,22 +24,22 @@ const WhatWeOffer = ({
   link,
 }: ProgramProps) => {
   return (
-    <div className="mx-[15%] grid grid-cols-3">
+    <div className="mx-[15%] my-16 grid grid-cols-3">
       <div className="col-span-2">
-        <div className="text-acm-gray-500 flex text-4xl font-bold text-nowrap">
+        <div className="text-acm-gray-500 flex text-5xl font-bold text-nowrap">
           <p>{header}</p>
           <p className={`${textColor} font-bold`}>&nbsp;{program}&nbsp;</p>
           <p>?</p>
         </div>
 
-        <div className="text-acm-gray-500 w-5/6 py-2 text-2xl font-semibold">
+        <div className="text-acm-gray-500 w-5/6 py-12 text-3xl font-semibold">
           <p className="inline">Join</p>
           <p className="inline font-bold">&nbsp;{acm}&nbsp;</p>
           <p className="inline">{pText}</p>
         </div>
         <Link
           href={link}
-          className={`${linkColor} text-acm-gray-500 flex w-1/4 items-center justify-center rounded-lg py-2 text-xl font-semibold`}
+          className={`${linkColor} text-acm-gray-500 flex items-center justify-center rounded-lg py-2 text-xl font-semibold md:w-1/2 lg:w-1/4`}
         >
           Learn More →
         </Link>

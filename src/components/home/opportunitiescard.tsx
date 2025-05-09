@@ -24,7 +24,7 @@ const OpportunitiesCard = ({
       <p className="text-acm-gray-500 absolute top-6 left-6 text-xl">
         0{index}
       </p>
-      <div className="absolute bottom-22 left-8 flex items-center gap-2">
+      <div className="absolute bottom-[5.5rem] left-8 flex items-center gap-2">
         <p className="text-acm-gray-500 text-xl font-semibold uppercase">
           {name}
         </p>

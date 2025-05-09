@@ -4,12 +4,12 @@ import { Board } from "@/data/board";
 import Card from "@/components/board/card";
 
 type SectionRefs = {
-  [key: string]: React.RefObject<HTMLDivElement | null>;
+  [key: string]: React.RefObject<HTMLDivElement>;
 };
 
 const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-20">
+    <div className="flex flex-col items-center justify-center gap-20 pb-[6vh]">
       {Board.map(({ title, members }, index) => (
         <div
           key={index}
