@@ -35,7 +35,7 @@ const Landing = () => {
       <div className="bg-acm-yellow-200 absolute top-[65%] right-[78%] z-2 h-[300px] w-[400px] rounded-full opacity-90 blur-3xl" />
       <div className="bg-acm-yellow-200 absolute top-[75%] right-[78%] z-2 h-[300px] w-[400px] rounded-full opacity-90 blur-3xl" />
       <div className="bg-acm-blue-700 absolute top-[45%] right-[76%] z-2 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl" />
-      <div className="bg-acm-blue-700 absolute top-[69%] left-[76%] z-2 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl" />
+      <div className="bg-acm-blue-700 absolute top-[70%] left-[76%] z-2 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl" />
       <div className="bg-acm-blue-700 absolute top-[45%] left-[76%] z-2 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl" />
       <div className="bg-acm-blue-700 absolute top-[25%] left-[30%] z-2 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl" />
       <div className="bg-acm-blue-700 absolute top-[25%] right-[50%] z-2 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl" />
