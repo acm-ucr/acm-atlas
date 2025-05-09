@@ -25,6 +25,7 @@ module.exports = {
           navy: "#173967",
           turquoise: "#3bc5bb",
           "turquoise-200": "#2D8E8F",
+          "turquoise-300": "#329FA0",
           "purple-100": "#e1c5ff",
           "purple-200": "#b889ea",
           "green-100": "#c5ecc0",
