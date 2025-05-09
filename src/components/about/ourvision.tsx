@@ -7,7 +7,7 @@ import ourvision4 from "@/public/about/ourvision4.webp";
 const OurVision = () => {
   return (
     <div className="mx-auto grid w-5/6 grid-cols-2 items-stretch gap-8 pt-[3vh]">
-      <div className="image-grid grid h-[600px] w-full grid-cols-5 grid-rows-6 gap-4 overflow-hidden transition-all">
+      <div className="image-grid grid h-[600px] w-full gap-4 overflow-hidden transition-all">
         <div className="pic1">
           <Image
             src={ourvision1}

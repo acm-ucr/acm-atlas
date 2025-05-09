@@ -138,31 +138,36 @@
     animation: marquee-continuation 20s linear infinite;
   }
   .image-grid {
-    transition: 500ms;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    transition:
+      grid-template-columns 300ms,
+      grid-template-rows 300ms,
+      gap 300ms;
   }
 
   .image-grid:has(.pic1:hover) {
     grid-template-columns: 1fr 1fr 0fr 0fr 0fr;
     grid-template-rows: 1fr 1fr 0fr 0fr 0fr 0fr;
-    gap: 0;
+    gap: 0rem;
   }
 
   .image-grid:has(.pic2:hover) {
     grid-template-columns: 1fr 1fr 0fr 0fr 0fr;
     grid-template-rows: 0fr 0fr 0fr 1fr 1fr 1fr;
-    gap: 0;
+    gap: 0rem;
   }
 
   .image-grid:has(.pic3:hover) {
     grid-template-columns: 0fr 0fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 0fr 0fr 0fr;
-    gap: 0;
+    gap: 0rem;
   }
 
   .image-grid:has(.pic4:hover) {
     grid-template-columns: 0fr 0fr 1fr 1fr 1fr;
     grid-template-rows: 0fr 0fr 0fr 1fr 1fr 1fr;
-    gap: 0;
+    gap: 0rem;
   }
 
   .pic1 {
