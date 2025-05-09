@@ -3,9 +3,9 @@ import hacks from "@/data/hackathons";
 
 const UsedIn = () => {
   return (
-    <div className="ml-16 w-max">
+    <div className="ml-52 mt-12 w-max">
       <div className="mb-6 text-4xl font-bold text-acm-gray-500">USED IN</div>
-      <div className="mb-5 grid grid-cols-2 gap-4">
+      <div className="mb-24 grid grid-cols-2 gap-4">
         {hacks
           .filter((hack) => hack.name.toLowerCase() !== "designverse")
           .map(({ name, website, years, bgColor }) => (
