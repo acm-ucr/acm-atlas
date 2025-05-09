@@ -21,6 +21,7 @@ module.exports = {
           "blue-500": "#2391ff",
           "blue-600": "#5e99ff",
           "blue-700": "#4185fc",
+          "blue-800": "#ccebfd",
           navy: "#173967",
           turquoise: "#3bc5bb",
           "purple-100": "#e1c5ff",
