@@ -10,7 +10,7 @@ const AuroraButtons = () => {
         <Link
           href="https://discord.gg/5xzE2qTEKZ"
           target="_blank"
-          className="px-30 flex justify-center rounded-xl bg-acm-green-400 py-7 text-2xl font-medium text-white"
+          className="px-30 flex justify-center rounded-xl bg-acm-turquoise-200 py-7 text-2xl font-medium text-white"
         >
           Join our Discord!
         </Link>
@@ -22,7 +22,7 @@ const AuroraButtons = () => {
         <Link
           href="https://medium.com/@contact.acmucr"
           target="_blank"
-          className="px-30 flex justify-center rounded-xl bg-acm-green-400 py-7 text-2xl font-medium text-white"
+          className="px-30 flex justify-center rounded-xl bg-acm-turquoise-200 py-7 text-2xl font-medium text-white"
         >
           Medium
         </Link>
@@ -34,7 +34,7 @@ const AuroraButtons = () => {
         <Link
           href="https://github.com/acm-ucr/aurora"
           target="_blank"
-          className="px-30 flex justify-center rounded-xl bg-acm-green-400 py-7 text-2xl font-medium text-white"
+          className="px-30 flex justify-center rounded-xl bg-acm-turquoise-200 py-7 text-2xl font-medium text-white"
         >
           Github
         </Link>
