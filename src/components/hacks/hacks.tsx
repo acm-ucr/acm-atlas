@@ -1,5 +1,7 @@
 import hackathons from "@/data/hackathons";
 import WhatWeOffer from "./whatweoffer";
+import Aurora from "@/public/logos/aurora.svg";
+import Image from "next/image";
 import Link from "next/link";
 const Hacks = () => {
   return (
@@ -17,6 +19,27 @@ const Hacks = () => {
           skills beyond our programs! Take a look below!
         </p>
         <p className="my-[4vh] text-center text-5xl font-bold">WHAT WE OFFER</p>
+      </div>
+      <div className="mx-[15%] grid grid-cols-3 pb-8">
+        <div className="col-span-2">
+          <p className="pb-4 text-4xl font-bold text-acm-turquoise-300">
+            AURORA
+          </p>
+          <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
+            Aurora is an all in one dashboard used to manage and run Hackathon
+            competitions.
+          </p>
+
+          <Link
+            href="/hacks/aurora"
+            className="flex w-1/4 items-center justify-center rounded-lg bg-acm-turquoise-200 py-2 text-xl font-semibold text-white"
+          >
+            Learn More →
+          </Link>
+        </div>
+        <div className="flex items-center justify-center">
+          <Image src={Aurora} alt="Aurora" />
+        </div>
       </div>
       {hackathons.map(
         ({ description, bgColor, textColor, logo, id, name }, index) => (

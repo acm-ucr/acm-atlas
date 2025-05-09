@@ -5,7 +5,7 @@ import ProgramHeader from "@/components/programs/programheader";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="AURORA"
         subtitle="Software Engineering"
@@ -14,7 +14,7 @@ const Page = () => {
       />
       <Stats />
       <AuroraButtons />
-    </div>
+    </>
   );
 };
 
