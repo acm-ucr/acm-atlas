@@ -7,7 +7,7 @@ const Hacks = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="mx-auto flex w-11/12 flex-col justify-center">
-        <p className="mb-[5vh] mt-[9vh] text-center text-6xl font-bold">
+        <p className="mt-10 py-8 text-center text-6xl font-bold text-acm-gray-500">
           HACKS
         </p>
         <p className="mx-auto w-3/4 text-center text-2xl font-semibold">

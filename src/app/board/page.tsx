@@ -1,5 +1,5 @@
 "use client";
-import MeetTheBoard from "@/components/board/meettheboard";
+import Header from "@/components/board/header";
 import BoardCards from "@/components/board/cards";
 import Sidebar from "@/components/board/sidebar";
 import { useRef } from "react";
@@ -19,7 +19,7 @@ const Page = () => {
 
   return (
     <>
-      <MeetTheBoard />
+      <Header />
       <BoardCards sectionRefs={sectionRefs} />
       <Sidebar sectionRefs={sectionRefs} />
     </>
