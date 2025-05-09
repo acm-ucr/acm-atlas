@@ -59,32 +59,27 @@ const Hack = ({
       <Link
         href={website}
         target="_blank"
-        className="bg-acm-green-500 mx-auto flex w-1/6 items-center justify-center rounded-lg py-2 text-xl font-semibold text-acm-gray-100"
+        className={`${bgColor} mx-auto flex w-1/6 items-center justify-center rounded-lg py-2 text-xl font-semibold text-acm-gray-100`}
       >
         Visit our Website!
       </Link>
-      <div className="mx-[20%] text-left">
-        <p className="py-5 text-3xl font-bold">WHAT WE DO</p>
-        <p>{description2}</p>
-      </div>
-      <div className="mt-10 text-4xl font-bold">PREVIOUS DEVPOSTS</div>
+      <p className="mx-[10%] py-5 text-left text-3xl font-bold">WHAT WE DO</p>
+      <p className="mx-[10%] text-left">{description2}</p>
+      <p className="mt-10 text-4xl font-bold">PREVIOUS DEVPOSTS</p>
       <div className="mx-auto mt-6 grid w-1/3 grid-cols-3 gap-4">
-        {devposts.map(({ year, link }) => (
+        {devposts.map(({ year, link }, idx) => (
           <Link
-            key={year}
+            key={idx}
             href={link}
             target="_blank"
             rel="noopener noreferrer"
+            className={`w-full rounded-xl ${bgColor} px-10 py-4 font-medium text-white`}
           >
-            <button
-              className={`w-full rounded-xl ${bgColor} px-10 py-4 font-medium text-white`}
-            >
-              {year}
-            </button>
+            {year}
           </Link>
         ))}
       </div>
-      <div className="mt-10 text-4xl font-bold">CONTACT US</div>
+      <p className="mt-10 text-4xl font-bold">CONTACT US</p>
       <div className="mt-4 flex justify-center gap-6">
         <Link
           href={`mailto:${email}`}

@@ -110,7 +110,7 @@ const hackathons: Hackathon[] = [
         link: "https://citrus-hack-2023.devpost.com/project-gallery",
       },
       {
-        year: "2024",
+        year: "2025",
         link: "https://citrus-hack-2025.devpost.com/project-gallery",
       },
     ],
