@@ -6,7 +6,7 @@ import UsedIn from "@/components/hacks/aurora/usedin";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <ProgramHeader
         header="AURORA"
         subtitle="Software Engineering"
@@ -16,7 +16,7 @@ const Page = () => {
       <Stats />
       <AuroraButtons />
       <UsedIn />
-    </div>
+    </>
   );
 };
 

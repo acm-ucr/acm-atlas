@@ -23,6 +23,8 @@ interface Hackathon {
     end: number;
     label: string;
   }[];
+  instagram: string;
+  email: string;
 }
 
 const hackathons: Hackathon[] = [
@@ -53,6 +55,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/rosehackucr/",
+    email: "rosehackucr@gmail.com",
   },
   {
     id: "cutiehack",
@@ -81,6 +85,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/cutiehack_ucr/",
+    email: "citrushack@gmail.com",
   },
   {
     id: "citrushack",
@@ -108,7 +114,7 @@ const hackathons: Hackathon[] = [
         link: "https://citrus-hack-2023.devpost.com/project-gallery",
       },
       {
-        year: "2024",
+        year: "2025",
         link: "https://citrus-hack-2025.devpost.com/project-gallery",
       },
     ],
@@ -118,6 +124,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/citrushack_ucr/",
+    email: "citrushack@gmail.com",
   },
   {
     id: "designverse",
@@ -139,6 +147,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/designverseucr/",
+    email: "designverseucr@gmail.com",
   },
 ];
 

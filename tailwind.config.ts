@@ -17,6 +17,7 @@ module.exports = {
           "gray-500": "#444444",
           "blue-100": "#ddf4ff",
           "blue-200": "#ccebfd",
+          "blue-300": "#9dd8ff",
           "blue-400": "#91b9ff",
           "blue-500": "#2391ff",
           "blue-600": "#5e99ff",
@@ -24,6 +25,7 @@ module.exports = {
           navy: "#173967",
           turquoise: "#3bc5bb",
           "turquoise-200": "#2D8E8F",
+          "turquoise-300": "#329FA0",
           "purple-100": "#e1c5ff",
           "purple-200": "#b889ea",
           "green-100": "#c5ecc0",
@@ -51,14 +53,6 @@ module.exports = {
           numpy: "#4dabcf",
           pytorch: "#ee4c2c",
           scikit: "#f89939",
-        },
-
-        dropShadow: {
-          "3xl-acm-blue-500": "0 10px 20px rgba(79, 167, 255, 1)",
-          "3xl-acm-yellow-400": "0 10px 20px rgba(255, 234, 148, 1)",
-          "3xl-acm-blue-100": "0 10px 20px rgba(157, 216, 255, 1)",
-          "3xl-acm-gray-400": "0 10px 20px rgba(142, 142, 143, 1)",
-          "3xl-acm-purple-100": "0 10px 20px rgba(219, 186, 255, 1)",
         },
 
         background: "oklch(var(--background))",
@@ -108,6 +102,13 @@ module.exports = {
           border: "oklch(var(--sidebar-border))",
           ring: "oklch(var(--sidebar-ring))",
         },
+      },
+      dropShadow: {
+        "3xl-acm-blue-500": "0 10px 20px rgba(79, 167, 255, 1)",
+        "3xl-acm-yellow-400": "0 10px 20px rgba(255, 234, 148, 1)",
+        "3xl-acm-blue-100": "0 10px 20px rgba(157, 216, 255, 1)",
+        "3xl-acm-gray-400": "0 10px 20px rgba(142, 142, 143, 1)",
+        "3xl-acm-purple-100": "0 10px 20px rgba(219, 186, 255, 1)",
       },
       borderRadius: {
         sm: "calc(var(--radius) - 4px)",
