@@ -1,4 +1,4 @@
-@import "tailwindcss/preflight";
+@tailwind base;
 @tailwind utilities;
 @tailwind utilities;
 

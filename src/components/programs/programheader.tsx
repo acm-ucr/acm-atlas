@@ -17,14 +17,14 @@ const ProgramHeader = ({
   ellipse,
 }: HeaderProps) => {
   return (
-    <div className="text-acm-gray-500 relative pb-10 text-2xl font-semibold">
+    <div className="relative pb-10 text-2xl font-semibold text-acm-gray-500">
       {ellipse && <Image className="absolute" src={ellipse} alt="ellipse" />}
       <div className="py-5 text-center">
         <p className="flex justify-center p-5 text-5xl font-bold">{header}</p>
         <p className="pb-5">{subtitle}</p>
       </div>
       <p className="ml-[15%] w-5/12">{text}</p>
-      <Image className="absolute top-[20%] right-[25%]" src={logo} alt="logo" />
+      <Image className="absolute right-[25%] top-[20%]" src={logo} alt="logo" />
     </div>
   );
 };
