@@ -41,13 +41,13 @@ const Navigation = () => {
   };
 
   return (
-    <div className="border-acm-blue-400 grid grid-cols-4 border-b-3 p-5 shadow-xl md:grid-cols-5">
+    <div className="border-b-3 grid grid-cols-4 border-acm-blue-400 p-5 shadow-xl md:grid-cols-5">
       <RiMenu2Fill
-        className="text-acm-gray-500 block text-3xl md:hidden"
+        className="block text-3xl text-acm-gray-500 md:hidden"
         onClick={programBar ? handleBothBars : handleNavBar}
       />
       <Link className={pathname === "" ? "text-acm-blue-500" : ""} href="/">
-        <p className="text-acm-gray-500 text-3xl font-semibold"> ACM@UCR</p>
+        <p className="text-3xl font-semibold text-acm-gray-500"> ACM@UCR</p>
       </Link>
 
       {/* For web view */}
@@ -64,13 +64,13 @@ const Navigation = () => {
                         {Icon && <Icon className="text-lg" />}
                       </div>
                     </NavigationMenuTrigger>
-                    <NavigationMenuContent className="px-7">
+                    <NavigationMenuContent className="bg-white px-7">
                       {subItems.map(({ subName, subLink }, subIndex) => (
                         <NavigationMenuLink
                           key={subIndex}
                           className={
                             pathname === link
-                              ? "text-acm-blue-500 font-semibold"
+                              ? "font-semibold text-acm-blue-500"
                               : ""
                           }
                           href={subLink}
@@ -98,16 +98,16 @@ const Navigation = () => {
       {navBar && (
         <div className="fixed inset-0 z-20 flex md:hidden">
           <div className="flex h-full w-[90vw] flex-col gap-5 bg-white pb-5 md:hidden">
-            <div className="flex items-end justify-end pt-4 pr-2">
+            <div className="flex items-end justify-end pr-2 pt-4">
               <RiCloseFill
-                className="text-acm-gray-400 text-3xl"
+                className="text-3xl text-acm-gray-400"
                 onClick={handleNavBar}
               />
             </div>
             <div className="ml-5 flex flex-col items-start justify-start">
               {navigations.map(({ name, link, subItems }, index) => (
                 <div
-                  className="border-acm-gray-100 flex w-full justify-between border-t-1 py-2"
+                  className="border-t-1 flex w-full justify-between border-acm-gray-100 py-2"
                   key={index}
                 >
                   <NavigationMenu>
@@ -164,15 +164,15 @@ const Navigation = () => {
                     </NavigationMenuList>
                   </NavigationMenu>
                   {subItems && (
-                    <div className="text-acm-gray-100 absolute right-16 flex w-1/8 items-center justify-center border-l-1">
+                    <div className="w-1/8 border-l-1 absolute right-16 flex items-center justify-center text-acm-gray-100">
                       {programBar ? (
                         <RiArrowUpSLine
-                          className="text-acm-gray-400 text-2xl"
+                          className="text-2xl text-acm-gray-400"
                           onClick={handleProgramBar}
                         />
                       ) : (
                         <RiArrowDownSLine
-                          className="text-acm-gray-400 text-2xl"
+                          className="text-2xl text-acm-gray-400"
                           onClick={handleProgramBar}
                         />
                       )}
