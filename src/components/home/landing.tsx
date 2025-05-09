@@ -9,14 +9,14 @@ const Landing = () => {
       <p>ASSOCIATION OF</p>
       <p>COMPUTING MACHINERY</p>
       <Image src={Keys} alt="Keys" className="my-16" />
-      <div className="z-999 mt-16 mb-10 flex h-[600px] w-[1000px] items-center justify-items-center -space-x-4 rounded-2xl bg-transparent/40 px-20 opacity-100 backdrop-blur-3xl">
-        <div className="absolute top-[6%] left-[3%] z-24 h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
-        <div className="absolute top-[6%] left-[8%] z-24 h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
-        <div className="absolute top-[6%] left-[13%] z-24 h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
-        <div className="">
+      <div className="z-4 mt-16 mb-10 flex h-[600px] w-[1000px] items-center justify-items-center -space-x-4 rounded-2xl bg-transparent/40 px-20 opacity-100 backdrop-blur-3xl">
+        <div className="absolute top-[6%] left-[3%] h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
+        <div className="absolute top-[6%] left-[8%] h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
+        <div className="absolute top-[6%] left-[13%] h-[25px] w-[25px] rounded-full bg-[#F6F6F6]"></div>
+        <div>
           <Image
             src={top}
-            alt=""
+            alt="top"
             className="absolute top-0 left-0 rounded-t-2xl"
           />
         </div>
@@ -28,26 +28,22 @@ const Landing = () => {
           workshops, professional events, and many more opportunities for our
           members to excel.
         </p>
-        <Image
-          src={logo}
-          alt="logo"
-          className="ml-10 flex h-[250px] w-[250px]"
-        />
+        <Image src={logo} alt="logo" className="ml-10 flex h-1/2 w-1/2" />
       </div>
 
-      <div className="bg-acm-yellow-200 absolute top-[65%] right-[78%] z-24 h-[300px] w-[350px] rounded-full opacity-90 blur-3xl"></div>
-      <div className="bg-acm-yellow-200 absolute top-[65%] right-[78%] z-24 h-[300px] w-[400px] rounded-full opacity-90 blur-3xl"></div>
-      <div className="bg-acm-yellow-200 absolute top-[75%] right-[78%] z-24 h-[300px] w-[400px] rounded-full opacity-90 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[45%] right-[76%] z-24 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[69%] left-[76%] z-24 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[45%] left-[76%] z-24 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[25%] left-[30%] z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[25%] right-[50%] z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[25%] right-[25%] z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[85%] right-[25%] z-24 h-[90px] w-[900px] overflow-hidden rounded-full opacity-50 backdrop-blur-3xl"></div>
-      <div className="bg-acm-blue-700 absolute top-[25%] left-0 z-24 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl"></div>
-      <div className="bg-acm-green-300 absolute top-[25%] left-[50%] z-24 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl"></div>
-      <div className="bg-acm-green-300 absolute top-[25%] left-[70%] z-24 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl"></div>
+      <div className="bg-acm-yellow-200 absolute top-[65%] right-[78%] z-2 h-[300px] w-[350px] rounded-full opacity-90 blur-3xl" />
+      <div className="bg-acm-yellow-200 absolute top-[65%] right-[78%] z-2 h-[300px] w-[400px] rounded-full opacity-90 blur-3xl" />
+      <div className="bg-acm-yellow-200 absolute top-[75%] right-[78%] z-2 h-[300px] w-[400px] rounded-full opacity-90 blur-3xl" />
+      <div className="bg-acm-blue-700 absolute top-[45%] right-[76%] z-2 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl" />
+      <div className="bg-acm-blue-700 absolute top-[69%] left-[76%] z-2 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl" />
+      <div className="bg-acm-blue-700 absolute top-[45%] left-[76%] z-2 h-[300px] w-[400px] rounded-full opacity-70 blur-3xl" />
+      <div className="bg-acm-blue-700 absolute top-[25%] left-[30%] z-2 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl" />
+      <div className="bg-acm-blue-700 absolute top-[25%] right-[50%] z-2 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl" />
+      <div className="bg-acm-blue-700 absolute top-[25%] right-[25%] z-2 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl" />
+      <div className="bg-acm-blue-700 absolute top-[85%] right-[25%] z-2 h-[90px] w-[900px] overflow-hidden rounded-full opacity-50 blur-3xl" />
+      <div className="bg-acm-blue-700 absolute top-[25%] left-0 z-2 h-[300px] w-[500px] rounded-full opacity-50 blur-3xl" />
+      <div className="bg-acm-green-300 absolute top-[25%] left-[50%] z-2 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl" />
+      <div className="bg-acm-green-300 absolute top-[25%] left-[70%] z-2 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl" />
     </div>
   );
 };
