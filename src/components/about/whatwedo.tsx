@@ -27,31 +27,27 @@ const WhatWeDo = () => {
           <Image src={BitByte} alt="BitByte" className="w-[5vw]" />
         </div>
       </div>
-      <div className="grid grid-cols-5 gap-4">
-        <div className="col-span-2 grid h-full grid-rows-3 gap-4">
-          <Image
-            src={WhatWeDo1}
-            alt="WhatWeDo1"
-            className="h-full w-full rounded-3xl object-cover"
-          />
-          <Image
-            src={WhatWeDo3}
-            alt="WhatWeDo3"
-            className="row-span-2 h-full w-full rounded-3xl object-cover"
-          />
-        </div>
-        <div className="col-span-3 grid h-full grid-rows-2 gap-4">
-          <Image
-            src={WhatWeDo2}
-            alt="WhatWeDo2"
-            className="h-full w-full rounded-3xl object-cover"
-          />
-          <Image
-            src={WhatWeDo4}
-            alt="WhatWeDo4"
-            className="h-full w-full rounded-3xl object-cover"
-          />
-        </div>
+      <div className="image-grid grid h-[600px] w-full gap-4 overflow-hidden transition-all">
+        <Image
+          src={WhatWeDo1}
+          alt="whatwedo1"
+          className="pic1 h-fullw-full rounded-3xl object-cover"
+        />
+        <Image
+          src={WhatWeDo3}
+          alt="whatwedo3"
+          className="pic2 h-full w-full rounded-3xl object-cover"
+        />
+        <Image
+          src={WhatWeDo2}
+          alt="whatwedo2"
+          className="pic3 h-full w-full rounded-3xl object-cover"
+        />
+        <Image
+          src={WhatWeDo4}
+          alt="whatwedo4"
+          className="pic4 h-full w-full rounded-3xl object-cover"
+        />
       </div>
     </div>
   );
