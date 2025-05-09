@@ -14,11 +14,11 @@ const FeaturedProjects = () => {
   return (
     <div className="mx-auto w-11/12">
       <div className="mt-[6vh] flex items-center justify-center">
-        <p className="text-acm-gray-500 text-6xl font-bold">
+        <p className="text-6xl font-bold text-acm-gray-500">
           FEATURED PROJECTS
         </p>
       </div>
-      <div className="text-acm-gray-500 mx-10 mt-10 font-bold">
+      <div className="mx-10 mt-10 font-bold text-acm-gray-500">
         <p className="pb-3 text-4xl">ACM SPARK</p>
         <div className="grid grid-cols-3 gap-8 text-lg">
           <ProjectCard project="PHI ALPHA DELTA" image={Spark1} link="/" />
@@ -48,7 +48,7 @@ const FeaturedProjects = () => {
         </div>
         <Link
           href="/programs/forge"
-          className="mt-3 mb-5 flex justify-end text-2xl"
+          className="mb-5 mt-3 flex justify-end text-2xl"
         >
           View All Forge Projects →
         </Link>

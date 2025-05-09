@@ -5,7 +5,7 @@ const Hacks = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="mx-auto flex w-11/12 flex-col justify-center">
-        <p className="mt-[9vh] mb-[5vh] text-center text-6xl font-bold">
+        <p className="mb-[5vh] mt-[9vh] text-center text-6xl font-bold">
           HACKS
         </p>
         <p className="mx-auto w-3/4 text-center text-2xl font-semibold">
@@ -32,16 +32,16 @@ const Hacks = () => {
         ),
       )}
       <div className="mx-[15%] flex flex-col pb-[10%]">
-        <p className="text-acm-gray-500 pb-4 text-4xl font-bold">
+        <p className="pb-4 text-4xl font-bold text-acm-gray-500">
           NOT SURE HOW TO GET HACKING?
         </p>
-        <p className="text-acm-gray-500 w-5/6 py-2 pb-6 text-2xl font-semibold">
+        <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
           Check out our hackpacks, a tool you can use during your hackathons
           here at UCR to get started on your project!
         </p>
         <Link
           href="/hacks/hackpacks"
-          className="bg-acm-blue-700 w-1/6 items-center justify-center rounded-lg py-2 pl-4 text-xl font-semibold text-white"
+          className="w-1/6 items-center justify-center rounded-lg bg-acm-blue-700 py-2 pl-4 text-xl font-semibold text-white"
         >
           Learn More →
         </Link>
