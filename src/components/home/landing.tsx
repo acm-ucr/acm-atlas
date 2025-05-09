@@ -45,7 +45,6 @@ const Landing = () => {
       <div className="bg-acm-green-300 absolute top-[25%] left-[50%] z-2 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl" />
       <div className="bg-acm-green-300 absolute top-[25%] left-[70%] z-2 h-[300px] w-[400px] rounded-full opacity-50 blur-3xl" />
     </div>
-    // love fixing checks
   );
 };
 export default Landing;
