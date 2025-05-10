@@ -12,7 +12,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ photo, name, github, website }: ProjectCardProps) => {
   return (
-    <div className="flex w-full flex-col rounded-3xl border-4 border-white p-4 shadow-2xl">
+    <div className="flex w-[29vw] flex-col rounded-3xl border-4 border-white p-[1.4vw] shadow-2xl">
       <div className="relative aspect-[16/9] w-full">
         <Image
           src={photo}
@@ -23,8 +23,8 @@ const ProjectCard = ({ photo, name, github, website }: ProjectCardProps) => {
       </div>
 
       <div className="mt-4 flex items-center justify-between text-left">
-        <div className="text-2xl font-light">{name}</div>
-        <div className="flex items-center gap-2 text-2xl">
+        <div className="text-[1.6vw] font-light">{name}</div>
+        <div className="flex items-center gap-2 text-[1.6vw]">
           {github && (
             <Link href={github} target="_blank" rel="noopener noreferrer">
               <FaGithub />
