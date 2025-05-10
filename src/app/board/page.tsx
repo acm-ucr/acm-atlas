@@ -1,5 +1,5 @@
 "use client";
-import MeetTheBoard from "@/components/board/meettheboard";
+import Header from "@/components/board/header";
 import BoardCards from "@/components/board/cards";
 import Sidebar from "@/components/board/sidebar";
 import { useRef } from "react";
@@ -18,11 +18,11 @@ const Page = () => {
   };
 
   return (
-    <div className="flex flex-col gap-10">
-      <MeetTheBoard />
+    <>
+      <Header />
       <BoardCards sectionRefs={sectionRefs} />
       <Sidebar sectionRefs={sectionRefs} />
-    </div>
+    </>
   );
 };
 
