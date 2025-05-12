@@ -1,5 +1,6 @@
 import { TECHSTACKS, TECH_COLORS } from "@/data/user/hackpacks";
 import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 interface HackpackCardProps {
   title: string;
@@ -14,16 +15,16 @@ const HackpackCard = ({
   link,
   languages,
 }: HackpackCardProps) => (
-  <div className="flex w-full max-w-xs flex-col gap-4 rounded-2xl bg-white p-6 shadow-md">
+  <div className="flex w-1/6 flex-col gap-4 rounded-2xl bg-white p-6 shadow-md">
     <div className="flex items-center justify-between">
-      <h2 className="text-lg font-bold text-gray-700">{title.toUpperCase()}</h2>
-      <a href={link} target="_blank" rel="noopener noreferrer">
-        <FaGithub className="text-2xl text-blue-500" />
-      </a>
+      <h2 className="text-lg font-bold text-gray-500">{title}</h2>
+      <Link href={link} target="_blank" rel="noopener noreferrer">
+        <FaGithub className="text-2xl text-acm-github" />
+      </Link>
     </div>
-    <p className="text-sm text-gray-900">{description}</p>
+    <p className="text-sm text-black">{description}</p>
     <div>
-      <p className="mb-2 font-semibold text-gray-700">TECH STACK</p>
+      <p className="mb-2 font-semibold text-gray-500">TECH STACK</p>
       <div className="flex flex-wrap gap-2">
         {languages.map((lang) => (
           <span
