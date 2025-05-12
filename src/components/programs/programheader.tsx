@@ -23,8 +23,14 @@ const ProgramHeader = ({
         <p className="flex justify-center p-5 text-6xl font-bold">{header}</p>
         <p className="pb-5">{subtitle}</p>
       </div>
-      <p className="ml-[15%] w-5/12">{text}</p>
-      <Image className="absolute right-[25%] top-[20%]" src={logo} alt="logo" />
+      <p className="ml-[8%] mt-60 w-10/12 text-center leading-relaxed sm:ml-[15%] sm:mt-0 sm:w-5/12 sm:pt-0 sm:text-left">
+        {text}
+      </p>
+      <Image
+        className="absolute right-[26%] top-[28%] sm:right-[10%] sm:top-[40%] lg:right-[20%] lg:top-[30%]"
+        src={logo}
+        alt="logo"
+      />
     </div>
   );
 };
