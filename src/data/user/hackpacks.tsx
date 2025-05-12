@@ -26,10 +26,10 @@ export const TECH_COLORS: Record<string, string> = {
   python: "bg-acm-python text-white",
   unity: "bg-gray-300 text-white",
   "c++": "bg-blue-300 text-white",
-  "github actions": "bg-gray-100 text-white",
+  "github actions": "bg-gray-300 text-white",
   eslint: "bg-acm-eslint text-white",
   prettier: "bg-acm-prettier text-white",
-  discord: "bg-indigo-100 text-white",
+  discord: "bg-indigo-300 text-white",
   jupyter: "bg-orange-200 text-white",
   pandas: "bg-gray-200 text-white",
 };
