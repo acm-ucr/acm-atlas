@@ -30,7 +30,6 @@ const Page = () => {
         image={Spark1}
       />
       <ProjectGrid />
-
       <FAQ />
     </>
   );
