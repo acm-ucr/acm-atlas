@@ -8,7 +8,7 @@ const WhatWeDo = () => {
       <div className="relative z-10 mx-auto mb-20 w-5/6">
         <div className="absolute right-[80%] top-[10%] -z-10 h-[500px] w-[500px] rounded-full bg-acm-blue-800 opacity-70 blur-3xl" />
 
-        <div className="grid grid-cols-2 gap-x-14 gap-y-16">
+        <div className="grid grid-cols-2 gap-14">
           <Image src={WhatWeDo1} alt="WhatWeDo1" className="rounded-3xl" />
           <div className="flex flex-col items-center justify-center text-left text-acm-gray-500">
             <p className="text-4xl font-bold">WHAT WE DO</p>
