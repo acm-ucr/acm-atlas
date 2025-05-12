@@ -22,36 +22,11 @@ interface Hackathon {
     end: number;
     label: string;
   }[];
+  instagram: string;
+  email: string;
 }
 
 const hackathons: Hackathon[] = [
-  {
-    id: "rosehack",
-    logo: Rosehack,
-    name: "ROSEHACK",
-    description:
-      "Rose Hack is UC Riverside's 24-hour hackathon, one of the few women-centric hackathons in California!",
-    description2:
-      "Rose Hack’s mission is to encourage individuals from underrepresented groups in STEM to gain experience, create strong networks, and build amazing projects through their shared passions in Science and Technology.",
-    website: "https://www.rosehack.com/",
-    textColor: "text-acm-green-500",
-    bgColor: "bg-acm-green-500",
-    subtitle: "Hackathon",
-    devposts: [
-      { year: "2020", link: "https://rose-hack-2020.devpost.com/" },
-      { year: "2021", link: "https://rose-hack-2021.devpost.com/" },
-      { year: "2022", link: "https://rose-hack-2022.devpost.com/" },
-      { year: "2023", link: "https://rosehack2023.devpost.com/" },
-      { year: "2024", link: "https://rosehack2024.devpost.com/" },
-      { year: "2025", link: "https://rosehack2025.devpost.com/" },
-    ],
-    stats: [
-      { end: 500, label: "Hackers" },
-      { end: 2500, label: "Projects" },
-      { end: 1000, label: "In Prizes" },
-      { end: 24, label: "Hours" },
-    ],
-  },
   {
     id: "cutiehack",
     logo: Cutiehack,
@@ -78,6 +53,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/cutiehack_ucr/",
+    email: "citrushack@gmail.com",
   },
   {
     id: "citrushack",
@@ -104,7 +81,7 @@ const hackathons: Hackathon[] = [
         link: "https://citrus-hack-2023.devpost.com/project-gallery",
       },
       {
-        year: "2024",
+        year: "2025",
         link: "https://citrus-hack-2025.devpost.com/project-gallery",
       },
     ],
@@ -114,6 +91,37 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/citrushack_ucr/",
+    email: "citrushack@gmail.com",
+  },
+  {
+    id: "rosehack",
+    logo: Rosehack,
+    name: "ROSEHACK",
+    description:
+      "Rose Hack is UC Riverside's 24-hour hackathon, one of the few women-centric hackathons in California!",
+    description2:
+      "Rose Hack’s mission is to encourage individuals from underrepresented groups in STEM to gain experience, create strong networks, and build amazing projects through their shared passions in Science and Technology.",
+    website: "https://www.rosehack.com/",
+    textColor: "text-acm-green-400",
+    bgColor: "bg-acm-green-400",
+    subtitle: "Hackathon",
+    devposts: [
+      { year: "2020", link: "https://rose-hack-2020.devpost.com/" },
+      { year: "2021", link: "https://rose-hack-2021.devpost.com/" },
+      { year: "2022", link: "https://rose-hack-2022.devpost.com/" },
+      { year: "2023", link: "https://rosehack2023.devpost.com/" },
+      { year: "2024", link: "https://rosehack2024.devpost.com/" },
+      { year: "2025", link: "https://rosehack2025.devpost.com/" },
+    ],
+    stats: [
+      { end: 500, label: "Hackers" },
+      { end: 2500, label: "Projects" },
+      { end: 1000, label: "In Prizes" },
+      { end: 24, label: "Hours" },
+    ],
+    instagram: "https://www.instagram.com/rosehackucr/",
+    email: "rosehackucr@gmail.com",
   },
   {
     id: "designverse",
@@ -124,8 +132,8 @@ const hackathons: Hackathon[] = [
     description2:
       "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
     website: "https://www.designverseucr.org/",
-    textColor: "text-acm-green-500",
-    bgColor: "bg-acm-green-500",
+    textColor: "text-acm-green-400",
+    bgColor: "bg-acm-green-400",
     subtitle: "Designathon",
     devposts: [{ year: "2024", link: "https://designverseucr.devpost.com/" }],
     stats: [
@@ -134,6 +142,8 @@ const hackathons: Hackathon[] = [
       { end: 1000, label: "In Prizes" },
       { end: 24, label: "Hours" },
     ],
+    instagram: "https://www.instagram.com/designverseucr/",
+    email: "designverseucr@gmail.com",
   },
 ];
 
