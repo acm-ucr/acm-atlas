@@ -104,10 +104,10 @@ const Navigation = () => {
                 onClick={handleNavBar}
               />
             </div>
-            <div className="ml-5 flex flex-col items-start justify-start">
+            <div className="relative ml-5 flex flex-col items-start justify-start">
               {navigations.map(({ name, link, subItems }, index) => (
                 <div
-                  className="border-t-1 flex w-full justify-between border-acm-gray-100 py-2"
+                  className="flex w-full justify-between border-t-2 border-acm-gray-100 py-2"
                   key={index}
                 >
                   <NavigationMenu>
@@ -128,7 +128,7 @@ const Navigation = () => {
                                 {name}
                               </Link>
                               <div
-                                className={`${programBar ? "flex flex-col pt-3" : "hidden"}`}
+                                className={`${programBar ? "flex flex-col gap-2 pt-3 capitalize" : "hidden"}`}
                               >
                                 {subItems.map(
                                   ({ subName, subLink }, subIndex) => (
@@ -164,7 +164,7 @@ const Navigation = () => {
                     </NavigationMenuList>
                   </NavigationMenu>
                   {subItems && (
-                    <div className="w-1/8 border-l-1 absolute right-16 flex items-center justify-center text-acm-gray-100">
+                    <div className="w-1/8 absolute right-3 flex items-center justify-center border-l-2 pl-4 text-acm-gray-100">
                       {programBar ? (
                         <RiArrowUpSLine
                           className="text-2xl text-acm-gray-400"
