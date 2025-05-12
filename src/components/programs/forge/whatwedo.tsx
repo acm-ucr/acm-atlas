@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Image1 from "@/public/forge/Image1.webp";
-import Image2 from "@/public/forge/Image2.webp";
-import Image3 from "@/public/forge/Image3.webp";
-import Image4 from "@/public/forge/Image4.webp";
+import Image1 from "@/public/forge/image1.webp";
+import Image2 from "@/public/forge/image2.webp";
+import Image3 from "@/public/forge/image3.webp";
+import Image4 from "@/public/forge/image4.webp";
 
 const WhatWeDo = () => {
   return (
