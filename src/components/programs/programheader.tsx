@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-
 interface HeaderProps {
   header: string;
   subtitle: string;
@@ -8,7 +7,6 @@ interface HeaderProps {
   logo: StaticImageData;
   ellipse?: StaticImageData;
 }
-
 const ProgramHeader = ({
   header,
   subtitle,
@@ -39,5 +37,4 @@ const ProgramHeader = ({
     </div>
   );
 };
-
 export default ProgramHeader;
