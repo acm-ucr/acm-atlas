@@ -26,13 +26,9 @@ const WhatWeOffer = ({
   return (
     <div className="grid grid-cols-1 items-center px-4 py-12 md:grid-cols-3 md:px-[15%]">
       <div className="mb-5 mt-10 flex items-center justify-center md:order-2 md:mt-0">
-        <Image
-          src={image}
-          alt="program"
-          className="flex items-center justify-center"
-        />
+        <Image src={image} alt="program" />
       </div>
-      <div className="nd:order-1 col-span-2">
+      <div className="col-span-2">
         <div className="flex flex-wrap justify-center text-center text-2xl font-bold text-acm-gray-500 md:justify-start md:text-left md:text-4xl">
           <p>{header}</p>
           <p className={`${textColor} font-bold`}>&nbsp;{program}&nbsp;</p>
