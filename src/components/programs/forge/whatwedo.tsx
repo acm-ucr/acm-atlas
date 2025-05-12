@@ -6,7 +6,9 @@ import Image4 from "@/public/forge/Image4.webp";
 
 const WhatWeDo = () => {
   return (
-    <div className="flex justify-center pt-10">
+    <div className="relative flex justify-center pt-10">
+      <div className="absolute left-[10%] top-[7%] z-[-1] h-[500px] w-[500px] rounded-full bg-acm-gray-300 opacity-80 blur-3xl" />
+      <div className="absolute right-[14%] top-[25%] z-[-1] h-[500px] w-[500px] rounded-full bg-acm-gray-300 opacity-80 blur-3xl" />
       <div className="grid w-3/5 grid-cols-2 grid-rows-4 gap-16 text-3xl font-medium text-acm-gray-500">
         <Image
           className="flex flex-row-reverse rounded-md"
