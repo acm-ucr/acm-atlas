@@ -10,21 +10,21 @@ interface ProgramProps {
 
 const Joinus = ({ textColor, backgroundColor, image }: ProgramProps) => {
   return (
-    <div className="mx-auto grid w-10/12 grid-cols-2 items-center">
+    <div className="mx-auto grid w-10/12 items-center md:grid-cols-2">
       <div className="flex flex-col">
-        <p className="flex justify-center pb-6 text-5xl font-semibold text-acm-gray-500">
+        <p className="mt-10 flex justify-center pb-6 text-5xl font-semibold text-acm-gray-500 md:mt-0">
           JOIN NOW
         </p>
-        <div className="flex justify-center">
+        <div className="flex justify-center py-8 md:py-0">
           <Link
             href="/"
-            className={`rounded-lg px-10 py-4 text-4xl ${textColor} ${backgroundColor}`}
+            className={`rounded-lg p-4 text-4xl md:px-10 md:py-4 ${textColor} ${backgroundColor}`}
           >
             Apply Here!
           </Link>
         </div>
       </div>
-      <Image src={image} alt="Join Now" className="w-10/12 rounded-2xl" />
+      <Image src={image} alt="Join Now" className="rounded-2xl md:w-10/12" />
     </div>
   );
 };
