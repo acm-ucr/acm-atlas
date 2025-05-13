@@ -2,8 +2,8 @@ import Link from "next/link";
 const Join = () => {
   return (
     <>
-      <div className="z-4 absolute left-[87vw] top-[60%] h-[250px] w-[500px] rounded-full bg-acm-green-100 opacity-100 blur-3xl" />
-      <div className="mx-auto grid w-10/12 items-center pt-0 md:grid-cols-2 md:pt-20">
+      <div className="absolute left-[87vw] top-[60%] h-[250px] w-[500px] rounded-full bg-acm-green-100 opacity-100 blur-3xl" />
+      <div className="z-10 mx-auto grid w-10/12 items-center pt-0 md:grid-cols-2 md:pt-20">
         <div className="flex flex-col">
           <p className="mt-16 flex justify-center text-3xl font-semibold text-acm-gray-500 md:mt-0 md:pb-6 md:text-5xl">
             Join Now
@@ -17,7 +17,7 @@ const Join = () => {
             </Link>
           </div>
         </div>
-        <div>
+        <div className="relative">
           <p className="text-center text-4xl font-bold md:text-left">
             WHAT WE DO
           </p>
