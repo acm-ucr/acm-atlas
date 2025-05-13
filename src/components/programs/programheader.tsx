@@ -6,7 +6,7 @@ interface HeaderProps {
   subtitle: string;
   text: string;
   logo: StaticImageData;
-  ellipse: StaticImageData;
+  ellipse?: StaticImageData;
 }
 
 const ProgramHeader = ({
@@ -18,9 +18,9 @@ const ProgramHeader = ({
 }: HeaderProps) => {
   return (
     <div className="relative pb-10 text-2xl font-semibold text-acm-gray-500">
-      <Image className="absolute" src={ellipse} alt="green" />
+      {ellipse && <Image className="absolute" src={ellipse} alt="ellipse" />}
       <div className="py-5 text-center">
-        <p className="flex justify-center p-5 text-5xl font-bold">{header}</p>
+        <p className="flex justify-center p-5 text-6xl font-bold">{header}</p>
         <p className="pb-5">{subtitle}</p>
       </div>
       <p className="ml-[15%] w-5/12">{text}</p>
