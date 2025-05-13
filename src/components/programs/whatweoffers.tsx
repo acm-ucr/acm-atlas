@@ -10,7 +10,7 @@ const WhatWeOffers = () => {
         programs typically run quarterly. We strive to cover a wide variety of
         topics for our members to explore their interests! Take a look below!
       </p>
-      <p className="text-3xl font-bold text-acm-gray-500 md:p-10 md:text-5xl">
+      <p className="pt-10 text-3xl font-extrabold text-acm-gray-500 md:p-10 md:text-5xl md:font-bold">
         WHAT WE OFFER
       </p>
       {whatWeOffer.map(
