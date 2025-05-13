@@ -29,7 +29,7 @@ const Page = () => {
         backgroundColor="bg-acm-purple-200"
         image={Das1}
       />
-      <GridContent/>
+      <GridContent />
       <FAQ />
     </>
   );
