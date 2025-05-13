@@ -29,40 +29,10 @@ interface Hackathon {
 
 const hackathons: Hackathon[] = [
   {
-    id: "rosehack",
-    logo: Rosehack,
-    name: "ROSEHACK",
-    years: "2024, 2025",
-    description:
-      "Rose Hack is UC Riverside's 24-hour hackathon, one of the few women-centric hackathons in California!",
-    description2:
-      "Rose Hack’s mission is to encourage individuals from underrepresented groups in STEM to gain experience, create strong networks, and build amazing projects through their shared passions in Science and Technology.",
-    website: "https://www.rosehack.com/",
-    textColor: "text-acm-green-400",
-    bgColor: "bg-acm-green-400",
-    subtitle: "Hackathon",
-    devposts: [
-      { year: "2020", link: "https://rose-hack-2020.devpost.com/" },
-      { year: "2021", link: "https://rose-hack-2021.devpost.com/" },
-      { year: "2022", link: "https://rose-hack-2022.devpost.com/" },
-      { year: "2023", link: "https://rosehack2023.devpost.com/" },
-      { year: "2024", link: "https://rosehack2024.devpost.com/" },
-      { year: "2025", link: "https://rosehack2025.devpost.com/" },
-    ],
-    stats: [
-      { end: 500, label: "Hackers" },
-      { end: 2500, label: "Projects" },
-      { end: 1000, label: "In Prizes" },
-      { end: 24, label: "Hours" },
-    ],
-    instagram: "https://www.instagram.com/rosehackucr/",
-    email: "rosehackucr@gmail.com",
-  },
-  {
     id: "cutiehack",
     logo: Cutiehack,
     name: "CUTIE HACK",
-    years: "2023, 2024",
+    years: "2023, 2024, 2025",
     description:
       "Cutie Hack is a 12-hour, beginner-oriented hackathon hosted by students at University of California, Riverside.",
     description2:
@@ -128,10 +98,40 @@ const hackathons: Hackathon[] = [
     email: "citrushack@gmail.com",
   },
   {
+    id: "rosehack",
+    logo: Rosehack,
+    name: "ROSEHACK",
+    years: "2024, 2025",
+    description:
+      "Rose Hack is UC Riverside's 24-hour hackathon, one of the few women-centric hackathons in California!",
+    description2:
+      "Rose Hack’s mission is to encourage individuals from underrepresented groups in STEM to gain experience, create strong networks, and build amazing projects through their shared passions in Science and Technology.",
+    website: "https://www.rosehack.com/",
+    textColor: "text-acm-green-400",
+    bgColor: "bg-acm-green-400",
+    subtitle: "Hackathon",
+    devposts: [
+      { year: "2020", link: "https://rose-hack-2020.devpost.com/" },
+      { year: "2021", link: "https://rose-hack-2021.devpost.com/" },
+      { year: "2022", link: "https://rose-hack-2022.devpost.com/" },
+      { year: "2023", link: "https://rosehack2023.devpost.com/" },
+      { year: "2024", link: "https://rosehack2024.devpost.com/" },
+      { year: "2025", link: "https://rosehack2025.devpost.com/" },
+    ],
+    stats: [
+      { end: 500, label: "Hackers" },
+      { end: 2500, label: "Projects" },
+      { end: 1000, label: "In Prizes" },
+      { end: 24, label: "Hours" },
+    ],
+    instagram: "https://www.instagram.com/rosehackucr/",
+    email: "rosehackucr@gmail.com",
+  },
+  {
     id: "designverse",
     logo: Designverse,
     name: "DESIGNVERSE",
-    years: "",
+    years: "2024, 2025",
     description:
       "DesignVerse is the first and only 24-hour beginner-friendly Design-a-Thon hosted by the University of California, Riverside.",
     description2:
