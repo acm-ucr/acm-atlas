@@ -6,6 +6,7 @@ import Das from "@/public/logos/das.svg";
 import purpleEllipse from "@/public/ellipses/purpleEllipse.svg";
 import Carousel from "@/components/programs/carousel";
 import das from "@/data/techstacks/das";
+import GridContent from "@/components/programs/das/grid";
 
 const Page = () => {
   return (
@@ -28,6 +29,7 @@ const Page = () => {
         backgroundColor="bg-acm-purple-200"
         image={Das1}
       />
+      <GridContent />
       <FAQ />
     </>
   );
