@@ -299,7 +299,7 @@ export const Board = [
       {
         name: "Kaylie Zhao",
         position: "Create Director",
-        color: "text-acm-blue-100",
+        color: "text-acm-blue-300",
         shadow: "drop-shadow-3xl-acm-blue-100",
         photo: Kaylie,
         linkedin: "https://www.linkedin.com/in/kaylie-zhao/",
@@ -308,7 +308,7 @@ export const Board = [
       {
         name: "Shirley Duong",
         position: "Create Director",
-        color: "text-acm-blue-100",
+        color: "text-acm-blue-300",
         shadow: "drop-shadow-3xl-acm-blue-100",
         photo: Shirley,
         linkedin: "https://www.linkedin.com/in/shirleytduong/",

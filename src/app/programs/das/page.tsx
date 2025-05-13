@@ -5,7 +5,7 @@ import FAQ from "@/components/programs/das/faq";
 import Das from "@/public/logos/das.svg";
 import purpleEllipse from "@/public/ellipses/purpleEllipse.svg";
 import Carousel from "@/components/programs/carousel";
-import das from "@/data/teckstacks/das";
+import das from "@/data/techstacks/das";
 
 const Page = () => {
   return (
