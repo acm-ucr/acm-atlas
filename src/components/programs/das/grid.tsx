@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Das1 from "@/public/das/DAS_1.webp";
+import Das1 from "@/public/das/DAS_1.jpg";
 
 const GridContent = () => {
   return (
@@ -20,7 +20,7 @@ const GridContent = () => {
           </p>
         </div>
       </div>
-      <div className="z-4 absolute left-[75%] top-[115%] h-[500px] w-[500px] rounded-full bg-[#E8D2FF] opacity-75 blur-3xl" />
+      <div className="z-4 absolute left-[70%] top-[115%] h-[400px] w-[400px] rounded-full bg-[#E8D2FF] opacity-75 blur-3xl" />
     </div>
   );
 };
