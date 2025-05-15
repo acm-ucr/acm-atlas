@@ -22,7 +22,7 @@ const GridContent = () => {
           </p>
         </div>
       </div>
-      <div className="z-4 absolute left-[80%] top-[125%] h-[400px] w-[400px] rounded-full bg-[#E8D2FF] opacity-75 blur-3xl" />
+      <div className="z-4 absolute left-[84%] top-[125%] h-[400px] w-[400px] rounded-full bg-[#E8D2FF] opacity-75 blur-3xl" />
     </div>
   );
 };
