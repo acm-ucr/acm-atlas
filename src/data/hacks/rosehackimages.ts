@@ -1,7 +1,7 @@
-import Rosehack1 from "@/public/hacks/rosehack1.svg";
-import Rosehack2 from "@/public/hacks/rosehack2.svg";
-import Rosehack3 from "@/public/hacks/rosehack3.svg";
-import Rosehack4 from "@/public/hacks/rosehack4.svg";
+import Rosehack1 from "@/public/hacks/rosehack1.webp";
+import Rosehack2 from "@/public/hacks/rosehack2.webp";
+import Rosehack3 from "@/public/hacks/rosehack3.webp";
+import Rosehack4 from "@/public/hacks/rosehack4.webp";
 
 const roseHackImages = [
   {

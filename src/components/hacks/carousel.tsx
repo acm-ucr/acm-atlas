@@ -1,4 +1,4 @@
-import CarouselImage from "./carouselImage";
+import CarouselImage from "@/components/hacks/carouselImage";
 import roseHackImages from "@/data/hacks/rosehackimages";
 
 const CarouselImages = () => {
