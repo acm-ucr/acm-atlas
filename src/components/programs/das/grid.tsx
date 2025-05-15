@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Das1 from "@/public/das/DAS_1.jpg";
+import Das1 from "@/public/das/DAS_1.webp";
 
 const GridContent = () => {
   return (
