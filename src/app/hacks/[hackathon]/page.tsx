@@ -1,3 +1,4 @@
+"use client";
 import Hack from "@/components/hacks/hack";
 import hacks from "@/data/hackathons";
 import { notFound } from "next/navigation";
