@@ -1,5 +1,7 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 interface ProjectCardProps {
   project: string;
@@ -9,12 +11,19 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project, image, link }: ProjectCardProps) => {
   return (
-    <Link href={link} className="relative flex justify-center">
-      <Image src={image} alt={`${project} Image`} />
-      <div className="absolute bottom-[1.3vh] w-11/12 rounded-3xl bg-white p-3 pl-5 text-xl font-semibold md:bottom-[2vh] md:text-2xl lg:bottom-[1.7vh]">
-        {project}
-      </div>
-    </Link>
+    <motion.div
+      viewport={{ once: true }}
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 50 }}
+      transition={{ duration: 0.7, delay: 0.2 }}
+    >
+      <Link href={link} className="relative flex justify-center">
+        <Image src={image} alt={`${project} Image`} />
+        <div className="absolute bottom-4 w-11/12 rounded-3xl bg-white p-3 pl-5 text-2xl font-semibold">
+          {project}
+        </div>
+      </Link>
+    </motion.div>
   );
 };
 
