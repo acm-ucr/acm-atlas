@@ -9,8 +9,7 @@ const GridContent = () => {
         alt="Join Now"
         className="col-span-7 w-10/12 rounded-2xl"
       />
-      <div className="col-span-5">
-        <div className="flex flex-col">
+      <div className="col-span-5 flex flex-col">
           <p className="pb-6 text-5xl font-semibold text-acm-gray-500">
             WHAT WE DO
           </p>
@@ -21,7 +20,6 @@ const GridContent = () => {
             machine learning models!
           </p>
         </div>
-      </div>
       <div className="z-4 absolute left-[84%] top-[125%] h-[400px] w-[400px] rounded-full bg-[#E8D2FF] opacity-75 blur-3xl" />
     </div>
   );
