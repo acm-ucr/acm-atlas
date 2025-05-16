@@ -137,8 +137,8 @@ const hackathons: Hackathon[] = [
     description2:
       "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
     website: "https://www.designverseucr.org/",
-    textColor: "text-acm-green-400",
-    bgColor: "bg-acm-green-400",
+    textColor: "text-[#203649]",
+    bgColor: "bg-[#203649]",
     subtitle: "Designathon",
     devposts: [{ year: "2024", link: "https://designverseucr.devpost.com/" }],
     stats: [

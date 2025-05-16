@@ -7,7 +7,7 @@ const UsedIn = () => {
       <p className="mb-6 text-left text-4xl font-bold text-acm-gray-500">
         USED IN
       </p>
-      <p className="mb-24 grid w-fit grid-cols-2 gap-4">
+      <div className="mb-24 grid w-fit grid-cols-2 gap-4">
         {hacks.map(({ name, website, years, bgColor }) => (
           <Link
             key={name}
@@ -20,7 +20,7 @@ const UsedIn = () => {
             <span className="text-sm font-light">{years}</span>
           </Link>
         ))}
-      </p>
+      </div>
     </div>
   );
 };
