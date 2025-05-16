@@ -12,6 +12,13 @@ interface CardProps {
   index: number;
 }
 
+const dropInAnim = (index: number) => ({
+  initial: { opacity: 0, y: 30 },
+  whileInView: { y: 0, opacity: 1 },
+  transition: { delay: index * 0.2, duration: 0.5 },
+  viewport: { once: true },
+});
+
 const OpportunitiesCard = ({
   name,
   cardBackground,
@@ -21,12 +28,7 @@ const OpportunitiesCard = ({
   index,
 }: CardProps) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ delay: index * 0.2, duration: 0.5 }}
-      viewport={{ once: true }}
-    >
+    <motion.div {...dropInAnim(index)}>
       <div className="relative mt-10">
         <Image src={cardBackground} alt="Card background" />
         <p className="absolute left-6 top-6 text-xl text-acm-gray-500">
