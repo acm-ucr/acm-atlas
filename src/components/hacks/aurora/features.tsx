@@ -2,14 +2,14 @@ import features from "@/data/hacks/features";
 
 const FeaturedProjects = () => {
   return (
-    <div className="mx-auto my-16 grid w-1/2 grid-cols-3 place-items-center gap-8">
-      {features.map((feature, index) => (
+    <div className="mx-auto my-16 grid w-4/5 grid-cols-3 place-items-center gap-8">
+      {features.map(({ name, description }, index) => (
         <div
           key={index}
-          className="h-full rounded-2xl bg-white px-8 py-4 text-acm-gray-500 shadow-lg"
+          className="h-full w-fit rounded-2xl bg-white px-8 py-8 text-acm-gray-500 shadow-lg"
         >
-          <p className="py-2 text-xl font-bold">{feature.name}</p>
-          <p className="text-lg">{feature.description}</p>
+          <p className="py-2 text-2xl font-bold">{name}</p>
+          <p className="text-lg">{description}</p>
         </div>
       ))}
     </div>
