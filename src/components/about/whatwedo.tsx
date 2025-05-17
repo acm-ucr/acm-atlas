@@ -27,7 +27,7 @@ const WhatWeDo = () => {
           <Image src={BitByte} alt="BitByte" className="w-[5vw]" />
         </div>
       </div>
-      <div className="image-grid grid h-[600px] w-full gap-4 overflow-hidden transition-all">
+      <div className="image-grid order-2 grid h-[600px] w-full gap-4 overflow-hidden transition-all">
         <Image
           src={WhatWeDo1}
           alt="whatwedo1"
