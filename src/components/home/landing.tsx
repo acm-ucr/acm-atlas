@@ -1,15 +1,34 @@
+"use client";
+
 import Image from "next/image";
 import Keys from "@/public/home/keys.svg";
 import logo from "@/public/home/acmLogo.svg";
+import { motion } from "motion/react";
 
 const Landing = () => {
   return (
     <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
-      <p className="z-10 py-8">ASSOCIATION OF</p>
-      <p className="z-10">COMPUTING MACHINERY</p>
+      <motion.div
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
+      >
+        <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
+          <p className="z-10 py-8">ASSOCIATION OF</p>
+        </div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 20 }}
+        animate={{ opacity: 1, x: 0 }}
+      >
+        <div className="flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
+          <p className="z-10">COMPUTING MACHINERY</p>
+        </div>
+      </motion.div>
 
       <div className="relative flex flex-col items-center justify-center overflow-x-hidden pt-16">
-        <Image src={Keys} alt="Keys" className="z-10 mb-16" />
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+          <Image src={Keys} alt="Keys" className="z-10 mb-16" />
+        </motion.div>
         <div className="relative z-10 mx-auto h-20 w-3/4 rounded-t-2xl bg-white/45 2xl:w-1/2">
           <div className="absolute left-8 top-8 h-6 w-6 rounded-full bg-[#F6F6F6]/50 2xl:bg-[#F6F6F6]" />
           <div className="absolute left-20 top-8 h-6 w-6 rounded-full bg-[#F6F6F6]/50 2xl:bg-[#F6F6F6]" />
