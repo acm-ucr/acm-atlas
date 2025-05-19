@@ -19,6 +19,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
 
 const Navigation = () => {
   const [navBar, setNav] = useState(false);
@@ -47,7 +48,17 @@ const Navigation = () => {
         onClick={programBar ? handleBothBars : handleNavBar}
       />
       <Link className={pathname === "" ? "text-acm-blue-500" : ""} href="/">
-        <p className="text-3xl font-semibold text-acm-gray-500"> ACM@UCR</p>
+        <motion.div
+          className={
+            pathname === "/"
+              ? "text-3xl font-semibold text-acm-blue-500 text-acm-gray-500"
+              : "text-3xl font-semibold text-acm-gray-500"
+          }
+          whileHover={{ scale: 1.05 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          ACM@UCR
+        </motion.div>{" "}
       </Link>
 
       {/* For web view */}
@@ -59,10 +70,14 @@ const Navigation = () => {
                 {subItems ? (
                   <>
                     <NavigationMenuTrigger onClick={() => router.push(link)}>
-                      <div className="flex items-center gap-1">
+                      <motion.div
+                        className="flex items-center gap-1"
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                      >
                         {name}
                         {Icon && <Icon className="text-lg" />}
-                      </div>
+                      </motion.div>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="bg-white px-7">
                       {subItems.map(({ subName, subLink }, subIndex) => (
@@ -75,7 +90,12 @@ const Navigation = () => {
                           }
                           href={subLink}
                         >
-                          {subName}
+                          <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                          >
+                            {subName}
+                          </motion.div>
                         </NavigationMenuLink>
                       ))}
                     </NavigationMenuContent>
@@ -85,7 +105,12 @@ const Navigation = () => {
                     className={pathname === link ? "text-acm-blue-500" : ""}
                     href={link}
                   >
-                    {name}
+                    <motion.div
+                      whileHover={{ scale: 1.05 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                    >
+                      {name}
+                    </motion.div>
                   </Link>
                 )}
               </NavigationMenuItem>
