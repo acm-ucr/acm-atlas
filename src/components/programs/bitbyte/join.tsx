@@ -1,30 +1,35 @@
 import Link from "next/link";
 const Join = () => {
   return (
-    <div className="mx-auto grid w-10/12 grid-cols-2 items-center">
-      <div className="flex flex-col">
-        <p className="flex justify-center pb-6 text-5xl font-semibold text-acm-gray-500">
-          Join Now
-        </p>
-        <div className="flex justify-center">
-          <Link
-            href="/"
-            className="rounded-lg bg-acm-green-200 px-10 py-4 text-4xl text-white"
-          >
-            Apply Here!
-          </Link>
+    <>
+      <div className="absolute left-[87vw] top-[60%] h-[250px] w-[500px] rounded-full bg-acm-green-100 opacity-100 blur-3xl" />
+      <div className="z-10 mx-auto grid w-10/12 items-center pt-0 md:grid-cols-2 md:pt-20">
+        <div className="flex flex-col">
+          <p className="mt-16 flex justify-center text-3xl font-semibold text-acm-gray-500 md:mt-0 md:pb-6 md:text-5xl">
+            Join Now
+          </p>
+          <div className="flex justify-center py-4 md:py-0">
+            <Link
+              href="/"
+              className="rounded-lg bg-acm-green-200 p-2 text-2xl text-white md:mt-0 md:px-10 md:py-4 md:text-4xl"
+            >
+              Apply Here!
+            </Link>
+          </div>
+        </div>
+        <div className="relative">
+          <p className="text-center text-4xl font-bold md:text-left">
+            WHAT WE DO
+          </p>
+          <p className="pt-4 text-center text-2xl md:text-left">
+            We connect multiple students with a mentor to be advised throughout
+            one school year. During this period there will be different social
+            and activities hosted to help foster a deeper relationship between
+            the mentor and mentees.{" "}
+          </p>
         </div>
       </div>
-      <div>
-        <p className="text-4xl font-bold">WHAT WE DO</p>
-        <p className="pt-4 text-2xl">
-          We connect multiple students with a mentor to be advised throughout
-          one school year. During this period there will be different social and
-          activities hosted to help foster a deeper relationship between the
-          mentor and mentees.{" "}
-        </p>
-      </div>
-    </div>
+    </>
   );
 };
 
