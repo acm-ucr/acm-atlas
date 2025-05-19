@@ -103,7 +103,7 @@ const Hacks = () => {
           </p>
           <Link
             href="/hacks/hackpacks"
-            className="flex w-1/6 items-center justify-center rounded-lg bg-acm-blue-700 px-4 py-2 text-xl font-semibold text-white"
+            className="flex w-fit items-center justify-center rounded-lg bg-acm-blue-700 px-4 py-2 text-xl font-semibold text-white"
           >
             Learn More →
           </Link>
