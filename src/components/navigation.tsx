@@ -49,11 +49,7 @@ const Navigation = () => {
       />
       <Link className={pathname === "" ? "text-acm-blue-500" : ""} href="/">
         <motion.div
-          className={
-            pathname === "/"
-              ? "text-3xl font-semibold text-acm-blue-500 text-acm-gray-500"
-              : "text-3xl font-semibold text-acm-gray-500"
-          }
+          className="text-3xl font-semibold text-acm-gray-500"
           whileHover={{ scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300 }}
         >
