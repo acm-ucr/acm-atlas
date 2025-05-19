@@ -35,7 +35,7 @@ const Joinus = ({ textColor, backgroundColor, image }: ProgramProps) => {
         </motion.p>
         <div className="flex justify-center py-4 md:py-0">
           <motion.div
-            whileHover={{ scale: 1.1 }}
+            whileHover={{ scale: 1.03, opacity: 0.8 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: visible ? 1 : 0 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
