@@ -12,27 +12,26 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ photo, name, github, website }: ProjectCardProps) => {
   return (
-    <div className="mx-auto flex w-[70vw] flex-col justify-center rounded-[2vw] border-4 border-white px-[3vw] py-[4vw] shadow-2xl md:w-[29vw] md:px-[1.6vw] md:py-[2vw]">
+    <div className="mx-auto flex w-11/12 flex-col justify-center rounded-3xl border-4 border-white px-4 py-5 shadow-2xl md:w-11/12 md:px-5 md:py-6">
       <div className="relative aspect-[16/9] w-full">
         <Image
           src={photo}
           alt={name}
-          fill
-          className="rounded-[2vw] object-cover"
+          className="aspect-[16/9] w-fit rounded-3xl"
         />
       </div>
 
       <div className="mt-4 flex items-center justify-between text-left">
-        <div className="w-[50vw] truncate text-[4vw] font-light md:w-[19vw] md:text-[2.3vw]">
+        <div className="w-8/12 truncate text-xl font-light md:text-3xl">
           {name}
         </div>
-        <div className="flex items-center gap-2 text-[1.6vw]">
+        <div className="flex items-center gap-2">
           {github && (
             <Link
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[4vw] md:text-[2.2vw]"
+              className="text-xl md:text-3xl"
             >
               <FaGithub />
             </Link>
@@ -42,7 +41,7 @@ const ProjectCard = ({ photo, name, github, website }: ProjectCardProps) => {
               href={website}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[4vw] md:text-[2.2vw]"
+              className="text-xl md:text-3xl"
             >
               <FaExternalLinkAlt />
             </Link>
