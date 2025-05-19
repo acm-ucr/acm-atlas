@@ -21,7 +21,7 @@ export const TECH_COLORS: Record<string, string> = {
   "next.js": "bg-black text-white",
   firebase: "bg-acm-red text-white",
   tailwind: "bg-acm-tailwindcss text-white",
-  mongodb: "bg-green-100 text-white",
+  mongodb: "bg-green-400 text-white",
   arduino: "bg-acm-arduino text-white",
   python: "bg-acm-python text-white",
   unity: "bg-gray-300 text-white",
@@ -31,7 +31,7 @@ export const TECH_COLORS: Record<string, string> = {
   prettier: "bg-acm-prettier text-white",
   discord: "bg-indigo-300 text-white",
   jupyter: "bg-orange-200 text-white",
-  pandas: "bg-gray-200 text-white",
+  pandas: "bg-gray-400 text-white",
 };
 
 export const TECHSTACKS: Record<string, React.ReactNode> = {

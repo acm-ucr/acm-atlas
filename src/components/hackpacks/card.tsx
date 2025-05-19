@@ -15,7 +15,7 @@ const HackpackCard = ({
   link,
   languages,
 }: HackpackCardProps) => (
-  <div className="flex w-1/6 flex-col gap-4 rounded-2xl bg-white p-6 shadow-md">
+  <div className="flex flex-col gap-4 rounded-2xl bg-white p-6 shadow-md">
     <div className="flex items-center justify-between">
       <h2 className="text-lg font-bold text-gray-500">{title}</h2>
       <Link href={link} target="_blank" rel="noopener noreferrer">
