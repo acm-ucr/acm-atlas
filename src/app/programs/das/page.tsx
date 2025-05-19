@@ -6,7 +6,7 @@ import Das from "@/public/logos/das.svg";
 import purpleEllipse from "@/public/ellipses/purpleEllipse.svg";
 import Carousel from "@/components/programs/carousel";
 import das from "@/data/techstacks/das";
-import GridContent from "@/components/programs/das/grid";
+import GridContent from "@/components/programs/das/whatwedo";
 
 const Page = () => {
   return (
