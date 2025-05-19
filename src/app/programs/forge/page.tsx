@@ -6,6 +6,7 @@ import Forge from "@/public/logos/forge.svg";
 import grayEllipse from "@/public/ellipses/grayEllipse.svg";
 import Carousel from "@/components/programs/carousel";
 import forge from "@/data/techstacks/forge";
+import WhatWeDo from "@/components/programs/forge/whatwedo";
 
 const Page = () => {
   return (
@@ -28,7 +29,7 @@ const Page = () => {
         backgroundColor="bg-acm-gray-200"
         image={Forge1}
       />
-
+      <WhatWeDo />
       <FAQ />
     </>
   );
