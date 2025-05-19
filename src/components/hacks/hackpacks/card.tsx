@@ -1,4 +1,4 @@
-import { TECHSTACKS, TECH_COLORS } from "@/data/user/hackpacks";
+import { TECHSTACKS, TECH_COLORS } from "@/data/hackpacks";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
 
@@ -17,12 +17,12 @@ const HackpackCard = ({
 }: HackpackCardProps) => (
   <div className="flex flex-col gap-4 rounded-2xl bg-white p-6 shadow-md">
     <div className="flex items-center justify-between">
-      <h2 className="text-lg font-bold text-gray-500">{title}</h2>
+      <p className="text-lg font-bold text-acm-gray-500">{title}</p>
       <Link href={link} target="_blank" rel="noopener noreferrer">
         <FaGithub className="text-2xl text-acm-github" />
       </Link>
     </div>
-    <p className="text-sm text-black">{description}</p>
+    <p className="text-sm text-acm-gray-500">{description}</p>
     <div>
       <p className="mb-2 font-semibold text-gray-500">TECH STACK</p>
       <div className="flex flex-wrap gap-2">

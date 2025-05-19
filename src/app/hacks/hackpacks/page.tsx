@@ -1,5 +1,2 @@
-import Cards from "@/components/hackpacks/cards";
-
-const Page = () => <Cards />;
-
-export default Page;
+import Cards from "@/components/hacks/hackpacks/cards";
+export default Cards;

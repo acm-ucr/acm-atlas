@@ -24,9 +24,9 @@ export const TECH_COLORS: Record<string, string> = {
   mongodb: "bg-green-400 text-white",
   arduino: "bg-acm-arduino text-white",
   python: "bg-acm-python text-white",
-  unity: "bg-gray-300 text-white",
+  unity: "bg-gray-400 text-white",
   "c++": "bg-blue-300 text-white",
-  "github actions": "bg-gray-300 text-white",
+  "github actions": "bg-blue-400 text-white",
   eslint: "bg-acm-eslint text-white",
   prettier: "bg-acm-prettier text-white",
   discord: "bg-indigo-300 text-white",
@@ -68,7 +68,7 @@ export const HACKPACKS = [
       "A full-stack starter using Firebase and Next.js. Ideal for apps with real-time database needs, featuring Tailwind CSS and GitHub Actions.",
   },
   {
-    link: "https://github.com/acm-ucr/firebase-nextjs-hackpack",
+    link: "https://github.com/acm-ucr/mongodb-nextjs-hackpack",
     title: "MONGODB WEB APP",
     languages: [
       "typescript",
@@ -86,7 +86,7 @@ export const HACKPACKS = [
     link: "https://github.com/acm-ucr/nextjs-hackpack",
     title: "FULL STACK WEB APP",
     languages: [
-      "typescript",
+      "javascript",
       "next.js",
       "tailwind",
       "prettier",
@@ -131,7 +131,7 @@ export const HACKPACKS = [
       "Python-based starter for Discord bots. Ideal for chat management and interactive bot functionalities.",
   },
   {
-    link: "https://github.com/acm-ucr/discord-python-hackpack",
+    link: "https://github.com/acm-ucr/computer-vision-hackpack",
     title: "COMPUTER VISION",
     languages: ["python"],
     description:
@@ -145,7 +145,7 @@ export const HACKPACKS = [
       "A general-purpose Python starter, useful for scripting, automation, and data analysis projects.",
   },
   {
-    link: "https://github.com/acm-ucr/python-hackpack",
+    link: "https://github.com/acm-ucr/machine-learning-hackpack",
     title: "MACHINE LEARNING",
     languages: ["python", "jupyter", "pandas"],
     description:
