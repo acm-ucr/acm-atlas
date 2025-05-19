@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -19,6 +18,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { motion } from "motion/react";
 
 const Navigation = () => {
   const [navBar, setNav] = useState(false);
@@ -96,7 +96,13 @@ const Navigation = () => {
 
       {/* For mobile view */}
       {navBar && (
-        <div className="fixed inset-0 z-20 flex md:hidden">
+        <motion.div
+          className="fixed inset-0 z-20 flex md:hidden"
+          initial="closed"
+          animate={navBar ? "open" : "closed"}
+          variants={sidebarVariants}
+          transition={{ duration: 0.5 }}
+        >
           <div className="flex h-full w-[90vw] flex-col gap-5 bg-white pb-5 md:hidden">
             <div className="flex items-end justify-end pr-2 pt-4">
               <RiCloseFill
@@ -106,7 +112,8 @@ const Navigation = () => {
             </div>
             <div className="relative ml-5 flex flex-col items-start justify-start">
               {navigations.map(({ name, link, subItems }, index) => (
-                <div
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
                   className="flex w-full justify-between border-t-2 border-acm-gray-100 py-2"
                   key={index}
                 >
@@ -178,7 +185,7 @@ const Navigation = () => {
                       )}
                     </div>
                   )}
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -186,10 +193,31 @@ const Navigation = () => {
             className="h-full w-[10vw] bg-white opacity-45"
             onClick={handleNavBar}
           />
-        </div>
+        </motion.div>
       )}
     </div>
   );
+};
+
+const sidebarVariants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 20,
+    },
+  },
+  closed: {
+    y: "-100%",
+    opacity: 0,
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+    },
+  },
 };
 
 export default Navigation;
