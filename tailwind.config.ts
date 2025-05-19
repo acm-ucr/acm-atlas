@@ -13,6 +13,7 @@ module.exports = {
           "orange-400": "#ffac01",
           "gray-100": "#e4e4e4",
           "gray-200": "#47484a",
+          "gray-300": "#C4C4C4",
           "gray-400": "#8e8e8e",
           "gray-500": "#444444",
           "blue-100": "#ddf4ff",
@@ -22,6 +23,7 @@ module.exports = {
           "blue-500": "#2391ff",
           "blue-600": "#5e99ff",
           "blue-700": "#4185fc",
+          "blue-800": "#ccebfd",
           navy: "#173967",
           turquoise: "#3bc5bb",
           "turquoise-200": "#2D8E8F",
@@ -53,6 +55,7 @@ module.exports = {
           numpy: "#4dabcf",
           pytorch: "#ee4c2c",
           scikit: "#f89939",
+          github: "#3e75c2",
         },
 
         background: "oklch(var(--background))",
