@@ -15,14 +15,14 @@ interface ProgramProps {
   link: string;
 }
 
-const textAnimation = {
+const dropInAnimation = {
   hidden: { opacity: 0, y: 20 },
   show: {
     opacity: 1,
     y: 30,
   },
 };
-const imageAnimation = {
+const slideInAnimation = {
   hidden: { opacity: 0, x: 50 },
   show: {
     opacity: 1,
@@ -43,7 +43,7 @@ const WhatWeOffer = ({
   return (
     <div className="grid grid-cols-1 items-center px-4 py-12 md:grid-cols-3 md:px-[15%]">
       <motion.div
-        variants={imageAnimation}
+        variants={slideInAnimation}
         transition={{ duration: 0.2, delay: 0.6 }}
         initial="hidden"
         whileInView="show"
@@ -54,7 +54,7 @@ const WhatWeOffer = ({
       <div className="col-span-2">
         <motion.div
           className="flex flex-wrap justify-center text-center text-2xl font-bold text-acm-gray-500 md:justify-start md:text-left md:text-4xl"
-          variants={textAnimation}
+          variants={dropInAnimation}
           transition={{ duration: 0.5, delay: 0.2 }}
           initial="hidden"
           whileInView="show"
@@ -64,7 +64,7 @@ const WhatWeOffer = ({
           <p>?</p>
         </motion.div>
         <motion.div
-          variants={textAnimation}
+          variants={dropInAnimation}
           transition={{ duration: 0.2, delay: 0.5 }}
           initial="hidden"
           whileInView="show"
@@ -75,7 +75,7 @@ const WhatWeOffer = ({
           <p className="inline">{pText}</p>
         </motion.div>
         <motion.div
-          variants={textAnimation}
+          variants={dropInAnimation}
           transition={{ duration: 0.5, delay: 0.5 }}
           initial="hidden"
           whileInView="show"
