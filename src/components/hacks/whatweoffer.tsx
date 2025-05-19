@@ -71,5 +71,4 @@ const WhatWeOffer = ({
     </div>
   );
 };
-
 export default WhatWeOffer;
