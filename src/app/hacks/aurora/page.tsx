@@ -2,6 +2,7 @@ import Stats from "@/components/hacks/aurora/stats";
 import AuroraButtons from "@/components/hacks/aurora/aurorabuttons";
 import auroraLogo from "@/public/logos/aurora.svg";
 import ProgramHeader from "@/components/programs/programheader";
+import Features from "@/components/hacks/aurora/features";
 import UsedIn from "@/components/hacks/aurora/usedin";
 
 const Page = () => {
@@ -15,6 +16,7 @@ const Page = () => {
       />
       <Stats />
       <AuroraButtons />
+      <Features />
       <UsedIn />
     </>
   );

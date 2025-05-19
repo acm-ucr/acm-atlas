@@ -35,7 +35,7 @@ const Landing = () => {
         <div className="z-5 absolute bottom-[5%] left-[30%] h-[300px] w-[500px] rounded-full bg-acm-blue-700/40 blur-3xl" />
         <div className="z-5 absolute bottom-[25%] right-[50%] h-[300px] w-[500px] rounded-full bg-acm-blue-700/40 blur-3xl" />
         <div className="z-5 absolute bottom-[25%] right-[25%] h-[300px] w-[500px] rounded-full bg-acm-blue-700/40 blur-3xl" />
-        <div className="z-5 bottom-27%] absolute left-0 h-[300px] w-[500px] rounded-full bg-acm-blue-700 opacity-40 blur-3xl" />
+        <div className="z-5 absolute bottom-[27%] left-0 h-[300px] w-[500px] rounded-full bg-acm-blue-700 opacity-40 blur-3xl" />
         <div className="z-2 absolute bottom-[35%] left-[90%] h-[300px] w-[350px] rounded-full bg-acm-green-300/25 blur-3xl" />
         <div className="z-2 absolute bottom-[35%] left-[70%] h-[300px] w-[350px] rounded-full bg-acm-green-300/25 blur-3xl" />
       </div>
