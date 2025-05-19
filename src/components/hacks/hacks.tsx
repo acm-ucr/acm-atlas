@@ -5,6 +5,28 @@ import Aurora from "@/public/logos/aurora.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
+
+const TitleAnimation = {
+  viewport: { once: true },
+  whileInView: { opacity: 1, y: 0 },
+  initial: { opacity: 0, y: 30 },
+  transition: { duration: 0.5, delay: 0.3 },
+};
+
+const DescriptionAnimation = {
+  viewport: { once: true },
+  whileInView: { opacity: 1, y: 0 },
+  initial: { opacity: 0, y: 30 },
+  transition: { duration: 0.5, delay: 0.4 },
+};
+
+const LogoAnimation = {
+  viewport: { once: true },
+  whileInView: { opacity: 1, scale: 1 },
+  initial: { opacity: 0, scale: 0.8 },
+  transition: { type: "spring", damping: 40, stiffness: 200, delay: 0.5 },
+};
+
 const Hacks = () => {
   return (
     <div className="flex flex-col gap-4">
@@ -26,20 +48,12 @@ const Hacks = () => {
       <div className="mx-[15%] grid grid-cols-3 pb-8">
         <div className="col-span-2">
           <motion.div
-            viewport={{ once: true }}
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            {...TitleAnimation}
             className={`pb-4 text-4xl font-bold text-acm-turquoise-300`}
           >
             AURORA
           </motion.div>
-          <motion.div
-            viewport={{ once: true }}
-            whileInView={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 30 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
+          <motion.div {...DescriptionAnimation}>
             <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
               Aurora is an all in one dashboard used to manage and run Hackathon
               competitions.
@@ -55,15 +69,7 @@ const Hacks = () => {
         </div>
 
         <motion.div
-          viewport={{ once: true }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          initial={{ opacity: 0, scale: 0.8 }}
-          transition={{
-            type: "spring",
-            damping: 40,
-            stiffness: 300,
-            delay: 0.5,
-          }}
+          {...LogoAnimation}
           className="flex items-center justify-center"
         >
           <Image src={Aurora} alt="Aurora" />
