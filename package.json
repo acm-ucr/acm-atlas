@@ -19,7 +19,11 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.417.0",
+<<<<<<< HEAD
     "motion": "^12.11.4",
+=======
+    "motion": "^12.11.0",
+>>>>>>> 46f75fa48e5f88ee90b07dab84f6b34c6c69e768
     "next": "^13.5.11",
     "react": "18.2.0",
     "react-countup": "^6.5.3",
