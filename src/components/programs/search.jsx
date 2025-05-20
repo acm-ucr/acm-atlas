@@ -1,7 +1,6 @@
 "use client";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback, useState } from "react";
-import { FaSearch } from "react-icons/fa";
 import { MdCancel } from "react-icons/md";
 
 const Search = () => {
@@ -39,15 +38,6 @@ const Search = () => {
 
   return (
     <div className="flex w-10/12 items-center rounded px-3 py-2 text-acm-gray-200">
-      <MdCancel
-        className="mx-2 pr-4 text-4xl hover:cursor-pointer hover:opacity-50"
-        onClick={() => {
-          setSearchValue("");
-          router.replace(pathname + "?" + createQueryString("search", ""), {
-            scroll: false,
-          });
-        }}
-      />
       <input
         placeholder="...Search"
         className="mb-5 w-full rounded-xl bg-gray-100 px-4 py-2 pl-10"
@@ -57,7 +47,15 @@ const Search = () => {
           handleSearch(e.target.value);
         }}
       />
-      <FaSearch className="mx-2 pl-4 text-4xl" />
+      <MdCancel
+        className="mx-2 pr-4 text-4xl hover:cursor-pointer hover:opacity-50 pb-5 -translate-x-4"
+        onClick={() => {
+          setSearchValue("");
+          router.replace(pathname + "?" + createQueryString("search", ""), {
+            scroll: false,
+          });
+        }}
+      />
     </div>
   );
 };
