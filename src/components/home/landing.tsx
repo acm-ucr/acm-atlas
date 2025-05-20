@@ -6,16 +6,15 @@ import logo from "@/public/home/acmLogo.svg";
 import { motion } from "motion/react";
 
 const TitleAnimation = {
-  initial:{opacity:0, y:20},
-  animate:{opacity:0, y:0}
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 },
 };
 
 const Landing = () => {
   return (
     <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
-      <motion.div
-        {...TitleAnimation}
-      >
+      <motion.div {...TitleAnimation}>
         <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
           <p className="z-10 py-8">ASSOCIATION OF</p>
           <p className="z-10">COMPUTING MACHINERY</p>
