@@ -28,6 +28,7 @@ const slideInAnimation = {
     opacity: 1,
     x: 0,
   },
+  transition: {duration: 0.2, delay: 0.6},
 };
 
 const WhatWeOffer = ({
@@ -44,9 +45,6 @@ const WhatWeOffer = ({
     <div className="grid grid-cols-1 items-center px-4 py-12 md:grid-cols-3 md:px-[15%]">
       <motion.div
         variants={slideInAnimation}
-        transition={{ duration: 0.2, delay: 0.6 }}
-        initial="hidden"
-        whileInView="show"
         className="mb-5 mt-10 flex items-center justify-center md:order-2 md:mt-0"
       >
         <Image src={image} alt="program" />

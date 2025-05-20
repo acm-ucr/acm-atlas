@@ -55,6 +55,7 @@ module.exports = {
           numpy: "#4dabcf",
           pytorch: "#ee4c2c",
           scikit: "#f89939",
+          github: "#3e75c2",
         },
 
         background: "oklch(var(--background))",
