@@ -2,9 +2,18 @@
 
 import { Board } from "@/data/board";
 import Card from "@/components/board/card";
+import { motion } from "framer-motion";
 
 type SectionRefs = {
   [key: string]: React.RefObject<HTMLDivElement>;
+};
+
+const slidedownanimation = {
+  hidden: { opacity: 0, y: -10 },
+  show: {
+    opacity: 1,
+    y: 0,
+  },
 };
 
 const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
@@ -23,16 +32,26 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
                 { name, position, color, shadow, photo, linkedin, github },
                 index,
               ) => (
-                <Card
-                  key={index}
-                  name={name}
-                  position={position}
-                  color={color}
-                  shadow={shadow}
-                  photo={photo}
-                  linkedin={linkedin}
-                  github={github}
-                />
+                <motion.div
+                  variants={slidedownanimation}
+                  transition={{ duration: 0.5 }}
+                  viewport={{ once: true, amount: 0.5 }}
+                  initial="hidden"
+                  whileInView="show"
+                  whileHover={{ scale: 1.05 }}
+                  className="font-libre group flex flex-col items-center text-sm font-bold md:text-2xl 2xl:text-3xl"
+                >
+                  <Card
+                    key={index}
+                    name={name}
+                    position={position}
+                    color={color}
+                    shadow={shadow}
+                    photo={photo}
+                    linkedin={linkedin}
+                    github={github}
+                  />
+                </motion.div>
               ),
             )}
           </div>
