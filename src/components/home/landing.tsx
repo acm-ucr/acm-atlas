@@ -5,22 +5,19 @@ import Keys from "@/public/home/keys.svg";
 import logo from "@/public/home/acmLogo.svg";
 import { motion } from "motion/react";
 
+const TitleAnimation = {
+  initial:{opacity:0, y:20},
+  animate:{opacity:0, y:0}
+};
+
 const Landing = () => {
   return (
     <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
       <motion.div
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
+        {...TitleAnimation}
       >
         <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
           <p className="z-10 py-8">ASSOCIATION OF</p>
-        </div>
-      </motion.div>
-      <motion.div
-        initial={{ opacity: 0, x: 20 }}
-        animate={{ opacity: 1, x: 0 }}
-      >
-        <div className="flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
           <p className="z-10">COMPUTING MACHINERY</p>
         </div>
       </motion.div>
