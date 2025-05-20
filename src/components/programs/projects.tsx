@@ -1,5 +1,5 @@
 import Pagination from "@/components/programs/pagination";
-import Search from "@/components/programs/search";
+import Search from "./search";
 import ProjectsGrid from "@/components/programs/projectgrid";
 import { Suspense } from "react";
 import { StaticImageData } from "next/image";
@@ -15,7 +15,7 @@ interface ProjectGridProps {
   projects: Project[];
 }
 
-const projects = ({ projects }: ProjectGridProps) => {
+const Projects = ({ projects }: ProjectGridProps) => {
   return (
     <div className="flex flex-col items-center justify-center">
       <p className="my-5 text-3xl font-semibold text-acm-gray-500">
@@ -30,4 +30,4 @@ const projects = ({ projects }: ProjectGridProps) => {
   );
 };
 
-export default projects;
+export default Projects;

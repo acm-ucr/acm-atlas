@@ -1,7 +1,6 @@
 import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Spark1 from "@/public/spark/spark1.webp";
-import ProjectGrid from "@/components/programs/spark/projectgrid";
 import spark from "@/data/techstacks/spark";
 import Carousel from "@/components/programs/carousel";
 import FAQ from "@/components/programs/spark/faq";
@@ -33,7 +32,6 @@ const Page = () => {
         image={Spark1}
       />
       <WhatWeDo />
-      <ProjectGrid />
       <FAQ />
       <Projects projects={SparkData} />
     </div>

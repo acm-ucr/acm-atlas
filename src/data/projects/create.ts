@@ -42,6 +42,7 @@ const create = [
   {
     photo: d3,
     name: "3D",
+    keywords: ["3D Club"],
     website:
       "https://www.figma.com/design/M5lBBZmtmt9YTyDL8j5lZk/3D-Club-Website?node-id=0-1&p=f&t=wsBVJsvzrL47Aikq-0",
   },
@@ -60,12 +61,14 @@ const create = [
   {
     photo: aiatucr,
     name: "AI at UCR",
+    keywords: ["AI @ UCR"],
     website:
       "https://www.figma.com/design/2EM9YBNePoBOtZlVFWsKMS/AI---UCR?node-id=0-1&p=f&t=t3GKG6XcFE3b1yg1-0",
   },
   {
     photo: ais,
     name: "AIS",
+    keywords: ["Association for Information Systems"],
     website:
       "https://www.figma.com/design/Bhz6C7rBlK55l0ycqDLi1Z/AIS-website?node-id=0-1&p=f&t=BZBBJF8TXjeVurRM-0",
   },
@@ -78,54 +81,64 @@ const create = [
   {
     photo: asme,
     name: "ASME",
+    keywords: ["American Society of Mechanical Engineers"],
     website:
       "https://www.figma.com/design/ydXUrgtbwEEPkYm27hMNWE/ASME?node-id=0-1&p=f&t=It0zs5iwZCnrWr2n-0",
   },
   {
     photo: aviatr,
-    name: "Aviatr",
+    name: "Aviat'r",
+    keywords: ["Aviatr"],
     website:
       "https://www.figma.com/design/EHjqK7NuIMCMseEdZVmWUx/AVIATR?t=B6i75elNfpYyGSSa-0",
   },
   {
     photo: bap,
     name: "BAP",
+    keywords: ["Beta Alpha Psi"],
     website:
       "https://www.figma.com/design/LQIv0E603YCHABhwNMzhu1/Beta-Alpha-Psi-Website?node-id=0-1&p=f&t=pJskvCauMNgNCQKr-0",
   },
   {
     photo: cse,
-    name: "CSE",
+    name: "AI/ML CSE Resources",
     website:
       "https://www.figma.com/design/qdagE2pkGk4J7vyuHdVHcx/CSE-AI-WEBSITE?node-id=0-1&p=f&t=QVBmRBrJU1SP2c2O-0",
   },
   {
     photo: cvdsa,
-    name: "CVDSA",
+    name: "UofT CVDSA",
+    keywords: [
+      "University of Toronto",
+      "Cardiovascular Disease Student Association",
+    ],
     website:
       "https://www.figma.com/design/ZwdZgOjM3jcuqfpi1Qqi4b/UofT-CVDSA-Website?node-id=0-1&p=f&t=jbbv7svWcRBHEY3b-0",
   },
   {
     photo: ewb,
     name: "EWB",
+    keywords: ["Engineers Without Borders"],
     website:
       "https://www.figma.com/design/5HIkPeKIcvLhtVuYDpOBMx/EWB?node-id=0-1&p=f&t=eBAVG6MdKB038VB7-0",
   },
   {
     photo: gardening,
-    name: "Gardening",
+    name: "Gardening Club",
     website:
       "https://www.figma.com/design/CUr8M6VnOPhvLRmpaXB2Qa/Gardening-Club-Website?node-id=0-1&p=f&t=EEv4lD6zmyKwTYn7-0",
   },
   {
     photo: h4b,
-    name: "H4B",
+    name: "Hungry 4 Biscuits",
+    keywords: ["H4B"],
     website:
       "https://www.figma.com/design/w0Jw8huH6wEoQ4tXUUQaMz/Hungry-4-Biscuts-ACM?node-id=0-1&p=f&t=yiUqs9ZSS0eTSU2W-0",
   },
   {
     photo: hearts,
     name: "Hearts",
+    keywords: ["UCR Hearts"],
     website:
       "https://www.figma.com/design/1cHysMjmD4gsDNpxdckci2/UCR-HEARTS-WEBSITE?node-id=0-1&p=f&t=IdFTnXqKs2bOZmnf-0",
   },
@@ -138,24 +151,28 @@ const create = [
   {
     photo: hiss,
     name: "HISS",
+    keywords: ["Highlander Statistics Society"],
     website:
       "https://www.figma.com/design/Rk8S9muvP1HL4PkVHU25gj/HISS?node-id=0-1&p=f&t=x4zh0P2qsMx1Hcsa-0",
   },
   {
     photo: hlg,
     name: "HLG",
+    keywords: ["Highlander Gaming"],
     website:
       "https://www.figma.com/design/AF6AdslHuzkzUe6qDgcJx9/HLG?node-id=67-513&p=f&t=nNWnu1ZhrPAnTB6J-0",
   },
   {
     photo: hsp,
     name: "HSP",
+    keywords: ["Highlander Space Program"],
     website:
       "https://www.figma.com/design/1W8TsDokg8Kz3NQmofNfbr/HighlanderSpaceProgramWebsite?node-id=0-1&t=XZmmwRaXQNZ4jyEb-0",
   },
   {
     photo: ieee,
     name: "IEEE",
+    keywords: ["Institute of Electrical and Electronics Engineers"],
     website: "https://www.figma.com/design/JU4pglkup3pS32lDQ6cOzc/IEEE",
   },
   {
@@ -167,30 +184,33 @@ const create = [
   {
     photo: isa,
     name: "ISA",
+    keywords: ["Indian Student Association"],
     website:
       "https://www.figma.com/design/9JJaYuB5Td4XqcbrScyFLi/ISA-Website?node-id=66-2",
   },
   {
     photo: jmproduct,
-    name: "J&M Product",
+    name: "J&M Products",
     website:
       "https://www.figma.com/design/4nJNXzc99PRGC7HCTUSmo5/J-M-Products?node-id=0-1&t=lEh4BcSrABV2rerU-0",
   },
   {
     photo: pad,
     name: "PAD",
+    keywords: ["Phi Alpha Delta"],
     website:
       "https://www.figma.com/file/6FTXStJnmz3ltBSM1OtgAE/Phi-Alpha-Delta-Pre-Law-Fraternity?type=design&mode=design&t=WU6yx2XpUb1H05aO-1",
   },
   {
     photo: quant,
-    name: "Quant",
+    name: "Quant Club",
     website:
       "https://www.figma.com/design/7feU13ganAWiOh0DavyqEx/Quant-Club?node-id=0-1&p=f&t=fWTZS2WD3NadhhfJ-0",
   },
   {
     photo: rishi,
     name: "Rishi",
+    keywords: ["Prishi"],
     website:
       "https://www.figma.com/design/Er8O1kH9UNeOnndCS885bT/RISHI?node-id=0-1&p=f&t=S7LBtYpK4BpCPPEE-0",
   },
@@ -203,24 +223,27 @@ const create = [
   {
     photo: rtools,
     name: "RTools",
+    keywords: ["R'Tools"],
     website:
       "https://www.figma.com/file/srPYl8FCyMLXr4fMQic28X/R'Tools?type=design&node-id=0%3A1&mode=design&t=UcB5WmSDilkrVkbF-1",
   },
   {
     photo: saf,
     name: "SAF",
+    keywords: ["South Asian Federation"],
     website:
       "https://www.figma.com/file/hJdQBu4lFedtok6kdKuNUi/SAF?type=design&node-id=0-1&mode=design&t=zuUH63biGVlQdIoi-0",
   },
   {
     photo: seniordesign,
     name: "Senior Design",
+    keywords: ["Senior Design Display", "SDD"],
     website:
       "https://www.figma.com/design/ugHpLqrEY2Zcdh3U6Zh5lu/Senior-Design?node-id=0-1&t=XJg20lgVT5MeiP5w-0",
   },
   {
     photo: skate,
-    name: "Skate",
+    name: "Skate Club",
     website:
       "https://www.figma.com/design/2CF69Dr527yk2dUI3VRHZ1/Skate-Club-UCR?node-id=0-1&node-type=canvas&t=eYeaocmIXmeUWrMm-0",
   },
@@ -233,18 +256,21 @@ const create = [
   {
     photo: swim,
     name: "Swim",
+    keywords: ["UCR Swim Club"],
     website:
       "https://www.figma.com/design/AJJFv2qsWeV9vi9HeAcTxB/UCR-Swim-Club?node-id=123-2&p=f&t=Xt2CF0r9Cx4Hdp4s-0",
   },
   {
     photo: tag,
     name: "TAG",
+    keywords: ["Tea and Go"],
     website:
       "https://www.figma.com/design/toAgQZnYgM9hFa1uNQ4OPs/ACM-x-TAG?node-id=149-2&t=gwJEr86nwidyEALA-1",
   },
   {
     photo: tkd,
     name: "TKD",
+    keywords: ["Taekwondo"],
     website:
       "https://www.figma.com/design/xYf4Uwnb4asZQLMCjA8JZi/UCR-TKD?node-id=0-1",
   },
@@ -258,12 +284,14 @@ const create = [
   {
     photo: winc,
     name: "WINC",
+    keywords: ["Women in Computing"],
     website:
       "https://www.figma.com/design/OlDd8sSXhXnF8agrTjUZMu/WINC-Official-Website?node-id=46-40&t=euVAMGWcYDQb9oAV-0",
   },
   {
     photo: witl,
     name: "WITL",
+    keywords: ["Womxn In The Law"],
     website:
       "https://www.figma.com/design/lpnjmTOG9uRO3Q0zHbjgsD/ACM-x-WITL?node-id=0-1&t=J7As1uSKchpmuTSs-0&fuid=1451469846061073223",
   },

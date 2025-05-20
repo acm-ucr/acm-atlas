@@ -13,7 +13,7 @@ const Search = () => {
   );
 
   const createQueryString = useCallback(
-    (name, value) => {
+    (name: string, value: string): string => {
       const params = new URLSearchParams(searchParams.toString());
       params.set(name, value);
 
@@ -22,25 +22,31 @@ const Search = () => {
     [searchParams],
   );
 
-  const debounce = (func, delay) => {
-    let timeout;
-    return (...args) => {
+  function debounce<F extends (...args: Parameters<F>) => void>(
+    func: F,
+    delay: number,
+  ): (...args: Parameters<F>) => void {
+    let timeout: NodeJS.Timeout;
+    return (...args: Parameters<F>) => {
       clearTimeout(timeout);
       timeout = setTimeout(() => func(...args), delay);
     };
-  };
+  }
 
-  const handleSearch = debounce((value) => {
-    router.replace(pathname + "?" + createQueryString("search", value), {
+  const handleSearch = debounce((value: string) => {
+    const params = new URLSearchParams(searchParams.toString());
+    params.set("search", value);
+    params.set("page", "0");
+    router.replace(pathname + "?" + params.toString(), {
       scroll: false,
     });
   }, 300);
 
   return (
-    <div className="flex w-10/12 items-center rounded px-3 py-2 text-acm-gray-200">
+    <div className="relative flex w-10/12 items-center rounded px-3 py-2 text-acm-gray-200">
       <input
-        placeholder="...Search"
-        className="mb-5 w-full rounded-xl bg-gray-100 px-4 py-2 pl-10"
+        placeholder="Search for a project"
+        className="mb-5 w-full rounded-xl border-2 border-black px-4 py-2 pl-10"
         value={searchValue}
         onChange={(e) => {
           setSearchValue(e.target.value);
@@ -48,7 +54,7 @@ const Search = () => {
         }}
       />
       <MdCancel
-        className="mx-2 pb-5 pr-4 text-4xl hover:cursor-pointer hover:opacity-50"
+        className="absolute right-0 mr-4 pb-5 text-4xl hover:cursor-pointer hover:opacity-50"
         onClick={() => {
           setSearchValue("");
           router.replace(pathname + "?" + createQueryString("search", ""), {

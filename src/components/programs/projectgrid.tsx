@@ -6,6 +6,7 @@ import { StaticImageData } from "next/image";
 interface Project {
   photo: StaticImageData;
   name: string;
+  keywords?: string[];
   github?: string;
   website: string;
 }
@@ -21,7 +22,14 @@ const ProjectGrid = ({ projects = [] }: ProjectGridProps) => {
   const search = searchParams.get("search") ?? "";
 
   const cards = projects
-    .filter(({ name }) => name.toLowerCase().includes(search.toLowerCase()))
+    .filter(({ name, keywords }) => {
+      const searchLower = search.toLowerCase();
+      const nameMatch = name.toLowerCase().includes(searchLower);
+      const keywordMatch = keywords?.some((kw) =>
+        kw.toLowerCase().includes(searchLower),
+      );
+      return nameMatch || keywordMatch;
+    })
     .slice(6 * page, 6 * page + 6);
 
   return (

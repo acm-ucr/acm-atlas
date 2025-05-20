@@ -42,25 +42,27 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
   const total = Math.floor(projects.length / 6);
 
   return (
-    <div className="scale-125 py-5">
+    <div className="scale-125 py-12">
       <Pagination>
         <PaginationContent>
-          <PaginationItem>
-            <PaginationPrevious
-              onClick={() => {
-                if (index > 0) {
-                  router.push(
-                    pathname +
-                      "?" +
-                      createQueryString("page", (index - 1).toString()),
-                    { scroll: false },
-                  );
-                }
-              }}
-            />
-          </PaginationItem>
-          <PaginationItem>
-            {index - 2 > 0 && (
+          {index > 0 && (
+            <PaginationItem className="hover:cursor-pointer">
+              <PaginationPrevious
+                onClick={() => {
+                  if (index > 0) {
+                    router.push(
+                      pathname +
+                        "?" +
+                        createQueryString("page", (index - 1).toString()),
+                      { scroll: false },
+                    );
+                  }
+                }}
+              />
+            </PaginationItem>
+          )}
+          {index - 1 > 0 && (
+            <PaginationItem className="hover:cursor-pointer">
               <PaginationLink
                 onClick={() => {
                   router.push(pathname + "?" + createQueryString("page", "0"), {
@@ -70,12 +72,12 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
               >
                 {1}
               </PaginationLink>
-            )}
-          </PaginationItem>
+            </PaginationItem>
+          )}
           <PaginationItem>
             {index - 2 > 0 && <PaginationEllipsis />}
           </PaginationItem>
-          <PaginationItem>
+          <PaginationItem className="hover:cursor-pointer">
             {index > 0 && (
               <PaginationLink
                 onClick={() => {
@@ -93,7 +95,7 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
               </PaginationLink>
             )}
           </PaginationItem>
-          <PaginationItem>
+          <PaginationItem className="hover:cursor-pointer">
             <PaginationLink className="rounded-full bg-acm-blue-500 text-white">
               {index + 1}
             </PaginationLink>
@@ -117,8 +119,8 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
           <PaginationItem>
             {index + 2 <= total && <PaginationEllipsis />}
           </PaginationItem>
-          <PaginationItem>
-            {index + 2 < total && (
+          <PaginationItem className="hover:cursor-pointer">
+            {index + 1 < total && (
               <PaginationLink
                 onClick={() => {
                   if (index + 2 < total) {
@@ -135,20 +137,22 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
               </PaginationLink>
             )}
           </PaginationItem>
-          <PaginationItem>
-            <PaginationNext
-              onClick={() => {
-                if (index < total) {
-                  router.push(
-                    pathname +
-                      "?" +
-                      createQueryString("page", (index + 1).toString()),
-                    { scroll: false },
-                  );
-                }
-              }}
-            />
-          </PaginationItem>
+          {index + 1 <= total && (
+            <PaginationItem className="hover:cursor-pointer">
+              <PaginationNext
+                onClick={() => {
+                  if (index < total) {
+                    router.push(
+                      pathname +
+                        "?" +
+                        createQueryString("page", (index + 1).toString()),
+                      { scroll: false },
+                    );
+                  }
+                }}
+              />
+            </PaginationItem>
+          )}
         </PaginationContent>
       </Pagination>
     </div>
