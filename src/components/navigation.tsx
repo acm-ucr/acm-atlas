@@ -20,6 +20,29 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 
+const sidebarVariants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 20,
+      duration: 0.5,
+    },
+  },
+  closed: {
+    y: "-100%",
+    opacity: 0,
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+      duration: 0.5,
+    },
+  },
+};
+
 const Navigation = () => {
   const [navBar, setNav] = useState(false);
   const [programBar, setProgramBar] = useState(false);
@@ -101,7 +124,6 @@ const Navigation = () => {
           initial="closed"
           animate={navBar ? "open" : "closed"}
           variants={sidebarVariants}
-          transition={{ duration: 0.5 }}
         >
           <div className="flex h-full w-[90vw] flex-col gap-5 bg-white pb-5 md:hidden">
             <div className="flex items-end justify-end pr-2 pt-4">
@@ -197,27 +219,6 @@ const Navigation = () => {
       )}
     </div>
   );
-};
-
-const sidebarVariants = {
-  open: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      type: "spring",
-      stiffness: 100,
-      damping: 20,
-    },
-  },
-  closed: {
-    y: "-100%",
-    opacity: 0,
-    transition: {
-      type: "spring",
-      stiffness: 400,
-      damping: 40,
-    },
-  },
 };
 
 export default Navigation;
