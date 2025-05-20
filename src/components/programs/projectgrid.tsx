@@ -1,15 +1,26 @@
 "use client";
 import { useSearchParams } from "next/navigation";
-import ProjectCard from "./projectcard";
-import spark from "@/data/projects/spark";
+import ProjectCard from "@/components/programs/projectcard";
+import { StaticImageData } from "next/image";
 
-const ProjectGrid = () => {
+interface Project {
+  photo: StaticImageData;
+  name: string;
+  github?: string;
+  website: string;
+}
+
+interface ProjectGridProps {
+  projects: Project[];
+}
+
+const ProjectGrid = ({ projects = [] }: ProjectGridProps) => {
   const searchParams = useSearchParams();
 
   const page = parseInt(searchParams.get("page") ?? "0");
   const search = searchParams.get("search") ?? "";
 
-  const cards = spark
+  const cards = projects
     .filter(({ name }) => name.toLowerCase().includes(search.toLowerCase()))
     .slice(6 * page, 6 * page + 6);
 

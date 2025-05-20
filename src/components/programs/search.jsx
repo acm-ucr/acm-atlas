@@ -40,7 +40,7 @@ const Search = () => {
   return (
     <div className="flex w-10/12 items-center rounded px-3 py-2 text-acm-gray-200">
       <MdCancel
-        className="mx-2 text-xl hover:cursor-pointer hover:opacity-50"
+        className="mx-2 pr-4 text-4xl hover:cursor-pointer hover:opacity-50"
         onClick={() => {
           setSearchValue("");
           router.replace(pathname + "?" + createQueryString("search", ""), {
@@ -57,7 +57,7 @@ const Search = () => {
           handleSearch(e.target.value);
         }}
       />
-      <FaSearch className="mx-2 text-xl" />
+      <FaSearch className="mx-2 pl-4 text-4xl" />
     </div>
   );
 };

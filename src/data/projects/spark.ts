@@ -25,8 +25,8 @@ import isa from "@/public/programs/spark/isa.webp";
 import jnm from "@/public/programs/spark/j&m.webp";
 import leap from "@/public/programs/spark/leap.webp";
 import pad from "@/public/programs/spark/pad.webp";
-import prishi from "@/public/programs/spark/prishi.webp";
 import quant from "@/public/programs/spark/quant.webp";
+import rishi from "@/public/programs/spark/prishi.webp";
 import robosub from "@/public/programs/spark/robosub.webp";
 import rtools from "@/public/programs/spark/rtools.webp";
 import saf from "@/public/programs/spark/saf.webp";
@@ -196,16 +196,16 @@ const spark = [
     website: "https://pad.ucrhighlanders.org/",
   },
   {
-    photo: prishi,
-    name: "Prishi",
-    github: "https://github.com/acm-ucr/rishi-website",
-    website: "https://prishi.ucrhighlanders.org/",
-  },
-  {
     photo: quant,
     name: "Quant",
     github: "https://github.com/acm-ucr/quant-website",
     website: "https://quant.ucrhighlanders.org/",
+  },
+  {
+    photo: rishi,
+    name: "Rishi",
+    github: "https://github.com/acm-ucr/rishi-website",
+    website: "https://prishi.ucrhighlanders.org/",
   },
   {
     photo: robosub,

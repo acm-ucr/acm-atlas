@@ -7,7 +7,9 @@ import Carousel from "@/components/programs/carousel";
 import FAQ from "@/components/programs/spark/faq";
 import Spark from "@/public/logos/spark.svg";
 import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
+import WhatWeDo from "@/components/programs/spark/whatwedo";
 import Projects from "@/components/programs/projects";
+import SparkData from "@/data/projects/spark";
 
 const Page = () => {
   return (
@@ -30,9 +32,10 @@ const Page = () => {
         backgroundColor="bg-acm-yellow-200"
         image={Spark1}
       />
+      <WhatWeDo />
       <ProjectGrid />
       <FAQ />
-      <Projects />
+      <Projects projects={SparkData} />
     </div>
   );
 };

@@ -1,7 +1,6 @@
 "use client";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
-import spark from "../../data/projects/spark";
 import {
   Pagination,
   PaginationContent,
@@ -11,8 +10,20 @@ import {
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
+import { StaticImageData } from "next/image";
 
-const PaginationComponent = () => {
+interface Project {
+  photo: StaticImageData;
+  name: string;
+  github?: string;
+  website: string;
+}
+
+interface ProjectGridProps {
+  projects: Project[];
+}
+
+const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -28,7 +39,7 @@ const PaginationComponent = () => {
   );
 
   const index = parseInt(searchParams.get("page") ?? "0");
-  const total = Math.floor(spark.length / 6);
+  const total = Math.floor(projects.length / 6);
 
   return (
     <div className="scale-125 py-5">
