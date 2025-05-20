@@ -46,7 +46,7 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
       <Pagination>
         <PaginationContent>
           {index > 0 && (
-            <PaginationItem className="hover:cursor-pointer">
+            <PaginationItem className="hover:cursor-pointer hover:opacity-70">
               <PaginationPrevious
                 onClick={() => {
                   if (index > 0) {
@@ -62,7 +62,7 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
             </PaginationItem>
           )}
           {index - 1 > 0 && (
-            <PaginationItem className="hover:cursor-pointer">
+            <PaginationItem className="hover:cursor-pointer hover:opacity-70">
               <PaginationLink
                 onClick={() => {
                   router.push(pathname + "?" + createQueryString("page", "0"), {
@@ -77,7 +77,7 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
           <PaginationItem>
             {index - 2 > 0 && <PaginationEllipsis />}
           </PaginationItem>
-          <PaginationItem className="hover:cursor-pointer">
+          <PaginationItem className="hover:cursor-pointer hover:opacity-70">
             {index > 0 && (
               <PaginationLink
                 onClick={() => {
@@ -96,7 +96,7 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
             )}
           </PaginationItem>
           <PaginationItem className="hover:cursor-pointer">
-            <PaginationLink className="rounded-full bg-acm-blue-500 text-white">
+            <PaginationLink className="rounded-full bg-acm-blue-500 text-white hover:bg-acm-blue-500 hover:text-white hover:opacity-85">
               {index + 1}
             </PaginationLink>
             {index + 1 <= total && (
@@ -119,7 +119,7 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
           <PaginationItem>
             {index + 2 <= total && <PaginationEllipsis />}
           </PaginationItem>
-          <PaginationItem className="hover:cursor-pointer">
+          <PaginationItem className="hover:cursor-pointer hover:opacity-70">
             {index + 1 < total && (
               <PaginationLink
                 onClick={() => {
@@ -138,7 +138,7 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
             )}
           </PaginationItem>
           {index + 1 <= total && (
-            <PaginationItem className="hover:cursor-pointer">
+            <PaginationItem className="hover:cursor-pointer hover:opacity-70">
               <PaginationNext
                 onClick={() => {
                   if (index < total) {
