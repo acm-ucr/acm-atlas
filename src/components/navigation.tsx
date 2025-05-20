@@ -41,6 +41,11 @@ const Navigation = () => {
     setNav(!navBar);
   };
 
+  const NavbarAnimation = {
+    whileHover: { scale: 1.05 },
+    transition: { type: "spring", stiffness: 300 },
+  };
+
   return (
     <div className="border-b-3 grid grid-cols-4 border-acm-blue-400 p-5 shadow-xl md:grid-cols-5">
       <RiMenu2Fill
@@ -50,8 +55,7 @@ const Navigation = () => {
       <Link className={pathname === "" ? "text-acm-blue-500" : ""} href="/">
         <motion.div
           className="text-3xl font-semibold text-acm-gray-500"
-          whileHover={{ scale: 1.05 }}
-          transition={{ type: "spring", stiffness: 300 }}
+          {...NavbarAnimation}
         >
           ACM@UCR
         </motion.div>{" "}
@@ -68,8 +72,7 @@ const Navigation = () => {
                     <NavigationMenuTrigger onClick={() => router.push(link)}>
                       <motion.div
                         className="flex items-center gap-1"
-                        whileHover={{ scale: 1.05 }}
-                        transition={{ type: "spring", stiffness: 300 }}
+                        {...NavbarAnimation}
                       >
                         {name}
                         {Icon && <Icon className="text-lg" />}
@@ -86,10 +89,7 @@ const Navigation = () => {
                           }
                           href={subLink}
                         >
-                          <motion.div
-                            whileHover={{ scale: 1.05 }}
-                            transition={{ type: "spring", stiffness: 300 }}
-                          >
+                          <motion.div {...NavbarAnimation}>
                             {subName}
                           </motion.div>
                         </NavigationMenuLink>
@@ -101,12 +101,7 @@ const Navigation = () => {
                     className={pathname === link ? "text-acm-blue-500" : ""}
                     href={link}
                   >
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
-                      transition={{ type: "spring", stiffness: 300 }}
-                    >
-                      {name}
-                    </motion.div>
+                    <motion.div {...NavbarAnimation}>{name}</motion.div>
                   </Link>
                 )}
               </NavigationMenuItem>
