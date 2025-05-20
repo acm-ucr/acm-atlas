@@ -48,7 +48,7 @@ const Search = () => {
         }}
       />
       <MdCancel
-        className="mx-2 pr-4 text-4xl hover:cursor-pointer hover:opacity-50 pb-5 -translate-x-4"
+        className="mx-2 pr-4 text-4xl hover:cursor-pointer hover:opacity-50 pb-5"
         onClick={() => {
           setSearchValue("");
           router.replace(pathname + "?" + createQueryString("search", ""), {
