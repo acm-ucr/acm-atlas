@@ -22,6 +22,7 @@ const Page = async ({ params }: PageProps) => {
       subtitle={hack.subtitle}
       bgColor={hack.bgColor}
       textColor={hack.textColor}
+      carouselItems={hack.carouselItems}
       devposts={hack.devposts}
       stats={hack.stats}
       instagram={hack.instagram}
