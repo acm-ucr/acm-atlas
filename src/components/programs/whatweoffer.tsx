@@ -81,7 +81,7 @@ const WhatWeOffer = ({
         >
           <Link
             href={link}
-            className={`${linkColor} mx-auto flex w-[75%] items-center justify-center rounded-lg py-2 text-xl font-semibold text-acm-gray-500 md:mx-0 md:w-1/2 2xl:w-1/4`}
+            className={`${linkColor} flex items-center justify-center rounded-lg px-4 py-2 text-xl font-semibold text-acm-gray-500`}
           >
             Learn More →
           </Link>
