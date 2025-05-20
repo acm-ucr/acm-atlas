@@ -34,6 +34,7 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
               ) => (
                 <motion.div
                   variants={slidedownanimation}
+                  key={index}
                   transition={{ duration: 0.5 }}
                   viewport={{ once: true, amount: 0.5 }}
                   initial="hidden"
@@ -42,7 +43,6 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
                   className="font-libre group flex flex-col items-center text-sm font-bold md:text-2xl 2xl:text-3xl"
                 >
                   <Card
-                    key={index}
                     name={name}
                     position={position}
                     color={color}
