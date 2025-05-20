@@ -10,7 +10,7 @@ import WhatWeDo3 from "@/public/about/whatwedo3.webp";
 import WhatWeDo4 from "@/public/about/whatwedo4.webp";
 const WhatWeDo = () => {
   return (
-    <div className="mx-auto grid w-5/6 grid-cols-2 items-stretch gap-8 pt-[10vh]">
+    <div className="mx-auto grid w-5/6 grid-cols-1 items-stretch gap-8 pt-[10vh] md:grid-cols-2">
       <div className="flex flex-col items-center justify-center text-center text-acm-gray-500">
         <p className="text-4xl font-bold">WHAT WE DO</p>
         <p className="mt-5 w-5/6 text-2xl font-medium leading-normal">
