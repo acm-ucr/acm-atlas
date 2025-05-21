@@ -90,7 +90,7 @@ const CalendarCall = () => {
           mode="single"
           selected={date}
           onSelect={setDate}
-          className="mx-[5%] w-9/12 lg:mx-[15%]"
+          className="mx-[2%] w-11/12 md:mx-[15%] md:w-9/12"
           events={data.allEvents}
         />
       )}

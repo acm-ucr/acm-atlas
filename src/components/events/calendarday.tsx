@@ -99,7 +99,7 @@ const CalendarDay = ({ date, events }: DayProps) => {
           <PopoverContent>
             {filteredEvents
               .slice(displayEventCount)
-              .map(({ summary, start, location }, idx) => (
+              .map(({ summary, start, location, description }, idx) => (
                 <div className="px-[10%] pt-[1vh]" key={idx}>
                   <CalendarEventPopover
                     startDate={start}
