@@ -95,7 +95,6 @@ const CalendarEventPopover = ({
           </div>
           <p>{location}</p>
           <div>{description && <p>{description}</p>}</div>
-          {eventType}
         </div>
       </PopoverContent>
     </Popover>
