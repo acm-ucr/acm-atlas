@@ -74,7 +74,7 @@ function Calendar({
           table: "w-full border-collapse space-y-1",
           head_row:
             "border-2 border-black flex font-seasons mt-[2vw] w-full rounded-t-3xl text-center items-center justify-center gap-x-[0.9vw]",
-          head_cell: "text-black rounded-md w-[9.7vw] text-[2.3vw] font-light",
+          head_cell: "text-black rounded-md w-[9.7vw] text-[2.3vw]",
           row: "grid grid-cols-7",
           cell: "border p-0 bg-white",
           day: "p-0",

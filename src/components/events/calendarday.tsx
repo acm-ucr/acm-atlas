@@ -14,6 +14,14 @@ interface DayProps {
 }
 
 const CalendarDay = ({ date, events }: DayProps) => {
+  const today = new Date();
+  const isPastDay = date < new Date(new Date().setHours(0, 0, 0, 0));
+
+  const isToday =
+    date.getDate() === today.getDate() &&
+    date.getMonth() === today.getMonth() &&
+    date.getFullYear() === today.getFullYear();
+
   const filteredEvents = events.filter((event) => {
     let eventStartDate: Date | null = null;
     let eventEndDate: Date | null = null;
@@ -64,10 +72,10 @@ const CalendarDay = ({ date, events }: DayProps) => {
   }, []);
 
   return (
-    <div className="flex aspect-[6/5] flex-col gap-y-[0.5vw] rounded-lg md:rounded-xl">
-      <p className="mr-1 mt-[0.5px] flex justify-end text-[1.5vw] md:text-[1vw]">
-        {date.getDate()}
-      </p>
+    <div
+      className={`flex aspect-[6/5] flex-col gap-y-[0.5vw] ${isToday ? "bg-acm-blue-900 text-acm-blue-700" : ""} ${isPastDay ? "text-acm-gray-600" : ""}`}
+    >
+      <p className="ml-4 mt-4 flex justify-start text-3xl">{date.getDate()}</p>
 
       {filteredEvents
         .slice(0, displayEventCount)
