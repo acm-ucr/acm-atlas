@@ -25,7 +25,7 @@ const UpcomingEvents = ({ events }: UpcomingEventsProps) => {
         initial="initial"
         whileInView="animate"
         custom={0}
-        className="font-seasons m-4 flex justify-center pt-2 text-3xl leading-none md:text-[4vw]"
+        className="m-4 flex justify-center pt-2 text-3xl leading-none md:text-[4vw]"
       >
         UPCOMING EVENTS
       </motion.p>
