@@ -1,17 +1,18 @@
 import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Spark1 from "@/public/spark/spark1.webp";
-import ProjectGrid from "@/components/programs/spark/projectgrid";
 import spark from "@/data/techstacks/spark";
 import Carousel from "@/components/programs/carousel";
 import FAQ from "@/components/programs/spark/faq";
 import Spark from "@/public/logos/spark.svg";
 import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
 import WhatWeDo from "@/components/programs/spark/whatwedo";
+import Projects from "@/components/programs/projects";
+import SparkData from "@/data/projects/spark";
 
 const Page = () => {
   return (
-    <>
+    <div>
       <ProgramHeader
         header="SPARK"
         subtitle="Web Development"
@@ -31,9 +32,9 @@ const Page = () => {
         image={Spark1}
       />
       <WhatWeDo />
-      <ProjectGrid />
       <FAQ />
-    </>
+      <Projects projects={SparkData} />
+    </div>
   );
 };
 
