@@ -11,6 +11,7 @@ type EventProps = {
   startTime: string;
   endTime: string;
   description: string;
+  summary: string;
 };
 
 type ApiEvent = {
@@ -60,19 +61,23 @@ const fetchEvents = async (): Promise<EventProps[]> => {
             .toLocaleTimeString([], { hour: "numeric", hour12: true })
             .replace(/(AM|PM)/i, (match) => match.toLowerCase())
         : "All day",
-      description: description || "",
+      description: description || "No description available",
     }))
     .slice(0, 3);
 };
 
 const eventsVariant = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.5,
+  variants: {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+      },
     },
   },
+  initial: "hidden",
+  hileInView: "show",
 };
 
 const EventCards = () => {
@@ -109,18 +114,14 @@ const EventCards = () => {
   return (
     <motion.div
       className="mb-10 flex w-full flex-col gap-2 text-3xl sm:gap-5"
-      variants={eventsVariant}
-      initial="hidden"
-      whileInView="show"
+      {...eventsVariant}
     >
       {events.map(
         ({ date, title, location, startTime, description }, index) => (
           <motion.div
             className="mb-4 flex items-center justify-center"
             key={index}
-            variants={eventsVariant}
-            initial="hidden"
-            whileInView="show"
+            {...eventsVariant}
             viewport={{ once: true }}
           >
             <EventCard

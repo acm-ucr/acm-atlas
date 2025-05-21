@@ -16,6 +16,7 @@ interface CalendarEventPopoverProps {
   title: string;
   date: Date;
   location: string;
+  description?: string;
 }
 
 const CalendarEventPopover = ({
@@ -24,6 +25,7 @@ const CalendarEventPopover = ({
   title,
   date,
   location,
+  description,
 }: CalendarEventPopoverProps) => {
   let eventStartDate = new Date();
   let eventEndDate = new Date();
@@ -63,15 +65,15 @@ const CalendarEventPopover = ({
 
   return (
     <Popover>
-      <PopoverTrigger className="flex w-full cursor-pointer justify-between text-left hover:opacity-75">
-        <span className="overflow-hidden text-ellipsis whitespace-nowrap px-1 text-[0.8vw]">
+      <PopoverTrigger className="flex w-full cursor-pointer justify-between bg-acm-blue-200 text-left hover:opacity-75">
+        <span className="overflow-hidden text-ellipsis whitespace-nowrap px-1 pl-1 text-xs">
           {title}
         </span>
-        <span className="text-right text-[0.8vw]">
+        <span className="pr-1 text-right text-xs">
           {formattedStartHour}:{formattedStartMinutes}
         </span>
       </PopoverTrigger>
-      <PopoverContent className="z-50 w-[30vw] rounded-xl border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[25vw]">
+      <PopoverContent className="z-50 w-[30vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[25vw]">
         <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
           <p className="col-span-3">{title}</p>
           <p className="flex justify-end">
@@ -83,11 +85,12 @@ const CalendarEventPopover = ({
           </p>
         </div>
 
-        <div className="bg-white px-4 py-3 text-lg">
-          <p>{location}</p>
+        <div className="rounded-b-xl bg-white px-4 py-3 text-lg">
           <div className="flex">
             {hasStartTime && <p className="mt-1">{timeRangeDisplay}</p>}
           </div>
+          <p>{location}</p>
+          <div>{description && <p>{description}</p>}</div>
         </div>
       </PopoverContent>
     </Popover>
