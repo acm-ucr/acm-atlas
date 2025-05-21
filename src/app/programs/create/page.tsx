@@ -8,6 +8,9 @@ import Create from "@/public/logos/create.svg";
 import blueEllipse from "@/public/ellipses/blueEllipse.svg";
 import Carousel from "@/components/programs/carousel";
 import create from "@/data/techstacks/create";
+import WhatWeDo from "@/components/programs/create/whatwedo";
+import Projects from "@/components/programs/projects";
+import CreateData from "@/data/projects/create";
 
 const Page = () => {
   return (
@@ -30,7 +33,9 @@ const Page = () => {
         backgroundColor="bg-acm-blue-200"
         image={Create1}
       />
+      <WhatWeDo />
       <FAQ />
+      <Projects projects={CreateData} />
     </>
   );
 };
