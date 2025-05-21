@@ -1,4 +1,4 @@
-import { GoogleEventProps } from "@/components/events/calendarcall";
+import { TypedGoogleEventProps } from "@/components/events/calendarcall";
 import { useState, useEffect } from "react";
 import CalendarEventPopover from "./calendareventpopover";
 import {
@@ -10,7 +10,7 @@ import {
 interface DayProps {
   date: Date;
   displayMonth: Date;
-  events: GoogleEventProps[];
+  events: TypedGoogleEventProps[];
 }
 
 const CalendarDay = ({ date, events }: DayProps) => {
@@ -77,17 +77,25 @@ const CalendarDay = ({ date, events }: DayProps) => {
     >
       <p className="ml-2 mt-2 flex justify-start text-xl">{date.getDate()}</p>
 
-      {filteredEvents.slice(0, displayEventCount).map((event, index) => (
-        <CalendarEventPopover
-          key={index}
-          startDate={event.start}
-          endDate={event.end}
-          title={event.summary}
-          description={event.description}
-          date={date}
-          location={event.location || "TBD"}
-        />
-      ))}
+      {filteredEvents
+        .slice(0, displayEventCount)
+        .map(
+          (
+            { start, summary, end, description, location, eventType },
+            index,
+          ) => (
+            <CalendarEventPopover
+              key={index}
+              startDate={start}
+              endDate={end}
+              title={summary}
+              description={description}
+              date={date}
+              location={location || "TBD"}
+              eventType={eventType}
+            />
+          ),
+        )}
 
       {filteredEvents.length > visibleEventCount && (
         <Popover>
@@ -99,17 +107,20 @@ const CalendarDay = ({ date, events }: DayProps) => {
           <PopoverContent>
             {filteredEvents
               .slice(displayEventCount)
-              .map(({ summary, start, location, description }, idx) => (
-                <div className="px-[10%] pt-[1vh]" key={idx}>
-                  <CalendarEventPopover
-                    startDate={start}
-                    title={summary}
-                    date={date}
-                    description={description}
-                    location={location || "TBD"}
-                  />
-                </div>
-              ))}
+              .map(
+                ({ summary, start, location, description, eventType }, idx) => (
+                  <div className="px-[10%] pt-[1vh]" key={idx}>
+                    <CalendarEventPopover
+                      startDate={start}
+                      title={summary}
+                      date={date}
+                      description={description}
+                      location={location || "TBD"}
+                      eventType={eventType}
+                    />
+                  </div>
+                ),
+              )}
           </PopoverContent>
         </Popover>
       )}

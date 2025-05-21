@@ -17,6 +17,7 @@ interface CalendarEventPopoverProps {
   date: Date;
   location: string;
   description?: string;
+  eventType: string;
 }
 
 const CalendarEventPopover = ({
@@ -26,6 +27,7 @@ const CalendarEventPopover = ({
   date,
   location,
   description,
+  eventType,
 }: CalendarEventPopoverProps) => {
   let eventStartDate = new Date();
   let eventEndDate = new Date();
@@ -91,6 +93,7 @@ const CalendarEventPopover = ({
           </div>
           <p>{location}</p>
           <div>{description && <p>{description}</p>}</div>
+          {eventType}
         </div>
       </PopoverContent>
     </Popover>

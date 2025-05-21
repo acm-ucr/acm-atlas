@@ -18,7 +18,7 @@ export type GoogleEventProps = {
   summary: string;
 };
 
-type TypedGoogleEvent = GoogleEventProps & {
+export type TypedGoogleEventProps = GoogleEventProps & {
   eventType: string;
 };
 
@@ -42,7 +42,7 @@ const CalendarCall = () => {
   const [date, setDate] = React.useState<Date | undefined>(new Date());
 
   const { data, isLoading } = useQuery<{
-    allEvents: GoogleEventProps[];
+    allEvents: TypedGoogleEventProps[];
     futureEvents: EventCardProps[];
   }>({
     queryKey: ["googleCalendarEvents"],
@@ -80,7 +80,7 @@ const CalendarCall = () => {
         }),
       );
 
-      const allEvents: TypedGoogleEvent[] = results.flat();
+      const allEvents: TypedGoogleEventProps[] = results.flat();
 
       const futureEvents = allEvents
         .filter((item) => {
