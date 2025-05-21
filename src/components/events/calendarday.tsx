@@ -73,7 +73,7 @@ const CalendarDay = ({ date, events }: DayProps) => {
 
   return (
     <div
-      className={`flex aspect-[6/5] flex-col gap-y-[0.5vw] ${isToday ? "bg-acm-blue-900 text-acm-blue-700" : ""} ${isPastDay ? "text-acm-gray-600" : ""}`}
+      className={`flex aspect-[6/5] flex-col gap-y-[0.5vw] ${isToday ? "bg-acm-blue-800 text-acm-blue-700" : ""} ${isPastDay ? "text-acm-gray-600" : ""}`}
     >
       <p className="ml-2 mt-2 flex justify-start text-xl">{date.getDate()}</p>
 

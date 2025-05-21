@@ -5,7 +5,7 @@ import WhatWeDo2 from "@/public/create/whatwedo2.webp";
 const WhatWeDo = () => {
   return (
     <div className="relative z-10 mb-20 flex flex-col overflow-x-hidden px-[10%] pb-[20vh] pt-[15vh]">
-      <div className="absolute right-[80%] top-[10%] -z-10 h-[500px] w-[500px] rounded-full bg-acm-blue-800 opacity-70 blur-3xl" />
+      <div className="absolute right-[80%] top-[10%] -z-10 h-[500px] w-[500px] rounded-full bg-acm-blue-200 opacity-70 blur-3xl" />
 
       <div className="grid grid-cols-2 gap-14 pb-[10vh]">
         <Image src={WhatWeDo1} alt="WhatWeDo1" className="rounded-3xl" />
@@ -18,7 +18,7 @@ const WhatWeDo = () => {
           </p>
         </div>
       </div>
-      <div className="absolute bottom-[10%] right-[-25%] -z-10 h-[500px] w-[500px] rounded-full bg-acm-blue-800 opacity-70 blur-3xl" />
+      <div className="absolute bottom-[10%] right-[-25%] -z-10 h-[500px] w-[500px] rounded-full bg-acm-blue-200 opacity-70 blur-3xl" />
 
       <div className="grid grid-cols-2 gap-x-14 gap-y-16">
         <div className="flex flex-col items-center justify-center text-right text-acm-gray-500">
