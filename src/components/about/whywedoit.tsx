@@ -6,8 +6,8 @@ import whywedoit4 from "@/public/about/whywedoit4.webp";
 
 const WhyWeDoIt = () => {
   return (
-    <div className="mx-auto grid w-5/6 grid-cols-2 items-center gap-8 py-[10vh]">
-      <div className="image-grid grid h-[600px] w-full gap-4 overflow-hidden transition-all">
+    <div className="mx-auto grid w-5/6 grid-cols-1 items-center gap-8 py-[10vh] md:grid-cols-2">
+      <div className="image-grid order-2 grid h-[600px] w-full gap-4 overflow-hidden transition-all">
         <Image
           src={whywedoit1}
           alt="whywedoit1"
