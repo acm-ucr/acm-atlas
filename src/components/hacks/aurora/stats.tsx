@@ -1,7 +1,32 @@
+"use client";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import auroraStar from "@/public/logos/aurorastar.webp";
 
 const Stats = () => {
+  const [contributors, setContributors] = useState<number | null>(null);
+
+  useEffect(() => {
+    const fetchContributors = async () => {
+      try {
+        const res = await fetch(
+          "https://api.github.com/repos/acm-ucr/aurora/contributors",
+        );
+        const data = await res.json();
+        const totalContributions = data.reduce(
+          (sum: number, contributor: number) => {
+            return sum + contributor.contributions;
+          },
+          0,
+        );
+        setContributors(totalContributions);
+      } catch (err) {
+        console.error("Failed to fetch contribution count: ", err);
+      }
+    };
+    fetchContributors();
+  }, []);
+
   return (
     <div className="py-30 flex flex-col justify-center">
       <div className="pb-18 ml-[15%] grid gap-10 text-acm-gray-500 [grid-template-columns:23%_21%_23%]">
@@ -20,7 +45,7 @@ const Stats = () => {
       </div>
       <div className="ml-[15%] grid gap-10 pb-10 text-acm-gray-500 [grid-template-columns:17%_14%_25%]">
         <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-          <p className="pb-4 text-6xl font-bold">73</p>
+          <p className="pb-4 text-6xl font-bold">{contributors}</p>
           <p className="text-2xl font-medium">contributors</p>
         </div>
         <div className="flex flex-col justify-center border-r-2 border-acm-gray-100 pr-20">
