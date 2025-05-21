@@ -67,7 +67,9 @@ const CalendarEventPopover = ({
 
   return (
     <Popover>
-      <PopoverTrigger className="flex w-full cursor-pointer justify-between bg-acm-blue-200 text-left hover:opacity-75">
+      <PopoverTrigger
+        className={`flex w-full cursor-pointer justify-between py-1 ${eventType === "general" ? "bg-acm-blue-700 !text-white" : ""} ${eventType === "spark" ? "bg-acm-yellow-200" : ""} ${eventType === "forge" ? "bg-acm-gray-800" : ""} ${eventType === "create" ? "bg-acm-blue-200" : ""} ${eventType === "das" ? "bg-acm-purple-300" : ""} ${eventType === "bitbyte" ? "!bg-acm-green-500" : ""} text-left hover:opacity-75`}
+      >
         <span className="overflow-hidden text-ellipsis whitespace-nowrap px-1 pl-1 text-xs">
           {title}
         </span>
@@ -75,7 +77,7 @@ const CalendarEventPopover = ({
           {formattedStartHour}:{formattedStartMinutes}
         </span>
       </PopoverTrigger>
-      <PopoverContent className="z-50 w-[30vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[25vw]">
+      <PopoverContent className="z-50 w-[30vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
         <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
           <p className="col-span-3">{title}</p>
           <p className="flex justify-end">

@@ -89,12 +89,12 @@ function Calendar({
         components={{
           IconLeft: () => (
             <div onClick={prevMonth}>
-              <SlArrowLeft className="text-[2.5vw]" />
+              <SlArrowLeft className="text-[2.5vw] hover:-translate-x-1" />
             </div>
           ),
           IconRight: () => (
             <div onClick={nextMonth}>
-              <SlArrowRight className="text-[2.5vw]" />
+              <SlArrowRight className="text-[2.5vw] hover:translate-x-1" />
             </div>
           ),
           Day: ({ displayMonth, date }) => (
