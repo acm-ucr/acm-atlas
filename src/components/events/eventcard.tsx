@@ -50,6 +50,7 @@ const EventCard = ({
       <div className="mb-20 hidden sm:mb-0 sm:flex sm:h-full sm:w-1/5 sm:flex-col sm:items-center sm:justify-start sm:pt-7 lg:h-full lg:w-1/5 lg:items-center lg:justify-center lg:pt-3">
         <div className="text-center text-base font-light uppercase text-[#DDF0FE] sm:text-left sm:text-2xl sm:text-blue-100 lg:text-center lg:text-xl">
           {day}
+          {startTime} // temp
         </div>
         <div className="-mt-2 text-4xl font-light text-white sm:-mt-0 sm:text-left sm:text-6xl sm:font-normal lg:text-center lg:text-7xl">
           {date}
