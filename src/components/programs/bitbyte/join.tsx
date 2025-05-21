@@ -2,7 +2,7 @@ import Link from "next/link";
 const Join = () => {
   return (
     <div className="mx-auto grid w-10/12 items-center pt-0 md:grid-cols-2 md:pt-20">
-      <div className="order-2 flex flex-col">
+      <div className="order-2 flex flex-col md:order-1">
         <p className="mt-16 flex justify-center text-3xl font-semibold text-acm-gray-500 md:mt-0 md:pb-6 md:text-5xl">
           Join Now
         </p>
