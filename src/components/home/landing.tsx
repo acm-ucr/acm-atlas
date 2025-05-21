@@ -9,6 +9,14 @@ const TitleAnimation = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.5 },
+  delay: 0.5,
+};
+
+const KeyAnimation = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.5 },
+  delay: 0.5,
 };
 
 const Landing = () => {
@@ -22,7 +30,7 @@ const Landing = () => {
       </motion.div>
 
       <div className="relative flex flex-col items-center justify-center overflow-x-hidden pt-16">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <motion.div {...KeyAnimation}>
           <Image src={Keys} alt="Keys" className="z-10 mb-16" />
         </motion.div>
         <div className="relative z-10 mx-auto h-20 w-3/4 rounded-t-2xl bg-white/45 2xl:w-1/2">
