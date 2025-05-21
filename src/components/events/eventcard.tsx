@@ -1,6 +1,6 @@
 "use client";
 
-// import Image from "next/image";
+import Image from "next/image";
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 import { motion } from "framer-motion";
@@ -30,6 +30,8 @@ const eventcard = ({
   day,
   date,
   title,
+  location,
+  time,
   description,
   isInitiallyExpanded,
 }: EventCardProps) => {
