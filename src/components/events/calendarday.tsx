@@ -75,19 +75,18 @@ const CalendarDay = ({ date, events }: DayProps) => {
     <div
       className={`flex aspect-[6/5] flex-col gap-y-[0.5vw] ${isToday ? "bg-acm-blue-900 text-acm-blue-700" : ""} ${isPastDay ? "text-acm-gray-600" : ""}`}
     >
-      <p className="ml-4 mt-4 flex justify-start text-3xl">{date.getDate()}</p>
+      <p className="ml-2 mt-2 flex justify-start text-xl">{date.getDate()}</p>
 
-      {filteredEvents
-        .slice(0, displayEventCount)
-        .map(({ summary, start, location }, index) => (
-          <CalendarEventPopover
-            key={index}
-            startDate={start}
-            title={summary}
-            date={date}
-            location={location || "TBD"}
-          />
-        ))}
+      {filteredEvents.slice(0, displayEventCount).map((event, index) => (
+        <CalendarEventPopover
+          key={index}
+          startDate={event.start}
+          endDate={event.end}
+          title={event.summary}
+          date={date}
+          location={event.location || "TBD"}
+        />
+      ))}
 
       {filteredEvents.length > visibleEventCount && (
         <Popover>

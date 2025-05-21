@@ -10,8 +10,8 @@ type EventCardProps = {
   date: string;
   title: string;
   location: string;
-  time: string;
   description: string;
+  startTime: string;
   isInitiallyExpanded: boolean;
 };
 
@@ -26,11 +26,12 @@ const eventCardAnimation = {
   },
 };
 
-const eventcard = ({
+const EventCard = ({
   day,
   date,
   title,
   description,
+  startTime,
   isInitiallyExpanded,
 }: EventCardProps) => {
   const [isExpanded, setIsExpanded] = useState(isInitiallyExpanded);
@@ -92,4 +93,4 @@ const eventcard = ({
   );
 };
 
-export default eventcard;
+export default EventCard;

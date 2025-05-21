@@ -8,7 +8,8 @@ type EventProps = {
   date: string;
   title: string;
   location: string;
-  time: string;
+  startTime: string;
+  endTime: string;
   description: string;
 };
 
@@ -17,6 +18,10 @@ type ApiEvent = {
   description?: string;
   location?: string;
   start: {
+    dateTime?: string;
+    date?: string;
+  };
+  end: {
     dateTime?: string;
     date?: string;
   };
@@ -36,7 +41,7 @@ const fetchEvents = async (): Promise<EventProps[]> => {
   const data = await response.json();
 
   return (data.items || [])
-    .map(({ summary, description, location, start }: ApiEvent) => ({
+    .map(({ summary, description, location, start, end }: ApiEvent) => ({
       day: new Date(
         start.dateTime || start.date || new Date(),
       ).toLocaleDateString(),
@@ -45,8 +50,13 @@ const fetchEvents = async (): Promise<EventProps[]> => {
       ).toLocaleDateString(),
       title: summary || "Unnamed Event",
       location: location || "N/A",
-      time: start.dateTime
+      startTime: start.dateTime
         ? new Date(start.dateTime)
+            .toLocaleTimeString([], { hour: "numeric", hour12: true })
+            .replace(/(AM|PM)/i, (match) => match.toLowerCase())
+        : "All day",
+      endTime: end.dateTime
+        ? new Date(end.dateTime)
             .toLocaleTimeString([], { hour: "numeric", hour12: true })
             .replace(/(AM|PM)/i, (match) => match.toLowerCase())
         : "All day",
@@ -103,28 +113,30 @@ const EventCards = () => {
       initial="hidden"
       whileInView="show"
     >
-      {events.map(({ date, title, location, time, description }, index) => (
-        <motion.div
-          className="mb-4 flex items-center justify-center"
-          key={index}
-          variants={eventsVariant}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-        >
-          <EventCard
-            day={new Date(date).toLocaleString("en-US", {
-              weekday: "short",
-            })}
-            date={new Date(date).getDate().toString().padStart(2, "0")}
-            title={title}
-            location={location}
-            time={time}
-            description={description}
-            isInitiallyExpanded={index === 0}
-          />
-        </motion.div>
-      ))}
+      {events.map(
+        ({ date, title, location, startTime, description }, index) => (
+          <motion.div
+            className="mb-4 flex items-center justify-center"
+            key={index}
+            variants={eventsVariant}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
+            <EventCard
+              day={new Date(date).toLocaleString("en-US", {
+                weekday: "short",
+              })}
+              date={new Date(date).getDate().toString().padStart(2, "0")}
+              title={title}
+              location={location}
+              startTime={startTime}
+              description={description}
+              isInitiallyExpanded={index === 0}
+            />
+          </motion.div>
+        ),
+      )}
     </motion.div>
   );
 };
