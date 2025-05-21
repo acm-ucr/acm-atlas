@@ -31,7 +31,7 @@ const WhatWeDo = () => {
         <Image
           src={WhatWeDo1}
           alt="whatwedo1"
-          className="pic1 h-fullw-full rounded-3xl object-cover"
+          className="pic1 h-full w-full rounded-3xl object-cover"
         />
         <Image
           src={WhatWeDo3}
