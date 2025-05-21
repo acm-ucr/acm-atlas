@@ -5,12 +5,12 @@ import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { DayPicker } from "react-day-picker";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import { GoogleEventProps } from "@/components/events/calendarcall";
+import { TypedGoogleEventProps } from "@/components/events/calendarcall";
 import CalendarDay from "@/components/events/calendarday";
 import CalendarTop from "@/components/events/calendartop";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker> & {
-  events: GoogleEventProps[];
+  events: TypedGoogleEventProps[];
 };
 
 function Calendar({
