@@ -89,7 +89,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-0.5 w-full bg-acm-blue-400" />
-        <p className="flex justify-center py-5 text-acm-gray-500">
+        <p className="flex justify-center py-5 text-acm-gray-400">
           © ACM at UCR 2025. Made with 💙 from ACM Spark.
         </p>
       </div>
@@ -172,7 +172,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-0.5 w-full bg-acm-blue-400" />
-        <p className="flex justify-center py-5 text-xs text-acm-gray-500">
+        <p className="flex justify-center py-5 text-xs text-acm-gray-400">
           © ACM at UCR 2025. Made with 💙 from ACM Spark.
         </p>
       </div>
