@@ -46,7 +46,7 @@ const Search = () => {
     <div className="relative flex w-10/12 items-center rounded px-3 py-2 text-acm-gray-200">
       <input
         placeholder="Search for a project"
-        className="mb-5 w-full rounded-xl border-2 border-black px-4 py-2 pl-10"
+        className="mb-5 w-full rounded-xl border-2 border-acm-gray-300 bg-white px-4 py-2 pl-10 text-black"
         value={searchValue}
         onChange={(e) => {
           setSearchValue(e.target.value);
@@ -54,7 +54,7 @@ const Search = () => {
         }}
       />
       <MdCancel
-        className="absolute right-0 mr-4 pb-5 text-4xl hover:cursor-pointer hover:opacity-50"
+        className="absolute right-0 mr-8 pb-5 text-4xl hover:cursor-pointer hover:opacity-50"
         onClick={() => {
           setSearchValue("");
           router.replace(pathname + "?" + createQueryString("search", ""), {
