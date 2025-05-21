@@ -2,7 +2,7 @@
 import { useQuery } from "@tanstack/react-query";
 import EventCard from "@/components/events/eventcard";
 import { motion } from "framer-motion";
-
+// yueah this entire file is broken
 type EventProps = {
   day: string;
   date: string;
@@ -12,6 +12,7 @@ type EventProps = {
   endTime: string;
   description: string;
   summary: string;
+  eventType: string;
 };
 
 type ApiEvent = {
@@ -28,42 +29,59 @@ type ApiEvent = {
   };
 };
 
+const calendarSources = [
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS, eventType: "general" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_SPARK, eventType: "spark" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_CREATE, eventType: "create" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_FORGE, eventType: "forge" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_DAS, eventType: "das" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_BITBYTE, eventType: "bitbyte" },
+];
+
 const fetchEvents = async (): Promise<EventProps[]> => {
-  const response = await fetch(
-    `https://www.googleapis.com/calendar/v3/calendars/${
-      process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL
-    }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
-        &singleEvents=true&orderBy=startTime&timeMin=${new Date().toISOString()}`,
-  );
-  if (!response.ok) {
-    throw new Error("Error fetching events");
+  const allEvents: EventProps[] = [];
+
+  for (const { id, eventType } of calendarSources) {
+    const res = await fetch(
+      `https://www.googleapis.com/calendar/v3/calendars/${id}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime&timeMin=${new Date().toISOString()}`,
+    );
+
+    if (!res.ok) throw new Error(`Error fetching ${eventType} events`);
+
+    const data = await res.json();
+
+    const events = (data.items || []).map(
+      ({ summary, description, location, start, end }: ApiEvent) => ({
+        day: new Date(
+          start.dateTime || start.date || new Date(),
+        ).toLocaleDateString(),
+        date: new Date(
+          start.dateTime || start.date || new Date(),
+        ).toLocaleDateString(),
+        title: summary || "Unnamed Event",
+        location: location || "N/A",
+        startTime: start.dateTime
+          ? new Date(start.dateTime)
+              .toLocaleTimeString([], { hour: "numeric", hour12: true })
+              .toLowerCase()
+          : "All day",
+        endTime: end.dateTime
+          ? new Date(end.dateTime)
+              .toLocaleTimeString([], { hour: "numeric", hour12: true })
+              .toLowerCase()
+          : "All day",
+        description: description || "No description available",
+        summary: summary || "",
+        eventType,
+      }),
+    );
+
+    allEvents.push(...events);
   }
 
-  const data = await response.json();
-
-  return (data.items || [])
-    .map(({ summary, description, location, start, end }: ApiEvent) => ({
-      day: new Date(
-        start.dateTime || start.date || new Date(),
-      ).toLocaleDateString(),
-      date: new Date(
-        start.dateTime || start.date || new Date(),
-      ).toLocaleDateString(),
-      title: summary || "Unnamed Event",
-      location: location || "N/A",
-      startTime: start.dateTime
-        ? new Date(start.dateTime)
-            .toLocaleTimeString([], { hour: "numeric", hour12: true })
-            .replace(/(AM|PM)/i, (match) => match.toLowerCase())
-        : "All day",
-      endTime: end.dateTime
-        ? new Date(end.dateTime)
-            .toLocaleTimeString([], { hour: "numeric", hour12: true })
-            .replace(/(AM|PM)/i, (match) => match.toLowerCase())
-        : "All day",
-      description: description || "No description available",
-    }))
-    .slice(0, 3);
+  return allEvents.sort(
+    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
+  );
 };
 
 const eventsVariant = {

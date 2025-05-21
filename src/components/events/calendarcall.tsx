@@ -18,12 +18,25 @@ export type GoogleEventProps = {
   summary: string;
 };
 
+type TypedGoogleEvent = GoogleEventProps & {
+  eventType: string;
+};
+
 export interface EventCardProps {
   date: string;
   month: string;
   title: string;
   description: string;
+  eventType: string;
 }
+const calendarSources = [
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS, eventType: "general" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_SPARK, eventType: "spark" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_CREATE, eventType: "create" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_FORGE, eventType: "forge" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_DAS, eventType: "das" },
+  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_BITBYTE, eventType: "bitbyte" },
+];
 
 const CalendarCall = () => {
   const [date, setDate] = React.useState<Date | undefined>(new Date());
@@ -42,21 +55,39 @@ const CalendarCall = () => {
         now.getTime() + 60 * 60 * 24 * 7 * 10 * 1000,
       ).toISOString();
 
-      const response = await fetch(
-        `https://www.googleapis.com/calendar/v3/calendars/${
-          process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS
-        }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime&timeMin=${tenWeeksAgo}&timeMax=${tenWeeksAhead}`,
-      ).then((res) => res.json());
+      const results = await Promise.all(
+        calendarSources.map(async ({ id, eventType }) => {
+          try {
+            const res = await fetch(
+              `https://www.googleapis.com/calendar/v3/calendars/${id}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime&timeMin=${tenWeeksAgo}&timeMax=${tenWeeksAhead}`,
+            );
 
-      const allEvents = response.items || [];
+            if (!res.ok) {
+              console.warn(`Failed to fetch ${eventType} calendar`);
+              return [];
+            }
+
+            const data = await res.json();
+
+            return (data.items || []).map((item: GoogleEventProps) => ({
+              ...item,
+              eventType,
+            }));
+          } catch (err) {
+            console.error(`Error fetching ${eventType} events`, err);
+            return [];
+          }
+        }),
+      );
+
+      const allEvents: TypedGoogleEvent[] = results.flat();
 
       const futureEvents = allEvents
-        .filter((item: GoogleEventProps) => {
+        .filter((item) => {
           const startString = item.start?.dateTime || item.start?.date;
-          if (!startString) return false;
-          return new Date(startString) >= now;
+          return startString && new Date(startString) >= now;
         })
-        .map((item: GoogleEventProps) => {
+        .map((item) => {
           const startString = item.start?.dateTime || item.start?.date;
           if (!startString) return null;
 
@@ -71,6 +102,7 @@ const CalendarCall = () => {
             date: day,
             title: item.summary,
             description: item.description || "No description available.",
+            eventType: item.eventType,
           };
         })
         .filter(Boolean)
