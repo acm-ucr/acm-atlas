@@ -14,7 +14,7 @@ const Stats = () => {
         );
         const data = await res.json();
         const totalContributions = data.reduce(
-          (sum: number, contributor: number) => {
+          (sum: number, contributor: any) => {
             return sum + contributor.contributions;
           },
           0,
