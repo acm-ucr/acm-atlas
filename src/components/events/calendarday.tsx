@@ -83,6 +83,7 @@ const CalendarDay = ({ date, events }: DayProps) => {
           startDate={event.start}
           endDate={event.end}
           title={event.summary}
+          description={event.description}
           date={date}
           location={event.location || "TBD"}
         />
@@ -104,6 +105,7 @@ const CalendarDay = ({ date, events }: DayProps) => {
                     startDate={start}
                     title={summary}
                     date={date}
+                    description={description}
                     location={location || "TBD"}
                   />
                 </div>
