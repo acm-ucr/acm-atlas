@@ -16,7 +16,7 @@ const TitleAnimation = {
   initial: { opacity: 0, y: 20 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.5, ease: "easeOut", delay: 0.5 },
+  transition: { duration: 0.4, ease: "easeOut", delay: 0.3 },
 };
 
 const ButtonAnimation = {
@@ -31,7 +31,7 @@ const ImageAnimation = {
   initial: { opacity: 0, x: 50 },
   whileInView: { opacity: 1, x: 0 },
   viewport: { once: true },
-  transition: { duration: 0.6, delay: 0.5 },
+  transition: { duration: 0.6, delay: 0.3 },
 };
 
 const Joinus = ({ textColor, backgroundColor, image }: ProgramProps) => {
