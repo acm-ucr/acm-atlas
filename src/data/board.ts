@@ -21,7 +21,7 @@ import Khushi from "@/public/board/das/khushi.webp";
 import Marcus from "@/public/board/forge/marcus.webp";
 import Ian from "@/public/board/forge/ian.webp";
 import Avia from "@/public/board/spark/avia.webp";
-import Wasim from "@/public/board/das/wasim.jpg";
+import Wasim from "@/public/board/das/wasim.webp";
 export const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
