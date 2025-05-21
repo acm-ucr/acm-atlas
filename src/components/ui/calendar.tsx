@@ -1,97 +1,113 @@
 "use client";
 
 import * as React from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { DayPicker } from "react-day-picker";
-
 import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
-
-export type GoogleEventProps = {
-  start: {
-    dateTime: Date;
-  };
-  end: {
-    dateTime: Date;
-  };
-  location: string;
-  description: string;
-  summary: string;
-};
-
-export type EventProps = Partial<{
-  start: string;
-  end: string;
-  location: string;
-  description: string;
-  title: string;
-}>;
+import { useState } from "react";
+import { GoogleEventProps } from "@/components/events/calendarcall";
+import CalendarDay from "@/components/events/calendarday";
+import CalendarTop from "@/components/events/calendartop";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker> & {
-  events: EventProps[];
-  setCurrent: (props: EventProps) => void;
+  events: GoogleEventProps[];
 };
 
 function Calendar({
   className,
   classNames,
-  showOutsideDays = true,
+  showOutsideDays = false,
+  events,
   ...props
 }: CalendarProps) {
+  const [currentDate, setCurrentDate] = useState(new Date());
+  const today = new Date();
+
+  const nextMonth = () => {
+    const newDate = new Date(currentDate);
+    newDate.setMonth(newDate.getMonth() + 1);
+    newDate.setDate(
+      today.getMonth() === newDate.getMonth() &&
+        today.getFullYear() === newDate.getFullYear()
+        ? today.getDate()
+        : 1,
+    );
+    setCurrentDate(newDate);
+  };
+
+  const prevMonth = () => {
+    const newDate = new Date(currentDate);
+    newDate.setMonth(newDate.getMonth() - 1);
+    newDate.setDate(
+      today.getMonth() === newDate.getMonth() &&
+        today.getFullYear() === newDate.getFullYear()
+        ? today.getDate()
+        : 1,
+    );
+    setCurrentDate(newDate);
+  };
+
   return (
-    <DayPicker
-      showOutsideDays={showOutsideDays}
-      className={cn("p-3", className)}
-      classNames={{
-        months: "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
-        month: "space-y-4",
-        caption: "flex justify-center pt-1 relative items-center",
-        caption_label: "text-sm font-medium",
-        nav: "space-x-1 flex items-center",
-        nav_button: cn(
-          buttonVariants({ variant: "outline" }),
-          "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100",
-        ),
-        nav_button_previous: "absolute left-1",
-        nav_button_next: "absolute right-1",
-        table: "w-full border-collapse space-y-1",
-        head_row: "flex",
-        head_cell:
-          "text-muted-foreground rounded-md w-8 font-normal text-[0.8rem]",
-        row: "flex w-full mt-2",
-        cell: cn(
-          "relative p-0 text-center text-sm focus-within:relative focus-within:z-20 [&:has([aria-selected])]:bg-accent [&:has([aria-selected].day-outside)]:bg-accent/50 [&:has([aria-selected].day-range-end)]:rounded-r-md",
-          props.mode === "range"
-            ? "[&:has(>.day-range-end)]:rounded-r-md [&:has(>.day-range-start)]:rounded-l-md first:[&:has([aria-selected])]:rounded-l-md last:[&:has([aria-selected])]:rounded-r-md"
-            : "[&:has([aria-selected])]:rounded-md",
-        ),
-        day: cn(
-          buttonVariants({ variant: "ghost" }),
-          "h-8 w-8 p-0 font-normal aria-selected:opacity-100",
-        ),
-        day_range_start: "day-range-start",
-        day_range_end: "day-range-end",
-        day_selected:
-          "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground",
-        day_today: "bg-accent text-accent-foreground",
-        day_outside:
-          "day-outside text-muted-foreground aria-selected:bg-accent/50 aria-selected:text-muted-foreground",
-        day_disabled: "text-muted-foreground opacity-50",
-        day_range_middle:
-          "aria-selected:bg-accent aria-selected:text-accent-foreground",
-        day_hidden: "invisible",
-        ...classNames,
-      }}
-      components={{
-        IconLeft: ({ className, ...props }) => (
-          <ChevronLeft className={cn("h-4 w-4", className)} {...props} />
-        ),
-        IconRight: ({ className, ...props }) => (
-          <ChevronRight className={cn("h-4 w-4", className)} {...props} />
-        ),
-      }}
-      {...props}
-    />
+    <div className="flex justify-center py-[5vh] md:py-[10vh]">
+      <CalendarTop currentDate={currentDate} />
+      <DayPicker
+        showOutsideDays={showOutsideDays}
+        formatters={{
+          formatWeekdayName: (date) => {
+            const days = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+            return days[date.getDay()];
+          },
+          formatCaption: () => "",
+        }}
+        className={className}
+        classNames={{
+          months:
+            "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
+          month: "space-y-[0.5vw]",
+          caption:
+            "justify-center flex pl-[43.5vw] pt-[0.5vh] items-center relative mb-[3vh] ",
+          caption_label: "font-bold text-[2.5vw] ",
+          nav: "space-x-[0.5vw] flex items-center",
+          nav_button: cn("h-[2vw] w-[2vw] bg-transparent p-0"),
+          nav_button_previous: "absolute left-[18vw] translate-y-1",
+          nav_button_next: "absolute left-[23vw] translate-y-1",
+          table: "w-full border-collapse space-y-1",
+          head_row:
+            "border-2 border-black flex font-seasons mt-[2vw] w-full rounded-t-3xl text-center items-center justify-center gap-x-[0.9vw]",
+          head_cell: "text-black rounded-md w-[9.7vw] text-[2.3vw] font-light",
+          row: "grid grid-cols-7",
+          cell: "border p-0 bg-white",
+          day: "p-0",
+          day_range_end: "",
+          day_selected: "",
+          day_outside: "",
+          day_disabled: "",
+          day_range_middle: "",
+          day_hidden: "",
+          ...classNames,
+        }}
+        components={{
+          IconLeft: () => (
+            <div onClick={prevMonth}>
+              <SlArrowLeft className="text-[2.5vw]" />
+            </div>
+          ),
+          IconRight: () => (
+            <div onClick={nextMonth}>
+              <SlArrowRight className="text-[2.5vw]" />
+            </div>
+          ),
+          Day: ({ displayMonth, date }) => (
+            <CalendarDay
+              date={date}
+              displayMonth={displayMonth}
+              events={events}
+            />
+          ),
+        }}
+        {...props}
+      />
+    </div>
   );
 }
 Calendar.displayName = "Calendar";

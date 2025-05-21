@@ -1,93 +1,99 @@
 "use client";
-
-import {
-  Calendar,
-  EventProps,
-  GoogleEventProps,
-} from "@/components/ui/calendar";
+import React from "react";
+import { Calendar } from "@/components/ui/calendar";
 import { useQuery } from "@tanstack/react-query";
-import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import UpcomingEvents from "./upcomingevents";
 
-const calendarcall = () => {
-  const [current, setCurrent] = useState<EventProps>({});
+export type GoogleEventProps = {
+  start: {
+    dateTime?: string;
+    date?: string;
+  };
+  end: {
+    dateTime?: string;
+    date?: string;
+  };
+  location?: string;
+  description?: string;
+  summary: string;
+};
 
-  const { data, error } = useQuery({
-    queryKey: ["calendarEvents"],
+export interface EventCardProps {
+  date: string;
+  month: string;
+  title: string;
+  description: string;
+}
+
+const CalendarCall = () => {
+  const [date, setDate] = React.useState<Date | undefined>(new Date());
+
+  const { data, isLoading } = useQuery<{
+    allEvents: GoogleEventProps[];
+    futureEvents: EventCardProps[];
+  }>({
+    queryKey: ["googleCalendarEvents"],
     queryFn: async () => {
-      const response =
-        await fetch(`https://www.googleapis.com/calendar/v3/calendars/${
-          process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL
-        }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}
-           &singleEvents=true&orderBy=startTime&timeMin=${new Date(
-             new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000,
-           ).toISOString()}&timeMax=${new Date(
-             new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000,
-           ).toISOString()}`).then((res) => res.json());
+      const now = new Date();
+      const tenWeeksAgo = new Date(
+        now.getTime() - 60 * 60 * 24 * 7 * 10 * 1000,
+      ).toISOString();
+      const tenWeeksAhead = new Date(
+        now.getTime() + 60 * 60 * 24 * 7 * 10 * 1000,
+      ).toISOString();
 
-      const events = response.items.map(
-        ({ start, end, location, description, summary }: GoogleEventProps) => ({
-          start: start.dateTime,
-          end: end.dateTime,
-          location,
-          description,
-          title: summary,
-        }),
-      );
+      const response = await fetch(
+        `https://www.googleapis.com/calendar/v3/calendars/${
+          process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS
+        }/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime&timeMin=${tenWeeksAgo}&timeMax=${tenWeeksAhead}`,
+      ).then((res) => res.json());
 
-      return events;
+      const allEvents = response.items || [];
+
+      const futureEvents = allEvents
+        .filter((item: GoogleEventProps) => {
+          const startString = item.start?.dateTime || item.start?.date;
+          if (!startString) return false;
+          return new Date(startString) >= now;
+        })
+        .map((item: GoogleEventProps) => {
+          const startString = item.start?.dateTime || item.start?.date;
+          if (!startString) return null;
+
+          const startDate = new Date(startString);
+          const month = startDate
+            .toLocaleString("default", { month: "short" })
+            .toUpperCase();
+          const day = startDate.getDate().toString();
+
+          return {
+            month,
+            date: day,
+            title: item.summary,
+            description: item.description || "No description available.",
+          };
+        })
+        .filter(Boolean)
+        .slice(0, 2) as EventCardProps[];
+
+      return { allEvents, futureEvents };
     },
   });
 
-  if (error) return <>Error Occurred!</>;
-
   return (
-    <>
-      {
-        <Dialog
-          open={Object.keys(current).length > 0}
-          onOpenChange={() => setCurrent({})}
-        >
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle>
-                <p className="font-questrial text-xl">{current.title}</p>
-                <p className="font-questrial text-base">
-                  {current.location} from{" "}
-                  {new Date(current.start as string).toLocaleTimeString(
-                    "en-US",
-                    {
-                      hour: "2-digit",
-                      minute: "2-digit",
-                    },
-                  )}{" "}
-                  to{" "}
-                  {new Date(current.end as string).toLocaleTimeString("en-US", {
-                    hour: "2-digit",
-                    minute: "2-digit",
-                  })}
-                </p>
-              </DialogTitle>
-              <DialogDescription>{current.description}</DialogDescription>
-            </DialogHeader>
-          </DialogContent>
-        </Dialog>
-      }
-      <Calendar
-        mode="single"
-        selected={new Date()}
-        className="w-full rounded-md md:w-5/6"
-        events={data}
-        setCurrent={setCurrent}
-      />
-    </>
+    <div className="min-h-screen">
+      {!isLoading && data && (
+        <Calendar
+          mode="single"
+          selected={date}
+          onSelect={setDate}
+          className="mx-[5%] w-9/12 lg:mx-[15%]"
+          events={data.allEvents}
+        />
+      )}
+      {!isLoading && data && <UpcomingEvents events={data.futureEvents} />}
+    </div>
   );
 };
 
-export default calendarcall;
+export default CalendarCall;
