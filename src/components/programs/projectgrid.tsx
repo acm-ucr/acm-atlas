@@ -33,7 +33,7 @@ const ProjectGrid = ({ projects = [] }: ProjectGridProps) => {
     .slice(6 * page, 6 * page + 6);
 
   return (
-    <div className="mx-auto grid w-11/12 grid-cols-3 gap-x-6 gap-y-10">
+    <div className="mx-auto grid w-11/12 grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3">
       {cards.map(({ photo, name, github, website }, index) => (
         <ProjectCard
           key={index}
