@@ -30,7 +30,6 @@ export interface EventCardProps {
 }
 
 const calendarSources = [
-  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS, eventType: "general" },
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_SPARK, eventType: "spark" },
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_CREATE, eventType: "create" },
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_FORGE, eventType: "forge" },
@@ -78,7 +77,11 @@ const UpcomingEvents = () => {
         }),
       );
 
-      const allEvents: TypedGoogleEventProps[] = results.flat();
+      const allEvents: TypedGoogleEventProps[] = results.flat().sort((a, b) => {
+        const aStart = new Date(a.start.dateTime || a.start.date).getTime();
+        const bStart = new Date(b.start.dateTime || b.start.date).getTime();
+        return aStart - bStart;
+      });
 
       const futureEvents = allEvents
         .filter((item) => {
