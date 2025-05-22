@@ -86,7 +86,7 @@ const CalendarCall = () => {
   });
 
   return (
-    <div className="min-h-screen">
+    <div>
       <p className="mt-10 pt-8 text-center text-6xl font-bold text-acm-gray-500">
         EVENTS
       </p>

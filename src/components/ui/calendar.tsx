@@ -73,11 +73,10 @@ function Calendar({
           nav_button: "",
           nav_button_previous: "hidden",
           nav_button_next: "hidden",
-          table: "w-full border-collapse space-y-1",
+          table: "w-full  space-y-1",
           head_row:
-            "border border-acm-gray-700 flex mt-[2vw] w-full rounded-t-xl text-center items-center justify-center gap-x-[0.9vw]",
-          head_cell:
-            "text-black rounded-md w-[12vw] md:w-[9.7vw] text-md md:text-5xl py-1 md:py-2",
+            "border border-acm-gray-700 flex mt-[2vw] w-full rounded-t-xl text-center items-center justify-center grid grid-cols-7",
+          head_cell: "text-black rounded-md text-md md:text-4xl py-1 md:py-2",
           row: "grid grid-cols-7",
           cell: "border border-acm-gray-700 p-0 bg-white",
           day: "p-0",
