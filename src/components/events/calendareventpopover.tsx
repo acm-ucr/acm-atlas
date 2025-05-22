@@ -48,21 +48,22 @@ const CalendarEventPopover = ({
     eventEndDate = new Date(endDate.date);
   }
 
-  const startHour = eventStartDate.getHours();
-  const startMinutes = eventStartDate.getMinutes();
-  const formattedStartHour = startHour % 12 || 12;
-  const formattedStartMinutes =
-    startMinutes < 10 ? `0${startMinutes}` : startMinutes;
-  const startHourSuffix = startHour < 12 ? "AM" : "PM";
-
-  let timeRangeDisplay = `${formattedStartHour}:${formattedStartMinutes} ${startHourSuffix}`;
-  if (hasEndTime) {
-    const endHour = eventEndDate.getHours();
-    const endMinutes = eventEndDate.getMinutes();
-    const formattedEndHour = endHour % 12 || 12;
-    const formattedEndMinutes = endMinutes < 10 ? `0${endMinutes}` : endMinutes;
-    const endHourSuffix = endHour < 12 ? "AM" : "PM";
-    timeRangeDisplay += ` - ${formattedEndHour}:${formattedEndMinutes} ${endHourSuffix}`;
+  let timeRangeDisplay = "";
+  if (hasStartTime) {
+    timeRangeDisplay = eventStartDate.toLocaleTimeString("en-US", {
+      hour: "numeric",
+      minute: "2-digit",
+      timeZone: "America/Los_Angeles",
+    });
+    if (hasEndTime) {
+      timeRangeDisplay +=
+        " - " +
+        eventEndDate.toLocaleTimeString("en-US", {
+          hour: "numeric",
+          minute: "2-digit",
+          timeZone: "America/Los_Angeles",
+        });
+    }
   }
 
   return (
@@ -74,7 +75,12 @@ const CalendarEventPopover = ({
           {title}
         </span>
         <span className="pr-1 text-right text-xs">
-          {formattedStartHour}:{formattedStartMinutes}
+          {hasStartTime &&
+            eventStartDate.toLocaleTimeString("en-US", {
+              hour: "numeric",
+              minute: "2-digit",
+              timeZone: "America/Los_Angeles",
+            })}
         </span>
       </PopoverTrigger>
       <PopoverContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
