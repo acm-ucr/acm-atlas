@@ -77,7 +77,7 @@ const Cards = ({ events, isLoading, isError }: EventProps) => {
 
   return (
     <motion.div
-      className="mx-auto mb-10 grid w-3/4 auto-rows-fr grid-cols-3 flex-col gap-2 text-3xl sm:gap-5"
+      className="mx-auto mb-10 grid w-3/4 auto-rows-fr grid-cols-1 flex-col gap-y-6 text-3xl md:grid-cols-3 md:gap-5"
       {...eventsVariant}
     >
       {events.map((event, index) => {

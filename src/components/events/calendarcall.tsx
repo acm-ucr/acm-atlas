@@ -95,7 +95,7 @@ const CalendarCall = () => {
           mode="single"
           selected={date}
           onSelect={setDate}
-          className="mx-[2%] w-11/12 md:mx-[15%] md:w-9/12"
+          className="mx-auto w-11/12 md:w-10/12"
           events={data.allEvents}
         />
       )}

@@ -3,7 +3,6 @@
 import * as React from "react";
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { DayPicker } from "react-day-picker";
-import { cn } from "@/lib/utils";
 import { useState } from "react";
 import { TypedGoogleEventProps } from "@/components/events/calendarcall";
 import CalendarDay from "@/components/events/calendarday";
@@ -48,9 +47,14 @@ function Calendar({
   };
 
   return (
-    <div className="flex justify-center py-[5vh] md:py-[10vh]">
-      <CalendarTop currentDate={currentDate} />
+    <div className="flex flex-col justify-center py-[5vh] md:py-[10vh]">
+      <CalendarTop
+        currentDate={currentDate}
+        onPrevMonth={prevMonth}
+        onNextMonth={nextMonth}
+      />
       <DayPicker
+        month={currentDate}
         showOutsideDays={showOutsideDays}
         formatters={{
           formatWeekdayName: (date) => {
@@ -61,20 +65,19 @@ function Calendar({
         }}
         className={className}
         classNames={{
-          months:
-            "flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0",
-          month: "space-y-[0.5vw]",
-          caption:
-            "justify-center flex pl-[43.5vw] pt-[0.5vh] items-center relative mb-[3vh] ",
-          caption_label: "font-bold text-[2.5vw] ",
-          nav: "space-x-[0.5vw] flex items-center",
-          nav_button: cn("h-[2vw] w-[2vw] bg-transparent p-0"),
-          nav_button_previous: "absolute left-[18vw] translate-y-1",
-          nav_button_next: "absolute left-[23vw] translate-y-1",
+          months: "",
+          month: "",
+          caption: "",
+          caption_label: "",
+          nav: "space-x-8",
+          nav_button: "",
+          nav_button_previous: "hidden",
+          nav_button_next: "hidden",
           table: "w-full border-collapse space-y-1",
           head_row:
             "border border-acm-gray-700 flex mt-[2vw] w-full rounded-t-xl text-center items-center justify-center gap-x-[0.9vw]",
-          head_cell: "text-black rounded-md w-[9.7vw] text-[2.3vw]",
+          head_cell:
+            "text-black rounded-md w-[12vw] md:w-[9.7vw] text-md md:text-5xl py-1 md:py-2",
           row: "grid grid-cols-7",
           cell: "border border-acm-gray-700 p-0 bg-white",
           day: "p-0",
@@ -89,12 +92,12 @@ function Calendar({
         components={{
           IconLeft: () => (
             <div onClick={prevMonth}>
-              <SlArrowLeft className="text-[2.5vw] hover:-translate-x-1" />
+              <SlArrowLeft />
             </div>
           ),
           IconRight: () => (
             <div onClick={nextMonth}>
-              <SlArrowRight className="text-[2.5vw] hover:translate-x-1" />
+              <SlArrowRight />
             </div>
           ),
           Day: ({ displayMonth, date }) => (

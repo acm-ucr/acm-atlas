@@ -27,9 +27,9 @@ const Card = ({
       className={`flex h-full flex-col items-start overflow-clip ${bgColor} ${textColor ? textColor : "text-acm-gray-500"} gap-2 rounded-xl px-5 py-6`}
     >
       <div className="flex flex-col">
-        <p className="text-4xl font-bold">{title}</p>
-        <p className="text-2xl font-normal">{date}</p>
-        <p className="text-xl font-light">
+        <p className="text-3xl font-bold">{title}</p>
+        <p className="text-xl font-normal">{date}</p>
+        <p className="text-lg font-light">
           {location} - {startingTime}
         </p>
       </div>
