@@ -1,7 +1,31 @@
+"use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import auroraStar from "@/public/logos/aurorastar.webp";
 
 const Stats = () => {
+  const [closedPRs, setClosedPRs] = useState<number | null>(null);
+
+  useEffect(() => {
+    const fetchClosedPRs = async () => {
+      try {
+        const res = await fetch(
+          "https://api.github.com/search/issues?q=repo:acm-ucr/aurora+type:pr+state:closed",
+        );
+        if (!res.ok) {
+          console.error("Failed to fetch closed PRs.");
+        }
+
+        const data = await res.json();
+        setClosedPRs(data.total_count);
+      } catch (error) {
+        console.error("Error fetching closed PRs: ", error);
+      }
+    };
+
+    fetchClosedPRs();
+  }, []);
+
   return (
     <div className="py-30 flex flex-col justify-center">
       <div className="pb-18 ml-[15%] grid gap-10 text-acm-gray-500 [grid-template-columns:23%_21%_23%]">
@@ -10,7 +34,7 @@ const Stats = () => {
           <p className="text-2xl font-medium">commits</p>
         </div>
         <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-          <p className="pb-4 text-6xl font-bold">1000+</p>
+          <p className="pb-4 text-6xl font-bold">{closedPRs}</p>
           <p className="text-2xl font-medium">PRs</p>
         </div>
         <div className="flex flex-col justify-center">
