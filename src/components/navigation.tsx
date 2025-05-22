@@ -197,8 +197,9 @@ const Navigation = () => {
                                               transition={{
                                                 ...subMobNavBarAnim(subIndex)
                                                   .transition,
-                                                duration: 0.2,
-                                                delay: 0.3,
+                                                delay:
+                                                  (subIndex + 1) * 0.05 + 0.25,
+                                                duration: 0.1,
                                               }}
                                             >
                                               {subName.toLowerCase()}
