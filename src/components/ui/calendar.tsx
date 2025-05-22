@@ -79,7 +79,7 @@ function Calendar({
             "border border-acm-gray-700 flex mt-[2vw] w-full rounded-t-xl text-center items-center justify-center grid grid-cols-7",
           head_cell: "text-black rounded-md text-md md:text-4xl py-1 md:py-2",
           row: "grid grid-cols-7",
-          cell: "border border-acm-gray-700 p-0 bg-white h-[10vh] md:h-[15vh]",
+          cell: "border border-acm-gray-700 p-0 bg-white h-[15vh] md:h-[15vh]",
           day: "",
           day_range_end: "",
           day_selected: "",
