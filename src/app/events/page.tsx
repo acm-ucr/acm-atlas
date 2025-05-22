@@ -1,10 +1,2 @@
-import Header from "@/components/events/header";
-const Page = () => {
-  return (
-    <>
-      <Header />
-    </>
-  );
-};
-
-export default Page;
+import Calendar from "@/components/events/calendarcall";
+export default Calendar;
