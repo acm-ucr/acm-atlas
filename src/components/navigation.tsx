@@ -48,7 +48,7 @@ const subMobNavBarAnim = (index: number) => ({
   animate: { y: 0, opacity: 1 },
   transition: {
     delay: (index + 1) * 0.05 + 0.55,
-    duration: 0.3,
+    duration: 0.5,
     ease: "easeIn",
   },
 });
@@ -146,15 +146,14 @@ const Navigation = () => {
               </div>
               <div className="relative ml-5 flex flex-col items-start justify-start">
                 {navigations.map(({ name, link, subItems }, index) => (
-                  <div
+                  <motion.div
+                    initial={subMobNavBarAnim(index).initial}
+                    animate={subMobNavBarAnim(index).animate}
+                    transition={subMobNavBarAnim(index).transition}
                     className="flex w-full justify-between border-t-2 border-acm-gray-100 py-2"
                     key={index}
                   >
-                    <motion.div
-                      initial={subMobNavBarAnim(index).initial}
-                      animate={subMobNavBarAnim(index).animate}
-                      transition={subMobNavBarAnim(index).transition}
-                    >
+                    <div>
                       <NavigationMenu>
                         <NavigationMenuList>
                           <NavigationMenuItem>
@@ -225,7 +224,7 @@ const Navigation = () => {
                           </NavigationMenuItem>
                         </NavigationMenuList>
                       </NavigationMenu>
-                    </motion.div>
+                    </div>
                     {subItems && (
                       <div className="w-1/8 absolute right-3 flex items-center justify-center border-l-2 pl-4 text-acm-gray-100">
                         {programBar ? (
@@ -241,7 +240,7 @@ const Navigation = () => {
                         )}
                       </div>
                     )}
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </div>
