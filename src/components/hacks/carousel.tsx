@@ -18,9 +18,9 @@ const CarouselImages = ({ images }: CarouselImageProps) => {
 
   useEffect(() => {
     if (marqueeReference.current) {
-      const caoruselLength = marqueeReference.current.scrollWidth;
-      const speed = 0.012;
-      setDuration(`${caoruselLength * speed}s`);
+      const carouselLength = marqueeReference.current.scrollWidth;
+      const speed = 0.02;
+      setDuration(`${carouselLength * speed}s`);
     }
   }, []);
 
