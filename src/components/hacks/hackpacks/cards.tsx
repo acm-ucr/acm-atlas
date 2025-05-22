@@ -3,13 +3,13 @@ import { HACKPACKS } from "@/data/hackpacks";
 
 const Cards = () => (
   <div className="mx-auto flex w-11/12 flex-col justify-center">
-    <p className="mt-10 py-8 text-center text-6xl font-bold text-acm-gray-500">
+    <p className="mt-10 py-8 text-center text-4xl md:text-6xl font-bold text-acm-gray-500">
       HACKPACKS
     </p>
-    <p className="pb-8 text-4xl font-bold text-acm-gray-500">
+    <p className="pb-8 text-2xl md:text-4xl font-bold text-acm-gray-500">
       WHAT ARE HACKPACKS?
     </p>
-    <p className="text-2xl text-acm-gray-500">
+    <p className="text-lg md:text-2xl text-acm-gray-500">
       Hackpacks are GitHub templates with pre-configured starter code, designed
       to get you up and running fast without the hassle of setup. Whether you're
       at a hackathon or starting a new project, hackpacks provide an
