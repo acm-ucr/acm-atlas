@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
               <Link href="/hacks/hackpacks">Hackpacks</Link>
-              <Link href="/">Template Resume</Link>
+              <Link href="/templateresume">Template Resume</Link>
               <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
                 CS Internships List
               </Link>
@@ -125,7 +125,7 @@ const Footer = () => {
               </p>
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
                 <Link href="/hacks/hackpacks">Hackpacks</Link>
-                <Link href="/">Template Resume</Link>
+                <Link href="/templateresume">Template Resume</Link>
                 <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
                   CS Internships List
                 </Link>
