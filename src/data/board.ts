@@ -16,12 +16,12 @@ import Stanley1 from "@/public/board/spark/stanley.webp";
 import Shirley from "@/public/board/create/shirley.webp";
 import Kaylie from "@/public/board/create/kaylie.webp";
 import Aldrie from "@/public/board/spark/aldrie.webp";
-import Nidheesh from "@/public/board/spark/nidheesh.webp";
 import Khushi from "@/public/board/das/khushi.webp";
 import Marcus from "@/public/board/forge/marcus.webp";
 import Ian from "@/public/board/forge/ian.webp";
 import Avia from "@/public/board/spark/avia.webp";
 import Wasim from "@/public/board/das/wasim.webp";
+import Justin from "@/public/board/forge/justin.webp";
 export const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -283,15 +283,6 @@ export const Board = [
         linkedin: "https://www.linkedin.com/in/minh-tran-677564332/",
         github: "https://github.com/minhhdtran",
       },
-      {
-        name: "Nidheesh Vakharia",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Nidheesh,
-        linkedin: "https://www.linkedin.com/in/nidheeshvakharia/",
-        github: "https://github.com/nidheesh-m-vakharia",
-      },
     ],
   },
   {
@@ -325,7 +316,7 @@ export const Board = [
         position: "Forge Director",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Stanley,
+        photo: Justin,
         linkedin: "https://www.linkedin.com/in/justin-h-im/",
         github: "https://github.com/justin-h-im",
       },

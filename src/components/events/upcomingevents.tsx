@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Calendar } from "@/components/ui/calendar";
 import { useQuery } from "@tanstack/react-query";
+import Cards from "./cards";
 
 export type GoogleEventProps = {
   start: {
@@ -21,8 +21,15 @@ export type TypedGoogleEventProps = GoogleEventProps & {
   eventType: string;
 };
 
+export interface EventCardProps {
+  date: string;
+  month: string;
+  title: string;
+  description: string;
+  eventType: string;
+}
+
 const calendarSources = [
-  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS, eventType: "general" },
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_SPARK, eventType: "spark" },
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_CREATE, eventType: "create" },
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_FORGE, eventType: "forge" },
@@ -30,10 +37,8 @@ const calendarSources = [
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_BITBYTE, eventType: "bitbyte" },
 ];
 
-const CalendarCall = () => {
-  const [date, setDate] = React.useState<Date | undefined>(new Date());
-
-  const { data, isLoading } = useQuery<{
+const UpcomingEvents = () => {
+  const { data, isLoading, isError } = useQuery<{
     allEvents: TypedGoogleEventProps[];
     futureEvents: TypedGoogleEventProps[];
   }>({
@@ -72,7 +77,11 @@ const CalendarCall = () => {
         }),
       );
 
-      const allEvents: TypedGoogleEventProps[] = results.flat();
+      const allEvents: TypedGoogleEventProps[] = results.flat().sort((a, b) => {
+        const aStart = new Date(a.start.dateTime || a.start.date).getTime();
+        const bStart = new Date(b.start.dateTime || b.start.date).getTime();
+        return aStart - bStart;
+      });
 
       const futureEvents = allEvents
         .filter((item) => {
@@ -84,23 +93,20 @@ const CalendarCall = () => {
       return { allEvents, futureEvents };
     },
   });
-
   return (
     <div>
-      <p className="mt-10 pt-8 text-center text-6xl font-bold text-acm-gray-500">
-        EVENTS
+      <p className="mb-12 mt-4 text-center text-6xl font-bold text-acm-gray-500">
+        UPCOMING EVENTS
       </p>
       {!isLoading && data && (
-        <Calendar
-          mode="single"
-          selected={date}
-          onSelect={setDate}
-          className="mx-auto w-11/12 md:w-10/12"
-          events={data.allEvents}
+        <Cards
+          events={data.futureEvents}
+          isLoading={isLoading}
+          isError={isError}
         />
       )}
     </div>
   );
 };
 
-export default CalendarCall;
+export default UpcomingEvents;

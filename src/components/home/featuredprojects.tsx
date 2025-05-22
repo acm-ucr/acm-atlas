@@ -11,6 +11,10 @@ import Forge2 from "@/public/forge/drone.webp";
 import Forge3 from "@/public/forge/blank.webp";
 
 const FeaturedProjects = () => {
+  const index1 = 1;
+  const index2 = 2;
+  const index3 = 3;
+
   return (
     <div className="mx-auto w-11/12">
       <div className="mt-5 flex items-center justify-center">
@@ -21,9 +25,19 @@ const FeaturedProjects = () => {
       <div className="mx-10 mt-10 font-bold text-acm-gray-500">
         <p className="pb-3 text-4xl">ACM SPARK</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
-          <ProjectCard project="PHI ALPHA DELTA" image={Spark1} link="/" />
-          <ProjectCard project="AVIAT’R" image={Spark2} link="/" />
-          <ProjectCard project="SAF" image={Spark3} link="/" />
+          <ProjectCard
+            project="PHI ALPHA DELTA"
+            image={Spark1}
+            link="/"
+            index={index1}
+          />
+          <ProjectCard
+            project="AVIAT’R"
+            image={Spark2}
+            link="/"
+            index={index2}
+          />
+          <ProjectCard project="SAF" image={Spark3} link="/" index={index3} />
         </div>
         <Link
           href="/"
@@ -33,9 +47,9 @@ const FeaturedProjects = () => {
         </Link>
         <p className="text-4xl">ACM CREATE</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
-          <ProjectCard project="ACM" image={Create1} link="/" />
-          <ProjectCard project="WITL" image={Create2} link="/" />
-          <ProjectCard project="NSU" image={Create3} link="/" />
+          <ProjectCard project="ACM" image={Create1} link="/" index={index1} />
+          <ProjectCard project="WITL" image={Create2} link="/" index={index2} />
+          <ProjectCard project="NSU" image={Create3} link="/" index={index3} />
         </div>
         <Link
           href="/"
@@ -45,9 +59,19 @@ const FeaturedProjects = () => {
         </Link>
         <p className="text-4xl">ACM FORGE</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
-          <ProjectCard project="WIZARD CHESS" image={Forge1} link="/" />
-          <ProjectCard project="DRONES" image={Forge2} link="/" />
-          <ProjectCard project="ARMS" image={Forge3} link="/" />
+          <ProjectCard
+            project="WIZARD CHESS"
+            image={Forge1}
+            link="/"
+            index={index1}
+          />
+          <ProjectCard
+            project="DRONES"
+            image={Forge2}
+            link="/"
+            index={index2}
+          />
+          <ProjectCard project="ARMS" image={Forge3} link="/" index={index3} />
         </div>
         <Link
           href="/"

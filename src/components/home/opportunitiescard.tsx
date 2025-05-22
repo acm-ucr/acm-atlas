@@ -42,12 +42,14 @@ const OpportunitiesCard = ({
             Learn more →
           </Link>
         </div>
-        <Link
-          href={applicationLink}
-          className="absolute bottom-5 left-3 rounded-full bg-white px-9 py-2 text-xl font-bold text-acm-gray-500"
-        >
-          {appYearAndQuarter} APPLICATION
-        </Link>
+        <div className="absolute bottom-5 left-0 flex w-full justify-center">
+          <Link
+            href={applicationLink}
+            className="rounded-full bg-white px-9 py-2 text-lg font-bold text-acm-gray-500"
+          >
+            {appYearAndQuarter} APPLICATION
+          </Link>
+        </div>
       </div>
     </motion.div>
   );

@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 import Image from "next/image";
 import Link from "next/link";
 import StatItem from "../statitem";
+import CarouselImages from "@/components/hacks/carousel";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { TbMailFilled } from "react-icons/tb";
 
@@ -14,6 +15,10 @@ interface HackProps {
   subtitle: string;
   bgColor: string;
   textColor: string;
+  carouselItems: {
+    image: StaticImageData;
+    alt: string;
+  }[];
   devposts: {
     year: string;
     link: string;
@@ -35,6 +40,7 @@ const Hack = ({
   subtitle,
   bgColor,
   textColor,
+  carouselItems,
   devposts,
   stats,
   instagram,
@@ -65,6 +71,7 @@ const Hack = ({
       </Link>
       <p className="mx-[10%] py-5 text-left text-3xl font-bold">WHAT WE DO</p>
       <p className="mx-[10%] text-left">{description2}</p>
+      <CarouselImages images={carouselItems} />
       <p className="mt-10 text-4xl font-bold">PREVIOUS DEVPOSTS</p>
       <div className="mx-auto mt-6 grid w-1/3 grid-cols-3 gap-4">
         {devposts.map(({ year, link }, idx) => (
