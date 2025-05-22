@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import { useRef, useState, useEffect } from "react"; 
+import { useRef, useState, useEffect } from "react";
 
 interface CarouselImageItem {
   image: StaticImageData;
@@ -17,7 +17,7 @@ const CarouselImages = ({ images }: CarouselImageProps) => {
   const [duration, setDuration] = useState("20s");
 
   useEffect(() => {
-    if(marqueeReference.current) {
+    if (marqueeReference.current) {
       const caoruselLength = marqueeReference.current.scrollWidth;
       const speed = 0.012;
       setDuration(`${caoruselLength * speed}s`);
@@ -26,7 +26,11 @@ const CarouselImages = ({ images }: CarouselImageProps) => {
 
   return (
     <div className="relative hidden w-full overflow-hidden py-[6vh] md:flex">
-      <div className="flex animate-marquee gap-x-12 px-[2vw]" style={{animationDuration: duration}} ref={marqueeReference}>
+      <div
+        className="flex animate-marquee gap-x-12 px-[2vw]"
+        style={{ animationDuration: duration }}
+        ref={marqueeReference}
+      >
         {images?.map(({ image, alt }, index) => (
           <div key={index}>
             <Image
@@ -37,7 +41,10 @@ const CarouselImages = ({ images }: CarouselImageProps) => {
           </div>
         ))}
       </div>
-      <div className="absolute flex animate-marquee-continuation justify-between gap-x-12 px-[2vw]" style={{animationDuration: duration}}>
+      <div
+        className="absolute flex animate-marquee-continuation justify-between gap-x-12 px-[2vw]"
+        style={{ animationDuration: duration }}
+      >
         {images?.map(({ image, alt }, index) => (
           <div key={index}>
             <Image
