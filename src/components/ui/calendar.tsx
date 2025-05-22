@@ -7,6 +7,7 @@ import { useState } from "react";
 import { TypedGoogleEventProps } from "@/components/events/calendarcall";
 import CalendarDay from "@/components/events/calendarday";
 import CalendarTop from "@/components/events/calendartop";
+import UpcomingEvents from "../events/upcomingevents";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker> & {
   events: TypedGoogleEventProps[];
@@ -47,7 +48,7 @@ function Calendar({
   };
 
   return (
-    <div className="flex flex-col justify-center py-[5vh] md:py-[10vh]">
+    <div className="flex flex-col py-[5vh] md:py-[10vh]">
       <CalendarTop
         currentDate={currentDate}
         onPrevMonth={prevMonth}
@@ -63,7 +64,7 @@ function Calendar({
           },
           formatCaption: () => "",
         }}
-        className={className}
+        className={`${className} pb-8`}
         classNames={{
           months: "",
           month: "",
@@ -78,8 +79,8 @@ function Calendar({
             "border border-acm-gray-700 flex mt-[2vw] w-full rounded-t-xl text-center items-center justify-center grid grid-cols-7",
           head_cell: "text-black rounded-md text-md md:text-4xl py-1 md:py-2",
           row: "grid grid-cols-7",
-          cell: "border border-acm-gray-700 p-0 bg-white",
-          day: "p-0",
+          cell: "border border-acm-gray-700 p-0 bg-white h-[10vh] md:h-[15vh]",
+          day: "",
           day_range_end: "",
           day_selected: "",
           day_outside: "",
@@ -109,6 +110,7 @@ function Calendar({
         }}
         {...props}
       />
+      <UpcomingEvents />
     </div>
   );
 }

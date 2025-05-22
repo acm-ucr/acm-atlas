@@ -28,7 +28,7 @@ const CalendarTop = ({
 
   return (
     <div className="mx-auto flex w-10/12 items-center justify-between">
-      <div className="flex w-full items-center justify-center md:justify-start md:space-x-4">
+      <div className="flex w-full items-center justify-center pb-6 md:justify-start md:space-x-4 md:pb-0">
         <span className="text-acm-gray-900 order-2 w-fit px-4 text-3xl md:order-1 md:px-0 md:text-5xl 2xl:text-6xl">
           {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}
         </span>
