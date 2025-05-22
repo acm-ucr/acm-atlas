@@ -2,7 +2,6 @@
 import React from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { useQuery } from "@tanstack/react-query";
-import UpcomingEvents from "./upcomingevents";
 
 export type GoogleEventProps = {
   start: {
@@ -22,13 +21,6 @@ export type TypedGoogleEventProps = GoogleEventProps & {
   eventType: string;
 };
 
-export interface EventCardProps {
-  date: string;
-  month: string;
-  title: string;
-  description: string;
-  eventType: string;
-}
 const calendarSources = [
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS, eventType: "general" },
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_SPARK, eventType: "spark" },
@@ -43,7 +35,7 @@ const CalendarCall = () => {
 
   const { data, isLoading } = useQuery<{
     allEvents: TypedGoogleEventProps[];
-    futureEvents: EventCardProps[];
+    futureEvents: TypedGoogleEventProps[];
   }>({
     queryKey: ["googleCalendarEvents"],
     queryFn: async () => {
@@ -87,26 +79,7 @@ const CalendarCall = () => {
           const startString = item.start?.dateTime || item.start?.date;
           return startString && new Date(startString) >= now;
         })
-        .map((item) => {
-          const startString = item.start?.dateTime || item.start?.date;
-          if (!startString) return null;
-
-          const startDate = new Date(startString);
-          const month = startDate
-            .toLocaleString("default", { month: "short" })
-            .toUpperCase();
-          const day = startDate.getDate().toString();
-
-          return {
-            month,
-            date: day,
-            title: item.summary,
-            description: item.description || "No description available.",
-            eventType: item.eventType,
-          };
-        })
-        .filter(Boolean)
-        .slice(0, 2) as EventCardProps[];
+        .slice(0, 3);
 
       return { allEvents, futureEvents };
     },
@@ -114,7 +87,7 @@ const CalendarCall = () => {
 
   return (
     <div className="min-h-screen">
-      <p className="mt-10 py-8 text-center text-6xl font-bold text-acm-gray-500">
+      <p className="mt-10 pt-8 text-center text-6xl font-bold text-acm-gray-500">
         EVENTS
       </p>
       {!isLoading && data && (
@@ -126,7 +99,6 @@ const CalendarCall = () => {
           events={data.allEvents}
         />
       )}
-      {!isLoading && data && <UpcomingEvents events={data.futureEvents} />}
     </div>
   );
 };

@@ -1,28 +1,46 @@
-interface EventCardProps {
-  date: string;
-  month: string;
+"use client";
+import Image, { StaticImageData } from "next/image";
+
+interface CardProps {
   title: string;
+  date: string;
+  location: string;
+  startingTime: string;
   description: string;
+  bgColor: string;
+  textColor?: string;
+  image: StaticImageData;
 }
-const EventCard: React.FC<EventCardProps> = ({
-  date,
-  month,
+
+const Card = ({
   title,
+  date,
+  location,
+  startingTime,
   description,
-}) => {
+  bgColor,
+  textColor,
+  image,
+}: CardProps) => {
   return (
-    <div className="grid grid-cols-4 items-center rounded-lg shadow-lg">
-      <div className="flex flex-col items-center">
-        <p className="text-sm md:text-[1vw]">{month}</p>
-        <p className="text-[3.5vw] leading-none">{date}</p>
-      </div>
-      <div className="col-span-3 rounded-r-lg bg-indigo-200 py-2 pl-2 md:py-4 md:pl-6">
-        <p className="text-md mr-[1vw] font-semibold md:text-[1.5vw]">
-          {title}
+    <div
+      className={`flex h-full flex-col items-start overflow-clip ${bgColor} ${textColor ? textColor : "text-acm-gray-500"} gap-2 rounded-xl px-5 py-6`}
+    >
+      <div className="flex flex-col">
+        <p className="text-4xl font-bold">{title}</p>
+        <p className="text-2xl font-normal">{date}</p>
+        <p className="text-xl font-light">
+          {location} - {startingTime}
         </p>
-        <p className="text-xs text-gray-700 md:text-[0.8vw]">{description}</p>
+      </div>
+      <div className="ml-5 flex w-full justify-end py-4">
+        <Image src={image} alt="image" />
+      </div>
+      <div className="flex items-start justify-start">
+        <p className="text-lg font-light">{description}</p>
       </div>
     </div>
   );
 };
-export default EventCard;
+
+export default Card;

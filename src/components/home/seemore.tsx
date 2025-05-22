@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const SeeMoreLink = () => {
+const SeeMore = () => {
   return (
-    <div className="flex justify-center py-8">
+    <div className="my-8 flex justify-center">
       <Link
         href="/events"
         className="rounded-2xl bg-acm-blue-700 px-12 py-3 text-3xl font-medium text-white"
@@ -13,4 +13,4 @@ const SeeMoreLink = () => {
   );
 };
 
-export default SeeMoreLink;
+export default SeeMore;
