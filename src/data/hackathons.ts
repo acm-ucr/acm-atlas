@@ -11,6 +11,7 @@ interface Hackathon {
   id: string;
   logo: StaticImageData;
   name: string;
+  years: string;
   description: string;
   description2: string;
   website: string;
@@ -38,6 +39,7 @@ const hackathons: Hackathon[] = [
     id: "cutiehack",
     logo: Cutiehack,
     name: "CUTIE HACK",
+    years: "2023, 2024, 2025",
     description:
       "Cutie Hack is a 12-hour, beginner-oriented hackathon hosted by students at University of California, Riverside.",
     description2:
@@ -68,6 +70,7 @@ const hackathons: Hackathon[] = [
     id: "citrushack",
     logo: Citrushack,
     name: "CITRUS HACK",
+    years: "2025",
     description:
       "Citrus Hack is a 24-hour hackathon and one of UC Riverside's largest hackathons.",
     description2:
@@ -107,6 +110,7 @@ const hackathons: Hackathon[] = [
     id: "rosehack",
     logo: Rosehack,
     name: "ROSEHACK",
+    years: "2024, 2025",
     description:
       "Rose Hack is UC Riverside's 24-hour hackathon, one of the few women-centric hackathons in California!",
     description2:
@@ -137,13 +141,14 @@ const hackathons: Hackathon[] = [
     id: "designverse",
     logo: Designverse,
     name: "DESIGNVERSE",
+    years: "2024, 2025",
     description:
       "DesignVerse is the first and only 24-hour beginner-friendly Design-a-Thon hosted by the University of California, Riverside.",
     description2:
       "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
     website: "https://www.designverseucr.org/",
-    textColor: "text-acm-green-400",
-    bgColor: "bg-acm-green-400",
+    textColor: "text-[#203649]",
+    bgColor: "bg-[#203649]",
     subtitle: "Designathon",
     carouselItems: designverseImages,
     devposts: [{ year: "2024", link: "https://designverseucr.devpost.com/" }],
