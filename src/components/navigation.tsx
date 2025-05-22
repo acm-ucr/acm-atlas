@@ -48,7 +48,7 @@ const subMobNavBarAnim = (index: number) => ({
   animate: { y: 0, opacity: 1 },
   transition: {
     delay: (index + 1) * 0.05 + 0.55,
-    duration: 0.5,
+    duration: 0.3,
     ease: "easeIn",
   },
 });
@@ -164,8 +164,8 @@ const Navigation = () => {
                                     href={link}
                                     className={
                                       pathname === link
-                                        ? "text-base font-light"
-                                        : ""
+                                        ? "text-base font-semibold text-acm-blue-500"
+                                        : "text-base font-light"
                                     }
                                     onClick={handleNavBar}
                                   >
@@ -180,8 +180,8 @@ const Navigation = () => {
                                             href={subLink}
                                             className={
                                               pathname === subLink
-                                                ? "py-1 text-sm font-light capitalize"
-                                                : ""
+                                                ? "py-1 text-sm font-semibold capitalize text-acm-blue-500"
+                                                : "py-1 text-sm font-light capitalize"
                                             }
                                             onClick={handleBothBars}
                                           >
@@ -199,7 +199,7 @@ const Navigation = () => {
                                                   .transition,
                                                 delay:
                                                   (subIndex + 1) * 0.05 + 0.25,
-                                                duration: 0.1,
+                                                duration: 0.3,
                                               }}
                                             >
                                               {subName.toLowerCase()}
@@ -216,8 +216,8 @@ const Navigation = () => {
                                 href={link}
                                 className={
                                   pathname === link
-                                    ? "text-base font-light"
-                                    : ""
+                                    ? "text-base font-semibold text-acm-blue-500"
+                                    : "text-base font-light"
                                 }
                                 onClick={handleNavBar}
                               >
