@@ -1,12 +1,39 @@
+"use client";
+
+import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import auroraStar from "@/public/logos/aurorastar.webp";
 
 const Stats = () => {
+  const fetchRepoCommits = async () => {
+    const res = await fetch(
+      "https://api.github.com/repos/acm-ucr/aurora/commits?per_page=1",
+    );
+
+    const linkHeader = res.headers.get("Link");
+    const extractHeader = linkHeader?.match(/&page=(\d+)>; rel="last"/);
+    const extractCommitCount = extractHeader?.at(1);
+
+    return extractCommitCount;
+  };
+
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ["repoCommits"],
+    queryFn: fetchRepoCommits,
+    staleTime: 1000 * 60 * 5,
+  });
+
   return (
     <div className="py-30 flex flex-col justify-center">
       <div className="pb-18 ml-[15%] grid gap-10 text-acm-gray-500 [grid-template-columns:23%_21%_23%]">
         <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-          <p className="pb-4 text-6xl font-bold">4000+</p>
+          <p className="pb-4 text-6xl font-bold">
+            {isLoading
+              ? "0"
+              : isError
+                ? "Error"
+                : `${Math.floor(Number(data) / 1000) * 1000}+`}
+          </p>
           <p className="text-2xl font-medium">commits</p>
         </div>
         <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
