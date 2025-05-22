@@ -3,6 +3,10 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import auroraStar from "@/public/logos/aurorastar.webp";
 
+interface GitHubContributor {
+  contributions: number;
+}
+
 const Stats = () => {
   const [contributors, setContributors] = useState<number | null>(null);
 
@@ -12,9 +16,9 @@ const Stats = () => {
         const res = await fetch(
           "https://api.github.com/repos/acm-ucr/aurora/contributors",
         );
-        const data = await res.json();
+        const data: GitHubContributor[] = await res.json();
         const totalContributions = data.reduce(
-          (sum: number, contributor: any) => {
+          (sum: number, contributor: GitHubContributor) => {
             return sum + contributor.contributions;
           },
           0,
