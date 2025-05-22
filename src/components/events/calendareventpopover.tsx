@@ -91,10 +91,10 @@ const CalendarEventPopover = ({
 
         <div className="rounded-b-xl bg-white px-4 py-3 text-lg">
           <div className="flex">
-            {hasStartTime && <p className="mt-1">{timeRangeDisplay}</p>}
+            {hasStartTime && <p>{timeRangeDisplay}</p>}
           </div>
           <p>{location}</p>
-          {description && <p className="pt-8">{description}</p>}
+          {description && <p className="pb-4 pt-8">{description}</p>}
         </div>
       </PopoverContent>
     </Popover>
