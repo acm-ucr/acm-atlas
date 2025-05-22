@@ -94,7 +94,7 @@ const CalendarEventPopover = ({
             {hasStartTime && <p className="mt-1">{timeRangeDisplay}</p>}
           </div>
           <p>{location}</p>
-          <div>{description && <p>{description}</p>}</div>
+          {description && <p className="pt-8">{description}</p>}
         </div>
       </PopoverContent>
     </Popover>
