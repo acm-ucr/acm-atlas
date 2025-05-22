@@ -6,17 +6,17 @@ import logo from "@/public/home/acmLogo.svg";
 import { motion } from "motion/react";
 
 const TitleAnimation = {
-  initial: { opacity: 0, y: 20 },
+  initial: { opacity: 0, y: -10 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.5 },
-  delay: 0.5,
+  delay: 0,
 };
 
 const KeyAnimation = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
   transition: { duration: 0.5 },
-  delay: 0.5,
+  delay: 1,
 };
 
 const Landing = () => {
