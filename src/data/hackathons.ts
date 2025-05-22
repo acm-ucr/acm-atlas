@@ -2,6 +2,9 @@ import Rosehack from "@/public/logos/rosehack.svg";
 import Cutiehack from "@/public/logos/cutiehack.svg";
 import Citrushack from "@/public/logos/citrushack.svg";
 import Designverse from "@/public/logos/designverse.svg";
+import designverseImages from "@/data/hacks/designverseimages";
+import citrushackImages from "@/data/hacks/citrushackimages";
+import roseHackImages from "@/data/hacks/rosehackimages";
 import { StaticImageData } from "next/image";
 
 interface Hackathon {
@@ -15,6 +18,10 @@ interface Hackathon {
   textColor: string;
   bgColor: string;
   subtitle: string;
+  carouselItems: {
+    image: StaticImageData;
+    alt: string;
+  }[];
   devposts: {
     year: string;
     link: string;
@@ -41,6 +48,7 @@ const hackathons: Hackathon[] = [
     textColor: "text-acm-orange-400",
     bgColor: "bg-acm-orange-400",
     subtitle: "Hackathon",
+    carouselItems: citrushackImages,
     devposts: [
       { year: "2019", link: "https://cutiehack2019.devpost.com/" },
       { year: "2020", link: "https://cutiehack2020.devpost.com/" },
@@ -71,6 +79,7 @@ const hackathons: Hackathon[] = [
     textColor: "text-acm-orange-400",
     bgColor: "bg-acm-orange-400",
     subtitle: "Hackathon",
+    carouselItems: citrushackImages,
     devposts: [
       { year: "2019", link: "https://citrushack2019.devpost.com/" },
       { year: "2020", link: "https://citrushack2020.devpost.com/" },
@@ -110,6 +119,7 @@ const hackathons: Hackathon[] = [
     textColor: "text-acm-green-400",
     bgColor: "bg-acm-green-400",
     subtitle: "Hackathon",
+    carouselItems: roseHackImages,
     devposts: [
       { year: "2020", link: "https://rose-hack-2020.devpost.com/" },
       { year: "2021", link: "https://rose-hack-2021.devpost.com/" },
@@ -140,6 +150,7 @@ const hackathons: Hackathon[] = [
     textColor: "text-[#203649]",
     bgColor: "bg-[#203649]",
     subtitle: "Designathon",
+    carouselItems: designverseImages,
     devposts: [{ year: "2024", link: "https://designverseucr.devpost.com/" }],
     stats: [
       { end: 500, label: "Hackers" },
