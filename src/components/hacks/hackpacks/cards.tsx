@@ -6,10 +6,10 @@ const Cards = () => (
     <p className="mt-10 py-8 text-center text-4xl font-bold text-acm-gray-500 md:text-6xl">
       HACKPACKS
     </p>
-    <p className="pb-8 text-2xl font-bold text-acm-gray-500 md:text-4xl">
+    <p className="pb-8 text-center text-2xl font-bold text-acm-gray-500 md:text-left md:text-4xl">
       WHAT ARE HACKPACKS?
     </p>
-    <p className="text-lg text-acm-gray-500 md:text-2xl">
+    <p className="text-center text-lg text-acm-gray-500 md:text-left md:text-2xl">
       Hackpacks are GitHub templates with pre-configured starter code, designed
       to get you up and running fast without the hassle of setup. Whether you're
       at a hackathon or starting a new project, hackpacks provide an
