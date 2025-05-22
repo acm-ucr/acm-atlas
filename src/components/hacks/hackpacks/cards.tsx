@@ -2,7 +2,7 @@ import Card from "./card";
 import { HACKPACKS } from "@/data/hackpacks";
 
 const Cards = () => (
-  <div className="mx-auto flex w-11/12 flex-col justify-center">
+  <div className="mx-auto flex w-5/6 flex-col justify-center md:w-11/12">
     <p className="mt-10 py-8 text-center text-4xl font-bold text-acm-gray-500 md:text-6xl">
       HACKPACKS
     </p>
