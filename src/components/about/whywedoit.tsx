@@ -29,7 +29,7 @@ const WhyWeDoIt = () => {
           className="pic4 h-full w-full rounded-3xl object-cover"
         />
       </div>
-      <div className="text-center">
+      <div className="order-1 text-center md:order-2">
         <p className="py-5 text-4xl font-bold text-acm-gray-500">
           WHY WE DO IT
         </p>
