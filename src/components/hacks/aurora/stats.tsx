@@ -1,30 +1,27 @@
 "use client";
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import auroraStar from "@/public/logos/aurorastar.webp";
+import { useQuery } from "@tanstack/react-query";
 
 const Stats = () => {
-  const [closedPRs, setClosedPRs] = useState<number | null>(null);
+  const fetchClosedPRs = async () => {
+    const res = await fetch(
+      "https://api.github.com/search/issues?q=repo:acm-ucr/aurora+type:pr+state:closed",
+    );
 
-  useEffect(() => {
-    const fetchClosedPRs = async () => {
-      try {
-        const res = await fetch(
-          "https://api.github.com/search/issues?q=repo:acm-ucr/aurora+type:pr+state:closed",
-        );
-        if (!res.ok) {
-          console.error("Failed to fetch closed PRs.");
-        }
+    const data = await res.json();
+    return data.total_count;
+  };
 
-        const data = await res.json();
-        setClosedPRs(data.total_count);
-      } catch (error) {
-        console.error("Error fetching closed PRs: ", error);
-      }
-    };
-
-    fetchClosedPRs();
-  }, []);
+  const {
+    data: closedPRs,
+    isLoading,
+    isError,
+  } = useQuery({
+    queryKey: ["closedPRs"],
+    queryFn: fetchClosedPRs,
+    staleTime: 1000 * 60 * 5,
+  });
 
   return (
     <div className="py-30 flex flex-col justify-center">
@@ -34,7 +31,9 @@ const Stats = () => {
           <p className="text-2xl font-medium">commits</p>
         </div>
         <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-          <p className="pb-4 text-6xl font-bold">{closedPRs}</p>
+          <p className="pb-4 text-6xl font-bold">
+            {isLoading ? "0" : isError ? "Error" : closedPRs}
+          </p>
           <p className="text-2xl font-medium">PRs</p>
         </div>
         <div className="flex flex-col justify-center">
