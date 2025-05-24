@@ -51,14 +51,17 @@ const Hacks = () => {
       </div>
 
       <div className="mx-[15%] grid grid-cols-3 pb-8">
-        <div className="col-span-2">
+        <div className="order-2 col-span-3 md:order-1 md:col-span-2">
           <motion.div
             {...TitleAnimation}
-            className={`pb-4 text-4xl font-bold text-acm-turquoise-300`}
+            className={`pb-4 pt-6 text-center text-4xl font-bold text-acm-turquoise-300 md:pt-0 md:text-left`}
           >
             AURORA
           </motion.div>
-          <motion.div {...DescriptionAnimation}>
+          <motion.div
+            {...DescriptionAnimation}
+            className="flex flex-col items-center text-center md:items-start md:text-left"
+          >
             <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
               Aurora is an all in one dashboard used to manage and run Hackathon
               competitions.
@@ -66,7 +69,7 @@ const Hacks = () => {
 
             <Link
               href="/hacks/aurora"
-              className="flex w-1/4 items-center justify-center rounded-lg bg-acm-turquoise-200 py-2 text-xl font-semibold text-white"
+              className="flex w-fit items-center justify-center rounded-lg bg-acm-turquoise-200 px-4 py-2 text-xl font-semibold text-white md:w-1/4 md:px-0"
             >
               Learn More →
             </Link>
@@ -75,7 +78,7 @@ const Hacks = () => {
 
         <motion.div
           {...LogoAnimation}
-          className="flex items-center justify-center"
+          className="order-1 col-span-3 flex items-center justify-center md:order-2 md:col-span-1"
         >
           <Image src={Aurora} alt="Aurora" />
         </motion.div>
@@ -116,11 +119,14 @@ const Hacks = () => {
       <div className="mx-[15%] flex flex-col pb-[10%]">
         <motion.div
           {...TitleAnimation}
-          className="pb-4 text-4xl font-bold text-acm-gray-500"
+          className="pb-4 text-center text-4xl font-bold text-acm-gray-500 md:text-left"
         >
           NOT SURE HOW TO GET HACKING?
         </motion.div>
-        <motion.div {...DescriptionAnimation}>
+        <motion.div
+          {...DescriptionAnimation}
+          className="flex flex-col items-center text-center md:items-start md:text-left"
+        >
           <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
             Check out our hackpacks, a tool you can use during your hackathons
             here at UCR to get started on your project!
