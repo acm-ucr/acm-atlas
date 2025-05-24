@@ -1,5 +1,5 @@
 "use client";
-import hackathons from "@/data/hackathons";
+import { hackathons } from "@/data/hackathons";
 import WhatWeOffer from "./whatweoffer";
 import Aurora from "@/public/logos/aurora.svg";
 import Image from "next/image";
