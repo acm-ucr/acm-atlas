@@ -3,7 +3,7 @@ import StatsGrid from "@/components/home/statsgrid";
 import FeaturedProjects from "@/components/home/featuredprojects";
 import SeeMore from "@/components/home/seemore";
 import CurrentOpportunities from "@/components/home/currentopportunities";
-import UpcomingEvents from "@/components/events/upcomingevents";
+import Events from "@/components/events/upcomingevents/events";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       <StatsGrid />
       <CurrentOpportunities />
       <FeaturedProjects />
-      <UpcomingEvents />
+      <Events />
       <SeeMore />
     </>
   );
