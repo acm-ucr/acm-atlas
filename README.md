@@ -1,22 +1,21 @@
-# ACM Hydra
+# ACM Atlas Website
 
 ![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TypeScript](https://img.shields.io/badge/typescript-%23407ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 <br/>
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 ![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
 
 ## Figma
 
-[ACM Hydra Figma Design File](https://www.figma.com/design/wgXW6z9UXk2Rkh5Uve5Tp9/ACM-WEBSITE?node-id=0-1&t=VipkSDEEnHEbmbmN-1)
+[ACM Atlas Website Figma Design File](<https://www.figma.com/design/qQLesadGHl9xa1FnximmJ8/acm-website-(-new-!-)?node-id=0-1&p=f&t=Jde62jHJgiEP6P6R-0>)
 
 ## Node.js
 
-The ACM Hydra Official Website runs on Node.js Version 16.17.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
+ACM Atlas Website runs on Node.js Version 20.10.0 and higher. Please ensure you have Node.js installed via the [official website](https://nodejs.org/en).
 
 ## Next.js
 
@@ -27,7 +26,14 @@ This project is built using [Next.js](https://nextjs.org), a React framework. Ne
 The following environment variables are required and must be stored in an `.env` file:
 
 ```env
-N/A
+NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY=
+NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS=
+NEXT_PUBLIC_GOOGLE_CALENDAR_SPARK=
+NEXT_PUBLIC_GOOGLE_CALENDAR_FORGE=
+NEXT_PUBLIC_GOOGLE_CALENDAR_CREATE=
+NEXT_PUBLIC_GOOGLE_CALENDAR_DAS=
+NEXT_PUBLIC_GOOGLE_CALENDAR_BITBYTE=
+INSTAGRAM_BEHOLD_ID=
 ```
 
 ## Commands

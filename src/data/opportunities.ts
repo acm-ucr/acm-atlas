@@ -1,0 +1,44 @@
+import Spark from "@/public/home/opportunities/spark.svg";
+import Forge from "@/public/home/opportunities/forge.svg";
+import Create from "@/public/home/opportunities/create.svg";
+import DAS from "@/public/home/opportunities/das.svg";
+import Bitbyte from "@/public/home/opportunities/bitbyte.svg";
+
+const opportunities = [
+  {
+    name: "spark",
+    card_background: Spark,
+    year_and_quarter: "SUMMER '25",
+    link: "/programs/spark",
+    application_link: "/",
+  },
+  {
+    name: "forge",
+    card_background: Forge,
+    year_and_quarter: "FALL '25",
+    link: "/programs/forge",
+    application_link: "/",
+  },
+  {
+    name: "create",
+    card_background: Create,
+    year_and_quarter: "SUMMER '25",
+    link: "/programs/create",
+    application_link: "/",
+  },
+  {
+    name: "das",
+    card_background: DAS,
+    year_and_quarter: "FALL '25",
+    link: "/programs/das",
+    application_link: "/",
+  },
+  {
+    name: "bit/byte",
+    card_background: Bitbyte,
+    year_and_quarter: "FALL '25",
+    link: "/programs/bitbyte",
+    application_link: "/",
+  },
+];
+export default opportunities;
