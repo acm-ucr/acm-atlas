@@ -1,8 +1,8 @@
 "use client";
-import Card from "@/components/events/card";
+import Card from "@/components/events/upcomingevents/card";
 import { motion } from "motion/react";
 import { DayPicker } from "react-day-picker";
-import { TypedGoogleEventProps } from "./calendarcall";
+import { TypedGoogleEventProps } from "../calendarcall";
 import das from "@/public/events/barchart.svg";
 import create from "@/public/events/cursor.svg";
 import general from "@/public/events/at.svg";

@@ -5,9 +5,9 @@ import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 import { DayPicker } from "react-day-picker";
 import { useState } from "react";
 import { TypedGoogleEventProps } from "@/components/events/calendarcall";
-import CalendarDay from "@/components/events/calendarday";
-import CalendarTop from "@/components/events/calendartop";
-import UpcomingEvents from "../events/upcomingevents";
+import CalendarDay from "@/components/events/month/calendarday";
+import CalendarTop from "@/components/events/month/calendartop";
+import Events from "../events/upcomingevents/events";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker> & {
   events: TypedGoogleEventProps[];
@@ -48,7 +48,7 @@ function Calendar({
   };
 
   return (
-    <div className="flex flex-col py-[5vh] md:py-[10vh]">
+    <div className="flex flex-col">
       <CalendarTop
         currentDate={currentDate}
         onPrevMonth={prevMonth}
@@ -110,7 +110,7 @@ function Calendar({
         }}
         {...props}
       />
-      <UpcomingEvents />
+      <Events />
     </div>
   );
 }
