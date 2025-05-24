@@ -16,6 +16,16 @@ interface ProgramProps {
 }
 
 const dropInAnimation = {
+  viewport: { once: true },
+  variants: {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 30, transition: { duration: 0.75, delay: 0.2 } },
+  },
+  initial: "hidden",
+  whileInView: "show",
+};
+const dropInAnimationFast = {
+  viewport: { once: true },
   variants: {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 30, transition: { duration: 0.5, delay: 0.2 } },
@@ -23,18 +33,11 @@ const dropInAnimation = {
   initial: "hidden",
   whileInView: "show",
 };
-const dropInAnimationFast = {
-  variants: {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 30, transition: { duration: 0.2, delay: 0.2 } },
-  },
-  initial: "hidden",
-  whileInView: "show",
-};
 const slideInAnimation = {
+  viewport: { once: true },
   variants: {
     hidden: { opacity: 0, x: 30 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.2, delay: 0.5 } },
+    show: { opacity: 1, x: 0, transition: { duration: 0.75, delay: 0.5 } },
   },
   initial: "hidden",
   whileInView: "show",
