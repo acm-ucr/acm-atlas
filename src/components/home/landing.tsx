@@ -23,8 +23,8 @@ const Landing = () => {
   return (
     <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
       <motion.div {...TitleAnimation}>
-        <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
-          <p className="z-10 py-8">ASSOCIATION OF</p>
+        <div className="mt-10 flex flex-col items-center justify-center text-center text-4xl font-semibold text-acm-gray-500 md:text-6xl">
+          <p className="z-10 md:py-8">ASSOCIATION OF</p>
           <p className="z-10">COMPUTING MACHINERY</p>
         </div>
       </motion.div>

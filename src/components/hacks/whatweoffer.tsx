@@ -43,20 +43,23 @@ const WhatWeOffer = ({
 }: WhatWeOfferProps) => {
   return (
     <div className="mx-[15%] grid grid-cols-3 pb-8">
-      <div className="col-span-2">
+      <div className="order-1 col-span-3 md:order-1 md:col-span-2">
         <motion.div
           {...TitleAnimation}
-          className={`${textColor} pb-4 text-4xl font-bold`}
+          className={`${textColor} pb-4 pt-6 text-center text-4xl font-bold md:pt-0 md:text-left`}
         >
           {name}
         </motion.div>
-        <motion.div {...DescriptionAnimation}>
+        <motion.div
+          {...DescriptionAnimation}
+          className="flex flex-col items-center text-center md:items-start md:text-left"
+        >
           <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
             {description}
           </p>
           <Link
             href={link}
-            className={`${bgColor} flex w-1/4 items-center justify-center rounded-lg py-2 text-xl font-semibold text-white`}
+            className={`${bgColor} flex w-fit items-center justify-center rounded-lg px-2 py-2 text-xl font-semibold text-white md:w-1/4 md:px-0`}
           >
             Learn More →
           </Link>
@@ -64,7 +67,7 @@ const WhatWeOffer = ({
       </div>
       <motion.div
         {...LogoAnimation}
-        className="flex items-center justify-center"
+        className="order-0 col-span-3 flex items-center justify-center md:order-2 md:col-span-1"
       >
         <Image src={logo} alt="logo" />
       </motion.div>
