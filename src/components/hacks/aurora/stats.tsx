@@ -1,7 +1,33 @@
+"use client";
+import { useQuery } from "@tanstack/react-query";
 import Image from "next/image";
 import auroraStar from "@/public/logos/aurorastar.webp";
 
+const fetchDaysSinceBegan = async () => {
+  const res = await fetch("https://api.github.com/repos/acm-ucr/aurora");
+  if (!res.ok) {
+    throw new Error("Failed to fetch data from Aurora repo");
+  }
+  const data = await res.json();
+
+  const createdDate = new Date(data.created_at);
+  const now = new Date();
+  const timeDiff = now.getTime() - createdDate.getTime();
+  const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+  return { days };
+};
+
 const Stats = () => {
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ["daysSinceBegan"],
+    queryFn: fetchDaysSinceBegan,
+    staleTime: 1000 * 60 * 5, //5 minutes
+  });
+
+  if (isLoading) return <p> Loading...</p>;
+  if (isError || !data) return <p>Error loading days since began.</p>;
+
   return (
     <div className="py-30 flex flex-col justify-center">
       <div className="pb-18 ml-[15%] grid gap-10 text-acm-gray-500 [grid-template-columns:23%_21%_23%]">
@@ -31,7 +57,7 @@ const Stats = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center">
-          <p className="pb-4 text-6xl font-bold">623</p>
+          <p className="pb-4 text-6xl font-bold">{data.days}</p>
           <p className="text-2xl font-medium">days since we began</p>
         </div>
       </div>
