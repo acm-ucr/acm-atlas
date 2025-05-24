@@ -153,7 +153,10 @@ export const designverse: Hackathon = {
   bgColor: "bg-[#203649]",
   subtitle: "Designathon",
   carouselItems: designverseImages,
-  devposts: [{ year: "2024", link: "https://designverseucr.devpost.com/" }],
+  devposts: [
+    { year: "2024", link: "https://designverseucr.devpost.com/" },
+    { year: "2025", link: "https://designverse2025.devpost.com/" },
+  ],
   stats: [
     { end: 500, label: "Hackers" },
     { end: 2500, label: "Projects" },
