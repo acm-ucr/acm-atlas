@@ -21,7 +21,7 @@ const Instagram = () => {
   return (
     <div className="mx-auto mb-12 flex w-2/3 flex-col items-center">
       <p className="mb-8 text-center text-4xl font-bold text-acm-gray-500">
-        FOLLOW OUR INSTAGRAM
+        FOLLOW OUR INSTAGRAM @ACM_UCR
       </p>
 
       <div data-behold-id={process.env.INSTAGRAM_BEHOLD_ID}></div>
