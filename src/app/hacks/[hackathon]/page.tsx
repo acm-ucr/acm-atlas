@@ -1,10 +1,17 @@
 import Hack from "@/components/hacks/hack";
-import hacks from "@/data/hackathons";
+import {
+  cutiehack,
+  citrushack,
+  rosehack,
+  designverse,
+} from "@/data/hackathons";
 import { notFound } from "next/navigation";
 
 interface PageProps {
   params: Promise<{ hackathon: string }>;
 }
+
+const hacks = [cutiehack, citrushack, rosehack, designverse];
 
 const Page = async ({ params }: PageProps) => {
   const { hackathon } = await params;
