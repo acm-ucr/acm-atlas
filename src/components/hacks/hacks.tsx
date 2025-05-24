@@ -1,5 +1,10 @@
 "use client";
-import { hackathons } from "@/data/hackathons";
+import {
+  cutiehack,
+  citrushack,
+  rosehack,
+  designverse,
+} from "@/data/hackathons";
 import WhatWeOffer from "./whatweoffer";
 import Aurora from "@/public/logos/aurora.svg";
 import Image from "next/image";
@@ -76,19 +81,38 @@ const Hacks = () => {
         </motion.div>
       </div>
 
-      {hackathons.map(
-        ({ description, bgColor, textColor, logo, id, name }, index) => (
-          <WhatWeOffer
-            key={index}
-            name={name}
-            bgColor={bgColor}
-            description={description}
-            textColor={textColor}
-            logo={logo}
-            link={`/hacks/${id}`}
-          />
-        ),
-      )}
+      <WhatWeOffer
+        name="CutieHack"
+        bgColor={cutiehack.bgColor}
+        description={cutiehack.description}
+        textColor={cutiehack.textColor}
+        logo={cutiehack.logo}
+        link="/hacks/cutiehack"
+      />
+      <WhatWeOffer
+        name="CitrusHack"
+        bgColor={citrushack.bgColor}
+        description={citrushack.description}
+        textColor={citrushack.textColor}
+        logo={citrushack.logo}
+        link="/hacks/citrushack"
+      />
+      <WhatWeOffer
+        name="RoseHack"
+        bgColor={rosehack.bgColor}
+        description={rosehack.description}
+        textColor={rosehack.textColor}
+        logo={rosehack.logo}
+        link="/hacks/rosehack"
+      />
+      <WhatWeOffer
+        name="Designverse"
+        bgColor={designverse.bgColor}
+        description={designverse.description}
+        textColor={designverse.textColor}
+        logo={designverse.logo}
+        link="/hacks/designverse"
+      />
       <div className="mx-[15%] flex flex-col pb-[10%]">
         <motion.div
           {...TitleAnimation}
