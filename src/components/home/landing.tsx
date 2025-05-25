@@ -30,7 +30,11 @@ const Landing = () => {
       </motion.div>
       <div className="relative flex flex-col items-center justify-center overflow-x-hidden pt-16">
         <motion.div {...KeyAnimation}>
-          <Image src={Keys} alt="Keys" className="z-10 mb-16" />
+          <Image
+            src={Keys}
+            alt="Keys"
+            className="z-10 mx-auto mb-16 w-11/12 md:w-auto"
+          />
         </motion.div>
         <div className="relative z-10 mx-auto h-20 w-10/12 rounded-t-2xl bg-white/45 md:w-3/4 2xl:w-1/2">
           <div className="absolute left-8 top-8 h-6 w-6 rounded-full bg-[#F6F6F6]/50 2xl:bg-[#F6F6F6]" />
