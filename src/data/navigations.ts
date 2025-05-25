@@ -16,7 +16,7 @@ const navigations = [
     subItems: [
       {
         subName: "SPARK",
-        subLink: "/programs/spark",
+        subLink: "/programs/sparksss",
       },
       {
         subName: "FORGE",
