@@ -1,4 +1,4 @@
-/* import ProgramHeader from "@/components/programs/programheader";
+import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Spark1 from "@/public/spark/spark1.webp";
 import spark from "@/data/techstacks/spark";
@@ -8,13 +8,12 @@ import Spark from "@/public/logos/spark.svg";
 import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
 import WhatWeDo from "@/components/programs/spark/whatwedo";
 import Projects from "@/components/programs/projects";
-import SparkData from "@/data/projects/spark"; */
+import SparkData from "@/data/projects/spark";
 
 const Page = () => {
   return (
     <div>
-      test
-      {/* <ProgramHeader
+      <ProgramHeader
         header="SPARK"
         subtitle="Web Development"
         text="ACM Spark is a 10 week program that focuses on static front-end web development for campus organizations / companies."
@@ -34,7 +33,7 @@ const Page = () => {
       />
       <WhatWeDo />
       <FAQ />
-      <Projects projects={SparkData} /> */}
+      <Projects projects={SparkData} />
     </div>
   );
 };
