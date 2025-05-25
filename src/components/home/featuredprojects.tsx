@@ -23,7 +23,7 @@ const FeaturedProjects = () => {
         </p>
       </div>
       <div className="mx-10 mt-10 font-bold text-acm-gray-500">
-        <p className="pb-3 text-4xl">ACM SPARK</p>
+        <p className="pb-3 text-center text-4xl md:text-left">ACM SPARK</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
           <ProjectCard
             project="PHI ALPHA DELTA"
@@ -45,7 +45,7 @@ const FeaturedProjects = () => {
         >
           View All Spark Projects →
         </Link>
-        <p className="text-4xl">ACM CREATE</p>
+        <p className="pb-3 text-center text-4xl md:text-left">ACM CREATE</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
           <ProjectCard project="ACM" image={Create1} link="/" index={index1} />
           <ProjectCard project="WITL" image={Create2} link="/" index={index2} />
@@ -57,7 +57,7 @@ const FeaturedProjects = () => {
         >
           View All Create Projects →
         </Link>
-        <p className="text-4xl">ACM FORGE</p>
+        <p className="pb-3 text-center text-4xl md:text-left">ACM FORGE</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
           <ProjectCard
             project="WIZARD CHESS"
