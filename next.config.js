@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   reactStrictMode: true,
   images: {
     loader: "akamai",
@@ -8,7 +9,7 @@ const nextConfig = {
   },
   basePath: "",
   assetPrefix: "",
-  output: "export",
+  trailingSlash: false,
 };
 
 module.exports = nextConfig;
