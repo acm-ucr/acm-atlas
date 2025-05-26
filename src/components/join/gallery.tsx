@@ -1,13 +1,13 @@
 import Image from "next/image";
-import join1 from "@/public/join/join1.webp";
-import join2 from "@/public/join/join2.webp";
-import join3 from "@/public/join/join3.webp";
-import join4 from "@/public/join/join4.webp";
-import join9 from "@/public/join/join9.webp";
-import join10 from "@/public/join/join10.webp";
-import join11 from "@/public/join/join11.webp";
-import join15 from "@/public/join/join15.webp";
-import join16 from "@/public/join/join16.webp";
+import join1 from "@/public/joinpage/join1.webp";
+import join2 from "@/public/joinpage/join2.webp";
+import join3 from "@/public/joinpage/join3.webp";
+import join4 from "@/public/joinpage/join4.webp";
+import join9 from "@/public/joinpage/join9.webp";
+import join10 from "@/public/joinpage/join10.webp";
+import join11 from "@/public/joinpage/join11.webp";
+import join15 from "@/public/joinpage/join15.webp";
+import join16 from "@/public/joinpage/join16.webp";
 import Link from "next/link";
 
 const Gallery = () => {

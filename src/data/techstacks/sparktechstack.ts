@@ -3,7 +3,7 @@ import Typescript from "@/public/techstacks/typescript.svg";
 import Eslint from "@/public/techstacks/eslint.svg";
 import TailwindCSS from "@/public/techstacks/tailwindcss.svg";
 import Prettier from "@/public/techstacks/prettier.svg";
-const spark = [
+const SparkTechstack = [
   {
     name: "Next.js",
     icon: NextJS,
@@ -30,4 +30,4 @@ const spark = [
     borderColor: "border-acm-prettier",
   },
 ];
-export default spark;
+export default SparkTechstack;

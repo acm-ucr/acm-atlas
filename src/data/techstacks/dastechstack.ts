@@ -3,7 +3,7 @@ import R from "@/public/techstacks/r.webp";
 import Numpy from "@/public/techstacks/numpy.svg";
 import Pytorch from "@/public/techstacks/pytorch.svg";
 import Scikit from "@/public/techstacks/scikit.webp";
-const das = [
+const DASTechstack = [
   {
     name: "Python",
     icon: Python,
@@ -30,4 +30,4 @@ const das = [
     borderColor: "border-acm-scikit",
   },
 ];
-export default das;
+export default DASTechstack;

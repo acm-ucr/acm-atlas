@@ -80,7 +80,7 @@ const WhatWeOffer = ({
         </motion.div>
         <motion.div
           {...dropInAnimation}
-          className="mx-auto flex w-[75%] items-center justify-center rounded-lg py-2 text-xl font-semibold text-acm-gray-500 md:mx-0 md:w-1/2 2xl:w-full 2xl:items-start 2xl:justify-start"
+          className="mx-auto flex w-[75%] items-center justify-center rounded-lg py-2 text-xl font-semibold text-acm-gray-500 md:mx-0 md:w-1/2 md:justify-start 2xl:w-full 2xl:items-start 2xl:justify-start"
         >
           <Link
             href={link}

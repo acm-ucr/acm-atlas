@@ -1,44 +1,44 @@
-import d3 from "@/public/programs/create/3d.webp";
-import aag from "@/public/programs/create/aag.webp";
-import acmhydra from "@/public/programs/create/acmhydra.webp";
-import aiatucr from "@/public/programs/create/aiatucr.webp";
-import ais from "@/public/programs/create/ais.webp";
-import artfactory from "@/public/programs/create/artfactory.webp";
-import asme from "@/public/programs/create/asme.webp";
-import aviatr from "@/public/programs/create/aviatr.webp";
-import bap from "@/public/programs/create/bap.webp";
-import cse from "@/public/programs/create/cse.webp";
-import cvdsa from "@/public/programs/create/cvdsa.webp";
-import ewb from "@/public/programs/create/ewb.webp";
-import gardening from "@/public/programs/create/gardening.webp";
-import h4b from "@/public/programs/create/h4b.webp";
-import hearts from "@/public/programs/create/hearts.webp";
-import highlandergloves from "@/public/programs/create/highlandergloves.webp";
-import hiss from "@/public/programs/create/hiss.webp";
-import hlg from "@/public/programs/create/hlg.webp";
-import hsp from "@/public/programs/create/hsp.webp";
-import ieee from "@/public/programs/create/ieee.webp";
-import iranianstudents from "@/public/programs/create/iranianstudentassociation.webp";
-import isa from "@/public/programs/create/isa.webp";
-import jmproduct from "@/public/programs/create/jmproduct.webp";
-import pad from "@/public/programs/create/pad.webp";
-import quant from "@/public/programs/create/quant.webp";
-import rishi from "@/public/programs/create/rishi.webp";
-import robosub from "@/public/programs/create/robosub.webp";
-import rtools from "@/public/programs/create/rtools.webp";
-import saf from "@/public/programs/create/saf.webp";
-import seniordesign from "@/public/programs/create/seniordesign.webp";
-import skate from "@/public/programs/create/skate.webp";
-import starwars from "@/public/programs/create/starwars.webp";
-import swim from "@/public/programs/create/swim.webp";
-import tag from "@/public/programs/create/tag.webp";
-import tkd from "@/public/programs/create/tkd.webp";
-import ula from "@/public/programs/create/ula.webp";
-import vexrobotics from "@/public/programs/create/vexrobotics.webp";
-import winc from "@/public/programs/create/winc.webp";
-import witl from "@/public/programs/create/witl.webp";
+import d3 from "@/public/programprojects/create/3d.webp";
+import aag from "@/public/programprojects/create/aag.webp";
+import acmhydra from "@/public/programprojects/create/acmhydra.webp";
+import aiatucr from "@/public/programprojects/create/aiatucr.webp";
+import ais from "@/public/programprojects/create/ais.webp";
+import artfactory from "@/public/programprojects/create/artfactory.webp";
+import asme from "@/public/programprojects/create/asme.webp";
+import aviatr from "@/public/programprojects/create/aviatr.webp";
+import bap from "@/public/programprojects/create/bap.webp";
+import cse from "@/public/programprojects/create/cse.webp";
+import cvdsa from "@/public/programprojects/create/cvdsa.webp";
+import ewb from "@/public/programprojects/create/ewb.webp";
+import gardening from "@/public/programprojects/create/gardening.webp";
+import h4b from "@/public/programprojects/create/h4b.webp";
+import hearts from "@/public/programprojects/create/hearts.webp";
+import highlandergloves from "@/public/programprojects/create/highlandergloves.webp";
+import hiss from "@/public/programprojects/create/hiss.webp";
+import hlg from "@/public/programprojects/create/hlg.webp";
+import hsp from "@/public/programprojects/create/hsp.webp";
+import ieee from "@/public/programprojects/create/ieee.webp";
+import iranianstudents from "@/public/programprojects/create/iranianstudentassociation.webp";
+import isa from "@/public/programprojects/create/isa.webp";
+import jmproduct from "@/public/programprojects/create/jmproduct.webp";
+import pad from "@/public/programprojects/create/pad.webp";
+import quant from "@/public/programprojects/create/quant.webp";
+import rishi from "@/public/programprojects/create/rishi.webp";
+import robosub from "@/public/programprojects/create/robosub.webp";
+import rtools from "@/public/programprojects/create/rtools.webp";
+import saf from "@/public/programprojects/create/saf.webp";
+import seniordesign from "@/public/programprojects/create/seniordesign.webp";
+import skate from "@/public/programprojects/create/skate.webp";
+import starwars from "@/public/programprojects/create/starwars.webp";
+import swim from "@/public/programprojects/create/swim.webp";
+import tag from "@/public/programprojects/create/tag.webp";
+import tkd from "@/public/programprojects/create/tkd.webp";
+import ula from "@/public/programprojects/create/ula.webp";
+import vexrobotics from "@/public/programprojects/create/vexrobotics.webp";
+import winc from "@/public/programprojects/create/winc.webp";
+import witl from "@/public/programprojects/create/witl.webp";
 
-const create = [
+const CreateProjects = [
   {
     photo: d3,
     name: "3D",
@@ -297,4 +297,4 @@ const create = [
   },
 ];
 
-export default create;
+export default CreateProjects;

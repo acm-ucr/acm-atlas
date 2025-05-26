@@ -1,14 +1,14 @@
 import Link from "next/link";
 import ProjectCard from "./projectcard";
-import Spark1 from "@/public/spark/pad.webp";
-import Spark2 from "@/public/spark/aviatr.webp";
-import Spark3 from "@/public/spark/saf.webp";
-import Create1 from "@/public/create/acm.webp";
-import Create2 from "@/public/create/witl.webp";
-import Create3 from "@/public/create/nsu.webp";
-import Forge1 from "@/public/forge/wzchess.webp";
-import Forge2 from "@/public/forge/drone.webp";
-import Forge3 from "@/public/forge/blank.webp";
+import Spark1 from "@/public/home/featured/pad.webp";
+import Spark2 from "@/public/home/featured/aviatr.webp";
+import Spark3 from "@/public/home/featured/saf.webp";
+import Create1 from "@/public/home/featured/acm.webp";
+import Create2 from "@/public/home/featured/witl.webp";
+import Create3 from "@/public/home/featured/nsu.webp";
+import Forge1 from "@/public/home/featured/wzchess.webp";
+import Forge2 from "@/public/home/featured/drone.webp";
+import Forge3 from "@/public/home/featured/blank.webp";
 
 const FeaturedProjects = () => {
   const index1 = 1;

@@ -1,9 +1,9 @@
-import Hack from "@/components/hacks/hack";
+import Hackathon from "@/components/hacks/hackathon";
 import { cutiehack } from "@/data/hackathons";
 
 const Cutiehack = () => {
   return (
-    <Hack
+    <Hackathon
       name={cutiehack.name}
       website={cutiehack.website}
       logo={cutiehack.logo}
