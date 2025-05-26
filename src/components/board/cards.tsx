@@ -3,6 +3,7 @@
 import { Board } from "@/data/board";
 import Card from "@/components/board/card";
 import { motion } from "framer-motion";
+import React from "react";
 
 type SectionRefs = {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -16,6 +17,15 @@ const slidedownanimation = {
   },
 };
 
+// Define titleAnimation as a function
+const getTitleAnimation = () => ({
+  transition: { duration: 0.5 },
+  viewport: { once: true, amount: 0.5 },
+  initial: "hidden",
+  whileInView: "show",
+  whileHover: { scale: 1.05 },
+});
+
 const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
   return (
     <div className="flex flex-col items-center justify-center gap-20 pb-[6vh]">
@@ -25,7 +35,13 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
           className="flex flex-col items-center justify-center"
           ref={sectionRefs[title]}
         >
-          <p className="text-4xl font-bold text-acm-gray-500">{title}</p>
+          {/* Apply titleAnimation */}
+          <motion.p
+            className="text-4xl font-bold text-acm-gray-500"
+            {...getTitleAnimation()}
+          >
+            {title}
+          </motion.p>
           <div className="grid grid-cols-2 items-center justify-center gap-y-8 px-5 md:grid-cols-3">
             {members.map(
               (
@@ -35,11 +51,7 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
                 <motion.div
                   variants={slidedownanimation}
                   key={index}
-                  transition={{ duration: 0.5 }}
-                  viewport={{ once: true, amount: 0.5 }}
-                  initial="hidden"
-                  whileInView="show"
-                  whileHover={{ scale: 1.05 }}
+                  {...getTitleAnimation()}
                   className="font-libre group flex flex-col items-center text-sm font-bold md:text-2xl 2xl:text-3xl"
                 >
                   <Card
