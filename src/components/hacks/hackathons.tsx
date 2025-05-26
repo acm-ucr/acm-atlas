@@ -32,7 +32,7 @@ const LogoAnimation = {
   transition: { type: "spring", damping: 40, stiffness: 200, delay: 0.5 },
 };
 
-const Hacks = () => {
+const Hackathons = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="mx-auto flex w-11/12 flex-col justify-center">
@@ -143,4 +143,4 @@ const Hacks = () => {
   );
 };
 
-export default Hacks;
+export default Hackathons;

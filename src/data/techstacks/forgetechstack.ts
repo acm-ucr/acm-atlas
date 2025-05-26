@@ -3,7 +3,7 @@ import Arduino from "@/public/techstacks/arduino.svg";
 import RaspberryPi from "@/public/techstacks/raspberrypi.svg";
 import Qt from "@/public/techstacks/qt.svg";
 
-const forge = [
+const ForgeTechstack = [
   {
     name: "Python",
     icon: Python,
@@ -25,4 +25,4 @@ const forge = [
     borderColor: "border-acm-qt",
   },
 ];
-export default forge;
+export default ForgeTechstack;

@@ -37,7 +37,7 @@ const calendarSources = [
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_BITBYTE, eventType: "bitbyte" },
 ];
 
-const Events = () => {
+const UpcomingEvents = () => {
   const { data, isLoading, isError } = useQuery<{
     allEvents: TypedGoogleEventProps[];
     futureEvents: TypedGoogleEventProps[];
@@ -109,4 +109,4 @@ const Events = () => {
   );
 };
 
-export default Events;
+export default UpcomingEvents;

@@ -1,7 +1,7 @@
-import Hacks from "@/components/hacks/hacks";
+import Hackathons from "@/components/hacks/hackathons";
 
 const Page = () => {
-  return <Hacks />;
+  return <Hackathons />;
 };
 
 export default Page;

@@ -40,7 +40,7 @@ import vexrobotics from "@/public/programs/spark/vexrobotics.webp";
 import winc from "@/public/programs/spark/winc.webp";
 import witl from "@/public/programs/spark/witl.webp";
 
-const acmspark = [
+const SparkProjects = [
   {
     photo: aag,
     name: "AAG",
@@ -318,4 +318,4 @@ const acmspark = [
   },
 ];
 
-export default acmspark;
+export default SparkProjects;

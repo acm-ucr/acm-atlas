@@ -5,7 +5,7 @@ import FAQ from "@/components/programs/forge/faq";
 import Forge from "@/public/logos/forge.svg";
 import grayEllipse from "@/public/ellipses/grayEllipse.svg";
 import Carousel from "@/components/programs/carousel";
-import forge from "@/data/techstacks/forge";
+import ForgeTechstack from "@/data/techstacks/forgetechstack";
 import WhatWeDo from "@/components/programs/forge/whatwedo";
 
 const Page = () => {
@@ -19,7 +19,7 @@ const Page = () => {
         ellipse={grayEllipse}
       />
       <Carousel
-        data={forge}
+        data={ForgeTechstack}
         pad={"px-[1vw]"}
         padmd={"md:px-[2.5vw]"}
         pad2xl={"2xl:px-[14vw]"}

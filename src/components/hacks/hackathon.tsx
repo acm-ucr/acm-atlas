@@ -6,7 +6,7 @@ import CarouselImages from "@/components/hacks/carousel";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { TbMailFilled } from "react-icons/tb";
 
-interface HackProps {
+interface HackathonProps {
   name: string;
   website: string;
   logo: StaticImageData;
@@ -31,7 +31,7 @@ interface HackProps {
   email: string;
 }
 
-const Hack = ({
+const Hackathon = ({
   name,
   website,
   logo,
@@ -45,7 +45,7 @@ const Hack = ({
   stats,
   instagram,
   email,
-}: HackProps) => {
+}: HackathonProps) => {
   return (
     <div className="relative text-center text-2xl font-semibold text-acm-gray-200">
       <p className="py-5 text-5xl font-bold">{name}</p>
@@ -103,4 +103,4 @@ const Hack = ({
   );
 };
 
-export default Hack;
+export default Hackathon;

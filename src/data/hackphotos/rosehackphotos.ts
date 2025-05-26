@@ -3,7 +3,7 @@ import Rosehack2 from "@/public/hacks/rosehack/rosehack2.webp";
 import Rosehack3 from "@/public/hacks/rosehack/rosehack3.webp";
 import Rosehack4 from "@/public/hacks/rosehack/rosehack4.webp";
 
-const roseHackImages = [
+const RoseHackPhotos = [
   {
     image: Rosehack1,
     alt: "Rosehack 1",
@@ -22,4 +22,4 @@ const roseHackImages = [
   },
 ];
 
-export default roseHackImages;
+export default RoseHackPhotos;

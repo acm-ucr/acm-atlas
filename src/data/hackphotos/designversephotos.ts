@@ -9,7 +9,7 @@ import Designverse8 from "@/public/hacks/designverse/designverse8.webp";
 import Designverse9 from "@/public/hacks/designverse/designverse9.webp";
 import Designverse10 from "@/public/hacks/designverse/designverse10.webp";
 
-const designverseImages = [
+const DesignversePhotos = [
   {
     image: Designverse1,
     alt: "Designverse 1",
@@ -52,4 +52,4 @@ const designverseImages = [
   },
 ];
 
-export default designverseImages;
+export default DesignversePhotos;

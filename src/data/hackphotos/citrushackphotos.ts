@@ -5,7 +5,7 @@ import Citrushack4 from "@/public/hacks/citrushack/citrushack4.webp";
 import Citrushack5 from "@/public/hacks/citrushack/citrushack5.webp";
 import Citrushack6 from "@/public/hacks/citrushack/citrushack6.webp";
 
-const citrushackImages = [
+const CitrusHackPhotos = [
   {
     image: Citrushack1,
     alt: "Citrushack 1",
@@ -32,4 +32,4 @@ const citrushackImages = [
   },
 ];
 
-export default citrushackImages;
+export default CitrusHackPhotos;

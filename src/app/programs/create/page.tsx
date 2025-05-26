@@ -7,10 +7,10 @@ import FAQ from "@/components/programs/create/faq";
 import Create from "@/public/logos/create.svg";
 import blueEllipse from "@/public/ellipses/blueEllipse.svg";
 import Carousel from "@/components/programs/carousel";
-import create from "@/data/techstacks/create";
+import CreateTechstack from "@/data/techstacks/createtechstack";
 import WhatWeDo from "@/components/programs/create/whatwedo";
 import Projects from "@/components/programs/projects";
-import CreateData from "@/data/projects/createdata";
+import CreateProjects from "@/data/projects/createprojects";
 
 const Page = () => {
   return (
@@ -23,7 +23,7 @@ const Page = () => {
         ellipse={blueEllipse}
       />
       <Carousel
-        data={create}
+        data={CreateTechstack}
         pad={"px-[1vw]"}
         padmd={"md:px-[6vw]"}
         pad2xl={"2xl:px-[10vw]"}
@@ -35,7 +35,7 @@ const Page = () => {
       />
       <WhatWeDo />
       <FAQ />
-      <Projects projects={CreateData} />
+      <Projects projects={CreateProjects} />
     </>
   );
 };
