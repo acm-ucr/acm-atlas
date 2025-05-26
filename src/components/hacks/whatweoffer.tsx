@@ -42,11 +42,17 @@ const WhatWeOffer = ({
   link,
 }: WhatWeOfferProps) => {
   return (
-    <div className="mx-[15%] grid grid-cols-3 pb-8">
+    <div className="grid grid-cols-1 items-center px-4 py-12 md:grid-cols-3 md:px-[15%]">
+      <motion.div
+        {...LogoAnimation}
+        className="order-0 col-span-3 mb-5 mt-10 flex items-center justify-center md:order-2 md:col-span-1"
+      >
+        <Image src={logo} alt="logo" />
+      </motion.div>
       <div className="order-1 col-span-3 md:order-1 md:col-span-2">
         <motion.div
           {...TitleAnimation}
-          className={`${textColor} pb-4 pt-6 text-center text-4xl font-bold md:pt-0 md:text-left`}
+          className={`${textColor} pb-4 pt-6 text-center text-3xl font-bold md:pt-0 md:text-left md:text-4xl`}
         >
           {name}
         </motion.div>
@@ -54,7 +60,7 @@ const WhatWeOffer = ({
           {...DescriptionAnimation}
           className="flex flex-col items-center text-center md:items-start md:text-left"
         >
-          <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
+          <p className="w-5/6 py-2 pb-6 text-xl font-semibold text-acm-gray-500 md:text-2xl">
             {description}
           </p>
           <Link
@@ -65,12 +71,6 @@ const WhatWeOffer = ({
           </Link>
         </motion.div>
       </div>
-      <motion.div
-        {...LogoAnimation}
-        className="order-0 col-span-3 flex items-center justify-center md:order-2 md:col-span-1"
-      >
-        <Image src={logo} alt="logo" />
-      </motion.div>
     </div>
   );
 };

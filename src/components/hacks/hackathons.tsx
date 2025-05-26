@@ -47,14 +47,16 @@ const Hackathons = () => {
           These hacks provide ACM members with an opportunity to expand their
           skills beyond our programs! Take a look below!
         </p>
-        <p className="my-[4vh] text-center text-5xl font-bold">WHAT WE OFFER</p>
+        <p className="my-[4vh] text-center text-4xl font-bold text-acm-gray-500 md:text-5xl">
+          WHAT WE OFFER
+        </p>
       </div>
 
       <div className="mx-[15%] grid grid-cols-3 pb-8">
         <div className="order-2 col-span-3 md:order-1 md:col-span-2">
           <motion.div
             {...TitleAnimation}
-            className={`pb-4 pt-6 text-center text-4xl font-bold text-acm-turquoise-300 md:pt-0 md:text-left`}
+            className={`pb-4 pt-6 text-center text-3xl font-bold text-acm-turquoise-300 md:pt-0 md:text-left md:text-4xl`}
           >
             AURORA
           </motion.div>
@@ -62,7 +64,7 @@ const Hackathons = () => {
             {...DescriptionAnimation}
             className="flex flex-col items-center text-center md:items-start md:text-left"
           >
-            <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
+            <p className="w-5/6 py-2 pb-6 text-xl font-semibold text-acm-gray-500 md:text-2xl">
               Aurora is an all in one dashboard used to manage and run Hackathon
               competitions.
             </p>
@@ -119,7 +121,7 @@ const Hackathons = () => {
       <div className="mx-[15%] flex flex-col pb-[10%]">
         <motion.div
           {...TitleAnimation}
-          className="pb-4 text-center text-4xl font-bold text-acm-gray-500 md:text-left"
+          className="mt-10 pb-4 text-center text-3xl font-bold text-acm-gray-500 md:text-left md:text-4xl"
         >
           NOT SURE HOW TO GET HACKING?
         </motion.div>
@@ -127,7 +129,7 @@ const Hackathons = () => {
           {...DescriptionAnimation}
           className="flex flex-col items-center text-center md:items-start md:text-left"
         >
-          <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
+          <p className="w-5/6 py-2 pb-6 text-xl font-semibold text-acm-gray-500 md:text-2xl">
             Check out our hackpacks, a tool you can use during your hackathons
             here at UCR to get started on your project!
           </p>
