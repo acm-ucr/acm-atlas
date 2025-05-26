@@ -1,5 +1,7 @@
 import Link from "next/link";
-import hacks from "@/data/hackathons";
+import { cutiehack, citrushack, rosehack } from "@/data/hackathons";
+
+const hacks = [cutiehack, citrushack, rosehack];
 
 const UsedIn = () => {
   return (

@@ -1,14 +1,14 @@
 import Link from "next/link";
 import ProjectCard from "./projectcard";
-import Spark1 from "@/public/spark/pad.webp";
-import Spark2 from "@/public/spark/aviatr.webp";
-import Spark3 from "@/public/spark/saf.webp";
-import Create1 from "@/public/create/acm.webp";
-import Create2 from "@/public/create/witl.webp";
-import Create3 from "@/public/create/nsu.webp";
-import Forge1 from "@/public/forge/wzchess.webp";
-import Forge2 from "@/public/forge/drone.webp";
-import Forge3 from "@/public/forge/blank.webp";
+import Spark1 from "@/public/home/featured/pad.webp";
+import Spark2 from "@/public/home/featured/aviatr.webp";
+import Spark3 from "@/public/home/featured/saf.webp";
+import Create1 from "@/public/home/featured/acm.webp";
+import Create2 from "@/public/home/featured/witl.webp";
+import Create3 from "@/public/home/featured/nsu.webp";
+import Forge1 from "@/public/home/featured/wzchess.webp";
+import Forge2 from "@/public/home/featured/drone.webp";
+import Forge3 from "@/public/home/featured/blank.webp";
 
 const FeaturedProjects = () => {
   const index1 = 1;
@@ -23,7 +23,7 @@ const FeaturedProjects = () => {
         </p>
       </div>
       <div className="mx-10 mt-10 font-bold text-acm-gray-500">
-        <p className="pb-3 text-4xl">ACM SPARK</p>
+        <p className="pb-3 text-center text-4xl md:text-left">ACM SPARK</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
           <ProjectCard
             project="PHI ALPHA DELTA"
@@ -45,7 +45,7 @@ const FeaturedProjects = () => {
         >
           View All Spark Projects →
         </Link>
-        <p className="text-4xl">ACM CREATE</p>
+        <p className="pb-3 text-center text-4xl md:text-left">ACM CREATE</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
           <ProjectCard project="ACM" image={Create1} link="/" index={index1} />
           <ProjectCard project="WITL" image={Create2} link="/" index={index2} />
@@ -57,7 +57,7 @@ const FeaturedProjects = () => {
         >
           View All Create Projects →
         </Link>
-        <p className="text-4xl">ACM FORGE</p>
+        <p className="pb-3 text-center text-4xl md:text-left">ACM FORGE</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
           <ProjectCard
             project="WIZARD CHESS"
