@@ -1,8 +1,6 @@
-"use client";
-
 import { Board } from "@/data/board";
 import Card from "@/components/board/card";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import React from "react";
 
 type SectionRefs = {
@@ -17,7 +15,6 @@ const slidedownanimation = {
   },
 };
 
-// Define titleAnimation as a function
 const getTitleAnimation = () => ({
   transition: { duration: 0.5 },
   viewport: { once: true, amount: 0.5 },
@@ -35,7 +32,6 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
           className="flex flex-col items-center justify-center"
           ref={sectionRefs[title]}
         >
-          {/* Apply titleAnimation */}
           <motion.p
             className="text-4xl font-bold text-acm-gray-500"
             {...getTitleAnimation()}
