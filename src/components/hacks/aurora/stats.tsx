@@ -25,7 +25,7 @@ const Stats = () => {
 
   return (
     <div className="py-30 flex flex-col justify-center">
-      <div className="pb-18 ml-[15%] grid gap-10 text-acm-gray-500 [grid-template-columns:23%_21%_23%]">
+      <div className="ml-[15%] grid gap-10 pb-[5vh] text-acm-gray-500 [grid-template-columns:23%_16%_23%]">
         <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
           <p className="pb-4 text-6xl font-bold">4000+</p>
           <p className="text-2xl font-medium">commits</p>
