@@ -1,13 +1,13 @@
-import Designverse1 from "@/public/hacks/designverse/designverse1.webp";
-import Designverse2 from "@/public/hacks/designverse/designverse2.webp";
-import Designverse3 from "@/public/hacks/designverse/designverse3.webp";
-import Designverse4 from "@/public/hacks/designverse/designverse4.webp";
-import Designverse5 from "@/public/hacks/designverse/designverse5.webp";
-import Designverse6 from "@/public/hacks/designverse/designverse6.webp";
-import Designverse7 from "@/public/hacks/designverse/designverse7.webp";
-import Designverse8 from "@/public/hacks/designverse/designverse8.webp";
-import Designverse9 from "@/public/hacks/designverse/designverse9.webp";
-import Designverse10 from "@/public/hacks/designverse/designverse10.webp";
+import Designverse1 from "@/public/hackspage/designverse/designverse1.webp";
+import Designverse2 from "@/public/hackspage/designverse/designverse2.webp";
+import Designverse3 from "@/public/hackspage/designverse/designverse3.webp";
+import Designverse4 from "@/public/hackspage/designverse/designverse4.webp";
+import Designverse5 from "@/public/hackspage/designverse/designverse5.webp";
+import Designverse6 from "@/public/hackspage/designverse/designverse6.webp";
+import Designverse7 from "@/public/hackspage/designverse/designverse7.webp";
+import Designverse8 from "@/public/hackspage/designverse/designverse8.webp";
+import Designverse9 from "@/public/hackspage/designverse/designverse9.webp";
+import Designverse10 from "@/public/hackspage/designverse/designverse10.webp";
 
 const DesignversePhotos = [
   {

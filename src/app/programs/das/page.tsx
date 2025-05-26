@@ -1,6 +1,6 @@
 import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
-import Das1 from "@/public/das/das1.webp";
+import Das1 from "@/public/daspage/das1.webp";
 import FAQ from "@/components/programs/das/faq";
 import DAS from "@/public/logos/das.svg";
 import purpleEllipse from "@/public/ellipses/purpleEllipse.svg";

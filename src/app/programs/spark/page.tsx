@@ -1,6 +1,6 @@
 import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
-import Spark1 from "@/public/spark/spark1.webp";
+import Spark1 from "@/public/sparkpage/spark1.webp";
 import SparkTechstack from "@/data/techstacks/sparktechstack";
 import Carousel from "@/components/programs/carousel";
 import FAQ from "@/components/programs/spark/faq";

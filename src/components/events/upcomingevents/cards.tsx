@@ -3,12 +3,12 @@ import Card from "@/components/events/upcomingevents/card";
 import { motion } from "motion/react";
 import { DayPicker } from "react-day-picker";
 import { TypedGoogleEventProps } from "../calendarcall";
-import das from "@/public/events/barchart.svg";
-import create from "@/public/events/cursor.svg";
-import general from "@/public/events/at.svg";
-import forge from "@/public/events/gear.svg";
-import spark from "@/public/events/tags.svg";
-import bitbyte from "@/public/events/message.svg";
+import das from "@/public/eventspage/barchart.svg";
+import create from "@/public/eventspage/cursor.svg";
+import general from "@/public/eventspage/at.svg";
+import forge from "@/public/eventspage/gear.svg";
+import spark from "@/public/eventspage/tags.svg";
+import bitbyte from "@/public/eventspage/message.svg";
 import { StaticImageData } from "next/image";
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker> & {

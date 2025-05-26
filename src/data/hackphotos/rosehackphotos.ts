@@ -1,7 +1,7 @@
-import Rosehack1 from "@/public/hacks/rosehack/rosehack1.webp";
-import Rosehack2 from "@/public/hacks/rosehack/rosehack2.webp";
-import Rosehack3 from "@/public/hacks/rosehack/rosehack3.webp";
-import Rosehack4 from "@/public/hacks/rosehack/rosehack4.webp";
+import Rosehack1 from "@/public/hackspage/rosehack/rosehack1.webp";
+import Rosehack2 from "@/public/hackspage/rosehack/rosehack2.webp";
+import Rosehack3 from "@/public/hackspage/rosehack/rosehack3.webp";
+import Rosehack4 from "@/public/hackspage/rosehack/rosehack4.webp";
 
 const RoseHackPhotos = [
   {

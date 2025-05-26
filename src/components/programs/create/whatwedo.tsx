@@ -1,6 +1,6 @@
 import Image from "next/image";
-import WhatWeDo1 from "@/public/create/whatwedo1.webp";
-import WhatWeDo2 from "@/public/create/whatwedo2.webp";
+import WhatWeDo1 from "@/public/createpage/whatwedo1.webp";
+import WhatWeDo2 from "@/public/createpage/whatwedo2.webp";
 
 const WhatWeDo = () => {
   return (

@@ -1,9 +1,9 @@
-import Citrushack1 from "@/public/hacks/citrushack/citrushack1.webp";
-import Citrushack2 from "@/public/hacks/citrushack/citrushack2.webp";
-import Citrushack3 from "@/public/hacks/citrushack/citrushack3.webp";
-import Citrushack4 from "@/public/hacks/citrushack/citrushack4.webp";
-import Citrushack5 from "@/public/hacks/citrushack/citrushack5.webp";
-import Citrushack6 from "@/public/hacks/citrushack/citrushack6.webp";
+import Citrushack1 from "@/public/hackspage/citrushack/citrushack1.webp";
+import Citrushack2 from "@/public/hackspage/citrushack/citrushack2.webp";
+import Citrushack3 from "@/public/hackspage/citrushack/citrushack3.webp";
+import Citrushack4 from "@/public/hackspage/citrushack/citrushack4.webp";
+import Citrushack5 from "@/public/hackspage/citrushack/citrushack5.webp";
+import Citrushack6 from "@/public/hackspage/citrushack/citrushack6.webp";
 
 const CitrusHackPhotos = [
   {

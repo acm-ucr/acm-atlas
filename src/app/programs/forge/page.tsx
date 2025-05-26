@@ -1,6 +1,6 @@
 import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
-import Forge1 from "@/public/forge/forge1.webp";
+import Forge1 from "@/public/forgepage/forge1.webp";
 import FAQ from "@/components/programs/forge/faq";
 import Forge from "@/public/logos/forge.svg";
 import grayEllipse from "@/public/ellipses/grayEllipse.svg";
