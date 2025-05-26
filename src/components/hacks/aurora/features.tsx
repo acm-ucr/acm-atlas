@@ -1,4 +1,4 @@
-import features from "@/data/hacks/features";
+import features from "@/data/aurorafeatures";
 
 const FeaturedProjects = () => {
   return (

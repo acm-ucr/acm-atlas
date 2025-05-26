@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
               <Link href="/hacks/hackpacks">Hackpacks</Link>
-              <Link href="/">Template Resume</Link>
+              <Link href="/templateresume">Template Resume</Link>
               <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
                 CS Internships List
               </Link>
@@ -59,8 +59,8 @@ const Footer = () => {
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
               <Link href="/about">About</Link>
               <Link href="/board">Board</Link>
-              <Link href="/programs">Programs</Link>
-              <Link href="/hacks">Hacks</Link>
+              <Link href="/programs/overview">Programs</Link>
+              <Link href="/hacks/overview">Hacks</Link>
               <Link href="/events">Events</Link>
               <Link href="/join">Join Us</Link>
             </div>
@@ -125,7 +125,7 @@ const Footer = () => {
               </p>
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
                 <Link href="/hacks/hackpacks">Hackpacks</Link>
-                <Link href="/">Template Resume</Link>
+                <Link href="/templateresume">Template Resume</Link>
                 <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
                   CS Internships List
                 </Link>
@@ -141,8 +141,8 @@ const Footer = () => {
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
                 <Link href="/about">About</Link>
                 <Link href="/board">Board</Link>
-                <Link href="/programs">Programs</Link>
-                <Link href="/hacks">Hacks</Link>
+                <Link href="/programs/overview">Programs</Link>
+                <Link href="/hacks/overview">Hacks</Link>
                 <Link href="/events">Events</Link>
                 <Link href="/join">Join Us</Link>
               </div>

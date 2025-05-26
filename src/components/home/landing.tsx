@@ -1,15 +1,41 @@
+"use client";
+
 import Image from "next/image";
 import Keys from "@/public/home/keys.svg";
 import logo from "@/public/home/acmLogo.svg";
+import { motion } from "motion/react";
+
+const TitleAnimation = {
+  initial: { opacity: 0, y: -10 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.5 },
+  delay: 0,
+};
+
+const KeyAnimation = {
+  initial: { opacity: 0 },
+  animate: { opacity: 1 },
+  transition: { duration: 0.5 },
+  delay: 1,
+};
 
 const Landing = () => {
   return (
-    <div className="mt-10 flex flex-col items-center justify-center text-3xl font-semibold text-acm-gray-500 md:text-6xl">
-      <p className="z-10 py-8">ASSOCIATION OF</p>
-      <p className="z-10">COMPUTING MACHINERY</p>
-
+    <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
+      <motion.div {...TitleAnimation}>
+        <div className="mt-10 flex flex-col items-center justify-center text-center text-4xl font-semibold text-acm-gray-500 md:text-6xl">
+          <p className="z-10 md:py-8">ASSOCIATION OF</p>
+          <p className="z-10">COMPUTING MACHINERY</p>
+        </div>
+      </motion.div>
       <div className="relative flex flex-col items-center justify-center overflow-x-hidden pt-16">
-        <Image src={Keys} alt="Keys" className="z-10 mb-16" />
+        <motion.div {...KeyAnimation}>
+          <Image
+            src={Keys}
+            alt="Keys"
+            className="z-10 mx-auto mb-16 w-11/12 md:w-auto"
+          />
+        </motion.div>
         <div className="relative z-10 mx-auto h-20 w-10/12 rounded-t-2xl bg-white/45 md:w-3/4 2xl:w-1/2">
           <div className="absolute left-8 top-8 h-6 w-6 rounded-full bg-[#F6F6F6]/50 2xl:bg-[#F6F6F6]" />
           <div className="absolute left-20 top-8 h-6 w-6 rounded-full bg-[#F6F6F6]/50 2xl:bg-[#F6F6F6]" />

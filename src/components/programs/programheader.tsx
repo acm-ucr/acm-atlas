@@ -22,24 +22,25 @@ const ProgramHeader = ({
   const headerBackground = {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
+    transition: { duration: 0.75 },
   };
 
   const headerTitleAnimation = {
     initial: { opacity: 0 },
     animate: { opacity: 1 },
-    transition: { ease: "easeInOut", duration: 1 },
+    transition: { ease: "easeInOut", duration: 0.75 },
   };
 
   const headerDescriptionAnimation = {
     initial: { x: -40, opacity: 0 },
     animate: { x: 0, opacity: 1 },
-    transition: { ease: "easeInOut", duration: 1 },
+    transition: { ease: "easeInOut", duration: 0.75 },
   };
 
   const headerLogoAnimation = {
     initial: { opacity: 0 },
     animate: { x: 0, opacity: 1 },
-    transition: { ease: "easeInOut", duration: 1.5 },
+    transition: { ease: "easeInOut", duration: 1 },
   };
 
   return (

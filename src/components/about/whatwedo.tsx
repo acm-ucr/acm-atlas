@@ -4,10 +4,10 @@ import Create from "@/public/logos/create.svg";
 import Forge from "@/public/logos/forge.svg";
 import DAS from "@/public/logos/das.svg";
 import BitByte from "@/public/logos/bitbyte.svg";
-import WhatWeDo1 from "@/public/about/whatwedo1.webp";
-import WhatWeDo2 from "@/public/about/whatwedo2.webp";
-import WhatWeDo3 from "@/public/about/whatwedo3.webp";
-import WhatWeDo4 from "@/public/about/whatwedo4.webp";
+import WhatWeDo1 from "@/public/aboutpage/whatwedo1.webp";
+import WhatWeDo2 from "@/public/aboutpage/whatwedo2.webp";
+import WhatWeDo3 from "@/public/aboutpage/whatwedo3.webp";
+import WhatWeDo4 from "@/public/aboutpage/whatwedo4.webp";
 const WhatWeDo = () => {
   return (
     <div className="mx-auto grid w-5/6 grid-cols-1 items-stretch gap-8 pt-[10vh] md:grid-cols-2">

@@ -16,6 +16,16 @@ interface ProgramProps {
 }
 
 const dropInAnimation = {
+  viewport: { once: true },
+  variants: {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 30, transition: { duration: 0.75, delay: 0.2 } },
+  },
+  initial: "hidden",
+  whileInView: "show",
+};
+const dropInAnimationFast = {
+  viewport: { once: true },
   variants: {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 30, transition: { duration: 0.5, delay: 0.2 } },
@@ -23,18 +33,11 @@ const dropInAnimation = {
   initial: "hidden",
   whileInView: "show",
 };
-const dropInAnimationFast = {
-  variants: {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 30, transition: { duration: 0.2, delay: 0.2 } },
-  },
-  initial: "hidden",
-  whileInView: "show",
-};
 const slideInAnimation = {
+  viewport: { once: true },
   variants: {
     hidden: { opacity: 0, x: 30 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.2, delay: 0.5 } },
+    show: { opacity: 1, x: 0, transition: { duration: 0.75, delay: 0.5 } },
   },
   initial: "hidden",
   whileInView: "show",
@@ -77,7 +80,7 @@ const WhatWeOffer = ({
         </motion.div>
         <motion.div
           {...dropInAnimation}
-          className="mx-auto flex w-[75%] items-center justify-center rounded-lg py-2 text-xl font-semibold text-acm-gray-500 md:mx-0 md:w-1/2 2xl:w-full 2xl:items-start 2xl:justify-start"
+          className="mx-auto flex w-[75%] items-center justify-center rounded-lg py-2 text-xl font-semibold text-acm-gray-500 md:mx-0 md:w-1/2 md:justify-start 2xl:w-full 2xl:items-start 2xl:justify-start"
         >
           <Link
             href={link}
