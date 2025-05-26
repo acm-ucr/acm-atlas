@@ -1,8 +1,8 @@
 import Image from "next/image";
-import ourvision1 from "@/public/about/ourvision1.webp";
-import ourvision2 from "@/public/about/ourvision2.webp";
-import ourvision3 from "@/public/about/ourvision3.webp";
-import ourvision4 from "@/public/about/ourvision4.webp";
+import ourvision1 from "@/public/aboutpage/ourvision1.webp";
+import ourvision2 from "@/public/aboutpage/ourvision2.webp";
+import ourvision3 from "@/public/aboutpage/ourvision3.webp";
+import ourvision4 from "@/public/aboutpage/ourvision4.webp";
 
 const OurVision = () => {
   return (
