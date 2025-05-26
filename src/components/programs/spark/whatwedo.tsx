@@ -1,6 +1,6 @@
 import Image from "next/image";
-import left from "@/public/spark/left.webp";
-import right from "@/public/spark/right.webp";
+import left from "@/public/sparkpage/left.webp";
+import right from "@/public/sparkpage/right.webp";
 const WhatWeDo = () => {
   return (
     <div className="relative my-16 grid grid-cols-1 place-items-center gap-16 overflow-x-clip px-[10%] md:grid-cols-2">

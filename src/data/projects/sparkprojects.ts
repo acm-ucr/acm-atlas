@@ -1,46 +1,46 @@
-import aag from "@/public/programs/spark/aag.webp";
-import acmhydra from "@/public/programs/spark/acmhydra.webp";
-import aiatucr from "@/public/programs/spark/aiatucr.webp";
-import ais from "@/public/programs/spark/ais.webp";
-import artfactory from "@/public/programs/spark/artfactory.webp";
-import asme from "@/public/programs/spark/asme.webp";
-import aviatr from "@/public/programs/spark/aviatr.webp";
-import bap from "@/public/programs/spark/bap.webp";
-import csa from "@/public/programs/spark/csa.webp";
-import cse from "@/public/programs/spark/cse.webp";
-import cvdsa from "@/public/programs/spark/cvdsa.webp";
-import ewb from "@/public/programs/spark/ewb.webp";
-import fencing from "@/public/programs/spark/fencing.webp";
-import gardening from "@/public/programs/spark/gardening.webp";
-import h4b from "@/public/programs/spark/h4b.webp";
-import hearts from "@/public/programs/spark/hearts.webp";
-import highlandergloves from "@/public/programs/spark/highlandergloves.webp";
-import hiss from "@/public/programs/spark/hiss.webp";
-import hlg from "@/public/programs/spark/hlg.webp";
-import hsa from "@/public/programs/spark/hsa.webp";
-import hsp from "@/public/programs/spark/hsp.webp";
-import ieee from "@/public/programs/spark/ieee.webp";
-import iranianstudentassociation from "@/public/programs/spark/iranianstudentassociation.webp";
-import isa from "@/public/programs/spark/isa.webp";
-import jnm from "@/public/programs/spark/j&m.webp";
-import leap from "@/public/programs/spark/leap.webp";
-import pad from "@/public/programs/spark/pad.webp";
-import quant from "@/public/programs/spark/quant.webp";
-import rishi from "@/public/programs/spark/prishi.webp";
-import robosub from "@/public/programs/spark/robosub.webp";
-import rtools from "@/public/programs/spark/rtools.webp";
-import saf from "@/public/programs/spark/saf.webp";
-import seniordesign from "@/public/programs/spark/seniordesign.webp";
-import tkd from "@/public/programs/spark/tkd.webp";
-import tag from "@/public/programs/spark/tag.webp";
-import skate from "@/public/programs/spark/skate.webp";
-import starwars from "@/public/programs/spark/starwars.webp";
-import swim from "@/public/programs/spark/swim.webp";
-import vexrobotics from "@/public/programs/spark/vexrobotics.webp";
-import winc from "@/public/programs/spark/winc.webp";
-import witl from "@/public/programs/spark/witl.webp";
+import aag from "@/public/programprojects/sparkprojects/aag.webp";
+import acmhydra from "@/public/programprojects/sparkprojects/acmhydra.webp";
+import aiatucr from "@/public/programprojects/sparkprojects/aiatucr.webp";
+import ais from "@/public/programprojects/sparkprojects/ais.webp";
+import artfactory from "@/public/programprojects/sparkprojects/artfactory.webp";
+import asme from "@/public/programprojects/sparkprojects/asme.webp";
+import aviatr from "@/public/programprojects/sparkprojects/aviatr.webp";
+import bap from "@/public/programprojects/sparkprojects/bap.webp";
+import csa from "@/public/programprojects/sparkprojects/csa.webp";
+import cse from "@/public/programprojects/sparkprojects/cse.webp";
+import cvdsa from "@/public/programprojects/sparkprojects/cvdsa.webp";
+import ewb from "@/public/programprojects/sparkprojects/ewb.webp";
+import fencing from "@/public/programprojects/sparkprojects/fencing.webp";
+import gardening from "@/public/programprojects/sparkprojects/gardening.webp";
+import h4b from "@/public/programprojects/sparkprojects/h4b.webp";
+import hearts from "@/public/programprojects/sparkprojects/hearts.webp";
+import highlandergloves from "@/public/programprojects/sparkprojects/highlandergloves.webp";
+import hiss from "@/public/programprojects/sparkprojects/hiss.webp";
+import hlg from "@/public/programprojects/sparkprojects/hlg.webp";
+import hsa from "@/public/programprojects/sparkprojects/hsa.webp";
+import hsp from "@/public/programprojects/sparkprojects/hsp.webp";
+import ieee from "@/public/programprojects/sparkprojects/ieee.webp";
+import iranianstudentassociation from "@/public/programprojects/sparkprojects/iranianstudentassociation.webp";
+import isa from "@/public/programprojects/sparkprojects/isa.webp";
+import jnm from "@/public/programprojects/sparkprojects/j&m.webp";
+import leap from "@/public/programprojects/sparkprojects/leap.webp";
+import pad from "@/public/programprojects/sparkprojects/pad.webp";
+import quant from "@/public/programprojects/sparkprojects/quant.webp";
+import rishi from "@/public/programprojects/sparkprojects/prishi.webp";
+import robosub from "@/public/programprojects/sparkprojects/robosub.webp";
+import rtools from "@/public/programprojects/sparkprojects/rtools.webp";
+import saf from "@/public/programprojects/sparkprojects/saf.webp";
+import seniordesign from "@/public/programprojects/sparkprojects/seniordesign.webp";
+import tkd from "@/public/programprojects/sparkprojects/tkd.webp";
+import tag from "@/public/programprojects/sparkprojects/tag.webp";
+import skate from "@/public/programprojects/sparkprojects/skate.webp";
+import starwars from "@/public/programprojects/sparkprojects/starwars.webp";
+import swim from "@/public/programprojects/sparkprojects/swim.webp";
+import vexrobotics from "@/public/programprojects/sparkprojects/vexrobotics.webp";
+import winc from "@/public/programprojects/sparkprojects/winc.webp";
+import witl from "@/public/programprojects/sparkprojects/witl.webp";
 
-const spark = [
+const SparkProjects = [
   {
     photo: aag,
     name: "AAG",
@@ -318,4 +318,4 @@ const spark = [
   },
 ];
 
-export default spark;
+export default SparkProjects;

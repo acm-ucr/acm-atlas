@@ -74,7 +74,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="border-b-3 grid grid-cols-4 border-acm-blue-400 p-5 shadow-xl md:grid-cols-5">
+    <div className="grid grid-cols-4 border-acm-blue-400 p-5 shadow-xl md:grid-cols-5 md:border-b-2 md:border-b-acm-blue-600">
       <RiMenu2Fill
         className="block text-3xl text-acm-gray-500 md:hidden"
         onClick={programBar ? handleBothBars : handleNavBar}

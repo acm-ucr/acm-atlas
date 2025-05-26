@@ -3,7 +3,7 @@ import AdobeXD from "@/public/techstacks/adobexd.svg";
 import Figma from "@/public/techstacks/figma.svg";
 import Procreate from "@/public/techstacks/procreate.webp";
 
-const create = [
+const CreateTechstack = [
   {
     name: "Invision",
     icon: Invision,
@@ -25,4 +25,4 @@ const create = [
     borderColor: "border-acm-adobexd",
   },
 ];
-export default create;
+export default CreateTechstack;

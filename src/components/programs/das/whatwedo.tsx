@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Das1 from "@/public/das/das2.webp";
+import Das1 from "@/public/daspage/das2.webp";
 
 const WhatWeDo = () => {
   return (

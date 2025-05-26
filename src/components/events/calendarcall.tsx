@@ -157,7 +157,7 @@ const CalendarCall = () => {
       <p className="mt-10 pt-8 text-center text-6xl font-bold text-acm-gray-500">
         EVENTS
       </p>
-      <div className="mx-auto my-12 grid w-1/4 grid-cols-2 rounded-xl bg-acm-gray-100 px-4 py-2 text-3xl">
+      <div className="mx-auto my-12 grid w-11/12 grid-cols-2 rounded-xl bg-acm-gray-100 px-4 py-2 text-3xl md:w-1/3">
         <button
           onClick={() => setIsMonth(false)}
           className={`my-1 rounded-lg px-4 py-2 transition-colors duration-200 ${
