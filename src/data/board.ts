@@ -290,7 +290,7 @@ export const Board = [
     members: [
       {
         name: "Kaylie Zhao",
-        position: "Create Director",
+        position: "Create Directors",
         color: "text-acm-blue-300",
         shadow: "drop-shadow-3xl-acm-blue-100",
         photo: Kaylie,
@@ -299,7 +299,7 @@ export const Board = [
       },
       {
         name: "Shirley Duong",
-        position: "Create Director",
+        position: "Create Directors",
         color: "text-acm-blue-300",
         shadow: "drop-shadow-3xl-acm-blue-100",
         photo: Shirley,
