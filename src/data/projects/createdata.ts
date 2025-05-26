@@ -38,7 +38,7 @@ import vexrobotics from "@/public/programs/create/vexrobotics.webp";
 import winc from "@/public/programs/create/winc.webp";
 import witl from "@/public/programs/create/witl.webp";
 
-const create = [
+const CreateData = [
   {
     photo: d3,
     name: "3D",
@@ -297,4 +297,4 @@ const create = [
   },
 ];
 
-export default create;
+export default CreateData;

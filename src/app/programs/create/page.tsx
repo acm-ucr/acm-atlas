@@ -10,7 +10,7 @@ import Carousel from "@/components/programs/carousel";
 import create from "@/data/techstacks/create";
 import WhatWeDo from "@/components/programs/create/whatwedo";
 import Projects from "@/components/programs/projects";
-import CreateData from "@/data/projects/create";
+import CreateData from "@/data/projects/createdata";
 
 const Page = () => {
   return (
