@@ -1,5 +1,8 @@
+"use client";
 import CarouselItem from "./carouselitem";
 import { StaticImageData } from "next/image";
+import { motion } from "motion/react";
+
 interface CarouselDataItem {
   name: string;
   icon: StaticImageData;
@@ -13,11 +16,24 @@ interface CarouselProps {
   pad2xl: string;
 }
 
-const Carousel = ({ data, pad, padmd, pad2xl }: CarouselProps) => {
+const CarouselAnimation = {
+  style: { width: "max-content" },
+  transition: { duration: 20, ease: "linear", repeat: Infinity },
+  animate: { x: ["0%", "-50%"] },
+};
+
+const Carousel = ({ data }: CarouselProps) => {
+  const items = [...data, ...data];
+
   return (
-    <div className="relative hidden overflow-hidden py-[6vh] md:flex">
-      <div className="flex w-screen animate-marquee justify-between gap-x-10 px-5">
-        {data.map(({ name, icon, borderColor }, index) => (
+    <div className="relative mb-10 overflow-hidden">
+      <motion.div
+        className="flex items-center gap-8"
+        style={CarouselAnimation.style}
+        animate={CarouselAnimation.animate}
+        transition={CarouselAnimation.transition}
+      >
+        {items.map(({ name, icon, borderColor }, index) => (
           <CarouselItem
             key={index}
             name={name}
@@ -25,19 +41,7 @@ const Carousel = ({ data, pad, padmd, pad2xl }: CarouselProps) => {
             borderColor={borderColor}
           />
         ))}
-      </div>
-      <div
-        className={`absolute flex w-screen animate-marquee-continuation justify-between gap-x-10 ${pad} ${padmd} ${pad2xl}`}
-      >
-        {data.map(({ name, icon, borderColor }, idx) => (
-          <CarouselItem
-            key={idx}
-            name={name}
-            icon={icon}
-            borderColor={borderColor}
-          />
-        ))}
-      </div>
+      </motion.div>
     </div>
   );
 };
