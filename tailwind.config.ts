@@ -110,6 +110,10 @@ module.exports = {
           ring: "oklch(var(--sidebar-ring))",
         },
       },
+      backgroundImage: {
+        "blue-fade":
+          "linear-gradient(to top, rgba(35,145,255, 0.5), rgba(35,145,255, 0))",
+      },
       dropShadow: {
         "3xl-acm-blue-500": "0 10px 20px rgba(79, 167, 255, 1)",
         "3xl-acm-yellow-400": "0 10px 20px rgba(255, 234, 148, 1)",

@@ -9,18 +9,19 @@ import join11 from "@/public/joinpage/join11.webp";
 import join15 from "@/public/joinpage/join15.webp";
 import join16 from "@/public/joinpage/join16.webp";
 import Link from "next/link";
-
+import ImageCard from "./imagecard";
 const Gallery = () => {
   return (
     <div className="mx-auto flex w-11/12 flex-col items-center md:w-3/4">
       <p className="mb-8 text-4xl font-bold text-acm-gray-500">GALLERY</p>
       <div className="grid grid-cols-5 gap-8">
         <div className="col-span-5 grid grid-rows-2 gap-8 md:col-span-2">
-          <Image
+          <ImageCard image={join2} description="Beach!!" alt="Beach" />
+          {/* <Image
             className="grid h-full w-full rounded-3xl object-cover"
             src={join2}
             alt="Beach"
-          />
+          /> */}
           <Image
             className="grid h-full w-full rounded-3xl object-cover"
             src={join4}
