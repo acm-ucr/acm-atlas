@@ -22,9 +22,6 @@ const Page = () => {
       />
       <Carousel
         data={CreateTechstack}
-        pad={"px-[1vw]"}
-        padmd={"md:px-[6vw]"}
-        pad2xl={"2xl:px-[10vw]"}
       />
       <Joinus
         textColor="text-acm-gray-500"

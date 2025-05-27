@@ -20,9 +20,6 @@ const Page = () => {
       />
       <Carousel
         data={DASTechstack}
-        pad={"px-[1vw]"}
-        padmd={"md:px-[5vw]"}
-        pad2xl={"2xl:px-[8vw]"}
       />
       <Joinus
         textColor="text-white"

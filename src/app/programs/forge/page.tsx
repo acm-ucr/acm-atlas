@@ -20,9 +20,6 @@ const Page = () => {
       />
       <Carousel
         data={ForgeTechstack}
-        pad={"px-[1vw]"}
-        padmd={"md:px-[2.5vw]"}
-        pad2xl={"2xl:px-[14vw]"}
       />
       <Joinus
         textColor="text-white"
