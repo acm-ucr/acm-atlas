@@ -18,9 +18,7 @@ const Page = () => {
         logo={Forge}
         ellipse={grayEllipse}
       />
-      <Carousel
-        data={ForgeTechstack}
-      />
+      <Carousel data={ForgeTechstack} />
       <Joinus
         textColor="text-white"
         backgroundColor="bg-acm-gray-200"

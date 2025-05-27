@@ -20,9 +20,7 @@ const Page = () => {
         logo={Create}
         ellipse={blueEllipse}
       />
-      <Carousel
-        data={CreateTechstack}
-      />
+      <Carousel data={CreateTechstack} />
       <Joinus
         textColor="text-acm-gray-500"
         backgroundColor="bg-acm-blue-200"
