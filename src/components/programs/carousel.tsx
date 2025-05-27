@@ -11,9 +11,6 @@ interface CarouselDataItem {
 
 interface CarouselProps {
   data: CarouselDataItem[];
-  pad: string;
-  padmd: string;
-  pad2xl: string;
 }
 
 const CarouselAnimation = {
