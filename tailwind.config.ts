@@ -112,7 +112,7 @@ module.exports = {
       },
       backgroundImage: {
         "blue-fade":
-          "linear-gradient(to top, rgba(35,145,255, 0.5), rgba(35,145,255, 0))",
+          "linear-gradient(to top, rgba(35,145,255, 0.75), rgba(35,145,255, 0))",
       },
       dropShadow: {
         "3xl-acm-blue-500": "0 10px 20px rgba(79, 167, 255, 1)",
