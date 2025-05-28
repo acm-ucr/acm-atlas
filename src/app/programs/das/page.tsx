@@ -18,12 +18,7 @@ const Page = () => {
         logo={DAS}
         ellipse={purpleEllipse}
       />
-      <Carousel
-        data={DASTechstack}
-        pad={"px-[1vw]"}
-        padmd={"md:px-[5vw]"}
-        pad2xl={"2xl:px-[8vw]"}
-      />
+      <Carousel data={DASTechstack} />
       <Joinus
         textColor="text-white"
         backgroundColor="bg-acm-purple-200"
