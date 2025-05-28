@@ -7,6 +7,7 @@ import purpleEllipse from "@/public/ellipses/purpleEllipse.svg";
 import Carousel from "@/components/programs/carousel";
 import DASTechstack from "@/data/techstacks/dastechstack";
 import WhatWeDo from "@/components/programs/das/whatwedo";
+import Stats from "@/components/programs/das/stats";
 
 const Page = () => {
   return (
@@ -18,6 +19,7 @@ const Page = () => {
         logo={DAS}
         ellipse={purpleEllipse}
       />
+      <Stats />
       <Carousel
         data={DASTechstack}
         pad={"px-[1vw]"}
