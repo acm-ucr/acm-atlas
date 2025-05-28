@@ -83,7 +83,7 @@ const Stats = () => {
               <p className="text-2xl font-medium">issues</p>
             </div>
           </div>
-          <div className="ml-[15%] grid gap-10 pb-10 text-acm-gray-500 [grid-template-columns:17%_14%_25%]">
+          <div className="ml-[15%] grid gap-10 pb-10 pt-4 text-acm-gray-500 [grid-template-columns:17%_14%_25%]">
             <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
               <p className="pb-4 text-6xl font-bold">{data.contributors}</p>
               <p className="text-2xl font-medium">contributors</p>
