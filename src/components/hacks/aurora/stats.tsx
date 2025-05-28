@@ -23,6 +23,7 @@ const fetchRepoStats = async () => {
 
   return {
     commits: extractCommitCount,
+    stars: data.stargazers_count,
     days,
   };
 };
@@ -59,7 +60,7 @@ const Stats = () => {
           <p className="text-2xl font-medium">contributors</p>
         </div>
         <div className="flex flex-col justify-center border-r-2 border-acm-gray-100 pr-20">
-          <p className="pb-4 text-6xl font-bold">27</p>
+          <p className="pb-4 text-6xl font-bold">{data.stars}</p>
           <div className="flex">
             <p className="pr-5 text-2xl font-medium">stars</p>
             <Image src={auroraStar} alt="Star" className="h-[90%] w-[37%]" />
