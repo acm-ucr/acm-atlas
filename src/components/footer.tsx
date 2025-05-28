@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import ACMLogo from "@/public/logos/acm.webp";
 import Link from "next/link";
@@ -5,6 +6,7 @@ import { FaDiscord, FaLinkedin, FaGithub } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaMedium, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { motion } from "motion/react";
 
 const Footer = () => {
   return (
@@ -42,14 +44,22 @@ const Footer = () => {
               Resources
             </p>
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
-              <Link href="/hacks/hackpacks">Hackpacks</Link>
-              <Link href="/templateresume">Template Resume</Link>
-              <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
-                CS Internships List
-              </Link>
-              <Link href="https://github.com/SimplifyJobs/New-Grad-Positions">
-                CS Jobs List
-              </Link>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="/hacks/hackpacks">Hackpacks</Link>
+              </motion.div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="/templateresume">Template Resume</Link>
+              </motion.div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
+                  CS Internships List
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="https://github.com/SimplifyJobs/New-Grad-Positions">
+                  CS Jobs List
+                </Link>
+              </motion.div>
             </div>
           </div>
           <div className="flex flex-col">
@@ -57,12 +67,24 @@ const Footer = () => {
               Pages
             </p>
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
-              <Link href="/about">About</Link>
-              <Link href="/board">Board</Link>
-              <Link href="/programs/overview">Programs</Link>
-              <Link href="/hacks/overview">Hacks</Link>
-              <Link href="/events">Events</Link>
-              <Link href="/join">Join Us</Link>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="/about">About</Link>
+              </motion.div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="/board">Board</Link>
+              </motion.div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="/programs/overview">Programs</Link>
+              </motion.div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="/hacks/overview">Hacks</Link>
+              </motion.div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="/events">Events</Link>
+              </motion.div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="/join">Join Us</Link>
+              </motion.div>
             </div>
           </div>
           <div className="col-span-2 flex flex-col">
@@ -70,21 +92,27 @@ const Footer = () => {
               Contact
             </p>
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
-              <Link
-                href="mailto:contact.acmucr@gmail.com"
-                className="flex items-center gap-2"
-              >
-                <MdEmail className="text-2xl text-acm-blue-700" />
-                <p>contact.acmucr@gmail.com</p>
-              </Link>
-              <div className="flex gap-2">
-                <FaLocationDot className="text-2xl text-acm-blue-700" />
-                <div>
-                  <p>900 University Ave.</p>
-                  <p>Winston Chung Hall, Room 127</p>
-                  <p>Riverside, CA 92521</p>
-                </div>
-              </div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link
+                  href="mailto:contact.acmucr@gmail.com"
+                  className="flex items-center gap-2"
+                >
+                  <MdEmail className="text-2xl text-acm-blue-700" />
+                  <p>contact.acmucr@gmail.com</p>
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ opacity: 0.75 }}>
+                <Link href="https://www.google.com/maps/place/Winston+Chung+Hall,+Riverside,+CA+92507/@33.975265,-117.328515,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcae5acf0fa1e7:0xa67be5dc0009c039!8m2!3d33.975265!4d-117.3259401!16s%2Fg%2F12hy0dvmg?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D">
+                  <div className="flex gap-2">
+                    <FaLocationDot className="text-2xl text-acm-blue-700" />
+                    <div>
+                      <p>900 University Ave.</p>
+                      <p>Winston Chung Hall, Room 127</p>
+                      <p>Riverside, CA 92521</p>
+                    </div>
+                  </div>
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>
