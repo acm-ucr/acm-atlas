@@ -9,6 +9,7 @@ import CreateTechstack from "@/data/techstacks/createtechstack";
 import WhatWeDo from "@/components/programs/create/whatwedo";
 import Projects from "@/components/programs/projects";
 import CreateProjects from "@/data/projects/createprojects";
+import Stats from "@/components/programs/create/stats";
 
 const Page = () => {
   return (
@@ -20,6 +21,7 @@ const Page = () => {
         logo={Create}
         ellipse={blueEllipse}
       />
+      <Stats />
       <Carousel
         data={CreateTechstack}
         pad={"px-[1vw]"}
