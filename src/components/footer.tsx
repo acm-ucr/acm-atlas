@@ -42,8 +42,8 @@ const Footer = () => {
               Resources
             </p>
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
-              <Link href="/hackpacks">Hackpacks</Link>
-              <Link href="/">Template Resume</Link>
+              <Link href="/hacks/hackpacks">Hackpacks</Link>
+              <Link href="/templateresume">Template Resume</Link>
               <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
                 CS Internships List
               </Link>
@@ -59,8 +59,8 @@ const Footer = () => {
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
               <Link href="/about">About</Link>
               <Link href="/board">Board</Link>
-              <Link href="/programs">Programs</Link>
-              <Link href="/hacks">Hacks</Link>
+              <Link href="/programs/overview">Programs</Link>
+              <Link href="/hacks/overview">Hacks</Link>
               <Link href="/events">Events</Link>
               <Link href="/join">Join Us</Link>
             </div>
@@ -89,7 +89,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-0.5 w-full bg-acm-blue-400" />
-        <p className="flex justify-center py-5 text-acm-gray-500">
+        <p className="flex justify-center py-5 text-acm-gray-400">
           © ACM at UCR 2025. Made with 💙 from ACM Spark.
         </p>
       </div>
@@ -124,8 +124,8 @@ const Footer = () => {
                 Resources
               </p>
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
-                <Link href="/hackpacks">Hackpacks</Link>
-                <Link href="/">Template Resume</Link>
+                <Link href="/hacks/hackpacks">Hackpacks</Link>
+                <Link href="/templateresume">Template Resume</Link>
                 <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
                   CS Internships List
                 </Link>
@@ -141,8 +141,8 @@ const Footer = () => {
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
                 <Link href="/about">About</Link>
                 <Link href="/board">Board</Link>
-                <Link href="/programs">Programs</Link>
-                <Link href="/hacks">Hacks</Link>
+                <Link href="/programs/overview">Programs</Link>
+                <Link href="/hacks/overview">Hacks</Link>
                 <Link href="/events">Events</Link>
                 <Link href="/join">Join Us</Link>
               </div>
@@ -172,7 +172,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="h-0.5 w-full bg-acm-blue-400" />
-        <p className="flex justify-center py-5 text-xs text-acm-gray-500">
+        <p className="flex justify-center py-5 text-xs text-acm-gray-400">
           © ACM at UCR 2025. Made with 💙 from ACM Spark.
         </p>
       </div>

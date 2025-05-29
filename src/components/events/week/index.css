@@ -1,0 +1,21 @@
+.rbc-event-label {
+  display: none;
+}
+
+.rbc-time-view {
+  border-radius: 2rem;
+}
+
+.rbc-event {
+  border-radius: 1rem;
+}
+.rbc-event-content {
+  padding: 0;
+  margin: 0;
+}
+.rbc-events-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

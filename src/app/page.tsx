@@ -1,9 +1,9 @@
 import Landing from "@/components/home/landing";
 import StatsGrid from "@/components/home/statsgrid";
 import FeaturedProjects from "@/components/home/featuredprojects";
-import Upcoming from "@/components/home/upcoming";
+import SeeMore from "@/components/home/seemore";
 import CurrentOpportunities from "@/components/home/currentopportunities";
-import SeeMoreLink from "@/components/home/seemorelink";
+import UpcomingEvents from "@/components/events/upcomingevents/upcomingevents";
 
 const Home = () => {
   return (
@@ -12,8 +12,8 @@ const Home = () => {
       <StatsGrid />
       <CurrentOpportunities />
       <FeaturedProjects />
-      <Upcoming />
-      <SeeMoreLink />
+      <UpcomingEvents />
+      <SeeMore />
     </>
   );
 };
