@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Keys from "@/public/home/keys.svg";
@@ -15,6 +16,12 @@ const KeyAnimation = {
   animate: { opacity: 1 },
   transition: { duration: 0.5 },
   delay: 1,
+};
+
+const DescAnimation = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.7, delay: 0.2 },
 };
 
 const Landing = () => {
@@ -40,14 +47,17 @@ const Landing = () => {
           <div className="absolute left-32 top-8 h-6 w-6 rounded-full bg-[#F6F6F6]/50 2xl:bg-[#F6F6F6]" />
         </div>
         <div className="z-10 mx-auto grid w-3/4 grid-cols-3 items-center bg-white/40 px-20 py-16 opacity-100 backdrop-blur-3xl 2xl:w-1/2">
-          <p className="col-span-2 text-3xl text-acm-gray-500">
+          <motion.p
+            {...DescAnimation}
+            className="col-span-2 text-3xl text-acm-gray-500"
+          >
             ACM at UCR is the largest student-run technical organization with a
             focus on Computer Science. Our goal is to help our members develop
             their technical and professional skills to help them in school and
             the tech industry. We aim to accomplish our goal by providing
             technical workshops, professional events, and many more
             opportunities for our members to excel.
-          </p>
+          </motion.p>
           <Image src={logo} alt="logo" className="ml-10" />
         </div>
         <div className="z-5 absolute bottom-[5%] right-[78%] h-[300px] w-[350px] rounded-full bg-acm-yellow-500/60 blur-3xl" />
