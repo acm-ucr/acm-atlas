@@ -29,7 +29,7 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
       {Board.map(({ title, members }, index) => (
         <div
           key={index}
-          className="flex flex-col items-center justify-center"
+          className="flex flex-col items-center justify-center text-center"
           ref={sectionRefs[title]}
         >
           <motion.p

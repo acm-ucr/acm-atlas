@@ -16,6 +16,9 @@ module.exports = {
           "gray-300": "#C4C4C4",
           "gray-400": "#8e8e8e",
           "gray-500": "#444444",
+          "gray-600": "#CCCCCC",
+          "gray-700": "#A2A2A2",
+          "gray-800": "#CACACA",
           "blue-100": "#ddf4ff",
           "blue-200": "#ccebfd",
           "blue-300": "#9dd8ff",
@@ -23,18 +26,19 @@ module.exports = {
           "blue-500": "#2391ff",
           "blue-600": "#5e99ff",
           "blue-700": "#4185fc",
-          "blue-800": "#ccebfd",
+          "blue-800": "#ECF3FF",
           navy: "#173967",
           turquoise: "#3bc5bb",
           "turquoise-200": "#2D8E8F",
           "turquoise-300": "#329FA0",
           "purple-100": "#e1c5ff",
           "purple-200": "#b889ea",
+          "purple-300": "#E9D5FF",
           "green-100": "#c5ecc0",
           "green-200": "#44624a",
           "green-300": "#c9ff9b",
           "green-400": "#1f3f3d",
-
+          "green-500": "#BDE2B9",
           red: "#dd2c00",
 
           eslint: "#8080f2",
@@ -55,6 +59,7 @@ module.exports = {
           numpy: "#4dabcf",
           pytorch: "#ee4c2c",
           scikit: "#f89939",
+          github: "#3e75c2",
         },
 
         background: "oklch(var(--background))",
@@ -104,6 +109,10 @@ module.exports = {
           border: "oklch(var(--sidebar-border))",
           ring: "oklch(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "blue-fade":
+          "linear-gradient(to top, rgba(35,145,255, 0.75), rgba(35,145,255, 0))",
       },
       dropShadow: {
         "3xl-acm-blue-500": "0 10px 20px rgba(79, 167, 255, 1)",
