@@ -1,4 +1,4 @@
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 import Link from "next/link";
 import { StaticImageData } from "next/image";
 import Image from "next/image";
@@ -6,7 +6,7 @@ import Image from "next/image";
 interface ProjectCardProps {
   photo: StaticImageData;
   name: string;
-  github: string;
+  github?: string;
   website: string;
 }
 
@@ -25,13 +25,13 @@ const ProjectCard = ({ photo, name, github, website }: ProjectCardProps) => {
         <div className="w-8/12 truncate text-xl font-light md:text-3xl">
           {name}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           {github && (
             <Link
               href={github}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl md:text-3xl"
+              className="text-xl hover:scale-105 hover:opacity-80 md:text-3xl"
             >
               <FaGithub />
             </Link>
@@ -41,9 +41,9 @@ const ProjectCard = ({ photo, name, github, website }: ProjectCardProps) => {
               href={website}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xl md:text-3xl"
+              className="text-xl hover:scale-105 hover:opacity-80 md:text-3xl"
             >
-              <FaExternalLinkAlt />
+              <FaGlobe />
             </Link>
           )}
         </div>

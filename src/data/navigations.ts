@@ -12,7 +12,7 @@ const navigations = [
   {
     name: "PROGRAMS ",
     icon: GoTriangleDown,
-    link: "/programs",
+    link: "/programs/overview",
     subItems: [
       {
         subName: "SPARK",
@@ -38,7 +38,7 @@ const navigations = [
   },
   {
     name: "HACKS",
-    link: "/hacks",
+    link: "/hacks/overview",
   },
   {
     name: "EVENTS",

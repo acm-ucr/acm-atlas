@@ -12,7 +12,7 @@ const Sidebar = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
   };
 
   return (
-    <div className="fixed left-7 top-1/2 hidden h-1/2 w-[7%] -translate-y-1/2 bg-gradient-to-b from-white via-[#D9D9D9] to-white px-4 md:flex">
+    <div className="fixed left-7 top-1/2 hidden h-1/2 -translate-y-1/2 bg-gradient-to-b from-white via-[#D9D9D9] to-white px-4 md:flex md:justify-center">
       <div className="flex flex-col items-center gap-5">
         {logos.map(({ image, alt }, index) => (
           <div key={index}>
