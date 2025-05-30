@@ -8,8 +8,12 @@ const fetchRepoStats = async () => {
   if (!res.ok) throw new Error("Failed to fetch repo data");
   const data = await res.json();
 
-  const closedPRs = await fetchClosedPRs();
-  if (!closedPRs) throw new Error("Failed to fetch closed PRs");
+  const prsRes = await fetch(
+    "https://api.github.com/search/issues?q=repo:acm-ucr/aurora+type:pr+state:closed",
+  );
+  if (!prsRes.ok) throw new Error("Failed to fetch closed PRs");
+  const prsData = await prsRes.json();
+  const closedPRs = prsData.total_count;
 
   const createdAt = new Date(data.created_at);
   const now = new Date();
@@ -51,15 +55,6 @@ const fetchRepoStats = async () => {
   };
 };
 
-const fetchClosedPRs = async () => {
-  const res = await fetch(
-    "https://api.github.com/search/issues?q=repo:acm-ucr/aurora+type:pr+state:closed",
-  );
-
-  const data = await res.json();
-  return data.total_count;
-};
-
 const Stats = () => {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["repoStats"],
@@ -78,61 +73,31 @@ const Stats = () => {
           <p className="text-2xl font-medium">commits</p>
         </div>
         <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-          <p className="pb-4 text-6xl font-bold">
-            {isLoading ? "0" : isError ? "Error" : data.closedPRs}
-          </p>
+          <p className="pb-4 text-6xl font-bold">{data.closedPRs}</p>
           <p className="text-2xl font-medium">PRs</p>
         </div>
         <div className="flex flex-col justify-center">
-          <p className="pb-4 text-6xl font-bold">950+</p>
+          <p className="pb-4 text-6xl font-bold">{data.closedIssues}</p>
           <p className="text-2xl font-medium">issues</p>
-      {isLoading ? (
-        <div className="flex justify-center py-4 text-acm-gray-500">
-          <p className="text-2xl font-medium">Loading data...</p>
         </div>
-      ) : isError ? (
-        <div className="flex justify-center py-4 text-red-500">
-          <p className="text-2xl font-medium">Error loading data.</p>
+      </div>
+      <div className="ml-[15%] grid gap-10 pb-10 pt-4 text-acm-gray-500 [grid-template-columns:17%_14%_25%]">
+        <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
+          <p className="pb-4 text-6xl font-bold">{data.contributors}</p>
+          <p className="text-2xl font-medium">contributors</p>
         </div>
-      ) : (
-        <>
-          <div className="pb-18 ml-[15%] grid gap-10 text-acm-gray-500 [grid-template-columns:23%_21%_23%]">
-            <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-              <p className="pb-4 text-6xl font-bold">{data.commits}</p>
-              <p className="text-2xl font-medium">commits</p>
-            </div>
-            <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-              <p className="pb-4 text-6xl font-bold">1000+</p>
-              <p className="text-2xl font-medium">PRs</p>
-            </div>
-            <div className="flex flex-col justify-center">
-              <p className="pb-4 text-6xl font-bold">{data.closedIssues}</p>
-              <p className="text-2xl font-medium">issues</p>
-            </div>
+        <div className="flex flex-col justify-center border-r-2 border-acm-gray-100 pr-20">
+          <p className="pb-4 text-6xl font-bold">{data.stars}</p>
+          <div className="flex">
+            <p className="pr-5 text-2xl font-medium">stars</p>
+            <Image src={auroraStar} alt="Star" className="h-[90%] w-[37%]" />
           </div>
-          <div className="ml-[15%] grid gap-10 pb-10 pt-4 text-acm-gray-500 [grid-template-columns:17%_14%_25%]">
-            <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-              <p className="pb-4 text-6xl font-bold">{data.contributors}</p>
-              <p className="text-2xl font-medium">contributors</p>
-            </div>
-            <div className="flex flex-col justify-center border-r-2 border-acm-gray-100 pr-20">
-              <p className="pb-4 text-6xl font-bold">{data.stars}</p>
-              <div className="flex">
-                <p className="pr-5 text-2xl font-medium">stars</p>
-                <Image
-                  src={auroraStar}
-                  alt="Star"
-                  className="h-[90%] w-[37%]"
-                />
-              </div>
-            </div>
-            <div className="flex flex-col justify-center">
-              <p className="pb-4 text-6xl font-bold">{data.days}</p>
-              <p className="text-2xl font-medium">days since we began</p>
-            </div>
-          </div>
-        </>
-      )}
+        </div>
+        <div className="flex flex-col justify-center">
+          <p className="pb-4 text-6xl font-bold">{data.days}</p>
+          <p className="text-2xl font-medium">days since we began</p>
+        </div>
+      </div>
     </div>
   );
 };
