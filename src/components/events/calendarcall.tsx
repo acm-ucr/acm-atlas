@@ -109,7 +109,7 @@ const CalendarCall = () => {
 
   // Convert Google events to react-big-calendar events
   const calendarEvents = React.useMemo(() => {
-    /*if (!data?.allEvents) return [];
+    if (!data?.allEvents) return [];
     return data.allEvents
       .map((event) => {
         const startString = event.start?.dateTime || event.start?.date;
@@ -134,62 +134,6 @@ const CalendarCall = () => {
           resource: TypedGoogleEventProps;
         } => e !== null,
       );
-    */
-  if (!data?.allEvents) return [];
-
-  const now = new Date();
-
-  const realEvents: CalendarEvent[] = data.allEvents
-    .map((event) => {
-      const startString = event.start?.dateTime || event.start?.date;
-      const endString = event.end?.dateTime || event.end?.date;
-      if (!startString || !endString) return null;
-      return {
-        title: event.summary ?? "Untitled Event",
-        start: new Date(startString),
-        end: new Date(endString),
-        allDay: !event.start?.dateTime,
-        resource: event,
-      };
-    })
-    .filter((e): e is CalendarEvent => e !== null);
-
-  const testEvents: CalendarEvent[] = [
-    {
-      title: "Test Forge Event",
-      start: now,
-      end: new Date(now.getTime() + 60 * 60 * 1000), // 1 hour later
-      allDay: false,
-      resource: {
-        summary: "Test Forge Event",
-        start: { dateTime: now.toISOString() },
-        end: { dateTime: new Date(now.getTime() + 60 * 60 * 1000).toISOString() },
-        location: "Room 101",
-        description: "This is a test forge event.",
-        eventType: "forge",
-      },
-    },
-    {
-      title: "Test Spark Event",
-      start: new Date(now.getTime() + 2 * 60 * 60 * 1000), // +2hr
-      end: new Date(now.getTime() + 3 * 60 * 60 * 1000),   // +3hr
-      allDay: false,
-      resource: {
-        summary: "Test Spark Event",
-        start: {
-          dateTime: new Date(now.getTime() + 2 * 60 * 60 * 1000).toISOString(),
-        },
-        end: {
-          dateTime: new Date(now.getTime() + 3 * 60 * 60 * 1000).toISOString(),
-        },
-        location: "Room 202",
-        description: "This is a test spark event.",
-        eventType: "spark",
-      },
-    },
-  ];
-
-  return [...realEvents, ...testEvents];
   }, [data]);
 
   // Custom event renderer for react-big-calendar
