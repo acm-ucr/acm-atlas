@@ -165,10 +165,10 @@ const Footer = () => {
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
                 <Link href="/hacks/hackpacks">Hackpacks</Link>
                 <Link href="/templateresume">Template Resume</Link>
-                <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
+                <Link href="https://github.com/SimplifyJobs/Summer2025-Internships" target="_blank">
                   CS Internships List
                 </Link>
-                <Link href="https://github.com/SimplifyJobs/New-Grad-Positions">
+                <Link href="https://github.com/SimplifyJobs/New-Grad-Positions" target="_blank">
                   CS Jobs List
                 </Link>
               </div>
