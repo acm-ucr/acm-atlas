@@ -23,27 +23,27 @@ const WhatWeDo = () => {
           <Image
             src={Spark}
             alt="Spark"
-            className="w-[12vw] shadow-lg md:w-[5vw]"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
           />
           <Image
             src={Forge}
             alt="Forge"
-            className="w-[12vw] shadow-lg md:w-[5vw]"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
           />
           <Image
             src={Create}
             alt="Create"
-            className="w-[12vw] shadow-lg md:w-[5vw]"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
           />
           <Image
             src={DAS}
             alt="DAS"
-            className="w-[12vw] shadow-lg md:w-[5vw]"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
           />
           <Image
             src={BitByte}
             alt="BitByte"
-            className="w-[12vw] shadow-lg md:w-[5vw]"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
           />
         </div>
       </div>
