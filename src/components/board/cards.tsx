@@ -32,12 +32,7 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
           className="flex flex-col items-center justify-center text-center"
           ref={sectionRefs[title]}
         >
-          <motion.p
-            className="text-4xl font-bold text-acm-gray-500"
-            {...getTitleAnimation()}
-          >
-            {title}
-          </motion.p>
+          <p className="text-4xl font-bold text-acm-gray-500">{title}</p>
           <div className="grid grid-cols-2 items-center justify-center gap-y-8 px-5 md:grid-cols-3">
             {members.map(
               (
