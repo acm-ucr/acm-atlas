@@ -110,7 +110,10 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="hover:opacity-75">
-                <Link href="https://www.google.com/maps/place/Winston+Chung+Hall,+Riverside,+CA+92507/@33.975265,-117.328515,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcae5acf0fa1e7:0xa67be5dc0009c039!8m2!3d33.975265!4d-117.3259401!16s%2Fg%2F12hy0dvmg?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D">
+                <Link
+                  href="https://www.google.com/maps/place/Winston+Chung+Hall,+Riverside,+CA+92507/@33.975265,-117.328515,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcae5acf0fa1e7:0xa67be5dc0009c039!8m2!3d33.975265!4d-117.3259401!16s%2Fg%2F12hy0dvmg?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                >
                   <div className="flex gap-2">
                     <FaLocationDot className="text-2xl text-acm-blue-700" />
                     <div>
@@ -198,13 +201,18 @@ const Footer = () => {
               <p>contact.acmucr@gmail.com</p>
             </Link>
             <div className="flex gap-2 text-2xl">
-              <Link href="https://www.google.com/maps/place/Winston+Chung+Hall,+Riverside,+CA+92507/@33.975265,-117.328515,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcae5acf0fa1e7:0xa67be5dc0009c039!8m2!3d33.975265!4d-117.3259401!16s%2Fg%2F12hy0dvmg?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"></Link>
-              <FaLocationDot className="text-2xl text-acm-blue-700" />
-              <div className="text-lg">
-                <p>900 University Ave.</p>
-                <p>Winston Chung Hall, Room 127</p>
-                <p>Riverside, CA 92521</p>
-              </div>
+              <Link
+                href="https://www.google.com/maps/place/Winston+Chung+Hall,+Riverside,+CA+92507/@33.975265,-117.328515,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcae5acf0fa1e7:0xa67be5dc0009c039!8m2!3d33.975265!4d-117.3259401!16s%2Fg%2F12hy0dvmg?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+              >
+                <FaLocationDot className="text-2xl text-acm-blue-700" />
+
+                <div className="text-lg">
+                  <p>900 University Ave.</p>
+                  <p>Winston Chung Hall, Room 127</p>
+                  <p>Riverside, CA 92521</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
