@@ -59,7 +59,11 @@ const WhatWeOffer = ({
         {...slideInAnimation}
         className="mb-5 mt-10 flex items-center justify-center md:order-2 md:mt-0"
       >
-        <Image src={image} alt="program" className="drop-shadow-2xl" />
+        <Image
+          src={image}
+          alt="program"
+          className="w-1/2 drop-shadow-2xl md:w-2/3"
+        />
       </motion.div>
       <div className="col-span-2">
         <motion.div
