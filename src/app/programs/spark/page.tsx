@@ -9,6 +9,7 @@ import yellowEllipse from "@/public/ellipses/yellowEllipse.svg";
 import WhatWeDo from "@/components/programs/spark/whatwedo";
 import Projects from "@/components/programs/projects";
 import SparkProjects from "@/data/projects/sparkprojects";
+import Stats from "@/components/programs/spark/stats";
 
 const Page = () => {
   return (
@@ -20,6 +21,7 @@ const Page = () => {
         logo={Spark}
         ellipse={yellowEllipse}
       />
+      <Stats />
       <Carousel
         data={SparkTechstack}
         pad={"px-[1vw]"}
