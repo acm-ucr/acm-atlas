@@ -21,27 +21,30 @@ const Footer = () => {
             </p>
             <div className="flex gap-2">
               <div className="hover:opacity-75">
-                <Link href="https://www.instagram.com/acm_ucr/">
+                <Link href="https://www.instagram.com/acm_ucr/" target="_blank">
                   <RiInstagramFill className="text-2xl text-acm-blue-700" />
                 </Link>
               </div>
               <div className="hover:opacity-75">
-                <Link href="https://discord.gg/qsHw6dhmmY">
+                <Link href="https://discord.gg/qsHw6dhmmY" target="_blank">
                   <FaDiscord className="text-2xl text-acm-blue-700" />
                 </Link>
               </div>
               <div className="hover:opacity-75">
-                <Link href="https://www.linkedin.com/company/acm-ucr">
+                <Link
+                  href="https://www.linkedin.com/company/acm-ucr"
+                  target="_blank"
+                >
                   <FaLinkedin className="text-2xl text-acm-blue-700" />
                 </Link>
               </div>
               <div className="hover:opacity-75">
-                <Link href="https://github.com/acm-ucr">
+                <Link href="https://github.com/acm-ucr" target="_blank">
                   <FaGithub className="text-2xl text-acm-blue-700" />
                 </Link>
               </div>
               <div className="hover:opacity-75">
-                <Link href="https://medium.com/@contact.acmucr">
+                <Link href="https://medium.com/@contact.acmucr" target="_blank">
                   <FaMedium className="text-2xl text-acm-blue-700" />
                 </Link>
               </div>
@@ -56,15 +59,23 @@ const Footer = () => {
                 <Link href="/hacks/hackpacks">Hackpacks</Link>
               </div>
               <div className="hover:opacity-75">
-                <Link href="/templateresume">Template Resume</Link>
+                <Link href="/templateresume" target="_blank">
+                  Template Resume
+                </Link>
               </div>
               <div className="hover:opacity-75">
-                <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
+                <Link
+                  href="https://github.com/SimplifyJobs/Summer2025-Internships"
+                  target="_blank"
+                >
                   CS Internships List
                 </Link>
               </div>
               <div className="hover:opacity-75">
-                <Link href="https://github.com/SimplifyJobs/New-Grad-Positions">
+                <Link
+                  href="https://github.com/SimplifyJobs/New-Grad-Positions"
+                  target="_blank"
+                >
                   CS Jobs List
                 </Link>
               </div>
@@ -104,6 +115,7 @@ const Footer = () => {
                 <Link
                   href="mailto:contact.acmucr@gmail.com"
                   className="flex items-center gap-2"
+                  target="_blank"
                 >
                   <MdEmail className="text-2xl text-acm-blue-700" />
                   <p>contact.acmucr@gmail.com</p>
@@ -140,19 +152,19 @@ const Footer = () => {
         <p className="text-4xl font-semibold text-acm-gray-500">ACM@UCR</p>
         <p className="text-acm-gray-500">Association of Computing Machinery</p>
         <div className="flex gap-6 text-acm-blue-700">
-          <Link href="https://www.instagram.com/acm_ucr/">
+          <Link href="https://www.instagram.com/acm_ucr/" target="_blank">
             <RiInstagramFill className="text-4xl" />
           </Link>
-          <Link href="https://discord.gg/qsHw6dhmmY">
+          <Link href="https://discord.gg/qsHw6dhmmY" target="_blank">
             <FaDiscord className="text-4xl" />
           </Link>
-          <Link href="https://www.linkedin.com/company/acm-ucr">
+          <Link href="https://www.linkedin.com/company/acm-ucr" target="_blank">
             <FaLinkedin className="text-4xl" />
           </Link>
-          <Link href="https://github.com/acm-ucr">
+          <Link href="https://github.com/acm-ucr" target="_blank">
             <FaGithub className="text-4xl" />
           </Link>
-          <Link href="https://medium.com/@contact.acmucr">
+          <Link href="https://medium.com/@contact.acmucr" target="_blank">
             <FaMedium className="text-4xl" />
           </Link>
         </div>
@@ -164,7 +176,9 @@ const Footer = () => {
               </p>
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
                 <Link href="/hacks/hackpacks">Hackpacks</Link>
-                <Link href="/templateresume">Template Resume</Link>
+                <Link href="/templateresume" target="_blank">
+                  Template Resume
+                </Link>
                 <Link
                   href="https://github.com/SimplifyJobs/Summer2025-Internships"
                   target="_blank"
@@ -202,6 +216,7 @@ const Footer = () => {
             <Link
               href="mailto:contact.acmucr@gmail.com"
               className="flex items-center gap-2"
+              target="_blank"
             >
               <MdEmail className="text-2xl text-acm-blue-700" />
               <p>contact.acmucr@gmail.com</p>
