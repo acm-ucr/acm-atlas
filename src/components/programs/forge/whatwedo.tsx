@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Image1 from "@/public/forge/image1.webp";
-import Image2 from "@/public/forge/image2.webp";
-import Image3 from "@/public/forge/image3.webp";
-import Image4 from "@/public/forge/image4.webp";
+import Image1 from "@/public/forgepage/image1.webp";
+import Image2 from "@/public/forgepage/image2.webp";
+import Image3 from "@/public/forgepage/image3.webp";
+import Image4 from "@/public/forgepage/image4.webp";
 
 const WhatWeDo = () => {
   return (
     <div className="relative flex justify-center pt-10">
-      <div className="absolute left-[1%] top-[5%] z-[-1] h-[400px] w-[400px] rounded-full bg-acm-gray-300 opacity-80 blur-3xl" />
+      <div className="absolute left-0 top-[5%] z-[-1] h-[400px] w-[400px] rounded-full bg-acm-gray-300 opacity-80 blur-3xl" />
       <div className="absolute right-0 top-[30%] z-[-1] h-[400px] w-[400px] rounded-full bg-acm-gray-300 opacity-80 blur-3xl" />
       <div className="grid grid-cols-1 gap-16 px-[10%] text-xl font-medium text-acm-gray-500 md:grid-cols-2 md:text-3xl lg:px-[5%]">
         <Image src={Image1} alt="Image1" className="order-2 md:order-1" />

@@ -26,7 +26,14 @@ This project is built using [Next.js](https://nextjs.org), a React framework. Ne
 The following environment variables are required and must be stored in an `.env` file:
 
 ```env
-N/A
+NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY=
+NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS=
+NEXT_PUBLIC_GOOGLE_CALENDAR_SPARK=
+NEXT_PUBLIC_GOOGLE_CALENDAR_FORGE=
+NEXT_PUBLIC_GOOGLE_CALENDAR_CREATE=
+NEXT_PUBLIC_GOOGLE_CALENDAR_DAS=
+NEXT_PUBLIC_GOOGLE_CALENDAR_BITBYTE=
+INSTAGRAM_BEHOLD_ID=
 ```
 
 ## Commands

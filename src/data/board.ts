@@ -1,128 +1,129 @@
 import Stanley from "@/public/stanley.webp";
-import Brandon from "@/public/board/spark/brandon.webp";
-import Charleen from "@/public/board/spark/charleen.webp";
-import Wesley from "@/public/board/spark/wesley.webp";
-import Quin from "@/public/board/spark/quin.webp";
-import Tingxuan from "@/public/board/spark/tingxuan.webp";
-import Kevin from "@/public/board/spark/kevin.webp";
-import Cole from "@/public/board/spark/cole.webp";
-import Alton from "@/public/board/spark/alton.webp";
-import Arielle from "@/public/board/spark/arielle.webp";
-import Sweden from "@/public/board/spark/sweden.webp";
-import John from "@/public/board/spark/john.webp";
-import Dean from "@/public/board/spark/dean.webp";
-import Hannah from "@/public/board/spark/hannah.webp";
-import Stanley1 from "@/public/board/spark/stanley.webp";
-import Shirley from "@/public/board/create/shirley.webp";
-import Kaylie from "@/public/board/create/kaylie.webp";
-import Aldrie from "@/public/board/spark/aldrie.webp";
-import Nidheesh from "@/public/board/spark/nidheesh.webp";
-import Khushi from "@/public/board/das/khushi.webp";
-import Marcus from "@/public/board/forge/marcus.webp";
-import Ian from "@/public/board/forge/ian.webp";
-import Avia from "@/public/board/spark/avia.webp";
+import Brandon from "@/public/boardpage/spark/brandon.webp";
+import Charleen from "@/public/boardpage/spark/charleen.webp";
+import Wesley from "@/public/boardpage/spark/wesley.webp";
+import Quin from "@/public/boardpage/spark/quin.webp";
+import Tingxuan from "@/public/boardpage/spark/tingxuan.webp";
+import Kevin from "@/public/boardpage/spark/kevin.webp";
+import Cole from "@/public/boardpage/spark/cole.webp";
+import Alton from "@/public/boardpage/spark/alton.webp";
+import Arielle from "@/public/boardpage/spark/arielle.webp";
+import Sweden from "@/public/boardpage/spark/sweden.webp";
+import John from "@/public/boardpage/spark/john.webp";
+import Dean from "@/public/boardpage/spark/dean.webp";
+import Hannah from "@/public/boardpage/spark/hannah.webp";
+import Stanley1 from "@/public/boardpage/spark/stanley.webp";
+import Shirley from "@/public/boardpage/create/shirley.webp";
+import Kaylie from "@/public/boardpage/create/kaylie.webp";
+import Aldrie from "@/public/boardpage/spark/aldrie.webp";
+import Khushi from "@/public/boardpage/das/khushi.webp";
+import Marcus from "@/public/boardpage/forge/marcus.webp";
+import Ian from "@/public/boardpage/forge/ian.webp";
+import Avia from "@/public/boardpage/spark/avia.webp";
+import Wasim from "@/public/boardpage/das/wasim.webp";
+import Justin from "@/public/boardpage/forge/justin.webp";
 export const Board = [
   {
-    title: "ACM BOARD",
+    title: "ACM EXECUTIVE BOARD",
     members: [
       {
-        name: "Stanley Lew",
+        name: "Allison Pham",
         position: "President",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "https://linkedin.com/in/allisonpham7",
+        github: "https://github.com/allison-pham",
       },
       {
-        name: "Stanley Lew",
-        position: "Vice President",
+        name: "Charlette O'Connor",
+        position: "Executive Vice President",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
+        linkedin: "https://www.linkedin.com/in/charlette-o-connor/",
         github: "",
       },
       {
-        name: "Stanley Lew",
-        position: "Projects Director",
+        name: "Henry Wang",
+        position: "VP of Projects",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "https://www.linkedin.com/in/henry00c",
+        github: "https://github.com/braindead-dev",
       },
       {
-        name: "Stanley Lew",
-        position: "Secretary",
+        name: "Wesley Wu",
+        position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "https://www.linkedin.com/in/wesleylwu/",
+        github: "https://github.com/wesleylwu",
       },
       {
-        name: "Stanley Lew",
-        position: "Treasurer",
+        name: "Natalie Trinh",
+        position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "https://www.linkedin.com/in/natalieqtrinh/",
+        github: "https://github.com/natcat5",
       },
       {
-        name: "Stanley Lew",
-        position: "Secretary",
+        name: "Kevin Loritsch",
+        position: "VPs of External Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "http://www.linkedin.com/in/kevin-loritsch",
+        github: "https://github.com/Kevinloritsch",
       },
       {
-        name: "Stanley Lew",
-        position: "Marketing",
+        name: "Arielle Haryanto",
+        position: "VPs of External Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "https://www.linkedin.com/in/arielle-haryanto/",
+        github: "https://github.com/arieen17",
       },
       {
-        name: "Stanley Lew",
-        position: "Events",
+        name: "Daniyal Ahmed",
+        position: "VP of Professional Development",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "http://www.linkedin.com/in/daniyal-ahmed-279888280",
+        github: "https://github/daniyal-ahmed10",
       },
       {
-        name: "Stanley Lew",
-        position: "Membership",
+        name: "Ahad Hassan",
+        position: "VP of Finance",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "https://www.linkedin.com/in/ahadhasan248/",
+        github: "https://github.com/Ahad2488",
       },
       {
-        name: "Stanley Lew",
-        position: "Industry",
+        name: "Audrey Kim",
+        position: "VPs of Marketing",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "https://www.linkedin.com/in/audreykim-cs/",
+        github: "https://github.com/Audrey-Kim",
       },
       {
-        name: "Stanley Lew",
-        position: "Professional Development",
+        name: "Rebecca Jennings",
+        position: "VPs of Marketing",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Stanley,
-        linkedin: "",
-        github: "",
+        linkedin: "https://www.linkedin.com/in/rebecca-jennings-246a652a1/",
+        github: "https://github.com/Rebecca-J7",
       },
     ],
   },
@@ -282,15 +283,6 @@ export const Board = [
         linkedin: "https://www.linkedin.com/in/minh-tran-677564332/",
         github: "https://github.com/minhhdtran",
       },
-      {
-        name: "Nidheesh Vakharia",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Nidheesh,
-        linkedin: "https://www.linkedin.com/in/nidheeshvakharia/",
-        github: "https://github.com/nidheesh-m-vakharia",
-      },
     ],
   },
   {
@@ -298,7 +290,7 @@ export const Board = [
     members: [
       {
         name: "Kaylie Zhao",
-        position: "Create Director",
+        position: "Create Directors",
         color: "text-acm-blue-300",
         shadow: "drop-shadow-3xl-acm-blue-100",
         photo: Kaylie,
@@ -307,7 +299,7 @@ export const Board = [
       },
       {
         name: "Shirley Duong",
-        position: "Create Director",
+        position: "Create Directors",
         color: "text-acm-blue-300",
         shadow: "drop-shadow-3xl-acm-blue-100",
         photo: Shirley,
@@ -324,7 +316,7 @@ export const Board = [
         position: "Forge Director",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Stanley,
+        photo: Justin,
         linkedin: "https://www.linkedin.com/in/justin-h-im/",
         github: "https://github.com/justin-h-im",
       },
@@ -352,13 +344,13 @@ export const Board = [
     title: "ACM DAS LEADS",
     members: [
       {
-        name: "Jerry Li",
+        name: "Wasim Khan",
         position: "DAS Director",
         color: "text-acm-purple-100",
         shadow: "drop-shadow-3xl-acm-purple-100",
-        photo: Stanley,
-        linkedin: "https://www.linkedin.com/in/jerryli2025/",
-        github: "https://github.com/Jeli04",
+        photo: Wasim,
+        linkedin: "https://www.linkedin.com/in/wasimkhan034/",
+        github: "https://github.com/WasimKhan034",
       },
       {
         name: "Khushi Chaudhari",

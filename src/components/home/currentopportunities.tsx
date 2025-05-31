@@ -3,11 +3,11 @@ import opportunities from "@/data/opportunities";
 
 const CurrentOpportunities = () => {
   return (
-    <div className="flex flex-col items-center justify-center pt-12">
-      <p className="text-6xl font-bold text-acm-gray-500">
+    <div className="flex flex-col items-center justify-center py-12">
+      <p className="text-center text-4xl font-bold text-acm-gray-500 md:text-6xl">
         CURRENT OPPORTUNITIES
       </p>
-      <div className="flex w-11/12 flex-wrap justify-center gap-16 2xl:w-4/5">
+      <div className="flex w-11/12 flex-wrap justify-center gap-x-16 gap-y-8 2xl:w-4/5">
         {opportunities.map(
           (
             { name, card_background, year_and_quarter, application_link, link },
