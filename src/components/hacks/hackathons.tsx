@@ -36,10 +36,10 @@ const Hackathons = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="mx-auto flex w-11/12 flex-col justify-center">
-        <p className="mt-10 py-8 text-center text-6xl font-bold text-acm-gray-500">
+        <p className="mt-10 py-12 text-center text-6xl font-bold text-acm-gray-500">
           HACKS
         </p>
-        <p className="mx-auto w-3/4 text-center text-2xl font-semibold">
+        <p className="text-l mx-auto w-[80%] pb-8 text-center font-semibold text-acm-gray-500 md:text-2xl">
           ACM hosts one current open back-end focused project that supports all
           hackathons & designathons at UCR. ACM also hosts two hackathons, Cutie
           Hack and Citrus Hack. Through Aurora, ACM supports RoseHack, a
@@ -51,8 +51,12 @@ const Hackathons = () => {
           members with an opportunity to expand their skills beyond our
           programs! Take a look below!
         </p>
-        <p className="my-[4vh] text-center text-5xl font-bold">
+        <p className="my-[4vh] mb-20 hidden text-center text-5xl font-bold text-acm-gray-500 md:block">
           WHAT WE OFFER & SUPPORT
+        </p>
+        <p className="my-[4vh] mb-20 block text-center text-4xl font-bold text-acm-gray-500 md:hidden">
+          WHAT WE <br />
+          OFFER & SUPPORT
         </p>
       </div>
 
