@@ -26,6 +26,7 @@ const Instagram = () => {
         <Link
           href="https://www.instagram.com/acm_ucr/"
           className="hover:text-acm-blue-700 hover:underline"
+          target="_blank"
         >
           @ACM_UCR
         </Link>

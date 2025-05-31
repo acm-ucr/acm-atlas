@@ -39,7 +39,7 @@ const Hackathons = () => {
         <p className="mt-10 py-12 text-center text-6xl font-bold text-acm-gray-500">
           HACKS
         </p>
-        <p className="text-l mx-auto w-[80%] pb-8 text-center font-semibold text-acm-gray-500 md:text-2xl">
+        <p className="mx-auto w-4/5 pb-8 text-center font-semibold text-acm-gray-500 md:text-2xl">
           ACM hosts one current open back-end focused project that supports all
           hackathons & designathons at UCR. ACM also hosts two hackathons, Cutie
           Hack and Citrus Hack. Through Aurora, ACM supports RoseHack, a
