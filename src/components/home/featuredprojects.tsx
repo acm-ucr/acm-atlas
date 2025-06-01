@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "motion/react";
 import Link from "next/link";
-import ProjectCard from "./projectcard";
+import ProjectCard from "@/components/home/projectcard";
 import Spark1 from "@/public/home/featured/pad.webp";
 import Spark2 from "@/public/home/featured/aviatr.webp";
 import Spark3 from "@/public/home/featured/saf.webp";
@@ -37,7 +37,7 @@ const FeaturedProjects = () => {
             <ProjectCard
               project="PHI ALPHA DELTA"
               image={Spark1}
-              link="/"
+              link="https://pad.ucrhighlanders.org/"
               index={index1}
             />
           </motion.div>
@@ -45,16 +45,21 @@ const FeaturedProjects = () => {
             <ProjectCard
               project="AVIAT’R"
               image={Spark2}
-              link="/"
+              link="https://aviatr.ucrhighlanders.org/"
               index={index2}
             />
           </motion.div>
           <motion.div {...hoverOver()}>
-            <ProjectCard project="SAF" image={Spark3} link="/" index={index3} />
+            <ProjectCard
+              project="SAF"
+              image={Spark3}
+              link="https://saf.ucrhighlanders.org/"
+              index={index3}
+            />
           </motion.div>
         </div>
         <Link
-          href="/"
+          href="/programs/spark"
           className="mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
         >
           View All Spark Projects →
@@ -73,7 +78,7 @@ const FeaturedProjects = () => {
             <ProjectCard
               project="WITL"
               image={Create2}
-              link="/"
+              link="https://witl.ucrhighlanders.org/"
               index={index2}
             />
           </motion.div>
@@ -81,13 +86,13 @@ const FeaturedProjects = () => {
             <ProjectCard
               project="NSU"
               image={Create3}
-              link="/"
+              link="https://nsu.ucrhighlanders.org/"
               index={index3}
             />
           </motion.div>
         </div>
         <Link
-          href="/"
+          href="/programs/create"
           className="mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
         >
           View All Create Projects →
@@ -98,7 +103,7 @@ const FeaturedProjects = () => {
             <ProjectCard
               project="WIZARD CHESS"
               image={Forge1}
-              link="/"
+              link="https://github.com/acm-ucr/wizard-chess"
               index={index1}
             />
           </motion.div>
@@ -106,7 +111,7 @@ const FeaturedProjects = () => {
             <ProjectCard
               project="DRONES"
               image={Forge2}
-              link="/"
+              link="https://github.com/acm-ucr/drones-zephyr"
               index={index2}
             />
           </motion.div>
@@ -114,13 +119,13 @@ const FeaturedProjects = () => {
             <ProjectCard
               project="ARMS"
               image={Forge3}
-              link="/"
+              link="https://github.com/acm-ucr/Arms"
               index={index3}
             />
           </motion.div>
         </div>
         <Link
-          href="/"
+          href="/programs/forge"
           className="mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
         >
           View All Forge Projects →
