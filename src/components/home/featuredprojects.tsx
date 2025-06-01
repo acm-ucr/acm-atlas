@@ -15,6 +15,7 @@ import Forge3 from "@/public/home/featured/blank.webp";
 const hoverOver = () => ({
   whileHover: { scale: 1.05 },
   whileTap: { scale: 0.95 },
+  duration: { scale: 0.3 },
 });
 
 const FeaturedProjects = () => {
