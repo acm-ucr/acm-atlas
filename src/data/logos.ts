@@ -7,7 +7,7 @@ import DAS from "@/public/logos/das.svg";
 const logos = [
   {
     image: ACM,
-    alt: "ACM BOARD",
+    alt: "ACM EXECUTIVE BOARD",
   },
   {
     image: Spark,

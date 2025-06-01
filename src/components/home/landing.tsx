@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import landingBG from "@/public/home/landingBG.svg";
 import landingEllipse from "@/public/home/landingEllipse.svg";
@@ -19,6 +18,12 @@ const KeyAnimation = {
   animate: { opacity: 1 },
   transition: { duration: 0.5 },
   delay: 1,
+};
+
+const DescAnimation = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.7, delay: 0.2 },
 };
 
 const Landing = () => {
@@ -63,14 +68,17 @@ const Landing = () => {
             <div className="absolute left-20 top-3 h-6 w-6 rounded-full bg-[#F6F6F6]/50 md:left-32 md:top-8 2xl:bg-white" />
           </div>
           <div className="z-10 mx-auto w-10/12 items-center rounded-b-2xl bg-white/65 px-3 py-3 text-center md:rounded-none md:px-20 md:text-left 2xl:w-4/5">
-            <p className="col-span-3 mx-[5%] text-pretty py-3 text-center text-lg text-acm-gray-500 md:col-span-2 md:mx-auto md:py-12 md:text-3xl">
-              ACM at UCR is the largest student-run technical organization with
-              a focus on Computer Science. Our goal is to help our members
-              develop their technical and professional skills to help them in
-              school and the tech industry. We aim to accomplish our goal by
-              providing technical workshops, professional events, and many more
-              opportunities for our members to excel.
-            </p>
+          <motion.p
+            {...DescAnimation}
+            className="col-span-2 text-3xl text-acm-gray-500"
+          >
+            ACM at UCR is the largest student-run technical organization with a
+            focus on Computer Science. Our goal is to help our members develop
+            their technical and professional skills to help them in school and
+            the tech industry. We aim to accomplish our goal by providing
+            technical workshops, professional events, and many more
+            opportunities for our members to excel.
+          </motion.p>
           </div>
         </div>
       </div>
