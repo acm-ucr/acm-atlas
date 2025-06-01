@@ -1,5 +1,5 @@
 "use client";
-import StatItem from "../statitem";
+import StatItem from "@/components/statitem";
 
 const StatsGrid: React.FC = () => {
   return (
