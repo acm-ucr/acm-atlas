@@ -18,21 +18,21 @@ const TitleAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
   initial: { opacity: 0, y: 30 },
-  transition: { duration: 0.5, delay: 0.3 },
+  transition: { duration: 0.25, delay: 0.3 },
 };
 
 const DescriptionAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
   initial: { opacity: 0, y: 30 },
-  transition: { duration: 0.5, delay: 0.4 },
+  transition: { duration: 0.25, delay: 0.4 },
 };
 
 const LogoAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, scale: 1 },
   initial: { opacity: 0, scale: 0.8 },
-  transition: { type: "spring", damping: 40, stiffness: 200, delay: 0.5 },
+  transition: { type: "spring", damping: 40, stiffness: 200, delay: 0.25 },
 };
 
 const WhatWeOffer = ({

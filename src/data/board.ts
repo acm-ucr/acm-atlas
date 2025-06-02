@@ -22,6 +22,9 @@ import Ian from "@/public/boardpage/forge/ian.webp";
 import Avia from "@/public/boardpage/spark/avia.webp";
 import Wasim from "@/public/boardpage/das/wasim.webp";
 import Justin from "@/public/boardpage/forge/justin.webp";
+import Howard from "@/public/boardpage/spark/howard.webp";
+import Jimmy from "@/public/boardpage/spark/jimmy.webp";
+import Luis from "@/public/boardpage/spark/luis.webp";
 export const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -282,6 +285,51 @@ export const Board = [
         photo: Stanley,
         linkedin: "https://www.linkedin.com/in/minh-tran-677564332/",
         github: "https://github.com/minhhdtran",
+      },
+      {
+        name: "Austin Le",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Stanley,
+        linkedin: "",
+        github: "",
+      },
+      {
+        name: "Jimmy Munoz",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Jimmy,
+        linkedin: "https://www.linkedin.com/in/jimmy-munoz-8a7a47290/",
+        github: "https://github.com/j1munoz",
+      },
+      {
+        name: "Jane Lee",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Stanley,
+        linkedin: "",
+        github: "",
+      },
+      {
+        name: "Luis Bojorquez",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Luis,
+        linkedin: "https://www.linkedin.com/in/luis-bojorquez-440392296/",
+        github: "https://github.com/lbojo006",
+      },
+      {
+        name: "Howard Wheeler",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Howard,
+        linkedin: "https://www.linkedin.com/in/howard-wheeler-073418287/",
+        github: "https://github.com/Howardwheeler",
       },
     ],
   },
