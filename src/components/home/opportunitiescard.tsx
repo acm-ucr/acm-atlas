@@ -28,6 +28,9 @@ const OpportunitiesCard = ({
   index,
 }: CardProps) => {
   const isOpen = () => {
+    if (appYearAndQuarter === "Loading...") {
+      return "";
+    }
     const keywords = ["CLOSED", "OPENING IN"];
     const isClosed = keywords.some((word) =>
       appYearAndQuarter.toUpperCase().includes(word),
