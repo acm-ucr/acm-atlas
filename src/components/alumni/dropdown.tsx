@@ -28,7 +28,7 @@ const Dropdown = ({ cohorts }: Cohorts) => {
       {cohorts.map(({ board, cohort }, index) => (
         <CohortItem value={"item-" + (index + 1)} key={index}>
           <CohortTrigger>{cohort}</CohortTrigger>
-          <AccordionContent className="grid grid-cols-1 gap-y-8 border-t-2 border-acm-blue-500 pt-8 md:grid-cols-3">
+          <AccordionContent className="grid grid-cols-1 gap-y-8 border-t-2 border-acm-blue-500 py-8 md:grid-cols-3">
             {board.map(({ name, position, linkedin, github, color }, idx) => (
               <Card
                 name={name}
