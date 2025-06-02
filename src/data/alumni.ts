@@ -473,6 +473,13 @@ const alumni = [
         color: "text-acm-yellow-500",
       },
       {
+        name: "Jonathan Le",
+        position: "Spark Lead",
+        linkedin: "https://www.linkedin.com/in/jonathan-le-84b9261a6",
+        github: "https://github.com/jonathanle03",
+        color: "text-acm-yellow-500",
+      },
+      {
         name: "Hannah Hwang",
         position: "Spark Lead",
         linkedin: "https://www.linkedin.com/in/hhannahwang/",
