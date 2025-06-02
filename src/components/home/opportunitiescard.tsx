@@ -27,6 +27,15 @@ const OpportunitiesCard = ({
   applicationLink,
   index,
 }: CardProps) => {
+  const isOpen = () => {
+    const keywords = ["CLOSED", "OPENING IN"];
+    const isClosed = keywords.some((word) =>
+      appYearAndQuarter.toUpperCase().includes(word),
+    );
+
+    return isClosed ? "" : " APPLICATION";
+  };
+
   return (
     <motion.div {...dropInAnim(index)}>
       <div className="relative mt-10">
@@ -47,7 +56,8 @@ const OpportunitiesCard = ({
             href={applicationLink}
             className="rounded-full bg-white px-9 py-2 text-lg font-bold text-acm-gray-500"
           >
-            {appYearAndQuarter} APPLICATION
+            {appYearAndQuarter}
+            {isOpen()}
           </Link>
         </div>
       </div>
