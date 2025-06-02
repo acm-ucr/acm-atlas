@@ -609,13 +609,6 @@ const alumni = [
         github: "",
       },
       {
-        name: "Divyank Shah",
-        position: "Spark Lead",
-        linkedin: "https://www.linkedin.com/in/divyank-shah/",
-        github: "https://github.com/shahdivyank",
-        color: "text-acm-yellow-500",
-      },
-      {
         name: "Raidah Fairooz",
         position: "Spark Lead",
         linkedin: "https://www.linkedin.com/in/raidah-fairooz",
