@@ -28,7 +28,8 @@ const Carousel = ({ data }: CarouselProps) => {
   const length = data.length;
 
   return (
-    <div className="left-[100%] mt-10 h-28 w-[1300px] overflow-hidden md:my-10 lg:w-full">
+    <div className="left-[100%] mt-10 h-28 overflow-hidden md:my-10 w-full">
+      <div className ="w-[1300px] xl:w-full">
       {data.map(({ name, icon, borderColor }, index) => {
         const animation = CarouselAnimation(index, length);
         return (
@@ -42,6 +43,7 @@ const Carousel = ({ data }: CarouselProps) => {
           </motion.div>
         );
       })}
+      </div>
     </div>
   );
 };
