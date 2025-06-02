@@ -1,13 +1,14 @@
 import ProgramHeader from "@/components/programs/programheader";
 import Joinus from "@/components/programs/joinus";
 import Das1 from "@/public/daspage/das1.webp";
-import FAQ from "@/components/programs/das/faq";
 import DAS from "@/public/logos/das.svg";
 import purpleEllipse from "@/public/ellipses/purpleEllipse.svg";
 import Carousel from "@/components/programs/carousel";
 import DASTechstack from "@/data/techstacks/dastechstack";
 import WhatWeDo from "@/components/programs/das/whatwedo";
 import Stats from "@/components/programs/das/stats";
+import FAQ from "@/components/ui/faq";
+import { DASFAQ } from "@/data/faq";
 
 const Page = () => {
   return (
@@ -32,7 +33,7 @@ const Page = () => {
         image={Das1}
       />
       <WhatWeDo />
-      <FAQ />
+      <FAQ faqData={DASFAQ} />
     </>
   );
 };
