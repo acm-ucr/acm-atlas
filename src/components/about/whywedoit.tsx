@@ -6,7 +6,7 @@ import whywedoit4 from "@/public/aboutpage/whywedoit4.webp";
 
 const WhyWeDoIt = () => {
   return (
-    <div className="mx-auto grid w-5/6 grid-cols-1 items-center gap-8 py-[10vh] md:grid-cols-2">
+    <div className="mx-auto grid w-5/6 grid-cols-1 items-center gap-8 py-[4vh] md:grid-cols-2 md:py-[10vh]">
       <div className="image-grid order-2 grid h-[600px] w-full gap-4 overflow-hidden transition-all md:order-1">
         <Image
           src={whywedoit1}
@@ -33,7 +33,7 @@ const WhyWeDoIt = () => {
         <p className="py-5 text-4xl font-bold text-acm-gray-500">
           WHY WE DO IT
         </p>
-        <p className="text-2xl leading-10 text-acm-gray-500">
+        <p className="text-xl leading-10 text-acm-gray-500 md:text-2xl">
           We want UCR to become a premier institution for Computer Science and
           Engineering. University courses provide a good foundation, but we
           strive to build upon that. But more importantly, we want our members

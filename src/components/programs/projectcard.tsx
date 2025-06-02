@@ -1,7 +1,6 @@
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import Link from "next/link";
-import { StaticImageData } from "next/image";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface ProjectCardProps {
   photo: StaticImageData;

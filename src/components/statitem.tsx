@@ -6,9 +6,19 @@ interface StatItemProps {
   end: number;
   label: string;
   duration: number;
+  color: string;
+  numberSize: string;
+  labelSize: string;
 }
 
-const StatItem = ({ end, label, duration }: StatItemProps) => {
+const StatItem = ({
+  end,
+  label,
+  duration,
+  color,
+  numberSize,
+  labelSize,
+}: StatItemProps) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -28,13 +38,10 @@ const StatItem = ({ end, label, duration }: StatItemProps) => {
 
   return (
     <div className="flex flex-col">
-      <div
-        ref={ref}
-        className="text-4xl font-bold text-acm-gray-500 md:text-7xl"
-      >
+      <div ref={ref} className={`${numberSize} font-bold ${color}`}>
         {isVisible ? <CountUp start={0} end={end} duration={duration} /> : 0}+
       </div>
-      <div className="text-xl text-acm-gray-500 md:text-3xl">{label}</div>
+      <div className={`${color} ${labelSize}`}>{label}</div>
     </div>
   );
 };

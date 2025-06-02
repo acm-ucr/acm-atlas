@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 interface BoardProps {
@@ -35,10 +34,10 @@ const Card = ({
       </div>
       <p className="pb-2 pt-6 text-lg font-bold md:text-xl">{name}</p>
       <div className={`${color} flex flex-row items-center gap-4`}>
-        <Link href={linkedin}>
+        <Link href={linkedin} target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="text-3xl hover:scale-105 hover:opacity-75 md:text-5xl" />
         </Link>
-        <Link href={github}>
+        <Link href={github} target="_blank" rel="noopener noreferrer">
           <FaGithub className="text-3xl hover:scale-105 hover:opacity-75 md:text-5xl" />
         </Link>
       </div>
