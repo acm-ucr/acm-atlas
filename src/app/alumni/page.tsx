@@ -1,2 +1,7 @@
 import Cards from "@/components/alumni/cards";
-export default Cards;
+
+const Page = () => {
+  return <Cards />;
+};
+
+export default Page;
