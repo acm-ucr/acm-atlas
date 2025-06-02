@@ -13,32 +13,35 @@ interface CarouselProps {
   data: CarouselDataItem[];
 }
 
-const CarouselAnimation = {
-  style: { width: "max-content" },
-  transition: { duration: 20, ease: "linear", repeat: Infinity },
-  animate: { x: ["0%", "-50%"] },
-};
+const CarouselAnimation = (index: number, length: number) => ({
+  initial: { x: 0 },
+  animate: { x: "-120%" },
+  transition: {
+    duration: 20,
+    ease: "linear",
+    repeat: Infinity,
+    delay: (20 / length) * (length - index + 1) * -1,
+  },
+});
 
 const Carousel = ({ data }: CarouselProps) => {
-  const items = [...data, ...data];
+  const length = data.length;
 
   return (
-    <div className="relative mb-10 overflow-hidden">
-      <motion.div
-        className="flex items-center gap-8"
-        style={CarouselAnimation.style}
-        animate={CarouselAnimation.animate}
-        transition={CarouselAnimation.transition}
-      >
-        {items.map(({ name, icon, borderColor }, index) => (
-          <CarouselItem
+    <div className="left-[100%] mt-10 h-28 w-[1300px] overflow-hidden md:my-10 lg:w-full">
+      {data.map(({ name, icon, borderColor }, index) => {
+        const animation = CarouselAnimation(index, length);
+        return (
+          <motion.div
             key={index}
-            name={name}
-            icon={icon}
-            borderColor={borderColor}
-          />
-        ))}
-      </motion.div>
+            initial={animation.initial}
+            animate={animation.animate}
+            transition={animation.transition}
+          >
+            <CarouselItem name={name} icon={icon} borderColor={borderColor} />
+          </motion.div>
+        );
+      })}
     </div>
   );
 };
