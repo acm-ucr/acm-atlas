@@ -46,7 +46,7 @@ const PhotoGallery = () => {
       </div>
       <Link
         href="/forgephotos"
-        className="my-[6vh] flex h-20 w-80 items-center justify-center rounded-3xl bg-acm-yellow-200 text-5xl"
+        className="my-[6vh] flex h-20 w-80 items-center justify-center rounded-3xl bg-acm-gray-200 text-5xl text-white"
       >
         See More
       </Link>
