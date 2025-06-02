@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const PhotoGallery = () => {
   return (
-    <div className="flex flex-col mx-auto w-4/5 px-4 py-8 items-center">
+    <div className="mx-auto flex w-4/5 flex-col items-center px-4 py-8">
       <p className="my-[6vh] text-center text-5xl font-bold text-acm-gray-500">
         PHOTO GALLERY
       </p>
@@ -44,7 +44,12 @@ const PhotoGallery = () => {
           />
         </div>
       </div>
-      <Link href="/sparkphotos" className="my-[6vh] flex justify-center items-center text-5xl w-80 h-20 rounded-3xl bg-acm-yellow-200">See More</Link>
+      <Link
+        href="/sparkphotos"
+        className="my-[6vh] flex h-20 w-80 items-center justify-center rounded-3xl bg-acm-yellow-200 text-5xl"
+      >
+        See More
+      </Link>
     </div>
   );
 };
