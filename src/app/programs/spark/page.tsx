@@ -32,6 +32,7 @@ const Page = () => {
         textColor="text-acm-gray-500"
         backgroundColor="bg-acm-yellow-200"
         image={Spark1}
+        name={"spark"}
       />
       <WhatWeDo />
       <FAQ />

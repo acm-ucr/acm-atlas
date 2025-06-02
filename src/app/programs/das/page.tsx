@@ -30,6 +30,7 @@ const Page = () => {
         textColor="text-white"
         backgroundColor="bg-acm-purple-200"
         image={Das1}
+        name={"das"}
       />
       <WhatWeDo />
       <FAQ />

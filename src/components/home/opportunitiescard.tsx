@@ -55,13 +55,20 @@ const OpportunitiesCard = ({
           </Link>
         </div>
         <div className="absolute bottom-5 left-0 flex w-full justify-center">
-          <Link
-            href={applicationLink}
-            className="rounded-full bg-white px-9 py-2 text-lg font-bold text-acm-gray-500"
-          >
-            {appYearAndQuarter}
-            {isOpen()}
-          </Link>
+          {applicationLink !== "/" ? (
+            <Link
+              href={applicationLink}
+              className="rounded-full bg-white px-9 py-2 text-lg font-bold text-acm-gray-500"
+            >
+              {appYearAndQuarter}
+              {isOpen()}
+            </Link>
+          ) : (
+            <p className="cursor-not-allowed rounded-full bg-white px-9 py-2 text-lg font-bold text-acm-gray-500">
+              {appYearAndQuarter}
+              {isOpen()}
+            </p>
+          )}
         </div>
       </div>
     </motion.div>
