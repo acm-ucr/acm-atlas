@@ -254,13 +254,13 @@ const alumni = [
     board: [
       {
         name: "Jonathan Trujillo",
-        position: "Co-President",
+        position: "President",
         linkedin: "https://www.linkedin.com/in/jonathan-trujillo-854b00223/",
         github: "https://github.com/stormyy00",
       },
       {
         name: "Jerry Li",
-        position: "Co-President",
+        position: "Vice President",
         linkedin: "https://www.linkedin.com/in/jerryli2025/",
         github: "https://github.com/Jeli04",
       },
@@ -541,6 +541,13 @@ const alumni = [
         linkedin: "https://www.linkedin.com/in/ian-negishi/",
         github: "https://github.com/inegishi",
         color: "text-acm-gray-400",
+      },
+      {
+        name: "Jon Darius",
+        position: "DAS Lead",
+        linkedin: "https://www.linkedin.com/in/jon-darius",
+        github: "https://github.com/chonml",
+        color: "text-acm-purple-100",
       },
       {
         name: "Khushi Chaudhari",
