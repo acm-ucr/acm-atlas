@@ -55,7 +55,6 @@ const CurrentOpportunities = () => {
       const currentApps = allEvents.filter((event) =>
         event.description?.includes("Application:"),
       );
-      console.log(currentApps);
       return { currentApps };
     },
   });
