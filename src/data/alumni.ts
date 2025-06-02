@@ -1317,10 +1317,20 @@ const alumni = [
   {
     cohort: "2009-2010",
     board: [
-      { name: "Ron-Michael Lumasag", position: "", linkedin: "", github: "" },
-      { name: "Sean Allen", position: "", linkedin: "", github: "" },
-      { name: "Gilbert Rabuco", position: "", linkedin: "", github: "" },
-      { name: "Anthony Quoc Anh Doan", position: "", linkedin: "", github: "" },
+      {
+        name: "Ron-Michael Lumasag",
+        position: "Officer",
+        linkedin: "",
+        github: "",
+      },
+      { name: "Sean Allen", position: "Officer", linkedin: "", github: "" },
+      { name: "Gilbert Rabuco", position: "Officer", linkedin: "", github: "" },
+      {
+        name: "Anthony Quoc Anh Doan",
+        position: "Officer",
+        linkedin: "",
+        github: "",
+      },
     ],
   },
 ];

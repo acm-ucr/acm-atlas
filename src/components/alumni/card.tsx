@@ -15,16 +15,20 @@ const Card = ({ name, position, linkedin, github, color }: AlumniProps) => {
       <p className={` ${color ? color : "text-acm-blue-500"}`}>{position}</p>
       <p className="py-2 text-acm-blue-900">{name}</p>
       <div className="flex gap-2">
-        <Link href={linkedin}>
-          <FaLinkedin
-            className={` ${color ? color : "text-acm-blue-500"} text-4xl`}
-          />
-        </Link>
-        <Link href={github}>
-          <FaGithub
-            className={` ${color ? color : "text-acm-blue-500"} text-4xl`}
-          />
-        </Link>
+        {linkedin && (
+          <Link href={linkedin}>
+            <FaLinkedin
+              className={` ${color ? color : "text-acm-blue-500"} text-4xl hover:scale-105 hover:opacity-75`}
+            />
+          </Link>
+        )}
+        {github && (
+          <Link href={github}>
+            <FaGithub
+              className={` ${color ? color : "text-acm-blue-500"} text-4xl hover:scale-105 hover:opacity-75`}
+            />
+          </Link>
+        )}
       </div>
     </div>
   );
