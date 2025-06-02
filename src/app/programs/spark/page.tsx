@@ -36,9 +36,8 @@ const Page = () => {
         image={Spark1}
       />
       <WhatWeDo />
-      <FAQ />
-      <PhotoGallery />
       <FAQ faqData={SparkFAQ} />
+      <PhotoGallery />
       <Projects projects={SparkProjects} />
     </>
   );

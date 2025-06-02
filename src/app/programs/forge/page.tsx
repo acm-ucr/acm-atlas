@@ -34,9 +34,8 @@ const Page = () => {
         image={Forge1}
       />
       <WhatWeDo />
-      <FAQ />
-      <PhotoGallery />
       <FAQ faqData={ForgeFAQ} />
+      <PhotoGallery />
     </>
   );
 };
