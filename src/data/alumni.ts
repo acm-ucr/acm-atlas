@@ -543,6 +543,13 @@ const alumni = [
         color: "text-acm-gray-400",
       },
       {
+        name: "Jon Darius",
+        position: "DAS Lead",
+        linkedin: "https://www.linkedin.com/in/jon-darius",
+        github: "https://github.com/chonml",
+        color: "text-acm-purple-100",
+      },
+      {
         name: "Khushi Chaudhari",
         position: "DAS Lead",
         linkedin: "https://www.linkedin.com/in/khushi-chaudhari33/",
