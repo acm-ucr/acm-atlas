@@ -20,7 +20,11 @@ const ProjectCard = ({ project, image, link, index }: ProjectCardProps) => {
 
   return (
     <motion.div {...cardAnimate(index)}>
-      <Link href={link} className="relative flex justify-center">
+      <Link
+        href={link}
+        className="relative flex justify-center"
+        target="_blank"
+      >
         <Image src={image} alt={`${project} Image`} />
         <div className="absolute bottom-4 w-11/12 rounded-3xl bg-white p-3 pl-0 text-center text-xl font-semibold md:pl-5 md:text-left md:text-2xl">
           {project}

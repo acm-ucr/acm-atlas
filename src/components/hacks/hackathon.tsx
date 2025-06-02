@@ -58,6 +58,9 @@ const Hackathon = ({
             end={stat.end}
             label={stat.label}
             duration={2}
+            color="text-black"
+            numberSize="text-4xl md:text-7xl"
+            labelSize="text-xl md:text-3xl"
           />
         ))}
       </div>
