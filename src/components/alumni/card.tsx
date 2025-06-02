@@ -11,9 +11,11 @@ interface AlumniProps {
 
 const Card = ({ name, position, linkedin, github, color }: AlumniProps) => {
   return (
-    <div className="flex flex-col place-items-center justify-center">
-      <p className={` ${color ? color : "text-acm-blue-500"}`}>{position}</p>
-      <p className="py-2 text-acm-blue-900">{name}</p>
+    <div className="flex flex-col items-center justify-center">
+      <p className={` ${color ? color : "text-acm-blue-500"} font-bold`}>
+        {position}
+      </p>
+      <p className="py-2 font-semibold text-acm-blue-900">{name}</p>
       <div className="flex gap-2">
         {linkedin && (
           <Link href={linkedin}>
