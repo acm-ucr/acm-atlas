@@ -69,6 +69,9 @@ const Footer = () => {
               >
                 CS Jobs List
               </Link>
+              <Link href="/alumni" className="hover:opacity-75">
+                ACM Alumni
+              </Link>
             </div>
           </div>
           <div className="flex flex-col">
@@ -141,19 +144,39 @@ const Footer = () => {
         <p className="text-4xl font-semibold text-acm-gray-500">ACM@UCR</p>
         <p className="text-acm-gray-500">Association of Computing Machinery</p>
         <div className="flex gap-6 text-acm-blue-700">
-          <Link href="https://www.instagram.com/acm_ucr/" target="_blank">
+          <Link
+            href="https://www.instagram.com/acm_ucr/"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <RiInstagramFill className="text-4xl" />
           </Link>
-          <Link href="https://discord.gg/qsHw6dhmmY" target="_blank">
+          <Link
+            href="https://discord.gg/qsHw6dhmmY"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <FaDiscord className="text-4xl" />
           </Link>
-          <Link href="https://www.linkedin.com/company/acm-ucr" target="_blank">
+          <Link
+            href="https://www.linkedin.com/company/acm-ucr"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <FaLinkedin className="text-4xl" />
           </Link>
-          <Link href="https://github.com/acm-ucr" target="_blank">
+          <Link
+            href="https://github.com/acm-ucr"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <FaGithub className="text-4xl" />
           </Link>
-          <Link href="https://medium.com/@contact.acmucr" target="_blank">
+          <Link
+            href="https://medium.com/@contact.acmucr"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <FaMedium className="text-4xl" />
           </Link>
         </div>
@@ -164,21 +187,32 @@ const Footer = () => {
                 Resources
               </p>
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
-                <Link href="/hacks/hackpacks">Hackpacks</Link>
-                <Link href="/templateresume" target="_blank">
+                <Link href="/hacks/hackpacks" className="hover:opacity-75">
+                  Hackpacks
+                </Link>
+                <Link
+                  href="/templateresume"
+                  target="_blank"
+                  className="hover:opacity-75"
+                >
                   Template Resume
                 </Link>
                 <Link
                   href="https://github.com/SimplifyJobs/Summer2025-Internships"
                   target="_blank"
+                  className="hover:opacity-75"
                 >
                   CS Internships List
                 </Link>
                 <Link
                   href="https://github.com/SimplifyJobs/New-Grad-Positions"
                   target="_blank"
+                  className="hover:opacity-75"
                 >
                   CS Jobs List
+                </Link>
+                <Link href="/alumni" className="hover:opacity-75">
+                  ACM Alumni
                 </Link>
               </div>
             </div>
