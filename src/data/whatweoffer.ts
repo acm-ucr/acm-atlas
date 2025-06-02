@@ -29,7 +29,7 @@ export const whatWeOffer = [
   },
   {
     header: "INTERESTED IN",
-    program: "EMEDDED",
+    program: "EMBEDDED",
     acm: "ACM Forge",
     pText:
       "where you can build physical embedded projects across 3 different sub teams: CS, EE, and ME! ",

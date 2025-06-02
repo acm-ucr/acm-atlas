@@ -313,7 +313,7 @@ export const Board = [
     members: [
       {
         name: "Justin Im",
-        position: "Forge Director",
+        position: "Forge Directors",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Justin,
@@ -322,7 +322,7 @@ export const Board = [
       },
       {
         name: "Marcus Hsieh",
-        position: "Forge Director",
+        position: "Forge Directors",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Marcus,

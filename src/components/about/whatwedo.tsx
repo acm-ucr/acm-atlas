@@ -20,11 +20,31 @@ const WhatWeDo = () => {
           from the Big 4 to startups.
         </p>
         <div className="mt-6 flex justify-center gap-8">
-          <Image src={Spark} alt="Spark" className="w-[12vw] md:w-[5vw]" />
-          <Image src={Forge} alt="Forge" className="w-[12vw] md:w-[5vw]" />
-          <Image src={Create} alt="Create" className="w-[12vw] md:w-[5vw]" />
-          <Image src={DAS} alt="DAS" className="w-[12vw] md:w-[5vw]" />
-          <Image src={BitByte} alt="BitByte" className="w-[12vw] md:w-[5vw]" />
+          <Image
+            src={Spark}
+            alt="Spark"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+          />
+          <Image
+            src={Forge}
+            alt="Forge"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+          />
+          <Image
+            src={Create}
+            alt="Create"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+          />
+          <Image
+            src={DAS}
+            alt="DAS"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+          />
+          <Image
+            src={BitByte}
+            alt="BitByte"
+            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+          />
         </div>
       </div>
       <div className="image-grid grid h-[600px] w-full gap-4 overflow-hidden transition-all">
