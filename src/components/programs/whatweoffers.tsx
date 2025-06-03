@@ -4,10 +4,10 @@ import WhatWeOffer from "@/components/programs/whatweoffer";
 const WhatWeOffers = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <p className="mt-10 py-8 text-center text-6xl font-bold text-acm-gray-500">
+      <p className="mt-10 py-8 text-center text-[52px] font-bold text-acm-gray-500">
         PROGRAMS
       </p>
-      <p className="p-10 px-[5%] text-center text-xl font-bold text-acm-gray-500 md:w-4/5 md:text-left md:text-2xl">
+      <p className="text-l p-4 px-[10%] text-center font-bold text-acm-gray-500 md:w-4/5 md:text-left md:text-2xl">
         ACM offers four project oriented programs, each with their own focus—
         such as web development and robotics, and one mentorship program. Our
         programs typically run quarterly. We strive to cover a wide variety of

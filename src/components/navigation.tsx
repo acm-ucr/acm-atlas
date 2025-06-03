@@ -73,6 +73,11 @@ const Navigation = () => {
     setNav(!navBar);
   };
 
+  const NavbarAnimation = {
+    whileHover: { scale: 1.02 },
+    transition: { type: "spring", stiffness: 300 },
+  };
+
   return (
     <div className="grid grid-cols-4 border-acm-blue-400 p-5 shadow-xl md:grid-cols-5 md:border-b-2 md:border-b-acm-blue-600">
       <RiMenu2Fill
@@ -80,7 +85,12 @@ const Navigation = () => {
         onClick={programBar ? handleBothBars : handleNavBar}
       />
       <Link className={pathname === "" ? "text-acm-blue-500" : ""} href="/">
-        <p className="text-3xl font-semibold text-acm-gray-500"> ACM@UCR</p>
+        <motion.div
+          className="text-3xl font-semibold text-acm-gray-500"
+          {...NavbarAnimation}
+        >
+          ACM@UCR
+        </motion.div>{" "}
       </Link>
 
       {/* For web view */}
@@ -92,10 +102,13 @@ const Navigation = () => {
                 {subItems ? (
                   <>
                     <NavigationMenuTrigger onClick={() => router.push(link)}>
-                      <div className="flex items-center gap-1">
+                      <motion.div
+                        className="flex items-center gap-1"
+                        {...NavbarAnimation}
+                      >
                         {name}
                         {Icon && <Icon className="text-lg" />}
-                      </div>
+                      </motion.div>
                     </NavigationMenuTrigger>
                     <NavigationMenuContent className="bg-white px-7">
                       {subItems.map(({ subName, subLink }, subIndex) => (
@@ -108,7 +121,9 @@ const Navigation = () => {
                           }
                           href={subLink}
                         >
-                          {subName}
+                          <motion.div {...NavbarAnimation}>
+                            {subName}
+                          </motion.div>
                         </NavigationMenuLink>
                       ))}
                     </NavigationMenuContent>
@@ -118,7 +133,7 @@ const Navigation = () => {
                     className={pathname === link ? "text-acm-blue-500" : ""}
                     href={link}
                   >
-                    {name}
+                    <motion.div {...NavbarAnimation}>{name}</motion.div>
                   </Link>
                 )}
               </NavigationMenuItem>
