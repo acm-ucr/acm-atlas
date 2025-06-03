@@ -59,7 +59,7 @@ const StatsGrid: React.FC = () => {
             labelSize="text-xl md:text-3xl"
           />
         </div>
-        <div className="mx-auto w-full border-t-2 border-gray-300 pt-4 text-center">
+        <div className="mx-auto w-full border-gray-300 pt-4 text-center">
           <StatItem
             end={2500}
             label="alumni"
@@ -69,7 +69,7 @@ const StatsGrid: React.FC = () => {
             labelSize="text-xl md:text-3xl"
           />
         </div>
-        <div className="mx-auto w-full border-t-2 border-gray-300 pt-4 text-center">
+        <div className="mx-auto w-full border-gray-300 pt-4 text-center">
           <StatItem
             end={50}
             label="socials"
@@ -79,7 +79,7 @@ const StatsGrid: React.FC = () => {
             labelSize="text-xl md:text-3xl"
           />
         </div>
-        <div className="mx-auto w-full border-t-2 border-gray-300 pt-4 text-center">
+        <div className="mx-auto w-full border-gray-300 pt-4 text-center">
           <StatItem
             end={100}
             label="workshops"

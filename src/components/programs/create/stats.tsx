@@ -10,7 +10,7 @@ const StatsGrid: React.FC = () => {
             end={110}
             label="quarterly applications"
             duration={0.7}
-            color="text-black"
+            color="text-acm-gray-500"
             numberSize="text-4xl md:text-7xl"
             labelSize="text-xl md:text-3xl"
           />
@@ -20,7 +20,7 @@ const StatsGrid: React.FC = () => {
             end={45}
             label="total acceptances"
             duration={0.7}
-            color="text-black"
+            color="text-acm-gray-500"
             numberSize="text-4xl md:text-7xl"
             labelSize="text-xl md:text-3xl"
           />
@@ -30,7 +30,7 @@ const StatsGrid: React.FC = () => {
             end={54}
             label="projects"
             duration={0.7}
-            color="text-black"
+            color="text-acm-gray-500"
             numberSize="text-4xl md:text-7xl"
             labelSize="text-xl md:text-3xl"
           />
@@ -43,7 +43,7 @@ const StatsGrid: React.FC = () => {
               end={110}
               label="quarterly applications"
               duration={0.7}
-              color="text-black"
+              color="text-acm-gray-500"
               numberSize="text-4xl md:text-7xl"
               labelSize="text-xl md:text-3xl"
             />
@@ -53,7 +53,7 @@ const StatsGrid: React.FC = () => {
               end={45}
               label="total acceptances"
               duration={0.7}
-              color="text-black"
+              color="text-acm-gray-500"
               numberSize="text-4xl md:text-7xl"
               labelSize="text-xl md:text-3xl"
             />
@@ -65,7 +65,7 @@ const StatsGrid: React.FC = () => {
               end={54}
               label="projects"
               duration={0.7}
-              color="text-black"
+              color="text-acm-gray-500"
               numberSize="text-4xl md:text-7xl"
               labelSize="text-xl md:text-3xl"
             />
