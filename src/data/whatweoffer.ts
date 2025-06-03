@@ -1,4 +1,4 @@
-import Spark from "@/public/logos/spark.webp";
+import Spark from "@/public/logos/spark.svg";
 import Create from "@/public/logos/create.svg";
 import Forge from "@/public/logos/forge.svg";
 import Das from "@/public/logos/das.svg";
