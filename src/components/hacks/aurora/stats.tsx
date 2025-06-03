@@ -1,8 +1,6 @@
 "use client";
 import StatItem from "@/components/statitem";
 import { useQuery } from "@tanstack/react-query";
-import Image from "next/image";
-import auroraStar from "@/public/logos/aurorastar.webp";
 
 const fetchRepoStats = async () => {
   const res = await fetch("https://api.github.com/repos/acm-ucr/aurora");
@@ -73,8 +71,8 @@ const Stats: React.FC = () => {
 
   return (
     <div>
-      <div className="mx-auto grid w-3/4 grid-flow-col grid-rows-6 py-12 text-center md:grid-rows-2">
-        <div>
+      <div className="mx-auto grid w-3/4 grid-cols-3 py-12 text-center md:grid-rows-2">
+        <div className="border-r-2 pb-10">
           <StatItem
             end={round(Number(data.commits))}
             label="commits"
@@ -84,7 +82,7 @@ const Stats: React.FC = () => {
             labelSize="text-2xl md:text-3xl"
           />
         </div>
-        <div>
+        <div className="border-r-2 pb-10">
           <StatItem
             end={round(data.closedPRs)}
             label="PRs"
@@ -94,7 +92,7 @@ const Stats: React.FC = () => {
             labelSize="text-2xl md:text-3xl"
           />
         </div>
-        <div>
+        <div className="pb-10">
           <StatItem
             end={round(data.closedIssues)}
             label="issues"
@@ -104,7 +102,7 @@ const Stats: React.FC = () => {
             labelSize="text-2xl md:text-3xl"
           />
         </div>
-        <div>
+        <div className="border-r-2">
           <StatItem
             end={round(data.contributors)}
             label="contributors"
@@ -114,17 +112,18 @@ const Stats: React.FC = () => {
             labelSize="text-2xl md:text-3xl"
           />
         </div>
-        <div>
+
+        <div className="border-r-2">
           <StatItem
             end={round(data.stars)}
-            label="stars"
+            label="stars ⭐"
             duration={0.7}
             color="text-acm-gray-500"
             numberSize="text-6xl md:text-7xl"
             labelSize="text-2xl md:text-3xl"
           />
-          <Image src={auroraStar} alt="Star" className="h-[30%] w-[18.5%]" />
         </div>
+
         <div>
           <StatItem
             end={round(data.days)}
