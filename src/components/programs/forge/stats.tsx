@@ -36,9 +36,11 @@ const StatsGrid: React.FC = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col md:hidden">
-        <div className="flex justify-center py-12 text-left">
-          <div className="pr-12">
+
+      {/* Mobile layout */}
+      <div className="flex flex-col text-center md:hidden">
+        <div className="flex flex-col text-center">
+          <div className="pb-4">
             <StatItem
               end={62}
               label="quarterly applications"
@@ -48,7 +50,7 @@ const StatsGrid: React.FC = () => {
               labelSize="text-xl md:text-3xl"
             />
           </div>
-          <div className="border-l-2 pl-4 pr-8">
+          <div className="pb-4">
             <StatItem
               end={32}
               label="total acceptances"
@@ -60,7 +62,7 @@ const StatsGrid: React.FC = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="pl-4 pr-12">
+          <div>
             <StatItem
               end={3}
               label="projects"

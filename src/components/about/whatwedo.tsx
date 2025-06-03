@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Spark from "@/public/logos/spark.svg";
+import Spark from "@/public/logos/spark.webp";
 import Create from "@/public/logos/create.svg";
 import Forge from "@/public/logos/forge.svg";
 import DAS from "@/public/logos/das.svg";

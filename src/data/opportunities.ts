@@ -1,4 +1,4 @@
-import Spark from "@/public/home/opportunities/spark.svg";
+import Spark from "@/public/home/opportunities/spark.webp";
 import Forge from "@/public/home/opportunities/forge.svg";
 import Create from "@/public/home/opportunities/create.svg";
 import DAS from "@/public/home/opportunities/das.svg";
