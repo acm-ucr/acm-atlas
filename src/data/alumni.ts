@@ -685,6 +685,13 @@ const alumni = [
         github: "https://github.com/seanquiambao",
         color: "text-acm-yellow-500",
       },
+      {
+        name: "Jonathan Trujillo",
+        position: "Spark Lead",
+        linkedin: "https://www.linkedin.com/in/jonathan-trujillo-854b00223/",
+        github: "https://github.com/stormyy00",
+        color: "text-acm-yellow-500",
+      },
     ],
   },
   {

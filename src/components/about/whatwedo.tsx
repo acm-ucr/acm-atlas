@@ -10,10 +10,10 @@ import WhatWeDo3 from "@/public/aboutpage/whatwedo3.webp";
 import WhatWeDo4 from "@/public/aboutpage/whatwedo4.webp";
 const WhatWeDo = () => {
   return (
-    <div className="mx-auto grid w-5/6 grid-cols-1 items-stretch gap-8 pt-[10vh] md:grid-cols-2">
+    <div className="mx-auto grid w-5/6 grid-cols-1 items-stretch gap-8 pt-[4vh] md:grid-cols-2 md:pt-[10vh]">
       <div className="flex flex-col items-center justify-center text-center text-acm-gray-500">
         <p className="text-4xl font-bold">WHAT WE DO</p>
-        <p className="mt-5 w-5/6 text-2xl font-medium leading-normal">
+        <p className="mt-5 w-5/6 text-xl font-medium leading-normal md:text-2xl">
           Every quarter, we focus on improving specific aspects of our members.
           In the Fall, we develop professional resumes, build all-star
           LinkedIns, and offer workshops on Applying Effectively at companies
@@ -23,27 +23,27 @@ const WhatWeDo = () => {
           <Image
             src={Spark}
             alt="Spark"
-            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+            className="w-[10vw] drop-shadow-lg md:w-[5vw]"
           />
           <Image
             src={Forge}
             alt="Forge"
-            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+            className="w-[10vw] drop-shadow-lg md:w-[5vw]"
           />
           <Image
             src={Create}
             alt="Create"
-            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+            className="w-[10vw] drop-shadow-lg md:w-[5vw]"
           />
           <Image
             src={DAS}
             alt="DAS"
-            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+            className="w-[10vw] drop-shadow-lg md:w-[5vw]"
           />
           <Image
             src={BitByte}
             alt="BitByte"
-            className="w-[12vw] drop-shadow-lg md:w-[5vw]"
+            className="w-[10vw] drop-shadow-lg md:w-[5vw]"
           />
         </div>
       </div>
