@@ -396,6 +396,13 @@ const alumni = [
         color: "text-acm-yellow-500",
       },
       {
+        name: "Mailyn Nguyen",
+        position: "Spark Lead",
+        linkedin: "https://www.linkedin.com/in/mailyn-nguyen",
+        github: "https://github.com/mailynnguyen",
+        color: "text-acm-yellow-500",
+      },
+      {
         name: "Felix Diaz",
         position: "Spark Lead",
         linkedin: "https://www.linkedin.com/in/felix-m-diaz",
@@ -512,6 +519,13 @@ const alumni = [
         position: "Spark Lead",
         linkedin: "https://www.linkedin.com/in/minh-tran-677564332/",
         github: "https://github.com/minhhdtran",
+        color: "text-acm-yellow-500",
+      },
+      {
+        name: "Brandon Sun",
+        position: "Spark Lead",
+        linkedin: "https://www.linkedin.com/in/sunbrandon",
+        github: "https://github.com/sunbrandon",
         color: "text-acm-yellow-500",
       },
       {
@@ -669,6 +683,13 @@ const alumni = [
         position: "Spark Lead",
         linkedin: "https://www.linkedin.com/in/squia003",
         github: "https://github.com/seanquiambao",
+        color: "text-acm-yellow-500",
+      },
+      {
+        name: "Jonathan Trujillo",
+        position: "Spark Lead",
+        linkedin: "https://www.linkedin.com/in/jonathan-trujillo-854b00223/",
+        github: "https://github.com/stormyy00",
         color: "text-acm-yellow-500",
       },
     ],
