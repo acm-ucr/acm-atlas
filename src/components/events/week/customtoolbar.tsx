@@ -50,37 +50,37 @@ const CustomToolbar: React.FC<ToolbarProps<CalendarEvent, object>> = ({
           onValueChange={setSelectedEventTypes}
         >
           <ToggleGroupItem
-            className="flex w-full items-center justify-center rounded-lg bg-acm-blue-700 px-4 py-2 text-white hover:bg-acm-blue-400 data-[state=on]:bg-acm-blue-500"
+            className="flex w-full items-center justify-center rounded-lg bg-acm-blue-400 px-4 py-2 text-white data-[state=on]:bg-acm-blue-700 data-[state=on]:text-white"
             value="general"
           >
             <div>GENERAL</div>
           </ToggleGroupItem>
           <ToggleGroupItem
-            className="flex w-full items-center justify-center rounded-lg bg-acm-yellow-200 px-4 py-2 hover:bg-acm-yellow-300 data-[state=on]:bg-acm-yellow-500"
+            className="flex w-full items-center justify-center rounded-lg bg-acm-yellow-100 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-yellow-200 data-[state=on]:text-acm-gray-500"
             value="spark"
           >
             <div>SPARK</div>
           </ToggleGroupItem>
           <ToggleGroupItem
-            className="flex w-full items-center justify-center rounded-lg bg-acm-blue-200 px-4 py-2 hover:bg-acm-blue-100 data-[state=on]:bg-acm-blue-300"
+            className="flex w-full items-center justify-center rounded-lg bg-acm-blue-200 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-blue-100 data-[state=on]:text-acm-gray-500"
             value="create"
           >
             <div>CREATE</div>
           </ToggleGroupItem>
           <ToggleGroupItem
-            className="flex w-full items-center justify-center rounded-lg bg-acm-gray-800 px-4 py-2 hover:bg-acm-gray-300 data-[state=on]:bg-acm-gray-700"
+            className="flex w-full items-center justify-center rounded-lg bg-acm-gray-800 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-gray-400 data-[state=on]:text-white"
             value="forge"
           >
             <div>FORGE</div>
           </ToggleGroupItem>
           <ToggleGroupItem
-            className="flex w-full items-center justify-center rounded-lg bg-acm-purple-300 px-4 py-2 hover:bg-acm-purple-100 data-[state=on]:bg-acm-purple-200"
+            className="flex w-full items-center justify-center rounded-lg bg-acm-purple-300 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-purple-200 data-[state=on]:text-acm-gray-500"
             value="das"
           >
             <div>DAS</div>
           </ToggleGroupItem>
           <ToggleGroupItem
-            className="flex w-full items-center justify-center rounded-lg bg-acm-green-500 px-4 py-2 hover:bg-acm-green-300 data-[state=on]:bg-acm-green-200"
+            className="flex w-full items-center justify-center rounded-lg bg-acm-green-100 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-green-500 data-[state=on]:text-acm-gray-500"
             value="bitbyte"
           >
             <div>BIT/BYTE</div>
