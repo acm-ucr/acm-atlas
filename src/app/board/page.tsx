@@ -10,7 +10,7 @@ type SectionRefs = {
 
 const Page = () => {
   const sectionRefs: SectionRefs = {
-    "ACM BOARD": useRef<HTMLDivElement | null>(null),
+    "ACM EXECUTIVE BOARD": useRef<HTMLDivElement | null>(null),
     "ACM SPARK LEADS": useRef<HTMLDivElement | null>(null),
     "ACM CREATE LEADS": useRef<HTMLDivElement | null>(null),
     "ACM FORGE LEADS": useRef<HTMLDivElement | null>(null),
