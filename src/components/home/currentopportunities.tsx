@@ -10,7 +10,7 @@ const CurrentOpportunities = () => {
 
   return (
     <div className="flex flex-col items-center justify-center py-12">
-      <p className="text-center text-5xl font-bold text-acm-gray-500 md:text-6xl">
+      <p className="text-center text-4xl font-bold text-acm-gray-500 md:text-6xl">
         CURRENT OPPORTUNITIES
       </p>
       <div className="flex w-11/12 flex-wrap justify-center gap-x-16 gap-y-8 2xl:w-4/5">

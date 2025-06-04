@@ -1,7 +1,5 @@
 "use client";
-
-import Image from "next/image";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "motion/react";
 
 interface HeaderProps {
