@@ -33,7 +33,7 @@ export const TECH_COLORS: Record<string, string> = {
   discord: "bg-indigo-300 text-white",
   jupyter: "bg-orange-200 text-white",
   pandas: "bg-gray-400 text-white",
-  javascript: "bg-acm-yellow-500 text-black",
+  javascript: "bg-acm-yellow-500 text-white",
 };
 
 export const TECHSTACKS: Record<string, React.ReactNode> = {
