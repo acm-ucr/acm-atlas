@@ -192,7 +192,11 @@ const CalendarCall = () => {
           selected={date}
           onSelect={setDate}
           className="mx-auto w-11/12 md:w-10/12"
-          events={data.allEvents}
+          events={data.allEvents.filter((event) =>
+            selectedEventTypes.includes(event.eventType),
+          )}
+          selectedEventTypes={selectedEventTypes}
+          setSelectedEventTypes={setSelectedEventTypes}
         />
       ) : (
         <div className="rounded-calendar-top mx-auto h-[150vh] w-10/12 pb-8">

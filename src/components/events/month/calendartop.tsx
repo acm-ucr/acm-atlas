@@ -1,15 +1,20 @@
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 interface CalendarTopProps {
   currentDate: Date;
   onPrevMonth: () => void;
   onNextMonth: () => void;
+  selectedEventTypes: string[];
+  setSelectedEventTypes: (types: string[]) => void;
 }
 
 const CalendarTop = ({
   currentDate,
   onPrevMonth,
   onNextMonth,
+  selectedEventTypes,
+  setSelectedEventTypes,
 }: CalendarTopProps) => {
   const monthNames = [
     "JAN",
@@ -46,24 +51,48 @@ const CalendarTop = ({
         </button>
       </div>
       <div className="grid grid-cols-3 gap-2 pb-4 md:flex md:gap-0 md:space-x-2 md:pb-0">
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-blue-700 px-4 py-2 text-white">
-          GENERAL
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-yellow-200 px-4 py-2">
-          SPARK
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-blue-200 px-4 py-2">
-          CREATE
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-gray-800 px-4 py-2">
-          FORGE
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-purple-300 px-4 py-2">
-          DAS
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-green-500 px-4 py-2">
-          BIT/BYTE
-        </div>
+        <ToggleGroup
+          type="multiple"
+          value={selectedEventTypes}
+          onValueChange={setSelectedEventTypes}
+        >
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-blue-400 px-4 py-2 text-white data-[state=on]:bg-acm-blue-700 data-[state=on]:text-white"
+            value="general"
+          >
+            <div>GENERAL</div>
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-yellow-100 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-yellow-200 data-[state=on]:text-acm-gray-500"
+            value="spark"
+          >
+            <div>SPARK</div>
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-blue-200 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-blue-100 data-[state=on]:text-acm-gray-500"
+            value="create"
+          >
+            <div>CREATE</div>
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-gray-800 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-gray-400 data-[state=on]:text-white"
+            value="forge"
+          >
+            <div>FORGE</div>
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-purple-300 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-purple-200 data-[state=on]:text-acm-gray-500"
+            value="das"
+          >
+            <div>DAS</div>
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-green-100 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-green-500 data-[state=on]:text-acm-gray-500"
+            value="bitbyte"
+          >
+            <div>BIT/BYTE</div>
+          </ToggleGroupItem>
+        </ToggleGroup>
       </div>
     </div>
   );
