@@ -31,7 +31,7 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
           className="flex flex-col items-center justify-center text-center"
           ref={sectionRefs[title]}
         >
-          <p className="text-4xl font-bold text-acm-gray-500">{title}</p>
+          <p className="pt-12 text-4xl font-bold text-acm-gray-500">{title}</p>
           <div className="grid grid-cols-1 items-center justify-center md:grid-cols-3">
             {members.map(
               (
