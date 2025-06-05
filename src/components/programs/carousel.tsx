@@ -28,7 +28,7 @@ const Carousel = ({ data }: CarouselProps) => {
   const length = data.length;
 
   return (
-    <div className="relative mt-20 h-28 w-full overflow-hidden md:my-10">
+    <div className="relative mt-24 h-28 w-full overflow-hidden md:my-10">
       <div className="w-[1200px] xl:w-full">
         {data.map(({ name, icon, borderColor }, index) => {
           const animation = CarouselAnimation(index, length);
