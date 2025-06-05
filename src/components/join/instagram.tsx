@@ -25,7 +25,7 @@ const Instagram = () => {
         FOLLOW OUR INSTAGRAM{" "}
         <Link
           href="https://www.instagram.com/acm_ucr/"
-          className="hover:text-acm-blue-700 hover:underline"
+          className="text-acm-blue-700 hover:underline hover:opacity-75"
           target="_blank"
         >
           @ACM_UCR
