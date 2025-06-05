@@ -73,10 +73,11 @@ const CustomEvent = ({
       >
         <PopoverTrigger className={`cursor-pointer text-left hover:opacity-75`}>
           <div className="font-bold">{title}</div>
+          <div className="text-[90%]">{hasStartTime && timeRangeDisplay}</div>
+          <div className="text-[90%]">
+            {location ? location : "No location"}
+          </div>
         </PopoverTrigger>
-
-        <div className="text-[90%]">{hasStartTime && timeRangeDisplay}</div>
-        <div className="text-[90%]">{location ? location : "No location"}</div>
       </div>
       <PopoverContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
         <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
