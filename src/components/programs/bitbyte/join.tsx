@@ -19,12 +19,13 @@ const Join = () => {
           {appLink && appLink !== "/" ? (
             <Link
               href={appLink}
-              className="rounded-lg bg-acm-green-200 p-2 px-6 text-3xl text-white md:mt-0 md:px-10 md:py-4 md:text-4xl"
+              target="_blank"
+              className="rounded-lg bg-acm-green-200 p-2 px-6 text-2xl text-white md:mt-0 md:px-10 md:py-4 md:text-3xl"
             >
               {isLoading ? "Loading..." : status}
             </Link>
           ) : (
-            <p className="cursor-not-allowed rounded-lg bg-acm-green-200 p-2 px-6 text-3xl text-white md:mt-0 md:px-10 md:py-4 md:text-4xl">
+            <p className="cursor-not-allowed rounded-lg bg-acm-green-200 p-2 px-6 text-2xl text-white md:mt-0 md:px-10 md:py-4 md:text-3xl">
               {isLoading ? "Loading..." : status}
             </p>
           )}

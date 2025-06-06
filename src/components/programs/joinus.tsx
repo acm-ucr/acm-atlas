@@ -56,13 +56,14 @@ const Joinus = ({ textColor, backgroundColor, image, name }: ProgramProps) => {
             {appLink && appLink !== "/" ? (
               <Link
                 href={appLink}
-                className={`rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-4xl ${textColor} ${backgroundColor} ${appLink === "/" ? "cursor-not-allowed" : ""}`}
+                target="_blank"
+                className={`rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-3xl ${textColor} ${backgroundColor}`}
               >
                 {isLoading ? "Loading..." : status} APPLICATION
               </Link>
             ) : (
               <p
-                className={`rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-4xl ${textColor} ${backgroundColor} ${appLink === "/" ? "cursor-not-allowed" : ""}`}
+                className={`cursor-not-allowed rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-3xl ${textColor} ${backgroundColor}`}
               >
                 {isLoading ? "Loading..." : status}
               </p>

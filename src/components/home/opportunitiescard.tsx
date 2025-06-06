@@ -67,6 +67,7 @@ const OpportunitiesCard = ({
             {applicationLink !== "/" ? (
               <Link
                 href={applicationLink}
+                target="_blank"
                 className="rounded-full bg-white px-9 py-2 text-lg font-bold text-acm-gray-500"
               >
                 {appYearAndQuarter}
