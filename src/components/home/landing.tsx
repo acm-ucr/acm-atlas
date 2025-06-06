@@ -37,7 +37,7 @@ const Landing = () => {
       <div className="relative flex flex-col items-center justify-center">
         <motion.div
           {...KeyAnimation}
-          className="-z-10 mb-36 flex items-center justify-center md:mb-56"
+          className="-z-10 mb-36 flex items-center justify-center md:mb-40"
         >
           <Image
             src={landingKeys}
@@ -57,7 +57,7 @@ const Landing = () => {
           <div className="absolute bottom-24 right-5 -z-10 h-48 w-48 rounded-full bg-acm-blue-700 blur-2xl md:hidden" />
         </motion.div>
 
-        <div className="absolute bottom-0 flex w-full flex-col items-center md:bottom-16">
+        <div className="absolute bottom-0 flex w-full flex-col items-center md:bottom:0">
           <div className="z-10 h-10 w-11/12 rounded-t-2xl bg-white/45 md:h-16">
             <div className="absolute left-8 top-3 h-4 w-4 rounded-full bg-[#F6F6F6]/50 md:left-20 md:top-5 md:h-6 md:w-6 2xl:bg-[#F6F6F6]" />
             <div className="absolute left-14 top-3 h-4 w-4 rounded-full bg-[#F6F6F6]/50 md:left-32 md:top-5 md:h-6 md:w-6 2xl:bg-[#F6F6F6]" />
