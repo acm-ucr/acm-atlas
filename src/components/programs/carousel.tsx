@@ -1,5 +1,8 @@
+"use client";
 import CarouselItem from "./carouselitem";
 import { StaticImageData } from "next/image";
+import { motion } from "motion/react";
+
 interface CarouselDataItem {
   name: string;
   icon: StaticImageData;
@@ -8,35 +11,38 @@ interface CarouselDataItem {
 
 interface CarouselProps {
   data: CarouselDataItem[];
-  pad: string;
-  padmd: string;
-  pad2xl: string;
 }
 
-const Carousel = ({ data, pad, padmd, pad2xl }: CarouselProps) => {
+const CarouselAnimation = (index: number, length: number) => ({
+  initial: { x: 0 },
+  animate: { x: "-120%" },
+  transition: {
+    duration: 20,
+    ease: "linear",
+    repeat: Infinity,
+    delay: (20 / length) * (length - index + 1) * -1,
+  },
+});
+
+const Carousel = ({ data }: CarouselProps) => {
+  const length = data.length;
+
   return (
-    <div className="relative hidden overflow-hidden py-[6vh] md:flex">
-      <div className="flex w-screen animate-marquee justify-between gap-x-10 px-5">
-        {data.map(({ name, icon, borderColor }, index) => (
-          <CarouselItem
-            key={index}
-            name={name}
-            icon={icon}
-            borderColor={borderColor}
-          />
-        ))}
-      </div>
-      <div
-        className={`absolute flex w-screen animate-marquee-continuation justify-between gap-x-10 ${pad} ${padmd} ${pad2xl}`}
-      >
-        {data.map(({ name, icon, borderColor }, idx) => (
-          <CarouselItem
-            key={idx}
-            name={name}
-            icon={icon}
-            borderColor={borderColor}
-          />
-        ))}
+    <div className="relative mt-24 h-28 w-full overflow-hidden md:my-10">
+      <div className="w-[1200px] xl:w-full">
+        {data.map(({ name, icon, borderColor }, index) => {
+          const animation = CarouselAnimation(index, length);
+          return (
+            <motion.div
+              key={index}
+              initial={animation.initial}
+              animate={animation.animate}
+              transition={animation.transition}
+            >
+              <CarouselItem name={name} icon={icon} borderColor={borderColor} />
+            </motion.div>
+          );
+        })}
       </div>
     </div>
   );
