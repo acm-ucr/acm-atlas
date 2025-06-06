@@ -25,13 +25,13 @@ const Instagram = () => {
         FOLLOW OUR INSTAGRAM{" "}
         <Link
           href="https://www.instagram.com/acm_ucr/"
-          className="hover:text-acm-blue-700 hover:underline"
+          className="text-acm-blue-700 hover:underline hover:opacity-75"
           target="_blank"
         >
           @ACM_UCR
         </Link>
       </p>
-      <div data-behold-id={process.env.INSTAGRAM_BEHOLD_ID} />
+      <div data-behold-id={process.env.NEXT_PUBLIC_INSTAGRAM_BEHOLD_ID} />
     </div>
   );
 };

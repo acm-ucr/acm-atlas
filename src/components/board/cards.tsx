@@ -1,7 +1,6 @@
-import { Board } from "@/data/board";
+import board from "@/data/board";
 import Card from "@/components/board/card";
 import { motion } from "motion/react";
-import React from "react";
 
 type SectionRefs = {
   [key: string]: React.RefObject<HTMLDivElement>;
@@ -25,15 +24,17 @@ const getTitleAnimation = () => ({
 
 const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-20 pb-[6vh]">
-      {Board.map(({ title, members }, index) => (
+    <div className="flex flex-col items-center justify-center pb-[6vh]">
+      {board.map(({ title, members }, index) => (
         <div
           key={index}
           className="flex flex-col items-center justify-center text-center"
           ref={sectionRefs[title]}
         >
-          <p className="text-4xl font-bold text-acm-gray-500">{title}</p>
-          <div className="grid grid-cols-1 items-center justify-center gap-y-8 px-5 md:grid-cols-3">
+          <p className="pb-6 pt-12 text-4xl font-bold text-acm-gray-500">
+            {title}
+          </p>
+          <div className="grid grid-cols-1 items-center justify-center md:grid-cols-3">
             {members.map(
               (
                 { name, position, color, shadow, photo, linkedin, github },
@@ -43,7 +44,6 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
                   variants={slidedownanimation}
                   key={index}
                   {...getTitleAnimation()}
-                  className="font-libre group flex flex-col items-center text-sm font-bold md:text-2xl 2xl:text-3xl"
                 >
                   <Card
                     name={name}
