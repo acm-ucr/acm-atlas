@@ -8,37 +8,27 @@ const opportunities = [
   {
     name: "spark",
     card_background: Spark,
-    year_and_quarter: "SUMMER '25",
     link: "/programs/spark",
-    application_link: "/",
   },
   {
     name: "forge",
     card_background: Forge,
-    year_and_quarter: "FALL '25",
     link: "/programs/forge",
-    application_link: "/",
   },
   {
     name: "create",
     card_background: Create,
-    year_and_quarter: "SUMMER '25",
     link: "/programs/create",
-    application_link: "/",
   },
   {
     name: "das",
     card_background: DAS,
-    year_and_quarter: "FALL '25",
     link: "/programs/das",
-    application_link: "/",
   },
   {
     name: "bit/byte",
     card_background: Bitbyte,
-    year_and_quarter: "FALL '25",
     link: "/programs/bitbyte",
-    application_link: "/",
   },
 ];
 export default opportunities;

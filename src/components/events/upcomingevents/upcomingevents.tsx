@@ -2,6 +2,7 @@
 import React from "react";
 import { useQuery } from "@tanstack/react-query";
 import Cards from "./cards";
+import { calendarSources } from "@/components/events/calendarcall";
 
 export type GoogleEventProps = {
   start: {
@@ -28,14 +29,6 @@ export interface EventCardProps {
   description: string;
   eventType: string;
 }
-
-const calendarSources = [
-  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_SPARK, eventType: "spark" },
-  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_CREATE, eventType: "create" },
-  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_FORGE, eventType: "forge" },
-  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_DAS, eventType: "das" },
-  { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_BITBYTE, eventType: "bitbyte" },
-];
 
 const UpcomingEvents = () => {
   const { data, isLoading, isError } = useQuery<{
