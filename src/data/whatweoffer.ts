@@ -4,7 +4,7 @@ import Forge from "@/public/logos/forge.svg";
 import Das from "@/public/logos/das.svg";
 import Bitbyte from "@/public/logos/bitbyte.svg";
 
-export const whatWeOffer = [
+const whatWeOffer = [
   {
     header: "INTERESTED IN",
     program: "WEB DEV",
@@ -61,3 +61,5 @@ export const whatWeOffer = [
     link: "/programs/bitbyte",
   },
 ];
+
+export default whatWeOffer;

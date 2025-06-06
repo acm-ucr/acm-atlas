@@ -2,12 +2,15 @@
 
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import getCurrentApps from "@/utils/applications/currentapplications";
+import { getAppStatus } from "@/utils/applications/applicationstatus";
 import { motion } from "motion/react";
 
 interface ProgramProps {
   textColor: string;
   backgroundColor: string;
   image: StaticImageData;
+  name: string;
 }
 
 // Animation variants
@@ -33,7 +36,11 @@ const ImageAnimation = {
   transition: { duration: 0.6, delay: 0.3 },
 };
 
-const Joinus = ({ textColor, backgroundColor, image }: ProgramProps) => {
+const Joinus = ({ textColor, backgroundColor, image, name }: ProgramProps) => {
+  const { data, isLoading } = getCurrentApps();
+  const currentApps = data?.currentApps;
+  const { status, appLink } = getAppStatus(name, currentApps ?? []);
+
   return (
     <div className="mx-auto grid w-10/12 items-center md:grid-cols-2">
       <div className="flex flex-col">
@@ -46,12 +53,21 @@ const Joinus = ({ textColor, backgroundColor, image }: ProgramProps) => {
 
         <div className="flex justify-center py-4 md:py-0">
           <motion.div {...ButtonAnimation}>
-            <Link
-              href="/"
-              className={`rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-4xl ${textColor} ${backgroundColor}`}
-            >
-              Apply Here!
-            </Link>
+            {appLink && appLink !== "/" ? (
+              <Link
+                href={appLink}
+                target="_blank"
+                className={`rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-3xl ${textColor} ${backgroundColor}`}
+              >
+                {isLoading ? "Loading..." : status} APPLICATION
+              </Link>
+            ) : (
+              <p
+                className={`cursor-not-allowed rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-3xl ${textColor} ${backgroundColor}`}
+              >
+                {isLoading ? "Loading..." : status}
+              </p>
+            )}
           </motion.div>
         </div>
       </div>

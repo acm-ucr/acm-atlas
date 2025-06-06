@@ -1,4 +1,4 @@
-import { whatWeOffer } from "@/data/whatweoffer";
+import whatWeOffer from "@/data/whatweoffer";
 import WhatWeOffer from "@/components/programs/whatweoffer";
 
 const WhatWeOffers = () => {

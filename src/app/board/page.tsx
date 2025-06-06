@@ -1,6 +1,6 @@
 "use client";
 import Header from "@/components/board/header";
-import BoardCards from "@/components/board/cards";
+import Cards from "@/components/board/cards";
 import Sidebar from "@/components/board/sidebar";
 import { useRef } from "react";
 
@@ -20,7 +20,7 @@ const Page = () => {
   return (
     <>
       <Header />
-      <BoardCards sectionRefs={sectionRefs} />
+      <Cards sectionRefs={sectionRefs} />
       <Sidebar sectionRefs={sectionRefs} />
     </>
   );
