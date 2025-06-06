@@ -31,7 +31,7 @@ const Instagram = () => {
           @ACM_UCR
         </Link>
       </p>
-      <div data-behold-id={process.env.INSTAGRAM_BEHOLD_ID} />
+      <div data-behold-id={process.env.NEXT_PUBLIC_INSTAGRAM_BEHOLD_ID} />
     </div>
   );
 };
