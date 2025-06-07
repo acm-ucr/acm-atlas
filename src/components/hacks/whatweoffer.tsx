@@ -60,6 +60,11 @@ const WhatWeOffer = ({
           <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
             {description}
           </p>
+        </motion.div>
+        <motion.div
+          {...DescriptionAnimation}
+          className="flex flex-col items-center text-center md:items-start md:text-left"
+        >
           <Link
             href={link}
             className={`${bgColor} flex w-fit items-center justify-center rounded-lg px-2 py-2 text-xl font-semibold text-white md:w-1/4 md:px-0`}

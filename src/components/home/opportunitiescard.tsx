@@ -19,6 +19,14 @@ const dropInAnim = (index: number) => ({
   viewport: { once: true },
 });
 
+const ButtonAnimation = {
+  initial: { opacity: 0, scale: 0.95 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+  whileHover: { scale: 1.03, opacity: 0.8 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
+
 const OpportunitiesCard = ({
   name,
   cardBackground,
@@ -27,6 +35,18 @@ const OpportunitiesCard = ({
   applicationLink,
   index,
 }: CardProps) => {
+  const isOpen = () => {
+    if (appYearAndQuarter === "Loading...") {
+      return "";
+    }
+    const keywords = ["CLOSED", "OPENING IN"];
+    const isClosed = keywords.some((word) =>
+      appYearAndQuarter.toUpperCase().includes(word),
+    );
+
+    return isClosed ? "" : " APPLICATION";
+  };
+
   return (
     <motion.div {...dropInAnim(index)}>
       <div className="relative mt-10">
@@ -43,12 +63,23 @@ const OpportunitiesCard = ({
           </Link>
         </div>
         <div className="absolute bottom-5 left-0 flex w-full justify-center">
-          <Link
-            href={applicationLink}
-            className="rounded-full bg-white px-9 py-2 text-lg font-bold text-acm-gray-500"
-          >
-            {appYearAndQuarter} APPLICATION
-          </Link>
+          <motion.div {...ButtonAnimation}>
+            {applicationLink !== "/" ? (
+              <Link
+                href={applicationLink}
+                target="_blank"
+                className="rounded-full bg-white px-9 py-2 text-lg font-bold text-acm-gray-500"
+              >
+                {appYearAndQuarter}
+                {isOpen()}
+              </Link>
+            ) : (
+              <p className="cursor-not-allowed rounded-full bg-white px-9 py-2 text-lg font-bold text-acm-gray-500">
+                {appYearAndQuarter}
+                {isOpen()}
+              </p>
+            )}
+          </motion.div>
         </div>
       </div>
     </motion.div>

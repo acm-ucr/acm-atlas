@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Keys from "@/public/home/keys.svg";
-import logo from "@/public/home/acmLogo.svg";
+import landingKeys from "@/public/home/landingKeys.svg";
 import { motion } from "motion/react";
 
 const TitleAnimation = {
@@ -19,55 +18,68 @@ const KeyAnimation = {
   delay: 1,
 };
 
+const DescAnimation = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  transition: { duration: 0.7, delay: 0.2 },
+};
+
 const Landing = () => {
   return (
-    <div className="mt-10 flex flex-col items-center justify-center text-6xl font-semibold text-acm-gray-500">
-      <motion.div {...TitleAnimation}>
-        <div className="mt-10 flex flex-col items-center justify-center text-center text-4xl font-semibold text-acm-gray-500 md:text-6xl">
-          <p className="z-10 md:py-8">ASSOCIATION OF</p>
-          <p className="z-10">COMPUTING MACHINERY</p>
-        </div>
+    <div className="relative flex flex-col items-center justify-center text-acm-gray-500 md:overflow-hidden">
+      <motion.div
+        {...TitleAnimation}
+        className="flex flex-col items-center justify-center text-center text-4xl font-bold text-acm-gray-500 md:mt-10 md:text-6xl"
+      >
+        <p className="z-10 pt-5 md:py-8 md:pt-0">ASSOCIATION OF</p>
+        <p className="z-10">COMPUTING MACHINERY</p>
       </motion.div>
-      <div className="relative flex flex-col items-center justify-center overflow-x-hidden pt-16">
-        <motion.div {...KeyAnimation}>
+
+      <div className="relative flex flex-col items-center justify-center">
+        <motion.div
+          {...KeyAnimation}
+          className="-z-10 mb-24 flex items-center justify-center md:mb-40"
+        >
           <Image
-            src={Keys}
-            alt="Keys"
-            className="z-10 mx-auto mb-16 w-11/12 md:w-auto"
+            src={landingKeys}
+            alt="landingKeys"
+            className="w-11/12 pb-52 pt-5 md:w-full md:pb-0 md:pt-0"
           />
+          <div className="absolute -right-48 -top-72 hidden h-1/4 w-1/4 rounded-full bg-acm-blue-700/70 blur-3xl sm:block" />
+          <div className="absolute -left-32 top-24 -z-10 h-1/2 w-1/2 rounded-full bg-gradient-to-r from-acm-blue-700/80 to-transparent blur-3xl" />
+          <div className="absolute left-32 top-24 -z-10 h-1/2 w-1/2 rounded-full bg-gradient-to-r from-acm-blue-700/80 to-transparent blur-3xl" />
+          <div className="absolute bottom-0 left-0 -z-10 h-1/2 w-1/2 rounded-full bg-gradient-to-r from-acm-blue-700/60 to-transparent blur-3xl" />
+          <div className="absolute right-0 top-16 -z-10 h-40 w-40 rounded-full bg-acm-green-600/60 blur-2xl md:-right-16 md:bottom-12 md:h-1/2 md:w-1/2 md:blur-3xl" />
+          <div className="absolute right-0 top-16 -z-10 h-40 w-40 rounded-full bg-acm-green-600/60 blur-2xl md:-right-52 md:top-96 md:h-1/2 md:w-1/2 md:blur-3xl" />
+          <div className="absolute -bottom-20 -left-80 -z-10 h-40 w-40 rounded-full bg-acm-green-600/60 blur-2xl md:h-1/4 md:w-1/4 md:blur-3xl" />
+          <div className="absolute -bottom-5 -z-10 h-1/2 w-1/2 rounded-full bg-acm-blue-700/50 blur-3xl" />
+          <div className="absolute left-20 top-48 -z-10 h-48 w-48 rounded-full bg-acm-blue-700 blur-2xl md:hidden" />
+          <div className="absolute bottom-24 right-5 -z-10 h-48 w-48 rounded-full bg-acm-blue-700 blur-2xl md:hidden" />
         </motion.div>
-        <div className="relative z-10 mx-auto h-20 w-10/12 rounded-t-2xl bg-white/45 md:w-3/4 2xl:w-1/2">
-          <div className="absolute left-8 top-8 h-6 w-6 rounded-full bg-[#F6F6F6]/50 2xl:bg-[#F6F6F6]" />
-          <div className="absolute left-20 top-8 h-6 w-6 rounded-full bg-[#F6F6F6]/50 2xl:bg-[#F6F6F6]" />
-          <div className="absolute left-32 top-8 h-6 w-6 rounded-full bg-[#F6F6F6]/50 2xl:bg-[#F6F6F6]" />
-        </div>
-        <div className="z-10 mx-auto grid w-10/12 grid-cols-3 items-center bg-white/40 px-6 py-16 text-center opacity-100 backdrop-blur-3xl md:w-3/4 md:px-20 md:text-left 2xl:w-1/2">
-          <p className="col-span-3 text-xl text-acm-gray-500 md:col-span-2 md:text-3xl">
-            ACM at UCR is the largest student-run technical organization with a
-            focus on Computer Science. Our goal is to help our members develop
-            their technical and professional skills to help them in school and
-            the tech industry. We aim to accomplish our goal by providing
-            technical workshops, professional events, and many more
-            opportunities for our members to excel.
-          </p>
-          <div className="col-span-3 flex h-full w-full items-center justify-center md:col-span-1">
-            <Image src={logo} alt="logo" className="mx-auto" />
+
+        <div className="md:bottom:0 absolute bottom-0 flex w-full flex-col items-center">
+          <div className="z-10 h-10 w-11/12 rounded-t-2xl bg-white/40 backdrop-blur-2xl md:h-16">
+            <div className="absolute left-4 top-3 h-4 w-4 rounded-full bg-[#F6F6F6] md:top-5 md:h-6 md:w-6" />
+            <div className="absolute left-14 top-3 h-4 w-4 rounded-full bg-[#F6F6F6] md:top-5 md:h-6 md:w-6" />
+            <div className="absolute left-24 top-3 h-4 w-4 rounded-full bg-[#F6F6F6] md:top-5 md:h-6 md:w-6" />
+          </div>
+          <div className="z-10 mx-auto grid w-11/12 grid-cols-1 items-center gap-8 bg-white/70 p-3 backdrop-blur-2xl md:bg-white/40 md:px-10 md:py-14">
+            <motion.p
+              {...DescAnimation}
+              className="text-center text-lg font-semibold md:text-2xl"
+            >
+              ACM at UCR is the largest student-run technical organization with
+              a focus on Computer Science. Our goal is to help our members
+              develop their technical and professional skills to help them in
+              school and the tech industry. We aim to accomplish our goal by
+              providing technical workshops, professional events, and many more
+              opportunities for our members to excel.
+            </motion.p>
           </div>
         </div>
-        <div className="z-5 absolute bottom-[5%] right-[78%] h-[300px] w-[350px] rounded-full bg-acm-yellow-500/60 blur-3xl" />
-        <div className="z-5 absolute bottom-[5%] right-[78%] h-[300px] w-[400px] rounded-full bg-acm-yellow-500/60 blur-3xl" />
-        <div className="z-5 absolute bottom-[15%] right-[78%] h-[300px] w-[400px] rounded-full bg-acm-yellow-200/20 blur-3xl" />
-        <div className="z-5 absolute bottom-0 right-[76%] h-[300px] w-[400px] rounded-full bg-acm-blue-700/60 blur-3xl" />
-        <div className="z-5 absolute bottom-0 right-0 h-[300px] w-[400px] rounded-full bg-acm-blue-700/40 blur-3xl" />
-        <div className="z-5 absolute bottom-[15%] left-[76%] h-[300px] w-[400px] rounded-full bg-acm-blue-700/50 blur-3xl" />
-        <div className="z-5 absolute bottom-[5%] left-[30%] h-[300px] w-[500px] rounded-full bg-acm-blue-700/40 blur-3xl" />
-        <div className="z-5 absolute bottom-[45%] right-[50%] h-[300px] w-[500px] rounded-full bg-acm-blue-700/40 blur-3xl md:bottom-[25%]" />
-        <div className="z-5 absolute bottom-[45%] right-[25%] h-[300px] w-[500px] rounded-full bg-acm-blue-700/40 blur-3xl md:bottom-[25%]" />
-        <div className="z-5 absolute bottom-[47%] left-0 h-[300px] w-[500px] rounded-full bg-acm-blue-700 opacity-40 blur-3xl md:bottom-[27%]" />
-        <div className="z-2 absolute bottom-[55%] left-[90%] h-[300px] w-[350px] rounded-full bg-acm-green-300/25 blur-3xl md:bottom-[35%]" />
-        <div className="z-2 absolute bottom-[55%] left-[70%] h-[300px] w-[350px] rounded-full bg-acm-green-300/25 blur-3xl md:bottom-[35%]" />
       </div>
     </div>
   );
 };
+
 export default Landing;

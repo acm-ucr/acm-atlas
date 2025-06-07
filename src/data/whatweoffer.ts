@@ -4,7 +4,7 @@ import Forge from "@/public/logos/forge.svg";
 import Das from "@/public/logos/das.svg";
 import Bitbyte from "@/public/logos/bitbyte.svg";
 
-export const whatWeOffer = [
+const whatWeOffer = [
   {
     header: "INTERESTED IN",
     program: "WEB DEV",
@@ -29,7 +29,7 @@ export const whatWeOffer = [
   },
   {
     header: "INTERESTED IN",
-    program: "EMEDDED",
+    program: "EMBEDDED",
     acm: "ACM Forge",
     pText:
       "where you can build physical embedded projects across 3 different sub teams: CS, EE, and ME! ",
@@ -61,3 +61,5 @@ export const whatWeOffer = [
     link: "/programs/bitbyte",
   },
 ];
+
+export default whatWeOffer;

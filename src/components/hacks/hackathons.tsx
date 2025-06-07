@@ -73,7 +73,7 @@ const Hackathons = () => {
           >
             <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
               Aurora is an all in one dashboard used to manage and run Hackathon
-              competitions.
+              & Designathon competitions.
             </p>
 
             <Link

@@ -20,20 +20,23 @@ const Footer = () => {
               Association of Computing Machinery
             </p>
             <div className="flex gap-2">
-              <Link href="https://www.instagram.com/acm_ucr/">
-                <RiInstagramFill className="text-2xl text-acm-blue-700" />
+              <Link href="https://www.instagram.com/acm_ucr/" target="_blank">
+                <RiInstagramFill className="text-2xl text-acm-blue-700 hover:opacity-75" />
               </Link>
-              <Link href="https://discord.gg/qsHw6dhmmY">
-                <FaDiscord className="text-2xl text-acm-blue-700" />
+              <Link href="https://discord.gg/qsHw6dhmmY" target="_blank">
+                <FaDiscord className="text-2xl text-acm-blue-700 hover:opacity-75" />
               </Link>
-              <Link href="https://www.linkedin.com/company/acm-ucr">
-                <FaLinkedin className="text-2xl text-acm-blue-700" />
+              <Link
+                href="https://www.linkedin.com/company/acm-ucr"
+                target="_blank"
+              >
+                <FaLinkedin className="text-2xl text-acm-blue-700 hover:opacity-75" />
               </Link>
-              <Link href="https://github.com/acm-ucr">
-                <FaGithub className="text-2xl text-acm-blue-700" />
+              <Link href="https://github.com/acm-ucr" target="_blank">
+                <FaGithub className="text-2xl text-acm-blue-700 hover:opacity-75" />
               </Link>
-              <Link href="https://medium.com/@contact.acmucr">
-                <FaMedium className="text-2xl text-acm-blue-700" />
+              <Link href="https://medium.com/@contact.acmucr" target="_blank">
+                <FaMedium className="text-2xl text-acm-blue-700 hover:opacity-75" />
               </Link>
             </div>
           </div>
@@ -42,13 +45,32 @@ const Footer = () => {
               Resources
             </p>
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
-              <Link href="/hacks/hackpacks">Hackpacks</Link>
-              <Link href="/templateresume">Template Resume</Link>
-              <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
+              <Link href="/hacks/hackpacks" className="hover:opacity-75">
+                Hackpacks
+              </Link>
+              <Link
+                href="/templateresume"
+                target="_blank"
+                className="hover:opacity-75"
+              >
+                Template Resume
+              </Link>
+              <Link
+                href="https://github.com/SimplifyJobs/Summer2025-Internships"
+                target="_blank"
+                className="hover:opacity-75"
+              >
                 CS Internships List
               </Link>
-              <Link href="https://github.com/SimplifyJobs/New-Grad-Positions">
+              <Link
+                href="https://github.com/SimplifyJobs/New-Grad-Positions"
+                target="_blank"
+                className="hover:opacity-75"
+              >
                 CS Jobs List
+              </Link>
+              <Link href="/alumni" className="hover:opacity-75">
+                ACM Alumni
               </Link>
             </div>
           </div>
@@ -57,12 +79,24 @@ const Footer = () => {
               Pages
             </p>
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
-              <Link href="/about">About</Link>
-              <Link href="/board">Board</Link>
-              <Link href="/programs/overview">Programs</Link>
-              <Link href="/hacks/overview">Hacks</Link>
-              <Link href="/events">Events</Link>
-              <Link href="/join">Join Us</Link>
+              <Link href="/about" className="hover:opacity-75">
+                About
+              </Link>
+              <Link href="/board" className="hover:opacity-75">
+                Board
+              </Link>
+              <Link href="/programs/overview" className="hover:opacity-75">
+                Programs
+              </Link>
+              <Link href="/hacks/overview" className="hover:opacity-75">
+                Hacks
+              </Link>
+              <Link href="/events" className="hover:opacity-75">
+                Events
+              </Link>
+              <Link href="/join" className="hover:opacity-75">
+                Join Us
+              </Link>
             </div>
           </div>
           <div className="col-span-2 flex flex-col">
@@ -70,20 +104,29 @@ const Footer = () => {
               Contact
             </p>
             <div className="flex flex-col text-lg font-light text-acm-gray-400">
-              <Link
-                href="mailto:contact.acmucr@gmail.com"
-                className="flex items-center gap-2"
-              >
-                <MdEmail className="text-2xl text-acm-blue-700" />
-                <p>contact.acmucr@gmail.com</p>
-              </Link>
-              <div className="flex gap-2">
-                <FaLocationDot className="text-2xl text-acm-blue-700" />
-                <div>
-                  <p>900 University Ave.</p>
-                  <p>Winston Chung Hall, Room 127</p>
-                  <p>Riverside, CA 92521</p>
-                </div>
+              <div className="hover:opacity-75">
+                <Link
+                  href="mailto:contact.acmucr@gmail.com"
+                  className="flex items-center gap-2 hover:opacity-75"
+                  target="_blank"
+                >
+                  <MdEmail className="text-2xl text-acm-blue-700" />
+                  <p>contact.acmucr@gmail.com</p>
+                </Link>
+              </div>
+              <div className="hover:opacity-75">
+                <Link
+                  href="https://www.google.com/maps/place/Winston+Chung+Hall,+Riverside,+CA+92507/@33.975265,-117.328515,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcae5acf0fa1e7:0xa67be5dc0009c039!8m2!3d33.975265!4d-117.3259401!16s%2Fg%2F12hy0dvmg?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  className="flex gap-2 hover:opacity-75"
+                >
+                  <FaLocationDot className="text-2xl text-acm-blue-700" />
+                  <div>
+                    <p>900 University Ave.</p>
+                    <p>Winston Chung Hall, Room 127</p>
+                    <p>Riverside, CA 92521</p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -101,19 +144,39 @@ const Footer = () => {
         <p className="text-4xl font-semibold text-acm-gray-500">ACM@UCR</p>
         <p className="text-acm-gray-500">Association of Computing Machinery</p>
         <div className="flex gap-6 text-acm-blue-700">
-          <Link href="https://www.instagram.com/acm_ucr/">
+          <Link
+            href="https://www.instagram.com/acm_ucr/"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <RiInstagramFill className="text-4xl" />
           </Link>
-          <Link href="https://discord.gg/qsHw6dhmmY">
+          <Link
+            href="https://discord.gg/qsHw6dhmmY"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <FaDiscord className="text-4xl" />
           </Link>
-          <Link href="https://www.linkedin.com/company/acm-ucr">
+          <Link
+            href="https://www.linkedin.com/company/acm-ucr"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <FaLinkedin className="text-4xl" />
           </Link>
-          <Link href="https://github.com/acm-ucr">
+          <Link
+            href="https://github.com/acm-ucr"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <FaGithub className="text-4xl" />
           </Link>
-          <Link href="https://medium.com/@contact.acmucr">
+          <Link
+            href="https://medium.com/@contact.acmucr"
+            target="_blank"
+            className="hover:opacity-75"
+          >
             <FaMedium className="text-4xl" />
           </Link>
         </div>
@@ -124,13 +187,32 @@ const Footer = () => {
                 Resources
               </p>
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
-                <Link href="/hacks/hackpacks">Hackpacks</Link>
-                <Link href="/templateresume">Template Resume</Link>
-                <Link href="https://github.com/SimplifyJobs/Summer2025-Internships">
+                <Link href="/hacks/hackpacks" className="hover:opacity-75">
+                  Hackpacks
+                </Link>
+                <Link
+                  href="/templateresume"
+                  target="_blank"
+                  className="hover:opacity-75"
+                >
+                  Template Resume
+                </Link>
+                <Link
+                  href="https://github.com/SimplifyJobs/Summer2025-Internships"
+                  target="_blank"
+                  className="hover:opacity-75"
+                >
                   CS Internships List
                 </Link>
-                <Link href="https://github.com/SimplifyJobs/New-Grad-Positions">
+                <Link
+                  href="https://github.com/SimplifyJobs/New-Grad-Positions"
+                  target="_blank"
+                  className="hover:opacity-75"
+                >
                   CS Jobs List
+                </Link>
+                <Link href="/alumni" className="hover:opacity-75">
+                  ACM Alumni
                 </Link>
               </div>
             </div>
@@ -139,12 +221,24 @@ const Footer = () => {
                 Pages
               </p>
               <div className="flex flex-col text-left text-lg font-light text-acm-gray-400">
-                <Link href="/about">About</Link>
-                <Link href="/board">Board</Link>
-                <Link href="/programs/overview">Programs</Link>
-                <Link href="/hacks/overview">Hacks</Link>
-                <Link href="/events">Events</Link>
-                <Link href="/join">Join Us</Link>
+                <Link href="/about" className="hover:opacity-75">
+                  About
+                </Link>
+                <Link href="/board" className="hover:opacity-75">
+                  Board
+                </Link>
+                <Link href="/programs/overview" className="hover:opacity-75">
+                  Programs
+                </Link>
+                <Link href="/hacks/overview" className="hover:opacity-75">
+                  Hacks
+                </Link>
+                <Link href="/events" className="hover:opacity-75">
+                  Events
+                </Link>
+                <Link href="/join" className="hover:opacity-75">
+                  Join Us
+                </Link>
               </div>
             </div>
           </div>
@@ -156,18 +250,25 @@ const Footer = () => {
           <div className="flex flex-col text-xl font-light text-acm-gray-400">
             <Link
               href="mailto:contact.acmucr@gmail.com"
-              className="flex items-center gap-2"
+              className="flex items-center gap-2 hover:opacity-75"
+              target="_blank"
             >
               <MdEmail className="text-2xl text-acm-blue-700" />
               <p>contact.acmucr@gmail.com</p>
             </Link>
             <div className="flex gap-2 text-2xl">
-              <FaLocationDot className="text-2xl text-acm-blue-700" />
-              <div className="text-lg">
-                <p>900 University Ave.</p>
-                <p>Winston Chung Hall, Room 127</p>
-                <p>Riverside, CA 92521</p>
-              </div>
+              <Link
+                href="https://www.google.com/maps/place/Winston+Chung+Hall,+Riverside,+CA+92507/@33.975265,-117.328515,17z/data=!3m1!4b1!4m6!3m5!1s0x80dcae5acf0fa1e7:0xa67be5dc0009c039!8m2!3d33.975265!4d-117.3259401!16s%2Fg%2F12hy0dvmg?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                className="flex gap-2 hover:opacity-75"
+              >
+                <FaLocationDot className="text-2xl text-acm-blue-700" />
+                <div className="text-lg">
+                  <p>900 University Ave.</p>
+                  <p>Winston Chung Hall, Room 127</p>
+                  <p>Riverside, CA 92521</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

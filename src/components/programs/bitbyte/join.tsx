@@ -1,5 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import getCurrentApps from "@/utils/applications/currentapplications";
+import { getAppStatus } from "@/utils/applications/applicationstatus";
+
 const Join = () => {
+  const { data, isLoading } = getCurrentApps();
+  const currentApps = data?.currentApps;
+  const { status, appLink } = getAppStatus("bitbyte", currentApps ?? []);
+
   return (
     <div className="mx-auto grid w-10/12 items-center pt-0 md:grid-cols-2 md:pt-20">
       <div className="flex flex-col">
@@ -7,12 +16,19 @@ const Join = () => {
           Join Now
         </p>
         <div className="flex justify-center py-4 md:py-0">
-          <Link
-            href="/"
-            className="rounded-lg bg-acm-green-200 p-2 px-6 text-3xl text-white md:mt-0 md:px-10 md:py-4 md:text-4xl"
-          >
-            Apply Here!
-          </Link>
+          {appLink && appLink !== "/" ? (
+            <Link
+              href={appLink}
+              target="_blank"
+              className="rounded-lg bg-acm-green-200 p-2 px-6 text-2xl text-white md:mt-0 md:px-10 md:py-4 md:text-3xl"
+            >
+              {isLoading ? "Loading..." : status}
+            </Link>
+          ) : (
+            <p className="cursor-not-allowed rounded-lg bg-acm-green-200 p-2 px-6 text-2xl text-white md:mt-0 md:px-10 md:py-4 md:text-3xl">
+              {isLoading ? "Loading..." : status}
+            </p>
+          )}
         </div>
       </div>
       <div>
