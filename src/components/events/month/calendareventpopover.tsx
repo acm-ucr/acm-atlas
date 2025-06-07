@@ -1,9 +1,4 @@
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 interface CalendarEventPopoverProps {
   startDate: {
     dateTime?: string;
@@ -67,8 +62,8 @@ const CalendarEventPopover = ({
   }
 
   return (
-    <Popover>
-      <PopoverTrigger
+    <Dialog>
+      <DialogTrigger
         className={`flex w-full cursor-pointer justify-between py-1 ${eventType === "general" ? "bg-acm-blue-700 !text-white" : ""} ${eventType === "spark" ? "bg-acm-yellow-200" : ""} ${eventType === "forge" ? "bg-acm-gray-800" : ""} ${eventType === "create" ? "bg-acm-blue-200" : ""} ${eventType === "das" ? "bg-acm-purple-300" : ""} ${eventType === "bitbyte" ? "!bg-acm-green-500" : ""} text-left hover:opacity-75`}
       >
         <span className="overflow-hidden text-ellipsis whitespace-nowrap px-1 pl-1 text-xs">
@@ -82,8 +77,8 @@ const CalendarEventPopover = ({
               timeZone: "America/Los_Angeles",
             })}
         </span>
-      </PopoverTrigger>
-      <PopoverContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
+      </DialogTrigger>
+      <DialogContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
         <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
           <p className="col-span-3">{title}</p>
           <p className="flex justify-end">
@@ -102,8 +97,8 @@ const CalendarEventPopover = ({
           <p>{location}</p>
           {description && <p className="pb-4 pt-8">{description}</p>}
         </div>
-      </PopoverContent>
-    </Popover>
+      </DialogContent>
+    </Dialog>
   );
 };
 

@@ -1,9 +1,4 @@
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 interface CustomEventProps {
   startDate: {
     dateTime?: string;
@@ -67,15 +62,16 @@ const CustomEvent = ({
   }
 
   return (
-    <Popover>
-      <PopoverTrigger
+    <Dialog>
+      {" "}
+      <DialogTrigger
         className={`flex h-full w-full flex-col rounded-md px-2 py-3 text-left text-xs hover:opacity-75 ${eventType === "general" ? "bg-acm-blue-700" : ""} ${eventType === "spark" ? "bg-acm-yellow-200 text-black" : ""} ${eventType === "forge" ? "bg-acm-gray-800 text-black" : ""} ${eventType === "create" ? "bg-acm-blue-200 text-black" : ""} ${eventType === "das" ? "bg-acm-purple-300 text-black" : ""} ${eventType === "bitbyte" ? "!bg-acm-green-500 text-black" : ""} `}
       >
         <div>{title}</div>
         <div>{hasStartTime && timeRangeDisplay}</div>
         <div>{location ? location : "No location"}</div>
-      </PopoverTrigger>
-      <PopoverContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
+      </DialogTrigger>
+      <DialogContent className="z-50 w-fit justify-items-center border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw] 2xl:justify-items-center">
         <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
           <p className="col-span-3">{title}</p>
           <p className="flex justify-end">
@@ -94,8 +90,8 @@ const CustomEvent = ({
           <p>{location}</p>
           {description && <p className="pb-4 pt-8">{description}</p>}
         </div>
-      </PopoverContent>
-    </Popover>
+      </DialogContent>
+    </Dialog>
   );
 };
 
