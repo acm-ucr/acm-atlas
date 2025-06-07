@@ -27,6 +27,7 @@ module.exports = {
           "blue-600": "#5e99ff",
           "blue-700": "#4185fc",
           "blue-800": "#ECF3FF",
+          "blue-900": "#002C58",
           navy: "#173967",
           turquoise: "#3bc5bb",
           "turquoise-200": "#2D8E8F",
@@ -39,6 +40,7 @@ module.exports = {
           "green-300": "#c9ff9b",
           "green-400": "#1f3f3d",
           "green-500": "#BDE2B9",
+          "green-600": "#B2FF9B",
           red: "#dd2c00",
 
           eslint: "#8080f2",
@@ -109,6 +111,10 @@ module.exports = {
           border: "oklch(var(--sidebar-border))",
           ring: "oklch(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "blue-fade":
+          "linear-gradient(to top, rgba(35,145,255, 0.75), rgba(35,145,255, 0))",
       },
       dropShadow: {
         "3xl-acm-blue-500": "0 10px 20px rgba(79, 167, 255, 1)",

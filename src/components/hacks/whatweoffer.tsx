@@ -15,25 +15,22 @@ interface WhatWeOfferProps {
 const TitleAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
-  initial: { opacity: 0, y: -30 },
+  initial: { opacity: 0, y: 30 },
   transition: { duration: 0.5, delay: 0.3 },
 };
 
 const DescriptionAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
-  initial: { opacity: 0, y: -30 },
+  initial: { opacity: 0, y: 30 },
   transition: { duration: 0.5, delay: 0.4 },
 };
 
 const LogoAnimation = {
   viewport: { once: true },
-  variants: {
-    hidden: { opacity: 0, x: 30 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.75, delay: 0.5 } },
-  },
-  initial: "hidden",
-  whileInView: "show",
+  whileInView: { opacity: 1, scale: 1 },
+  initial: { opacity: 0, scale: 0.8 },
+  transition: { type: "spring", damping: 40, stiffness: 200, delay: 0.5 },
 };
 
 const WhatWeOffer = ({
@@ -60,6 +57,11 @@ const WhatWeOffer = ({
           <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
             {description}
           </p>
+        </motion.div>
+        <motion.div
+          {...DescriptionAnimation}
+          className="flex flex-col items-center text-center md:items-start md:text-left"
+        >
           <Link
             href={link}
             className={`${bgColor} flex w-fit items-center justify-center rounded-lg px-2 py-2 text-xl font-semibold text-white md:w-1/4 md:px-0`}

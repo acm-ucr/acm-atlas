@@ -1,4 +1,3 @@
-import Stanley from "@/public/stanley.webp";
 import Brandon from "@/public/boardpage/spark/brandon.webp";
 import Charleen from "@/public/boardpage/spark/charleen.webp";
 import Wesley from "@/public/boardpage/spark/wesley.webp";
@@ -22,7 +21,22 @@ import Ian from "@/public/boardpage/forge/ian.webp";
 import Avia from "@/public/boardpage/spark/avia.webp";
 import Wasim from "@/public/boardpage/das/wasim.webp";
 import Justin from "@/public/boardpage/forge/justin.webp";
-export const Board = [
+import Howard from "@/public/boardpage/spark/howard.webp";
+import Jimmy from "@/public/boardpage/spark/jimmy.webp";
+import Luis from "@/public/boardpage/spark/luis.webp";
+import Ahad from "@/public/boardpage/general/ahad.webp";
+import Allison from "@/public/boardpage/general/allison.webp";
+import Charlette from "@/public/boardpage/general/charlette.webp";
+import Henry from "@/public/boardpage/general/henry.webp";
+import Natalie from "@/public/boardpage/general/natalie.webp";
+import Arielle2 from "@/public/boardpage/general/arielle.webp";
+import Rebecca from "@/public/boardpage/general/rebecca.webp";
+import Audrey from "@/public/boardpage/general/audrey.webp";
+import Wesley2 from "@/public/boardpage/general/wesley.webp";
+import Daniyal from "@/public/boardpage/general/daniyal.webp";
+import Austin from "@/public/boardpage/spark/austin.webp";
+import Jane from "@/public/boardpage/spark/jane.webp";
+const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
     members: [
@@ -31,7 +45,7 @@ export const Board = [
         position: "President",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Allison,
         linkedin: "https://linkedin.com/in/allisonpham7",
         github: "https://github.com/allison-pham",
       },
@@ -40,7 +54,7 @@ export const Board = [
         position: "Executive Vice President",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Charlette,
         linkedin: "https://www.linkedin.com/in/charlette-o-connor/",
         github: "",
       },
@@ -49,7 +63,7 @@ export const Board = [
         position: "VP of Projects",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Henry,
         linkedin: "https://www.linkedin.com/in/henry00c",
         github: "https://github.com/braindead-dev",
       },
@@ -58,7 +72,7 @@ export const Board = [
         position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Wesley2,
         linkedin: "https://www.linkedin.com/in/wesleylwu/",
         github: "https://github.com/wesleylwu",
       },
@@ -67,7 +81,7 @@ export const Board = [
         position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Natalie,
         linkedin: "https://www.linkedin.com/in/natalieqtrinh/",
         github: "https://github.com/natcat5",
       },
@@ -76,7 +90,7 @@ export const Board = [
         position: "VPs of External Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Kevin,
         linkedin: "http://www.linkedin.com/in/kevin-loritsch",
         github: "https://github.com/Kevinloritsch",
       },
@@ -85,7 +99,7 @@ export const Board = [
         position: "VPs of External Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Arielle2,
         linkedin: "https://www.linkedin.com/in/arielle-haryanto/",
         github: "https://github.com/arieen17",
       },
@@ -94,7 +108,7 @@ export const Board = [
         position: "VP of Professional Development",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Daniyal,
         linkedin: "http://www.linkedin.com/in/daniyal-ahmed-279888280",
         github: "https://github/daniyal-ahmed10",
       },
@@ -103,7 +117,7 @@ export const Board = [
         position: "VP of Finance",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Ahad,
         linkedin: "https://www.linkedin.com/in/ahadhasan248/",
         github: "https://github.com/Ahad2488",
       },
@@ -112,7 +126,7 @@ export const Board = [
         position: "VPs of Marketing",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Audrey,
         linkedin: "https://www.linkedin.com/in/audreykim-cs/",
         github: "https://github.com/Audrey-Kim",
       },
@@ -121,7 +135,7 @@ export const Board = [
         position: "VPs of Marketing",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Stanley,
+        photo: Rebecca,
         linkedin: "https://www.linkedin.com/in/rebecca-jennings-246a652a1/",
         github: "https://github.com/Rebecca-J7",
       },
@@ -275,13 +289,49 @@ export const Board = [
         github: "https://github.com/JohnZ9865",
       },
       {
-        name: "Minh Tran",
+        name: "Austin Le",
         position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Stanley,
-        linkedin: "https://www.linkedin.com/in/minh-tran-677564332/",
-        github: "https://github.com/minhhdtran",
+        photo: Austin,
+        linkedin: "https://www.linkedin.com/in/austintle/",
+        github: "https://github.com/ALE00111",
+      },
+      {
+        name: "Jimmy Munoz",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Jimmy,
+        linkedin: "https://www.linkedin.com/in/jimmy-munoz-8a7a47290/",
+        github: "https://github.com/j1munoz",
+      },
+      {
+        name: "Jane Lee",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Jane,
+        linkedin: "https://linkedin.com/in/janeyunlee",
+        github: "https://github.com/shuuvi",
+      },
+      {
+        name: "Luis Bojorquez",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Luis,
+        linkedin: "https://www.linkedin.com/in/luis-bojorquez-440392296/",
+        github: "https://github.com/lbojo006",
+      },
+      {
+        name: "Howard Wheeler",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Howard,
+        linkedin: "https://www.linkedin.com/in/howard-wheeler-073418287/",
+        github: "https://github.com/Howardwheeler",
       },
     ],
   },
@@ -313,7 +363,7 @@ export const Board = [
     members: [
       {
         name: "Justin Im",
-        position: "Forge Director",
+        position: "Forge Directors",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Justin,
@@ -322,7 +372,7 @@ export const Board = [
       },
       {
         name: "Marcus Hsieh",
-        position: "Forge Director",
+        position: "Forge Directors",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Marcus,

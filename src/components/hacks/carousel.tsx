@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useRef, useState, useEffect } from "react";
 
 interface CarouselImageItem {

@@ -39,24 +39,28 @@ const Hackathons = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="mx-auto flex w-11/12 flex-col justify-center">
-        <motion.p
-          {...TitleAnimation}
-          className="mt-10 py-8 text-center text-6xl font-bold text-acm-gray-500"
-        >
+        <p className="mt-10 py-12 text-center text-6xl font-bold text-acm-gray-500">
           HACKS
-        </motion.p>
-        <motion.p
-          {...DescriptionAnimation}
-          className="mx-auto w-3/4 text-center text-2xl font-semibold"
-        >
-          ACM hosts one current open back-end focused project, three hackathons,
-          and one designathon. A hackathon is an event where engineers come
-          together to build a project that solves a problem. A designathon is
-          similar to a hackathon, but focus on designing a working prototype.
-          These hacks provide ACM members with an opportunity to expand their
-          skills beyond our programs! Take a look below!
-        </motion.p>
-        <p className="my-[4vh] text-center text-5xl font-bold">WHAT WE OFFER</p>
+        </p>
+        <p className="mx-auto w-4/5 pb-8 text-center font-semibold text-acm-gray-500 md:text-2xl">
+          ACM hosts one current open back-end focused project that supports all
+          hackathons & designathons at UCR. ACM also hosts two hackathons, Cutie
+          Hack and Citrus Hack. Through Aurora, ACM supports RoseHack, a
+          hackathon which is hosted by Women In Computing (WINC) and
+          Designverse, a designathon which is hosted by Design @ UCR (DAU). A
+          hackathon is an event where engineers come together to build a project
+          that solves a problem. A designathon is similar to a hackathon, but
+          focus on designing a working prototype. These hacks provide ACM
+          members with an opportunity to expand their skills beyond our
+          programs! Take a look below!
+        </p>
+        <p className="my-[4vh] mb-20 hidden text-center text-5xl font-bold text-acm-gray-500 md:block">
+          WHAT WE OFFER & SUPPORT
+        </p>
+        <p className="my-[4vh] mb-20 block text-center text-4xl font-bold text-acm-gray-500 md:hidden">
+          WHAT WE <br />
+          OFFER & SUPPORT
+        </p>
       </div>
 
       <div className="mx-[15%] grid grid-cols-3 pb-8">
@@ -73,7 +77,7 @@ const Hackathons = () => {
           >
             <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
               Aurora is an all in one dashboard used to manage and run Hackathon
-              competitions.
+              & Designathon competitions.
             </p>
 
             <Link
