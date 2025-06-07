@@ -14,22 +14,25 @@ import { motion } from "motion/react";
 const TitleAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
-  initial: { opacity: 0, y: 30 },
+  initial: { opacity: 0, y: -50 },
   transition: { duration: 0.5, delay: 0.3 },
 };
 
 const DescriptionAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
-  initial: { opacity: 0, y: 30 },
+  initial: { opacity: 0, y: -50 },
   transition: { duration: 0.5, delay: 0.4 },
 };
 
 const LogoAnimation = {
   viewport: { once: true },
-  whileInView: { opacity: 1, scale: 1 },
-  initial: { opacity: 0, scale: 0.8 },
-  transition: { type: "spring", damping: 40, stiffness: 200, delay: 0.5 },
+  variants: {
+    hidden: { opacity: 0, x: 30 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.75, delay: 0.5 } },
+  },
+  initial: "hidden",
+  whileInView: "show",
 };
 
 const Hackathons = () => {
@@ -138,8 +141,8 @@ const Hackathons = () => {
           className="flex flex-col items-center text-center md:items-start md:text-left"
         >
           <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
-            Check out our hackpacks, a tool you can use during your hackathons
-            here at UCR to get started on your project!
+            ackpacks, a tool you can use during your hackathons here at UCR to
+            get started on your project!
           </p>
           <Link
             href="/hacks/hackpacks"

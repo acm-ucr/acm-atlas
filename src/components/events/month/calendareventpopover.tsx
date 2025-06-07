@@ -1,9 +1,4 @@
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 interface CalendarEventPopoverProps {
   startDate: {
     dateTime?: string;
@@ -67,25 +62,23 @@ const CalendarEventPopover = ({
   }
 
   return (
-    <Popover>
-      <div
-        className={`mx-1 flex flex-col justify-between rounded-md px-2 py-1 text-xs ${eventType === "general" ? "bg-acm-blue-700 !text-white" : ""} ${eventType === "spark" ? "bg-acm-yellow-200" : ""} ${eventType === "forge" ? "bg-acm-gray-800" : ""} ${eventType === "create" ? "bg-acm-blue-200" : ""} ${eventType === "das" ? "bg-acm-purple-300" : ""} ${eventType === "bitbyte" ? "!bg-acm-green-500" : ""}`}
+    <Dialog>
+      <DialogTrigger
+        className={`flex w-full cursor-pointer justify-between py-1 ${eventType === "general" ? "bg-acm-blue-700 !text-white" : ""} ${eventType === "spark" ? "bg-acm-yellow-200" : ""} ${eventType === "forge" ? "bg-acm-gray-800" : ""} ${eventType === "create" ? "bg-acm-blue-200" : ""} ${eventType === "das" ? "bg-acm-purple-300" : ""} ${eventType === "bitbyte" ? "!bg-acm-green-500" : ""} text-left hover:opacity-75`}
       >
-        <PopoverTrigger className={`cursor-pointer text-left hover:opacity-75`}>
-          <div className="overflow-hidden text-ellipsis whitespace-nowrap text-xs font-bold">
-            {title}
-          </div>
-          <div className="text-left text-[90%]">
-            {hasStartTime &&
-              eventStartDate.toLocaleTimeString("en-US", {
-                hour: "numeric",
-                minute: "2-digit",
-                timeZone: "America/Los_Angeles",
-              })}
-          </div>
-        </PopoverTrigger>
-      </div>
-      <PopoverContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
+        <span className="overflow-hidden text-ellipsis whitespace-nowrap px-1 pl-1 text-xs">
+          {title}
+        </span>
+        <span className="pr-1 text-right text-xs">
+          {hasStartTime &&
+            eventStartDate.toLocaleTimeString("en-US", {
+              hour: "numeric",
+              minute: "2-digit",
+              timeZone: "America/Los_Angeles",
+            })}
+        </span>
+      </DialogTrigger>
+      <DialogContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
         <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
           <p className="col-span-3">{title}</p>
           <p className="flex justify-end">
@@ -104,8 +97,8 @@ const CalendarEventPopover = ({
           <p>{location}</p>
           {description && <p className="pb-4 pt-8">{description}</p>}
         </div>
-      </PopoverContent>
-    </Popover>
+      </DialogContent>
+    </Dialog>
   );
 };
 
