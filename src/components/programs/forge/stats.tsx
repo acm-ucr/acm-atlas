@@ -1,13 +1,17 @@
 "use client";
 import StatItem from "@/components/statitem";
 
+const round = (number: number) => {
+  return Math.floor(number / 10) * 10;
+};
+
 const StatsGrid: React.FC = () => {
   return (
     <div>
       <div className="mx-auto hidden w-3/4 justify-center py-12 text-left md:flex">
         <div className="pr-12">
           <StatItem
-            end={62}
+            end={round(62)}
             label="quarterly applications"
             duration={0.7}
             color="text-acm-gray-500"
@@ -17,7 +21,7 @@ const StatsGrid: React.FC = () => {
         </div>
         <div className="border-l-2 pl-4 pr-8">
           <StatItem
-            end={32}
+            end={round(32)}
             label="total acceptances"
             duration={0.7}
             color="text-acm-gray-500"
