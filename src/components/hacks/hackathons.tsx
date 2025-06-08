@@ -5,7 +5,7 @@ import {
   rosehack,
   designverse,
 } from "@/data/hackathons";
-import WhatWeOffer from "./whatweoffer";
+import WhatWeOffer from "@/components/hacks/whatweoffer";
 import Aurora from "@/public/logos/aurora.svg";
 import Image from "next/image";
 import Link from "next/link";
