@@ -1,4 +1,9 @@
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogOverlay,
+} from "@/components/ui/dialog";
 interface CalendarEventPopoverProps {
   startDate: {
     dateTime?: string;
@@ -78,26 +83,28 @@ const CalendarEventPopover = ({
             })}
         </span>
       </DialogTrigger>
-      <DialogContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
-        <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
-          <p className="col-span-3">{title}</p>
-          <p className="flex justify-end">
-            {date.toLocaleString("default", {
-              month: "short",
-              day: "numeric",
-              year: "numeric",
-            })}
-          </p>
-        </div>
-
-        <div className="rounded-b-xl bg-white px-4 py-3 text-lg">
-          <div className="flex">
-            {hasStartTime && <p>{timeRangeDisplay}</p>}
+      <DialogOverlay className="bg-gray-400/60">
+        <DialogContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
+          <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
+            <p className="col-span-3">{title}</p>
+            <p className="flex justify-end">
+              {date.toLocaleString("default", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+              })}
+            </p>
           </div>
-          <p>{location}</p>
-          {description && <p className="pb-4 pt-8">{description}</p>}
-        </div>
-      </DialogContent>
+
+          <div className="rounded-b-xl bg-white px-4 py-3 text-lg">
+            <div className="flex">
+              {hasStartTime && <p>{timeRangeDisplay}</p>}
+            </div>
+            <p>{location}</p>
+            {description && <p className="pb-4 pt-8">{description}</p>}
+          </div>
+        </DialogContent>
+      </DialogOverlay>
     </Dialog>
   );
 };
