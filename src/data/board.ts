@@ -1,4 +1,3 @@
-import Stanley from "@/public/stanley.webp";
 import Brandon from "@/public/boardpage/spark/brandon.webp";
 import Charleen from "@/public/boardpage/spark/charleen.webp";
 import Wesley from "@/public/boardpage/spark/wesley.webp";
@@ -36,6 +35,7 @@ import Audrey from "@/public/boardpage/general/audrey.webp";
 import Wesley2 from "@/public/boardpage/general/wesley.webp";
 import Daniyal from "@/public/boardpage/general/daniyal.webp";
 import Austin from "@/public/boardpage/spark/austin.webp";
+import Jane from "@/public/boardpage/spark/jane.webp";
 const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -311,9 +311,9 @@ const Board = [
         position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Stanley,
-        linkedin: "",
-        github: "",
+        photo: Jane,
+        linkedin: "https://linkedin.com/in/janeyunlee",
+        github: "https://github.com/shuuvi",
       },
       {
         name: "Luis Bojorquez",

@@ -28,6 +28,7 @@ const Page = () => {
         textColor="text-acm-gray-500"
         backgroundColor="bg-acm-blue-200"
         image={Create1}
+        name={"create"}
       />
       <WhatWeDo />
       <FAQ faqData={CreateFAQ} />

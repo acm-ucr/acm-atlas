@@ -26,6 +26,7 @@ const Page = () => {
         textColor="text-white"
         backgroundColor="bg-acm-gray-200"
         image={Forge1}
+        name={"forge"}
       />
       <WhatWeDo />
       <FAQ faqData={ForgeFAQ} />
