@@ -23,12 +23,7 @@ const Page = () => {
         ellipse={blueEllipse}
       />
       <Stats />
-      <Carousel
-        data={CreateTechstack}
-        pad={"px-[1vw]"}
-        padmd={"md:px-[6vw]"}
-        pad2xl={"2xl:px-[10vw]"}
-      />
+      <Carousel data={CreateTechstack} />
       <Joinus
         textColor="text-acm-gray-500"
         backgroundColor="bg-acm-blue-200"

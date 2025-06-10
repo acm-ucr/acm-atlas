@@ -21,12 +21,7 @@ const Page = () => {
         ellipse={grayEllipse}
       />
       <Stats />
-      <Carousel
-        data={ForgeTechstack}
-        pad={"px-[1vw]"}
-        padmd={"md:px-[2.5vw]"}
-        pad2xl={"2xl:px-[14vw]"}
-      />
+      <Carousel data={ForgeTechstack} />
       <Joinus
         textColor="text-white"
         backgroundColor="bg-acm-gray-200"
