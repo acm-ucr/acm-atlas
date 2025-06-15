@@ -1,11 +1,16 @@
 import Link from "next/link";
-import { cutiehack, citrushack, rosehack } from "@/data/hackathons";
+import {
+  cutiehack,
+  citrushack,
+  rosehack,
+  designverse,
+} from "@/data/hackathons";
 
-const hacks = [cutiehack, citrushack, rosehack];
+const hacks = [cutiehack, citrushack, rosehack, designverse];
 
 const UsedIn = () => {
   return (
-    <div className="mx-auto mt-12 w-2/3">
+    <div className="mx-auto mt-12 w-5/6">
       <p className="mb-6 text-left text-4xl font-bold text-acm-gray-500">
         USED IN
       </p>

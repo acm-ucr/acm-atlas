@@ -5,7 +5,7 @@ import {
   rosehack,
   designverse,
 } from "@/data/hackathons";
-import WhatWeOffer from "./whatweoffer";
+import WhatWeOffer from "@/components/hacks/whatweoffer";
 import Aurora from "@/public/logos/aurora.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -14,50 +14,49 @@ import { motion } from "motion/react";
 const TitleAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
-  initial: { opacity: 0, y: 30 },
+  initial: { opacity: 0, y: -50 },
   transition: { duration: 0.5, delay: 0.3 },
 };
 
 const DescriptionAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
-  initial: { opacity: 0, y: 30 },
+  initial: { opacity: 0, y: -50 },
   transition: { duration: 0.5, delay: 0.4 },
 };
 
 const LogoAnimation = {
   viewport: { once: true },
-  whileInView: { opacity: 1, scale: 1 },
-  initial: { opacity: 0, scale: 0.8 },
-  transition: { type: "spring", damping: 40, stiffness: 200, delay: 0.5 },
+  variants: {
+    hidden: { opacity: 0, x: 30 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.75, delay: 0.5 } },
+  },
+  initial: "hidden",
+  whileInView: "show",
 };
 
 const Hackathons = () => {
   return (
     <div className="flex flex-col gap-4">
       <div className="mx-auto flex w-11/12 flex-col justify-center">
-        <p className="mt-10 py-12 text-center text-6xl font-bold text-acm-gray-500">
+        <motion.p
+          {...TitleAnimation}
+          className="mt-10 py-8 text-center text-6xl font-bold text-acm-gray-500"
+        >
           HACKS
-        </p>
-        <p className="mx-auto w-4/5 pb-8 text-center font-semibold text-acm-gray-500 md:text-2xl">
-          ACM hosts one current open back-end focused project that supports all
-          hackathons & designathons at UCR. ACM also hosts two hackathons, Cutie
-          Hack and Citrus Hack. Through Aurora, ACM supports RoseHack, a
-          hackathon which is hosted by Women In Computing (WINC) and
-          Designverse, a designathon which is hosted by Design @ UCR (DAU). A
-          hackathon is an event where engineers come together to build a project
-          that solves a problem. A designathon is similar to a hackathon, but
-          focus on designing a working prototype. These hacks provide ACM
-          members with an opportunity to expand their skills beyond our
-          programs! Take a look below!
-        </p>
-        <p className="my-[4vh] mb-20 hidden text-center text-5xl font-bold text-acm-gray-500 md:block">
-          WHAT WE OFFER & SUPPORT
-        </p>
-        <p className="my-[4vh] mb-20 block text-center text-4xl font-bold text-acm-gray-500 md:hidden">
-          WHAT WE <br />
-          OFFER & SUPPORT
-        </p>
+        </motion.p>
+        <motion.p
+          {...DescriptionAnimation}
+          className="mx-auto w-3/4 text-center text-2xl font-semibold"
+        >
+          ACM hosts one current open back-end focused project, three hackathons,
+          and one designathon. A hackathon is an event where engineers come
+          together to build a project that solves a problem. A designathon is
+          similar to a hackathon, but focus on designing a working prototype.
+          These hacks provide ACM members with an opportunity to expand their
+          skills beyond our programs! Take a look below!
+        </motion.p>
+        <p className="my-[4vh] text-center text-5xl font-bold">WHAT WE OFFER</p>
       </div>
 
       <div className="mx-[15%] grid grid-cols-3 pb-8">
@@ -138,8 +137,8 @@ const Hackathons = () => {
           className="flex flex-col items-center text-center md:items-start md:text-left"
         >
           <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
-            Check out our hackpacks, a tool you can use during your hackathons
-            here at UCR to get started on your project!
+            ackpacks, a tool you can use during your hackathons here at UCR to
+            get started on your project!
           </p>
           <Link
             href="/hacks/hackpacks"

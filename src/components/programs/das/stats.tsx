@@ -1,32 +1,80 @@
 "use client";
 import StatItem from "@/components/statitem";
 
+const round = (number: number) => {
+  return Math.floor(number / 10) * 10;
+};
+
 const StatsGrid: React.FC = () => {
   return (
     <div>
       <div className="mx-auto hidden w-3/4 justify-center py-12 text-left md:flex">
         <div className="pr-12">
-          <StatItem end={93} label="quarterly applications" duration={0.7} />
+          <StatItem
+            end={round(93)}
+            label="quarterly applications"
+            duration={0.7}
+            color="text-acm-gray-500"
+            numberSize="text-4xl md:text-7xl"
+            labelSize="text-xl md:text-3xl"
+          />
         </div>
         <div className="border-l-2 pl-4 pr-8">
-          <StatItem end={29} label="total acceptances" duration={0.7} />
+          <StatItem
+            end={round(29)}
+            label="total acceptances"
+            duration={0.7}
+            color="text-acm-gray-500"
+            numberSize="text-4xl md:text-7xl"
+            labelSize="text-xl md:text-3xl"
+          />
         </div>
         <div className="border-l-2 pl-4 pr-12">
-          <StatItem end={4} label="projects" duration={0.7} />
+          <StatItem
+            end={4}
+            label="projects"
+            duration={0.7}
+            color="text-acm-gray-500"
+            numberSize="text-4xl md:text-7xl"
+            labelSize="text-xl md:text-3xl"
+          />
         </div>
       </div>
-      <div className="flex flex-col md:hidden">
-        <div className="flex justify-center py-12 text-left">
-          <div className="pr-12">
-            <StatItem end={93} label="quarterly applications" duration={0.7} />
+
+      {/* Mobile layout */}
+      <div className="flex flex-col text-center md:hidden">
+        <div className="flex flex-col text-center">
+          <div className="pb-4">
+            <StatItem
+              end={93}
+              label="quarterly applications"
+              duration={0.7}
+              color="text-acm-gray-500"
+              numberSize="text-4xl md:text-7xl"
+              labelSize="text-xl md:text-3xl"
+            />
           </div>
-          <div className="border-l-2 pl-4 pr-8">
-            <StatItem end={29} label="total acceptances" duration={0.7} />
+          <div className="pb-4">
+            <StatItem
+              end={29}
+              label="total acceptances"
+              duration={0.7}
+              color="text-acm-gray-500"
+              numberSize="text-4xl md:text-7xl"
+              labelSize="text-xl md:text-3xl"
+            />
           </div>
         </div>
-        <div className="flex justify-center">
-          <div className="pl-4 pr-12">
-            <StatItem end={4} label="projects" duration={0.7} />
+        <div>
+          <div>
+            <StatItem
+              end={4}
+              label="projects"
+              duration={0.7}
+              color="text-acm-gray-500"
+              numberSize="text-4xl md:text-7xl"
+              labelSize="text-xl md:text-3xl"
+            />
           </div>
         </div>
       </div>

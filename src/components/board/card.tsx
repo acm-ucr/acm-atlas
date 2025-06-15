@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 interface BoardProps {
@@ -22,10 +21,8 @@ const Card = ({
   github,
 }: BoardProps) => {
   return (
-    <div className="w-7/8 mx-auto flex flex-col items-center text-center md:w-1/2">
-      <p className={`${color} py-4 text-xl font-bold md:text-2xl`}>
-        {position}
-      </p>
+    <div className="w-7/8 mx-auto flex flex-col items-center text-center md:w-2/3">
+      <p className={`${color} py-4 text-xl font-bold`}>{position}</p>
       <div>
         <Image
           className={`${shadow} w-[40vw] rounded-full md:w-[30vw]`}

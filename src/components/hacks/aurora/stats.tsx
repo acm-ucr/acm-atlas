@@ -1,7 +1,6 @@
 "use client";
+import StatItem from "@/components/statitem";
 import { useQuery } from "@tanstack/react-query";
-import Image from "next/image";
-import auroraStar from "@/public/logos/aurorastar.webp";
 
 const fetchRepoStats = async () => {
   const res = await fetch("https://api.github.com/repos/acm-ucr/aurora");
@@ -55,49 +54,88 @@ const fetchRepoStats = async () => {
   };
 };
 
-const Stats = () => {
+const round = (number: number) => {
+  return Math.floor(number / 10) * 10;
+};
+
+const Stats: React.FC = () => {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["repoStats"],
     queryFn: fetchRepoStats,
     staleTime: 1000 * 60 * 5,
   });
 
-  if (isLoading) return <p>Loading...</p>;
-  if (isError || !data) return <p>Error loading repo stats.</p>;
+  if (isLoading) return <p className="text-center">Loading...</p>;
+  if (isError || !data)
+    return <p className="text-center">Error loading repo stats.</p>;
 
   return (
-    <div className="py-30 flex flex-col justify-center">
-      <div className="ml-[15%] grid gap-10 pb-[5vh] text-acm-gray-500 [grid-template-columns:23%_16%_23%]">
-        <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-          <p className="pb-4 text-6xl font-bold">{data.commits}</p>
-          <p className="text-2xl font-medium">commits</p>
+    <div>
+      <div className="mx-auto grid w-5/6 grid-cols-3 py-12 text-center md:grid-rows-2">
+        <div className="border-r-2 pb-10">
+          <StatItem
+            end={round(Number(data.commits))}
+            label="commits"
+            duration={0.7}
+            color="text-acm-gray-500"
+            numberSize="text-6xl md:text-7xl"
+            labelSize="text-2xl md:text-3xl"
+          />
         </div>
-        <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-          <p className="pb-4 text-6xl font-bold">{data.closedPRs}</p>
-          <p className="text-2xl font-medium">PRs</p>
+        <div className="border-r-2 pb-10">
+          <StatItem
+            end={round(data.closedPRs)}
+            label="PRs"
+            duration={0.7}
+            color="text-acm-gray-500"
+            numberSize="text-6xl md:text-7xl"
+            labelSize="text-2xl md:text-3xl"
+          />
         </div>
-        <div className="flex flex-col justify-center">
-          <p className="pb-4 text-6xl font-bold">{data.closedIssues}</p>
-          <p className="text-2xl font-medium">issues</p>
+        <div className="pb-10">
+          <StatItem
+            end={round(data.closedIssues)}
+            label="issues"
+            duration={0.7}
+            color="text-acm-gray-500"
+            numberSize="text-6xl md:text-7xl"
+            labelSize="text-2xl md:text-3xl"
+          />
+        </div>
+        <div className="border-r-2">
+          <StatItem
+            end={round(data.contributors)}
+            label="contributors"
+            duration={0.7}
+            color="text-acm-gray-500"
+            numberSize="text-6xl md:text-7xl"
+            labelSize="text-2xl md:text-3xl"
+          />
+        </div>
+
+        <div className="border-r-2">
+          <StatItem
+            end={round(data.stars)}
+            label="stars ⭐"
+            duration={0.7}
+            color="text-acm-gray-500"
+            numberSize="text-6xl md:text-7xl"
+            labelSize="text-2xl md:text-3xl"
+          />
+        </div>
+
+        <div>
+          <StatItem
+            end={round(data.days)}
+            label="days since we began"
+            duration={0.7}
+            color="text-acm-gray-500"
+            numberSize="text-6xl md:text-7xl"
+            labelSize="text-2xl md:text-3xl"
+          />
         </div>
       </div>
-      <div className="ml-[15%] grid gap-10 pb-10 pt-4 text-acm-gray-500 [grid-template-columns:17%_14%_25%]">
-        <div className="flex flex-col justify-center border-r-2 border-acm-gray-100">
-          <p className="pb-4 text-6xl font-bold">{data.contributors}</p>
-          <p className="text-2xl font-medium">contributors</p>
-        </div>
-        <div className="flex flex-col justify-center border-r-2 border-acm-gray-100 pr-20">
-          <p className="pb-4 text-6xl font-bold">{data.stars}</p>
-          <div className="flex">
-            <p className="pr-5 text-2xl font-medium">stars</p>
-            <Image src={auroraStar} alt="Star" className="h-[90%] w-[37%]" />
-          </div>
-        </div>
-        <div className="flex flex-col justify-center">
-          <p className="pb-4 text-6xl font-bold">{data.days}</p>
-          <p className="text-2xl font-medium">days since we began</p>
-        </div>
-      </div>
+      {/* Mobile layout */}
     </div>
   );
 };

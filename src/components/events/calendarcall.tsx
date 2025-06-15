@@ -40,7 +40,7 @@ export type CalendarEvent = {
   resource: TypedGoogleEventProps;
 };
 
-const calendarSources = [
+export const calendarSources = [
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EVENTS, eventType: "general" },
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_SPARK, eventType: "spark" },
   { id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_CREATE, eventType: "create" },
