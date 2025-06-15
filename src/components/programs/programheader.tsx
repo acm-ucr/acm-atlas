@@ -61,7 +61,7 @@ const ProgramHeader = ({
       </motion.p>
       <motion.div {...headerLogoAnimation}>
         <Image
-          className="absolute right-[26%] top-[28%] w-1/2 drop-shadow-2xl sm:right-[10%] sm:top-[40%] md:w-1/6 lg:right-[20%] lg:top-[30%]"
+          className="absolute right-[26%] top-[28%] w-1/2 drop-shadow-2xl sm:right-[10%] sm:top-[40%] md:right-[20%] md:top-[15%] md:w-1/6 2xl:w-[14%]"
           src={logo}
           alt="logo"
         />

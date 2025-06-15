@@ -24,12 +24,7 @@ const Page = () => {
         ellipse={yellowEllipse}
       />
       <Stats />
-      <Carousel
-        data={SparkTechstack}
-        pad={"px-[1vw]"}
-        padmd={"md:px-[2.5vw]"}
-        pad2xl={"2xl:px-[8vw]"}
-      />
+      <Carousel data={SparkTechstack} />
       <Joinus
         textColor="text-acm-gray-500"
         backgroundColor="bg-acm-yellow-200"
