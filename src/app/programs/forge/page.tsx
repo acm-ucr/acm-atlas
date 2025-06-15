@@ -8,6 +8,7 @@ import Carousel from "@/components/programs/carousel";
 import ForgeTechstack from "@/data/techstacks/forgetechstack";
 import WhatWeDo from "@/components/programs/forge/whatwedo";
 import Stats from "@/components/programs/forge/stats";
+import PhotoGallery from "@/components/programs/forge/photogallery";
 import { ForgeFAQ } from "@/data/faq";
 
 const Page = () => {
@@ -35,6 +36,7 @@ const Page = () => {
       />
       <WhatWeDo />
       <FAQ faqData={ForgeFAQ} />
+      <PhotoGallery />
     </>
   );
 };

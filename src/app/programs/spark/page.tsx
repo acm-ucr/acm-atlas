@@ -10,6 +10,7 @@ import WhatWeDo from "@/components/programs/spark/whatwedo";
 import Projects from "@/components/programs/projects";
 import SparkProjects from "@/data/projects/sparkprojects";
 import Stats from "@/components/programs/spark/stats";
+import PhotoGallery from "@/components/programs/spark/photogallery";
 import { SparkFAQ } from "@/data/faq";
 
 const Page = () => {
@@ -37,6 +38,7 @@ const Page = () => {
       />
       <WhatWeDo />
       <FAQ faqData={SparkFAQ} />
+      <PhotoGallery />
       <Projects projects={SparkProjects} />
     </>
   );
