@@ -71,7 +71,7 @@ const Stats: React.FC = () => {
 
   return (
     <div>
-      <div className="mx-auto grid w-3/4 grid-cols-3 py-12 text-center md:grid-rows-2">
+      <div className="mx-auto grid w-5/6 grid-cols-3 py-12 text-center md:grid-rows-2">
         <div className="border-r-2 pb-10">
           <StatItem
             end={round(Number(data.commits))}
