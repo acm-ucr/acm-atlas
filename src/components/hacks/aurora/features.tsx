@@ -2,7 +2,7 @@ import features from "@/data/aurorafeatures";
 
 const FeaturedProjects = () => {
   return (
-    <div className="mx-auto my-16 grid w-4/5 grid-cols-3 place-items-center gap-8">
+    <div className="mx-auto my-16 grid w-4/5 grid-cols-1 place-items-center gap-8 md:grid-cols-3">
       {features.map(({ name, description }, index) => (
         <div
           key={index}
