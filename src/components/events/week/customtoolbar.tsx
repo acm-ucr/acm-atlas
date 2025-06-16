@@ -74,37 +74,37 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({
             className="flex w-full items-center justify-center rounded-lg bg-acm-blue-400 px-4 py-2 text-white data-[state=on]:bg-acm-blue-700 data-[state=on]:text-white"
             value="general"
           >
-            <div>GENERAL</div>
+            GENERAL
           </ToggleGroupItem>
           <ToggleGroupItem
             className="flex w-full items-center justify-center rounded-lg bg-acm-yellow-100 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-yellow-200 data-[state=on]:text-acm-gray-500"
             value="spark"
           >
-            <div>SPARK</div>
+            SPARK
           </ToggleGroupItem>
           <ToggleGroupItem
             className="flex w-full items-center justify-center rounded-lg bg-acm-blue-200 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-blue-100 data-[state=on]:text-acm-gray-500"
             value="create"
           >
-            <div>CREATE</div>
+            CREATE
           </ToggleGroupItem>
           <ToggleGroupItem
             className="flex w-full items-center justify-center rounded-lg bg-acm-gray-800 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-gray-400 data-[state=on]:text-white"
             value="forge"
           >
-            <div>FORGE</div>
+            FORGE
           </ToggleGroupItem>
           <ToggleGroupItem
             className="flex w-full items-center justify-center rounded-lg bg-acm-purple-300 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-purple-200 data-[state=on]:text-acm-gray-500"
             value="das"
           >
-            <div>DAS</div>
+            DAS
           </ToggleGroupItem>
           <ToggleGroupItem
             className="flex w-full items-center justify-center rounded-lg bg-acm-green-100 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-green-500 data-[state=on]:text-acm-gray-500"
             value="bitbyte"
           >
-            <div>BIT/BYTE</div>
+            BIT/BYTE
           </ToggleGroupItem>
         </ToggleGroup>
       </div>
