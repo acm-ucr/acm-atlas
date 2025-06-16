@@ -72,11 +72,9 @@ const CalendarEventPopover = ({
         className={`mx-1 my-1 flex w-2/5 cursor-default flex-col rounded-md px-2 py-3 text-xs md:min-w-full ${eventType === "general" ? "bg-acm-blue-700" : ""} ${eventType === "spark" ? "bg-acm-yellow-200 text-black" : ""} ${eventType === "forge" ? "bg-acm-gray-800 text-black" : ""} ${eventType === "create" ? "bg-acm-blue-200 text-black" : ""} ${eventType === "das" ? "bg-acm-purple-300 text-black" : ""} ${eventType === "bitbyte" ? "!bg-acm-green-500 text-black" : ""}`}
       >
         <PopoverTrigger className={`cursor-pointer text-left hover:opacity-75`}>
-          <div className="overflow-hidden text-ellipsis whitespace-nowrap font-bold">
-            {title}
-          </div>
+          <div className="text-wrap font-bold md:text-nowrap">{title}</div>
           <div className="text-[90%]">{hasStartTime && timeRangeDisplay}</div>
-          <div className="overflow-hidden text-ellipsis whitespace-nowrap text-[90%]">
+          <div className="text-[90%]">
             {location ? location : "No location"}
           </div>
         </PopoverTrigger>
