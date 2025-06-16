@@ -15,9 +15,10 @@ const CustomDayHeader = ({ date }: { date: Date }) => {
 
   return (
     <div
-      className={`flex items-center justify-center pb-12 pt-3 text-[14px] font-bold md:text-3xl ${isToday && "text-acm-blue-500"}`}
+      className={`flex items-center justify-center pb-12 pt-3 text-[13px] font-bold md:text-3xl ${isToday && "text-acm-blue-500"}`}
     >
-      {day} {dayNum}
+      {day}
+      <span className="hidden md:inline">&nbsp;{dayNum}</span>
     </div>
   );
 };
