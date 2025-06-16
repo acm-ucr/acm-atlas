@@ -6,12 +6,14 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 interface CustomToolbarProps extends ToolbarProps<CalendarEvent, object> {
   selectedEventTypes: string[];
   setSelectedEventTypes: (types: string[]) => void;
+  allEventTypes: string[];
 }
 const CustomToolbar: React.FC<CustomToolbarProps> = ({
   date,
   onNavigate,
   selectedEventTypes,
   setSelectedEventTypes,
+  allEventTypes,
 }) => {
   const monthNames = [
     "JAN",
@@ -51,7 +53,21 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({
         <ToggleGroup
           type="multiple"
           value={selectedEventTypes}
-          onValueChange={setSelectedEventTypes}
+          onValueChange={(types) => {
+            const toggledType =
+              selectedEventTypes.find((type) => !types.includes(type)) ??
+              types.find((type) => !selectedEventTypes.includes(type));
+            if (
+              selectedEventTypes.length === allEventTypes.length &&
+              types.length === allEventTypes.length - 1
+            ) {
+              setSelectedEventTypes([toggledType!]);
+            } else if (types.length === 0) {
+              setSelectedEventTypes(allEventTypes);
+            } else {
+              setSelectedEventTypes(types);
+            }
+          }}
           className="grid grid-cols-3 gap-2 pb-4 md:flex md:gap-0 md:space-x-2 md:pb-0"
         >
           <ToggleGroupItem

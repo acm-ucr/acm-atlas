@@ -197,6 +197,7 @@ const CalendarCall = () => {
           )}
           selectedEventTypes={selectedEventTypes}
           setSelectedEventTypes={setSelectedEventTypes}
+          allEventTypes={calendarSources.map((s) => s.eventType)}
         />
       ) : (
         <div className="rounded-calendar-top mx-auto h-[150vh] w-10/12 pb-8">
@@ -220,6 +221,7 @@ const CalendarCall = () => {
                   {...props}
                   selectedEventTypes={selectedEventTypes}
                   setSelectedEventTypes={setSelectedEventTypes}
+                  allEventTypes={calendarSources.map((s) => s.eventType)}
                 />
               ),
               event: CustomEvent,

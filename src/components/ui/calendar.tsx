@@ -13,6 +13,7 @@ export type CalendarProps = React.ComponentProps<typeof DayPicker> & {
   events: TypedGoogleEventProps[];
   selectedEventTypes: string[];
   setSelectedEventTypes: (types: string[]) => void;
+  allEventTypes: string[];
 };
 
 function Calendar({
@@ -22,6 +23,7 @@ function Calendar({
   events,
   selectedEventTypes,
   setSelectedEventTypes,
+  allEventTypes,
   ...props
 }: CalendarProps) {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -59,6 +61,7 @@ function Calendar({
         onNextMonth={nextMonth}
         selectedEventTypes={selectedEventTypes}
         setSelectedEventTypes={setSelectedEventTypes}
+        allEventTypes={allEventTypes}
       />
       <DayPicker
         month={currentDate}
