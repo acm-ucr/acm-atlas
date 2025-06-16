@@ -4,7 +4,7 @@ import {
   DialogTrigger,
   DialogOverlay,
 } from "@/components/ui/dialog";
-interface CalendarEventPopoverProps {
+interface CalendarEventDialogProps {
   startDate: {
     dateTime?: string;
     date?: string;
@@ -20,7 +20,7 @@ interface CalendarEventPopoverProps {
   eventType: string;
 }
 
-const CalendarEventPopover = ({
+const CalendarEventDialog = ({
   startDate,
   endDate,
   title,
@@ -28,7 +28,7 @@ const CalendarEventPopover = ({
   location,
   description,
   eventType,
-}: CalendarEventPopoverProps) => {
+}: CalendarEventDialogProps) => {
   let eventStartDate = new Date();
   let eventEndDate = new Date();
   let hasStartTime = false;
@@ -68,21 +68,31 @@ const CalendarEventPopover = ({
 
   return (
     <Dialog>
-      <DialogTrigger
-        className={`flex w-full cursor-pointer justify-between py-1 ${eventType === "general" ? "bg-acm-blue-700 !text-white" : ""} ${eventType === "spark" ? "bg-acm-yellow-200" : ""} ${eventType === "forge" ? "bg-acm-gray-800" : ""} ${eventType === "create" ? "bg-acm-blue-200" : ""} ${eventType === "das" ? "bg-acm-purple-300" : ""} ${eventType === "bitbyte" ? "!bg-acm-green-500" : ""} text-left hover:opacity-75`}
+      <div
+        className={`mx-1 my-1 flex w-2/5 cursor-default flex-col rounded-md px-2 py-3 text-xs md:min-w-full ${eventType === "general" ? "bg-acm-blue-700" : ""} ${eventType === "spark" ? "bg-acm-yellow-200 text-black" : ""} ${eventType === "forge" ? "bg-acm-gray-800 text-black" : ""} ${eventType === "create" ? "bg-acm-blue-200 text-black" : ""} ${eventType === "das" ? "bg-acm-purple-300 text-black" : ""} ${eventType === "bitbyte" ? "!bg-acm-green-500 text-black" : ""}`}
       >
-        <span className="overflow-hidden text-ellipsis whitespace-nowrap px-1 pl-1 text-xs">
-          {title}
-        </span>
-        <span className="pr-1 text-right text-xs">
-          {hasStartTime &&
-            eventStartDate.toLocaleTimeString("en-US", {
-              hour: "numeric",
-              minute: "2-digit",
-              timeZone: "America/Los_Angeles",
+        <DialogTrigger className={`cursor-pointer text-left hover:opacity-75`}>
+          <div className="overflow-hidden text-ellipsis whitespace-nowrap font-bold">
+            {title}
+          </div>
+          <div className="text-[90%]">{hasStartTime && timeRangeDisplay}</div>
+          <div className="overflow-hidden text-ellipsis whitespace-nowrap text-[90%]">
+            {location ? location : "No location"}
+          </div>
+        </DialogTrigger>
+      </div>
+      <DialogContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
+        <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
+          <p className="col-span-3">{title}</p>
+          <p className="flex justify-end">
+            {date.toLocaleString("default", {
+              month: "short",
+              day: "numeric",
+              year: "numeric",
             })}
-        </span>
-      </DialogTrigger>
+          </p>
+        </div>
+      </DialogContent>
       <DialogOverlay className="bg-gray-400/60">
         <DialogContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
           <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
@@ -109,4 +119,4 @@ const CalendarEventPopover = ({
   );
 };
 
-export default CalendarEventPopover;
+export default CalendarEventDialog;
