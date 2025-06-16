@@ -137,8 +137,8 @@ const Hackathons = () => {
           className="flex flex-col items-center text-center md:items-start md:text-left"
         >
           <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
-            ackpacks, a tool you can use during your hackathons here at UCR to
-            get started on your project!
+            Check out our hackpacks, a tool you can use during your hackathons
+            here at UCR to get started on your project!
           </p>
           <Link
             href="/hacks/hackpacks"
