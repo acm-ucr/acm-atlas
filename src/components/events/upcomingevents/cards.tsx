@@ -97,7 +97,7 @@ const Cards = ({ events, isLoading, isError }: EventProps) => {
         const bgColor = eventTypeBgColorMap[event.eventType];
 
         return (
-          <motion.div key={index} className="" {...eventsVariant}>
+          <motion.div key={index} {...eventsVariant}>
             <Card
               title={event.summary}
               date={formattedDate}

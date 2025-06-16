@@ -43,8 +43,6 @@ const getSeason = (startDate: string) => {
 
   const year = date.getFullYear().toString().slice(-2);
   const month = (date.getMonth() + 1) as number;
-  console.log(date);
-  console.log(month);
 
   if (month >= 2 && month <= 4) {
     return `SPRING '${year}`;

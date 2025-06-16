@@ -26,7 +26,7 @@ const DescAnimation = {
 
 const Landing = () => {
   return (
-    <div className="relative flex flex-col items-center justify-center text-acm-gray-500 md:overflow-hidden">
+    <div className="relative flex flex-col justify-center text-acm-gray-500 md:overflow-hidden">
       <motion.div
         {...TitleAnimation}
         className="flex flex-col items-center justify-center text-center text-4xl font-bold text-acm-gray-500 md:mt-10 md:text-6xl"
@@ -57,13 +57,13 @@ const Landing = () => {
           <div className="absolute bottom-24 right-5 -z-10 h-48 w-48 rounded-full bg-acm-blue-700 blur-2xl md:hidden" />
         </motion.div>
 
-        <div className="md:bottom:0 absolute bottom-0 flex w-full flex-col items-center">
-          <div className="z-10 h-10 w-11/12 rounded-t-2xl bg-white/40 backdrop-blur-2xl md:h-16">
-            <div className="absolute left-4 top-3 h-4 w-4 rounded-full bg-[#F6F6F6] md:top-5 md:h-6 md:w-6" />
-            <div className="absolute left-14 top-3 h-4 w-4 rounded-full bg-[#F6F6F6] md:top-5 md:h-6 md:w-6" />
-            <div className="absolute left-24 top-3 h-4 w-4 rounded-full bg-[#F6F6F6] md:top-5 md:h-6 md:w-6" />
+        <div className="absolute bottom-0 flex flex-col items-center">
+          <div className="z-10 h-10 w-10/12 rounded-t-2xl bg-white/20 backdrop-blur-xl md:h-16 md:w-7/12 2xl:w-5/12">
+            <div className="absolute left-4 top-3 h-4 w-4 rounded-full bg-[#F6F6F6] backdrop-blur-xl md:top-5 md:h-6 md:w-6" />
+            <div className="absolute left-14 top-3 h-4 w-4 rounded-full bg-[#F6F6F6] backdrop-blur-xl md:top-5 md:h-6 md:w-6" />
+            <div className="absolute left-24 top-3 h-4 w-4 rounded-full bg-[#F6F6F6] backdrop-blur-xl md:top-5 md:h-6 md:w-6" />
           </div>
-          <div className="z-10 mx-auto grid w-11/12 grid-cols-1 items-center gap-8 bg-white/70 p-3 backdrop-blur-2xl md:bg-white/40 md:px-10 md:py-14">
+          <div className="z-10 mx-auto grid w-10/12 grid-cols-1 items-center gap-8 rounded-b-2xl bg-white/70 p-3 backdrop-blur-2xl md:w-7/12 md:rounded-b-none md:bg-white/40 md:px-10 md:py-14 2xl:w-5/12">
             <motion.p
               {...DescAnimation}
               className="text-center text-lg font-semibold md:text-2xl"

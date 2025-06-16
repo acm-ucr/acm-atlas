@@ -58,9 +58,14 @@ const OpportunitiesCard = ({
           <p className="text-xl font-semibold uppercase text-acm-gray-500">
             {name}
           </p>
-          <Link href={link} className="rounded-full bg-white px-4 py-1 text-sm">
-            Learn more →
-          </Link>
+          <motion.div {...ButtonAnimation}>
+            <Link
+              href={link}
+              className="rounded-full bg-white px-4 py-1 text-sm"
+            >
+              Learn more →
+            </Link>
+          </motion.div>
         </div>
         <div className="absolute bottom-5 left-0 flex w-full justify-center">
           <motion.div {...ButtonAnimation}>
