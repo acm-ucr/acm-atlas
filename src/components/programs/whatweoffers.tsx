@@ -9,7 +9,7 @@ const WhatWeOffers = () => {
       </p>
       <p className="text-l p-4 px-[10%] text-center font-bold text-acm-gray-500 md:w-4/5 md:text-left md:text-2xl">
         ACM offers four project oriented programs, each with their own focus—
-        such as web development and robotics, and one mentorship program. Our
+        such as web development and robotics--and one mentorship program. Our
         programs typically run quarterly. We strive to cover a wide variety of
         topics for our members to explore their interests! Take a look below!
       </p>

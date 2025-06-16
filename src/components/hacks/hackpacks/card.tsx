@@ -18,7 +18,12 @@ const HackpackCard = ({
   <div className="flex flex-col gap-4 rounded-2xl bg-white p-6 shadow-md">
     <div className="flex items-center justify-between">
       <p className="text-lg font-bold text-acm-gray-500">{title}</p>
-      <Link href={link} target="_blank" rel="noopener noreferrer">
+      <Link
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:scale-105 hover:opacity-75"
+      >
         <FaGithub className="text-2xl text-acm-github" />
       </Link>
     </div>

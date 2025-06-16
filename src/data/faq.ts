@@ -37,7 +37,7 @@ export const JoinFAQ = [
   {
     question: "Who do I contact if I have more questions?",
     answer:
-      "For questions relating to in general, events, or initiatives, contact us through our social media platforms, connect with us through our Discord server, or email us at contact.acmucr@gmail.com.",
+      "For questions relating to in general, events, or initiatives, contact us through our social media platforms, connect with us through our Discord server, or email us at contact.acmucr @gmail.com.",
   },
 ];
 
@@ -91,7 +91,7 @@ export const ForgeFAQ = [
   {
     question: "What programming languages and tools will I learn and use?",
     answer:
-      "It varies per subteam: CS: Python and Conda, and project-specific tools like OpenCV. EE: Soldering, Python and Conda ME: Solidworks",
+      "It varies per subteam. For CS: Python and Conda, and project-specific tools like OpenCV. For EE: Soldering, Python and Conda. For ME: Solidworks",
   },
   {
     question: "How long does ACM Forge take to complete?",

@@ -340,7 +340,7 @@ const Board = [
     members: [
       {
         name: "Kaylie Zhao",
-        position: "Create Directors",
+        position: "Create Director",
         color: "text-acm-blue-300",
         shadow: "drop-shadow-3xl-acm-blue-100",
         photo: Kaylie,
@@ -349,7 +349,7 @@ const Board = [
       },
       {
         name: "Shirley Duong",
-        position: "Create Directors",
+        position: "Create Director",
         color: "text-acm-blue-300",
         shadow: "drop-shadow-3xl-acm-blue-100",
         photo: Shirley,
@@ -363,7 +363,7 @@ const Board = [
     members: [
       {
         name: "Justin Im",
-        position: "Forge Directors",
+        position: "Forge Director",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Justin,
@@ -372,7 +372,7 @@ const Board = [
       },
       {
         name: "Marcus Hsieh",
-        position: "Forge Directors",
+        position: "Forge Director",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Marcus,
