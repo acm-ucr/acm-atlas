@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Image1 from "@/public/sparkpage/photogallery/image1.webp";
 import Image2 from "@/public/sparkpage/photogallery/image2.webp";
