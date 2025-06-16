@@ -7,6 +7,13 @@ import { BiLogoInstagramAlt } from "react-icons/bi";
 import { TbMailFilled } from "react-icons/tb";
 import { motion } from "motion/react";
 
+const ButtonAnimation = {
+  initial: { opacity: 0, scale: 0.95 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+  whileHover: { scale: 1.03, opacity: 0.8 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
 interface HackathonProps {
   name: string;
   website: string;
@@ -80,7 +87,7 @@ const Hackathon = ({
           transition={{ ease: "easeInOut", duration: 1 }}
         >
           <Image
-            className="absolute right-[26%] top-[10%] w-1/2 drop-shadow-2xl sm:right-[10%] sm:top-[40%] md:right-[20%] md:top-[3%] md:w-1/6 2xl:w-[14%]"
+            className="absolute right-[26%] top-[11%] w-1/2 drop-shadow-2xl sm:right-[10%] sm:top-[40%] md:right-[15%] md:top-[7%] md:w-1/6 2xl:right-[20%] 2xl:top-[3%] 2xl:w-[14%]"
             src={logo}
             alt="logo"
           />
@@ -94,48 +101,55 @@ const Hackathon = ({
             label={stat.label}
             duration={2}
             color="text-acm-gray-500"
-            numberSize="text-4xl md:text-7xl"
+            numberSize="text-5xl md:text-7xl"
             labelSize="text-xl md:text-3xl"
           />
         ))}
       </div>
-
-      <Link
-        href={website}
-        target="_blank"
-        className={`${bgColor} mx-auto flex w-2/3 items-center justify-center rounded-lg py-2 text-xl font-semibold text-white md:w-1/6`}
-      >
-        Visit our Website!
-      </Link>
-      <p className="mx-[10%] py-5 text-left text-3xl font-bold">WHAT WE DO</p>
-      <p className="mx-[10%] text-left">{description2}</p>
+      <motion.div {...ButtonAnimation}>
+        <Link
+          href={website}
+          target="_blank"
+          className={`${bgColor} mx-auto flex w-2/3 items-center justify-center rounded-lg py-2 text-xl font-semibold text-white md:w-3/12 md:text-3xl`}
+        >
+          Visit our Website!
+        </Link>
+      </motion.div>
+      <p className="mx-[10%] mt-6 py-5 text-left text-3xl font-bold">
+        WHAT WE DO
+      </p>
+      <p className="mx-[10%] text-left text-xl md:text-2xl">{description2}</p>
       <CarouselImages images={carouselItems} />
       <p className="mt-10 text-4xl font-bold">PREVIOUS DEVPOSTS</p>
       <div className="mx-auto mt-6 grid w-5/6 grid-cols-2 gap-4 md:w-1/3 md:grid-cols-3">
         {devposts.map(({ year, link }, idx) => (
-          <Link
+          <motion.div
+            {...ButtonAnimation}
+            className={`rounded-xl ${bgColor} w-full px-10 py-4 font-medium text-white`}
             key={idx}
-            href={link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`w-full rounded-xl ${bgColor} px-10 py-4 font-medium text-white`}
           >
-            {year}
-          </Link>
+            <Link href={link} target="_blank" rel="noopener noreferrer">
+              {year}
+            </Link>
+          </motion.div>
         ))}
       </div>
       <p className="mt-10 text-4xl font-bold">CONTACT US</p>
-      <div className="mt-4 flex justify-center gap-6">
-        <Link
-          href={`mailto:${email}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <TbMailFilled className={`${textColor}`} size={80} />
-        </Link>
-        <Link href={instagram} target="_blank" rel="noopener noreferrer">
-          <BiLogoInstagramAlt className={`${textColor}`} size={80} />
-        </Link>
+      <div className="mt-4 flex justify-center gap-6 pb-8">
+        <motion.div {...ButtonAnimation}>
+          <Link
+            href={`mailto:${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <TbMailFilled className={`${textColor}`} size={80} />
+          </Link>
+        </motion.div>
+        <motion.div {...ButtonAnimation}>
+          <Link href={instagram} target="_blank" rel="noopener noreferrer">
+            <BiLogoInstagramAlt className={`${textColor}`} size={80} />
+          </Link>
+        </motion.div>
       </div>
     </div>
   );
