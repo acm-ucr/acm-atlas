@@ -42,7 +42,7 @@ export const cutiehack: Hackathon = {
   description:
     "Cutie Hack is a 12-hour, beginner-oriented hackathon hosted by students at University of California, Riverside.",
   description2:
-    "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
+    "Cutie Hack is a 12-hour, beginner-oriented hackathon hosted by students at University of California, Riverside where hackers are challenged to create a cool project within the time frame to demo in order to win awesome prizes and participate in workshops, fun games, and networking.",
   website: "https://cutiehack.com/",
   textColor: "text-acm-orange-400",
   bgColor: "bg-acm-orange-400",
@@ -74,7 +74,7 @@ export const citrushack: Hackathon = {
   description:
     "Citrus Hack is a 24-hour hackathon and one of UC Riverside's largest hackathons.",
   description2:
-    "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
+    "Citrus Hack is a 24 hour hackathon and one of UC Riverside's largest hackathons. Hackers get the opportunity to build a project to present to a panel of judges for prizes. Participants get the chance to attend workshops, network, and play games!",
   website: "https://www.citrushack.com/",
   textColor: "text-acm-orange-400",
   bgColor: "bg-acm-orange-400",
@@ -147,7 +147,7 @@ export const designverse: Hackathon = {
   description:
     "DesignVerse is the first and only 24-hour beginner-friendly Design-a-Thon hosted by the University of California, Riverside.",
   description2:
-    "Lorem ipsum dolor sit amet, quo ei error utroque. Nam verear minimum deseruisse an, ludus tollit nec.",
+    "DesignVerse is the first and only 24-hour beginner-friendly Design-a-Thon hosted by the University of California, Riverside. Designers are challenged to create the interface of an app or website through a given prompt, which would then be demoed and presented to a panel of industry professionals. At DesignVerse, our goal is to empower our community of students who are interested in design-like thinking and provide career developmental opportunities through our workshops, mentorship, and networking events. We welcome all undergraduate, graduate and high school students for a lively weekend filled with creativity, networking, mentorship, and more!",
   website: "https://www.designverseucr.org/",
   textColor: "text-[#203649]",
   bgColor: "bg-[#203649]",

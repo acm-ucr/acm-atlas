@@ -3,6 +3,15 @@
 import Link from "next/link";
 import getCurrentApps from "@/utils/applications/currentapplications";
 import { getAppStatus } from "@/utils/applications/applicationstatus";
+import { motion } from "motion/react";
+
+const ButtonAnimation = {
+  initial: { opacity: 0, scale: 0.95 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+  whileHover: { scale: 1.03, opacity: 0.8 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
 
 const Join = () => {
   const { data, isLoading } = getCurrentApps();
@@ -15,7 +24,10 @@ const Join = () => {
         <p className="mt-8 flex justify-center text-4xl font-semibold text-acm-gray-500 md:mt-0 md:pb-6 md:text-5xl">
           Join Now
         </p>
-        <div className="flex justify-center py-4 md:py-0">
+        <motion.div
+          {...ButtonAnimation}
+          className="flex justify-center py-4 drop-shadow-lg md:py-0"
+        >
           {appLink && appLink !== "/" ? (
             <Link
               href={appLink}
@@ -29,7 +41,7 @@ const Join = () => {
               {isLoading ? "Loading..." : status}
             </p>
           )}
-        </div>
+        </motion.div>
       </div>
       <div>
         <p className="pt-8 text-center text-4xl font-bold md:text-left">
