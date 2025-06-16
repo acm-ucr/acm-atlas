@@ -17,14 +17,12 @@ const NotFound = () => {
       <p className="z-10 text-center text-3xl font-bold text-acm-navy sm:text-4xl md:text-6xl">
         PAGE NOT FOUND
       </p>
-      <div className="z-10 pb-16 pt-8">
-        <Link
-          href="/"
-          className="flex justify-center rounded-3xl bg-acm-blue-700 px-6 py-3 text-lg font-bold text-white sm:px-10 sm:py-4 sm:text-xl md:px-16 md:py-6 md:text-3xl"
-        >
-          Go Back Home
-        </Link>
-      </div>
+      <Link
+        href="/"
+        className="z-10 mb-16 mt-8 flex justify-center rounded-2xl bg-acm-blue-700 px-6 py-3 text-lg font-bold text-white sm:px-10 sm:py-4 sm:text-xl md:px-16 md:py-6 md:text-3xl"
+      >
+        Go Back Home
+      </Link>
     </div>
   );
 };
