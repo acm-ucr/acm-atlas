@@ -33,7 +33,7 @@ const Card = ({
         />
       </div>
       <p className="pb-2 pt-6 text-lg font-bold md:text-xl">{name}</p>
-      <div className={`${color} flex flex-row items-center gap-4`}>
+      <div className={`${color} flex flex-row items-center gap-4 pb-8 md:pb-0`}>
         <Link href={linkedin} target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="text-3xl hover:scale-105 hover:opacity-75 md:text-5xl" />
         </Link>

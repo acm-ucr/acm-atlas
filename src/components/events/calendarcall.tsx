@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useState, useEffect } from "react";
 import { Calendar as UICalendar } from "@/components/ui/calendar";
 import {
   Calendar as RBCalendar,
@@ -13,6 +14,20 @@ import CustomToolbar from "./week/customtoolbar";
 import CustomEventPopover from "./week/customevent";
 import CustomDayHeader from "./week/customdayheader";
 import "./week/index.css";
+
+export function useWindowWidth() {
+  const [width, setWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 1024,
+  );
+
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return width;
+}
 
 export type GoogleEventProps = {
   start: {
@@ -57,6 +72,7 @@ const CalendarCall = () => {
   const [selectedEventTypes, setSelectedEventTypes] = React.useState<string[]>(
     calendarSources.map((source) => source.eventType),
   );
+  const isMobile = useWindowWidth() < 768;
 
   const { data, isLoading } = useQuery<{
     allEvents: TypedGoogleEventProps[];
@@ -160,7 +176,7 @@ const CalendarCall = () => {
       <p className="mt-10 pt-8 text-center text-6xl font-bold text-acm-gray-500">
         EVENTS
       </p>
-      <div className="mx-auto my-12 grid w-11/12 grid-cols-2 rounded-xl bg-acm-gray-100 px-4 py-2 text-3xl md:w-1/3">
+      <div className="mx-auto my-12 grid w-11/12 grid-cols-2 rounded-xl bg-acm-gray-100 px-4 py-2 text-3xl md:w-5/12 lg:w-1/3">
         <button
           onClick={() => setIsMonth(false)}
           className={`my-1 rounded-lg px-4 py-2 transition-colors duration-200 ${
@@ -215,6 +231,13 @@ const CalendarCall = () => {
             max={new Date(1970, 1, 1, 20, 0, 0)} // 8:00 PM
             date={date}
             onNavigate={setDate}
+            formats={{
+              timeGutterFormat: (date) =>
+                isMobile
+                  ? moment(date).format("hA")
+                  : moment(date).format("h:mm A"),
+            }}
+            key={isMobile ? "mobile" : "desktop"}
             components={{
               toolbar: (props) => (
                 <CustomToolbar

@@ -113,7 +113,7 @@ export const rosehack: Hackathon = {
   name: "ROSEHACK",
   years: "2024, 2025",
   description:
-    "Rose Hack is UC Riverside's 24-hour hackathon, one of the few women-centric hackathons in California!",
+    "Rose Hack is a 24-hour hackathon and one of the few women-centric hackathons in California!",
   description2:
     "Rose Hack’s mission is to encourage individuals from underrepresented groups in STEM to gain experience, create strong networks, and build amazing projects through their shared passions in Science and Technology.",
   website: "https://www.rosehack.com/",

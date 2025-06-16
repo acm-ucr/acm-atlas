@@ -33,7 +33,7 @@ const WhyWeDoIt = () => {
         <p className="py-5 text-4xl font-bold text-acm-gray-500">
           WHY WE DO IT
         </p>
-        <p className="text-xl leading-10 text-acm-gray-500 md:text-2xl">
+        <p className="mx-auto w-5/6 text-xl font-medium text-acm-gray-500 md:text-2xl">
           We want UCR to become a premier institution for Computer Science and
           Engineering. University courses provide a good foundation, but we
           strive to build upon that. But more importantly, we want our members

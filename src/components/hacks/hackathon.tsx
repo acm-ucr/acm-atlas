@@ -106,12 +106,11 @@ const Hackathon = ({
           />
         ))}
       </div>
-      <motion.div {...ButtonAnimation}>
-        <Link
-          href={website}
-          target="_blank"
-          className={`${bgColor} mx-auto flex w-2/3 items-center justify-center rounded-lg py-2 text-xl font-semibold text-white md:w-3/12 md:text-3xl`}
-        >
+      <motion.div
+        {...ButtonAnimation}
+        className={`${bgColor} mx-auto flex w-2/3 items-center justify-center rounded-lg py-2 text-xl font-semibold text-white md:w-3/12 md:text-3xl`}
+      >
+        <Link href={website} target="_blank">
           Visit our Website!
         </Link>
       </motion.div>
