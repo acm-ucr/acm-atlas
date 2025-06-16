@@ -49,7 +49,9 @@ const ProgramHeader = ({
         )}
       </motion.div>
       <motion.div {...headerTitleAnimation} className="py-5 text-center">
-        <p className="flex justify-center p-5 text-6xl font-bold">{header}</p>
+        <p className="mt-10 flex justify-center pb-[3vh] pt-4 text-6xl font-bold md:mt-10 md:py-8">
+          {header}
+        </p>
         <p className="pb-5">{subtitle}</p>
       </motion.div>
 
@@ -61,7 +63,7 @@ const ProgramHeader = ({
       </motion.p>
       <motion.div {...headerLogoAnimation}>
         <Image
-          className="absolute right-[26%] top-[28%] w-1/2 drop-shadow-2xl sm:right-[10%] sm:top-[40%] md:right-[20%] md:top-[15%] md:w-1/6 2xl:w-[14%]"
+          className="absolute right-[26%] top-[32%] w-1/2 drop-shadow-2xl sm:right-[10%] sm:top-[40%] md:right-[20%] md:top-[15%] md:w-1/6 2xl:w-[14%]"
           src={logo}
           alt="logo"
         />

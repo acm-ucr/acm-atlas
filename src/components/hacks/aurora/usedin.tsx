@@ -10,11 +10,11 @@ const hacks = [cutiehack, citrushack, rosehack, designverse];
 
 const UsedIn = () => {
   return (
-    <div className="mx-auto mt-12 w-5/6">
+    <div className="mx-auto mt-12 w-5/6 px-10">
       <p className="mb-6 text-left text-4xl font-bold text-acm-gray-500">
         USED IN
       </p>
-      <div className="mb-24 grid w-fit grid-cols-2 gap-4">
+      <div className="mb-24 grid w-fit grid-cols-1 gap-4 md:grid-cols-2">
         {hacks.map(({ name, website, years, bgColor }) => (
           <Link
             key={name}

@@ -36,6 +36,13 @@ const LogoAnimation = {
   whileInView: "show",
 };
 
+const ButtonAnimation = {
+  initial: { opacity: 0, scale: 0.95 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+  whileHover: { scale: 1.03, opacity: 0.8 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
 const WhatWeOffer = ({
   textColor,
   bgColor,
@@ -65,12 +72,14 @@ const WhatWeOffer = ({
           {...DescriptionAnimation}
           className="flex flex-col items-center text-center md:items-start md:text-left"
         >
-          <Link
-            href={link}
-            className={`${bgColor} flex w-fit items-center justify-center rounded-lg px-2 py-2 text-xl font-semibold text-white md:w-1/4 md:px-0`}
-          >
-            Learn More →
-          </Link>
+          <motion.div {...ButtonAnimation}>
+            <Link
+              href={link}
+              className={`${bgColor} inline-flex w-fit items-center justify-start rounded-lg px-4 py-2 text-xl font-semibold text-white`}
+            >
+              Learn More →
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
       <motion.div

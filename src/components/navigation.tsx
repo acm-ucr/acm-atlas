@@ -84,13 +84,13 @@ const Navigation = () => {
         className="block text-3xl text-acm-gray-500 md:hidden"
         onClick={programBar ? handleBothBars : handleNavBar}
       />
-      <Link className={pathname === "" ? "text-acm-blue-500" : ""} href="/">
+      <Link className={pathname === "/" ? "text-acm-blue-500" : ""} href="/">
         <motion.div
           className="text-3xl font-semibold text-acm-gray-500"
           {...NavbarAnimation}
         >
           ACM@UCR
-        </motion.div>{" "}
+        </motion.div>
       </Link>
 
       {/* For web view */}
@@ -101,7 +101,12 @@ const Navigation = () => {
               <NavigationMenuItem>
                 {subItems ? (
                   <>
-                    <NavigationMenuTrigger onClick={() => router.push(link)}>
+                    <NavigationMenuTrigger
+                      onClick={() => router.push(link)}
+                      className={
+                        pathname.startsWith(link) ? "text-acm-blue-500" : ""
+                      }
+                    >
                       <motion.div
                         className="flex items-center gap-1"
                         {...NavbarAnimation}
@@ -115,7 +120,7 @@ const Navigation = () => {
                         <NavigationMenuLink
                           key={subIndex}
                           className={
-                            pathname === link
+                            pathname === subLink
                               ? "font-semibold text-acm-blue-500"
                               : ""
                           }
@@ -178,7 +183,7 @@ const Navigation = () => {
                                   <Link
                                     href={link}
                                     className={
-                                      pathname === link
+                                      pathname.startsWith(link)
                                         ? "text-base font-semibold text-acm-blue-500"
                                         : "text-base font-light"
                                     }

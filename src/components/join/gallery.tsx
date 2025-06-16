@@ -1,3 +1,4 @@
+"use client";
 import join1 from "@/public/joinpage/join1.webp";
 import join2 from "@/public/joinpage/join2.webp";
 import join3 from "@/public/joinpage/join3.webp";
@@ -9,6 +10,16 @@ import join15 from "@/public/joinpage/join15.webp";
 import join16 from "@/public/joinpage/join16.webp";
 import Link from "next/link";
 import ImageCard from "./imagecard";
+import { motion } from "motion/react";
+
+const ButtonAnimation = {
+  initial: { opacity: 0, scale: 0.95 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+  whileHover: { scale: 1.03, opacity: 0.8 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
+
 const Gallery = () => {
   return (
     <div className="mx-auto flex w-11/12 flex-col items-center md:w-3/4">
@@ -76,12 +87,12 @@ const Gallery = () => {
           />
         </div>
       </div>
-      <Link
-        href="/"
+      <motion.div
+        {...ButtonAnimation}
         className="my-8 rounded-2xl bg-acm-blue-700 px-12 py-3 text-3xl font-medium text-white"
       >
-        See More
-      </Link>
+        <Link href="/">See More</Link>
+      </motion.div>
     </div>
   );
 };

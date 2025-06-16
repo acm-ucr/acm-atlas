@@ -21,8 +21,10 @@ const Card = ({
   github,
 }: BoardProps) => {
   return (
-    <div className="w-7/8 mx-auto flex flex-col items-center text-center md:w-2/3">
-      <p className={`${color} py-4 text-xl font-bold`}>{position}</p>
+    <div className="mx-auto flex w-11/12 flex-col items-center text-center md:w-7/12">
+      <p className={`${color} pb-4 pt-8 text-xl font-bold md:pt-4`}>
+        {position}
+      </p>
       <div>
         <Image
           className={`${shadow} w-[40vw] rounded-full md:w-[30vw]`}

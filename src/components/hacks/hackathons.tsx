@@ -11,6 +11,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 
+const ButtonAnimation = {
+  initial: { opacity: 0, scale: 0.95 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+  whileHover: { scale: 1.03, opacity: 0.8 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
+
 const TitleAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
@@ -47,7 +55,7 @@ const Hackathons = () => {
         </motion.p>
         <motion.p
           {...DescriptionAnimation}
-          className="mx-auto w-3/4 text-center text-2xl font-semibold"
+          className="mx-auto w-10/12 text-center text-lg font-semibold md:w-3/4 md:text-2xl"
         >
           ACM hosts one current open back-end focused project, three hackathons,
           and one designathon. A hackathon is an event where engineers come
@@ -63,7 +71,7 @@ const Hackathons = () => {
         <div className="order-2 col-span-3 md:order-1 md:col-span-2">
           <motion.div
             {...TitleAnimation}
-            className={`pb-4 pt-6 text-center text-4xl font-bold text-acm-turquoise-300 md:pt-0 md:text-left`}
+            className="pb-4 pt-6 text-center text-4xl font-bold text-acm-turquoise-300 md:pt-0 md:text-left"
           >
             AURORA
           </motion.div>
@@ -72,16 +80,17 @@ const Hackathons = () => {
             className="flex flex-col items-center text-center md:items-start md:text-left"
           >
             <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
-              Aurora is an all in one dashboard used to manage and run Hackathon
+              Aurora is an all-in-one dashboard used to manage and run Hackathon
               & Designathon competitions.
             </p>
-
-            <Link
-              href="/hacks/aurora"
-              className="flex w-fit items-center justify-center rounded-lg bg-acm-turquoise-200 px-4 py-2 text-xl font-semibold text-white md:w-1/4 md:px-0"
-            >
-              Learn More →
-            </Link>
+            <motion.div {...ButtonAnimation}>
+              <Link
+                href="/hacks/aurora"
+                className="inline-flex w-fit items-center justify-start rounded-lg bg-acm-turquoise-200 px-4 py-2 text-xl font-semibold text-white"
+              >
+                Learn More →
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
 
@@ -92,7 +101,6 @@ const Hackathons = () => {
           <Image src={Aurora} alt="Aurora" />
         </motion.div>
       </div>
-
       <WhatWeOffer
         name="CutieHack"
         bgColor={cutiehack.bgColor}
@@ -137,15 +145,17 @@ const Hackathons = () => {
           className="flex flex-col items-center text-center md:items-start md:text-left"
         >
           <p className="w-5/6 py-2 pb-6 text-2xl font-semibold text-acm-gray-500">
-            ackpacks, a tool you can use during your hackathons here at UCR to
-            get started on your project!
+            Check out our hackpacks — a tool you can use during your hackathons
+            here at UCR to get started on your project!
           </p>
-          <Link
-            href="/hacks/hackpacks"
-            className="flex w-fit items-center justify-center rounded-lg bg-acm-blue-700 px-4 py-2 text-xl font-semibold text-white"
-          >
-            Learn More →
-          </Link>
+          <motion.div {...ButtonAnimation}>
+            <Link
+              href="/hacks/hackpacks"
+              className="inline-flex w-fit items-center justify-start rounded-lg bg-acm-blue-700 px-4 py-2 text-xl font-semibold text-white"
+            >
+              Learn More →
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </div>

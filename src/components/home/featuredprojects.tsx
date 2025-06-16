@@ -24,14 +24,14 @@ const FeaturedProjects = () => {
   const index3 = 3;
 
   return (
-    <div className="mx-auto w-11/12">
+    <div className="mx-auto w-10/12 md:w-11/12">
       <div className="mt-5 flex items-center justify-center">
         <p className="text-center text-5xl font-bold text-acm-gray-500 md:text-6xl">
           FEATURED PROJECTS
         </p>
       </div>
-      <div className="mx-10 mt-10 font-bold text-acm-gray-500">
-        <p className="pb-3 text-center text-4xl md:text-left">ACM SPARK</p>
+      <div className="mt-10 font-bold text-acm-gray-500">
+        <p className="pb-4 text-center text-4xl md:text-left">ACM SPARK</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
           <motion.div {...hoverOver()}>
             <ProjectCard
@@ -60,11 +60,11 @@ const FeaturedProjects = () => {
         </div>
         <Link
           href="/programs/spark"
-          className="mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
+          className="mb-8 mt-4 flex text-lg md:justify-end md:text-2xl 2xl:mt-6"
         >
           View All Spark Projects →
         </Link>
-        <p className="pb-3 text-center text-4xl md:text-left">ACM CREATE</p>
+        <p className="pb-4 text-center text-4xl md:text-left">ACM CREATE</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
           <motion.div {...hoverOver()}>
             <ProjectCard
@@ -93,11 +93,11 @@ const FeaturedProjects = () => {
         </div>
         <Link
           href="/programs/create"
-          className="mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
+          className="mb-8 mt-4 flex text-lg md:justify-end md:text-2xl 2xl:mt-6"
         >
           View All Create Projects →
         </Link>
-        <p className="pb-3 text-center text-4xl md:text-left">ACM FORGE</p>
+        <p className="pb-4 text-center text-4xl md:text-left">ACM FORGE</p>
         <div className="grid grid-cols-1 gap-8 text-lg md:grid-cols-3">
           <motion.div {...hoverOver()}>
             <ProjectCard
@@ -126,7 +126,7 @@ const FeaturedProjects = () => {
         </div>
         <Link
           href="/programs/forge"
-          className="mb-8 mt-2 flex text-lg md:justify-end md:text-2xl"
+          className="mb-8 mt-4 flex text-lg md:justify-end md:text-2xl 2xl:mt-6"
         >
           View All Forge Projects →
         </Link>
