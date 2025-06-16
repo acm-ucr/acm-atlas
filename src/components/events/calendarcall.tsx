@@ -54,6 +54,9 @@ const localizer = momentLocalizer(moment);
 const CalendarCall = () => {
   const [date, setDate] = React.useState<Date | undefined>(new Date());
   const [isMonth, setIsMonth] = React.useState<boolean>(true);
+  const [selectedEventTypes, setSelectedEventTypes] = React.useState<string[]>(
+    calendarSources.map((source) => source.eventType),
+  );
 
   const { data, isLoading } = useQuery<{
     allEvents: TypedGoogleEventProps[];
@@ -189,13 +192,20 @@ const CalendarCall = () => {
           selected={date}
           onSelect={setDate}
           className="mx-auto w-11/12 md:w-10/12"
-          events={data.allEvents}
+          events={data.allEvents.filter((event) =>
+            selectedEventTypes.includes(event.eventType),
+          )}
+          selectedEventTypes={selectedEventTypes}
+          setSelectedEventTypes={setSelectedEventTypes}
+          allEventTypes={calendarSources.map((s) => s.eventType)}
         />
       ) : (
         <div className="rounded-calendar-top mx-auto h-[150vh] w-10/12 pb-8">
           <RBCalendar
             localizer={localizer}
-            events={calendarEvents}
+            events={calendarEvents.filter((event) =>
+              selectedEventTypes.includes(event.resource.eventType),
+            )}
             startAccessor="start"
             endAccessor="end"
             titleAccessor="title"
@@ -206,7 +216,14 @@ const CalendarCall = () => {
             date={date}
             onNavigate={setDate}
             components={{
-              toolbar: CustomToolbar,
+              toolbar: (props) => (
+                <CustomToolbar
+                  {...props}
+                  selectedEventTypes={selectedEventTypes}
+                  setSelectedEventTypes={setSelectedEventTypes}
+                  allEventTypes={calendarSources.map((s) => s.eventType)}
+                />
+              ),
               event: CustomEvent,
               header: CustomDayHeader,
             }}

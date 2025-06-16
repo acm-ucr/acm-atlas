@@ -1,10 +1,10 @@
 import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-
-interface CustomEventProps {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+  DialogOverlay,
+} from "@/components/ui/dialog";
+interface CalendarEventPopoverProps {
   startDate: {
     dateTime?: string;
     date?: string;
@@ -20,7 +20,7 @@ interface CustomEventProps {
   eventType: string;
 }
 
-const CustomEvent = ({
+const CalendarEventPopover = ({
   startDate,
   endDate,
   title,
@@ -28,7 +28,7 @@ const CustomEvent = ({
   location,
   description,
   eventType,
-}: CustomEventProps) => {
+}: CalendarEventPopoverProps) => {
   let eventStartDate = new Date();
   let eventEndDate = new Date();
   let hasStartTime = false;
@@ -90,19 +90,32 @@ const CustomEvent = ({
               day: "numeric",
               year: "numeric",
             })}
-          </p>
-        </div>
-
-        <div className="rounded-b-xl bg-white px-4 py-3 text-lg">
-          <div className="flex">
-            {hasStartTime && <p>{timeRangeDisplay}</p>}
+        </span>
+      </DialogTrigger>
+      <DialogOverlay className="bg-gray-400/60">
+        <DialogContent className="z-50 w-[80vw] border-2 border-black bg-white p-0 shadow-md md:w-[40vw] 2xl:w-[30vw]">
+          <div className="grid grid-cols-4 px-4 py-2 text-xl font-semibold">
+            <p className="col-span-3">{title}</p>
+            <p className="flex justify-end">
+              {date.toLocaleString("default", {
+                month: "short",
+                day: "numeric",
+                year: "numeric",
+              })}
+            </p>
           </div>
-          <p>{location}</p>
-          {description && <p className="pb-4 pt-8">{description}</p>}
-        </div>
-      </PopoverContent>
-    </Popover>
+
+          <div className="rounded-b-xl bg-white px-4 py-3 text-lg">
+            <div className="flex">
+              {hasStartTime && <p>{timeRangeDisplay}</p>}
+            </div>
+            <p>{location}</p>
+            {description && <p className="pb-4 pt-8">{description}</p>}
+          </div>
+        </DialogContent>
+      </DialogOverlay>
+    </Dialog>
   );
 };
 
-export default CustomEvent;
+export default CalendarEventPopover;
