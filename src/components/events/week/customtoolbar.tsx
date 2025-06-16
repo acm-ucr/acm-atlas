@@ -3,7 +3,11 @@ import { ToolbarProps, Navigate } from "react-big-calendar";
 import type { CalendarEvent } from "../calendarcall";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
-const CustomToolbar: React.FC<ToolbarProps<CalendarEvent, object>> = ({
+interface CustomToolbarProps extends ToolbarProps<CalendarEvent, object> {
+  selectedEventTypes: string[];
+  setSelectedEventTypes: (types: string[]) => void;
+}
+const CustomToolbar: React.FC<CustomToolbarProps> = ({
   date,
   onNavigate,
   selectedEventTypes,
@@ -43,11 +47,12 @@ const CustomToolbar: React.FC<ToolbarProps<CalendarEvent, object>> = ({
           <SlArrowRight />
         </button>
       </div>
-      <div className="grid grid-cols-3 gap-2 pb-4 md:flex md:gap-0 md:space-x-2 md:pb-0">
+      <div>
         <ToggleGroup
           type="multiple"
           value={selectedEventTypes}
           onValueChange={setSelectedEventTypes}
+          className="grid grid-cols-3 gap-2 pb-4 md:flex md:gap-0 md:space-x-2 md:pb-0"
         >
           <ToggleGroupItem
             className="flex w-full items-center justify-center rounded-lg bg-acm-blue-400 px-4 py-2 text-white data-[state=on]:bg-acm-blue-700 data-[state=on]:text-white"
