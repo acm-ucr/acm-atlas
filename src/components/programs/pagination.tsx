@@ -32,20 +32,14 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
     (name: string, value: string) => {
       const params = new URLSearchParams(searchParams.toString());
       params.set(name, value);
+
       return params.toString();
     },
     [searchParams],
   );
 
-  const total = Math.max(Math.ceil(projects.length / 6) - 1, 0);
-
-  let index = parseInt(searchParams.get("page") ?? "0");
-
-  if (index > total) {
-    index = total;
-  } else if (index < 0) {
-    index = 0;
-  }
+  const index = parseInt(searchParams.get("page") ?? "0");
+  const total = Math.floor(projects.length / 6);
 
   return (
     <div className="scale-125 py-12">
@@ -55,12 +49,14 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
             <PaginationItem className="hover:cursor-pointer hover:opacity-70">
               <PaginationPrevious
                 onClick={() => {
-                  router.push(
-                    pathname +
-                      "?" +
-                      createQueryString("page", (index - 1).toString()),
-                    { scroll: false },
-                  );
+                  if (index > 0) {
+                    router.push(
+                      pathname +
+                        "?" +
+                        createQueryString("page", (index - 1).toString()),
+                      { scroll: false },
+                    );
+                  }
                 }}
               />
             </PaginationItem>
@@ -85,12 +81,14 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
             {index > 0 && (
               <PaginationLink
                 onClick={() => {
-                  router.push(
-                    pathname +
-                      "?" +
-                      createQueryString("page", (index - 1).toString()),
-                    { scroll: false },
-                  );
+                  if (index > 0) {
+                    router.push(
+                      pathname +
+                        "?" +
+                        createQueryString("page", (index - 1).toString()),
+                      { scroll: false },
+                    );
+                  }
                 }}
               >
                 {index}
@@ -104,12 +102,14 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
             {index + 1 <= total && (
               <PaginationLink
                 onClick={() => {
-                  router.push(
-                    pathname +
-                      "?" +
-                      createQueryString("page", (index + 1).toString()),
-                    { scroll: false },
-                  );
+                  if (index < total) {
+                    router.push(
+                      pathname +
+                        "?" +
+                        createQueryString("page", (index + 1).toString()),
+                      { scroll: false },
+                    );
+                  }
                 }}
               >
                 {index + 2}
@@ -123,12 +123,14 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
             {index + 1 < total && (
               <PaginationLink
                 onClick={() => {
-                  router.push(
-                    pathname +
-                      "?" +
-                      createQueryString("page", total.toString()),
-                    { scroll: false },
-                  );
+                  if (index + 2 < total) {
+                    router.push(
+                      pathname +
+                        "?" +
+                        createQueryString("page", total.toString()),
+                      { scroll: false },
+                    );
+                  }
                 }}
               >
                 {total + 1}
@@ -139,12 +141,14 @@ const PaginationComponent = ({ projects = [] }: ProjectGridProps) => {
             <PaginationItem className="hover:cursor-pointer hover:opacity-70">
               <PaginationNext
                 onClick={() => {
-                  router.push(
-                    pathname +
-                      "?" +
-                      createQueryString("page", (index + 1).toString()),
-                    { scroll: false },
-                  );
+                  if (index < total) {
+                    router.push(
+                      pathname +
+                        "?" +
+                        createQueryString("page", (index + 1).toString()),
+                      { scroll: false },
+                    );
+                  }
                 }}
               />
             </PaginationItem>
