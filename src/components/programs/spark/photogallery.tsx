@@ -5,6 +5,15 @@ import Image3 from "@/public/sparkpage/photogallery/image3.webp";
 import Image4 from "@/public/sparkpage/photogallery/image4.webp";
 import Image5 from "@/public/sparkpage/photogallery/image5.webp";
 import Link from "next/link";
+import { motion } from "motion/react";
+
+const ButtonAnimation = {
+  initial: { opacity: 0, scale: 0.95 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+  whileHover: { scale: 1.03, opacity: 0.8 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
 
 const PhotoGallery = () => {
   return (
@@ -43,12 +52,14 @@ const PhotoGallery = () => {
           />
         </div>
       </div>
-      <Link
-        href="/sparkphotos"
-        className="hover:opacity-8 mt-12 flex w-fit items-center justify-center rounded-3xl bg-acm-yellow-200 px-16 py-4 text-3xl text-black hover:scale-105 md:text-5xl"
-      >
-        See More
-      </Link>
+      <motion.div {...ButtonAnimation}>
+        <Link
+          href="/sparkphotos"
+          className="hover:opacity-8 mt-12 flex w-fit items-center justify-center rounded-3xl bg-acm-yellow-200 px-16 py-4 text-3xl text-black hover:scale-105 md:text-5xl"
+        >
+          See More
+        </Link>
+      </motion.div>
     </div>
   );
 };

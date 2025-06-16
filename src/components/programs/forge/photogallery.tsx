@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Image1 from "@/public/forgepage/photogallery/image1.webp";
 import Image2 from "@/public/forgepage/photogallery/image2.webp";
@@ -5,6 +6,15 @@ import Image3 from "@/public/forgepage/photogallery/image3.webp";
 import Image4 from "@/public/forgepage/photogallery/image4.webp";
 import Image5 from "@/public/forgepage/photogallery/image5.webp";
 import Link from "next/link";
+import { motion } from "motion/react";
+
+const ButtonAnimation = {
+  initial: { opacity: 0, scale: 0.95 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+  whileHover: { scale: 1.03, opacity: 0.8 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
 
 const PhotoGallery = () => {
   return (
@@ -44,12 +54,14 @@ const PhotoGallery = () => {
           />
         </div>
       </div>
-      <Link
-        href="/forgephotos"
-        className="mt-12 flex items-center justify-center rounded-3xl bg-acm-gray-200 px-16 py-4 text-3xl text-white hover:scale-105 hover:opacity-80 md:text-5xl"
-      >
-        See More
-      </Link>
+      <motion.div {...ButtonAnimation}>
+        <Link
+          href="/forgephotos"
+          className="mt-12 flex items-center justify-center rounded-3xl bg-acm-gray-200 px-16 py-4 text-3xl text-white hover:scale-105 hover:opacity-80 md:text-5xl"
+        >
+          See More
+        </Link>
+      </motion.div>
     </div>
   );
 };

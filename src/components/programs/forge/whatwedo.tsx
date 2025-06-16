@@ -6,7 +6,7 @@ import Image4 from "@/public/forgepage/image4.webp";
 
 const WhatWeDo = () => {
   return (
-    <div className="relative flex justify-center pt-10">
+    <div className="relative mx-auto flex w-10/12 justify-center pt-10">
       <div className="absolute left-0 top-[5%] z-[-1] h-[400px] w-[400px] rounded-full bg-acm-gray-300 opacity-80 blur-3xl" />
       <div className="absolute right-0 top-[30%] z-[-1] h-[400px] w-[400px] rounded-full bg-acm-gray-300 opacity-80 blur-3xl" />
       <div className="grid grid-cols-1 gap-16 px-[10%] text-xl font-medium text-acm-gray-500 md:grid-cols-2 md:text-3xl lg:px-[5%]">
@@ -26,7 +26,9 @@ const WhatWeDo = () => {
           and combine their contributions into a cohesive system.
         </p>
         <Image src={Image2} alt="Image2" className="order-4" />
+
         <Image src={Image3} alt="Image3" className="order-6 md:order-5" />
+
         <p className="order-5 flex items-center text-center md:order-6 md:text-left">
           These sessions ensure that software, electronics, and mechanical
           components integrate seamlessly, offering insight into the workflow of
