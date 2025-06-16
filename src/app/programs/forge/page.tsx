@@ -8,6 +8,7 @@ import Carousel from "@/components/programs/carousel";
 import ForgeTechstack from "@/data/techstacks/forgetechstack";
 import WhatWeDo from "@/components/programs/forge/whatwedo";
 import Stats from "@/components/programs/forge/stats";
+import PhotoGallery from "@/components/programs/forge/photogallery";
 import { ForgeFAQ } from "@/data/faq";
 
 const Page = () => {
@@ -21,12 +22,7 @@ const Page = () => {
         ellipse={grayEllipse}
       />
       <Stats />
-      <Carousel
-        data={ForgeTechstack}
-        pad={"px-[1vw]"}
-        padmd={"md:px-[2.5vw]"}
-        pad2xl={"2xl:px-[14vw]"}
-      />
+      <Carousel data={ForgeTechstack} />
       <Joinus
         textColor="text-white"
         backgroundColor="bg-acm-gray-200"
@@ -35,6 +31,7 @@ const Page = () => {
       />
       <WhatWeDo />
       <FAQ faqData={ForgeFAQ} />
+      <PhotoGallery />
     </>
   );
 };

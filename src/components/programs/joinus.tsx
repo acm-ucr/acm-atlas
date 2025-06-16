@@ -51,25 +51,26 @@ const Joinus = ({ textColor, backgroundColor, image, name }: ProgramProps) => {
           JOIN NOW
         </motion.p>
 
-        <div className="flex justify-center py-4 md:py-0">
-          <motion.div {...ButtonAnimation}>
-            {appLink && appLink !== "/" ? (
-              <Link
-                href={appLink}
-                target="_blank"
-                className={`rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-3xl ${textColor} ${backgroundColor}`}
-              >
-                {isLoading ? "Loading..." : status} APPLICATION
-              </Link>
-            ) : (
-              <p
-                className={`cursor-not-allowed rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-3xl ${textColor} ${backgroundColor}`}
-              >
-                {isLoading ? "Loading..." : status}
-              </p>
-            )}
-          </motion.div>
-        </div>
+        <motion.div
+          {...ButtonAnimation}
+          className="flex justify-center py-4 drop-shadow-lg md:py-0"
+        >
+          {appLink && appLink !== "/" ? (
+            <Link
+              href={appLink}
+              target="_blank"
+              className={`rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-3xl ${textColor} ${backgroundColor}`}
+            >
+              {isLoading ? "Loading..." : status} APPLICATION
+            </Link>
+          ) : (
+            <p
+              className={`cursor-not-allowed rounded-lg p-2 text-2xl md:mt-0 md:px-10 md:py-4 md:text-3xl ${textColor} ${backgroundColor}`}
+            >
+              {isLoading ? "Loading..." : status}
+            </p>
+          )}
+        </motion.div>
       </div>
 
       <motion.div {...ImageAnimation}>

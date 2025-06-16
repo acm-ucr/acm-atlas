@@ -10,6 +10,7 @@ import WhatWeDo from "@/components/programs/spark/whatwedo";
 import Projects from "@/components/programs/projects";
 import SparkProjects from "@/data/projects/sparkprojects";
 import Stats from "@/components/programs/spark/stats";
+import PhotoGallery from "@/components/programs/spark/photogallery";
 import { SparkFAQ } from "@/data/faq";
 
 const Page = () => {
@@ -23,12 +24,7 @@ const Page = () => {
         ellipse={yellowEllipse}
       />
       <Stats />
-      <Carousel
-        data={SparkTechstack}
-        pad={"px-[1vw]"}
-        padmd={"md:px-[2.5vw]"}
-        pad2xl={"2xl:px-[8vw]"}
-      />
+      <Carousel data={SparkTechstack} />
       <Joinus
         textColor="text-acm-gray-500"
         backgroundColor="bg-acm-yellow-200"
@@ -37,6 +33,7 @@ const Page = () => {
       />
       <WhatWeDo />
       <FAQ faqData={SparkFAQ} />
+      <PhotoGallery />
       <Projects projects={SparkProjects} />
     </>
   );

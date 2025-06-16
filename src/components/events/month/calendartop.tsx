@@ -1,15 +1,22 @@
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 interface CalendarTopProps {
   currentDate: Date;
   onPrevMonth: () => void;
   onNextMonth: () => void;
+  selectedEventTypes: string[];
+  setSelectedEventTypes: (types: string[]) => void;
+  allEventTypes: string[];
 }
 
 const CalendarTop = ({
   currentDate,
   onPrevMonth,
   onNextMonth,
+  selectedEventTypes,
+  setSelectedEventTypes,
+  allEventTypes,
 }: CalendarTopProps) => {
   const monthNames = [
     "JAN",
@@ -45,25 +52,64 @@ const CalendarTop = ({
           <SlArrowRight />
         </button>
       </div>
-      <div className="grid grid-cols-3 gap-2 pb-4 md:flex md:gap-0 md:space-x-2 md:pb-0">
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-blue-700 px-4 py-2 text-white">
-          GENERAL
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-yellow-200 px-4 py-2">
-          SPARK
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-blue-200 px-4 py-2">
-          CREATE
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-gray-800 px-4 py-2">
-          FORGE
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-purple-300 px-4 py-2">
-          DAS
-        </div>
-        <div className="flex w-full items-center justify-center rounded-lg bg-acm-green-500 px-4 py-2">
-          BIT/BYTE
-        </div>
+      <div>
+        <ToggleGroup
+          type="multiple"
+          value={selectedEventTypes}
+          onValueChange={(types) => {
+            const toggledType =
+              selectedEventTypes.find((type) => !types.includes(type)) ??
+              types.find((type) => !selectedEventTypes.includes(type));
+            if (
+              selectedEventTypes.length === allEventTypes.length &&
+              types.length === allEventTypes.length - 1
+            ) {
+              setSelectedEventTypes([toggledType!]);
+            } else if (types.length === 0) {
+              setSelectedEventTypes(allEventTypes);
+            } else {
+              setSelectedEventTypes(types);
+            }
+          }}
+          className="grid grid-cols-3 gap-2 pb-4 md:flex md:gap-0 md:space-x-2 md:pb-0"
+        >
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-blue-400 px-4 py-2 text-white data-[state=on]:bg-acm-blue-700 data-[state=on]:text-white"
+            value="general"
+          >
+            GENERAL
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-yellow-100 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-yellow-200 data-[state=on]:text-acm-gray-500"
+            value="spark"
+          >
+            SPARK
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-blue-200 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-blue-100 data-[state=on]:text-acm-gray-500"
+            value="create"
+          >
+            CREATE
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-gray-800 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-gray-400 data-[state=on]:text-white"
+            value="forge"
+          >
+            FORGE
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-purple-300 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-purple-200 data-[state=on]:text-acm-gray-500"
+            value="das"
+          >
+            DAS
+          </ToggleGroupItem>
+          <ToggleGroupItem
+            className="flex w-full items-center justify-center rounded-lg bg-acm-green-100 px-4 py-2 text-acm-gray-400 data-[state=on]:bg-acm-green-500 data-[state=on]:text-acm-gray-500"
+            value="bitbyte"
+          >
+            BIT/BYTE
+          </ToggleGroupItem>
+        </ToggleGroup>
       </div>
     </div>
   );

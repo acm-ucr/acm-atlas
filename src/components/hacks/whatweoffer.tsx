@@ -15,24 +15,34 @@ interface WhatWeOfferProps {
 const TitleAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
-  initial: { opacity: 0, y: 30 },
-  transition: { duration: 0.25, delay: 0.3 },
+  initial: { opacity: 0, y: -30 },
+  transition: { duration: 0.5, delay: 0.3 },
 };
 
 const DescriptionAnimation = {
   viewport: { once: true },
   whileInView: { opacity: 1, y: 0 },
-  initial: { opacity: 0, y: 30 },
-  transition: { duration: 0.25, delay: 0.4 },
+  initial: { opacity: 0, y: -30 },
+  transition: { duration: 0.5, delay: 0.4 },
 };
 
 const LogoAnimation = {
   viewport: { once: true },
-  whileInView: { opacity: 1, scale: 1 },
-  initial: { opacity: 0, scale: 0.8 },
-  transition: { type: "spring", damping: 40, stiffness: 200, delay: 0.25 },
+  variants: {
+    hidden: { opacity: 0, x: 30 },
+    show: { opacity: 1, x: 0, transition: { duration: 0.75, delay: 0.5 } },
+  },
+  initial: "hidden",
+  whileInView: "show",
 };
 
+const ButtonAnimation = {
+  initial: { opacity: 0, scale: 0.95 },
+  whileInView: { opacity: 1, scale: 1 },
+  viewport: { once: true },
+  whileHover: { scale: 1.03, opacity: 0.8 },
+  transition: { duration: 0.5, ease: "easeOut" },
+};
 const WhatWeOffer = ({
   textColor,
   bgColor,
@@ -62,12 +72,14 @@ const WhatWeOffer = ({
           {...DescriptionAnimation}
           className="flex flex-col items-center text-center md:items-start md:text-left"
         >
-          <Link
-            href={link}
-            className={`${bgColor} flex w-fit items-center justify-center rounded-lg px-2 py-2 text-xl font-semibold text-white md:w-1/4 md:px-0`}
-          >
-            Learn More →
-          </Link>
+          <motion.div {...ButtonAnimation}>
+            <Link
+              href={link}
+              className={`${bgColor} inline-flex w-fit items-center justify-start rounded-lg px-4 py-2 text-xl font-semibold text-white`}
+            >
+              Learn More →
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
       <motion.div

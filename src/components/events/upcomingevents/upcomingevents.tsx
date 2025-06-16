@@ -91,7 +91,12 @@ const UpcomingEvents = () => {
       <p className="mb-12 mt-4 text-center text-6xl font-bold text-acm-gray-500">
         UPCOMING EVENTS
       </p>
-      {!isLoading && data && (
+      {!isLoading && data && data.futureEvents.length === 0 && (
+        <p className="pb-8 text-center text-2xl text-acm-gray-400">
+          No upcoming events.
+        </p>
+      )}
+      {!isLoading && data && data.futureEvents.length > 0 && (
         <Cards
           events={data.futureEvents}
           isLoading={isLoading}

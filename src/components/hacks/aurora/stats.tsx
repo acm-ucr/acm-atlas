@@ -70,72 +70,67 @@ const Stats: React.FC = () => {
     return <p className="text-center">Error loading repo stats.</p>;
 
   return (
-    <div>
-      <div className="mx-auto grid w-3/4 grid-cols-3 py-12 text-center md:grid-rows-2">
-        <div className="border-r-2 pb-10">
-          <StatItem
-            end={round(Number(data.commits))}
-            label="commits"
-            duration={0.7}
-            color="text-acm-gray-500"
-            numberSize="text-6xl md:text-7xl"
-            labelSize="text-2xl md:text-3xl"
-          />
-        </div>
-        <div className="border-r-2 pb-10">
-          <StatItem
-            end={round(data.closedPRs)}
-            label="PRs"
-            duration={0.7}
-            color="text-acm-gray-500"
-            numberSize="text-6xl md:text-7xl"
-            labelSize="text-2xl md:text-3xl"
-          />
-        </div>
-        <div className="pb-10">
-          <StatItem
-            end={round(data.closedIssues)}
-            label="issues"
-            duration={0.7}
-            color="text-acm-gray-500"
-            numberSize="text-6xl md:text-7xl"
-            labelSize="text-2xl md:text-3xl"
-          />
-        </div>
-        <div className="border-r-2">
-          <StatItem
-            end={round(data.contributors)}
-            label="contributors"
-            duration={0.7}
-            color="text-acm-gray-500"
-            numberSize="text-6xl md:text-7xl"
-            labelSize="text-2xl md:text-3xl"
-          />
-        </div>
-
-        <div className="border-r-2">
-          <StatItem
-            end={round(data.stars)}
-            label="stars ⭐"
-            duration={0.7}
-            color="text-acm-gray-500"
-            numberSize="text-6xl md:text-7xl"
-            labelSize="text-2xl md:text-3xl"
-          />
-        </div>
-
-        <div>
-          <StatItem
-            end={round(data.days)}
-            label="days since we began"
-            duration={0.7}
-            color="text-acm-gray-500"
-            numberSize="text-6xl md:text-7xl"
-            labelSize="text-2xl md:text-3xl"
-          />
-        </div>
+    <div className="mx-auto grid w-5/6 grid-cols-1 gap-x-8 gap-y-12 py-12 text-center md:grid-cols-3 md:grid-rows-2">
+      <div className="md:border-r-2">
+        <StatItem
+          end={round(Number(data.commits))}
+          label="commits"
+          duration={0.7}
+          color="text-acm-gray-500"
+          numberSize="text-6xl md:text-7xl"
+          labelSize="text-2xl md:text-3xl"
+        />
       </div>
-      {/* Mobile layout */}
+      <div className="md:border-r-2">
+        <StatItem
+          end={round(data.closedPRs)}
+          label="PRs"
+          duration={0.7}
+          color="text-acm-gray-500"
+          numberSize="text-6xl md:text-7xl"
+          labelSize="text-2xl md:text-3xl"
+        />
+      </div>
+      <div>
+        <StatItem
+          end={round(data.closedIssues)}
+          label="issues"
+          duration={0.7}
+          color="text-acm-gray-500"
+          numberSize="text-6xl md:text-7xl"
+          labelSize="text-2xl md:text-3xl"
+        />
+      </div>
+      <div className="md:border-r-2">
+        <StatItem
+          end={round(data.contributors)}
+          label="contributors"
+          duration={0.7}
+          color="text-acm-gray-500"
+          numberSize="text-6xl md:text-7xl"
+          labelSize="text-2xl md:text-3xl"
+        />
+      </div>
+      <div className="md:border-r-2">
+        <StatItem
+          end={round(data.stars)}
+          label="stars ⭐"
+          duration={0.7}
+          color="text-acm-gray-500"
+          numberSize="text-6xl md:text-7xl"
+          labelSize="text-2xl md:text-3xl"
+        />
+      </div>
+      <div>
+        <StatItem
+          end={round(data.days)}
+          label="days since we began"
+          duration={0.7}
+          color="text-acm-gray-500"
+          numberSize="text-6xl md:text-7xl"
+          labelSize="text-2xl md:text-3xl"
+        />
+      </div>
     </div>
   );
 };
