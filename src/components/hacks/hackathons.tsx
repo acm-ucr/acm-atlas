@@ -57,10 +57,13 @@ const Hackathons = () => {
           {...DescriptionAnimation}
           className="mx-auto w-10/12 text-center text-lg font-semibold md:w-3/4 md:text-2xl"
         >
-          ACM hosts one current open back-end focused project, three hackathons,
-          and one designathon. A hackathon is an event where engineers come
-          together to build a project that solves a problem. A designathon is
-          similar to a hackathon, but focus on designing a working prototype.
+          ACM hosts one current open back-end focused project that supports all
+          hackathons & designathons at UCR. ACM hosts two hackathons, Cutie Hack
+          and Citrus Hack. Through Aurora, ACM supports RoseHack, a hackathon
+          hosted by Women In Computing (WINC) and Designverse, a designathon
+          hosted by Design @ UCR (DAU). A hackathon is an event where engineers
+          come together to build a project that solves a problem. A designathon
+          is similar to a hackathon, but focus on designing a working prototype.
           These hacks provide ACM members with an opportunity to expand their
           skills beyond our programs! Take a look below!
         </motion.p>
