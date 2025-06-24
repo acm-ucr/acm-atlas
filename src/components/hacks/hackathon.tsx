@@ -68,7 +68,7 @@ const Hackathon = ({
           transition={{ ease: "easeInOut", duration: 0.75 }}
           className="py-5 text-center"
         >
-          <p className="mt-10 flex justify-center pb-[3vh] pt-4 text-6xl font-bold md:mt-10 md:py-8">
+          <p className="mt-10 flex justify-center pb-[3vh] pt-4 text-5xl font-bold md:mt-10 md:py-8 md:text-6xl">
             {name}
           </p>
           <p className="pb-5 text-2xl font-semibold">{subtitle}</p>
