@@ -368,13 +368,6 @@ const alumni = [
         color: "text-acm-yellow-500",
       },
       {
-        name: "Kavin Phabiani",
-        position: "Spark Lead",
-        linkedin: "https://www.linkedin.com/in/kavin-phabiani/",
-        github: "https://github.com/kavinphab",
-        color: "text-acm-yellow-500",
-      },
-      {
         name: "Theo Fernandez",
         position: "Spark Lead",
         linkedin: "https://www.linkedin.com/in/theobwfernandez",
