@@ -110,7 +110,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Daniyal,
         linkedin: "http://www.linkedin.com/in/daniyal-ahmed-279888280",
-        github: "https://github/daniyal-ahmed10",
+        github: "https://github.com/daniyal-ahmed10",
       },
       {
         name: "Ahad Hassan",
