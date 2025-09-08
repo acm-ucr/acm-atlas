@@ -6,7 +6,7 @@ import Image4 from "@/public/forgepage/image4.webp";
 
 const WhatWeDo = () => {
   return (
-    <div className="relative mx-auto flex w-10/12 justify-center pt-10">
+    <div className="relative flex justify-center overflow-x-clip px-[10%] pt-10">
       <div className="absolute left-0 top-[5%] z-[-1] h-[400px] w-[400px] rounded-full bg-acm-gray-300 opacity-80 blur-3xl" />
       <div className="absolute right-0 top-[30%] z-[-1] h-[400px] w-[400px] rounded-full bg-acm-gray-300 opacity-80 blur-3xl" />
       <div className="grid grid-cols-1 gap-16 px-[10%] text-xl font-medium text-acm-gray-500 md:grid-cols-2 md:text-3xl lg:px-[5%]">
