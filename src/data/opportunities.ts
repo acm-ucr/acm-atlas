@@ -26,7 +26,7 @@ const opportunities = [
     link: "/programs/das",
   },
   {
-    name: "bit/byte",
+    name: "bitbyte",
     card_background: Bitbyte,
     link: "/programs/bitbyte",
   },

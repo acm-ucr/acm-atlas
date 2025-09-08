@@ -24,7 +24,6 @@ export const getAppStatus = (
     const endAppDate = new Date(endDate as string);
     endAppDate.setHours(0, 0, 0, 0);
     today.setHours(0, 0, 0, 0);
-
     if (endAppDate < today) {
       return { status: "APPLICATION CLOSED", appLink: "/" };
     }
