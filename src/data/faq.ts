@@ -183,13 +183,51 @@ export const CreateFAQ = [
 
 export const BitByteFAQ = [
   {
-    question: "Are there any requirements?",
+    question: "When are applications released?",
     answer:
-      "No, there aren't any hard requirements for being a mentor or mentee. However, we recommend that a mentor have some prior academic or professional experience.",
+      "Applications for mentors are released in the summer, and applications for mentees are released in Week 0 of Fall Quarter. Stay tuned!",
   },
   {
-    question: "How long does the Bit/Byte program last?",
+    question: "Are there any requirements to join?",
+    answer:
+      "There are no requirements to join! We are excited to meet everybody!",
+  },
+  {
+    question: "How long does the program run for?",
     answer:
       "We will have supporting activities throughout the school year. However, this relationship can extend well beyond in the future!",
+  },
+  {
+    question: "Who is ACM Bit-Byte for?",
+    answer:
+      "We aim to support any eager and exploring first years seeking guidance, and any student second year or older who wants to learn about leadership.",
+  },
+  {
+    question: "Do I have to be a Computer Science major?",
+    answer: "No! We accept mentees and mentors of all majors.",
+  },
+  {
+    question: "What are some topics that are covered in ACM Bit-Byte meetings?",
+    answer:
+      "We cover everything from how to make your way around UCR, to how to prep a resume and succeed in an interview!",
+  },
+  {
+    question: "What do Mentors do?",
+    answer:
+      "Mentors are required to attend training sessions and checkup meetings throughout the quarter, as well as host weekly sessions with their mentees in alignment with our provided syllabus.",
+  },
+  {
+    question: "What if I'm unsure about my mentor?",
+    answer:
+      "Once you are admitted to the program, you will have access to a special Google Form that is sent directly to the Program Advisors, who can help you work through any concerns that may arise!",
+  },
+  {
+    question: "Is ACM Bit-Byte free, or is there a cost?",
+    answer: "Yes, ACM Bit-Byte is free!",
+  },
+  {
+    question: "How often do mentees and mentors meet?",
+    answer:
+      "Mentees and mentors have 30-minute to 1-hour meetings weekly, and mentors are always available for questions at any time! We also have socials throughout each quarter, giving you more opportunities to meet with a mentor.",
   },
 ];
