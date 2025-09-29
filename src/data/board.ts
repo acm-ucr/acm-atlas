@@ -9,7 +9,6 @@ import Alton from "@/public/boardpage/spark/alton.webp";
 import Arielle from "@/public/boardpage/spark/arielle.webp";
 import Sweden from "@/public/boardpage/spark/sweden.webp";
 import John from "@/public/boardpage/spark/john.webp";
-import Dean from "@/public/boardpage/spark/dean.webp";
 import Hannah from "@/public/boardpage/spark/hannah.webp";
 import Stanley1 from "@/public/boardpage/spark/stanley.webp";
 import Shirley from "@/public/boardpage/create/shirley.webp";
@@ -36,6 +35,8 @@ import Wesley2 from "@/public/boardpage/general/wesley.webp";
 import Daniyal from "@/public/boardpage/general/daniyal.webp";
 import Austin from "@/public/boardpage/spark/austin.webp";
 import Jane from "@/public/boardpage/spark/jane.webp";
+import Cade from "@/public/boardpage/spark/cade.webp";
+import Jeffrey from "@/public/boardpage/spark/jeffrey.webp";
 const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -253,15 +254,6 @@ const Board = [
         github: "https://github.com/hhannahhwang",
       },
       {
-        name: "Dean Zaman",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Dean,
-        linkedin: "https://www.linkedin.com/in/fardinzaman/",
-        github: "https://github.com/fardinzam",
-      },
-      {
         name: "Sweden Agunenye",
         position: "Spark Lead",
         color: "text-acm-yellow-500",
@@ -332,6 +324,24 @@ const Board = [
         photo: Howard,
         linkedin: "https://www.linkedin.com/in/howard-wheeler-073418287/",
         github: "https://github.com/Howardwheeler",
+      },
+      {
+        name: "Cade Jordan",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Cade,
+        linkedin: "https://www.linkedin.com/in/cadejordan/",
+        github: "https://github.com/CadeJordan",
+      },
+      {
+        name: "Jeffrey Xia",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Jeffrey,
+        linkedin: "https://www.linkedin.com/in/jeffrey-xia-81a490253/",
+        github: "https://github.com/JeffreyXia05",
       },
     ],
   },
