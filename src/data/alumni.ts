@@ -164,13 +164,6 @@ const alumni = [
         color: "text-acm-yellow-500",
       },
       {
-        name: "Dean Zaman",
-        position: "Spark Lead",
-        linkedin: "https://www.linkedin.com/in/fardinzaman/",
-        github: "https://github.com/fardinzam",
-        color: "text-acm-yellow-500",
-      },
-      {
         name: "Sweden Agunenye",
         position: "Spark Lead",
         linkedin: "https://www.linkedin.com/in/sweden-agunenye-389b0a280/",
@@ -225,6 +218,20 @@ const alumni = [
         color: "text-acm-yellow-500",
         linkedin: "https://www.linkedin.com/in/howard-wheeler-073418287/",
         github: "https://github.com/Howardwheeler",
+      },
+      {
+        name: "Cade Jordan",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        linkedin: "https://www.linkedin.com/in/cadejordan/",
+        github: "https://github.com/CadeJordan",
+      },
+      {
+        name: "Jeffrey Xia",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        linkedin: "https://www.linkedin.com/in/jeffrey-xia-81a490253/",
+        github: "https://github.com/JeffreyXia05",
       },
       {
         name: "Kaylie Zhao",
