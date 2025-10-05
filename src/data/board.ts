@@ -16,10 +16,8 @@ import Kaylie from "@/public/boardpage/create/kaylie.webp";
 import Aldrie from "@/public/boardpage/spark/aldrie.webp";
 import Khushi from "@/public/boardpage/das/khushi.webp";
 import Marcus from "@/public/boardpage/forge/marcus.webp";
-import Ian from "@/public/boardpage/forge/ian.webp";
 import Avia from "@/public/boardpage/spark/avia.webp";
 import Wasim from "@/public/boardpage/das/wasim.webp";
-import Justin from "@/public/boardpage/forge/justin.webp";
 import Howard from "@/public/boardpage/spark/howard.webp";
 import Jimmy from "@/public/boardpage/spark/jimmy.webp";
 import Luis from "@/public/boardpage/spark/luis.webp";
@@ -375,15 +373,6 @@ const Board = [
     title: "ACM FORGE LEADS",
     members: [
       {
-        name: "Justin Im",
-        position: "Forge Director",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Justin,
-        linkedin: "https://www.linkedin.com/in/justin-h-im/",
-        github: "https://github.com/justin-h-im",
-      },
-      {
         name: "Marcus Hsieh",
         position: "Forge Director",
         color: "text-acm-gray-400",
@@ -391,15 +380,6 @@ const Board = [
         photo: Marcus,
         linkedin: "https://www.linkedin.com/in/marcusjhsieh",
         github: "https://github.com/MarcusHsieh",
-      },
-      {
-        name: "Ian Negishi",
-        position: "Forge Lead",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Ian,
-        linkedin: "https://www.linkedin.com/in/ian-negishi/",
-        github: "https://github.com/inegishi",
       },
       {
         name: "Vignesh Thondikulam",
