@@ -37,6 +37,9 @@ import Austin from "@/public/boardpage/spark/austin.webp";
 import Jane from "@/public/boardpage/spark/jane.webp";
 import Cade from "@/public/boardpage/spark/cade.webp";
 import Jeffrey from "@/public/boardpage/spark/jeffrey.webp";
+import Vignesh from "@/public/boardpage/forge/vignesh.webp";
+import Pratheek from "@/public/boardpage/forge/pratheek.webp";
+import Pranav from "@/public/boardpage/forge/pranav.webp";
 const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -397,6 +400,33 @@ const Board = [
         photo: Ian,
         linkedin: "https://www.linkedin.com/in/ian-negishi/",
         github: "https://github.com/inegishi",
+      },
+      {
+        name: "Vignesh Thondikulam",
+        position: "Forge Lead",
+        linkedin: "http://www.linkedin.com/in/vignesh-thondikulam",
+        github: "https://github.com/VigneshT24",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Vignesh,
+      },
+      {
+        name: "Pratheek Sunilkumar",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/pratheek28/",
+        github: "https://github.com/pratheek28",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Pratheek,
+      },
+      {
+        name: "Pranav Gowrishankar",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/pranavgowrish/",
+        github: "https://github.com/pranavgowrish",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Pranav,
       },
     ],
   },
