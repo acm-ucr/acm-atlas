@@ -269,6 +269,27 @@ const alumni = [
         color: "text-acm-gray-400",
       },
       {
+        name: "Vignesh Thondikulam",
+        position: "Forge Lead",
+        linkedin: "http://www.linkedin.com/in/vignesh-thondikulam",
+        github: "https://github.com/VigneshT24",
+        color: "text-acm-gray-400",
+      },
+      {
+        name: "Pratheek Sunilkumar",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/pratheek28/",
+        github: "https://github.com/pratheek28",
+        color: "text-acm-gray-400",
+      },
+      {
+        name: "Pranav Gowrishankar",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/pranavgowrish/",
+        github: "https://github.com/pranavgowrish",
+        color: "text-acm-gray-400",
+      },
+      {
         name: "Wasim Khan",
         position: "DAS Director",
         linkedin: "https://www.linkedin.com/in/wasimkhan034/",
