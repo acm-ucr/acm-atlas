@@ -37,7 +37,16 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
           <div className="grid grid-cols-1 items-center justify-center md:grid-cols-3">
             {members.map(
               (
-                { name, position, color, shadow, photo, linkedin, github },
+                {
+                  name,
+                  position,
+                  color,
+                  shadow,
+                  photo,
+                  linkedin,
+                  github,
+                  email,
+                },
                 index,
               ) => (
                 <motion.div
@@ -53,6 +62,7 @@ const Cards = ({ sectionRefs }: { sectionRefs: SectionRefs }) => {
                     photo={photo}
                     linkedin={linkedin}
                     github={github}
+                    email={email}
                   />
                 </motion.div>
               ),

@@ -1,6 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 interface BoardProps {
   name: string;
   position: string;
@@ -8,7 +9,8 @@ interface BoardProps {
   shadow: string;
   photo: StaticImageData;
   linkedin: string;
-  github: string;
+  github?: string;
+  email?: string;
 }
 
 const Card = ({
@@ -19,6 +21,7 @@ const Card = ({
   photo,
   linkedin,
   github,
+  email,
 }: BoardProps) => {
   return (
     <div className="mx-auto flex w-11/12 flex-col items-center text-center md:w-7/12">
@@ -32,14 +35,25 @@ const Card = ({
           alt="photo"
         />
       </div>
-      <p className="pb-2 pt-6 text-lg font-bold md:text-xl">{name}</p>
+      <p className="pb-2 pt-6 text-lg font-bold">{name}</p>
       <div className={`${color} flex flex-row items-center gap-4 pb-8 md:pb-0`}>
         <Link href={linkedin} target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="text-3xl hover:scale-105 hover:opacity-75 md:text-5xl" />
+          <FaLinkedin className="text-3xl hover:scale-105 hover:opacity-75" />
         </Link>
-        <Link href={github} target="_blank" rel="noopener noreferrer">
-          <FaGithub className="text-3xl hover:scale-105 hover:opacity-75 md:text-5xl" />
-        </Link>
+        {github && (
+          <Link href={github} target="_blank" rel="noopener noreferrer">
+            <FaGithub className="text-3xl hover:scale-105 hover:opacity-75" />
+          </Link>
+        )}
+        {email && (
+          <Link
+            href={`mailto:${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <MdEmail className="text-3xl hover:scale-105 hover:opacity-75" />
+          </Link>
+        )}
       </div>
     </div>
   );
