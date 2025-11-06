@@ -25,10 +25,8 @@ import Ahad from "@/public/boardpage/general/ahad.webp";
 import Allison from "@/public/boardpage/general/allison.webp";
 import Charlette from "@/public/boardpage/general/charlette.webp";
 import Henry from "@/public/boardpage/general/henry.webp";
-import Natalie from "@/public/boardpage/general/natalie.webp";
 import Arielle2 from "@/public/boardpage/general/arielle.webp";
 import Rebecca from "@/public/boardpage/general/rebecca.webp";
-import Audrey from "@/public/boardpage/general/audrey.webp";
 import Wesley2 from "@/public/boardpage/general/wesley.webp";
 import Daniyal from "@/public/boardpage/general/daniyal.webp";
 import Austin from "@/public/boardpage/spark/austin.webp";
@@ -38,6 +36,7 @@ import Jeffrey from "@/public/boardpage/spark/jeffrey.webp";
 import Vignesh from "@/public/boardpage/forge/vignesh.webp";
 import Pratheek from "@/public/boardpage/forge/pratheek.webp";
 import Pranav from "@/public/boardpage/forge/pranav.webp";
+import Neftali from "@/public/boardpage/general/neftali.webp";
 const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -50,6 +49,7 @@ const Board = [
         photo: Allison,
         linkedin: "https://linkedin.com/in/allisonpham7",
         github: "https://github.com/allison-pham",
+        email: "apham206@ucr.edu",
       },
       {
         name: "Charlette O'Connor",
@@ -58,7 +58,8 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-blue-500",
         photo: Charlette,
         linkedin: "https://www.linkedin.com/in/charlette-o-connor/",
-        github: "",
+        github: "https://github.com/charocon",
+        email: "coco010@ucr.edu",
       },
       {
         name: "Henry Wang",
@@ -68,6 +69,7 @@ const Board = [
         photo: Henry,
         linkedin: "https://www.linkedin.com/in/henry00c",
         github: "https://github.com/braindead-dev",
+        email: "hwang585@ucr.edu",
       },
       {
         name: "Wesley Wu",
@@ -77,16 +79,18 @@ const Board = [
         photo: Wesley2,
         linkedin: "https://www.linkedin.com/in/wesleylwu/",
         github: "https://github.com/wesleylwu",
+        email: "wwu160@ucr.edu",
       },
-      {
-        name: "Natalie Trinh",
+      /* {
+        name: "Simon Cun",
         position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Natalie,
-        linkedin: "https://www.linkedin.com/in/natalieqtrinh/",
-        github: "https://github.com/natcat5",
-      },
+        photo: Simon,
+        linkedin: "https://www.linkedin.com/in/simon-cun/",
+        github: "https://github.com/Simon-Cun",
+        email: "scun002@ucr.edu",
+      }, */
       {
         name: "Kevin Loritsch",
         position: "VPs of External Affairs",
@@ -95,6 +99,7 @@ const Board = [
         photo: Kevin,
         linkedin: "http://www.linkedin.com/in/kevin-loritsch",
         github: "https://github.com/Kevinloritsch",
+        email: "klori003@ucr.edu",
       },
       {
         name: "Arielle Haryanto",
@@ -104,6 +109,7 @@ const Board = [
         photo: Arielle2,
         linkedin: "https://www.linkedin.com/in/arielle-haryanto/",
         github: "https://github.com/arieen17",
+        email: "ahary002@ucr.edu",
       },
       {
         name: "Daniyal Ahmed",
@@ -113,6 +119,7 @@ const Board = [
         photo: Daniyal,
         linkedin: "http://www.linkedin.com/in/daniyal-ahmed-279888280",
         github: "https://github.com/daniyal-ahmed10",
+        email: "dahme007@ucr.edu",
       },
       {
         name: "Ahad Hassan",
@@ -122,15 +129,7 @@ const Board = [
         photo: Ahad,
         linkedin: "https://www.linkedin.com/in/ahadhasan248/",
         github: "https://github.com/Ahad2488",
-      },
-      {
-        name: "Audrey Kim",
-        position: "VPs of Marketing",
-        color: "text-acm-blue-500",
-        shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Audrey,
-        linkedin: "https://www.linkedin.com/in/audreykim-cs/",
-        github: "https://github.com/Audrey-Kim",
+        email: "ahasa030@ucr.edu",
       },
       {
         name: "Rebecca Jennings",
@@ -140,6 +139,16 @@ const Board = [
         photo: Rebecca,
         linkedin: "https://www.linkedin.com/in/rebecca-jennings-246a652a1/",
         github: "https://github.com/Rebecca-J7",
+        email: "rjenn003@ucr.edu",
+      },
+      {
+        name: "Neftali Watkinson",
+        position: "Faculty Advisor",
+        color: "text-acm-blue-500",
+        shadow: "drop-shadow-3xl-acm-blue-500",
+        photo: Neftali,
+        linkedin: "https://www.linkedin.com/in/neftaliw/",
+        email: "neftaliw@ucr.edu",
       },
     ],
   },
@@ -154,6 +163,7 @@ const Board = [
         photo: Stanley1,
         linkedin: "https://www.linkedin.com/in/stanleylew5/",
         github: "https://github.com/stanleylew5",
+        email: "slew013@ucr.edu",
       },
       {
         name: "Charleen Chen",
