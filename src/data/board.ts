@@ -36,7 +36,7 @@ import Jeffrey from "@/public/boardpage/spark/jeffrey.webp";
 import Vignesh from "@/public/boardpage/forge/vignesh.webp";
 import Pratheek from "@/public/boardpage/forge/pratheek.webp";
 import Pranav from "@/public/boardpage/forge/pranav.webp";
-import Neftali from "@/public/boardpage/general/neftali.jpg";
+import Neftali from "@/public/boardpage/general/neftali.webp";
 const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
