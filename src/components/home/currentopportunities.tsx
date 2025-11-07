@@ -7,7 +7,6 @@ import { getAppStatus } from "@/utils/applications/applicationstatus";
 const CurrentOpportunities = () => {
   const { data, isLoading } = getCurrentApps();
   const currentApps = data?.currentApps;
-
   return (
     <div className="flex flex-col items-center justify-center pb-12">
       <p className="text-center text-4xl font-bold text-acm-gray-500 md:text-6xl">

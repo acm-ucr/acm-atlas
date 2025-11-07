@@ -5,7 +5,7 @@ export const getAppStatus = (
   currentApps: TypedGoogleEventProps[],
 ) => {
   if (currentApps?.some((event) => event.eventType === programName)) {
-    const appStatus = currentApps?.find(
+    const appStatus = currentApps?.findLast(
       (event) => event.eventType === programName,
     );
     const startDate = appStatus?.start?.dateTime || appStatus?.start?.date;
@@ -25,12 +25,13 @@ export const getAppStatus = (
     endAppDate.setHours(0, 0, 0, 0);
     today.setHours(0, 0, 0, 0);
     if (endAppDate < today) {
+      console.log("aasf");
       return { status: "APPLICATION CLOSED", appLink: "/" };
     }
 
     return {
       status: getSeason(startDate as string),
-      appLink: appStatus?.location as string, // The location field holds the link
+      appLink: appStatus?.location as string,
     };
   } else {
     return { status: "APPLICATION CLOSED", appLink: "/" };
@@ -41,7 +42,11 @@ const getSeason = (startDate: string) => {
   const date = new Date(startDate);
 
   const year = date.getFullYear().toString().slice(-2);
+  console.log(year);
   const month = (date.getMonth() + 1) as number;
+
+  const yearNum = parseInt(year, 10);
+  const nextYear = ((yearNum + 1) % 100).toString().padStart(2, "0");
 
   if (month >= 2 && month <= 4) {
     return `SPRING '${year}`;
@@ -51,5 +56,5 @@ const getSeason = (startDate: string) => {
     return `FALL '${year}`;
   }
 
-  return `WINTER '${year + 1}`;
+  return `WINTER '${nextYear}`;
 };
