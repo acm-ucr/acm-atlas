@@ -37,6 +37,7 @@ import Vignesh from "@/public/boardpage/forge/vignesh.webp";
 import Pratheek from "@/public/boardpage/forge/pratheek.webp";
 import Pranav from "@/public/boardpage/forge/pranav.webp";
 import Neftali from "@/public/boardpage/general/neftali.webp";
+import Simon from "@/public/boardpage/general/simon.webp";
 const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -81,7 +82,7 @@ const Board = [
         github: "https://github.com/wesleylwu",
         email: "wwu160@ucr.edu",
       },
-      /* {
+      {
         name: "Simon Cun",
         position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
@@ -90,7 +91,7 @@ const Board = [
         linkedin: "https://www.linkedin.com/in/simon-cun/",
         github: "https://github.com/Simon-Cun",
         email: "scun002@ucr.edu",
-      }, */
+      },
       {
         name: "Kevin Loritsch",
         position: "VPs of External Affairs",
