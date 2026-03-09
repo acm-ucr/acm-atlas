@@ -424,7 +424,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Pranav,
       },
-            {
+      {
         name: "Anne Kim",
         position: "Forge Lead",
         linkedin: "https://www.linkedin.com/in/anne-sr-kim/",
@@ -433,7 +433,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Anne,
       },
-            {
+      {
         name: "Meena Ormond",
         position: "Forge Lead",
         linkedin: "https://www.linkedin.com/in/meena-ormond/",
@@ -442,7 +442,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Meena,
       },
-            {
+      {
         name: "Meadow Chiu",
         position: "Forge Lead",
         linkedin: "https://www.linkedin.com/in/meadow-chiu-50a1862a4/",
@@ -451,7 +451,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Meadow,
       },
-            {
+      {
         name: "Sathvik Lingaram",
         position: "Forge Lead",
         linkedin: "https://www.linkedin.com/in/sathvik-lingaram-a5413b266/",
