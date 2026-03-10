@@ -1,26 +1,12 @@
-import Brandon from "@/public/boardpage/spark/brandon.webp";
-import Charleen from "@/public/boardpage/spark/charleen.webp";
 import Wesley from "@/public/boardpage/spark/wesley.webp";
-import Quin from "@/public/boardpage/spark/quin.webp";
-import Tingxuan from "@/public/boardpage/spark/tingxuan.webp";
 import Kevin from "@/public/boardpage/spark/kevin.webp";
-import Cole from "@/public/boardpage/spark/cole.webp";
-import Alton from "@/public/boardpage/spark/alton.webp";
-import Arielle from "@/public/boardpage/spark/arielle.webp";
-import Sweden from "@/public/boardpage/spark/sweden.webp";
-import John from "@/public/boardpage/spark/john.webp";
-import Hannah from "@/public/boardpage/spark/hannah.webp";
-import Stanley1 from "@/public/boardpage/spark/stanley.webp";
 import Shirley from "@/public/boardpage/create/shirley.webp";
 import Kaylie from "@/public/boardpage/create/kaylie.webp";
-import Aldrie from "@/public/boardpage/spark/aldrie.webp";
 import Khushi from "@/public/boardpage/das/khushi.webp";
 import Marcus from "@/public/boardpage/forge/marcus.webp";
-import Avia from "@/public/boardpage/spark/avia.webp";
 import Wasim from "@/public/boardpage/das/wasim.webp";
 import Howard from "@/public/boardpage/spark/howard.webp";
 import Jimmy from "@/public/boardpage/spark/jimmy.webp";
-import Luis from "@/public/boardpage/spark/luis.webp";
 import Ahad from "@/public/boardpage/general/ahad.webp";
 import Allison from "@/public/boardpage/general/allison.webp";
 import Charlette from "@/public/boardpage/general/charlette.webp";
@@ -38,11 +24,13 @@ import Pratheek from "@/public/boardpage/forge/pratheek.webp";
 import Pranav from "@/public/boardpage/forge/pranav.webp";
 import Neftali from "@/public/boardpage/general/neftali.webp";
 import Simon from "@/public/boardpage/general/simon.webp";
+import Motunrayo from "@/public/boardpage/spark/motunrayo.webp";
+import KevinP from "@/public/boardpage/spark/kevinp.webp";
+import Yubin from "@/public/boardpage/spark/yubin.webp";
 import Anne from "@/public/boardpage/forge/anne.webp";
 import Meadow from "@/public/boardpage/forge/meadow.webp";
 import Meena from "@/public/boardpage/forge/meena.webp";
 import Sathvik from "@/public/boardpage/forge/sathvik.webp";
-
 const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -161,7 +149,7 @@ const Board = [
   {
     title: "ACM SPARK LEADS",
     members: [
-      {
+      /* {
         name: "Stanley Lew",
         position: "Spark Director",
         color: "text-acm-yellow-500",
@@ -170,33 +158,16 @@ const Board = [
         linkedin: "https://www.linkedin.com/in/stanleylew5/",
         github: "https://github.com/stanleylew5",
         email: "slew013@ucr.edu",
-      },
+      }, */
       {
-        name: "Charleen Chen",
-        position: "Spark Lead",
+        name: "Kevin Pember",
+        position: "Spark Director",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Charleen,
-        linkedin: "https://www.linkedin.com/in/charleenschen/",
-        github: "https://github.com/charleenschen",
-      },
-      {
-        name: "Arielle Haryanto",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Arielle,
-        linkedin: "https://www.linkedin.com/in/arielle-haryanto/",
-        github: "https://github.com/arieen17",
-      },
-      {
-        name: "Brandon Tran",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Brandon,
-        linkedin: "https://www.linkedin.com/in/brandon-tran1220/",
-        github: "https://github.com/brandontran1220",
+        photo: KevinP,
+        linkedin: "https://www.linkedin.com/in/kevin-pember/",
+        github: "https://github.com/Kevin-Pember",
+        email: "kpemb001@ucr.edu",
       },
       {
         name: "Wesley Wu",
@@ -206,96 +177,6 @@ const Board = [
         photo: Wesley,
         linkedin: "http://www.linkedin.com/in/wesleylwu",
         github: "https://github.com/wesleylwu",
-      },
-      {
-        name: "Ting Wu",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Tingxuan,
-        linkedin: "https://www.linkedin.com/in/tingxuanwu",
-        github: "https://github.com/tingtingtingtingtingtingtingtingtingtin/",
-      },
-      {
-        name: "Quin Gill",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Quin,
-        linkedin: "https://www.linkedin.com/in/quinhgill/",
-        github: "https://github.com/qhgill",
-      },
-      {
-        name: "Kevin Loritsch",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Kevin,
-        linkedin: "https://www.linkedin.com/in/kevin-loritsch/",
-        github: "https://github.com/Kevinloritsch",
-      },
-      {
-        name: "Avia Bequette",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Avia,
-        linkedin: "https://www.linkedin.com/in/avia-bequette-b41088218/",
-        github: "https://github.com/aviamb",
-      },
-      {
-        name: "Alton Qian",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Alton,
-        linkedin: "https://www.linkedin.com/in/alton-qian/",
-        github: "https://github.com/AltonQian",
-      },
-      {
-        name: "Cole Miller",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Cole,
-        linkedin: "https://www.linkedin.com/in/cole-h-miller/",
-        github: "https://github.com/Kolzza",
-      },
-      {
-        name: "Hannah Hwang",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Hannah,
-        linkedin: "https://www.linkedin.com/in/hhannahwang/",
-        github: "https://github.com/hhannahhwang",
-      },
-      {
-        name: "Sweden Agunenye",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Sweden,
-        linkedin: "https://www.linkedin.com/in/sweden-agunenye-389b0a280/",
-        github: "https://github.com/swedenagu",
-      },
-      {
-        name: "Aldrie Barcena",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Aldrie,
-        linkedin: "https://www.linkedin.com/in/aldriebarcena/",
-        github: "https://github.com/aldriebarcena",
-      },
-      {
-        name: "John Zhou",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: John,
-        linkedin: "https://www.linkedin.com/in/john-shiqi-zhou",
-        github: "https://github.com/JohnZ9865",
       },
       {
         name: "Austin Le",
@@ -325,15 +206,6 @@ const Board = [
         github: "https://github.com/shuuvi",
       },
       {
-        name: "Luis Bojorquez",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Luis,
-        linkedin: "https://www.linkedin.com/in/luis-bojorquez-440392296/",
-        github: "https://github.com/lbojo006",
-      },
-      {
         name: "Howard Wheeler",
         position: "Spark Lead",
         color: "text-acm-yellow-500",
@@ -359,6 +231,24 @@ const Board = [
         photo: Jeffrey,
         linkedin: "https://www.linkedin.com/in/jeffrey-xia-81a490253/",
         github: "https://github.com/JeffreyXia05",
+      },
+      {
+        name: "Motunrayo Lawrence",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Motunrayo,
+        linkedin: "https://www.linkedin.com/in/motunrayo-lawrence",
+        github: "https://github.com/LawMot",
+      },
+      {
+        name: "Yubin Zhen",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Yubin,
+        linkedin: "https://www.linkedin.com/in/yubinzhen",
+        github: "https://github.com/yubinzhen",
       },
     ],
   },
