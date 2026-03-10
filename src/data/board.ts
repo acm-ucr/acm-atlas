@@ -392,7 +392,7 @@ const Board = [
         name: "Marcus Hsieh",
         position: "Forge Director",
         color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-10",
+        shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Marcus,
         linkedin: "https://www.linkedin.com/in/marcusjhsieh",
         github: "https://github.com/MarcusHsieh",
