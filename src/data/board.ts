@@ -27,6 +27,10 @@ import Simon from "@/public/boardpage/general/simon.webp";
 import Motunrayo from "@/public/boardpage/spark/motunrayo.webp";
 import KevinP from "@/public/boardpage/spark/kevinp.webp";
 import Yubin from "@/public/boardpage/spark/yubin.webp";
+import Anne from "@/public/boardpage/forge/anne.webp";
+import Meadow from "@/public/boardpage/forge/meadow.webp";
+import Meena from "@/public/boardpage/forge/meena.webp";
+import Sathvik from "@/public/boardpage/forge/sathvik.webp";
 const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -309,6 +313,42 @@ const Board = [
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Pranav,
+      },
+      {
+        name: "Anne Kim",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/anne-sr-kim/",
+        github: "https://github.com/arkbot51",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Anne,
+      },
+      {
+        name: "Meena Ormond",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/meena-ormond/",
+        github: "https://github.com/meenaormond",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Meena,
+      },
+      {
+        name: "Meadow Chiu",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/meadow-chiu-50a1862a4/",
+        github: "https://github.com/mchiu028-art",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Meadow,
+      },
+      {
+        name: "Sathvik Lingaram",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/sathvik-lingaram-a5413b266/",
+        github: "https://github.com/SLCoder1",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Sathvik,
       },
     ],
   },
