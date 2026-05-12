@@ -1425,6 +1425,20 @@ const alumni = [
     ],
   },
   {
+    cohort: "2018-2019",
+    board: [
+      { name: "Aaroh Mankad", position: "President", linkedin: "", github: "" },
+      { name: "Daniel Stinson-Diess", position: "Vice President", linkedin: "", github: "" },
+      { name: "Janine Huang", position: "Secretary", linkedin: "", github: "" },
+      { name: "Andrew To", position: "Treasurer", linkedin: "", github: "" },
+      { name: "Harley Siezar", position: "Membership Chair", linkedin: "", github: "" },
+      { name: "Patrick Tumbucon", position: "Professional Development Chair", linkedin: "https://linkedin.com/in/patricktumbucon", github: "https://github.com/pattynextdoor" },
+      { name: "Timothy Koo", position: "Outreach Chair", linkedin: "", github: "" },
+      { name: "Cameron Morin", position: "Marketing Chair", linkedin: "", github: "" },
+      { name: "Will Shiao", position: "Project Manager", linkedin: "", github: "" },
+    ]
+  },
+  {
     cohort: "2017-2018",
     board: [
       { name: "John Pham", position: "President", linkedin: "", github: "" },
