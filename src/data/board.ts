@@ -288,6 +288,15 @@ const Board = [
         github: "https://github.com/MarcusHsieh",
       },
       {
+        name: "Pranav Gowrishankar",
+        position: "Forge Director",
+        linkedin: "https://www.linkedin.com/in/pranavgowrish/",
+        github: "https://github.com/pranavgowrish",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Pranav,
+      },
+      {
         name: "Vignesh Thondikulam",
         position: "Forge Lead",
         linkedin: "http://www.linkedin.com/in/vignesh-thondikulam",
@@ -304,15 +313,6 @@ const Board = [
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Pratheek,
-      },
-      {
-        name: "Pranav Gowrishankar",
-        position: "Forge Lead",
-        linkedin: "https://www.linkedin.com/in/pranavgowrish/",
-        github: "https://github.com/pranavgowrish",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Pranav,
       },
       {
         name: "Anne Kim",
