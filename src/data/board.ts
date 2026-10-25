@@ -1,12 +1,5 @@
-import Wesley from "@/public/boardpage/spark/wesley.webp";
-import Kevin from "@/public/boardpage/spark/kevin.webp";
-import Shirley from "@/public/boardpage/create/shirley.webp";
-import Kaylie from "@/public/boardpage/create/kaylie.webp";
-import Khushi from "@/public/boardpage/das/khushi.webp";
-import Marcus from "@/public/boardpage/forge/marcus.webp";
-import Wasim from "@/public/boardpage/das/wasim.webp";
-import Howard from "@/public/boardpage/spark/howard.webp";
-import Jimmy from "@/public/boardpage/spark/jimmy.webp";
+
+
 import Ahad from "@/public/boardpage/general/ahad.webp";
 import Allison from "@/public/boardpage/general/allison.webp";
 import Charlette from "@/public/boardpage/general/charlette.webp";
@@ -15,22 +8,46 @@ import Arielle2 from "@/public/boardpage/general/arielle.webp";
 import Rebecca from "@/public/boardpage/general/rebecca.webp";
 import Wesley2 from "@/public/boardpage/general/wesley.webp";
 import Daniyal from "@/public/boardpage/general/daniyal.webp";
-import Austin from "@/public/boardpage/spark/austin.webp";
-import Jane from "@/public/boardpage/spark/jane.webp";
-import Cade from "@/public/boardpage/spark/cade.webp";
-import Jeffrey from "@/public/boardpage/spark/jeffrey.webp";
-import Vignesh from "@/public/boardpage/forge/vignesh.webp";
-import Pratheek from "@/public/boardpage/forge/pratheek.webp";
-import Pranav from "@/public/boardpage/forge/pranav.webp";
 import Neftali from "@/public/boardpage/general/neftali.webp";
 import Simon from "@/public/boardpage/general/simon.webp";
-import Motunrayo from "@/public/boardpage/spark/motunrayo.webp";
+import Kevin from "@/public/boardpage/spark/kevin.webp";
+
+// import Jane from "@/public/boardpage/spark/jane.webp";
+// import Cade from "@/public/boardpage/spark/cade.webp";
+// import Wesley from "@/public/boardpage/spark/wesley.webp";
+// 
+// import Howard from "@/public/boardpage/spark/howard.webp";
+// import Jimmy from "@/public/boardpage/spark/jimmy.webp";
+// import Jeffrey from "@/public/boardpage/spark/jeffrey.webp";
+// import Austin from "@/public/boardpage/spark/austin.webp";
 import KevinP from "@/public/boardpage/spark/kevinp.webp";
+import Motunrayo from "@/public/boardpage/spark/motunrayo.webp";
 import Yubin from "@/public/boardpage/spark/yubin.webp";
-import Anne from "@/public/boardpage/forge/anne.webp";
-import Meadow from "@/public/boardpage/forge/meadow.webp";
+import Yilin from "@/public/boardpage/spark/yilin.jpg";
+import Rishik from "@/public/boardpage/spark/rishik.jpg";
+import Kaesha from "@/public/boardpage/spark/kaesha.png";
+import Brian from "@/public/boardpage/spark/brian.jpeg";
+import Celina from "@/public/boardpage/spark/celina.jpg";
+import Charles from "@/public/boardpage/spark/charles.jpg";
+
+import Shirley from "@/public/boardpage/create/shirley.webp";
+import Kaylie from "@/public/boardpage/create/kaylie.webp";
+
+import Khushi from "@/public/boardpage/das/khushi.webp";
+import Wasim from "@/public/boardpage/das/wasim.webp";
+
+// import Vignesh from "@/public/boardpage/forge/vignesh.webp";
+// import Pratheek from "@/public/boardpage/forge/pratheek.webp";
+// import Anne from "@/public/boardpage/forge/anne.webp";
+// import Meadow from "@/public/boardpage/forge/meadow.webp";
+// import Marcus from "@/public/boardpage/forge/marcus.webp";
+import Pranav from "@/public/boardpage/forge/pranav.webp";
 import Meena from "@/public/boardpage/forge/meena.webp";
+import Navya from "@/public/boardpage/general/Navya.jpg";
 import Sathvik from "@/public/boardpage/forge/sathvik.webp";
+import Mohnish from "@/public/boardpage/forge/mohnish.png";
+
+
 const Board = [
   {
     title: "ACM EXECUTIVE BOARD",
@@ -170,69 +187,6 @@ const Board = [
         email: "kpemb001@ucr.edu",
       },
       {
-        name: "Wesley Wu",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Wesley,
-        linkedin: "http://www.linkedin.com/in/wesleylwu",
-        github: "https://github.com/wesleylwu",
-      },
-      {
-        name: "Austin Le",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Austin,
-        linkedin: "https://www.linkedin.com/in/austintle/",
-        github: "https://github.com/ALE00111",
-      },
-      {
-        name: "Jimmy Munoz",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Jimmy,
-        linkedin: "https://www.linkedin.com/in/jimmy-munoz-8a7a47290/",
-        github: "https://github.com/j1munoz",
-      },
-      {
-        name: "Jane Lee",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Jane,
-        linkedin: "https://linkedin.com/in/janeyunlee",
-        github: "https://github.com/shuuvi",
-      },
-      {
-        name: "Howard Wheeler",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Howard,
-        linkedin: "https://www.linkedin.com/in/howard-wheeler-073418287/",
-        github: "https://github.com/Howardwheeler",
-      },
-      {
-        name: "Cade Jordan",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Cade,
-        linkedin: "https://www.linkedin.com/in/cadejordan/",
-        github: "https://github.com/CadeJordan",
-      },
-      {
-        name: "Jeffrey Xia",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Jeffrey,
-        linkedin: "https://www.linkedin.com/in/jeffrey-xia-81a490253/",
-        github: "https://github.com/JeffreyXia05",
-      },
-      {
         name: "Motunrayo Lawrence",
         position: "Spark Lead",
         color: "text-acm-yellow-500",
@@ -250,6 +204,60 @@ const Board = [
         linkedin: "https://www.linkedin.com/in/yubinzhen",
         github: "https://github.com/yubinzhen",
       },
+      {
+        name: "Yilin Liu",
+        postion: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Yilin,
+        linkedin: "https://www.linkedin.com/in/yilin-liu-a08777387/",
+        github: "https://github.com/yilinliu-7"
+      },
+      {
+        name: "Rishik Pulipaka",
+        postion: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Rishik,
+        linkedin: "https://www.linkedin.com/in/rishik-pulipaka/",
+        github: "https://github.com/rishik-pulipaka"
+      },
+      {
+        name: "Kaesha Inocencio",
+        postion: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Kaesha,
+        linkedin: "https://www.linkedin.com/in/kaesha-inocencio/",
+        github: "https://github.com/vinvyl"
+      },
+      {
+        name: "Bryan Estrada Chiang",
+        postion: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Brian,
+        linkedin: "https://www.linkedin.com/in/bryanestradac/",
+        github: "https://github.com/brysach"
+      },
+      {
+        name: "Celina Vasquez Rogriguez",
+        postion: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Celina,
+        linkedin: "https://www.linkedin.com/in/celina-vasquez-rodriguez/",
+        github: "https://github.com/celinavasquez"
+      },
+      {
+        name: "Charles Luo",
+        postion: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Charles,
+        linkedin: "https://www.linkedin.com/in/charlesluo06/",
+        github: "https://github.com/charlesluo06"
+      }
     ],
   },
   {
@@ -279,33 +287,6 @@ const Board = [
     title: "ACM FORGE LEADS",
     members: [
       {
-        name: "Marcus Hsieh",
-        position: "Forge Director",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Marcus,
-        linkedin: "https://www.linkedin.com/in/marcusjhsieh",
-        github: "https://github.com/MarcusHsieh",
-      },
-      {
-        name: "Vignesh Thondikulam",
-        position: "Forge Lead",
-        linkedin: "http://www.linkedin.com/in/vignesh-thondikulam",
-        github: "https://github.com/VigneshT24",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Vignesh,
-      },
-      {
-        name: "Pratheek Sunilkumar",
-        position: "Forge Lead",
-        linkedin: "https://www.linkedin.com/in/pratheek28/",
-        github: "https://github.com/pratheek28",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Pratheek,
-      },
-      {
         name: "Pranav Gowrishankar",
         position: "Forge Lead",
         linkedin: "https://www.linkedin.com/in/pranavgowrish/",
@@ -313,15 +294,6 @@ const Board = [
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Pranav,
-      },
-      {
-        name: "Anne Kim",
-        position: "Forge Lead",
-        linkedin: "https://www.linkedin.com/in/anne-sr-kim/",
-        github: "https://github.com/arkbot51",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Anne,
       },
       {
         name: "Meena Ormond",
@@ -333,13 +305,28 @@ const Board = [
         photo: Meena,
       },
       {
-        name: "Meadow Chiu",
+        name: "Navya Seth",
         position: "Forge Lead",
-        linkedin: "https://www.linkedin.com/in/meadow-chiu-50a1862a4/",
-        github: "https://github.com/mchiu028-art",
+        linkedin: "https://www.linkedin.com/in/navya-seth/",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Meadow,
+        photo: Navya,
+      },
+      {
+        name: "Mohnish Kothapa",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/mohnish-kothapa/",
+        github: "",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Mohnish,
+      },
+      {
+        name: "Audrey Lee",
+        position: "Forge Lead",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Mohnish,
       },
       {
         name: "Sathvik Lingaram",
