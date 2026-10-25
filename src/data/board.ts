@@ -1,5 +1,3 @@
-
-
 import Ahad from "@/public/boardpage/general/ahad.webp";
 import Allison from "@/public/boardpage/general/allison.webp";
 import Charlette from "@/public/boardpage/general/charlette.webp";
@@ -15,7 +13,7 @@ import Kevin from "@/public/boardpage/spark/kevin.webp";
 // import Jane from "@/public/boardpage/spark/jane.webp";
 // import Cade from "@/public/boardpage/spark/cade.webp";
 // import Wesley from "@/public/boardpage/spark/wesley.webp";
-// 
+//
 // import Howard from "@/public/boardpage/spark/howard.webp";
 // import Jimmy from "@/public/boardpage/spark/jimmy.webp";
 // import Jeffrey from "@/public/boardpage/spark/jeffrey.webp";
@@ -46,7 +44,6 @@ import Meena from "@/public/boardpage/forge/meena.webp";
 import Navya from "@/public/boardpage/general/Navya.jpg";
 import Sathvik from "@/public/boardpage/forge/sathvik.webp";
 import Mohnish from "@/public/boardpage/forge/mohnish.png";
-
 
 const Board = [
   {
@@ -211,7 +208,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Yilin,
         linkedin: "https://www.linkedin.com/in/yilin-liu-a08777387/",
-        github: "https://github.com/yilinliu-7"
+        github: "https://github.com/yilinliu-7",
       },
       {
         name: "Rishik Pulipaka",
@@ -220,7 +217,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Rishik,
         linkedin: "https://www.linkedin.com/in/rishik-pulipaka/",
-        github: "https://github.com/rishik-pulipaka"
+        github: "https://github.com/rishik-pulipaka",
       },
       {
         name: "Kaesha Inocencio",
@@ -229,7 +226,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Kaesha,
         linkedin: "https://www.linkedin.com/in/kaesha-inocencio/",
-        github: "https://github.com/vinvyl"
+        github: "https://github.com/vinvyl",
       },
       {
         name: "Bryan Estrada Chiang",
@@ -238,7 +235,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Brian,
         linkedin: "https://www.linkedin.com/in/bryanestradac/",
-        github: "https://github.com/brysach"
+        github: "https://github.com/brysach",
       },
       {
         name: "Celina Vasquez Rogriguez",
@@ -247,7 +244,7 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Celina,
         linkedin: "https://www.linkedin.com/in/celina-vasquez-rodriguez/",
-        github: "https://github.com/celinavasquez"
+        github: "https://github.com/celinavasquez",
       },
       {
         name: "Charles Luo",
@@ -256,8 +253,8 @@ const Board = [
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Charles,
         linkedin: "https://www.linkedin.com/in/charlesluo06/",
-        github: "https://github.com/charlesluo06"
-      }
+        github: "https://github.com/charlesluo06",
+      },
     ],
   },
   {
