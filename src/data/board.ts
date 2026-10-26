@@ -27,7 +27,7 @@ import Charles from "@/public/boardpage/spark/charles.jpg";
 import Shirley from "@/public/boardpage/create/shirley.webp";
 import Kaylie from "@/public/boardpage/create/kaylie.webp";
 
-import temp from "@/public/boardpage/das/temp.jpg";
+import JoshuaX from "@/public/boardpage/das/Joshua.jpg";
 
 // import Vignesh from "@/public/boardpage/forge/vignesh.webp";
 // import Pratheek from "@/public/boardpage/forge/pratheek.webp";
@@ -359,7 +359,7 @@ const Board = [
         position: "DAS Director",
         color: "text-acm-purple-100",
         shadow: "drop-shadow-3xl-acm-purple-100",
-        photo: temp,
+        photo: JoshuaX,
         linkedin: "https://www.linkedin.com/in/joshuamxu/",
         github: "https://github.com/Joshuamxu27",
       },
