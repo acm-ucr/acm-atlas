@@ -1,17 +1,9 @@
-// import Ahad from "@/public/boardpage/general/ahad.webp";
 // import Allison from "@/public/boardpage/general/allison.webp";
-// import Charlette from "@/public/boardpage/general/charlette.webp";
-// import Henry from "@/public/boardpage/general/henry.webp";
-// import Arielle2 from "@/public/boardpage/general/arielle.webp";
-// import Rebecca from "@/public/boardpage/general/rebecca.webp";
-// import Wesley2 from "@/public/boardpage/general/wesley.webp";
-// import Daniyal from "@/public/boardpage/general/daniyal.webp";
-import Neftali from "@/public/boardpage/general/neftali.webp";
-// import Simon from "@/public/boardpage/general/simon.webp";
-// import Kevin from "@/public/boardpage/spark/kevin.webp";
+import Paea from "@/public/boardpage/general/paea.jpg";
+
 import Lydia from "@/public/boardpage/general/Lydia.jpg";
 import Caly from "@/public/boardpage/general/Caly.jpg";
-import Pratheek from "@/public/boardpage/forge/pratheek.webp";
+import Pratheek from "@/public/boardpage/general/pratheek.webp";
 import Joshua from "@/public/boardpage/general/Joshua.jpg";
 import KevinL from "@/public/boardpage/general/Kevin.jpg";
 import Aadhya from "@/public/boardpage/general/Aadhya.jpg";
@@ -23,14 +15,6 @@ import Sanjuktha from "@/public/boardpage/general/Sanju.jpg";
 import Justin from "@/public/boardpage/general/Justin.jpg";
 import Navya from "@/public/boardpage/general/Navya.jpg";
 
-// import Jane from "@/public/boardpage/spark/jane.webp";
-// import Cade from "@/public/boardpage/spark/cade.webp";
-// import Wesley from "@/public/boardpage/spark/wesley.webp";
-//
-// import Howard from "@/public/boardpage/spark/howard.webp";
-// import Jimmy from "@/public/boardpage/spark/jimmy.webp";
-// import Jeffrey from "@/public/boardpage/spark/jeffrey.webp";
-// import Austin from "@/public/boardpage/spark/austin.webp";
 import KevinP from "@/public/boardpage/spark/kevinp.webp";
 import Motunrayo from "@/public/boardpage/spark/motunrayo.webp";
 import Yubin from "@/public/boardpage/spark/yubin.webp";
@@ -44,8 +28,7 @@ import Charles from "@/public/boardpage/spark/charles.jpg";
 import Shirley from "@/public/boardpage/create/shirley.webp";
 import Kaylie from "@/public/boardpage/create/kaylie.webp";
 
-import Khushi from "@/public/boardpage/das/khushi.webp";
-import Wasim from "@/public/boardpage/das/wasim.webp";
+import temp from "@/public/boardpage/das/temp.jpg";
 
 // import Vignesh from "@/public/boardpage/forge/vignesh.webp";
 // import Pratheek from "@/public/boardpage/forge/pratheek.webp";
@@ -56,6 +39,7 @@ import Pranav from "@/public/boardpage/forge/pranav.webp";
 import Meena from "@/public/boardpage/forge/meena.webp";
 import Sathvik from "@/public/boardpage/forge/sathvik.webp";
 import Mohnish from "@/public/boardpage/forge/mohnish.png";
+import Audrey from "@/public/boardpage/forge/audrey.jpg";
 
 const Board = [
   {
@@ -190,13 +174,12 @@ const Board = [
         email: "nseth010@ucr.edu",
       },
       {
-        name: "Neftali Watkinson",
+        name: "Paea LePendu",
         position: "Faculty Advisor",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Neftali,
-        linkedin: "https://www.linkedin.com/in/neftaliw/",
-        email: "neftaliw@ucr.edu",
+        photo: Paea,
+        email: "paea.lependu@ucr.edu",
       },
     ],
   },
@@ -365,7 +348,7 @@ const Board = [
         linkedin: "https://www.linkedin.com/in/audrey-lee-756388401/",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Mohnish,
+        photo: Audrey,
       },
       {
         name: "Sathvik Lingaram",
@@ -382,22 +365,13 @@ const Board = [
     title: "ACM DAS LEADS",
     members: [
       {
-        name: "Wasim Khan",
+        name: "Joshua Xu",
         position: "DAS Director",
         color: "text-acm-purple-100",
         shadow: "drop-shadow-3xl-acm-purple-100",
-        photo: Wasim,
-        linkedin: "https://www.linkedin.com/in/wasimkhan034/",
-        github: "https://github.com/WasimKhan034",
-      },
-      {
-        name: "Khushi Chaudhari",
-        position: "DAS Lead",
-        color: "text-acm-purple-100",
-        shadow: "drop-shadow-3xl-acm-purple-100",
-        photo: Khushi,
-        linkedin: "https://www.linkedin.com/in/khushi-chaudhari33/",
-        github: "https://github.com/khushi-04",
+        photo: temp,
+        linkedin: "https://www.linkedin.com/in/joshuamxu/",
+        github: "https://github.com/Joshuamxu27",
       },
     ],
   },
