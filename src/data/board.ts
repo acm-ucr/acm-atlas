@@ -17,7 +17,6 @@ import Navya from "@/public/boardpage/general/Navya.jpg";
 
 import KevinP from "@/public/boardpage/spark/kevinp.webp";
 import Motunrayo from "@/public/boardpage/spark/motunrayo.webp";
-import Yubin from "@/public/boardpage/spark/yubin.webp";
 import Yilin from "@/public/boardpage/spark/yilin.jpg";
 import Rishik from "@/public/boardpage/spark/rishik.jpg";
 import Kaesha from "@/public/boardpage/spark/kaesha.png";
@@ -214,15 +213,6 @@ const Board = [
         photo: Motunrayo,
         linkedin: "https://www.linkedin.com/in/motunrayo-lawrence",
         github: "https://github.com/LawMot",
-      },
-      {
-        name: "Yubin Zhen",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Yubin,
-        linkedin: "https://www.linkedin.com/in/yubinzhen",
-        github: "https://github.com/yubinzhen",
       },
       {
         name: "Yilin Liu",
