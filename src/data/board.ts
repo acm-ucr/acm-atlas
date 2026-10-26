@@ -1,14 +1,27 @@
-import Ahad from "@/public/boardpage/general/ahad.webp";
-import Allison from "@/public/boardpage/general/allison.webp";
-import Charlette from "@/public/boardpage/general/charlette.webp";
-import Henry from "@/public/boardpage/general/henry.webp";
-import Arielle2 from "@/public/boardpage/general/arielle.webp";
-import Rebecca from "@/public/boardpage/general/rebecca.webp";
-import Wesley2 from "@/public/boardpage/general/wesley.webp";
-import Daniyal from "@/public/boardpage/general/daniyal.webp";
+// import Ahad from "@/public/boardpage/general/ahad.webp";
+// import Allison from "@/public/boardpage/general/allison.webp";
+// import Charlette from "@/public/boardpage/general/charlette.webp";
+// import Henry from "@/public/boardpage/general/henry.webp";
+// import Arielle2 from "@/public/boardpage/general/arielle.webp";
+// import Rebecca from "@/public/boardpage/general/rebecca.webp";
+// import Wesley2 from "@/public/boardpage/general/wesley.webp";
+// import Daniyal from "@/public/boardpage/general/daniyal.webp";
 import Neftali from "@/public/boardpage/general/neftali.webp";
-import Simon from "@/public/boardpage/general/simon.webp";
-import Kevin from "@/public/boardpage/spark/kevin.webp";
+// import Simon from "@/public/boardpage/general/simon.webp";
+// import Kevin from "@/public/boardpage/spark/kevin.webp";
+import Lydia from "@/public/boardpage/general/Lydia.jpg";
+import Caly from "@/public/boardpage/general/Caly.jpg";
+import Pratheek from "@/public/boardpage/forge/pratheek.webp";
+import Joshua from "@/public/boardpage/general/Joshua.jpg";
+import KevinL from "@/public/boardpage/general/Kevin.jpg";
+import Aadhya from "@/public/boardpage/general/Aadhya.jpg";
+import Samuel from "@/public/boardpage/general/Samuel.jpg";
+import Armanie from "@/public/boardpage/general/Armanie.jpg";
+import Faisal from "@/public/boardpage/general/Faisal.jpg";
+import Alex from "@/public/boardpage/general/Alex.jpg";
+import Sanjuktha from "@/public/boardpage/general/Sanju.jpg";
+import Justin from "@/public/boardpage/general/Justin.jpg";
+import Navya from "@/public/boardpage/general/Navya.jpg";
 
 // import Jane from "@/public/boardpage/spark/jane.webp";
 // import Cade from "@/public/boardpage/spark/cade.webp";
@@ -41,7 +54,6 @@ import Wasim from "@/public/boardpage/das/wasim.webp";
 // import Marcus from "@/public/boardpage/forge/marcus.webp";
 import Pranav from "@/public/boardpage/forge/pranav.webp";
 import Meena from "@/public/boardpage/forge/meena.webp";
-import Navya from "@/public/boardpage/general/Navya.jpg";
 import Sathvik from "@/public/boardpage/forge/sathvik.webp";
 import Mohnish from "@/public/boardpage/forge/mohnish.png";
 
@@ -50,104 +62,132 @@ const Board = [
     title: "ACM EXECUTIVE BOARD",
     members: [
       {
-        name: "Allison Pham",
+        name: "Lydia Son",
         position: "President",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Allison,
-        linkedin: "https://linkedin.com/in/allisonpham7",
-        github: "https://github.com/allison-pham",
-        email: "apham206@ucr.edu",
+        photo: Lydia,
+        linkedin: "https://www.linkedin.com/in/sonlydiason/",
+        github: "https://github.com/minjlys",
+        email: "mson022@ucr.edu",
       },
       {
-        name: "Charlette O'Connor",
+        name: "Caly Carisse Cirilo",
         position: "Executive Vice President",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Charlette,
-        linkedin: "https://www.linkedin.com/in/charlette-o-connor/",
-        github: "https://github.com/charocon",
-        email: "coco010@ucr.edu",
+        photo: Caly,
+        linkedin: "https://www.linkedin.com/in/calycirilo/",
+        github: "https://github.com/calycarisse",
+        email: "cciri001@ucr.edu",
       },
       {
-        name: "Henry Wang",
+        name: "Pratheek Sunilkumar",
         position: "VP of Projects",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Henry,
-        linkedin: "https://www.linkedin.com/in/henry00c",
-        github: "https://github.com/braindead-dev",
-        email: "hwang585@ucr.edu",
+        photo: Pratheek,
+        linkedin: "https://www.linkedin.com/in/pratheek-sunilkumar/",
+        github: "https://github.com/pratheek28",
+        email: "psuni001@ucr.edu",
       },
       {
-        name: "Wesley Wu",
+        name: "Joshua Bumatay",
         position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Wesley2,
-        linkedin: "https://www.linkedin.com/in/wesleylwu/",
-        github: "https://github.com/wesleylwu",
-        email: "wwu160@ucr.edu",
+        photo: Joshua,
+        linkedin: "https://www.linkedin.com/in/jbumatay/",
+        github: "https://github.com/joshuaiba",
+        email: "jbuma002@ucr.edu",
       },
       {
-        name: "Simon Cun",
+        name: "Kevin Lin",
         position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Simon,
-        linkedin: "https://www.linkedin.com/in/simon-cun/",
-        github: "https://github.com/Simon-Cun",
-        email: "scun002@ucr.edu",
+        photo: KevinL,
+        linkedin: "https://www.linkedin.com/in/kevinjylin/",
+        github: "https://github.com/kevinjylin",
+        email: "klin180@ucr.edu",
       },
       {
-        name: "Kevin Loritsch",
+        name: "Aadhya Pai",
         position: "VPs of External Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Kevin,
-        linkedin: "http://www.linkedin.com/in/kevin-loritsch",
-        github: "https://github.com/Kevinloritsch",
-        email: "klori003@ucr.edu",
+        photo: Aadhya,
+        linkedin: "https://www.linkedin.com/in/aadhyapai/",
+        email: "apai009@ucr.edu",
       },
       {
-        name: "Arielle Haryanto",
+        name: "Samuel You",
         position: "VPs of External Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Arielle2,
-        linkedin: "https://www.linkedin.com/in/arielle-haryanto/",
-        github: "https://github.com/arieen17",
-        email: "ahary002@ucr.edu",
+        photo: Samuel,
+        linkedin: "https://www.linkedin.com/in/samuel-you-cs/",
+        github: "https://github.com/EveningSt3r",
+        email: "syou029@ucr.edu",
       },
       {
-        name: "Daniyal Ahmed",
+        name: "Armanie Gonzalez",
         position: "VP of Professional Development",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Daniyal,
-        linkedin: "http://www.linkedin.com/in/daniyal-ahmed-279888280",
-        github: "https://github.com/daniyal-ahmed10",
-        email: "dahme007@ucr.edu",
+        photo: Armanie,
+        linkedin: "https://www.linkedin.com/in/armanie-gonzalez/",
+        github: "https://github.com/Raiden-Griff",
+        email: "agonz830@ucr.edu",
       },
       {
-        name: "Ahad Hassan",
+        name: "Faisal Mushtaq",
+        position: "VP of Professional Development",
+        color: "text-acm-blue-500",
+        shadow: "drop-shadow-3xl-acm-blue-500",
+        photo: Faisal,
+        linkedin: "https://www.linkedin.com/in/faisal-mushtaq-ba96361ba/",
+        github: "https://github.com/faisalthe1",
+        email: "fmush002@ucr.edu",
+      },
+      {
+        name: "Alex Tsai",
         position: "VP of Finance",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Ahad,
-        linkedin: "https://www.linkedin.com/in/ahadhasan248/",
-        github: "https://github.com/Ahad2488",
-        email: "ahasa030@ucr.edu",
+        photo: Alex,
+        linkedin: "https://www.linkedin.com/in/alex-tsai-/",
+        github: "https://github.com/xelqo",
+        email: "atsai059@ucr.edu",
       },
       {
-        name: "Rebecca Jennings",
+        name: "Sanjuktha Thotakuri",
+        position: "VP of Finance",
+        color: "text-acm-blue-500",
+        shadow: "drop-shadow-3xl-acm-blue-500",
+        photo: Sanjuktha,
+        linkedin: "https://www.linkedin.com/in/sanjuktha-thotakuri/",
+        email: "sthot004@ucr.edu",
+      },
+      {
+        name: "Justin Tran",
         position: "VPs of Marketing",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Rebecca,
-        linkedin: "https://www.linkedin.com/in/rebecca-jennings-246a652a1/",
-        github: "https://github.com/Rebecca-J7",
-        email: "rjenn003@ucr.edu",
+        photo: Justin,
+        linkedin: "https://www.linkedin.com/in/justin-t-93b584295/",
+        github: "https://github.com/azntin",
+        email: "jtran417@ucr.edu",
+      },
+      {
+        name: "Navya Seth",
+        position: "VPs of Marketing",
+        color: "text-acm-blue-500",
+        shadow: "drop-shadow-3xl-acm-blue-500",
+        photo: Navya,
+        linkedin: "https://www.linkedin.com/in/navya-seth/",
+        github: "https://github.com/navya2005",
+        email: "nseth010@ucr.edu",
       },
       {
         name: "Neftali Watkinson",
@@ -305,6 +345,7 @@ const Board = [
         name: "Navya Seth",
         position: "Forge Lead",
         linkedin: "https://www.linkedin.com/in/navya-seth/",
+        github: "https://github.com/navya2005",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Navya,
@@ -321,6 +362,7 @@ const Board = [
       {
         name: "Audrey Lee",
         position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/audrey-lee-756388401/",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Mohnish,
