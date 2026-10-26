@@ -116,7 +116,7 @@ export const rosehack: Hackathon = {
     "Rose Hack is a 24-hour hackathon and one of the few women-centric hackathons in California!",
   description2:
     "Rose Hack’s mission is to encourage individuals from underrepresented groups in STEM to gain experience, create strong networks, and build amazing projects through their shared passions in Science and Technology.",
-  website: "https://www.rosehack.com/",
+  website: "https://www.rosehackucr.com/",
   textColor: "text-acm-green-400",
   bgColor: "bg-acm-green-400",
   subtitle: "Hackathon",
