@@ -39,8 +39,14 @@ import Meena from "@/public/boardpage/forge/meena.webp";
 import Sathvik from "@/public/boardpage/forge/sathvik.webp";
 import Mohnish from "@/public/boardpage/forge/mohnish.png";
 import Audrey from "@/public/boardpage/forge/audrey.jpg";
+import { BoardProps } from "@/components/board/card";
 
-const Board = [
+interface BoardData {
+  title: string;
+  members: BoardProps[];
+}
+
+const Board: BoardData[] = [
   {
     title: "ACM EXECUTIVE BOARD",
     members: [
@@ -216,7 +222,7 @@ const Board = [
       },
       {
         name: "Yilin Liu",
-        postion: "Spark Lead",
+        position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Yilin,
@@ -225,7 +231,7 @@ const Board = [
       },
       {
         name: "Rishik Pulipaka",
-        postion: "Spark Lead",
+        position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Rishik,
@@ -234,7 +240,7 @@ const Board = [
       },
       {
         name: "Kaesha Inocencio",
-        postion: "Spark Lead",
+        position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Kaesha,
@@ -243,7 +249,7 @@ const Board = [
       },
       {
         name: "Bryan Estrada Chiang",
-        postion: "Spark Lead",
+        position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Brian,
@@ -252,7 +258,7 @@ const Board = [
       },
       {
         name: "Celina Vasquez Rogriguez",
-        postion: "Spark Lead",
+        position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Celina,
@@ -261,7 +267,7 @@ const Board = [
       },
       {
         name: "Charles Luo",
-        postion: "Spark Lead",
+        position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
         photo: Charles,
