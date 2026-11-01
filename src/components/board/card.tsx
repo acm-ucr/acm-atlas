@@ -8,7 +8,7 @@ interface BoardProps {
   color: string;
   shadow: string;
   photo: StaticImageData;
-  linkedin: string;
+  linkedin?: string;
   github?: string;
   email?: string;
 }
@@ -37,9 +37,12 @@ const Card = ({
       </div>
       <p className="pb-2 pt-6 text-lg font-bold">{name}</p>
       <div className={`${color} flex flex-row items-center gap-4 pb-8 md:pb-0`}>
-        <Link href={linkedin} target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="text-3xl hover:scale-105 hover:opacity-75" />
-        </Link>
+        {linkedin && (
+          <Link href={linkedin} target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-3xl hover:scale-105 hover:opacity-75" />
+          </Link>
+        )}
+
         {github && (
           <Link href={github} target="_blank" rel="noopener noreferrer">
             <FaGithub className="text-3xl hover:scale-105 hover:opacity-75" />
