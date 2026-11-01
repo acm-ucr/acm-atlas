@@ -1,33 +1,33 @@
 // import Allison from "@/public/boardpage/general/allison.webp";
-import Paea from "@/public/boardpage/general/paea.jpg";
+import Paea from "@/public/boardpage/general/paea.webp";
 
-import Lydia from "@/public/boardpage/general/Lydia.jpg";
-import Caly from "@/public/boardpage/general/Caly.jpg";
+import Lydia from "@/public/boardpage/general/Lydia.webp";
+import Caly from "@/public/boardpage/general/Caly.webp";
 import Pratheek from "@/public/boardpage/general/pratheek.webp";
-import Joshua from "@/public/boardpage/general/Joshua.jpg";
-import KevinL from "@/public/boardpage/general/Kevin.jpg";
-import Aadhya from "@/public/boardpage/general/Aadhya.jpg";
-import Samuel from "@/public/boardpage/general/Samuel.jpg";
-import Armanie from "@/public/boardpage/general/Armanie.jpg";
-import Faisal from "@/public/boardpage/general/Faisal.jpg";
-import Alex from "@/public/boardpage/general/Alex.jpg";
-import Sanjuktha from "@/public/boardpage/general/Sanju.jpg";
-import Justin from "@/public/boardpage/general/Justin.jpg";
-import Navya from "@/public/boardpage/general/Navya.jpg";
+import Joshua from "@/public/boardpage/general/Joshua.webp";
+import KevinL from "@/public/boardpage/general/Kevin.webp";
+import Aadhya from "@/public/boardpage/general/Aadhya.webp";
+import Samuel from "@/public/boardpage/general/Samuel.webp";
+import Armanie from "@/public/boardpage/general/Armanie.webp";
+import Faisal from "@/public/boardpage/general/Faisal.webp";
+import Alex from "@/public/boardpage/general/Alex.webp";
+import Sanjuktha from "@/public/boardpage/general/Sanju.webp";
+import Justin from "@/public/boardpage/general/Justin.webp";
+import Navya from "@/public/boardpage/general/Navya.webp";
 
 import KevinP from "@/public/boardpage/spark/kevinp.webp";
 import Motunrayo from "@/public/boardpage/spark/motunrayo.webp";
-import Yilin from "@/public/boardpage/spark/yilin.jpg";
-import Rishik from "@/public/boardpage/spark/rishik.jpg";
-import Kaesha from "@/public/boardpage/spark/kaesha.png";
-import Brian from "@/public/boardpage/spark/brian.jpeg";
-import Celina from "@/public/boardpage/spark/celina.jpg";
-import Charles from "@/public/boardpage/spark/charles.jpg";
+import Yilin from "@/public/boardpage/spark/yilin.webp";
+import Rishik from "@/public/boardpage/spark/rishik.webp";
+import Kaesha from "@/public/boardpage/spark/kaesha.webp";
+import Brian from "@/public/boardpage/spark/brian.webp";
+import Celina from "@/public/boardpage/spark/celina.webp";
+import Charles from "@/public/boardpage/spark/charles.webp";
 
 import Shirley from "@/public/boardpage/create/shirley.webp";
 import Kaylie from "@/public/boardpage/create/kaylie.webp";
 
-import JoshuaX from "@/public/boardpage/das/Joshua.jpg";
+import JoshuaX from "@/public/boardpage/das/Joshua.webp";
 
 // import Vignesh from "@/public/boardpage/forge/vignesh.webp";
 // import Pratheek from "@/public/boardpage/forge/pratheek.webp";
@@ -37,8 +37,8 @@ import JoshuaX from "@/public/boardpage/das/Joshua.jpg";
 import Pranav from "@/public/boardpage/forge/pranav.webp";
 import Meena from "@/public/boardpage/forge/meena.webp";
 import Sathvik from "@/public/boardpage/forge/sathvik.webp";
-import Mohnish from "@/public/boardpage/forge/mohnish.png";
-import Audrey from "@/public/boardpage/forge/audrey.jpg";
+import Mohnish from "@/public/boardpage/forge/mohnish.webp";
+import Audrey from "@/public/boardpage/forge/audrey.webp";
 
 const Board = [
   {
