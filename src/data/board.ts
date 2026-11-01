@@ -1,148 +1,190 @@
-import Wesley from "@/public/boardpage/spark/wesley.webp";
-import Kevin from "@/public/boardpage/spark/kevin.webp";
+// import Allison from "@/public/boardpage/general/allison.webp";
+import Paea from "@/public/boardpage/general/paea.webp";
+
+import Lydia from "@/public/boardpage/general/Lydia.webp";
+import Caly from "@/public/boardpage/general/Caly.webp";
+import Pratheek from "@/public/boardpage/general/pratheek.webp";
+import Joshua from "@/public/boardpage/general/Joshua.webp";
+import KevinL from "@/public/boardpage/general/Kevin.webp";
+import Aadhya from "@/public/boardpage/general/Aadhya.webp";
+import Samuel from "@/public/boardpage/general/Samuel.webp";
+import Armanie from "@/public/boardpage/general/Armanie.webp";
+import Faisal from "@/public/boardpage/general/Faisal.webp";
+import Alex from "@/public/boardpage/general/Alex.webp";
+import Sanjuktha from "@/public/boardpage/general/Sanju.webp";
+import Justin from "@/public/boardpage/general/Justin.webp";
+import Navya from "@/public/boardpage/general/Navya.webp";
+
+import KevinP from "@/public/boardpage/spark/kevinp.webp";
+import Motunrayo from "@/public/boardpage/spark/motunrayo.webp";
+import Yilin from "@/public/boardpage/spark/yilin.webp";
+import Rishik from "@/public/boardpage/spark/rishik.webp";
+import Kaesha from "@/public/boardpage/spark/kaesha.webp";
+import Brian from "@/public/boardpage/spark/brian.webp";
+import Celina from "@/public/boardpage/spark/celina.webp";
+import Charles from "@/public/boardpage/spark/charles.webp";
+
 import Shirley from "@/public/boardpage/create/shirley.webp";
 import Kaylie from "@/public/boardpage/create/kaylie.webp";
-import Khushi from "@/public/boardpage/das/khushi.webp";
-import Marcus from "@/public/boardpage/forge/marcus.webp";
-import Wasim from "@/public/boardpage/das/wasim.webp";
-import Howard from "@/public/boardpage/spark/howard.webp";
-import Jimmy from "@/public/boardpage/spark/jimmy.webp";
-import Ahad from "@/public/boardpage/general/ahad.webp";
-import Allison from "@/public/boardpage/general/allison.webp";
-import Charlette from "@/public/boardpage/general/charlette.webp";
-import Henry from "@/public/boardpage/general/henry.webp";
-import Arielle2 from "@/public/boardpage/general/arielle.webp";
-import Rebecca from "@/public/boardpage/general/rebecca.webp";
-import Wesley2 from "@/public/boardpage/general/wesley.webp";
-import Daniyal from "@/public/boardpage/general/daniyal.webp";
-import Austin from "@/public/boardpage/spark/austin.webp";
-import Jane from "@/public/boardpage/spark/jane.webp";
-import Cade from "@/public/boardpage/spark/cade.webp";
-import Jeffrey from "@/public/boardpage/spark/jeffrey.webp";
-import Vignesh from "@/public/boardpage/forge/vignesh.webp";
-import Pratheek from "@/public/boardpage/forge/pratheek.webp";
+
+import JoshuaX from "@/public/boardpage/das/Joshua.webp";
+
+// import Vignesh from "@/public/boardpage/forge/vignesh.webp";
+// import Pratheek from "@/public/boardpage/forge/pratheek.webp";
+// import Anne from "@/public/boardpage/forge/anne.webp";
+// import Meadow from "@/public/boardpage/forge/meadow.webp";
+// import Marcus from "@/public/boardpage/forge/marcus.webp";
 import Pranav from "@/public/boardpage/forge/pranav.webp";
-import Neftali from "@/public/boardpage/general/neftali.webp";
-import Simon from "@/public/boardpage/general/simon.webp";
-import Motunrayo from "@/public/boardpage/spark/motunrayo.webp";
-import KevinP from "@/public/boardpage/spark/kevinp.webp";
-import Yubin from "@/public/boardpage/spark/yubin.webp";
-import Anne from "@/public/boardpage/forge/anne.webp";
-import Meadow from "@/public/boardpage/forge/meadow.webp";
 import Meena from "@/public/boardpage/forge/meena.webp";
 import Sathvik from "@/public/boardpage/forge/sathvik.webp";
-const Board = [
+import Mohnish from "@/public/boardpage/forge/mohnish.webp";
+import Audrey from "@/public/boardpage/forge/audrey.webp";
+import { BoardProps } from "@/components/board/card";
+
+interface BoardData {
+  title: string;
+  members: BoardProps[];
+}
+
+const Board: BoardData[] = [
   {
     title: "ACM EXECUTIVE BOARD",
     members: [
       {
-        name: "Allison Pham",
+        name: "Lydia Son",
         position: "President",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Allison,
-        linkedin: "https://linkedin.com/in/allisonpham7",
-        github: "https://github.com/allison-pham",
-        email: "apham206@ucr.edu",
+        photo: Lydia,
+        linkedin: "https://www.linkedin.com/in/sonlydiason/",
+        github: "https://github.com/minjlys",
+        email: "mson022@ucr.edu",
       },
       {
-        name: "Charlette O'Connor",
+        name: "Caly Carisse Cirilo",
         position: "Executive Vice President",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Charlette,
-        linkedin: "https://www.linkedin.com/in/charlette-o-connor/",
-        github: "https://github.com/charocon",
-        email: "coco010@ucr.edu",
+        photo: Caly,
+        linkedin: "https://www.linkedin.com/in/calycirilo/",
+        github: "https://github.com/calycarisse",
+        email: "cciri001@ucr.edu",
       },
       {
-        name: "Henry Wang",
+        name: "Pratheek Sunilkumar",
         position: "VP of Projects",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Henry,
-        linkedin: "https://www.linkedin.com/in/henry00c",
-        github: "https://github.com/braindead-dev",
-        email: "hwang585@ucr.edu",
+        photo: Pratheek,
+        linkedin: "https://www.linkedin.com/in/pratheek-sunilkumar/",
+        github: "https://github.com/pratheek28",
+        email: "psuni001@ucr.edu",
       },
       {
-        name: "Wesley Wu",
+        name: "Joshua Bumatay",
         position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Wesley2,
-        linkedin: "https://www.linkedin.com/in/wesleylwu/",
-        github: "https://github.com/wesleylwu",
-        email: "wwu160@ucr.edu",
+        photo: Joshua,
+        linkedin: "https://www.linkedin.com/in/jbumatay/",
+        github: "https://github.com/joshuaiba",
+        email: "jbuma002@ucr.edu",
       },
       {
-        name: "Simon Cun",
+        name: "Kevin Lin",
         position: "VPs of Internal Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Simon,
-        linkedin: "https://www.linkedin.com/in/simon-cun/",
-        github: "https://github.com/Simon-Cun",
-        email: "scun002@ucr.edu",
+        photo: KevinL,
+        linkedin: "https://www.linkedin.com/in/kevinjylin/",
+        github: "https://github.com/kevinjylin",
+        email: "klin180@ucr.edu",
       },
       {
-        name: "Kevin Loritsch",
+        name: "Aadhya Pai",
         position: "VPs of External Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Kevin,
-        linkedin: "http://www.linkedin.com/in/kevin-loritsch",
-        github: "https://github.com/Kevinloritsch",
-        email: "klori003@ucr.edu",
+        photo: Aadhya,
+        linkedin: "https://www.linkedin.com/in/aadhyapai/",
+        email: "apai009@ucr.edu",
       },
       {
-        name: "Arielle Haryanto",
+        name: "Samuel You",
         position: "VPs of External Affairs",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Arielle2,
-        linkedin: "https://www.linkedin.com/in/arielle-haryanto/",
-        github: "https://github.com/arieen17",
-        email: "ahary002@ucr.edu",
+        photo: Samuel,
+        linkedin: "https://www.linkedin.com/in/samuel-you-cs/",
+        github: "https://github.com/EveningSt3r",
+        email: "syou029@ucr.edu",
       },
       {
-        name: "Daniyal Ahmed",
+        name: "Armanie Gonzalez",
         position: "VP of Professional Development",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Daniyal,
-        linkedin: "http://www.linkedin.com/in/daniyal-ahmed-279888280",
-        github: "https://github.com/daniyal-ahmed10",
-        email: "dahme007@ucr.edu",
+        photo: Armanie,
+        linkedin: "https://www.linkedin.com/in/armanie-gonzalez/",
+        github: "https://github.com/Raiden-Griff",
+        email: "agonz830@ucr.edu",
       },
       {
-        name: "Ahad Hassan",
+        name: "Faisal Mushtaq",
+        position: "VP of Professional Development",
+        color: "text-acm-blue-500",
+        shadow: "drop-shadow-3xl-acm-blue-500",
+        photo: Faisal,
+        linkedin: "https://www.linkedin.com/in/faisal-mushtaq-ba96361ba/",
+        github: "https://github.com/faisalthe1",
+        email: "fmush002@ucr.edu",
+      },
+      {
+        name: "Alex Tsai",
         position: "VP of Finance",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Ahad,
-        linkedin: "https://www.linkedin.com/in/ahadhasan248/",
-        github: "https://github.com/Ahad2488",
-        email: "ahasa030@ucr.edu",
+        photo: Alex,
+        linkedin: "https://www.linkedin.com/in/alex-tsai-/",
+        github: "https://github.com/xelqo",
+        email: "atsai059@ucr.edu",
       },
       {
-        name: "Rebecca Jennings",
+        name: "Sanjuktha Thotakuri",
+        position: "VP of Finance",
+        color: "text-acm-blue-500",
+        shadow: "drop-shadow-3xl-acm-blue-500",
+        photo: Sanjuktha,
+        linkedin: "https://www.linkedin.com/in/sanjuktha-thotakuri/",
+        email: "sthot004@ucr.edu",
+      },
+      {
+        name: "Justin Tran",
         position: "VPs of Marketing",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Rebecca,
-        linkedin: "https://www.linkedin.com/in/rebecca-jennings-246a652a1/",
-        github: "https://github.com/Rebecca-J7",
-        email: "rjenn003@ucr.edu",
+        photo: Justin,
+        linkedin: "https://www.linkedin.com/in/justin-t-93b584295/",
+        github: "https://github.com/azntin",
+        email: "jtran417@ucr.edu",
       },
       {
-        name: "Neftali Watkinson",
+        name: "Navya Seth",
+        position: "VPs of Marketing",
+        color: "text-acm-blue-500",
+        shadow: "drop-shadow-3xl-acm-blue-500",
+        photo: Navya,
+        linkedin: "https://www.linkedin.com/in/navya-seth/",
+        github: "https://github.com/navya2005",
+        email: "nseth010@ucr.edu",
+      },
+      {
+        name: "Paea LePendu",
         position: "Faculty Advisor",
         color: "text-acm-blue-500",
         shadow: "drop-shadow-3xl-acm-blue-500",
-        photo: Neftali,
-        linkedin: "https://www.linkedin.com/in/neftaliw/",
-        email: "neftaliw@ucr.edu",
+        photo: Paea,
+        email: "paea.lependu@ucr.edu",
       },
     ],
   },
@@ -170,69 +212,6 @@ const Board = [
         email: "kpemb001@ucr.edu",
       },
       {
-        name: "Wesley Wu",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Wesley,
-        linkedin: "http://www.linkedin.com/in/wesleylwu",
-        github: "https://github.com/wesleylwu",
-      },
-      {
-        name: "Austin Le",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Austin,
-        linkedin: "https://www.linkedin.com/in/austintle/",
-        github: "https://github.com/ALE00111",
-      },
-      {
-        name: "Jimmy Munoz",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Jimmy,
-        linkedin: "https://www.linkedin.com/in/jimmy-munoz-8a7a47290/",
-        github: "https://github.com/j1munoz",
-      },
-      {
-        name: "Jane Lee",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Jane,
-        linkedin: "https://linkedin.com/in/janeyunlee",
-        github: "https://github.com/shuuvi",
-      },
-      {
-        name: "Howard Wheeler",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Howard,
-        linkedin: "https://www.linkedin.com/in/howard-wheeler-073418287/",
-        github: "https://github.com/Howardwheeler",
-      },
-      {
-        name: "Cade Jordan",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Cade,
-        linkedin: "https://www.linkedin.com/in/cadejordan/",
-        github: "https://github.com/CadeJordan",
-      },
-      {
-        name: "Jeffrey Xia",
-        position: "Spark Lead",
-        color: "text-acm-yellow-500",
-        shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Jeffrey,
-        linkedin: "https://www.linkedin.com/in/jeffrey-xia-81a490253/",
-        github: "https://github.com/JeffreyXia05",
-      },
-      {
         name: "Motunrayo Lawrence",
         position: "Spark Lead",
         color: "text-acm-yellow-500",
@@ -242,13 +221,58 @@ const Board = [
         github: "https://github.com/LawMot",
       },
       {
-        name: "Yubin Zhen",
+        name: "Yilin Liu",
         position: "Spark Lead",
         color: "text-acm-yellow-500",
         shadow: "drop-shadow-3xl-acm-yellow-400",
-        photo: Yubin,
-        linkedin: "https://www.linkedin.com/in/yubinzhen",
-        github: "https://github.com/yubinzhen",
+        photo: Yilin,
+        linkedin: "https://www.linkedin.com/in/yilin-liu-a08777387/",
+        github: "https://github.com/yilinliu-7",
+      },
+      {
+        name: "Rishik Pulipaka",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Rishik,
+        linkedin: "https://www.linkedin.com/in/rishik-pulipaka/",
+        github: "https://github.com/rishik-pulipaka",
+      },
+      {
+        name: "Kaesha Inocencio",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Kaesha,
+        linkedin: "https://www.linkedin.com/in/kaesha-inocencio/",
+        github: "https://github.com/vinvyl",
+      },
+      {
+        name: "Bryan Estrada Chiang",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Brian,
+        linkedin: "https://www.linkedin.com/in/bryanestradac/",
+        github: "https://github.com/brysach",
+      },
+      {
+        name: "Celina Vasquez Rogriguez",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Celina,
+        linkedin: "https://www.linkedin.com/in/celina-vasquez-rodriguez/",
+        github: "https://github.com/celinavasquez",
+      },
+      {
+        name: "Charles Luo",
+        position: "Spark Lead",
+        color: "text-acm-yellow-500",
+        shadow: "drop-shadow-3xl-acm-yellow-400",
+        photo: Charles,
+        linkedin: "https://www.linkedin.com/in/charlesluo06/",
+        github: "https://github.com/charlesluo06",
       },
     ],
   },
@@ -279,33 +303,6 @@ const Board = [
     title: "ACM FORGE LEADS",
     members: [
       {
-        name: "Marcus Hsieh",
-        position: "Forge Director",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Marcus,
-        linkedin: "https://www.linkedin.com/in/marcusjhsieh",
-        github: "https://github.com/MarcusHsieh",
-      },
-      {
-        name: "Vignesh Thondikulam",
-        position: "Forge Lead",
-        linkedin: "http://www.linkedin.com/in/vignesh-thondikulam",
-        github: "https://github.com/VigneshT24",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Vignesh,
-      },
-      {
-        name: "Pratheek Sunilkumar",
-        position: "Forge Lead",
-        linkedin: "https://www.linkedin.com/in/pratheek28/",
-        github: "https://github.com/pratheek28",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Pratheek,
-      },
-      {
         name: "Pranav Gowrishankar",
         position: "Forge Lead",
         linkedin: "https://www.linkedin.com/in/pranavgowrish/",
@@ -313,15 +310,6 @@ const Board = [
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
         photo: Pranav,
-      },
-      {
-        name: "Anne Kim",
-        position: "Forge Lead",
-        linkedin: "https://www.linkedin.com/in/anne-sr-kim/",
-        github: "https://github.com/arkbot51",
-        color: "text-acm-gray-400",
-        shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Anne,
       },
       {
         name: "Meena Ormond",
@@ -333,13 +321,30 @@ const Board = [
         photo: Meena,
       },
       {
-        name: "Meadow Chiu",
+        name: "Navya Seth",
         position: "Forge Lead",
-        linkedin: "https://www.linkedin.com/in/meadow-chiu-50a1862a4/",
-        github: "https://github.com/mchiu028-art",
+        linkedin: "https://www.linkedin.com/in/navya-seth/",
+        github: "https://github.com/navya2005",
         color: "text-acm-gray-400",
         shadow: "drop-shadow-3xl-acm-gray-400",
-        photo: Meadow,
+        photo: Navya,
+      },
+      {
+        name: "Mohnish Kothapa",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/mohnish-kothapa/",
+        github: "",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Mohnish,
+      },
+      {
+        name: "Audrey Lee",
+        position: "Forge Lead",
+        linkedin: "https://www.linkedin.com/in/audrey-lee-756388401/",
+        color: "text-acm-gray-400",
+        shadow: "drop-shadow-3xl-acm-gray-400",
+        photo: Audrey,
       },
       {
         name: "Sathvik Lingaram",
@@ -356,22 +361,13 @@ const Board = [
     title: "ACM DAS LEADS",
     members: [
       {
-        name: "Wasim Khan",
+        name: "Joshua Xu",
         position: "DAS Director",
         color: "text-acm-purple-100",
         shadow: "drop-shadow-3xl-acm-purple-100",
-        photo: Wasim,
-        linkedin: "https://www.linkedin.com/in/wasimkhan034/",
-        github: "https://github.com/WasimKhan034",
-      },
-      {
-        name: "Khushi Chaudhari",
-        position: "DAS Lead",
-        color: "text-acm-purple-100",
-        shadow: "drop-shadow-3xl-acm-purple-100",
-        photo: Khushi,
-        linkedin: "https://www.linkedin.com/in/khushi-chaudhari33/",
-        github: "https://github.com/khushi-04",
+        photo: JoshuaX,
+        linkedin: "https://www.linkedin.com/in/joshuamxu/",
+        github: "https://github.com/Joshuamxu27",
       },
     ],
   },
