@@ -21,7 +21,7 @@ import Yilin from "@/public/boardpage/spark/yilin.webp";
 import Rishik from "@/public/boardpage/spark/rishik.webp";
 import Kaesha from "@/public/boardpage/spark/kaesha.webp";
 import Brian from "@/public/boardpage/spark/brian.webp";
-import Celina from "@/public/boardpage/spark/celina.webp";
+import Celina from "@/public/boardpage/spark/celina2.webp";
 import Charles from "@/public/boardpage/spark/charles.webp";
 
 import Shirley from "@/public/boardpage/create/shirley.webp";
